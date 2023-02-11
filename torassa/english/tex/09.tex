@@ -1,0 +1,149 @@
+
+\documentclass[11pt]{article}
+%\documentclass[a4paper,11pt]{article}
+%\documentclass[letterpaper,11pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={127mm,278mm}}
+\geometry{totalwidth=106mm,totalheight=242mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Classical Mechanics (Basic Papers: A brief review)}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\unitlength}{0.72pt}
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mX}{x}
+\newcommand{\mY}{y}
+\newcommand{\mZ}{z}
+\newcommand{\mT}{t}
+\newcommand{\mm}{m}
+\newcommand{\rt}{'}
+\newcommand{\rot}{_{o'}}
+\newcommand{\tf}{Figure}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\ra}{_{\mbox {\scriptsize A}}}
+\newcommand{\rs}{_{\mbox {\scriptsize S}}}
+\newcommand{\ras}{_{\mbox {\scriptsize {A$\vert$S}}}}
+
+\begin{document}
+
+\begin{center}
+
+\noindent \smallskip
+
+{\huge Classical Mechanics}
+
+\bigskip \bigskip
+
+{\LARGE Basic Papers}
+
+\medskip
+
+( A brief review )
+
+\end{center}
+
+\vspace{-0.6em}
+
+{\centering\subsection*{- Kinematics -}}
+
+{\centering\subsubsection*{Paper 6}}
+
+\medskip
+\par First principle: Any reference frame should be fixed to a body.
+\medskip
+\par Second principle: It is possible to agree that any reference frame fixed to a body should be non-rotating.
+\medskip
+\par If any reference frame is a non-rotating reference frame, then each coordinate axis of a reference frame S will remain at a fixed angle to the corresponding coordinate axis of another reference frame S'. Therefore, to simplify calculations it will be assumed that each axis of S is parallel to the corresponding axis of S', as shown in Figure 1.
+
+\vspace{+1.2em}
+
+\begin{center}
+\begin{picture}(228,198)
+\multiput(75,75)(45,18){2}{\vector(1,0){90}}
+\multiput(75,75)(45,18){2}{\vector(0,1){90}}
+\multiput(75,75)(45,18){2}{\vector(-1,-1){60}}
+\put(72,171){$\mZ$}\put(117,189){$\mZ\rt$}
+\put(171,72){$\mX$}\put(216,90){$\mX\rt$}
+\put(3,3){$\mY$}\put(45,18){$\mY\rt$}
+\put(78,78){$O$}\put(123,96){$O\rt$}
+\put(24,96){S}\put(162,141){S'}
+\end{picture}
+\\* \medskip \tf \ 1
+\end{center}
+
+\smallskip
+
+\par A change of coordinates $\mX$, $\mY$, $\mZ$, $\mT$ from reference frame S to coordinates $\mX\rt$, $\mY\rt$, $\mZ\rt$, $\mT\rt$ from reference frame S' whose origin $O\rt$ has coordinates $\mX\rot$, $\mY\rot$, $\mZ\rot$ measured from S, can be carried out by means of the following equations:
+\begin{eqnarray*}
+\mX\rt & = & \mX - \mX\rot \\*
+\mY\rt & = & \mY - \mY\rot \\*
+\mZ\rt & = & \mZ - \mZ\rot \\*
+\mT\rt & = & \mT
+\end{eqnarray*}
+\par From these equations, the transformation of velocity and acceleration from reference frame S to reference frame S' may be carried out, and expressed in vector form as follows:
+\begin{eqnarray*}
+\vV\rt & = & \vV - \vV\rot \\*
+\vA\rt & = & \vA - \vA\rot
+\end{eqnarray*}
+\noindent where $\vV\rot$ and $\vA\rot$ are the velocity and acceleration respectively, of reference frame S' relative to S.
+
+\newpage
+
+{\centering\subsection*{- Laws of Motion -}}
+
+{\centering\subsubsection*{Paper 8}}
+
+\medskip
+\par First new law of motion: The forces acting on a particle A and the forces acting on a reference frame S can change the state of motion of particle A relative to the reference frame S.
+\medskip
+\par Second new law of motion: The acceleration $\vA\ras$ of a particle A relative to a reference frame S (non-rotating) fixed to a particle S is given by the following equation:
+\begin{eqnarray*}
+\vA\ras = \frac{\sum \vF\ra}{\mm\ra} - \frac{\sum \vF\rs}{\mm\rs}
+\end{eqnarray*}
+\noindent where $\sum \vF\ra$ is the sum of the forces acting on particle A, $\mm\ra$ is the mass of particle A, $\sum \vF\rs$ is the sum of the forces acting on particle S, and $\mm\rs$ is the mass of particle S.
+
+\bigskip
+
+{\centering\subsection*{- Dynamics -}}
+
+{\centering\subsubsection*{Paper 5}}
+
+\medskip
+\par First definition: The force $\vF$ acting on a particle is a vector quantity representing the interaction between particles.
+\medskip
+\par The transformation of forces (real) from one reference frame to another is given by
+\begin{eqnarray*}
+\vF\rt = \vF
+\end{eqnarray*}
+\par Second definition: The mass $\mm$ of a particle is a scalar quantity representing a constant characteristic of the particle.
+\medskip
+\par The transformation of masses from one reference frame to another is given by
+\begin{eqnarray*}
+\mm\rt = \mm
+\end{eqnarray*}
+\par Third definition: The universal acceleration $\vA^{\circ}\ra$ of a particle A is the real acceleration $\vA\ra$ of particle A relative to the universal reference frame S$^{\circ}$ (the universal reference frame S$^{\circ}$ is a reference frame which is fixed to a particle on which no force is acting, and which is used as a universal reference frame)
+\medskip
+\par The transformation of universal accelerations from one reference frame to another is given by
+\begin{eqnarray*}
+\vA^{\circ}{\rt} = \vA^{\circ}
+\end{eqnarray*}
+\par First principle: Any particle in a state of universal rest or of universal uniform linear motion tends to remain in such a state unless acted upon by an unbalanced external force.
+\medskip
+\par Second principle: The sum of all forces $\sum \vF\ra$ acting on a parti- cle A of mass $\mm\ra$ produces a universal acceleration $\vA^{\circ}\ra$ according to the following equation:
+\begin{eqnarray*}
+\sum \vF^{\vphantom{\vA\circ}}\ra = \mm^{\vphantom{\vA\circ}}\ra\vA^{\circ}\ra
+\end{eqnarray*}
+\par Finally, the new laws of motion of paper [8] can be deduced from the statements of papers [5] and [6].
+
+\end{document}
+

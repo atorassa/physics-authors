@@ -1,0 +1,327 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={164.4mm,219.9mm}}
+\geometry{totalwidth=143.4mm,totalheight=183.9mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Ecuación General de Movimiento}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\EM}{M}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rs}{_s}
+\newcommand{\ri}{_i}
+\newcommand{\rS}{_S}
+\newcommand{\rab}{_{ab}}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\bre}{\breve}
+\newcommand{\til}{\tilde}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\VR}{\mathbf{R}}
+\newcommand{\aV}{\mathbf{\omega}}
+\newcommand{\aA}{\mathbf{\alpha}}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+\newcommand{\nK}{{\scriptstyle\mathrm K}}
+\newcommand{\nD}{{\scriptstyle\mathrm D}}
+\newcommand{\nT}{{\scriptstyle\mathrm T}}
+
+\begin{document}
+
+\begin{center}
+
+{\huge Ecuación General de Movimiento}
+
+\bigskip \bigskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \bigskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+(2013) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{102mm}{En mecánica clásica, este trabajo presenta una ecuación general de movimiento, que puede ser aplicada en cualquier sistema de referencia (rotante o no rotante) (inercial o no inercial) sin necesidad de introducir fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsection*{Introducción}}
+
+\vspace{+1.20em}
+
+\par La ecuación general de movimiento es una ecuación de transformación entre un sistema de referencia S y un sistema de referencia dinámico $\bre\mathrm S$.
+\medskip
+\par Según este trabajo, un observador S utiliza un sistema de referencia S y un sistema de referencia dinámico $\bre\mathrm S$.
+\medskip
+\par La posición dinámica $\bre\vR\ra$, la velocidad dinámica $\bre\vV\ra$ y la aceleración dinámica $\bre\vA\ra$ de una partícula A de masa $\mM\ra$ respecto a un sistema de referencia dinámico $\bre\mathrm S$, están dadas por:
+\bigskip
+\begin{center}
+\begin{tabular}{l}
+$\bre\vR\ra = \int\int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT \; d\mT$ \vspace{+1.20em} \\
+$\bre\vV\ra = \int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT$ \vspace{+1.20em} \\
+$\bre\vA\ra = (\vF\ra/\mM\ra)$
+\end{tabular}
+\end{center}
+\medskip
+\noindent donde $\vF\ra$ es la fuerza resultante que actúa sobre la partícula A.
+\medskip
+\par La velocidad angular dinámica $\bre\aV\rS$ y la aceleración angular dinámica $\bre\aA\rS$ de un sistema de referen- \hbox {cia S} fijo a una partícula S respecto a un sistema de referencia dinámico $\bre\mathrm S$, están dadas por:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+$\bre\aV\rS = \pm \hspace{+0.12em} \big|(\vF_1/\mM\rs - \vF_0/\mM\rs) \cdot (\vR_1 - \vR_0)/(\vR_1 - \vR_0)^2\big|^{1/2}$ \vspace{+1.20em} \\
+$\bre\aA\rS = d(\bre\aV\rS)/d\mT$
+\end{tabular}
+\end{center}
+\vspace{+0.81em}
+\noindent donde $\vF_0$ y $\vF_1$ son las fuerzas resultantes que actúan sobre el sistema de referencia S en los \hbox {puntos 0 y 1}, $\vR_0$ y $\vR_1$ son las posiciones de los puntos 0 y 1 respecto al sistema de referencia S y $\mM\rs$ es la masa de \hbox {la partícula S} (el punto 0 es el origen del sistema de referencia S y el centro de masa de la partícula S) (el punto 0 pertenece al eje de rotación dinámica y el segmento 01 es perpendicular al eje de rotación dinámica) (el vector $\bre\aV\rS$ es colineal con el eje de rotación dinámica)
+
+\newpage
+
+{\centering\subsection*{Ecuación General de Movimiento}}
+
+\vspace{+1.20em}
+
+\par La ecuación general de movimiento para dos partículas A y B respecto a un observador S es:
+\begin{eqnarray*}
+\mM\ra\mM\rb(\vR\ra - \vR\rb) - \mM\ra\mM\rb(\bre\vR\ra - \bre\vR\rb) = 0
+\end{eqnarray*}
+\noindent donde $\mM\ra$ y $\mM\rb$ son las masas de las partículas A y B, $\vR\ra$ y $\vR\rb$ son las posiciones de las partículas A \hbox {y B}, $\bre\vR\ra$ y $\bre\vR\rb$ son las posiciones dinámicas de las partículas A y B.
+\medskip
+\par Derivando la ecuación anterior con respecto al tiempo, se obtiene:
+\begin{eqnarray*}
+\mM\ra\mM\rb\big[(\vV\ra - \vV\rb) + \bre\aV\rS \times (\vR\ra - \vR\rb)\big] - \mM\ra\mM\rb(\bre\vV\ra - \bre\vV\rb) = 0
+\end{eqnarray*}
+\par Derivando nuevamente con respecto al tiempo, se obtiene:
+\begin{eqnarray*}
+\mM\ra\mM\rb\big[(\vA\ra - \vA\rb) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rb) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rb)) + \bre\aA\rS \times (\vR\ra - \vR\rb)\big] - \mM\ra\mM\rb(\bre\vA\ra - \bre\vA\rb) = 0
+\end{eqnarray*}
+
+\vspace{+1.20em}
+
+{\centering\subsection*{Sistema de Referencia}}
+
+\vspace{+1.50em}
+
+\par Aplicando la ecuación anterior a dos partículas A y S, se tiene:
+\begin{eqnarray*}
+\mM\ra\mM\rs\big[(\vA\ra - \vA\rs) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rs) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rs)) + \bre\aA\rS \times (\vR\ra - \vR\rs)\big] - \mM\ra\mM\rs(\bre\vA\ra - \bre\vA\rs) = 0
+\end{eqnarray*}
+\par Si dividimos por $\mM\rs$ y el sistema de referencia S fijo a la partícula S $(\vR\rs=0, \vV\rs=0$ y $\vA\rs=0)$ es rotante respecto al sistema de referencia dinámico $\bre\mathrm S$ $(\bre\aV\rS \neq 0)$, entonces se obtiene:
+\begin{eqnarray*}
+\mM\ra\big[\vA\ra + 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra + \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) + \bre\aA\rS \times \vR\ra\big] - \mM\ra(\bre\vA\ra - \bre\vA\rs) = 0
+\end{eqnarray*}
+\par Si el sistema de referencia S es no rotante respecto al sistema de referencia dinámico $\bre\mathrm S$ $(\bre\aV\rS=0)$, entonces se obtiene:
+\begin{eqnarray*}
+\mM\ra\vA\ra - \mM\ra(\bre\vA\ra - \bre\vA\rs) = 0
+\end{eqnarray*}
+\par Si el sistema de referencia S es inercial respecto al sistema de referencia dinámico $\bre\mathrm S$ $(\bre\aV\rS=0$ y $\bre\vA\rs=0)$, entonces se obtiene:
+\begin{eqnarray*}
+\mM\ra\vA\ra - \mM\ra\bre\vA\ra = 0
+\end{eqnarray*}
+\noindent o sea:
+\begin{eqnarray*}
+\mM\ra\vA\ra - \vF\ra = 0
+\end{eqnarray*}
+\par \vspace{+0.45em} \noindent donde esta ecuación es la segunda ley de Newton.
+
+\newpage
+
+{\centering\subsection*{Ecuación de Movimiento}}
+
+\vspace{+1.20em}
+
+\par Desde la ecuación general de movimiento se deduce que la aceleración $\vA\ra$ de una partícula A de masa $\mM\ra$ respecto a un sistema de referencia S fijo a una partícula S de masa $\mM\rs$, está dada por:
+\begin{eqnarray*}
+\vA\ra = \frac{\vF\ra}{\mM\ra} - 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra - \frac{\vF^{\scriptstyle\hspace{+0.12em}a}\rS}{\mM\rs}
+\end{eqnarray*}
+\noindent donde $\vF^{\scriptstyle\hspace{+0.12em}a}\rS$ es la fuerza resultante que actúa sobre el sistema de referencia S en el punto A $(\vR\ra)$
+\medskip
+\par Este trabajo considera que la primera y segunda ley de Newton son falsas. Por lo tanto, en este trabajo no hay ninguna necesidad de introducir fuerzas ficticias.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Posición Universal}}
+
+\vspace{+1.20em}
+
+\par Aplicando la ecuación general de movimiento a una partícula A de masa $\mM\ra$ y al centro de masa del universo de masa $\mM\rcm$, se tiene:
+\begin{eqnarray*}
+\mM\ra\mM\rcm(\vR\ra - \vR\rcm) - \mM\ra\mM\rcm(\bre\vR\ra - \bre\vR\rcm) = 0
+\end{eqnarray*}
+\par Dividiendo por $\mM\rcm$ y considerando que $\bre\vR\rcm$ es siempre cero, entonces se obtiene:
+\begin{eqnarray*}
+\mM\ra(\vR\ra - \vR\rcm) - \mM\ra\bre\vR\ra = 0
+\end{eqnarray*}
+\noindent o sea:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+\hspace{-0.90em} $\mM\ra^{\vphantom{cm}}\hspace{+0.03em}\vR\ra^{\hspace{+0.09em}cm} \, - \int\int \hspace{+0.12em} \vF\ra^{\vphantom{cm}} \; d\mT \; d\mT = 0$
+\end{tabular}
+\end{center}
+\medskip
+\noindent donde $\vR\ra^{\hspace{+0.09em}cm}$ es la posición de la partícula A respecto al centro de masa del universo.
+
+\vspace{+0.30em}
+
+{\centering\subsection*{Principio General}}
+
+\vspace{+1.20em}
+
+\par Desde la ecuación general de movimiento se deduce que la posición total $\til\VR\rij$ de un sistema de bipartículas de masa $\EM\rij$ $(\EM\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\ri\mM\rj)$, está dada por:
+\vspace{+0.60em}
+\begin{eqnarray*}
+\til\VR\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \frac{\mM\ri\mM\rj}{\EM\rij}\big[(\vR\ri - \vR\rj) - (\bre\vR\ri - \bre\vR\rj)\big] = 0
+\end{eqnarray*}
+\smallskip
+\par Desde la ecuación general de movimiento se deduce que la posición total $\til\VR\ri$ de un sistema de partículas de masa $\EM\ri$ $(\EM\ri = \sum_{\scriptscriptstyle i} \; \mM\ri)$ respecto a un observador S fijo a una partícula S, está dada por:
+\vspace{+0.60em}
+\begin{eqnarray*}
+\til\VR\ri = \sum_{\scriptscriptstyle i} \; \frac{\mM\ri}{\EM\ri}\big[(\vR\ri - \vR\rs) - (\bre\vR\ri - \bre\vR\rs)\big] = 0
+\end{eqnarray*}
+\smallskip
+\par Por lo tanto, la posición total $\til\VR\rij$ de un sistema de bipartículas y la posición total $\til\VR\ri$ de un sistema de partículas están siempre en equilibrio.
+
+\newpage
+
+{\centering\subsection*{Fuerza Cinética}}
+
+\vspace{+1.20em}
+
+\par La fuerza cinética $\vF\nK_{a|b}$ ejercida sobre una partícula A de masa $\mM\ra$ por otra partícula B de masa $\mM\rb$ respecto a un observador S, está dada por:
+\vspace{+0.30em}
+\begin{eqnarray*}
+\vF\nK_{a|b} = \frac{\mM\ra\mM\rb}{\mM\rcm}\big[(\vA\ra - \vA\rb) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rb) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rb)) + \bre\aA\rS \times (\vR\ra - \vR\rb)\big]
+\end{eqnarray*}
+\noindent donde $\mM\rcm$ es la masa del centro de masa del universo.
+\bigskip
+\par Desde la ecuación anterior se deduce que la fuerza cinética resultante $\vF\nK\ra$ que actúa sobre una partícula A de masa $\mM\ra$, está dada por:
+\vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+0.90em} \vF\nK\ra = \mM\ra\big[(\vA\ra - \vA\rcm) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rcm) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rcm)) + \bre\aA\rS \times (\vR\ra - \vR\rcm)\big]
+\end{eqnarray*}
+\noindent donde $\vR\rcm$, $\vV\rcm$ y $\vA\rcm$ son la posición, la velocidad y la aceleración del centro de masa del universo.
+\bigskip
+\par La fuerza cinética resultante $\vF\nK\rab$ y la fuerza dinámica resultante $\vF\nD\rab$, ambas actuando sobre una bipartícula AB de masa $\mM\ra\mM\rb$, están dadas por:
+
+\vspace{+1.50em}
+
+\begin{center}
+\begin{tabular}{l}
+$\vF\nK\rab = \mM\ra\mM\rb(\vF\nK\ra/\mM\ra - \vF\nK\rb/\mM\rb)$ \vspace{+0.90em} \\
+$\vF\nD\rab = \mM\ra\mM\rb(\vF\nD\ra/\mM\ra - \vF\nD\rb/\mM\rb)$ \vspace{+0.60em} \\
+$\longrightarrow$ \vspace{+0.60em} \\
+$\vF\nK\rab = \mM\ra\mM\rb\big[(\vA\ra - \vA\rb) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rb) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rb)) + \bre\aA\rS \times (\vR\ra - \vR\rb)\big]$ \vspace{+0.90em} \\
+$\vF\nD\rab = \mM\ra\mM\rb(\bre\vA\ra - \bre\vA\rb)$ \vspace{+0.60em} \\
+$\longrightarrow$ \vspace{+0.60em} \\
+$\vF\nK\rab - \vF\nD\rab = 0$ \vspace{+0.60em} \\
+$\longrightarrow$ \vspace{+0.60em} \\
+$\vF\nT\rab = 0$
+\end{tabular}
+\end{center}
+
+\vspace{+0.75em}
+
+\par Por lo tanto:
+\bigskip
+\par La aceleración cinética $\big[d^2(\vR\ra - \vR\rb)/d\mT^2\big]_{\bre\mathrm S}$ de una bipartícula AB está relacionada con la fuerza cinética.
+\bigskip
+\par La aceleración dinámica $\big[d^2(\bre\vR\ra - \bre\vR\rb)/d\mT^2\big]_{\bre\mathrm S}$ de una bipartícula AB está relacionada con las \hbox {fuerzas} dinámicas (fuerza gravitatoria, fuerza electromagnética, etc.)
+\bigskip
+\par La fuerza total $\vF\nT\rab$ que actúa sobre una bipartícula AB está siempre en equilibrio.
+
+\newpage
+
+{\centering\subsection*{Apéndice}}
+
+\vspace{+1.20em}
+
+\par Desde el principio general se obtienen las siguientes ecuaciones:
+\vspace{+0.75em}
+\par 12 ecuaciones para una bipartícula AB respecto a un observador S:
+\medskip
+\begin{eqnarray*}
+\frac{1}{x} \left [(\vR\ra - \vR\rb)^y \times \Big[\frac{d^z(\vR\ra - \vR\rb)}{{d\mT}^z}\Big]_{\bre\mathrm S} \right ]^x - \; \frac{1}{x} \left [(\bre\vR\ra - \bre\vR\rb)^y \times \Big[\frac{d^z(\bre\vR\ra - \bre\vR\rb)}{{d\mT}^z}\Big]_{\bre\mathrm S} \right ]^x = \, 0
+\end{eqnarray*}
+\vspace{-0.30em}
+\par 12 ecuaciones para una partícula A respecto a un observador S fijo a una partícula S:
+\medskip
+\begin{eqnarray*}
+\frac{1}{x} \left [(\vR\ra - \vR\rs)^y \times \Big[\frac{d^z(\vR\ra - \vR\rs)}{{d\mT}^z}\Big]_{\bre\mathrm S} \right ]^x - \; \frac{1}{x} \left [(\bre\vR\ra - \bre\vR\rs)^y \times \Big[\frac{d^z(\bre\vR\ra - \bre\vR\rs)}{{d\mT}^z}\Big]_{\bre\mathrm S} \right ]^x = \, 0
+\end{eqnarray*}
+\vspace{-0.15em}
+\par Donde:
+\vspace{+0.75em}
+\par $x$ $\,$ toma el valor 1 ó 2 $\,$ (1 ecuación vectorial y 2 ecuación escalar)
+\bigskip
+\par $y$ $\,$ toma el valor 0 ó 1 $\,$ (0 ecuación lineal y 1 ecuación angular)
+\bigskip
+\par $z$ $\,$ toma el valor 0 ó 1 ó 2 $\,$ (0 ecuación posición, 1 ecuación velocidad y 2 ecuación aceleración)
+\vspace{+0.90em}
+\par Observaciones:
+\vspace{+0.90em}
+\par $\vR\rs=0$, $\vV\rs=0$ y $\vA\rs=0$ respecto al sistema de referencia S.
+\bigskip
+\par Si $y$ toma el valor 0 entonces el símbolo $\times$ debe ser eliminado de la ecuación.
+\bigskip
+\par $\big[d^z(...)/d\mT^z\big]_{\bre\mathrm S}$ \hspace{-0.15em} indica $z$-ésima derivada temporal respecto al sistema de referencia dinámico $\bre\mathrm S$.
+\bigskip
+\par Por otra parte, estas 24 ecuaciones serían válidas incluso si la tercera ley de Newton fuera falsa.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Bibliografía}}
+
+\vspace{+1.20em}
+
+\par \textbf{A. Einstein}, Sobre la Teoría de la Relatividad Especial y General.
+\bigskip
+\par \textbf{E. Mach}, La Ciencia de la Mecánica.
+\bigskip
+\par \textbf{R. Resnick y D. Halliday}, Física.
+\bigskip
+\par \textbf{J. Kane y M. Sternheim}, Física.
+\bigskip
+\par \textbf{H. Goldstein}, Mecánica Clásica.
+\bigskip
+\par \textbf{L. Landau y E. Lifshitz}, Mecánica.
+
+\end{document}
+

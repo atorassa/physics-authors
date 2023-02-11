@@ -1,0 +1,108 @@
+
+\documentclass[12pt]{article}
+%\documentclass[a4paper,12pt]{article}
+%\documentclass[letterpaper,12pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={127mm,165.1mm}}
+\geometry{totalwidth=106mm,totalheight=129.1mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Mecánica Clásica (Principio de Energía)}}
+\hypersetup{pdfsubject={Sobre el principio de energía en mecánica clásica.}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+\hypersetup{pdfkeywords={mecánica clásica, principio, energía, partícula, bipartícula}}
+
+\setlength{\arraycolsep}{5.4pt}
+
+\newcommand{\mM}{m}
+\newcommand{\dos}{^{\,2}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\ra}{_{\scriptscriptstyle \mathrm A}}
+\newcommand{\rab}{_{\scriptscriptstyle \mathrm {AB}}}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+
+\ \vspace{-0.3em}
+
+{\fontsize{27}{27}\selectfont Mecánica Clásica}
+
+\bigskip \bigskip
+
+{\fontsize{15}{15}\selectfont Principio de Energía}
+
+\bigskip \bigskip
+
+{\fontsize{13}{13}\selectfont ( Campo Uniforme )}
+
+\bigskip \bigskip
+
+{\fontsize{14}{14}\selectfont Partícula}
+
+\end{center}
+
+\vspace{-0.6em}
+
+\begin{eqnarray*}
+\hspace{-5.19em}\vA\ra & = & \vA\ra \\ \\
+\hspace{-5.19em}\int \vA\ra \cdot d\vR\ra & = & \int \vA\ra \cdot d\vR\ra \\ \\
+\hspace{-5.19em}\int \vA\ra^{\vphantom{\dos}} \cdot d\vR\ra^{\vphantom{\dos}} & = & \Delta \; {\textstyle \frac{1}{2}}\vV\ra\dos \\ \\
+\hspace{-5.19em}\int \vA\ra \cdot d\vR\ra & = & \Delta \; \vA\ra \cdot \vR\ra \\ \\
+\hspace{-5.19em}\Delta \; {\textstyle \frac{1}{2}}\vV\ra\dos & = & \Delta \; \vA\ra^{\vphantom{\dos}} \cdot \vR\ra^{\vphantom{\dos}} \\ \\
+\hspace{-5.19em}\Delta \; {\textstyle \frac{1}{2}}\vV\ra\dos - \Delta \; \vA\ra^{\vphantom{\dos}} \cdot \vR\ra^{\vphantom{\dos}} & = & 0 \\ \\
+\hspace{-5.19em}\mM\ra^{\vphantom{\dos}} \left( \Delta \; {\textstyle \frac{1}{2}}\vV\ra\dos - \Delta \; \vA\ra^{\vphantom{\dos}} \cdot \vR\ra^{\vphantom{\dos}} \right) & = & 0
+\end{eqnarray*}
+
+\newpage
+
+\pagestyle{empty}
+
+\begin{center}
+
+\ \vspace{-0.3em}
+
+{\fontsize{27}{27}\selectfont Mecánica Clásica}
+
+\bigskip \bigskip
+
+{\fontsize{15}{15}\selectfont Principio de Energía}
+
+\bigskip \bigskip
+
+{\fontsize{13}{13}\selectfont ( Campo Uniforme )}
+
+\bigskip \bigskip
+
+{\fontsize{14}{14}\selectfont Bipartícula}
+
+\end{center}
+
+\vspace{-0.6em}
+
+\begin{eqnarray*}
+\hspace{-6.00em}\vA\rab & = & \vA\rab \\ \\
+\hspace{-6.00em}\int \vA\rab \cdot d\vR\rab & = & \int \vA\rab \cdot d\vR\rab \\ \\
+\hspace{-6.00em}\int \vA\rab^{\vphantom{\dos}} \cdot d\vR\rab^{\vphantom{\dos}} & = & \Delta \; {\textstyle \frac{1}{2}}\vV\rab\dos \\ \\
+\hspace{-6.00em}\int \vA\rab \cdot d\vR\rab & = & \Delta \; \vA\rab \cdot \vR\rab \\ \\
+\hspace{-6.00em}\Delta \; {\textstyle \frac{1}{2}}\vV\rab\dos & = & \Delta \; \vA\rab^{\vphantom{\dos}} \cdot \vR\rab^{\vphantom{\dos}} \\ \\
+\hspace{-6.00em}\Delta \; {\textstyle \frac{1}{2}}\vV\rab\dos - \Delta \; \vA\rab^{\vphantom{\dos}} \cdot \vR\rab^{\vphantom{\dos}} & = & 0 \\ \\
+\hspace{-6.00em}\mM\rab^{\vphantom{\dos}} \left( \Delta \; {\textstyle \frac{1}{2}}\vV\rab\dos - \Delta \; \vA\rab^{\vphantom{\dos}} \cdot \vR\rab^{\vphantom{\dos}} \right) & = & 0
+\end{eqnarray*}
+
+\end{document}
+

@@ -1,0 +1,164 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={167.1mm,194.1mm}}
+\geometry{totalwidth=146.1mm,totalheight=152.1mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Linear Classical Mechanics}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\ri}{_i}
+\newcommand{\bre}{\breve}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}\:}
+
+\begin{document}
+
+\begin{center}
+
+{\huge Linear Classical Mechanics}
+
+\bigskip \bigskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \bigskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{93mm}{This paper presents a linear classical mechanics, which can be applied in any reference frame (rotating or non-rotating) (inertial or non-inertial) without the necessity of introducing fictitious forces.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsection*{Introduction}}
+
+\vspace{+1.20em}
+
+\par The position $\vR$, the velocity $\vV$, and the acceleration $\vA$ of a single particle of mass $\mM$, are given by:
+\bigskip
+\begin{center}
+\begin{tabular}{l}
+\hspace{-3.09em} $\vR = (\vR)$ \vspace{+1.20em} \\
+\hspace{-3.09em} $\vV = d(\vR)/d\mT$ \vspace{+1.20em} \\
+\hspace{-3.09em} $\vA = d^2(\vR)/d\mT^2$
+\end{tabular}
+\end{center}
+\bigskip
+\noindent where $\vR$ is the position vector of the particle.
+\medskip
+\par And the dynamic position $\bre\vR$, the dynamic velocity $\bre\vV$, and the dynamic acceleration $\bre\vA$, are given by:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+$\bre\vR = \int\int \hspace{+0.12em} (\vF/\mM) \; d\mT \; d\mT$ \vspace{+1.20em} \\
+$\bre\vV = \int \hspace{+0.12em} (\vF/\mM) \; d\mT$ \vspace{+1.20em} \\
+$\bre\vA = (\vF/\mM)$
+\end{tabular}
+\end{center}
+\medskip
+\noindent where $\vF$ is the net force acting on the particle.
+
+\newpage
+
+{\centering\subsection*{Equations of Motion}}
+
+\vspace{+1.20em}
+
+\par If we consider two particles i and j then for a reference frame S the equations of motion are:
+\vspace{+1.20em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - (\vR \cdot \bre\vR\rij) \hspace{+0.12em} (\vR \cdot \bre\vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) - (\vR \cdot \bre\vR\rij) \hspace{+0.12em} (\vR \cdot \bre\vV\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vV\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) + (\vR \cdot \vA\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - (\vR \cdot \bre\vV\rij) \hspace{+0.12em} (\vR \cdot \bre\vV\rij) - (\vR \cdot \bre\vA\rij) \hspace{+0.12em} (\vR \cdot \bre\vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par Now, since $(\vR \cdot \bre\vV\rij) = \int (\vR \cdot \bre\vA\rij) \hspace{+0.18em} dt$, and $(\vR \cdot \bre\vV\rij) \hspace{+0.12em} (\vR \cdot \bre\vV\rij) = 2 \int (\vR \cdot \bre\vA\rij) \hspace{+0.12em} d(\vR \cdot \bre\vR\rij)$, then we obtain:
+\vspace{+1.50em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - (\vR \cdot \bre\vR\rij) \hspace{+0.12em} (\vR \cdot \bre\vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) - (\vR \cdot \bre\vR\rij) \hspace{+0.12em} \int (\vR \cdot \bre\vA\rij) \hspace{+0.18em} dt \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vV\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) + (\vR \cdot \vA\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - 2 \int (\vR \cdot \bre\vA\rij) \hspace{+0.12em} d(\vR \cdot \bre\vR\rij) - (\vR \cdot \bre\vA\rij) \hspace{+0.12em} (\vR \cdot \bre\vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par And since $\vR\rij = \bre\vR\rij$ in any reference frame, finally yields:
+\vspace{+1.50em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) - (\vR \cdot \vR\rij) \hspace{+0.12em} \int (\vR \cdot \bre\vA\rij) \hspace{+0.18em} dt \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vV\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) + (\vR \cdot \vA\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - 2 \int (\vR \cdot \bre\vA\rij) \hspace{+0.12em} d(\vR \cdot \vR\rij) - (\vR \cdot \bre\vA\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par \noindent where $\vR\rij = \vR\ri - \vR\rj$, $\vV\rij = \vV\ri - \vV\rj$, $\vA\rij = \vA\ri - \vA\rj$, $\bre\vR\rij = \bre\vR\ri - \bre\vR\rj$, $\bre\vV\rij = \bre\vV\ri - \bre\vV\rj$, $\bre\vA\rij = \bre\vA\ri - \bre\vA\rj$, $\mM\ri$ and $\mM\rj$ are the masses of particles i and j, $\vR\ri$, $\vR\rj$, $\vV\ri$, $\vV\rj$, $\vA\ri$ and $\vA\rj$ are the positions, the velocities and the accelerations of particles i and j, and $\bre\vR\ri$, $\bre\vR\rj$, $\bre\vV\ri$, $\bre\vV\rj$, $\bre\vA\ri$ and $\bre\vA\rj$ are the dynamic positions, the dynamic velocities and the dynamic accelerations of particles i and j.
+\vspace{+0.60em}
+\par \noindent $\vR$ is a position vector defined by two fixed points 1 and 2 of the reference frame S ($\vR = \vR_1 - \vR_2$) in which the dynamic acceleration of the point 1 is equal to the dynamic acceleration of the point 2 ($\bre\vA_1 = \bre\vA_2$)
+
+\newpage
+
+{\centering\subsection*{Reference Frames}}
+
+\vspace{+1.20em}
+
+\par The magnitudes $\bre\vR$, $\bre\vV$ and $\bre\vA$ are invariant under transformations between reference frames.
+\bigskip
+\par In any reference frame $\vR\rij = \bre\vR\rij$. Therefore, $\vR\rij$ is invariant under transformations between reference frames.
+\bigskip
+\par In any non-rotating reference frame $\vV\rij = \bre\vV\rij$ and $\vA\rij = \bre\vA\rij$. Therefore, $\vV\rij$ and $\vA\rij$ are invariant under transformations between non-rotating reference frames.
+\bigskip
+\par In any inertial reference frame $\vA = \bre\vA$. Therefore, $\vA$ is invariant under transformations between inertial reference frames. Any inertial reference frame is a non-rotating reference frame.
+\bigskip
+\par In the universal reference frame $\vR = \bre\vR$, $\vV = \bre\vV$ and $\vA = \bre\vA$. Therefore, the universal reference frame is an inertial reference frame.
+\bigskip
+\par The universal reference frame is a reference frame fixed to the center of mass of the universe (if the net force acting on the center of mass of the universe is always zero)
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Observations}}
+
+\vspace{+1.20em}
+
+\par The equations of motion are invariant under transformations between reference frames.
+\bigskip
+\par The equations of motion can be applied in any reference frame (rotating or non-rotating) (inertial or non-inertial) without the necessity of introducing fictitious forces.
+\bigskip
+\par The equations of motion would be valid even if Newton's third law of motion were false in an inertial reference frame.
+\bigskip
+\par The equations of motion would be valid even if Newton's three laws of motion were false in a non-inertial reference frame.
+\bigskip
+\par The equations of motion are transformation equations between reference frames, and they can be obtained from the general equation of motion ( \hspace{-0.45em} \textbf{A. Torassa}, General Equation of Motion \hspace{-0.45em} )
+
+\end{document}
+

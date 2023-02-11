@@ -1,0 +1,87 @@
+
+\documentclass[11pt]{article}
+%\documentclass[a4paper,11pt]{article}
+%\documentclass[letterpaper,11pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={127.0mm,165.1mm}}
+\geometry{totalwidth=106.0mm,totalheight=129.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Momento de Inercia}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\newcommand{\mM}{m}
+\newcommand{\EM}{M}
+\newcommand{\EI}{I}
+\newcommand{\ri}{_i}
+\newcommand{\dos}{^{\:2}}
+\newcommand{\ccc}{^{\:cm}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{24}{24}\selectfont Momento de Inercia}
+
+\bigskip \medskip
+
+{\fontsize{12}{12}\selectfont Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\footnotesize
+
+Licencia Creative Commons Atribución 3.0
+
+(2011) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+\small
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{90mm}{En este trabajo una ecuación para calcular el momento de inercia de un sistema de bipartículas es presentada.}
+
+\end{center}
+
+\normalsize
+
+\bigskip \medskip
+
+\noindent \hspace{+0.6em} El momento de inercia de un sistema de partículas, está dado por:
+\begin{eqnarray*}
+\EI\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \mM\ri^{\vphantom{\dos}} \, \vR\ri\dos
+\end{eqnarray*}
+
+\noindent \hspace{+0.6em} El momento de inercia de un sistema de bipartículas, está dado por:
+\begin{eqnarray*}
+\EI\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\ri^{\vphantom{\dos}} \, \mM\rj^{\vphantom{\dos}} \left( \vR\ri - \vR\rj \right)^2
+\end{eqnarray*}
+
+\noindent \hspace{+0.6em} Un sistema de partículas forma un sistema de bipartículas, y desde las ecuaciones anteriores se puede obtener la siguiente relación:
+\begin{eqnarray*}
+\EI\rij^{\vphantom{\ccc}} = \EM\ri^{\vphantom{\ccc}} \: \EI\ri\ccc
+\end{eqnarray*}
+
+\noindent donde $\EI\rij^{\vphantom{\ccc}}$ es el momento de inercia del sistema de bipartículas, $\EM\ri^{\vphantom{\ccc}}$ es la masa del sistema de partículas y $\EI\ri\ccc$ es el momento de inercia del sistema de partículas con respecto al centro de masa.
+
+\end{document}
+

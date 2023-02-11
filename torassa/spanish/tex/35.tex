@@ -1,0 +1,106 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={135.0mm,186.0mm}}
+\geometry{totalwidth=114.0mm,totalheight=150.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Una Definición de Trabajo}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\mW}{W}
+\newcommand{\mK}{K}
+\newcommand{\mU}{U}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rab}{_{ab}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Una Definición de Trabajo}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Licencia Creative Commons Atribución 3.0
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{90mm}{En mecánica clásica, este trabajo presenta una definición de trabajo, que puede ser usada en cualquier sistema de referencia (rotante o no rotante) (inercial o no inercial) sin necesidad de introducir fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.60em}
+
+{\centering\subsubsection*{Definición de Trabajo}}
+
+\vspace{+0.60em}
+
+\par Si consideramos dos partículas A y B entonces el trabajo total $\mW\rab$ realizado por las fuerzas $\vF\ra$ y $\vF\rb$ que actúan sobre las partículas A y B respectivamente es:
+\par \vspace{-0.30em}
+{\fontsize{8}{8}\selectfont\begin{eqnarray*}
+\mW\rab = \frac{1}{2} \hspace{+0.24em} \mM\ra\mM\rb \left[ \hspace{+0.12em} 2 \hspace{-0.12em} \int_1^{\hspace{+0.09em} 2} \hspace{-0.12em} \left(\frac{\vF\ra}{\mM\ra} - \frac{\vF\rb}{\mM\rb}\right) \cdot d(\vR\ra - \vR\rb) + \hspace{+0.03em} \Delta \left(\frac{\vF\ra}{\mM\ra} - \frac{\vF\rb}{\mM\rb}\right) \cdot (\vR\ra - \vR\rb) \hspace{+0.12em} \right]
+\end{eqnarray*}}
+\vspace{-0.60em}
+\par \noindent donde $\mM\ra$ y $\mM\rb$ son las masas de las partículas A y B y $\vR\ra$ y $\vR\rb$ son las posiciones de las partículas A y B.
+\medskip
+\par El trabajo total $\mW\rab$ es igual al cambio en la energía cinética.
+\vspace{+0.03em}
+{\fontsize{8}{8}\selectfont\begin{eqnarray*}
+\mW\rab = \Delta \hspace{+0.24em} \frac{1}{2} \hspace{+0.24em} \mM\ra\mM\rb \left[(\vV\ra - \vV\rb)^{\hspace{+0.03em} 2} + (\vA\ra - \vA\rb) \cdot (\vR\ra - \vR\rb)\right]
+\end{eqnarray*}}
+\vspace{-0.90em}
+\par \noindent donde $\vV\ra$ y $\vV\rb$ son las velocidades de las partículas A y B y $\vA\ra$ y $\vA\rb$ son las aceleraciones de las partículas A y B.
+\medskip
+\par Por lo tanto, la energía cinética $\mK\rab$ de las partículas A y B es:
+{\fontsize{8}{8}\selectfont\begin{eqnarray*}
+\mK\rab = \frac{1}{2} \hspace{+0.24em} \mM\ra\mM\rb \left[(\vV\ra - \vV\rb)^{\hspace{+0.03em} 2} + (\vA\ra - \vA\rb) \cdot (\vR\ra - \vR\rb)\right]
+\end{eqnarray*}}
+\vspace{-0.60em}
+\medskip
+\par Y la energía potencial $\mU\rab$ de las partículas A y B es:
+\vspace{+0.30em}
+{\fontsize{8}{8}\selectfont\begin{eqnarray*}
+\Delta \hspace{+0.24em} \mU\rab = - \frac{1}{2} \hspace{+0.24em} \mM\ra\mM\rb \left[ \hspace{+0.12em} 2 \hspace{-0.12em} \int_1^{\hspace{+0.09em} 2} \hspace{-0.12em} \left(\frac{\vF\ra}{\mM\ra} - \frac{\vF\rb}{\mM\rb}\right) \cdot d(\vR\ra - \vR\rb) + \hspace{+0.03em} \Delta \left(\frac{\vF\ra}{\mM\ra} - \frac{\vF\rb}{\mM\rb}\right) \cdot (\vR\ra - \vR\rb) \hspace{+0.12em} \right]
+\end{eqnarray*}}
+
+\end{document}
+

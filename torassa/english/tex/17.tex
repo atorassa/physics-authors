@@ -1,0 +1,83 @@
+
+\documentclass[11pt]{article}
+%\documentclass[a4paper,11pt]{article}
+%\documentclass[letterpaper,11pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={127.0mm,165.1mm}}
+\geometry{totalwidth=106.0mm,totalheight=129.0mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Moment of Inertia}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\newcommand{\mM}{m}
+\newcommand{\EM}{M}
+\newcommand{\EI}{I}
+\newcommand{\ri}{_i}
+\newcommand{\dos}{^{\:2}}
+\newcommand{\ccc}{^{\:cm}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{24}{24}\selectfont Moment of Inertia}
+
+\bigskip \medskip
+
+{\fontsize{12}{12}\selectfont Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2011) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{84mm}{In this paper an equation to calculate the moment of inertia of a system of biparticles is presented.}
+
+\end{center}
+
+\normalsize
+
+\bigskip \medskip
+
+\noindent \hspace{+1.5em} The moment of inertia of a system of particles, is given by:
+\begin{eqnarray*}
+\EI\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \mM\ri^{\vphantom{\dos}} \, \vR\ri\dos
+\end{eqnarray*}
+
+\noindent \hspace{+1.5em} The moment of inertia of a system of biparticles, is given by:
+\begin{eqnarray*}
+\EI\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\ri^{\vphantom{\dos}} \, \mM\rj^{\vphantom{\dos}} \left( \vR\ri - \vR\rj \right)^2
+\end{eqnarray*}
+
+\noindent \hspace{+1.5em} A system of particles forms a system of biparticles, and from the above equations the following relation can be obtained:
+\begin{eqnarray*}
+\EI\rij^{\vphantom{\ccc}} = \EM\ri^{\vphantom{\ccc}} \: \EI\ri\ccc
+\end{eqnarray*}
+
+\noindent where $\EI\rij^{\vphantom{\ccc}}$ is the moment of inertia of the system of biparticles, $\EM\ri^{\vphantom{\ccc}}$ is the mass of the system of particles, and $\EI\ri\ccc$ is the moment of inertia of the system of particles relative to the center of mass.
+
+\end{document}
+

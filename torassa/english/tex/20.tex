@@ -1,0 +1,420 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={138.0mm,168.0mm}}
+\geometry{totalwidth=117.0mm,totalheight=132.0mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+\usepackage{chngpage}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Classical Dynamics of Biparticles}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\EM}{M}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rc}{_c}
+\newcommand{\rs}{_s}
+\newcommand{\ri}{_i}
+\newcommand{\rT}{_T}
+\newcommand{\rab}{_{ab}}
+\newcommand{\rac}{_{ac}}
+\newcommand{\rbc}{_{bc}}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\til}{\breve}
+\newcommand{\dos}{^{\,2}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\VR}{\mathbf{R}}
+\newcommand{\VV}{\mathbf{V}}
+\newcommand{\VA}{\mathbf{A}}
+\newcommand{\ER}{\mathrm{R}}
+\newcommand{\EV}{\mathrm{V}}
+\newcommand{\EA}{\mathrm{A}}
+\newcommand{\des}{\mathring}
+\newcommand{\nK}{{\scriptstyle K}}
+\newcommand{\rt}{\hspace{-0.30em}'}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+\newcommand{\daa}{\hspace{-0.36em}^2\hspace{+0.06em}}
+\newcommand{\dab}{\hspace{-0.72em}^2\hspace{+0.36em}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}\,}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Classical Dynamics of Biparticles}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2013) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{84mm}{This paper presents a classical dynamics of biparticles, which can be applied in any non-rotating reference frame (inertial or non-inertial) without the necessity of introducing fictitious forces.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsubsection*{Definitions}}
+
+\vspace{+1.20em}
+
+\begin{center}
+\begin{tabular}{ll}
+$\vR\rab = (\vR\ra - \vR\rb)$ = position & $\til\vR\rab = (\til\vR\ra - \til\vR\rb)$ = non-kinetic position \\ \\
+$\vV\rab = (\vV\ra - \vV\rb)$ = velocity & $\til\vV\rab = (\til\vV\ra - \til\vV\rb)$ = non-kinetic velocity \\ \\
+$\vA\rab = (\vA\ra - \vA\rb)$ = acceleration & $\til\vA\rab = (\til\vA\ra - \til\vA\rb)$ = non-kinetic acceleration
+\end{tabular}
+\end{center}
+
+{\centering\subsubsection*{Relations}}
+
+\vspace{+1.20em}
+
+\begin{center}
+\begin{tabular}{ccc}
+\hspace{+0.30em} $\til\vA\rab = \vF\rab/\mM\rab$ & $\rightarrow$ & $\til\vA\rab\dab = (\vF\rab/\mM\rab)\dos$ \\ \\
+\hspace{+0.30em} $\til\vV\rab = \int \til\vA\rab \; d\mT$ & $\rightarrow$ & $\til\vV\rab = \int (\vF\rab/\mM\rab) \; d\mT$ \\ \\
+\hspace{+0.30em} $\med\til\vV\rab\dab = \int \til\vA\rab \; d\til\vR\rab$ & $\rightarrow$ & $\med\til\vV\rab\dab = \int (\vF\rab/\mM\rab) \; d\til\vR\rab$ \\ \\
+\hspace{+0.30em} $\mM\rab = \mM\ra\mM\rb$ & & $\vF\rab = (\vF\ra\mM\rb - \vF\rb\mM\ra)$
+\end{tabular}
+\end{center}
+
+\newpage
+
+{\centering\subsubsection*{Principles}}
+
+\vspace{+1.20em}
+
+\begin{adjustwidth}{-1.80mm}{-1.80mm}
+
+\begin{center}
+\begin{tabular}{ccccc}
+{\makebox(6,30){(1)}} & {\framebox(132,30){$\mM\rab\vR\rab - \mM\rab\til\vR\rab = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\rab\vR\rab\dab - \med\mM\rab\til\vR\rab\dab = 0$}} & {\makebox(6,30){(2)}} \\
+& {\makebox(132,21){$\downarrow$}} & & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(3)}} & {\framebox(132,30){$\mM\rab\vV\rab - \mM\rab\til\vV\rab = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\rab\vV\rab\dab - \med\mM\rab\til\vV\rab\dab = 0$}} & {\makebox(6,30){(4)}} \\
+& {\makebox(132,21){$\downarrow$}} & {\makebox(6,21){$\nearrow$}} & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(5)}} & {\framebox(132,30){$\mM\rab\vA\rab - \mM\rab\til\vA\rab = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\rab\vA\rab\dab - \med\mM\rab\til\vA\rab\dab = 0$}} & {\makebox(6,30){(6)}}
+\end{tabular}
+\end{center}
+
+\vspace{+1.50em}
+
+\par \hspace{+0.69em} Substituting the relations into the principles, we obtain:
+
+\vspace{+1.80em}
+
+\begin{center}
+\begin{tabular}{ccccc}
+{\makebox(6,30){(1)}} & {\framebox(132,30){$\mM\rab\vR\rab - \mM\rab\til\vR\rab = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\rab\vR\rab\dab - \med\mM\rab\til\vR\rab\dab = 0$}} & {\makebox(6,30){(2)}} \\
+& {\makebox(132,21){$\downarrow$}} & & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(3)}} & {\framebox(132,30){$\mM\rab\vV\rab - \int \vF\rab \; d\mT = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\rab\vV\rab\dab - \int \vF\rab \; d\til\vR\rab = 0$}} & {\makebox(6,30){(4)}} \\
+& {\makebox(132,21){$\downarrow$}} & {\makebox(6,21){$\nearrow$}} & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(5)}} & {\framebox(132,30){$\mM\rab\vA\rab - \vF\rab = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\rab\vA\rab\dab - \med(\vF\rab\dab/\mM\rab) = 0$}} & {\makebox(6,30){(6)}}
+\end{tabular}
+\end{center}
+
+\end{adjustwidth}
+
+\newpage
+
+{\centering\subsubsection*{Observations}}
+
+\vspace{+0.60em}
+
+\par A system of particles forms a system of biparticles. For example, the system of particles A, B, C and D forms the system of biparticles AB, AC, AD, BC, BD \hbox {and CD}.
+\medskip
+\par The dynamics of particles is obtained from the dynamics of biparticles if we only consider the biparticles that have the same particle (Annex A)
+\medskip
+\par The principles are the transformation equations between a reference frame S and a non-kinetic reference frame $\til\mathrm S$. According to this paper, an observer S uses a reference frame S and a non-kinetic reference frame $\til\mathrm S$.
+\medskip
+\par The non-kinetic acceleration is related to the non-kinetic forces of interaction (gravitational force, electromagnetic force, etc.) However, the acceleration is related to the kinetic force of interaction (Annex B)
+\medskip
+\par Finally, from equation (5) it follows that the acceleration $\vA\ra$ of a particle A relative to a reference frame S fixed to a particle S, is given by:
+\begin{eqnarray*}
+\vA\ra = \frac{\vF\ra}{\mM\ra} - \frac{\vF\rs}{\mM\rs}
+\end{eqnarray*}
+\noindent where $\vF\ra$ is the net (non-kinetic) force acting on particle A, $\mM\ra$ is the mass of \hbox {particle A}, $\vF\rs$ is the net (non-kinetic) force acting on particle S, and $\mM\rs$ is the mass of particle S.
+
+\vspace{+0.90em}
+
+{\centering\subsubsection*{Bibliography}}
+
+\vspace{+0.30em}
+
+\par \textbf{A. Einstein}, Relativity: The Special and General Theory.
+\bigskip
+\par \textbf{E. Mach}, The Science of Mechanics.
+\bigskip
+\par \textbf{H. Goldstein}, Classical Mechanics.
+
+\newpage
+
+{\centering\subsubsection*{Annex A}}
+
+\vspace{+0.60em}
+
+\par If we consider a system of biparticles AB, AC and BC, we have:
+\begin{eqnarray*}
+\mM\rab\vA\rab + \mM\rac\vA\rac + \mM\rbc\vA\rbc - \vF\rab - \vF\rac - \vF\rbc = 0
+\end{eqnarray*}
+\par Considering only the biparticles that have particle C, then it follows:
+\begin{eqnarray*}
+\mM\rac\vA\rac + \mM\rbc\vA\rbc - \vF\rac - \vF\rbc = 0
+\end{eqnarray*}
+\par Substituting the definitions and the relations into the above equation, we obtain:
+\begin{eqnarray*}
+\mM\ra\mM\rc(\vA\ra - \vA\rc) + \mM\rb\mM\rc(\vA\rb - \vA\rc) - (\vF\ra\mM\rc - \vF\rc\mM\ra) - (\vF\rb\mM\rc - \vF\rc\mM\rb) = 0
+\end{eqnarray*}
+\par Dividing by $\mM\rc$, and assuming that observer C fixed to particle C ($\vA\rc = 0$ relative to observer C) is inertial $(\vF\rc = 0)$, finally yields:
+\begin{eqnarray*}
+\mM\ra\vA\ra + \mM\rb\vA\rb - \vF\ra - \vF\rb = 0
+\end{eqnarray*}
+
+\vspace{+0.60em}
+
+{\centering\subsubsection*{Annex B}}
+
+\vspace{+0.60em}
+
+\par The kinetic force $\vF\nK\rab$ exerted on a particle A by another particle B, caused by the interaction between particle A and particle B, is given by:
+\begin{eqnarray*}
+\vF\nK\rab = \frac{\mM\ra\mM\rb}{\EM\rT}(\vA\ra - \vA\rb)
+\end{eqnarray*}
+\noindent where $\mM\ra$ is the mass of particle A, $\mM\rb$ is the mass of particle B, $\vA\ra$ is the acceleration of particle A, $\vA\rb$ is the acceleration of particle B, and $\EM\rT$ is the total mass of the Universe.
+\par From the above equation it follows that the net kinetic force $\vF\nK\ra$ acting on a particle A, is given by:
+\begin{eqnarray*}
+\vF\nK\ra = \mM\ra(\vA\ra - \vA\rcm)
+\end{eqnarray*}
+\noindent where $\mM\ra$ is the mass of particle A, $\vA\ra$ is the acceleration of particle A, and $\vA\rcm$ is the acceleration of the center of mass of the Universe.
+
+\newpage
+
+\begin{center}
+{\Large Classical Dynamics of Biparticles II}
+\end{center}
+
+\vspace{-0.30em}
+
+{\centering\subsubsection*{Definitions}}
+
+\vspace{+1.20em}
+
+\begin{center}
+\begin{tabular}{l}
+$\vR\rab = (\vR\ra - \vR\rb)$ = kinetic position \\
+$\vV\rab = (\vV\ra - \vV\rb)$ = kinetic velocity \\
+$\vA\rab = (\vA\ra - \vA\rb)$ = kinetic acceleration \\ \\
+$\til\vR\rab = (\til\vR\ra - \til\vR\rb)$ = non-kinetic position \\
+$\til\vV\rab = (\til\vV\ra - \til\vV\rb)$ = non-kinetic velocity \\
+$\til\vA\rab = (\til\vA\ra - \til\vA\rb)$ = non-kinetic acceleration \\ \\
+$\des\vR\rab = (\vR\rab - \til\vR\rab)$ = total position \\
+$\des\vV\rab = (\vV\rab - \til\vV\rab)$ = total velocity \\
+$\des\vA\rab = (\vA\rab - \til\vA\rab)$ = total acceleration
+\end{tabular}
+\end{center}
+
+{\centering\subsubsection*{Relations}}
+
+\vspace{+1.20em}
+
+\begin{center}
+\begin{tabular}{ccc}
+\hspace{+0.30em} $\des\vA\rab = \des\vF\rab/\mM\rab$ & $\rightarrow$ & $\des\vA\rab\dab = (\des\vF\rab/\mM\rab)\dos$ \\ \\
+\hspace{+0.30em} $\des\vV\rab = \int \des\vA\rab \; d\mT$ & $\rightarrow$ & $\des\vV\rab = \int (\des\vF\rab/\mM\rab) \; d\mT$ \\ \\
+\hspace{+0.30em} $\med\des\vV\rab\dab = \int \des\vA\rab \; d\des\vR\rab$ & $\rightarrow$ & $\med\des\vV\rab\dab = \int (\des\vF\rab/\mM\rab) \; d\des\vR\rab$ \\ \\
+\hspace{+0.30em} $\mM\rab = \mM\ra\mM\rb$ & & $\des\vF\rab = (\vF\rab - \til\vF\rab)$ \\ \\
+\hspace{+0.30em} $\vF\rab = (\vF\ra\mM\rb - \vF\rb\mM\ra)$ & & $\vF$ = net kinetic force \\ \\
+\hspace{+0.30em} $\til\vF\rab = (\til\vF\ra\mM\rb - \til\vF\rb\mM\ra)$ & & $\til\vF$ = net non-kinetic force
+\end{tabular}
+\end{center}
+
+\newpage
+
+{\centering\subsubsection*{Principles}}
+
+\vspace{+1.20em}
+
+\begin{adjustwidth}{-1.80mm}{-1.80mm}
+
+\begin{center}
+\begin{tabular}{ccccc}
+{\makebox(6,30){(1)}} & {\framebox(132,30){$\mM\rab\des\vR\rab = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\rab\des\vR\rab\dab = 0$}} & {\makebox(6,30){(2)}} \\
+& {\makebox(132,21){$\downarrow$}} & & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(3)}} & {\framebox(132,30){$\mM\rab\des\vV\rab = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\rab\des\vV\rab\dab = 0$}} & {\makebox(6,30){(4)}} \\
+& {\makebox(132,21){$\downarrow$}} & {\makebox(6,21){$\nearrow$}} & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(5)}} & {\framebox(132,30){$\mM\rab\des\vA\rab = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\rab\des\vA\rab\dab = 0$}} & {\makebox(6,30){(6)}}
+\end{tabular}
+\end{center}
+
+\vspace{+1.50em}
+
+\par \hspace{+0.69em} Substituting the relations into the principles, we obtain:
+
+\vspace{+1.80em}
+
+\begin{center}
+\begin{tabular}{ccccc}
+{\makebox(6,30){(1)}} & {\framebox(132,30){$\mM\rab\des\vR\rab = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\rab\des\vR\rab\dab = 0$}} & {\makebox(6,30){(2)}} \\
+& {\makebox(132,21){$\downarrow$}} & & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(3)}} & {\framebox(132,30){$\int \des\vF\rab \; d\mT = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\int \des\vF\rab \; d\des\vR\rab = 0$}} & {\makebox(6,30){(4)}} \\
+& {\makebox(132,21){$\downarrow$}} & {\makebox(6,21){$\nearrow$}} & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(5)}} & {\framebox(132,30){$\des\vF\rab = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med(\des\vF\rab\dab/\mM\rab) = 0$}} & {\makebox(6,30){(6)}}
+\end{tabular}
+\end{center}
+
+\end{adjustwidth}
+
+\newpage
+
+\begin{center}
+{\Large Classical Dynamics of Particles II}
+\end{center}
+
+\vspace{-0.30em}
+
+{\centering\subsubsection*{Definitions}}
+
+\vspace{+1.20em}
+
+\begin{center}
+\begin{tabular}{l}
+$\vR\ra\rt = (\vR\ra - \vR\rs)$ = kinetic position \\
+$\vV\ra\rt = (\vV\ra - \vV\rs)$ = kinetic velocity \\
+$\vA\ra\rt = (\vA\ra - \vA\rs)$ = kinetic acceleration \\ \\
+$\til\vR\ra\rt = (\til\vR\ra - \til\vR\rs)$ = non-kinetic position \\
+$\til\vV\ra\rt = (\til\vV\ra - \til\vV\rs)$ = non-kinetic velocity \\
+$\til\vA\ra\rt = (\til\vA\ra - \til\vA\rs)$ = non-kinetic acceleration \\ \\
+$\des\vR\ra = (\vR\ra\rt - \til\vR\ra\rt)$ = total position \\
+$\des\vV\ra = (\vV\ra\rt - \til\vV\ra\rt)$ = total velocity \\
+$\des\vA\ra = (\vA\ra\rt - \til\vA\ra\rt)$ = total acceleration
+\end{tabular}
+\end{center}
+
+{\centering\subsubsection*{Relations}}
+
+\vspace{+1.20em}
+
+\begin{center}
+\begin{tabular}{ccc}
+\hspace{+0.30em} $\des\vA\ra = \des\vF\ra/\mM\ra$ & $\rightarrow$ & $\des\vA\ra\daa = (\des\vF\ra/\mM\ra)\dos$ \\ \\
+\hspace{+0.30em} $\des\vV\ra = \int \des\vA\ra \; d\mT$ & $\rightarrow$ & $\des\vV\ra = \int (\des\vF\ra/\mM\ra) \; d\mT$ \\ \\
+\hspace{+0.30em} $\med\des\vV\ra\daa = \int \des\vA\ra \; d\des\vR\ra$ & $\rightarrow$ & $\med\des\vV\ra\daa = \int (\des\vF\ra/\mM\ra) \; d\des\vR\ra$ \\ \\
+\hspace{+0.30em} $\des\vF\ra = (\vF\ra\rt - \til\vF\ra\rt)$ & & S = reference frame \\ \\
+\hspace{+0.30em} $\vF\ra\rt = (\vF\ra\mM\rs - \vF\rs\mM\ra)/\mM\rs$ & & $\vF$ = net kinetic force \\ \\
+\hspace{+0.30em} $\til\vF\ra\rt = (\til\vF\ra\mM\rs - \til\vF\rs\mM\ra)/\mM\rs$ & & $\til\vF$ = net non-kinetic force
+\end{tabular}
+\end{center}
+
+\newpage
+
+{\centering\subsubsection*{Principles}}
+
+\vspace{+1.20em}
+
+\begin{adjustwidth}{-1.80mm}{-1.80mm}
+
+\begin{center}
+\begin{tabular}{ccccc}
+{\makebox(6,30){(1)}} & {\framebox(132,30){$\mM\ra\des\vR\ra = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\ra\des\vR\ra\daa = 0$}} & {\makebox(6,30){(2)}} \\
+& {\makebox(132,21){$\downarrow$}} & & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(3)}} & {\framebox(132,30){$\mM\ra\des\vV\ra = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\ra\des\vV\ra\daa = 0$}} & {\makebox(6,30){(4)}} \\
+& {\makebox(132,21){$\downarrow$}} & {\makebox(6,21){$\nearrow$}} & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(5)}} & {\framebox(132,30){$\mM\ra\des\vA\ra = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\ra\des\vA\ra\daa = 0$}} & {\makebox(6,30){(6)}}
+\end{tabular}
+\end{center}
+
+\vspace{+1.50em}
+
+\par \hspace{+0.69em} Substituting the relations into the principles, we obtain:
+
+\vspace{+1.80em}
+
+\begin{center}
+\begin{tabular}{ccccc}
+{\makebox(6,30){(1)}} & {\framebox(132,30){$\mM\ra\des\vR\ra = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med\mM\ra\des\vR\ra\daa = 0$}} & {\makebox(6,30){(2)}} \\
+& {\makebox(132,21){$\downarrow$}} & & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(3)}} & {\framebox(132,30){$\int \des\vF\ra \; d\mT = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\int \des\vF\ra \; d\des\vR\ra = 0$}} & {\makebox(6,30){(4)}} \\
+& {\makebox(132,21){$\downarrow$}} & {\makebox(6,21){$\nearrow$}} & {\makebox(132,21){$\downarrow$}} & \\
+{\makebox(6,30){(5)}} & {\framebox(132,30){$\des\vF\ra = 0$}} & {\makebox(6,30){$\rightarrow$}} & {\framebox(132,30){$\med(\des\vF\ra\daa/\mM\ra) = 0$}} & {\makebox(6,30){(6)}}
+\end{tabular}
+\end{center}
+
+\end{adjustwidth}
+
+\newpage
+
+\begin{center}
+{\Large General Principles}
+\end{center}
+
+\vspace{+0.60em}
+
+\begin{center}
+\begin{tabular}{lll}
+Definitions & Particles & Biparticles \hspace{-0.6em} \vspace{+0.9em} \\
+Mass & $\hspace{-0.06em}\EM\ri = \sum_{\scriptscriptstyle i} \; \mM\ri$ & $\hspace{-0.06em}\EM\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij$ \hspace{-0.6em} \vspace{+0.9em} \\
+Total vector position & $\des\VR\ri = \sum_{\scriptscriptstyle i} \; \mM\ri\des\vR\ri \, / \EM\ri$ & $\des\VR\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij\des\vR\rij \, / \EM\rij$ \hspace{-0.6em} \vspace{+0.3em} \\
+Total vector velocity & $\des\VV\ri = \sum_{\scriptscriptstyle i} \; \mM\ri\des\vV\ri \, / \EM\ri$ & $\des\VV\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij\des\vV\rij \, / \EM\rij$ \hspace{-0.6em} \vspace{+0.3em} \\
+Total vector acceleration & $\des\VA\ri = \sum_{\scriptscriptstyle i} \; \mM\ri\des\vA\ri \, / \EM\ri$ & $\des\VA\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij\des\vA\rij \, / \EM\rij$ \hspace{-0.6em} \vspace{+0.9em} \\
+Total scalar position & $\des\ER\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \med\mM\ri^{\vphantom{\dos}}\des\vR\ri\dos / \EM\ri^{\vphantom{\dos}}$ & $\des\ER\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \med\mM\rij^{\vphantom{\dos}}\des\vR\rij\dos \, / \EM\rij^{\vphantom{\dos}}$ \hspace{-0.6em} \vspace{+0.3em} \\
+Total scalar velocity & $\des\EV\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \med\mM\ri^{\vphantom{\dos}}\des\vV\ri\dos / \EM\ri^{\vphantom{\dos}}$ & $\des\EV\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \med\mM\rij^{\vphantom{\dos}}\des\vV\rij\dos \, / \EM\rij^{\vphantom{\dos}}$ \hspace{-0.6em} \vspace{+0.3em} \\
+Total scalar acceleration & $\des\EA\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \med\mM\ri^{\vphantom{\dos}}\des\vA\ri\dos / \EM\ri^{\vphantom{\dos}}$ & $\des\EA\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \med\mM\rij^{\vphantom{\dos}}\des\vA\rij\dos \, / \EM\rij^{\vphantom{\dos}}$ \hspace{-0.6em} \vspace{+0.9em} \\
+\end{tabular}
+\end{center}
+
+\vspace{-0.90em}
+
+{\centering\subsubsection*{General Principles}}
+
+\vspace{+1.50em}
+
+\begin{adjustwidth}{-1.80mm}{-1.80mm}
+
+\begin{center}
+\begin{tabular}{ccccccc}
+{\framebox(54,30){$\des\VR\ri = 0$}} & {\makebox(9,30){$\rightarrow$}} & {\framebox(54,30){$\des\ER\ri = 0$}} & \hspace{+1.20em} & {\framebox(54,30){$\des\VR\rij = 0$}} & {\makebox(9,30){$\rightarrow$}} & {\framebox(54,30){$\des\ER\rij = 0$}} \\
+{\makebox(54,21){$\downarrow$}} & & {\makebox(54,21){$\downarrow$}} & \hspace{+1.20em} & {\makebox(54,21){$\downarrow$}} & & {\makebox(54,21){$\downarrow$}} \\
+{\framebox(54,30){$\des\VV\ri = 0$}} & {\makebox(9,30){$\rightarrow$}} & {\framebox(54,30){$\des\EV\ri = 0$}} & \hspace{+1.20em} & {\framebox(54,30){$\des\VV\rij = 0$}} & {\makebox(9,30){$\rightarrow$}} & {\framebox(54,30){$\des\EV\rij = 0$}} \\
+{\makebox(54,21){$\downarrow$}} & {\makebox(9,21){$\nearrow$}} & {\makebox(54,21){$\downarrow$}} & \hspace{+1.20em} & {\makebox(54,21){$\downarrow$}} & {\makebox(9,21){$\nearrow$}} & {\makebox(54,21){$\downarrow$}} \\
+{\framebox(54,30){$\des\VA\ri = 0$}} & {\makebox(9,30){$\rightarrow$}} & {\framebox(54,30){$\des\EA\ri = 0$}} & \hspace{+1.20em} & {\framebox(54,30){$\des\VA\rij = 0$}} & {\makebox(9,30){$\rightarrow$}} & {\framebox(54,30){$\des\EA\rij = 0$}}
+\end{tabular}
+\end{center}
+
+\end{adjustwidth}
+
+\end{document}
+

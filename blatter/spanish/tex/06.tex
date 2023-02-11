@@ -1,0 +1,380 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={153.0mm,219.3mm}}
+\geometry{totalwidth=132.3mm,totalheight=186.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Una Mecánica Clásica Alternativa}}
+\hypersetup{pdfauthor={Antonio A. Blatter}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Una Mecánica Clásica Alternativa}
+
+\bigskip \medskip
+
+{\large Antonio A. Blatter}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2015) Buenos Aires
+
+\smallskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{107.40mm}{Este trabajo presenta una mecánica clásica alternativa que es invariante bajo transformaciones entre sistemas de referencia inerciales y no inerciales y que puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir las fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.50em}
+
+\par \bigskip {\centering\subsection*{Introducción}}
+
+\par \bigskip \noindent La posición inercial ${\mathbf{r}}_i$, la velocidad inercial ${\mathbf{v}}_i$ y la aceleración inercial ${\mathbf{a}}_{\hspace{+0.045em}i}$ de una partícula $i$, están dadas por:
+
+\par \bigskip \hspace{+0.75em} ${\mathbf{r}}_i \,\doteq\, ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \bigskip \hspace{+0.75em} ${\mathbf{v}}_i \,\doteq\, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \bigskip \hspace{+0.75em} ${\mathbf{a}}_{\hspace{+0.045em}i} \,\doteq\, ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \bigskip \noindent {\small $( \, {\mathbf{v}}_i \doteq d(\hspace{+0.090em}{\mathbf{r}}_i\hspace{+0.090em})/dt \, )$} y {\small $( \, {\mathbf{a}}_{\hspace{+0.045em}i} \doteq d^2(\hspace{+0.090em}{\mathbf{r}}_i\hspace{+0.090em})/dt^2 \, )$} donde ${\vec{\mathit{r}}}_i$ es el vector de posición de la partícula $i$, ${\vec{\mathit{R}}}$ es el vector de posición del centro de masa del free-system y ${\vec{\omega}}$ es el vector de velocidad angular del free-system (ver Anexo I\hspace{+0.120em})
+
+\par \bigskip \noindent La fuerza neta ${\mathbf{F}}_i$ que actúa sobre una partícula $i$ ($m_i$) produce una aceleración \hbox {inercial ${\mathbf{a}}_{\hspace{+0.045em}i}$}, según la siguiente ecuación:
+
+\par \bigskip \hspace{+0.75em} ${\mathbf{F}}_i \,=\, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip \noindent Los sistemas de referencia inerciales y no inerciales no deben introducir las fuerzas ficticias sobre ${\mathbf{F}}_i$.
+
+\par \bigskip \noindent Las magnitudes $[ \, {\mathit{m}}_i$, ${\mathbf{r}}_i$, ${\mathbf{v}}_i$, ${\mathbf{a}}_{\hspace{+0.045em}i}$ y ${\mathbf{F}}_i \, ]$ son invariantes bajo transformaciones entre \hbox {sistemas} de referencia inerciales y no inerciales.
+
+\par \bigskip \noindent Un sistema de referencia S es no rotante si la velocidad angular ${\vec{\omega}}$ del free-system respecto a S es igual a cero y además S es inercial si la aceleración ${\vec{\mathit{A}}}$ del centro de masa del free-system respecto a S es igual a cero.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Bipartícula}}
+
+\par \bigskip \noindent Un par de partículas es una bipartícula. El sistema de partículas $\{${\hspace{+0.12em}\it a, b, c\hspace{+0.18em}} y {\it d} $\}$ puede formar el sistema de bipartículas $\{${\hspace{+0.12em}\it ab, ac, ad, bc, bd\hspace{+0.18em}} y {\it cd} $\}$ o también el sistema de bipartículas $\{${\hspace{+0.12em}\it ad, bd\hspace{+0.18em}} y {\it cd} $\}$
+
+\par \bigskip \noindent La masa $m_{\hspace{+0.060em}ij}$ de una bipartícula $ij$, está dada por: $m_{\hspace{+0.060em}ij} \,\doteq\, m_i \, m_j / M$, donde $m_i$ es la masa de las partícula $i$, $m_j$ es la masa de la partícula $j$\hspace{+0.045em} y $M$ {\small $(\, \doteq \sum_k \, m_k)$} es la masa del sistema de partículas en observación.
+
+\par \bigskip \noindent La posición inercial ${\mathbf{r}}_{\hspace{+0.060em}ij}$, la velocidad inercial ${\mathbf{v}}_{\hspace{+0.060em}ij}$ y la aceleración inercial ${\mathbf{a}}_{\hspace{+0.060em}ij}$ de una bipartícula $ij$, están dadas por:
+
+\par \bigskip \hspace{+0.75em} ${\mathbf{r}}_{\hspace{+0.060em}ij} \,\doteq\, ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j)$
+
+\par \bigskip \hspace{+0.75em} ${\mathbf{v}}_{\hspace{+0.060em}ij} \,\doteq\, ({\vec{\mathit{v}}}_i - {\vec{\mathit{v}}}_j) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j)$
+
+\par \bigskip \hspace{+0.75em} ${\mathbf{a}}_{\hspace{+0.060em}ij} \,\doteq\, ({\vec{\mathit{a}}}_i - {\vec{\mathit{a}}}_j) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - {\vec{\mathit{v}}}_j) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j)$
+
+\par \bigskip \noindent {\small $( \, {\mathbf{v}}_{\hspace{+0.060em}ij} \doteq d(\hspace{+0.090em}{\mathbf{r}}_{\hspace{+0.060em}ij}\hspace{+0.090em})/dt \, )$} y {\small $( \, {\mathbf{a}}_{\hspace{+0.060em}ij} \doteq d^2(\hspace{+0.090em}{\mathbf{r}}_{\hspace{+0.060em}ij}\hspace{+0.090em})/dt^2 \, )$} donde ${\vec{\mathit{r}}}_i$ es el vector de posición de la \hbox {partícula $i$}, ${\vec{\mathit{r}}}_j$ es el vector de posición de la partícula $j$ y ${\vec{\omega}}$ es el vector de velocidad angular del free-system (ver Anexo II\hspace{+0.120em})
+
+\par \bigskip \noindent La fuerza neta ${\mathbf{F}}_{\hspace{+0.060em}ij}$ que actúa sobre una bipartícula $ij$ ($m_{\hspace{+0.060em}ij}$) produce una aceleración \hbox {inercial ${\mathbf{a}}_{\hspace{+0.060em}ij}$}, según la siguiente ecuación:
+
+\par \bigskip \hspace{+0.75em} ${\mathbf{F}}_{\hspace{+0.060em}ij} \,\doteq\, m_{\hspace{+0.060em}ij} \, (\hspace{+0.075em}{\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j\hspace{+0.045em}) \,=\, m_{\hspace{+0.060em}ij} \, (\hspace{+0.075em}{\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_j\hspace{+0.045em}) \,=\, m_{\hspace{+0.060em}ij} \, {\mathbf{a}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \noindent donde ${\mathbf{F}}_i$ es la fuerza neta que actúa sobre la partícula $i$, ${\mathbf{F}}_j$ es la fuerza neta que actúa sobre la partícula $j$, $m_i$ es la masa de las partícula $i$, $m_j$ es la masa de la \hbox {partícula $j$}, \hbox {${\mathbf{a}}_{\hspace{+0.045em}i}$ es} la aceleración inercial de la partícula $i$ y ${\mathbf{a}}_j$ es la aceleración inercial de la \hbox {partícula $j$}.
+
+\par \bigskip \noindent Los sistemas de referencia inerciales y no inerciales no deben introducir las fuerzas ficticias sobre ${\mathbf{F}}_i$ ni sobre ${\mathbf{F}}_j$.
+
+\par \bigskip \noindent Las magnitudes $[ \, {\mathit{m}}_{\hspace{+0.060em}ij}$, ${\mathbf{r}}_{\hspace{+0.060em}ij}$, ${\mathbf{v}}_{\hspace{+0.060em}ij}$, ${\mathbf{a}}_{\hspace{+0.060em}ij}$ y ${\mathbf{F}}_{\hspace{+0.060em}ij} \, ]$ son invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales.
+
+\par \bigskip \noindent Si la partícula $j$ de una bipartícula $ij$ es el centro de masa del free-system (${\mathbf{F}}_j=0$ y ${\mathbf{a}}_j=0$) entonces de la última ecuación de arriba se obtiene:
+
+\par \bigskip \hspace{+0.75em} ${\mathbf{F}}_i \,=\, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip \noindent Por lo tanto, se puede considerar que la dinámica de la partícula es un caso especial de la dinámica de la bipartícula.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Dinámica Lineal}}
+
+\par \bigskip \noindent La dinámica lineal para una partícula $m$ o para una bipartícula $m$ (debiéndose agregar el subíndice <<$i$>> o el subíndice <<$ij$>> a todas las magnitudes y en todas las ecuaciones según sea el caso) está dada por:
+
+\par \bigskip\bigskip \hspace{-2.40em} \begin{tabular}{lll}
+Momento {\small L1} & \hspace{0.33em} & ${\mathbf{P}}_{\scriptscriptstyle{\mathrm{L1}}} ~\doteq~ m \, [ \, ({\mathbf{v}}) \, ]$ \vspace{+0.99em} \\
+Momento {\small L2} & \hspace{0.33em} & ${\mathbf{P}}_{\scriptscriptstyle{\mathrm{L2}}} ~\doteq~ m \, [ \, ({\mathbf{v}}) \, |\hspace{+0.150em}{\mathbf{r}}\hspace{+0.150em}| \, ]$ \vspace{+0.99em} \\
+Momento {\small L3} & \hspace{0.33em} & ${\mathbf{P}}_{\scriptscriptstyle{\mathrm{L3}}} ~\doteq~ m \, [ \, ({\mathbf{v}}) \hspace{+0.045em}/\hspace{+0.090em} |\hspace{+0.150em}{\mathbf{r}}\hspace{+0.150em}| \, ]$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Cinética {\small L1} & \hspace{0.33em} & ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{L1}}} ~\doteq~ \med \; m \, [ \, ({\mathbf{v}})^2 \, ]$ \vspace{+0.99em} \\
+Energía Cinética {\small L2} & \hspace{0.33em} & ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{L2}}} ~\doteq~ \med \; m \, [ \, ({\mathbf{v}})^2 \, (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ]$ \vspace{+0.99em} \\
+Energía Cinética {\small L3} & \hspace{0.33em} & ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{L3}}} ~\doteq~ \med \; m \, [ \, ({\mathbf{v}})^2 \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ]$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Potencial {\small L1} & \hspace{0.33em} & ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{L1}}} ~\doteq\, - \; [ \, (\int {\mathbf{F}} \cdot d{\mathbf{r}}) \, ]$ \vspace{+0.99em} \\
+Energía Potencial {\small L2} & \hspace{0.33em} & ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{L2}}} ~\doteq\, - \; [ \, (\int {\mathbf{F}} \cdot d{\mathbf{r}}) \, (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ]$ \vspace{+0.99em} \\
+Energía Potencial {\small L3} & \hspace{0.33em} & ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{L3}}} ~\doteq\, - \; [ \, (\int {\mathbf{F}} \cdot d{\mathbf{r}}) \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ]$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Mecánica {\small L1} & \hspace{0.33em} & ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{L1}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{L1}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{L1}}}$ \vspace{+0.99em} \\
+Energía Mecánica {\small L2} & \hspace{0.33em} & ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{L2}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{L2}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{L2}}}$ \vspace{+0.99em} \\
+Energía Mecánica {\small L3} & \hspace{0.33em} & ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{L3}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{L3}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{L3}}}$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Lagrangiano {\small L1} & \hspace{0.33em} & ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{L1}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{L1}}} - {\mathrm{U}}_{\scriptscriptstyle{\mathrm{L1}}}$ \vspace{+0.99em} \\
+Lagrangiano {\small L2} & \hspace{0.33em} & ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{L2}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{L2}}} - {\mathrm{U}}_{\scriptscriptstyle{\mathrm{L2}}}$ \vspace{+0.99em} \\
+Lagrangiano {\small L3} & \hspace{0.33em} & ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{L3}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{L3}}} - {\mathrm{U}}_{\scriptscriptstyle{\mathrm{L3}}}$ \vspace{+0.99em} \\
+\end{tabular}
+
+\par \bigskip \noindent Si sobre $m$ sólo actúan fuerzas conservativas entonces ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{L1}}}$, ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{L2}}}$ y ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{L3}}}$ se conservan.
+
+\par \bigskip \noindent Del momento lineal ${\mathbf{P}}_{\scriptscriptstyle{\mathrm{L1}}}$ se obtiene la fuerza lineal (${\mathbf{F}}_{\scriptscriptstyle{\mathrm{L1}}}$) más sencilla para utilizar,
+
+\par \bigskip \noindent ${\mathbf{F}}_{\scriptscriptstyle{\mathrm{L1}}} ~\doteq~ d({\mathbf{P}}_{\scriptscriptstyle{\mathrm{L1}}})/dt ~=~ m \; d({\mathbf{v}})/dt ~=~ m \, {\mathbf{a}} ~=~ {\mathbf{F}}$
+
+\par \bigskip \noindent El momento lineal ${\mathbf{P}}_{\scriptscriptstyle{\mathrm{L1}}}$ de un sistema aislado de partículas se conserva si las fuerzas internas del sistema obedecen la tercera ley de Newton en su forma débil {\small $(\,\sum_i {\mathbf{F}}_i \,=\, 0\,)$}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Dinámica Radial}}
+
+\par \bigskip \noindent La dinámica radial para una partícula $m$ o para una bipartícula $m$ (debiéndose agregar el subíndice <<$i$>> o el subíndice <<$ij$>> a todas las magnitudes y en todas las ecuaciones según sea el caso) está dada por:
+
+\par \bigskip\bigskip \hspace{-2.40em} \begin{tabular}{lll}
+Momento {\small R1} & \hspace{0.33em} & ${\mathrm{P}}_{\scriptscriptstyle{\mathrm{R1}}} ~\doteq~ m \, [ \, ({\mathbf{r}} \cdot {\mathbf{v}}) \hspace{+0.045em}/\hspace{+0.090em} |\hspace{+0.150em}{\mathbf{r}}\hspace{+0.150em}| \, ]$ \vspace{+0.99em} \\
+Momento {\small R2} & \hspace{0.33em} & ${\mathrm{P}}_{\scriptscriptstyle{\mathrm{R2}}} ~\doteq~ m \, [ \, ({\mathbf{r}} \cdot {\mathbf{v}}) \, ]$ \vspace{+0.99em} \\
+Momento {\small R3} & \hspace{0.33em} & ${\mathrm{P}}_{\scriptscriptstyle{\mathrm{R3}}} ~\doteq~ m \, [ \, ({\mathbf{r}} \cdot {\mathbf{v}}) \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ]$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Cinética {\small R1} & \hspace{0.33em} & ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{R1}}} ~\doteq~ \med \; m \, [ \, ({\mathbf{r}} \cdot {\mathbf{v}})^2 \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ]$ \vspace{+0.99em} \\
+Energía Cinética {\small R2} & \hspace{0.33em} & ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{R2}}} ~\doteq~ \med \; m \, [ \, ({\mathbf{r}} \cdot {\mathbf{v}})^2 \, ]$ \vspace{+0.99em} \\
+Energía Cinética {\small R3} & \hspace{0.33em} & ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{R3}}} ~\doteq~ \med \; m \, [ \, ({\mathbf{r}} \cdot {\mathbf{v}})^2 \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^4 \, ]$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Potencial {\small R1} & \hspace{0.33em} & ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{R1}}} ~\doteq\, - \; [ \, ( \, \int \, [ \, 2 \int {\mathbf{F}} \cdot d{\mathbf{r}} + {\mathbf{F}} \cdot {\mathbf{r}} \, ] \; d\hspace{+0.090em}\med\hspace{+0.090em}(\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ) \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ]$ \vspace{+0.99em} \\
+Energía Potencial {\small R2} & \hspace{0.33em} & ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{R2}}} ~\doteq\, - \; [ \, ( \, \int \, [ \, 2 \int {\mathbf{F}} \cdot d{\mathbf{r}} + {\mathbf{F}} \cdot {\mathbf{r}} \, ] \; d\hspace{+0.090em}\med\hspace{+0.090em}(\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ) \, ]$ \vspace{+0.99em} \\
+Energía Potencial {\small R3} & \hspace{0.33em} & ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{R3}}} ~\doteq\, - \; [ \, ( \, \int \, [ \, 2 \int {\mathbf{F}} \cdot d{\mathbf{r}} + {\mathbf{F}} \cdot {\mathbf{r}} \, ] \; d\hspace{+0.090em}\med\hspace{+0.090em}(\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ) \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^4 \, ]$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Mecánica {\small R1} & \hspace{0.33em} & ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{R1}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{R1}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{R1}}}$ \vspace{+0.99em} \\
+Energía Mecánica {\small R2} & \hspace{0.33em} & ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{R2}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{R2}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{R2}}}$ \vspace{+0.99em} \\
+Energía Mecánica {\small R3} & \hspace{0.33em} & ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{R3}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{R3}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{R3}}}$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Lagrangiano {\small R1} & \hspace{0.33em} & ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{R1}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{R1}}} - {\mathrm{U}}_{\scriptscriptstyle{\mathrm{R1}}}$ \vspace{+0.99em} \\
+Lagrangiano {\small R2} & \hspace{0.33em} & ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{R2}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{R2}}} - {\mathrm{U}}_{\scriptscriptstyle{\mathrm{R2}}}$ \vspace{+0.99em} \\
+Lagrangiano {\small R3} & \hspace{0.33em} & ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{R3}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{R3}}} - {\mathrm{U}}_{\scriptscriptstyle{\mathrm{R3}}}$ \vspace{+0.99em} \\
+\end{tabular}
+
+\par \bigskip \noindent Si sobre $m$ sólo actúan fuerzas conservativas entonces ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{R1}}}$, ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{R2}}}$ y ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{R3}}}$ se conservan.
+
+\par \bigskip \noindent Del momento radial ${\mathrm{P}}_{\scriptscriptstyle{\mathrm{R2}}}$ se obtiene la fuerza radial (${\mathrm{F}}_{\scriptscriptstyle{\mathrm{R2}}}$) más sencilla para utilizar,
+
+\par \bigskip \noindent ${\mathrm{F}}_{\scriptscriptstyle{\mathrm{R2}}} ~\doteq~ d({\mathrm{P}}_{\scriptscriptstyle{\mathrm{R2}}})/dt ~=~ m \; d({\mathbf{r}} \cdot {\mathbf{v}})/dt ~=~ m \, ({\mathbf{v}} \cdot {\mathbf{v}} + {\mathbf{a}} \cdot {\mathbf{r}}) ~=\, 2 \int {\mathbf{F}} \cdot d{\mathbf{r}} + {\mathbf{F}} \cdot {\mathbf{r}} ~\doteq~ {\mathrm{T}}$
+
+\par \bigskip \noindent La magnitud radial ${\mathrm{E}}\hspace{+0.045em}' ~\doteq~ {\mathrm{K}}\hspace{+0.045em}' + {\mathrm{U}}\hspace{+0.045em}' ~\doteq~ [ \, m \, (\hspace{+0.045em}{\mathbf{v}} \cdot {\mathbf{v}} + {\mathbf{a}} \cdot {\mathbf{r}}\hspace{+0.045em}) \, ] + [ - \, \hspace{+0.045em}2 \int {\mathbf{F}} \cdot d{\mathbf{r}} - {\mathbf{F}} \cdot {\mathbf{r}} \, ]$ se conserva si sobre $m$ sólo actúan fuerzas conservativas.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Dinámica Angular}}
+
+\par \bigskip \noindent La dinámica angular para una partícula $m$ o para una bipartícula $m$ (debiéndose agregar el subíndice <<$i$>> o el subíndice <<$ij$>> a todas las magnitudes y en todas las ecuaciones según sea el caso) está dada por:
+
+\par \bigskip\bigskip \hspace{-2.40em} \begin{tabular}{lll}
+Momento {\small A1} & \hspace{0.33em} & \hspace{-1.38em} ${\mathbf{P}}_{\scriptscriptstyle{\mathrm{A1}}} ~\doteq~ m \, [ \, ({\mathbf{r}} \times {\mathbf{v}}) \hspace{+0.045em}/\hspace{+0.090em} |\hspace{+0.150em}{\mathbf{r}}\hspace{+0.150em}| \, ]$ \vspace{+0.99em} \\
+Momento {\small A2} & \hspace{0.33em} & \hspace{-1.38em} ${\mathbf{P}}_{\scriptscriptstyle{\mathrm{A2}}} ~\doteq~ m \, [ \, ({\mathbf{r}} \times {\mathbf{v}}) \, ]$ \vspace{+0.99em} \\
+Momento {\small A3} & \hspace{0.33em} & \hspace{-1.38em} ${\mathbf{P}}_{\scriptscriptstyle{\mathrm{A3}}} ~\doteq~ m \, [ \, ({\mathbf{r}} \times {\mathbf{v}}) \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ]$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Cinética {\small A1} & \hspace{0.33em} & \hspace{-1.38em} ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{A1}}} ~\doteq~ \med \; m \, [ \, ({\mathbf{r}} \times {\mathbf{v}})^2 \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ]$ \vspace{+0.99em} \\
+Energía Cinética {\small A2} & \hspace{0.33em} & \hspace{-1.38em} ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{A2}}} ~\doteq~ \med \; m \, [ \, ({\mathbf{r}} \times {\mathbf{v}})^2 \, ]$ \vspace{+0.99em} \\
+Energía Cinética {\small A3} & \hspace{0.33em} & \hspace{-1.38em} ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{A3}}} ~\doteq~ \med \; m \, [ \, ({\mathbf{r}} \times {\mathbf{v}})^2 \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^4 \, ]$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Potencial {\small A1} & \hspace{0.33em} & \hspace{-1.38em} {\small ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{A1}}} ~\doteq\, - \; [ \, ( \, (\int {\mathbf{F}} \cdot d{\mathbf{r}}) \, (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \hspace{-0.057em}-\hspace{-0.057em} \int \, [ \, 2 \int {\mathbf{F}} \cdot d{\mathbf{r}} + {\mathbf{F}} \cdot {\mathbf{r}} \, ] \; d\hspace{+0.090em}\med\hspace{+0.090em}(\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ) \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ]$} \vspace{+0.99em} \\
+Energía Potencial {\small A2} & \hspace{0.33em} & \hspace{-1.38em} {\small ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{A2}}} ~\doteq\, - \; [ \, ( \, (\int {\mathbf{F}} \cdot d{\mathbf{r}}) \, (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \hspace{-0.057em}-\hspace{-0.057em} \int \, [ \, 2 \int {\mathbf{F}} \cdot d{\mathbf{r}} + {\mathbf{F}} \cdot {\mathbf{r}} \, ] \; d\hspace{+0.090em}\med\hspace{+0.090em}(\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ) \, ]$} \vspace{+0.99em} \\
+Energía Potencial {\small A3} & \hspace{0.33em} & \hspace{-1.38em} {\small ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{A3}}} ~\doteq\, - \; [ \, ( \, (\int {\mathbf{F}} \cdot d{\mathbf{r}}) \, (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \hspace{-0.057em}-\hspace{-0.057em} \int \, [ \, 2 \int {\mathbf{F}} \cdot d{\mathbf{r}} + {\mathbf{F}} \cdot {\mathbf{r}} \, ] \; d\hspace{+0.090em}\med\hspace{+0.090em}(\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^2 \, ) \hspace{+0.045em}/\hspace{+0.090em} (\hspace{+0.090em}{\mathbf{r}}\hspace{+0.090em})^4 \, ]$} \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Mecánica {\small A1} & \hspace{0.33em} & \hspace{-1.38em} ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{A1}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{A1}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{A1}}}$ \vspace{+0.99em} \\
+Energía Mecánica {\small A2} & \hspace{0.33em} & \hspace{-1.38em} ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{A2}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{A2}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{A2}}}$ \vspace{+0.99em} \\
+Energía Mecánica {\small A3} & \hspace{0.33em} & \hspace{-1.38em} ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{A3}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{A3}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{A3}}}$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Lagrangiano {\small A1} & \hspace{0.33em} & \hspace{-1.38em} ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{A1}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{A1}}} - {\mathrm{U}}_{\scriptscriptstyle{\mathrm{A1}}}$ \vspace{+0.99em} \\
+Lagrangiano {\small A2} & \hspace{0.33em} & \hspace{-1.38em} ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{A2}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{A2}}} - {\mathrm{U}}_{\scriptscriptstyle{\mathrm{A2}}}$ \vspace{+0.99em} \\
+Lagrangiano {\small A3} & \hspace{0.33em} & \hspace{-1.38em} ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{A3}}} ~\doteq~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{A3}}} - {\mathrm{U}}_{\scriptscriptstyle{\mathrm{A3}}}$ \vspace{+0.99em} \\
+\end{tabular}
+
+\par \bigskip \noindent Si sobre $m$ sólo actúan fuerzas conservativas entonces ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{A1}}}$, ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{A2}}}$ y ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{A3}}}$ se conservan.
+
+\par \bigskip \noindent Del momento angular ${\mathbf{P}}_{\scriptscriptstyle{\mathrm{A2}}}$ se obtiene la fuerza angular (${\mathbf{F}}_{\scriptscriptstyle{\mathrm{A2}}}$) más sencilla para utilizar,
+
+\par \bigskip \noindent ${\mathbf{F}}_{\scriptscriptstyle{\mathrm{A2}}} ~\doteq~ d({\mathbf{P}}_{\scriptscriptstyle{\mathrm{A2}}})/dt ~=~ m \; d({\mathbf{r}} \times {\mathbf{v}})/dt ~=~ m \, ({\mathbf{r}} \times {\mathbf{a}}) ~=~ {\mathbf{r}} \times {\mathbf{F}} ~\doteq~ {\mathbf{M}}$
+
+\par \bigskip \noindent El momento angular ${\mathbf{P}}_{\scriptscriptstyle{\mathrm{A2}}}$ de un sistema aislado de partículas se conserva si las fuerzas internas del sistema obedecen la tercera ley de Newton en su forma fuerte \hbox {{\small $(\hspace{+0.045em}\sum_i\hspace{-0.045em}{\mathbf{r}}_i \hspace{-0.27em}\times\hspace{-0.24em} {\mathbf{F}}_i = 0\hspace{+0.045em})$}}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Relaciones}}
+
+\par \bigskip\medskip \hspace{-2.40em} \begin{tabular}{lll}
+Energía Cinética {\small 1} & \hspace{0.33em} & ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{L1}}} ~=~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{R1}}} + {\mathrm{K}}_{\scriptscriptstyle{\mathrm{A1}}}$ \vspace{+0.99em} \\
+Energía Cinética {\small 2} & \hspace{0.33em} & ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{L2}}} ~=~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{R2}}} + {\mathrm{K}}_{\scriptscriptstyle{\mathrm{A2}}}$ \vspace{+0.99em} \\
+Energía Cinética {\small 3} & \hspace{0.33em} & ${\mathrm{K}}_{\scriptscriptstyle{\mathrm{L3}}} ~=~ {\mathrm{K}}_{\scriptscriptstyle{\mathrm{R3}}} + {\mathrm{K}}_{\scriptscriptstyle{\mathrm{A3}}}$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Potencial {\small 1} & \hspace{0.33em} & ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{L1}}} ~=~ {\mathrm{U}}_{\scriptscriptstyle{\mathrm{R1}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{A1}}}$ \vspace{+0.99em} \\
+Energía Potencial {\small 2} & \hspace{0.33em} & ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{L2}}} ~=~ {\mathrm{U}}_{\scriptscriptstyle{\mathrm{R2}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{A2}}}$ \vspace{+0.99em} \\
+Energía Potencial {\small 3} & \hspace{0.33em} & ${\mathrm{U}}_{\scriptscriptstyle{\mathrm{L3}}} ~=~ {\mathrm{U}}_{\scriptscriptstyle{\mathrm{R3}}} + {\mathrm{U}}_{\scriptscriptstyle{\mathrm{A3}}}$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Energía Mecánica {\small 1} & \hspace{0.33em} & ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{L1}}} ~=~ {\mathrm{E}}_{\scriptscriptstyle{\mathrm{R1}}} + {\mathrm{E}}_{\scriptscriptstyle{\mathrm{A1}}}$ \vspace{+0.99em} \\
+Energía Mecánica {\small 2} & \hspace{0.33em} & ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{L2}}} ~=~ {\mathrm{E}}_{\scriptscriptstyle{\mathrm{R2}}} + {\mathrm{E}}_{\scriptscriptstyle{\mathrm{A2}}}$ \vspace{+0.99em} \\
+Energía Mecánica {\small 3} & \hspace{0.33em} & ${\mathrm{E}}_{\scriptscriptstyle{\mathrm{L3}}} ~=~ {\mathrm{E}}_{\scriptscriptstyle{\mathrm{R3}}} + {\mathrm{E}}_{\scriptscriptstyle{\mathrm{A3}}}$ \vspace{+0.99em} \\
+\vspace{-0.45em} \\
+Lagrangiano {\small 1} & \hspace{0.33em} & ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{L1}}} ~=~ {\mathrm{L}}_{\scriptscriptstyle{\mathrm{R1}}} + {\mathrm{L}}_{\scriptscriptstyle{\mathrm{A1}}}$ \vspace{+0.99em} \\
+Lagrangiano {\small 2} & \hspace{0.33em} & ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{L2}}} ~=~ {\mathrm{L}}_{\scriptscriptstyle{\mathrm{R2}}} + {\mathrm{L}}_{\scriptscriptstyle{\mathrm{A2}}}$ \vspace{+0.99em} \\
+Lagrangiano {\small 3} & \hspace{0.33em} & ${\mathrm{L}}_{\scriptscriptstyle{\mathrm{L3}}} ~=~ {\mathrm{L}}_{\scriptscriptstyle{\mathrm{R3}}} + {\mathrm{L}}_{\scriptscriptstyle{\mathrm{A3}}}$ \vspace{+0.99em} \\
+\end{tabular}
+
+\par \bigskip {\centering\subsection*{Observaciones}}
+
+\par \bigskip\smallskip \noindent Todas las ecuaciones de este trabajo pueden ser aplicadas en cualquier sistema de referencia inercial o no inercial sin necesidad de introducir las fuerzas ficticias sobre ${\mathbf{F}}_i$ ni sobre ${\mathbf{F}}_j$.
+
+\par \bigskip \noindent En este trabajo, las magnitudes $[ \, {\mathit{m}}_i, {\mathbf{r}}_i, {\mathbf{v}}_i, {\mathbf{a}}_{\hspace{+0.045em}i}, {\mathbf{F}}_i, {\mathbf{P}}_i, {\mathrm{F}}_i, {\mathrm{P}}_i, {\mathrm{K}}_i, {\mathrm{U}}_i, {\mathrm{E}}_i, {\mathrm{L}}_i, {\mathit{m}}_{\hspace{+0.060em}ij}, {\mathbf{r}}_{\hspace{+0.060em}ij}, {\mathbf{v}}_{\hspace{+0.060em}ij}$, ${\mathbf{a}}_{\hspace{+0.060em}ij}, {\mathbf{F}}_{\hspace{+0.060em}ij}, {\mathbf{P}}_{\hspace{+0.060em}ij}, {\mathrm{F}}_{\hspace{+0.060em}ij}, {\mathrm{P}}_{\hspace{+0.060em}ij}, {\mathrm{K}}_{\hspace{+0.060em}ij}, {\mathrm{U}}_{\hspace{+0.060em}ij}, {\mathrm{E}}_{\hspace{+0.060em}ij}$ y ${\mathrm{L}}_{\hspace{+0.060em}ij} \, ]$ son invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales.
+
+\par \bigskip \noindent Este trabajo no contradice la dinámica de Newton. De hecho, la ecuación $[ \, {\mathbf{F}}_i = m_i \, {\mathbf{a}}_{\hspace{+0.045em}i} \, ]$ y la ecuación $[ \, {\mathbf{F}}_{\hspace{+0.060em}ij} = m_{\hspace{+0.060em}ij} \, {\mathbf{a}}_{\hspace{+0.060em}ij} \, ]$ son simples reformulaciones de la segunda ley de Newton.
+
+\par \bigskip \noindent Por último, las integrales usadas en este trabajo son integrales indefinidas. Si ninguna fuerza actúa sobre la partícula $i$, sobre la partícula $j$ o sobre la bipartícula $ij$ entonces las integrales dan como resultado constantes.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexo I}}
+
+\par \medskip {\centering\subsubsection*{Free-System}}
+
+\par \bigskip \noindent El free-system es un sistema de N partículas que está siempre libre de fuerzas externas e internas, que es tridimensional y que las distancias relativas entre las N partículas permanecen siempre constantes.
+
+\par \bigskip \noindent La posición ${\vec{\mathit{R}}}$, la velocidad ${\vec{\mathit{V}}}$ y la aceleración ${\vec{\mathit{A}}}$ del centro de masa del free-system respecto a un sistema de referencia S, la velocidad angular ${\vec{\omega}}$ y la aceleración \hbox {angular ${\vec{\alpha}}$} del free-system respecto al sistema de referencia S, están dadas por:
+
+\par \bigskip\smallskip \hspace{-2.40em} \begin{tabular}{l}
+${\mathrm{M}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i$ \vspace{+1.20em} \\
+${\vec{\mathit{R}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{r}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{V}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{v}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{A}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{a}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\omega}} ~\doteq~ {\mathit{I}}^{\scriptscriptstyle -1}{\vphantom{\sum_1^2}}^{\hspace{-1.500em}\leftrightarrow}\hspace{+0.600em} \cdot {\vec{\mathit{L}}}$ \vspace{+1.20em} \\
+${\vec{\alpha}} ~\doteq~ d({\vec{\omega}})/dt$ \vspace{+1.20em} \\
+${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.210em} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, [ \, |\hspace{+0.090em}{\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}\,|^2 \hspace{+0.309em} {\mathrm{1}}{\vphantom{\sum_1^2}}^{\hspace{-0.639em}\leftrightarrow}\hspace{-0.129em} - ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \otimes ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, ]$ \vspace{+1.20em} \\
+${\vec{\mathit{L}}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \times ({\vec{\mathit{v}}_{i}} - \hspace{-0.120em}{\vec{\mathit{V}}})$
+\end{tabular}
+
+\par \bigskip \noindent donde ${\mathrm{M}}$ es la masa del free-system, ${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.300em}$ es el tensor de inercia del free-system (respecto a ${\vec{\mathit{R}}}$) y \hbox {${\vec{\mathit{L}}}$ es el momento} angular del free-system respecto al sistema de referencia S.
+
+\vspace{+1.50em}
+
+\par {\centering\subsubsection*{Transformaciones}}
+
+\par \bigskip\medskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~\doteq~ {\mathbf{r}}_i ~=~ {\mathbf{r}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~\doteq~ {\mathbf{r}}_i\hspace{-0.300em}' ~=~ {\mathbf{r}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~\doteq~ {\mathbf{v}}_i ~=~ {\mathbf{v}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') - {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~\doteq~ {\mathbf{v}}_i\hspace{-0.300em}' ~=~ {\mathbf{v}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~\doteq~ {\mathbf{a}}_{\hspace{+0.045em}i} ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i\hspace{-0.150em}' - {\vec{\mathit{A}}}\hspace{-0.045em}') - 2 \; {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') + {\vec{\omega}}\hspace{+0.060em}' \times [ \, {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') \, ] - {\vec{\alpha}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~\doteq~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}' ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexo II}}
+
+\par \medskip {\centering\subsubsection*{Free-System}}
+
+\par \bigskip \noindent El free-system es un sistema de N partículas que está siempre libre de fuerzas externas e internas, que es tridimensional y que las distancias relativas entre las N partículas permanecen siempre constantes.
+
+\par \bigskip \noindent La posición ${\vec{\mathit{R}}}$, la velocidad ${\vec{\mathit{V}}}$ y la aceleración ${\vec{\mathit{A}}}$ del centro de masa del free-system respecto a un sistema de referencia S, la velocidad angular ${\vec{\omega}}$ y la aceleración \hbox {angular ${\vec{\alpha}}$} del free-system respecto al sistema de referencia S, están dadas por:
+
+\par \bigskip\smallskip \hspace{-2.40em} \begin{tabular}{l}
+${\mathrm{M}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i$ \vspace{+1.20em} \\
+${\vec{\mathit{R}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{r}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{V}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{v}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{A}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{a}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\omega}} ~\doteq~ {\mathit{I}}^{\scriptscriptstyle -1}{\vphantom{\sum_1^2}}^{\hspace{-1.500em}\leftrightarrow}\hspace{+0.600em} \cdot {\vec{\mathit{L}}}$ \vspace{+1.20em} \\
+${\vec{\alpha}} ~\doteq~ d({\vec{\omega}})/dt$ \vspace{+1.20em} \\
+${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.210em} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, [ \, |\hspace{+0.090em}{\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}\,|^2 \hspace{+0.309em} {\mathrm{1}}{\vphantom{\sum_1^2}}^{\hspace{-0.639em}\leftrightarrow}\hspace{-0.129em} - ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \otimes ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, ]$ \vspace{+1.20em} \\
+${\vec{\mathit{L}}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \times ({\vec{\mathit{v}}_{i}} - \hspace{-0.120em}{\vec{\mathit{V}}})$
+\end{tabular}
+
+\par \bigskip \noindent donde ${\mathrm{M}}$ es la masa del free-system, ${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.300em}$ es el tensor de inercia del free-system (respecto a ${\vec{\mathit{R}}}$) y \hbox {${\vec{\mathit{L}}}$ es el momento} angular del free-system respecto al sistema de referencia S.
+
+\vspace{+1.50em}
+
+\par {\centering\subsubsection*{Transformaciones}}
+
+\par \bigskip\medskip \hspace{-1.80em} ${\vphantom{{\vec{\mathit{R}}}}}({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j) ~\doteq~ {\mathbf{r}}_{\hspace{+0.060em}ij} ~=~ {\mathbf{r}}_{\hspace{+0.060em}ij}\hspace{-0.720em}'$
+
+\par \bigskip \hspace{-1.80em} ${\vphantom{{\vec{\mathit{R}}}}}({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{r}}}_j\hspace{-0.180em}') ~\doteq~ {\mathbf{r}}_{\hspace{+0.060em}ij}\hspace{-0.720em}'\hspace{+0.360em} ~=~ {\mathbf{r}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \hspace{-1.80em} ${\vphantom{{\vec{\mathit{R}}}}}({\vec{\mathit{v}}}_i - {\vec{\mathit{v}}}_j) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j) ~\doteq~ {\mathbf{v}}_{\hspace{+0.060em}ij} ~=~ {\mathbf{v}}_{\hspace{+0.060em}ij}\hspace{-0.690em}'$
+
+\par \bigskip \hspace{-1.80em} ${\vphantom{{\vec{\mathit{R}}}}}({\vec{\mathit{v}}}_i\hspace{-0.150em}' - {\vec{\mathit{v}}}_j\hspace{-0.180em}') - {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{r}}}_j\hspace{-0.180em}') ~\doteq~ {\mathbf{v}}_{\hspace{+0.060em}ij}\hspace{-0.690em}'\hspace{+0.360em} ~=~ {\mathbf{v}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \hspace{-1.80em} ${\vphantom{{\vec{\mathit{R}}}}}({\vec{\mathit{a}}}_i - {\vec{\mathit{a}}}_j) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - {\vec{\mathit{v}}}_j) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j) ~\doteq~ {\mathbf{a}}_{\hspace{+0.060em}ij} ~=~ {\mathbf{a}}_{\hspace{+0.060em}ij}\hspace{-0.720em}'$
+
+\par \bigskip \hspace{-1.80em} ${\vphantom{{\vec{\mathit{R}}}}}({\vec{\mathit{a}}}_i\hspace{-0.150em}' - {\vec{\mathit{a}}}_j\hspace{-0.180em}') - 2 \; {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{v}}}_i\hspace{-0.150em}' - {\vec{\mathit{v}}}_j\hspace{-0.180em}') + {\vec{\omega}}\hspace{+0.060em}' \times [ \, {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{r}}}_j\hspace{-0.180em}') \, ] - {\vec{\alpha}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{r}}}_j\hspace{-0.180em}') ~\doteq~ {\mathbf{a}}_{\hspace{+0.060em}ij}\hspace{-0.720em}'\hspace{+0.360em} ~=~ {\mathbf{a}}_{\hspace{+0.060em}ij}$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexo III}}
+
+\par \medskip {\centering\subsubsection*{Fuerzas Cinéticas}}
+
+\par \bigskip \noindent La fuerza cinética ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij}$ ejercida sobre una partícula $i$ de masa $m_i$ por otra partícula $j$ de masa $m_j$, causada por la interacción entre la partícula $i$ y la partícula $j$, \hbox {está dada por}:
+
+\par \bigskip \noindent ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij} \,=\, - \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \, (\hspace{+0.045em}{\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_{j})$
+
+\par \bigskip \noindent donde ${\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración inercial de la partícula $i$, ${\mathbf{a}}_{j}$ es la aceleración inercial de la \hbox {partícula $j$} y ${\mathrm{M}}$ es la masa del Universo.
+
+\par \bigskip \noindent La fuerza cinética ${\mathbf{K}}^{u}_{i}$ ejercida sobre una partícula $i$ de masa $m_i$ por el centro de masa del Universo, causada por la interacción entre la partícula $i$ y el Universo, \hbox {está dada por}:
+
+\par \bigskip \noindent ${\mathbf{K}}^{u}_{i} \,=\, - \; m_i \, {\mathbf{A}}_{cm}$
+
+\par \bigskip \noindent donde ${\mathbf{A}}_{cm}$ es la aceleración inercial del centro de masa del Universo.
+
+\par \bigskip \noindent De las ecuaciones anteriores se deduce que la fuerza cinética neta ${\mathbf{K}}_{i}$ \hbox {{\small (\hspace{+0.120em}$ = \sum_{j}^{\scriptscriptstyle{\mathit{All}}} \, {\mathbf{K}}^{a}_{\hspace{+0.060em}ij} + {\mathbf{K}}^{u}_{i}$\hspace{+0.120em})}} que actúa sobre una partícula $i$ de masa $m_i$, está dada por:
+
+\par \bigskip \noindent ${\mathbf{K}}_{i} \,=\, - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip \noindent donde ${\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración inercial de la partícula $i$.
+
+\par \bigskip \noindent Las fuerzas cinéticas ${\mathbf{K}}^{a}$ obedecen siempre la tercera ley de Newton en su forma débil.
+
+\par \bigskip \noindent Si todas las fuerzas no cinéticas obedecen siempre la tercera ley de Newton en su forma débil entonces la aceleración inercial del centro de masa del Universo ${\mathbf{A}}_{cm}$ es siempre igual a cero.
+
+\par \bigskip \noindent Ahora, de la página $[\,1\,]$ y de la página $[\,2\,]$, se tiene:
+
+\par \bigskip \noindent ${\mathbf{F}}_i \,=\, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip \noindent ${\mathbf{F}}_{\hspace{+0.060em}ij} \,=\, m_{\hspace{+0.060em}ij} \, {\mathbf{a}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \noindent O sea:
+
+\par \bigskip \noindent ${\mathbf{F}}_i - m_i \, {\mathbf{a}}_{\hspace{+0.045em}i} \,=\, 0 \,=\, {\mathbf{F}}_i + {\mathbf{K}}_i$
+
+\par \bigskip \noindent ${\mathbf{F}}_{\hspace{+0.060em}ij} - m_{\hspace{+0.060em}ij} \, {\mathbf{a}}_{\hspace{+0.060em}ij} \,=\, 0 \,=\, {\mathbf{F}}_{\hspace{+0.060em}ij} - m_{\hspace{+0.060em}ij} \, (\hspace{+0.075em}{\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_j\hspace{+0.045em}) \,=\, {\mathbf{F}}_{\hspace{+0.060em}ij} +\, m_{\hspace{+0.060em}ij} \, (\hspace{+0.075em}{\mathbf{K}}_i / m_i - {\mathbf{K}}_j / m_j\hspace{+0.045em}) \,=\, {\mathbf{F}}_{\hspace{+0.060em}ij} + {\mathbf{K}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \noindent Por lo tanto, la fuerza total $( {\mathbf{F}}_i + {\mathbf{K}}_i )$ que actúa sobre una partícula $i$ y la fuerza total $( {\mathbf{F}}_{\hspace{+0.060em}ij} + {\mathbf{K}}_{\hspace{+0.060em}ij} )$ que actúa sobre una bipartícula $ij$ están siempre en equilibrio.
+
+\end{document}
+

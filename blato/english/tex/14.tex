@@ -1,0 +1,308 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={162.0mm,234.0mm}}
+\geometry{totalwidth=141.0mm,totalheight=198.0mm}
+
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={A Relational Formulation of Classical Mechanics}}
+\hypersetup{pdfauthor={Alfonso A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\begin{center}
+
+{\Large A Relational Formulation of Classical Mechanics}
+
+\bigskip \medskip
+
+{\large Alfonso A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2019) Buenos Aires
+
+\smallskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{102.00mm}{This paper presents a relational formulation of classical mechanics which is invariant under transformations between inertial and non-inertial \hbox {reference} frames and which can be applied in any reference frame without introducing fictitious forces.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.50em}
+
+\par \bigskip {\centering\subsection*{Introduction}}\addcontentsline{toc}{subsection}{Introduction}
+
+\par \bigskip \noindent The relational formulation of classical mechanics presented in this paper is obtained starting from a new force of interaction ( called kinetic force, since this new force of interaction \hbox {is directly} related to kinetic energy )
+
+\par \bigskip\smallskip \noindent The kinetic force ${\mathbf{K}}_{\hspace{+0.009em}ij}$ exerted on a particle $i$ of mass $m_i$ by another particle $j$ of mass $m_j$, caused by the interaction between particle $i$ and particle $j$, is given by:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: - \; \dfrac{m_i \, m_j}{\mathit{M}} \, \Big[ \, ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, \Big]$
+
+\par \bigskip \noindent where ${\vec{\mathit{a}}}_{i}$, ${\vec{\mathit{v}}}_{i}$, ${\vec{\mathit{r}}}_{i}$ are the acceleration, the velocity and the position of particle $i$, ${\vec{\mathit{a}}}_{j}$, ${\vec{\mathit{v}}}_{j}$, ${\vec{\mathit{r}}}_{j}$ are the acceleration, the velocity and the position of particle $j$, and ${\mathit{M}}$, ${\vec{\omega}}$, ${\vec{\alpha}}$ are the mass, the angular velocity and the angular acceleration of the Universe \hyperlink{a1p1}{(\hspace{+0.09em}see Annex I\hspace{+0.120em})}
+
+\par \bigskip \noindent From the above equation it follows that the net kinetic force ${\mathbf{K}}_{\hspace{+0.009em}i}$ (\hspace{+0.237em}$ = \sum_{j}^{\scriptscriptstyle{\mathit{All}}} \, {\mathbf{K}}_{\hspace{+0.009em}ij}$\hspace{+0.237em}) acting on a particle $i$ of mass $m_i$ is given by:
+
+\par \bigskip \hypertarget{e1p2}{} ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: - \; m_i \, \Big[ \, ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{A}}}\hspace{+0.06em}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, \Big]$$\;\;$$\big[\,{\mathrm{Eq.\,2}}\,\big]$
+
+\par \bigskip \noindent where ${\vec{\mathit{R}}}$, ${\vec{\mathit{V}}}$ and ${\vec{\mathit{A}}}$ are the position, the velocity and the acceleration of the center of mass of the Universe.
+
+\par \bigskip \noindent The magnitudes $[ \, m_i, \: m_j,\hspace{+0.06em} {\mathit{M}}\hspace{-0.09em}, \: {\mathbf{K}}_{\hspace{+0.009em}ij}, \: {\mathbf{K}}_{\hspace{+0.009em}i} \, ]$ are invariant under transformations between inertial and non-inertial reference frames.
+
+\par \bigskip \noindent Any reference frame S is an inertial reference frame when the angular velocity ${\vec{\omega}}$ of the Universe and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the Universe are equal to zero (\:${\vec{\omega}}=0$ {\hspace{+0.06em}\small and\hspace{+0.06em}} ${\vec{\mathit{A}}}=0$\:) relative to S. Therefore, the reference frame S is a non-inertial reference frame when the angular velocity ${\vec{\omega}}$ of the Universe or the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the Universe are not equal to zero (\:${\vec{\omega}}\ne 0$ {\hspace{+0.06em}\small or\hspace{+0.06em}} ${\vec{\mathit{A}}}\ne 0$\:) relative to S.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Equation of Motion}}\addcontentsline{toc}{subsection}{Equation of Motion}
+
+\par \bigskip \noindent The total force ${\mathbf{T}}_{\hspace{-0.09em}i}$ acting on a particle $i$ is always zero.
+
+\par \bigskip ${\mathbf{T}}_{\hspace{-0.09em}i} \;=\: \mathrm{0}$
+
+\par \bigskip \noindent If the total force ${\mathbf{T}}_{\hspace{-0.09em}i}$ is divided into the following two parts: the net kinetic force ${\mathbf{K}}_{\hspace{+0.009em}i}$ and the net dynamic force ${\mathbf{F}}_{\hspace{-0.09em}i}$ (\hspace{+0.060em}$\sum$ of gravitational forces, electrostatic forces, etc.\hspace{+0.060em}) then we have:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} + {\mathbf{F}}_{\hspace{-0.09em}i} \;=\: \mathrm{0}$
+
+\par \bigskip \noindent Now, substituting ${\mathbf{K}}_{\hspace{+0.009em}i}$ by \hyperlink{e1p2}{$\big[\,{\mathrm{Eq.\,2}}\,\big]$} dividing by $m_i$ and rearranging, we obtain:
+
+\par \bigskip ${\vec{\mathit{a}}}_{i} \;=\: {\mathbf{F}}_{\hspace{-0.09em}i}/m_i + {\vec{\mathit{A}}} \hspace{+0.15em} + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}})$
+
+\par \bigskip \noindent From the above equation it follows that particle $i$ can have a non-zero acceleration even if there is no dynamic force acting on particle $i$, and also that particle $i$ can have zero acceleration (state of rest or of uniform linear motion) even if there is an unbalanced net dynamic force acting on particle $i$.
+
+\par \bigskip \noindent However, from the above equation it also follows that Newton's first and second laws are valid in any inertial reference frame, since the angular velocity ${\vec{\omega}}$ of the Universe and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the Universe are equal to zero relative to any inertial reference frame.
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsection*{General Observations}}\addcontentsline{toc}{subsection}{General Observations}
+
+\par \bigskip \noindent All equations of this paper can be applied in any inertial reference frame and also in any non-inertial reference frame.
+
+\par \bigskip \noindent Additionally, inertial and non-inertial observers must not introduce fictitious forces into ${\mathbf{F}}_{\hspace{-0.09em}i}$.
+
+\par \bigskip \noindent In this paper, the following magnitudes $[ \, {\mathit{m}},\, {\mathbf{r}},\, {\mathbf{v}},\, {\mathbf{a}},\, {\mathit{M}}\hspace{-0.09em},\, {\mathit{K}}\hspace{-0.09em},\, {\mathbf{T}},\, {\mathbf{K}},\, {\mathbf{F}} \, ]$ are invariant under transformations between inertial and non-inertial reference frames.
+
+\par \bigskip \noindent The kinetic forces are caused by the interactions between the particles and the net kinetic force is the force that balances the net dynamic force in each particle of the Universe.
+
+\par \bigskip \noindent In addition, the kinetic forces obey Newton's third law in its weak form or in its strong form and remain invariant under transformations between inertial and non-inertial reference frames ( as all dynamic forces do )
+
+\par \bigskip \noindent On the other hand, this paper does not contradict Newton's first and second laws since these two laws are valid in any inertial reference frame ( in Newtonian mechanics the kinetic forces are completely excluded )
+
+\par \bigskip \noindent Finally, the relational mechanics presented in this paper is observationally equivalent to Newtonian mechanics. However, non-inertial observers can only use Newtonian mechanics \hbox {if they introduce} fictitious forces into ${\mathbf{F}}_{\hspace{-0.09em}i}$.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Annexes}}
+
+\par \medskip {\centering\subsubsection*{Relational Universe}}\addcontentsline{toc}{subsection}{Annex I : Relational Universe}\hypertarget{a1p1}{}
+
+\par \bigskip \noindent In classical mechanics, the Universe is a system that contains all particles, that is always free of external forces, and that all internal dynamic forces always obey Newton's third law in its weak form and in its strong form.
+
+\par \bigskip \noindent The position ${\vec{\mathit{R}}}$, the velocity ${\vec{\mathit{V}}}$ and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the Universe relative to a reference frame S (and the angular velocity ${\vec{\omega}}$ and the angular acceleration ${\vec{\alpha}}$ \hbox {of the Universe} relative to the reference frame S) are given by:
+
+\par \bigskip\smallskip \hspace{-2.40em} \begin{tabular}{l}
+${\mathit{M}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i$ \vspace{+1.20em} \\
+${\vec{\mathit{R}}} ~\doteq~ {\mathit{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, {\vec{\mathit{r}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{V}}} ~\doteq~ {\mathit{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, {\vec{\mathit{v}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{A}}} ~\doteq~ {\mathit{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, {\vec{\mathit{a}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\omega}} ~\doteq~ {\mathit{I}}^{\scriptscriptstyle -1}{\vphantom{\sum_1^2}}^{\hspace{-1.500em}\leftrightarrow}\hspace{+0.600em} \cdot {\vec{\mathit{L}}}$ \vspace{+1.20em} \\
+${\vec{\alpha}} ~\doteq~ d({\vec{\omega}})/dt$ \vspace{+1.20em} \\
+${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.210em} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, [ \, |\hspace{+0.090em}{\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}\,|^2 \hspace{+0.309em} {\mathrm{1}}{\vphantom{\sum_1^2}}^{\hspace{-0.639em}\leftrightarrow}\hspace{-0.129em} - ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \otimes ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, ]$ \vspace{+1.20em} \\
+${\vec{\mathit{L}}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \times ({\vec{\mathit{v}}_{i}} - \hspace{-0.120em}{\vec{\mathit{V}}})$
+\end{tabular}
+
+\par \bigskip \noindent where ${\mathit{M}}$ is the mass of the Universe, ${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.300em}$ is the inertia tensor of the Universe (relative \hbox {to ${\vec{\mathit{R}}}$)} and ${\vec{\mathit{L}}}$ is the angular momentum of the Universe relative to the reference frame S.
+
+\vspace{+1.50em}
+
+\par {\centering\subsubsection*{Invariant Magnitudes}}\addcontentsline{toc}{subsection}{Annex II : Invariant Magnitudes}\hypertarget{a1p2}{}
+
+\par \bigskip\medskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~\doteq~ {\mathbf{r}}_i ~=~ {\mathbf{r}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~\doteq~ {\mathbf{r}}_i\hspace{-0.300em}' ~=~ {\mathbf{r}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~\doteq~ {\mathbf{v}}_i ~=~ {\mathbf{v}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') - {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~\doteq~ {\mathbf{v}}_i\hspace{-0.300em}' ~=~ {\mathbf{v}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~\doteq~ {\mathbf{a}}_{\hspace{+0.045em}i} ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i\hspace{-0.150em}' - {\vec{\mathit{A}}}\hspace{-0.045em}') - 2 \; {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') + {\vec{\omega}}\hspace{+0.060em}' \times [ \, {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') \, ] - {\vec{\alpha}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~\doteq~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}' ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Appendix A}}
+
+\par \bigskip {\centering\subsection*{Fields and Potentials I}}\addcontentsline{toc}{subsection}{Appendix A : Fields and Potentials I}
+
+\par \bigskip \noindent The net kinetic force ${\mathbf{K}}_{\hspace{+0.009em}i}$ acting on a particle $i$ of mass $m_i$ can also be expressed as follows:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ \: {\mathbf{E}} \, + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{A}}}\hspace{+0.06em}) + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, \Big]$
+
+\par \bigskip \noindent where:
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ]^{\hspace{+0.006em}2} \, + \, \med \, ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}})^{\hspace{+0.03em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] \, + ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}})$
+
+\par \bigskip $\dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} \;=\: - \; {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) + ( {\vec{\mathit{a}}}_{i} - {\vec{\mathit{A}}}\hspace{+0.06em})$
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] \hspace{+0.06em}$
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$
+
+\par \bigskip \noindent The net kinetic force ${\mathbf{K}}_{\hspace{+0.009em}i}$ acting on a particle $i$ of mass $m_i$ can also be obtained starting from the following kinetic energy:
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: - \; m_i \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Since the kinetic energy ${\mathit{K}}_{\hspace{+0.009em}i}$ must be positive, then applying the following Euler-Lagrange equation, we obtain:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{v}}_i} \, \Bigg] + \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{r}}_i} \;=\: - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent where ${\mathbf{r}}_i, \hspace{+0.180em} {\mathbf{v}}_i$ and ${\mathbf{a}}_{\hspace{+0.045em}i}$ are the invariant position, the invariant velocity and the invariant \hbox {acceleration} of particle $i$ \hbox {\hyperlink{a1p2}{(\hspace{+0.09em}see Annex II\hspace{+0.120em})}}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Appendix B}}
+
+\par \bigskip {\centering\subsection*{Fields and Potentials II}}\addcontentsline{toc}{subsection}{Appendix B : Fields and Potentials II}
+
+\par \bigskip \noindent The net kinetic force ${\mathbf{K}}_{\hspace{+0.009em}i}$ acting on a particle $i$ of mass $m_i$ ( relative to a reference frame S fixed to a particle $s$ ( ${\vec{\mathit{r}}}_{s} = {\vec{\mathit{v}}}_{s} = {\vec{\mathit{a}}}_{s} = 0$ ) of mass $m_s$, with invariant velocity ${\mathbf{v}}_s$ and invariant acceleration ${\mathbf{a}}_s$ ) can also be expressed as follows:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ \: {\mathbf{E}} \, + {\vec{\mathit{v}}}_{i} \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} + {\vec{\mathit{v}}}_{i} \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - ({\vec{\mathit{a}}}_{i} + {\mathbf{a}}_s) + 2 \; {\vec{\omega}} \times {\vec{\mathit{v}}}_{i} - {\vec{\omega}} \times ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, ) + {\vec{\alpha}} \times {\vec{\mathit{r}}}_{i} \; \Big]$
+
+\par \bigskip \noindent where:
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, )^{\hspace{+0.006em}2} \, + \, \med \: ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s)^{\hspace{+0.006em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, ) + ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s)$
+
+\par \bigskip $\dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} \;=\: - \; {\vec{\alpha}} \times {\vec{\mathit{r}}}_{i} \, + ({\vec{\mathit{a}}}_{i} + {\mathbf{a}}_s)$
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, )$
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$
+
+\par \bigskip \noindent The net kinetic force ${\mathbf{K}}_{\hspace{+0.009em}i}$ acting on a particle $i$ of mass $m_i$ can also be obtained starting from the following kinetic energy:
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: - \; m_i \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s) - ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, ) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Since the kinetic energy ${\mathit{K}}_{\hspace{+0.009em}i}$ must be positive, then applying the following Euler-Lagrange equation, we obtain:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{v}}_i} \, \Bigg] + \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{r}}_i} \;=\: - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent where ${\mathbf{r}}_i, \hspace{+0.180em} {\mathbf{v}}_i$ and ${\mathbf{a}}_{\hspace{+0.045em}i}$ are the invariant position, the invariant velocity and the invariant \hbox {acceleration} of particle $i$ \hbox {\hyperlink{a1p2}{(\hspace{+0.09em}see Annex II\hspace{+0.120em})}}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Appendix C}}
+
+\par \bigskip {\centering\subsection*{Fields and Potentials III}}\addcontentsline{toc}{subsection}{Appendix C : Fields and Potentials III}
+
+\par \bigskip \noindent The kinetic force ${\mathbf{K}}_{\hspace{+0.009em}ij}$ exerted on a particle $i$ of mass $m_i$ by another particle $j$ of mass $m_j$ can also be expressed as follows:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ \: {\mathbf{E}} \, + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ - \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ - ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}\hspace{+0.06em}) + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, \Big]$
+
+\par \bigskip \noindent where:
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ]^{\hspace{+0.006em}2} \, + \, \med \, ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j})^{\hspace{+0.03em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] \, + ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j})$
+
+\par \bigskip $\dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} \;=\: - \; {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) + ( {\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}\hspace{+0.06em})$
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] \hspace{+0.06em}$
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$
+
+\par \bigskip \noindent The kinetic force ${\mathbf{K}}_{\hspace{+0.009em}ij}$ exerted on a particle $i$ of mass $m_i$ by another particle $j$ of mass $m_j$ can also be obtained starting from the following kinetic energy:
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.03em}ij} \;=\: - \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.03em}ij} \;=\: \med \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{v}}}_{j}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_{j}) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.03em}ij} \;=\: \med \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Since the kinetic energy ${\mathit{K}}_{\hspace{+0.03em}ij}$ must be positive, then applying the following Euler-Lagrange equation, we obtain:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial \, \med \, \frac{m_i \, m_j}{\mathit{M}} \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2}{\partial \, [ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, ]} \, \Bigg] + \dfrac{\partial \, \med \, \frac{m_i \, m_j}{\mathit{M}} \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2}{\partial \, [ \, {\mathbf{r}}_i - {\mathbf{r}}_{\hspace{-0.015em}j} \, ]} \;=\: - \; \dfrac{m_i \, m_j}{\mathit{M}} \, \big[ \, {\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_{\hspace{-0.015em}j} \, \big]$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent where ${\mathbf{r}}_i, {\mathbf{v}}_i, {\mathbf{a}}_{\hspace{+0.045em}i}, {\mathbf{r}}_{\hspace{-0.015em}j}, {\mathbf{v}}_{\hspace{-0.06em}j}$ and ${\mathbf{a}}_{\hspace{-0.015em}j}$ are the invariant positions, the invariant velocities and the invariant accelerations of particles $i$ and $j$ \hbox {\hyperlink{a1p2}{(\hspace{+0.09em}see Annex II\hspace{+0.120em})}}
+
+\end{document}
+

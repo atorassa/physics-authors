@@ -1,0 +1,181 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={134.1mm,210.6mm}}
+\geometry{totalwidth=113.1mm,totalheight=174.6mm}
+
+\usepackage{graphicx}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+\spanishdecimal{.}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Una Reformulación de la Relatividad Especial}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{10.77}{10.77}\selectfont \sc Una Reformulación de la Relatividad Especial}
+
+\bigskip \medskip
+
+{A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2016) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{84.60mm}{Este artículo presenta una reformulación de la relatividad especial cuyas magnitudes cinemáticas y dinámicas son invariantes bajo las transformaciones generalizadas de Lorentz.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsubsection*{Introducción}}
+
+\bigskip \smallskip
+
+\noindent A partir de un cuerpo puntual auxiliar (denominado free-point) es posible obtener magnitudes cinemáticas (denominadas absolutas) que son invariantes bajo las transformaciones generalizadas de Lorentz.
+\par \bigskip \smallskip
+\noindent El free-point es un cuerpo puntual (partícula masiva) que está siempre libre de fuerzas externas e internas (o que su fuerza resultante está siempre en equilibrio)
+\par \bigskip \smallskip
+\noindent El tiempo absoluto $( \, \breve{t} \, )$, la posición absoluta $( \, \breve{\mathbf{r}} \, )$, la velocidad absoluta $( \, \breve{\mathbf{v}} \, )$ y la aceleración absoluta $( \, \breve{\mathbf{a}} \, )$ de una partícula respecto a un sistema de referencia inercial S, están dados por:
+\par \vspace{+0.21em}
+\begin{eqnarray*}
+\breve{t} ~\doteq~ \hspace{+0.24em} \gamma \left ( t - \frac{\mathbf{r} \cdot \boldsymbol{\psi}}{c^2} \right )
+\end{eqnarray*}
+\vspace{-0.45em}
+\begin{eqnarray*}
+\breve{\mathbf{r}} ~\doteq~ \hspace{-0.09em} \left [ \; \mathbf{r} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{r} \cdot \boldsymbol{\psi} ) \, \boldsymbol{\psi}}{c^2} - \gamma \, \boldsymbol{\psi} \, t \; \right ]
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\breve{\mathbf{v}} \hspace{-0.12em} ~\doteq~ \hspace{-0.12em} \left [ \; \mathbf{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{v} \cdot \boldsymbol{\psi} ) \, \boldsymbol{\psi}}{c^2} - \hspace{+0.114em} \gamma \, \boldsymbol{\psi} \hspace{+0.114em} \; \right ] \frac{1}{\gamma \, ( 1 - \frac{\mathbf{v} \cdot \boldsymbol{\psi}}{c^2} )}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\breve{\mathbf{a}} ~\doteq~ \hspace{-0.18em} \left [ \; \mathbf{a} - \frac{\gamma}{\gamma + 1} \frac{( \mathbf{a} \cdot \boldsymbol{\psi} ) \, \boldsymbol{\psi}}{c^2} + \frac{( \mathbf{a} \times \mathbf{v} ) \times \boldsymbol{\psi}}{c^2} \; \right ] \frac{1}{\gamma^2 \, ( 1 - \frac{\mathbf{v} \cdot \boldsymbol{\psi}}{c^2} )^3}
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent donde $( \, t, \, \mathbf{r}, \, \mathbf{v}, \, \mathbf{a} \, )$ son el tiempo, la posición, la velocidad y la aceleración de la partícula respecto al sistema de referencia inercial S, $( \, \boldsymbol{\psi} \, )$ es la velocidad del free-point respecto al sistema de referencia inercial S y $( \, c \, )$ es la velocidad de la luz en el vacío. $( \, \boldsymbol{\psi} \, )$ es una constante. {\small $\gamma = ({1 - \boldsymbol{\psi} \cdot \boldsymbol{\psi}/c^2})^{-1/2}$}
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Dinámica}}
+
+\bigskip \smallskip
+
+\noindent Sea una partícula con masa en reposo $m_o$ entonces el momento lineal $\mathbf{P}$ de la partícula, la fuerza neta $\mathbf{F}$ que actúa sobre la partícula, el trabajo $\mathrm{W}$ realizado por la fuerza neta que actúa sobre la partícula y la energía cinética $\mathrm{K}$ de la partícula, para un sistema de referencia inercial, están dados por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ \frac{m_o \, \breve{\mathbf{v}}}{\sqrt{1 - \frac{\breve{v}^2}{c^2}}}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ \frac{d\mathbf{P}}{d\breve{t}} ~=~ \frac{m_o \, \breve{\mathbf{a}}}{\sqrt{1 - \frac{\breve{v}^2}{c^2}}} + \frac{m_o \, \breve{\mathbf{v}}}{\left(1 - \frac{\breve{v}^2}{c^2}\right)^{\hspace{-0.03em}{3/2}}} \frac{(\breve{\mathbf{v}} \cdot \breve{\mathbf{a}})}{c^2}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{W} ~\doteq~ \int_1^{\hspace{+0.06em}2} \mathbf{F} \cdot d\breve{\mathbf{r}} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{K} ~\doteq~ m_o \, c^2 \left ( \: \frac{1}{\sqrt{1 - \frac{\breve{v}^2}{c^2}}} - 1 \: \right )
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent Las fuerzas y los campos deben ser expresados sólo con magnitudes absolutas. Por ejemplo, la fuerza de Lorentz debe ser expresada con la velocidad \hbox {absoluta $\breve{\mathbf{v}}$}, el campo eléctrico debe ser expresado con la posición absoluta $\breve{\mathbf{r}}$, etc.
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsubsection*{Observaciones}}
+
+\bigskip \smallskip
+
+\noindent § En este artículo, las magnitudes $( \, \breve{t}, \, \breve{\mathbf{r}}, \, \breve{\mathbf{v}}, \, \breve{\mathbf{a}}, \, \mathbf{P}, \, \mathbf{F}, \, \mathrm{W}, \, \mathrm{K} \, )$ son invariantes bajo las transformaciones generalizadas de Lorentz.
+\par \bigskip \smallskip
+\noindent § Los sistemas de referencia inerciales no coincidentes en el origen en el tiempo inicial $t_o$ deben sumar una constante en la definición de tiempo absoluto tal que el tiempo absoluto y el tiempo propio del free-point coincidan y también deben sumar otra constante en la definición de posición absoluta tal que la posición absoluta del free-point sea cero.
+\par \bigskip \smallskip
+\noindent § Por último, este artículo considera, por un lado, que sería también posible \hbox {obtener} magnitudes cinemáticas y dinámicas $( \: \breve{t}, \: \breve{\mathbf{r}}, \: \breve{\mathbf{v}}, \: \breve{\mathbf{a}}, \, \mathbf{P}, \, \mathbf{F}, \, \mathrm{W}, \, \mathrm{K} \: )$ que serían invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales y, por otro lado, que las magnitudes dinámicas $( \, \mathbf{P}, \, \mathbf{F}, \, \mathrm{W}, \, \mathrm{K} \, )$ \hbox {estarían} dadas también por las ecuaciones de arriba.
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Apéndice}}
+
+\smallskip
+
+\par \bigskip {\centering\subsubsection*{Transformaciones Generalizadas de Lorentz}}
+
+\bigskip \smallskip
+
+\noindent El tiempo $( \, {t}' \, )$, la posición $( \, {\mathbf{r}}' \, )$, la velocidad $( \, {\mathbf{v}}' \, )$ y la aceleración $( \, {\mathbf{a}}' \, )$ de una partícula respecto a un sistema de referencia inercial S', están dados por:
+\par \vspace{+0.21em}
+\begin{eqnarray*}
+{t}' ~=~ \hspace{+0.24em} \gamma \left ( t - \frac{\mathbf{r} \cdot \mathbf{V}}{c^2} \right )
+\end{eqnarray*}
+\vspace{-0.45em}
+\begin{eqnarray*}
+{\mathbf{r}}' ~=~ \hspace{-0.09em} \left [ \; \mathbf{r} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{r} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} - \gamma \, \mathbf{V} \, t \; \right ]
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+{\mathbf{v}}' \hspace{-0.12em} ~=~ \hspace{-0.12em} \left [ \; \mathbf{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{v} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} - \hspace{+0.114em} \gamma \, \mathbf{V} \hspace{+0.114em} \; \right ] \frac{1}{\gamma \, ( 1 - \frac{\mathbf{v} \cdot \mathbf{V}}{c^2} )}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+{\mathbf{a}}' ~=~ \hspace{-0.18em} \left [ \; \mathbf{a} - \frac{\gamma}{\gamma + 1} \frac{( \mathbf{a} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} + \frac{( \mathbf{a} \times \mathbf{v} ) \times \mathbf{V}}{c^2} \; \right ] \frac{1}{\gamma^2 \, ( 1 - \frac{\mathbf{v} \cdot \mathbf{V}}{c^2} )^3}
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent donde $( \, t, \, \mathbf{r}, \, \mathbf{v}, \, \mathbf{a} \, )$ son el tiempo, la posición, la velocidad y la aceleración de la partícula respecto a un sistema de referencia inercial S, $( \, ${\small $\mathbf{V}$}$ \, )$ es la velocidad del sistema de referencia inercial S' respecto al sistema de referencia inercial S y $( \, c \, )$ es la velocidad de la luz en el vacío. \hspace{-0.09em}$( \, ${\small $\mathbf{V}$}$ \, )$ es una constante. \hbox {{\small $\gamma = ({1 - \mathbf{V} \hspace{-0.114em}\cdot\hspace{-0.114em} \mathbf{V}/c^2})^{-1/2}$}}
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsubsection*{Bibliografía}}
+
+\bigskip \smallskip
+
+\par \noindent \textbf{A. Einstein}, Sobre la Teoría de la Relatividad Especial y General.
+\bigskip
+\par \noindent \textbf{E. Mach}, La Ciencia de la Mecánica.
+\bigskip
+\par \noindent \textbf{R. Resnick y D. Halliday}, Física.
+\bigskip
+\par \noindent \textbf{J. Kane y M. Sternheim}, Física.
+\bigskip
+\par \noindent \textbf{B. Russell}, ABC de la Relatividad.
+\bigskip
+\par \noindent \textbf{A. French}, Relatividad Especial.
+
+\end{document}
+

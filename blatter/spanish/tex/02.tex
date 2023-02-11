@@ -1,0 +1,250 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={153.0mm,217.4mm}}
+\geometry{totalwidth=132.0mm,totalheight=181.4mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Momento Lineal, Angular \& Radial}}
+\hypersetup{pdfauthor={Antonio A. Blatter}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Momento Lineal, Momento Angular
+
+\vspace{+0.60em}
+
+\& Momento Radial}
+
+\bigskip \medskip
+
+{\large Antonio A. Blatter}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2015) Buenos Aires
+
+\smallskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{112.95mm}{Este trabajo presenta el momento lineal, el momento angular y el \hbox {momento radial} de un sistema de N partículas, que dan origen a las leyes de conservación \hbox {del momento} lineal, del momento angular y de la energía.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.50em}
+
+\par \bigskip {\centering\subsection*{Momento Lineal}}
+
+\par \bigskip El momento lineal ${\mathbf{P}}$ de un sistema de N partículas con respecto a un punto O \hbox {(con posición} ${\mathbf{R}}_o$, velocidad ${\mathbf{V}}_o$ y aceleración ${\mathbf{A}}_o$) está dado por:
+
+\par \bigskip ${\mathbf{P}} \,=\, \sum_i \, m_i \, ({\mathbf{v}}_i - {\mathbf{V}}_o)$
+
+\par \bigskip $d({\mathbf{P}})/dt \,=\, \sum_i \, m_i \, ({\mathbf{a}}_i - {\mathbf{A}}_o)$
+
+\par \bigskip ${\mathbf{F}} \,=\, \sum_i \, ({\mathbf{F}}_i - m_i {\mathbf{A}}_o)$
+
+\par \bigskip La ecuación $(\hspace{+0.045em}{\mathbf{F}}\hspace{+0.045em})$ sólo puede ser válida si el punto O logra que ${\mathbf{A}}_o$ sea igual a cero. Por lo general, en el momento lineal el punto O es el origen O del sistema de referencia, logrando que ${\mathbf{R}}_o$, ${\mathbf{V}}_o$ y ${\mathbf{A}}_o$ sean siempre iguales a cero. Sin embargo, el punto O no necesariamente tiene que ser el origen O del sistema de referencia. La única condición aquí es que la aceleración ${\mathbf{A}}_o$ del punto O debe ser igual a cero.
+
+\par \bigskip Ahora, relacionando ${\mathbf{P}}$ y ${\mathbf{F}}$ con las magnitudes lineales ${\mathbf{v}}$ y ${\mathbf{a}}$, se obtiene:
+
+\par \bigskip ${\mathbf{P}} \,=\, {\mathrm{M}} \, {\mathbf{v}}$
+
+\par \bigskip $d({\mathbf{P}})/dt \,=\, {\mathbf{F}} \,=\, {\mathrm{M}} \, {\mathbf{a}}$
+
+\par \bigskip \noindent donde ${\mathrm{M}}$ {\small $(\, = \sum_i \, m_i)$} es la masa del sistema de partículas, ${\mathbf{v}}$ y ${\mathbf{a}}$ son la velocidad y la aceleración (lineales) del sistema de partículas (con respecto al punto O)
+
+\par \bigskip Por lo tanto, se deduce que el momento lineal ${\mathbf{P}}$ de un sistema aislado de N \hbox {partículas} permanece constante si las fuerzas internas ${\mathbf{F}}_{\hspace{+0.090em}(int)}$ \hspace{-0.42em} logran anularse.
+
+\newpage
+
+\par \smallskip {\centering\subsection*{Momento Angular}}
+
+\par \bigskip El momento angular ${\mathbf{L}}$ de un sistema de N partículas con respecto a un punto O \hbox {(con posición} ${\mathbf{R}}_o$, velocidad ${\mathbf{V}}_o$ y aceleración ${\mathbf{A}}_o$) está dado por:
+
+\par \bigskip ${\mathbf{L}} \,=\, \sum_i \, m_i \, [ \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times ({\mathbf{v}}_i - {\mathbf{V}}_o) \, ]$
+
+\par \bigskip $d({\mathbf{L}})/dt \,=\, \sum_i \, m_i \, [ \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times ({\mathbf{a}}_i - {\mathbf{A}}_o) \, ]$
+
+\par \bigskip ${\mathbf{M}} \,=\, \sum_i \, [ \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times ({\mathbf{F}}_i - m_i {\mathbf{A}}_o) \, ]$
+
+\par \bigskip La ecuación $({\mathbf{M}})$ sólo puede ser válida si el punto O logra que ${\mathbf{A}}_o$ sea igual a cero o si el punto O es el centro de masa del sistema de partículas, puesto que:
+
+\par \bigskip $\sum_i \, [ \, ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \times ({\mathbf{F}}_i - m_i {\mathbf{A}}_{cm}) \, ] \,=\, \sum_i \, [ \, ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \times {\mathbf{F}}_i \, ]$
+
+\par \bigskip Ahora, relacionando ${\mathbf{L}}$ y ${\mathbf{M}}$ con las magnitudes angulares ${\boldsymbol{\omega}}$ y ${\boldsymbol{\alpha}}$, se obtiene:
+
+\par \bigskip${\mathbf{L}} \,=\, {\mathbf{I}} \cdot {\boldsymbol{\omega}}$
+
+\par \bigskip $d({\mathbf{L}})/dt \,=\, {\mathbf{M}} \,=\, {\mathbf{I}} \cdot {\boldsymbol{\alpha}} + \dot{\mathbf{I}} \cdot {\boldsymbol{\omega}}$
+
+\par \bigskip \noindent donde ${\mathbf{I}}$ es el tensor de inercia del sistema de partículas, ${\boldsymbol{\omega}}$ y ${\boldsymbol{\alpha}}$ son la velocidad y la aceleración (angulares) del sistema de partículas (con respecto al punto O)
+
+\par \bigskip ${\mathbf{I}} \,=\, \sum_i \, m_i \, [ \, |({\mathbf{r}}_i - {\mathbf{R}}_o)|^2 \, \mathbf{1} - ({\mathbf{r}}_i - {\mathbf{R}}_o) \otimes ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip $\dot{\mathbf{I}} \cdot {\boldsymbol{\omega}} = - \, (\,{\mathbf{M}}_1 + {\mathbf{M}}_2 \,)$
+
+\par \bigskip ${\mathbf{M}}_1 \,=\, - \sum_i \, m_i \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times \{ \, 2 \, {\boldsymbol{\omega}} \times ({\mathbf{v}}_i - {\mathbf{V}}_o) \, \}$
+
+\par \bigskip ${\mathbf{M}}_2 \,=\, + \sum_i \, m_i \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times \{ \, {\boldsymbol{\omega}} \times [ \, {\boldsymbol{\omega}} \times ({\mathbf{r}}_i - {\mathbf{R}}_o) \,] \, \}$
+
+\par \bigskip Si ${\mathbf{M}}_1$ y ${\mathbf{M}}_2$ son considerados como momentos <<\hspace{+0.045em}ficticios\hspace{+0.045em}>> de manera tal que resulte la igualdad $( \, {\mathbf{M}}^{\hspace{+0.045em}*} \hspace{-0.090em} = {\mathbf{M}} + {\mathbf{M}}_1 + {\mathbf{M}}_2 \, )$ entonces se logra:
+
+\par \bigskip${\mathbf{L}} \,=\, {\mathbf{I}} \cdot {\boldsymbol{\omega}}$
+
+\par \bigskip ${\mathbf{M}}^{\hspace{+0.045em}*} \hspace{-0.090em} \,=\, {\mathbf{I}} \cdot {\boldsymbol{\alpha}}$
+
+\par \bigskip Por lo tanto, se deduce que el momento angular ${\mathbf{L}}$ de un sistema aislado de N partículas permanece constante si los momentos internos ${\mathbf{M}}_{\hspace{+0.210em}(int)}$ \hspace{-0.42em} logran anularse.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Momento Radial}}
+
+\par \bigskip El momento radial ${\mathit{G}}$ de un sistema de N partículas con respecto a un punto O \hbox {(con posición} ${\mathbf{R}}_o$, velocidad ${\mathbf{V}}_o$ y aceleración ${\mathbf{A}}_o$) está dado por:
+
+\par \bigskip ${\mathit{G}} \,=\, \sum_i \, \med \; m_i \, [ \, ({\mathbf{v}}_i - {\mathbf{V}}_o) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip $\Delta {\mathit{G}} \,=\, \sum_i \, \Delta \, \med \; m_i \, [ \, ({\mathbf{v}}_i - {\mathbf{V}}_o) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip $d(\Delta {\mathit{G}})/dt \,=\, \sum_i \, \Delta \, \med \; m_i \, [ \, ({\mathbf{v}}_i - {\mathbf{V}}_o) \cdot ({\mathbf{v}}_i - {\mathbf{V}}_o) + ({\mathbf{a}}_i - {\mathbf{A}}_o) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip $d(\Delta {\mathit{G}})/dt \,=\, \sum_i \, m_i \, [ \, \Delta \, \med \; ({\mathbf{v}}_i - {\mathbf{V}}_o) \cdot ({\mathbf{v}}_i - {\mathbf{V}}_o) + \Delta \, \med \; ({\mathbf{a}}_i - {\mathbf{A}}_o) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip $d(\Delta {\mathit{G}})/dt \,=\, \sum_i \, m_i \, [ \, \int_1^2 ({\mathbf{a}}_i - {\mathbf{A}}_o) \cdot d({\mathbf{r}}_i - {\mathbf{R}}_o) + \Delta \, \med \; ({\mathbf{a}}_i - {\mathbf{A}}_o) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip $\Delta {\mathit{T}} \,=\, \sum_i \, [ \, \int_1^2 ({\mathbf{F}}_i - m_i {\mathbf{A}}_o) \cdot d({\mathbf{r}}_i - {\mathbf{R}}_o) + \Delta \, \med \; ({\mathbf{F}}_i - m_i {\mathbf{A}}_o) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip La ecuación $(\Delta {\mathit{T}}\hspace{+0.012em})$ sólo puede ser válida si el punto O logra que ${\mathbf{A}}_o$ sea igual a cero o si el punto O es el centro de masa del sistema de partículas, puesto que:
+
+\par \bigskip $\sum_i \, [ \, \int_1^2 ({\mathbf{F}}_i - m_i {\mathbf{A}}_{cm}) \cdot d({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \, ] \,=\, \sum_i \, [ \, \int_1^2 {\mathbf{F}}_i \cdot d({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \, ]$
+
+\par \bigskip $\sum_i \, [ \, \Delta \, \med \; ({\mathbf{F}}_i - m_i {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \, ] \,=\, \sum_i \, [ \, \Delta \, \med \; {\mathbf{F}}_i \cdot ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \, ]$
+
+\par \bigskip Ahora, relacionando ${\mathit{G}}$ y ${\mathit{T}}$ con las magnitudes radiales ${\mathit{r}}$, $\dot{\mathit{r}}$ y $\ddot{\mathit{r}}$, se obtiene:
+
+\par \bigskip $\Delta {\mathit{G}} \,=\, \Delta \, \med \; {\mathit{M}} \, ( \dot{\mathit{r}} \, {\mathit{r}} )$
+
+\par \bigskip $d(\Delta {\mathit{G}})/dt \,=\, \Delta {\mathit{T}} \,=\, \Delta \, \med \; {\mathit{M}} \, ( \hspace{+0.045em} \dot{\mathit{r}} \, \dot{\mathit{r}} + \ddot{\mathit{r}} \, {\mathit{r}} \hspace{+0.045em} )$
+
+\par \bigskip \noindent donde ${\mathit{M}}$ es la masa del sistema de partículas, {\small $( \dot{\mathit{r}} \, {\mathit{r}} )$} y {\small $( \hspace{+0.045em} \dot{\mathit{r}} \, \dot{\mathit{r}} + \ddot{\mathit{r}} \, {\mathit{r}} \hspace{+0.045em} )$} son la velocidad y la aceleración (escalares) del sistema de partículas (con respecto al \hbox {punto O)}
+
+\par \bigskip La posición escalar, la velocidad escalar y la aceleración escalar de un sistema de partículas formado por una sola partícula, están dadas por:
+
+\par \bigskip \begin{tabular}{llllll}
+
+\hspace{-0.90em} Posición escalar\hspace{+0.045em}: & $\med \, ( {\mathbf{r}} \cdot {\mathbf{r}} )$ & = & $\med \, ( {\mathbf{r}} \cdot {\mathbf{r}} )$ & = & $\med \, ( {\mathit{r}} \, {\mathit{r}} )$ \vspace{+0.90em} \\
+
+\hspace{-0.90em} Velocidad escalar\hspace{+0.045em}: & $\med \: d( {\mathbf{r}} \cdot {\mathbf{r}} )/dt$ & = & $( {\mathbf{v}} \cdot {\mathbf{r}} )$ & = & $( \dot{\mathit{r}} \, {\mathit{r}} )$ \vspace{+0.90em} \\
+
+\hspace{-0.90em} Aceleración escalar\hspace{+0.045em}: & $\med \: d^2( {\mathbf{r}} \cdot {\mathbf{r}} )/dt^2$ & = & $( \hspace{+0.045em} {\mathbf{v}} \cdot {\mathbf{v}} + {\mathbf{a}} \cdot {\mathbf{r}} \hspace{+0.045em} )$ & = & $( \hspace{+0.045em} \dot{\mathit{r}} \, \dot{\mathit{r}} + \ddot{\mathit{r}} \, {\mathit{r}} \hspace{+0.045em} )$
+
+\end{tabular}
+
+\par \bigskip \noindent donde ${\mathbf{r}}_i$ es el vector de posición de la partícula, ${\mathbf{r}}=({\mathbf{r}}_i - {\mathbf{R}}_o)$ y ${\mathit{r}}=|({\mathbf{r}}_i - {\mathbf{R}}_o)|$
+
+\newpage
+
+\par \bigskip Ahora, si $\Delta {\mathit{T}}$ es considerado como el trabajo ${\mathit{W}}$ realizado por las fuerzas que actúan sobre un sistema de partículas, entonces:
+
+\par \bigskip ${\mathit{W}} \,=\, \sum_i \, [ \, \int_1^2 {\mathbf{F}}_i \cdot d({\mathbf{r}}_i - {\mathbf{R}}_o) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip Por lo tanto, siempre resulta la siguiente igualdad:
+
+\par \bigskip ${\mathit{W}} \,=\, \sum_i \, \Delta \, \med \; m_i \, [ \, ({\mathbf{v}}_i - {\mathbf{V}}_o) \cdot ({\mathbf{v}}_i - {\mathbf{V}}_o) + ({\mathbf{a}}_i - {\mathbf{A}}_o) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip Si la expresión del lado derecho de la igualdad anterior es considerada como la variación en la energía cinética ${\mathit{K}}$ de un sistema de partículas, entonces:
+
+\par \bigskip $\Delta \, {\mathit{K}} \,=\, \sum_i \, \Delta \, \med \; m_i \, [ \, ({\mathbf{v}}_i - {\mathbf{V}}_o) \cdot ({\mathbf{v}}_i - {\mathbf{V}}_o) + ({\mathbf{a}}_i - {\mathbf{A}}_o) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip Por lo tanto, siempre resulta también la siguiente igualdad: ${\mathit{W}} \,=\, \Delta \, {\mathit{K}}$
+
+\par \bigskip Ahora, dado que el trabajo ${\mathit{W}}$ realizado por las fuerzas conservativas que actúan sobre un sistema de partículas es igual y de signo opuesto a la variación en la energía \hbox {potencial ${\mathit{U}}$} del sistema de partículas, entonces:
+
+\par \bigskip $\Delta \, {\mathit{U}} \,=\, - \, \sum_i \, [ \, \int_1^2 {\mathbf{F}}_i \cdot d({\mathbf{r}}_i - {\mathbf{R}}_o) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip Por lo tanto, se deduce que la energía mecánica ${\mathit{E}}$ de un sistema de N partículas permanece constante si el sistema está sujeto sólo a fuerzas conservativas.
+
+\par \bigskip $\Delta \, {\mathit{E}} \,=\, \Delta \, {\mathit{K}} + \Delta \, {\mathit{U}} \,=\, 0$ $\hspace{+0.704em} \rightarrow \hspace{+0.704em}$ ${\mathit{E}} \,=\, {\mathit{K}} + {\mathit{U}} \,=\, {\mathrm{constante}}$
+
+\par \bigskip Las magnitudes ${\mathit{E}}$, ${\mathit{K}}$ y ${\mathit{U}}$ están relacionadas con las magnitudes convencionales ${\mathit{E}}\hspace{+0.090em}'$, ${\mathit{K}}\hspace{+0.045em}'$ y ${\mathit{U}}\hspace{+0.045em}'$. De hecho, la energía mecánica ${\mathit{E}}$ de un sistema de partículas es igual a la energía mecánica convencional ${\mathit{E}}\hspace{+0.090em}'$ del sistema de partículas $({\mathit{E}} = {\mathit{E}}\hspace{+0.090em}')$ puesto que:
+
+\par \bigskip $\sum_i \, \med \; m_i \, ({\mathbf{a}}_i - {\mathbf{A}}_o) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) - \sum_i \, \med \; {\mathbf{F}}_i \cdot ({\mathbf{r}}_i - {\mathbf{R}}_o) \,=\, 0$
+
+\par \bigskip Sin embargo, si todos los sistemas de referencia inerciales y no inerciales eligen el mismo punto O (el centro de masa del sistema de partículas) entonces las magnitudes ${\mathit{E}}$, ${\mathit{K}}$ y ${\mathit{U}}$ son invariantes bajo transformaciones entre sistemas de referencia y los sistemas de referencia no inerciales no deben introducir las fuerzas ficticias sobre ${\mathbf{F}}_i$.
+
+\par \bigskip En esta sección, por lo tanto, se obtienen las siguientes relaciones:
+
+\par \bigskip ${\mathit{G}} \,=\, \med \; {\mathit{M}} \, ( \dot{\mathit{r}} \, {\mathit{r}} )$
+
+\par \bigskip $d({\mathit{G}})/dt \,=\, \med \; {\mathit{M}} \, ( \hspace{+0.045em} \dot{\mathit{r}} \, \dot{\mathit{r}} + \ddot{\mathit{r}} \, {\mathit{r}} \hspace{+0.045em} ) \,=\ {\mathit{K}}$
+
+\par \bigskip $d(\Delta {\mathit{G}})/dt \,=\, \Delta {\mathit{T}} \,=\, \Delta \, \med \; {\mathit{M}} \, ( \hspace{+0.045em} \dot{\mathit{r}} \, \dot{\mathit{r}} + \ddot{\mathit{r}} \, {\mathit{r}} \hspace{+0.045em} ) \,=\, {\mathit{W}} \,=\, \Delta \, {\mathit{K}} $
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Observaciones}}
+
+\par \bigskip Todas las ecuaciones de este trabajo pueden ser aplicadas en cualquier sistema de referencia inercial o no inercial.
+
+\par \bigskip Los sistemas de referencia no inerciales en la sección Momento Lineal y en la sección Momento Angular sí deben introducir las fuerzas ficticias sobre ${\mathbf{F}}_i$.
+
+\par \bigskip Los sistemas de referencia no inerciales en la sección Momento Radial no deben introducir las fuerzas ficticias sobre ${\mathbf{F}}_i$ (en ${\mathit{T}}$, en ${\mathit{W}}$ y en ${\mathit{U}}$) si el punto O es el centro de masa del sistema de partículas.
+
+\par \bigskip El momento lineal de un sistema de partículas está relacionado con las magnitudes lineales y especialmente con la velocidad lineal {\small $(\hspace{+0.045em}m\hspace{+0.090em}/\hspace{+0.045em}s\hspace{+0.045em})$} del sistema de partículas.
+
+\par \bigskip El momento angular de un sistema de partículas está relacionado con las magnitudes angulares y especialmente con la velocidad angular {\small $(\hspace{+0.045em}{rad}\hspace{+0.090em}/\hspace{+0.045em}s\hspace{+0.045em})$} del sistema de partículas.
+
+\par \bigskip El momento radial de un sistema de partículas está relacionado con las magnitudes radiales y especialmente con la velocidad escalar {\small $(\hspace{+0.045em}m^2/\hspace{+0.045em}s\hspace{+0.045em})$} del sistema de partículas.
+
+\par \bigskip La energía mecánica ${\mathit{E}}$, la energía cinética ${\mathit{K}}$ y la energía potencial ${\mathit{U}}$ de un sistema de partículas están relacionadas con las magnitudes radiales y especialmente con la aceleración escalar {\small $(\hspace{+0.045em}m^2/\hspace{+0.045em}s^2\hspace{+0.045em})$} del sistema de partículas.
+
+\par \bigskip Si el punto O es el centro de masa de un sistema de partículas entonces la energía mecánica ${\mathit{E}}$, la energía cinética ${\mathit{K}}$ y la energía potencial ${\mathit{U}}$ del sistema de partículas son invariantes bajo transformaciones entre sistemas de referencia.
+
+\par \bigskip La energía mecánica ${\mathit{E}}$ de un sistema de partículas es igual a la energía mecánica convencional ${\mathit{E}}\hspace{+0.090em}'$ del sistema de partículas $({\mathit{E}} = {\mathit{E}}\hspace{+0.090em}')$
+
+\vspace{+1.50em}
+
+\par {\centering\subsection*{Bibliografía}}
+
+\vspace{+1.20em}
+
+\par \textbf{A. Einstein}, Sobre la Teoría de la Relatividad Especial y General.
+\bigskip
+\par \textbf{G \hspace{-0.150em}$\cdot$\hspace{-0.180em} Gamow}, Uno, Dos, Tres, ... Infinito.
+\bigskip
+\par \textbf{E. Mach}, La Ciencia de la Mecánica.
+\bigskip
+\par \textbf{H. Goldstein}, Mecánica Clásica.
+
+\end{document}
+

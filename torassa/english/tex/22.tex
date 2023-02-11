@@ -1,0 +1,323 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={163.2mm,219.9mm}}
+\geometry{totalwidth=142.2mm,totalheight=183.9mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={General Equation of Motion}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\EM}{M}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rs}{_s}
+\newcommand{\ri}{_i}
+\newcommand{\rS}{_S}
+\newcommand{\rab}{_{ab}}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\bre}{\breve}
+\newcommand{\til}{\tilde}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\VR}{\mathbf{R}}
+\newcommand{\aV}{\mathbf{\omega}}
+\newcommand{\aA}{\mathbf{\alpha}}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+\newcommand{\nK}{{\scriptstyle\mathrm K}}
+\newcommand{\nD}{{\scriptstyle\mathrm D}}
+\newcommand{\nT}{{\scriptstyle\mathrm T}}
+
+\begin{document}
+
+\begin{center}
+
+{\huge General Equation of Motion}
+
+\bigskip \bigskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \bigskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+(2013) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{105mm}{In classical mechanics, this paper presents a general equation of motion, which can be applied in any reference frame (rotating or non-rotating) (inertial or non-inertial) without the necessity of introducing fictitious forces.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsection*{Introduction}}
+
+\vspace{+1.20em}
+
+\par The general equation of motion is a transformation equation between a reference frame S and a dynamic reference frame $\bre\mathrm S$.
+\medskip
+\par According to this paper, an observer S uses a reference frame S and a dynamic reference frame $\bre\mathrm S$.
+\medskip
+\par The dynamic position $\bre\vR\ra$, the dynamic velocity $\bre\vV\ra$, and the dynamic acceleration $\bre\vA\ra$ of a particle A of mass $\mM\ra$ relative to a dynamic reference frame $\bre\mathrm S$, are given by:
+\bigskip
+\begin{center}
+\begin{tabular}{l}
+$\bre\vR\ra = \int\int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT \; d\mT$ \vspace{+1.20em} \\
+$\bre\vV\ra = \int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT$ \vspace{+1.20em} \\
+$\bre\vA\ra = (\vF\ra/\mM\ra)$
+\end{tabular}
+\end{center}
+\medskip
+\noindent where $\vF\ra$ is the net force acting on particle A.
+\medskip
+\par The dynamic angular velocity $\bre\aV\rS$ and the dynamic angular acceleration $\bre\aA\rS$ of a reference frame S fixed to a particle S relative to a dynamic reference frame $\bre\mathrm S$, are given by:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+$\bre\aV\rS = \pm \hspace{+0.12em} \big|(\vF_1/\mM\rs - \vF_0/\mM\rs) \cdot (\vR_1 - \vR_0)/(\vR_1 - \vR_0)^2\big|^{1/2}$ \vspace{+1.20em} \\
+$\bre\aA\rS = d(\bre\aV\rS)/d\mT$
+\end{tabular}
+\end{center}
+\vspace{+0.81em}
+\noindent where $\vF_0$ and $\vF_1$ are the net forces acting on the reference frame S in the points 0 and 1, $\vR_0$ and $\vR_1$ are the positions of the points 0 and 1 relative to the reference frame S, and $\mM\rs$ is the mass of \hbox {particle S} (the point 0 is the origin of the reference frame S and the center of mass of particle S) (the point 0 belongs to the axis of dynamic rotation, and the segment 01 is perpendicular to the axis of dynamic rotation) (the vector $\bre\aV\rS$ is along the axis of dynamic rotation)
+
+\newpage
+
+{\centering\subsection*{General Equation of Motion}}
+
+\vspace{+1.20em}
+
+\par The general equation of motion for two particles A and B relative to an observer S is:
+\begin{eqnarray*}
+\mM\ra\mM\rb(\vR\ra - \vR\rb) - \mM\ra\mM\rb(\bre\vR\ra - \bre\vR\rb) = 0
+\end{eqnarray*}
+\noindent where $\mM\ra$ and $\mM\rb$ are the masses of particles A and B, $\vR\ra$ and $\vR\rb$ are the positions of particles A and B, $\bre\vR\ra$ and $\bre\vR\rb$ are the dynamic positions of particles A and B.
+\medskip
+\par Differentiating the above equation with respect to time, we obtain:
+\begin{eqnarray*}
+\mM\ra\mM\rb\big[(\vV\ra - \vV\rb) + \bre\aV\rS \times (\vR\ra - \vR\rb)\big] - \mM\ra\mM\rb(\bre\vV\ra - \bre\vV\rb) = 0
+\end{eqnarray*}
+\par Differentiating again with respect to time, we obtain:
+\begin{eqnarray*}
+\mM\ra\mM\rb\big[(\vA\ra - \vA\rb) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rb) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rb)) + \bre\aA\rS \times (\vR\ra - \vR\rb)\big] - \mM\ra\mM\rb(\bre\vA\ra - \bre\vA\rb) = 0
+\end{eqnarray*}
+
+\vspace{+1.20em}
+
+{\centering\subsection*{Reference Frame}}
+
+\vspace{+1.50em}
+
+\par Applying the above equation to two particles A and S, we have:
+\begin{eqnarray*}
+\mM\ra\mM\rs\big[(\vA\ra - \vA\rs) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rs) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rs)) + \bre\aA\rS \times (\vR\ra - \vR\rs)\big] - \mM\ra\mM\rs(\bre\vA\ra - \bre\vA\rs) = 0
+\end{eqnarray*}
+\par If we divide by $\mM\rs$ and the reference frame S fixed to particle S $(\vR\rs=0, \vV\rs=0$, and $\vA\rs=0)$ is rotating relative to the dynamic reference frame $\bre\mathrm S$ $(\bre\aV\rS \neq 0)$, then we obtain:
+\begin{eqnarray*}
+\mM\ra\big[\vA\ra + 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra + \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) + \bre\aA\rS \times \vR\ra\big] - \mM\ra(\bre\vA\ra - \bre\vA\rs) = 0
+\end{eqnarray*}
+\par If the reference frame S is non-rotating relative to the dynamic reference frame $\bre\mathrm S$ $(\bre\aV\rS=0)$, then we obtain:
+\begin{eqnarray*}
+\mM\ra\vA\ra - \mM\ra(\bre\vA\ra - \bre\vA\rs) = 0
+\end{eqnarray*}
+\par If the reference frame S is inertial relative to the dynamic reference frame $\bre\mathrm S$ $(\bre\aV\rS=0$, and $\bre\vA\rs=0)$, then we obtain:
+\begin{eqnarray*}
+\mM\ra\vA\ra - \mM\ra\bre\vA\ra = 0
+\end{eqnarray*}
+\noindent that is:
+\begin{eqnarray*}
+\mM\ra\vA\ra - \vF\ra = 0
+\end{eqnarray*}
+\par \vspace{+0.45em} \noindent where this equation is Newton's second law.
+
+\newpage
+
+{\centering\subsection*{Equation of Motion}}
+
+\vspace{+1.20em}
+
+\par From the general equation of motion it follows that the acceleration $\vA\ra$ of a particle A of mass $\mM\ra$ relative to a reference frame S fixed to a particle S of mass $\mM\rs$, is given by:
+\begin{eqnarray*}
+\vA\ra = \frac{\vF\ra}{\mM\ra} - 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra - \frac{\vF^{\scriptstyle\hspace{+0.12em}a}\rS}{\mM\rs}
+\end{eqnarray*}
+\noindent where $\vF^{\scriptstyle\hspace{+0.12em}a}\rS$ is the net force acting on the reference frame S in the point A $(\vR\ra)$
+\medskip
+\par This paper considers that Newton's first and second laws are false. Therefore, in this paper there is no need to introduce fictitious forces.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Universal Position}}
+
+\vspace{+1.20em}
+
+\par Applying the general equation of motion to a particle A of mass $\mM\ra$ and to the center of mass of the universe of mass $\mM\rcm$, we have:
+\begin{eqnarray*}
+\mM\ra\mM\rcm(\vR\ra - \vR\rcm) - \mM\ra\mM\rcm(\bre\vR\ra - \bre\vR\rcm) = 0
+\end{eqnarray*}
+\par Dividing by $\mM\rcm$ and considering that $\bre\vR\rcm$ is always zero, then we obtain:
+\begin{eqnarray*}
+\mM\ra(\vR\ra - \vR\rcm) - \mM\ra\bre\vR\ra = 0
+\end{eqnarray*}
+\noindent that is:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+\hspace{-0.90em} $\mM\ra^{\vphantom{cm}}\hspace{+0.03em}\vR\ra^{\hspace{+0.09em}cm} \, - \int\int \hspace{+0.12em} \vF\ra^{\vphantom{cm}} \; d\mT \; d\mT = 0$
+\end{tabular}
+\end{center}
+\medskip
+\noindent where $\vR\ra^{\hspace{+0.09em}cm}$ is the position of particle A relative to the center of mass of the universe.
+
+\vspace{+0.30em}
+
+{\centering\subsection*{General Principle}}
+
+\vspace{+1.20em}
+
+\par From the general equation of motion it follows that the total position $\til\VR\rij$ of a system of biparticles of mass $\EM\rij$ $(\EM\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\ri\mM\rj)$, is given by:
+\vspace{+0.60em}
+\begin{eqnarray*}
+\til\VR\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \frac{\mM\ri\mM\rj}{\EM\rij}\big[(\vR\ri - \vR\rj) - (\bre\vR\ri - \bre\vR\rj)\big] = 0
+\end{eqnarray*}
+\smallskip
+\par From the general equation of motion it follows that the total position $\til\VR\ri$ of a system of particles of mass $\EM\ri$ $(\EM\ri = \sum_{\scriptscriptstyle i} \; \mM\ri)$ relative to an observer S fixed to a particle S, is given by:
+\vspace{+0.60em}
+\begin{eqnarray*}
+\til\VR\ri = \sum_{\scriptscriptstyle i} \; \frac{\mM\ri}{\EM\ri}\big[(\vR\ri - \vR\rs) - (\bre\vR\ri - \bre\vR\rs)\big] = 0
+\end{eqnarray*}
+\smallskip
+\par Therefore, the total position $\til\VR\rij$ of a system of biparticles and the total position $\til\VR\ri$ of a system of particles are always in equilibrium.
+
+\newpage
+
+{\centering\subsection*{Kinetic Force}}
+
+\vspace{+1.20em}
+
+\par The kinetic force $\vF\nK_{a|b}$ exerted on a particle A of mass $\mM\ra$ by another particle B of mass $\mM\rb$ relative to an observer S, is given by:
+\vspace{+0.30em}
+\begin{eqnarray*}
+\vF\nK_{a|b} = \frac{\mM\ra\mM\rb}{\mM\rcm}\big[(\vA\ra - \vA\rb) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rb) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rb)) + \bre\aA\rS \times (\vR\ra - \vR\rb)\big]
+\end{eqnarray*}
+\noindent where $\mM\rcm$ is the mass of the center of mass of the universe.
+\bigskip
+\par From the previous equation it follows that the net kinetic force $\vF\nK\ra$ acting on a particle A of \hbox {mass $\mM\ra$}, is given by:
+\vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+0.90em} \vF\nK\ra = \mM\ra\big[(\vA\ra - \vA\rcm) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rcm) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rcm)) + \bre\aA\rS \times (\vR\ra - \vR\rcm)\big]
+\end{eqnarray*}
+\noindent where $\vR\rcm$, $\vV\rcm$, and $\vA\rcm$ are the position, the velocity, and the acceleration of the center of mass of the universe.
+\bigskip
+\par The net kinetic force $\vF\nK\rab$ and the net dynamic force $\vF\nD\rab$, both acting on a biparticle AB of \hbox {mass $\mM\ra\mM\rb$}, are given by:
+
+\vspace{+1.50em}
+
+\begin{center}
+\begin{tabular}{l}
+$\vF\nK\rab = \mM\ra\mM\rb(\vF\nK\ra/\mM\ra - \vF\nK\rb/\mM\rb)$ \vspace{+0.90em} \\
+$\vF\nD\rab = \mM\ra\mM\rb(\vF\nD\ra/\mM\ra - \vF\nD\rb/\mM\rb)$ \vspace{+0.60em} \\
+$\longrightarrow$ \vspace{+0.60em} \\
+$\vF\nK\rab = \mM\ra\mM\rb\big[(\vA\ra - \vA\rb) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rb) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rb)) + \bre\aA\rS \times (\vR\ra - \vR\rb)\big]$ \vspace{+0.90em} \\
+$\vF\nD\rab = \mM\ra\mM\rb(\bre\vA\ra - \bre\vA\rb)$ \vspace{+0.60em} \\
+$\longrightarrow$ \vspace{+0.60em} \\
+$\vF\nK\rab - \vF\nD\rab = 0$ \vspace{+0.60em} \\
+$\longrightarrow$ \vspace{+0.60em} \\
+$\vF\nT\rab = 0$
+\end{tabular}
+\end{center}
+
+\vspace{+0.75em}
+
+\par Therefore:
+\bigskip
+\par The kinetic acceleration $\big[d^2(\vR\ra - \vR\rb)/d\mT^2\big]_{\bre\mathrm S}$ of a biparticle AB is related to the kinetic force.
+\bigskip
+\par The dynamic acceleration $\big[d^2(\bre\vR\ra - \bre\vR\rb)/d\mT^2\big]_{\bre\mathrm S}$ of a biparticle AB is related to the dynamic forces (gravitational force, electromagnetic force, etc.)
+\bigskip
+\par The total force $\vF\nT\rab$ acting on a biparticle AB is always in equilibrium.
+
+\newpage
+
+{\centering\subsection*{Appendix}}
+
+\vspace{+1.20em}
+
+\par From the general principle the following equations are obtained:
+\vspace{+0.75em}
+\par 12 equations for a biparticle AB relative to an observer S:
+\medskip
+\begin{eqnarray*}
+\frac{1}{x} \left [(\vR\ra - \vR\rb)^y \times \Big[\frac{d^z(\vR\ra - \vR\rb)}{{d\mT}^z}\Big]_{\bre\mathrm S} \right ]^x - \; \frac{1}{x} \left [(\bre\vR\ra - \bre\vR\rb)^y \times \Big[\frac{d^z(\bre\vR\ra - \bre\vR\rb)}{{d\mT}^z}\Big]_{\bre\mathrm S} \right ]^x = \, 0
+\end{eqnarray*}
+\vspace{-0.30em}
+\par 12 equations for a particle A relative to an observer S fixed to a particle S:
+\medskip
+\begin{eqnarray*}
+\frac{1}{x} \left [(\vR\ra - \vR\rs)^y \times \Big[\frac{d^z(\vR\ra - \vR\rs)}{{d\mT}^z}\Big]_{\bre\mathrm S} \right ]^x - \; \frac{1}{x} \left [(\bre\vR\ra - \bre\vR\rs)^y \times \Big[\frac{d^z(\bre\vR\ra - \bre\vR\rs)}{{d\mT}^z}\Big]_{\bre\mathrm S} \right ]^x = \, 0
+\end{eqnarray*}
+\vspace{-0.30em}
+\par Where:
+\vspace{+0.75em}
+\par $x$ $\,$ takes the value 1 or 2 $\,$ (1 vector equation, and 2 scalar equation)
+\bigskip
+\par $y$ $\,$ takes the value 0 or 1 $\,$ (0 linear equation, and 1 angular equation)
+\bigskip
+\par $z$ $\,$ takes the value 0 or 1 or 2 $\,$ (0 position equation, 1 velocity equation, and 2 acceleration equation)
+\vspace{-0.15em}
+\par Observations:
+\vspace{+0.90em}
+\par $\vR\rs=0$, $\vV\rs=0$, and $\vA\rs=0$ relative to the reference frame S.
+\bigskip
+\par If $y$ takes the value 0 then the symbol $\times$ should be removed from the equation.
+\bigskip
+\par $\big[d^z(...)/d\mT^z\big]_{\bre\mathrm S}$ \hspace{-0.15em} means $z$-th time derivative relative to the dynamic reference frame $\bre\mathrm S$.
+\bigskip
+\par On the other hand, these 24 equations would be valid even if Newton's third law were false.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Bibliography}}
+
+\vspace{+1.20em}
+
+\par \textbf{A. Einstein}, Relativity: The Special and General Theory.
+\bigskip
+\par \textbf{E. Mach}, The Science of Mechanics.
+\bigskip
+\par \textbf{R. Resnick and D. Halliday}, Physics.
+\bigskip
+\par \textbf{J. Kane and M. Sternheim}, Physics.
+\bigskip
+\par \textbf{H. Goldstein}, Classical Mechanics.
+\bigskip
+\par \textbf{L. Landau and E. Lifshitz}, Mechanics.
+
+\end{document}
+

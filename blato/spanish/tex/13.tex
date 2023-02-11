@@ -1,0 +1,171 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={134.1mm,195.6mm}}
+\geometry{totalwidth=113.1mm,totalheight=159.6mm}
+
+\usepackage{graphicx}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+\spanishdecimal{.}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Transformaciones Generales de Lorentz}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{10.92}{10.92}\selectfont \sc Transformaciones Generales de Lorentz}
+
+\bigskip \medskip
+
+{\fontsize{9.60}{9.60}\selectfont A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2018) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{90.00mm}{Este artículo presenta las transformaciones generales de Lorentz de tiempo, espacio, velocidad y aceleración que pueden ser aplicadas en cualquier sistema inercial o no inercial (\,no rotante\,)}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsubsection*{Introducción}}
+
+\bigskip \smallskip
+
+\noindent Si consideramos un sistema (\,no rotante\,) S respecto a otro sistema inercial $\Sigma$ entonces el tiempo $( \, {t} \, )$, la posición $( \, \mathbf{r} \, )$, la velocidad $( \, \mathbf{v} \, )$ y la aceleración $( \, \mathbf{a} \, )$ de una partícula (\,masiva o no masiva\,) respecto al sistema $\Sigma$ están dados por:
+\par \vspace{+0.36em}
+\begin{eqnarray*}
+t ~= \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \mathtt{dt} \: + \, \gamma \; \frac{\vec{r} \cdot \boldsymbol{\varphi}}{c^2} \: + \, \mathtt{h}
+\end{eqnarray*}
+\vspace{+0.15em}
+\begin{eqnarray*}
+\mathbf{r} ~=~ \vec{r} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{( \, \vec{r} \cdot \boldsymbol{\varphi} \hspace{+0.09em}) \: \boldsymbol{\varphi}}{c^2} \: + \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \boldsymbol{\varphi} \; \mathtt{dt} \: + \, \mathtt{k}
+\end{eqnarray*}
+\vspace{+0.15em}
+\begin{eqnarray*}
+\mathbf{v} ~\doteq~ \dfrac{d\mathbf{r}}{dt}
+\end{eqnarray*}
+\vspace{+0.15em}
+\begin{eqnarray*}
+\mathbf{a} ~\doteq~ \dfrac{d\mathbf{v}}{dt}
+\end{eqnarray*}
+\par \vspace{+1.80em}
+\noindent donde $(\hspace{+0.12em}\mathtt{t}, \, \vec{r}\hspace{+0.21em})$ son el tiempo y la posición de la partícula respecto al \hbox {sistema S} $( \, ${\small $\boldsymbol{\mu}$}$, \, ${\small $\boldsymbol{\varphi}$}$, \, ${\small $\boldsymbol{\alpha}$}$ \, )$ son la posición, la velocidad y la aceleración del origen del sistema S respecto al sistema $\Sigma$, $( \, ${\small $\vec{\mu}$}$ \, )$ es la posición del origen del sistema $\Sigma$ respecto al sistema S, $( \, \mathtt{h}, \, \mathtt{k} \, )$ son constantes entre los sistemas $\Sigma$ {\small \&} S, $( \, c \, )$ es la velocidad de la luz en el vacío y {\small $\gamma ~\doteq~ ({1 - \boldsymbol{\varphi} \hspace{-0.114em}\cdot\hspace{-0.114em} \boldsymbol{\varphi}/c^2})^{-1/2}$}
+
+\newpage
+
+\noindent\begin{eqnarray*}
+\hspace{-2.60em} \bullet \hspace{+0.90em} \dfrac{\gamma^2}{\gamma + 1} \, \dfrac{1}{c^2} ~=~ \dfrac{\gamma - 1}{\boldsymbol{\varphi}^2} \hspace{+1.68em} ( \: \boldsymbol{\varphi}^2 \,\doteq~ \boldsymbol{\varphi} \cdot \boldsymbol{\varphi} \: )
+\end{eqnarray*}
+\medskip
+\begin{eqnarray*}
+\hspace{-2.60em} \bullet \hspace{+0.90em} \vec{r} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.15em} \vec{r} \cdot \boldsymbol{\varphi} \hspace{+0.09em}) \: \boldsymbol{\varphi}}{c^2} ~=~ \gamma \; \vec{r} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.15em} \vec{r} \times \boldsymbol{\varphi} \hspace{+0.09em}) \times \boldsymbol{\varphi}}{c^2}
+\end{eqnarray*}
+\medskip
+\begin{eqnarray*}
+\hspace{-2.60em} \bullet \hspace{+0.90em} \vec{\mu} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.15em} \vec{\mu} \cdot \boldsymbol{\varphi} \hspace{+0.09em}) \: \boldsymbol{\varphi}}{c^2} ~=~ \gamma \; \vec{\mu} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.15em} \vec{\mu} \times \boldsymbol{\varphi} \hspace{+0.09em}) \times \boldsymbol{\varphi}}{c^2}
+\end{eqnarray*}
+\medskip
+\begin{eqnarray*}
+\hspace{-2.60em} \bullet \hspace{+0.90em} \boldsymbol{\mu} ~= \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \boldsymbol{\varphi} \; \mathtt{dt} \: + \, \mathtt{k} ~= \int_{\hspace{-0.045em}\mathtt{O}}^{t} \boldsymbol{\varphi} \; dt \: + \, \mathtt{k} ~=\: - \; \vec{\mu} \, - \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.15em} \vec{\mu} \cdot \boldsymbol{\varphi} \hspace{+0.09em}) \: \boldsymbol{\varphi}}{c^2}
+\end{eqnarray*}
+\par \bigskip \medskip
+\noindent El sistema S es inercial cuando {\small $( \: \boldsymbol{\alpha} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent El sistema S es no inercial (\,movimiento rectilíneo acelerado\,) cuando {\small $( \: \boldsymbol{\alpha} ~\ne~ 0 \: )$} y {\small $( \: \boldsymbol{\alpha} \times \boldsymbol{\varphi} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent El sistema S es no inercial (\,movimiento circular uniforme\,) cuando {\small $( \: \boldsymbol{\alpha} ~\ne~ 0 \: )$} \hbox {y {\small $( \: \boldsymbol{\alpha} \cdot \boldsymbol{\varphi} ~=~ 0 \: )$}}
+\par \medskip \smallskip
+\noindent Si el sistema S es inercial entonces el observador S debe usar un origen fijo O tal que {\small $( \: \vec{\mu} \times \boldsymbol{\varphi} ~=~ 0 \: )$} 
+\par \medskip \smallskip
+\noindent Si el sistema S es no inercial (\,movimiento rectilíneo acelerado\,) entonces el \hbox {observador} S debe usar un origen fijo O tal que {\small $( \: \vec{\mu} \times \boldsymbol{\varphi} ~=~ 0 \: )$} 
+\par \medskip \smallskip
+\noindent Pero si el sistema S es no inercial (\,movimiento circular uniforme\,) entonces el observador S debe usar un origen fijo O tal que {\small $( \: \vec{\mu} \cdot \boldsymbol{\varphi} ~=~ 0 \: )$} 
+\par \medskip \smallskip
+\noindent Si el sistema S es inercial entonces {\small $( \: \boldsymbol{\alpha} ~=~ 0 \; )$ , $( \, \boldsymbol{\varphi} ~=~ \mathrm{cte} \, )$ , $( \, \gamma ~=~ \mathrm{cte} \, )$ $( \, \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \mathtt{dt} = \gamma \; \mathtt{t} \, )$ , $( \, \boldsymbol{\mu} ~=~ \gamma \; \boldsymbol{\varphi} \: \mathtt{t} + \mathtt{k} \, )$} y {\small $( \: \vec{\mu} \times \boldsymbol{\varphi} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent Si el sistema S es no inercial (movimiento rectilíneo acelerado) entonces {\small $( \: \boldsymbol{\alpha} ~\ne~ 0 \: )$ \hbox {$( \: \boldsymbol{\alpha} \times \boldsymbol{\varphi} ~=~ 0 \: )$}} y {\small $( \: \vec{\mu} \times \boldsymbol{\varphi} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent Si el sistema S es no inercial (\,movimiento circular uniforme\,) entonces {\small $( \: \boldsymbol{\alpha} ~\ne~ 0 \: )$ \hbox {$( \: \boldsymbol{\alpha} \cdot \boldsymbol{\varphi} ~=~ 0 \: )$} , $( \, \gamma ~=~ \mathrm{cte} \, )$ , $( \, \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \mathtt{dt} = \gamma \; \mathtt{t} \, )$} y {\small $( \: \vec{\mu} \cdot \boldsymbol{\varphi} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent Si el sistema S es inercial o no inercial (\,no rotante\,) entonces el observador S puede usar partículas de prueba tales que {\small $( \; \vec{r} \hspace{+0.045em}\cdot \boldsymbol{\varphi} ~=~ 0 \; )$} {y/o} {\small $( \; \vec{r} \times \boldsymbol{\varphi} ~=~ 0 \; )$}
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Observaciones Generales}}
+
+\bigskip \smallskip
+
+\noindent Es sabido que en sistemas inerciales la geometría local es euclidiana y que en sistemas no inerciales la geometría local es en general no euclidiana.
+\par \medskip \smallskip
+\noindent Según este artículo, el elemento de línea local del sistema S debe ser obtenido desde el elemento de línea local del sistema $\Sigma$.
+\par \medskip \smallskip
+\noindent Por lo tanto, el elemento de línea local (\,coordenadas rectilíneas\,) en el sistema $\Sigma$ y el elemento de línea local en el sistema S están dados por:
+\par \vspace{-0.06em}
+\begin{eqnarray*}
+\hspace{-1.98em} ds^{\hspace{+0.03em}2} ~=~ c^2 dt^{\hspace{+0.03em}2} - d\mathbf{r}^{\hspace{+0.03em}2}
+\end{eqnarray*}
+\vspace{-0.45em}
+\begin{eqnarray*}
+ds^{\hspace{+0.03em}2} ~=~ \Big [ \; \Big ( \, 1 + \frac{{\mathbf w} \cdot \vec{r}}{c^2} \: \Big )^{\hspace{-0.18em}2} \hspace{-0.21em}- \Big ( \, \frac{\boldsymbol{\phi} \times \vec{r}}{c} \: \Big )^{\hspace{-0.18em}2} \,\, \Big ] \, c^2 \, \mathtt{dt}^2 \,-\, 2 \, \Big ( \, \boldsymbol{\phi} \times \vec{r} \: \Big ) \, d\vec{r} \,\, \mathtt{dt} \,-\, d\vec{r}^{\hspace{+0.24em}2}
+\end{eqnarray*}
+\vspace{+0.06em}
+\begin{eqnarray*}
+\hspace{+0.54em} {\mathbf w} ~\doteq~ \gamma^2 \: \Big ( \, \boldsymbol{\alpha} + \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.09em} \boldsymbol{\alpha} \cdot \boldsymbol{\varphi} \hspace{+0.09em}) \: \boldsymbol{\varphi}}{c^2} \: \Big ) \hspace{+2.04em} , \hspace{+2.04em} \boldsymbol{\phi} ~\doteq\, \gamma^1 \: \Big ( \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.09em} \boldsymbol{\varphi} \times \boldsymbol{\alpha} \hspace{+0.09em})}{c^2} \: \Big )
+\end{eqnarray*}
+\par \vspace{+1.35em}
+\noindent Según este artículo, las magnitudes cinemáticas $( \: t , \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$ son las magnitudes cinemáticas propias del sistema $\Sigma$.
+\par \medskip \smallskip
+\noindent Por lo tanto, la magnitud cinemática $( \: t \: )$ es un tensor de rango 0 y las magnitudes cinemáticas $( \: \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$ son tensores de rango 1.
+\par \medskip \smallskip
+\noindent Finalmente, la velocidad de la luz en el vacío es $( \, \mathbf{c} \, )$ en el sistema $\Sigma$ y $( \, \vec{c} \; )$ en el sistema S y $( \, \mathbf{c} \cdot \mathbf{c} \, )$ {\small \&} $( \, \vec{c} \cdot \vec{c} \; )$ son constantes en los sistemas $\Sigma$ {\small \&} S.
+
+\vspace{+0.90em}
+
+\par \bigskip {\centering\subsubsection*{Bibliografía}}
+
+\bigskip \medskip
+
+\par \noindent [1] \, R. A. Nelson, J. Math. Phys. {\bf 28}, 2379 (1987).
+\medskip \medskip
+\par \noindent [2] \, R. A. Nelson, J. Math. Phys. {\bf 35}, 6224 (1994).
+\medskip \medskip
+\par \noindent [3] \, C. M{\o}ller, The Theory of Relativity (1952).
+
+\end{document}
+

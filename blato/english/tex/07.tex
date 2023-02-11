@@ -1,0 +1,230 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={128.4mm,198.6mm}}
+\geometry{totalwidth=107.4mm,totalheight=162.6mm}
+
+\usepackage{graphicx}
+
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Special Relativity with Massive and Non-massive Particles}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\yya}{27}
+\newcommand{\xxa}{33}
+\newcommand{\xxc}{45}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{9.60}{9.60}\selectfont \sc Special Relativity with Massive and Non-massive Particles}
+
+\bigskip \medskip
+
+{\fontsize{9.60}{9.60}\selectfont A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2016) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{78.99mm}{In special relativity, this article presents a relativistic dynamics of massive and non-massive particles which can be applied in any inertial reference frame.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsubsection*{Introduction}}
+
+\bigskip \smallskip
+
+\noindent In special relativity, the total position $( \, \bar{\mathbf{r}} \, )$ of a (massive or non-massive) particle is always zero.
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+\bar{\mathbf{r}} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent The total position $( \, \bar{\mathbf{r}} \, )$ of a (massive or non-massive) particle is defined by the kinetic position $( \, \hat{\mathbf{r}} \, )$ and the dynamic position $( \, \check{\mathbf{r}} \, )$ as follows:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+\hat{\mathbf{r}} - \check{\mathbf{r}} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent The kinetic position $( \, \hat{\mathbf{r}} \, )$ of a (massive or non-massive) particle is given by:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+\hat{\mathbf{r}} ~\doteq~ \dfrac{1}{\mu} \, \int m \, \mathbf{v} \, dt
+\end{eqnarray*}
+\par \vspace{+0.45em}
+\noindent where $( \, \mu \, )$ is an arbitrary ( universal ) constant, $( \, m \, )$ is the relativistic mass of the particle, $( \, \mathbf{v} \, )$ is the velocity of the particle and $( \, t \, )$ is time.
+\par \vspace{+0.60em}
+\noindent The dynamic position $( \, \check{\mathbf{r}} \, )$ of a (massive or non-massive) particle is given by:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+\check{\mathbf{r}} ~\doteq~ \dfrac{1}{\mu} \, \int \hspace{-0.30em} \int \mathbf{F} \; dt \, dt
+\end{eqnarray*}
+\par \vspace{+0.45em}
+\noindent where $( \, \mu \, )$ is the arbitrary ( universal ) constant, $( \, \mathbf{F} \, )$ is the net force acting on the particle and $( \, t \, )$ is time.
+
+\newpage
+
+\noindent The relativistic mass $( \, m \, )$ of a massive particle is given by:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+m ~\doteq~ \dfrac{m_o}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{eqnarray*}
+\par \vspace{+0.45em}
+\noindent where $( \, m_o \, )$ is the rest mass of the massive particle, $( \, v \, )$ is the speed of the massive particle and $( \, c \, )$ is the speed of light in vacuum.
+\par \vspace{+0.60em}
+\noindent The relativistic mass $( \, m \, )$ of a non-massive particle is given by:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+m ~\doteq~ \dfrac{h \, \nu}{c^2}
+\end{eqnarray*}
+\par \vspace{+0.45em}
+\noindent where $( \, h \, )$ is the Planck constant, $( \, \nu \, )$ is the frequency of the non-massive particle and $( \, c \, )$ is the speed of light in vacuum.
+\par \vspace{+0.75em}
+\noindent Now, the total position $( \, \bar{\mathbf{r}} \, )$ of a (massive or non-massive) particle can also be expressed as follows:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+\dfrac{1}{\mu} \; \bigg [ \,\, \int m \, \mathbf{v} \, dt \; - \int \hspace{-0.30em} \int \mathbf{F} \; dt \, dt \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent Differentiating the above equation with respect to time, yields:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+\dfrac{1}{\mu} \; \bigg [ \,\, m \, \mathbf{v} \; - \int \mathbf{F} \; dt \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent Differentiating again with respect to time, we have:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+\dfrac{1}{\mu} \; \bigg [ \,\, m \, \mathbf{a} \, + \dfrac{dm}{dt} \, \mathbf{v} \; - \; \mathbf{F} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent Multiplying by $( \, \mu \, )$ and rearranging, we finally obtain:
+\par \vspace{-0.45em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ m \, \mathbf{a} \, + \dfrac{dm}{dt} \, \mathbf{v}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent This equation ( similar to Newton's second law for $v \ll c$ ) will be used in the next section of this article.
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{The Relativistic Dynamics}}
+
+\bigskip \smallskip
+
+\noindent If we consider a (massive or non-massive) particle with relativistic mass $m$ then the linear momentum $\mathbf{P}$ of the particle, the angular momentum $\mathbf{L}$ of the particle, the net force $\mathbf{F}$ acting on the particle, the work $\mathrm{W}$ done by the net force acting on the particle, and the kinetic energy $\mathrm{K}$ of the particle, for an inertial reference frame, are given by:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ m \, \mathbf{v}
+\end{eqnarray*}
+\vspace{-0.60em}
+\begin{eqnarray*}
+\mathbf{L} ~\doteq~ \mathbf{P} \times \mathbf{r}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ \dfrac{d\hspace{+0.045em}\mathbf{P}}{dt} ~=~ m \, \mathbf{a} \, + \dfrac{dm}{dt} \, \mathbf{v}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{W} ~\doteq~ \hspace{-0.36em} \int_{\scriptscriptstyle 1}^{\hspace{+0.09em}{\scriptscriptstyle 2}} \mathbf{F} \cdot d\mathbf{r} ~=~ \hspace{-0.36em} \int_{\scriptscriptstyle 1}^{\hspace{+0.09em}{\scriptscriptstyle 2}} \dfrac{d\hspace{+0.045em}\mathbf{P}}{dt} \cdot d\mathbf{r} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{K} ~\doteq~ m \, c^2
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent where $( \, \mathbf{r}, \, \mathbf{v}, \, \mathbf{a} \, )$ are the position, the velocity and the acceleration of the particle relative to the inertial reference frame and $( \, c \, )$ is the speed of light in vacuum. The kinetic energy $( \, \mathrm{K}_o \, )$ of a massive particle at rest is $( \, m_o \, c^2 \, )$
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsubsection*{Bibliography}}
+
+\bigskip \smallskip
+
+\par \noindent \textbf{A. Einstein}, Relativity: The Special and General Theory.
+\bigskip
+\par \noindent \textbf{E. Mach}, The Science of Mechanics.
+\bigskip
+\par \noindent \textbf{W. Pauli}, Theory of Relativity.
+\bigskip
+\par \noindent \textbf{A. French}, Special Relativity.
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Appendix}}
+
+\smallskip
+
+\par \bigskip {\centering\subsubsection*{System of Equations}}
+
+\bigskip \bigskip
+
+\begin{center}
+\begin{tabular}{ccccc}
+& & {\framebox(\xxa,\yya){[1]}} \\
+& & {\makebox(\xxa,\yya){$\downarrow$ $dt$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[4]}} & {\makebox(\xxc,\yya){$\leftarrow \times \: \mathbf{r} \leftarrow$}} & {\framebox(\xxa,\yya){[2]}} \\
+{\makebox(\xxa,\yya){$\downarrow$ $dt$ $\downarrow$}} & & {\makebox(\xxa,\yya){$\downarrow$ $dt$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[5]}} & {\makebox(\xxc,\yya){$\leftarrow \times \: \mathbf{r} \leftarrow$}} & {\framebox(\xxa,\yya){[3]}} & {\makebox(\xxc,\yya){$\rightarrow \hspace{-0.001em} \int \hspace{+0.03em} d\mathbf{r} \hspace{+0.001em} \rightarrow$}} & {\framebox(\xxa,\yya){[6]}}
+\end{tabular}
+\end{center}
+\par \vspace{+0.90em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,1\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \int \mathbf{P} \; dt \; - \int \hspace{-0.30em} \int \mathbf{F} \; dt \, dt \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,2\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \mathbf{P} \; - \int \mathbf{F} \; dt \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,3\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \dfrac{d\hspace{+0.045em}\mathbf{P}}{dt} \, - \; \mathbf{F} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,4\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \mathbf{P} \; - \int \mathbf{F} \; dt \,\, \bigg ] \times \mathbf{r} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,5\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \dfrac{d\hspace{+0.045em}\mathbf{P}}{dt} \, - \; \mathbf{F} \,\, \bigg ] \times \mathbf{r} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,6\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \int \dfrac{d\hspace{+0.045em}\mathbf{P}}{dt} \cdot d\mathbf{r} \; - \int \mathbf{F} \cdot d\mathbf{r} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+
+\end{document}
+

@@ -1,0 +1,81 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={123.0mm,150.0mm}}
+\geometry{totalwidth=102.0mm,totalheight=114.0mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Angular Potential Energy}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\mU}{U}
+\newcommand{\ra}{_a}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Angular Potential Energy}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip \smallskip
+
+\parbox{84mm}{This paper presents an equation to calculate the angular potential energy of a particle.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsubsection*{Angular Potential Energy}}
+
+\vspace{+0.75em}
+
+\par The angular potential energy $\mU\ra$ of a particle A on which a resultant force $\vF\ra$ acts, is given by:
+\begin{eqnarray*}
+\mU\ra = - \int (\hspace{+0.03em} \vR \times \vF\ra) \cdot d(\hspace{+0.03em} \vR \times \vR\ra)
+\end{eqnarray*}
+\noindent where $\vR$ is a position vector which is constant in magnitude and direction, and $\vR\ra$ is the position of particle A.
+\medskip
+\par If $\vF\ra$ is constant and since $\vF\ra = \mM\ra \hspace{+0.09em} \vA\ra$, it follows that:
+\begin{eqnarray*}
+\mU\ra = - \hspace{+0.18em} \mM\ra \hspace{+0.06em} (\hspace{+0.03em} \vR \times \vA\ra) \cdot (\hspace{+0.03em} \vR \times \vR\ra)
+\end{eqnarray*}
+\noindent where $\mM\ra$ is the mass of particle A, and $\vA\ra$ is the constant acceleration of particle A.
+
+\end{document}
+

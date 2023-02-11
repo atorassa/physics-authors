@@ -1,0 +1,199 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={168.0mm,228.0mm}}
+\geometry{totalwidth=147.0mm,totalheight=192.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Un Nuevo Sistema de Ecuaciones en Mecánica Clásica}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\mI}{I}
+\newcommand{\mY}{Y}
+\newcommand{\mK}{K}
+\newcommand{\mP}{P}
+\newcommand{\mW}{W}
+\newcommand{\mU}{U}
+\newcommand{\ri}{_i}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+
+\begin{document}
+
+\begin{center}
+
+{\Large Un Nuevo Sistema de Ecuaciones en Mecánica Clásica}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Licencia Creative Commons Atribución 3.0
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{123mm}{En mecánica clásica, este trabajo presenta un nuevo sistema de ecuaciones que es invariante bajo transformaciones entre sistemas de referencia y que puede ser aplicado en cualquier sistema de referencia (rotante o no rotante) (inercial o no inercial) sin necesidad de introducir fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.60em}
+
+{\centering\subsubsection*{Definiciones}}
+
+\vspace{+0.60em}
+
+\par Si consideramos un sistema de N partículas entonces el momento de inercia total $\mI$ del sistema de partículas, la vivacidad cinética total $\mY$ del sistema de partículas y la energía cinética total $\mK$ del sistema de partículas, son como sigue:
+\medskip
+\begin{eqnarray*}
+\hspace{+1.50em} \mI \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} \left( \hspace{+0.12em} \mM\ri \hspace{+0.24em} \bar\vR\ri \cdot \bar\vR\ri \hspace{+0.12em} \right)
+\end{eqnarray*}
+\begin{eqnarray*}
+\hspace{+1.50em} \mY \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} \left( \hspace{+0.12em} \mM\ri \hspace{+0.24em} \bar\vR\ri \cdot \bar\vV\ri \hspace{+0.12em} \right)
+\end{eqnarray*}
+\begin{eqnarray*}
+\hspace{+1.50em} \mK \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} \left( \hspace{+0.12em} \mM\ri \hspace{+0.24em} \bar\vV\ri \cdot \bar\vV\ri \hspace{+0.12em} + \hspace{+0.12em} \mM\ri \hspace{+0.24em} \bar\vA\ri \cdot \bar\vR\ri \hspace{+0.12em} \right)
+\end{eqnarray*}
+\smallskip
+\par \noindent donde $\bar\vR\ri = \vR\ri - \vR\rcm$, $\bar\vV\ri = \vV\ri - \vV\rcm$, $\bar\vA\ri = \vA\ri - \vA\rcm$, $\vR\ri$, $\vV\ri$ y $\vA\ri$ son la posición, la velocidad y la aceleración de la \textit{i}-ésima partícula, $\vR\rcm$, $\vV\rcm$ y $\vA\rcm$ son la posición, la velocidad y la aceleración del centro de masa del sistema de partículas y $\mM\ri$ es la masa de la \textit{i}-ésima partícula.
+\smallskip
+\par Si consideramos un sistema de N partículas entonces el empuje total $\mP$ realizado por las sub-fuerzas que actúan sobre el sistema de partículas, el trabajo total $\mW$ realizado por las fuerzas que actúan sobre el sistema de partículas y la energía potencial total $\mU$ del sistema de partículas, son como sigue:
+\medskip
+\begin{eqnarray*}
+\hspace{+1.50em} \mP \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} \Delta \hspace{+0.03em} \left( \hspace{+0.06em} \bar\vR\ri \hspace{+0.09em} \cdot \int \hspace{+0.12em} \vF\ri \hspace{+0.36em} dt \hspace{+0.06em} \right)
+\end{eqnarray*}
+\begin{eqnarray*}
+\hspace{+1.50em} \mW \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} + \left( \hspace{+0.06em} 2 \int_1^{\hspace{+0.09em} 2} \hspace{+0.12em} \vF\ri \cdot d\bar\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \hspace{+0.24em} \vF\ri \cdot \bar\vR\ri \hspace{+0.06em} \right)
+\end{eqnarray*}
+\begin{eqnarray*}
+\hspace{+1.50em} \Delta \hspace{+0.18em} \mU \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} - \left( \hspace{+0.06em} 2 \int_1^{\hspace{+0.09em} 2} \hspace{+0.12em} \vF\ri \cdot d\bar\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \hspace{+0.24em} \vF\ri \cdot \bar\vR\ri \hspace{+0.06em} \right)
+\end{eqnarray*}
+\smallskip
+\par \noindent donde $\bar\vR\ri = \vR\ri - \vR\rcm$, $\vR\ri$ es la posición de la \textit{i}-ésima partícula, $\vR\rcm$ es la posición del centro de masa del sistema de partículas, $\vF\ri$ es la fuerza resultante que actúa sobre la \textit{i}-ésima partícula y $t$ es el tiempo.
+
+\newpage
+
+{\centering\subsubsection*{Teoremas}}
+
+\vspace{+1.20em}
+
+\par En un sistema de N partículas, el empuje total $\mP$ realizado por las sub-fuerzas que actúan sobre el sistema de partículas es igual al cambio en la vivacidad cinética total $\mY$ del sistema de partículas.
+\begin{eqnarray*}
+\hspace{+1.50em} \mP = + \hspace{+0.09em} \Delta \hspace{+0.18em} \mY
+\end{eqnarray*}
+\par En un sistema de N partículas, el trabajo total $\mW$ realizado por las fuerzas que actúan sobre el sistema de partículas es igual al cambio en la energía cinética total $\mK$ del sistema de partículas.
+\begin{eqnarray*}
+\hspace{+1.50em} \mW = + \hspace{+0.09em} \Delta \hspace{+0.18em} \mK
+\end{eqnarray*}
+\par En un sistema de N partículas, el trabajo total $\mW$ realizado por las fuerzas conservativas que actúan sobre el sistema de partículas es igual y de signo opuesto al cambio en la energía potencial total $\mU$ del sistema de partículas.
+\begin{eqnarray*}
+\hspace{+1.50em} \mW = - \hspace{+0.09em} \Delta \hspace{+0.18em} \mU
+\end{eqnarray*}
+
+\vspace{+0.90em}
+
+{\centering\subsubsection*{Principios}}
+
+\vspace{+1.20em}
+
+\par En un sistema de N partículas, si las sub-fuerzas que actúan sobre el sistema de partículas no realizan empuje entonces la vivacidad cinética total del sistema de partículas permanece constante.
+\begin{eqnarray*}
+\hspace{+1.50em} \mY = \hspace{+0.09em} constante
+\end{eqnarray*}
+\par En un sistema de N partículas, si las fuerzas no conservativas que actúan sobre el sistema de partículas no realizan trabajo entonces la energía (mecánica) total del sistema de partículas permanece constante.
+\begin{eqnarray*}
+\hspace{+1.50em} \mK + \mU = \hspace{+0.09em} constante
+\end{eqnarray*}
+
+\vspace{+0.90em}
+
+{\centering\subsubsection*{Observaciones}}
+
+\vspace{+1.20em}
+
+\par El nuevo sistema de ecuaciones es invariante bajo transformaciones entre sistemas de referencia.
+\bigskip
+\par El nuevo sistema de ecuaciones puede ser aplicado en cualquier sistema de referencia (rotante o no rotante) (inercial o no inercial) sin necesidad de introducir fuerzas ficticias.
+\bigskip
+\par El nuevo sistema de ecuaciones sería válido incluso si la tercera ley de movimiento de Newton fuera falsa en un sistema de referencia inercial.
+\bigskip
+\par El nuevo sistema de ecuaciones sería válido incluso si las tres leyes de movimiento de Newton fueran falsas en un sistema de referencia no inercial.
+\bigskip
+\par Por otro lado, el nuevo sistema de ecuaciones puede ser obtenido a partir de la ecuación general de movimiento ( \hspace{-0.45em} \textbf{A. Torassa}, Ecuación General de Movimiento \hspace{-0.45em} )
+
+\newpage
+
+{\centering\subsubsection*{Anexo}}
+
+\vspace{+0.90em}
+
+\par Si consideramos un sistema aislado de N partículas y si la tercera ley de movimiento de Newton es válida entonces el trabajo total $\mW$ realizado por las fuerzas que actúan sobre el sistema de partículas y la energía potencial total $\mU$ del sistema de partículas, son como sigue:
+\medskip
+\begin{eqnarray*}
+\hspace{+1.50em} \mW \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} + \left( \hspace{+0.06em} 2 \int_1^{\hspace{+0.09em} 2} \hspace{+0.12em} \vF\ri \cdot d\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \hspace{+0.24em} \vF\ri \cdot \vR\ri \hspace{+0.06em} \right)
+\end{eqnarray*}
+\begin{eqnarray*}
+\hspace{+1.50em} \Delta \hspace{+0.18em} \mU \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} - \left( \hspace{+0.06em} 2 \int_1^{\hspace{+0.09em} 2} \hspace{+0.12em} \vF\ri \cdot d\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \hspace{+0.24em} \vF\ri \cdot \vR\ri \hspace{+0.06em} \right)
+\end{eqnarray*}
+\smallskip
+\par \noindent donde $\vR\ri$ es la posición de la \textit{i}-ésima partícula y $\vF\ri$ es la fuerza resultante que actúa sobre la \textit{i}-ésima partícula.
+\bigskip
+\par Si consideramos un sistema de N partículas entonces el momento de inercia total $\mI$ del sistema de partículas, la vivacidad cinética total $\mY$ del sistema de partículas y la energía cinética total $\mK$ del sistema de partículas, pueden también ser expresadas como sigue:
+\medskip
+\begin{eqnarray*}
+\hspace{+1.50em} \mI \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} \left( \hspace{+0.12em} \mM\ri \hspace{+0.24em} \vR\ri \cdot \vR\ri \hspace{+0.12em} \right) \hspace{+0.12em} - \hspace{+0.12em} \mM\rcm \hspace{+0.24em} \vR\rcm \cdot \vR\rcm
+\end{eqnarray*}
+\begin{eqnarray*}
+\hspace{+1.50em} \mY \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} \left( \hspace{+0.12em} \mM\ri \hspace{+0.24em} \vR\ri \cdot \vV\ri \hspace{+0.12em} \right) \hspace{+0.12em} - \hspace{+0.12em} \mM\rcm \hspace{+0.24em} \vR\rcm \cdot \vV\rcm
+\end{eqnarray*}
+\begin{eqnarray*}
+\hspace{+1.50em} \mK \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.24em} \left( \hspace{+0.12em} \mM\ri \hspace{+0.24em} \vV\ri \cdot \vV\ri \hspace{+0.12em} + \hspace{+0.12em} \mM\ri \hspace{+0.24em} \vA\ri \cdot \vR\ri \hspace{+0.12em} \right) \hspace{+0.12em} - \hspace{+0.12em} \mM\rcm \hspace{+0.24em} \vV\rcm \cdot \vV\rcm \hspace{+0.12em} - \hspace{+0.12em} \mM\rcm \hspace{+0.24em} \vA\rcm \cdot \vR\rcm
+\end{eqnarray*}
+\begin{eqnarray*}
+\hspace{+1.50em} \mI \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.36em} \sum_{j>i}^{\mathrm N} \hspace{+0.24em} \left( \hspace{+0.06em} \frac{\mM\ri \hspace{+0.12em} \mM\rj}{\mM\rcm} \hspace{+0.24em} (\vR\ri - \vR\rj) \cdot (\vR\ri - \vR\rj) \hspace{+0.06em} \right)
+\end{eqnarray*}
+\begin{eqnarray*}
+\hspace{+1.50em} \mY \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.36em} \sum_{j>i}^{\mathrm N} \hspace{+0.24em} \left( \hspace{+0.06em} \frac{\mM\ri \hspace{+0.12em} \mM\rj}{\mM\rcm} \hspace{+0.24em} (\vR\ri - \vR\rj) \cdot (\vV\ri - \vV\rj) \hspace{+0.06em} \right)
+\end{eqnarray*}
+\begin{eqnarray*}
+\hspace{+1.50em} \mK \hspace{+0.12em} = \hspace{+0.12em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.36em} \sum_{j>i}^{\mathrm N} \hspace{+0.24em} \left( \hspace{+0.06em} \frac{\mM\ri \hspace{+0.12em} \mM\rj}{\mM\rcm} \hspace{+0.24em} (\vV\ri - \vV\rj) \cdot (\vV\ri - \vV\rj) \hspace{+0.18em} + \hspace{+0.18em} \frac{\mM\ri \hspace{+0.12em} \mM\rj}{\mM\rcm} \hspace{+0.24em} (\vA\ri - \vA\rj) \cdot (\vR\ri - \vR\rj) \hspace{+0.06em} \right)
+\end{eqnarray*}
+\smallskip
+\par \noindent donde $\vR\ri$, $\vV\ri$, $\vA\ri$, $\vR\rj$, $\vV\rj$, $\vA\rj$, $\vR\rcm$, $\vV\rcm$, $\vA\rcm$ son las posiciones, las velocidades y las aceleraciones de la \hbox {\textit{i}-ésima} partícula, de la \textit{j}-ésima partícula y del centro de masa del sistema de partículas y $\mM\ri$, $\mM\rj$, $\mM\rcm$ son las masas de la \textit{i}-ésima partícula, de la \textit{j}-ésima partícula y del centro de masa del sistema de partículas.
+
+\end{document}
+

@@ -1,0 +1,176 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={131.1mm,210.6mm}}
+\geometry{totalwidth=110.1mm,totalheight=174.6mm}
+
+\usepackage{graphicx}
+
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={A New Formulation of Special Relativity}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{10.98}{10.98}\selectfont \sc A New Formulation of Special Relativity}
+
+\bigskip \medskip
+
+{A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2016) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{78.00mm}{This article presents a new formulation of special relativity whose kinematic and dynamic quantities are invariant under generalized Lorentz transformations.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsubsection*{Introduction}}
+
+\bigskip \smallskip
+
+\noindent From an auxiliary point object (called free-point) can be obtained kinematic quantities (such as absolute time, absolute position, etc.) that are invariant under generalized Lorentz transformations.
+\par \bigskip \smallskip
+\noindent The free-point is a point object (massive particle) that must always be free of internal and external forces (or the net force acting on it must always be zero)
+\par \bigskip \smallskip
+\noindent The absolute time $( \, \breve{t} \, )$, the absolute position $( \, \breve{\mathbf{r}} \, )$, the absolute velocity $( \, \breve{\mathbf{v}} \, )$ and the absolute acceleration $( \, \breve{\mathbf{a}} \, )$ of a particle relative to an inertial reference frame S are given by:
+\par \vspace{+0.21em}
+\begin{eqnarray*}
+\breve{t} ~\doteq~ \hspace{+0.24em} \gamma \left ( t - \frac{\mathbf{r} \cdot \boldsymbol{\psi}}{c^2} \right )
+\end{eqnarray*}
+\vspace{-0.45em}
+\begin{eqnarray*}
+\breve{\mathbf{r}} ~\doteq~ \hspace{-0.09em} \left [ \; \mathbf{r} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{r} \cdot \boldsymbol{\psi} ) \, \boldsymbol{\psi}}{c^2} - \gamma \, \boldsymbol{\psi} \, t \; \right ]
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\breve{\mathbf{v}} \hspace{-0.12em} ~\doteq~ \hspace{-0.12em} \left [ \; \mathbf{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{v} \cdot \boldsymbol{\psi} ) \, \boldsymbol{\psi}}{c^2} - \hspace{+0.114em} \gamma \, \boldsymbol{\psi} \hspace{+0.114em} \; \right ] \frac{1}{\gamma \, ( 1 - \frac{\mathbf{v} \cdot \boldsymbol{\psi}}{c^2} )}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\breve{\mathbf{a}} ~\doteq~ \hspace{-0.18em} \left [ \; \mathbf{a} - \frac{\gamma}{\gamma + 1} \frac{( \mathbf{a} \cdot \boldsymbol{\psi} ) \, \boldsymbol{\psi}}{c^2} + \frac{( \mathbf{a} \times \mathbf{v} ) \times \boldsymbol{\psi}}{c^2} \; \right ] \frac{1}{\gamma^2 \, ( 1 - \frac{\mathbf{v} \cdot \boldsymbol{\psi}}{c^2} )^3}
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent where $( \, t, \, \mathbf{r}, \, \mathbf{v}, \, \mathbf{a} \, )$ are the time, the position, the velocity and the acceleration of the particle relative to the inertial reference frame S, $( \, \boldsymbol{\psi} \, )$ is the velocity of the free-point relative to the inertial reference frame S and $( \, c \, )$ is the speed of light in vacuum. $( \, \boldsymbol{\psi} \, )$ is a constant. {\small $\gamma = ({1 - \boldsymbol{\psi} \cdot \boldsymbol{\psi}/c^2})^{-1/2}$}
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{The Dynamics}}
+
+\bigskip \smallskip
+
+\noindent If we consider a particle with rest mass $m_o$ then the linear momentum $\mathbf{P}$ of the particle, the net force $\mathbf{F}$ acting on the particle, the work $\mathrm{W}$ done by the net force acting on the particle, and the kinetic energy $\mathrm{K}$ of the particle, for an inertial reference frame, are given by:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ \frac{m_o \, \breve{\mathbf{v}}}{\sqrt{1 - \frac{\breve{v}^2}{c^2}}}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ \frac{d\mathbf{P}}{d\breve{t}} ~=~ \frac{m_o \, \breve{\mathbf{a}}}{\sqrt{1 - \frac{\breve{v}^2}{c^2}}} + \frac{m_o \, \breve{\mathbf{v}}}{\left(1 - \frac{\breve{v}^2}{c^2}\right)^{\hspace{-0.03em}{3/2}}} \frac{(\breve{\mathbf{v}} \cdot \breve{\mathbf{a}})}{c^2}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{W} ~\doteq~ \int_1^{\hspace{+0.06em}2} \mathbf{F} \cdot d\breve{\mathbf{r}} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{K} ~\doteq~ m_o \, c^2 \left ( \: \frac{1}{\sqrt{1 - \frac{\breve{v}^2}{c^2}}} - 1 \: \right )
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent Forces and fields must be expressed only with absolute quantities. For example, the Lorentz force must be expressed with the absolute velocity $\breve{\mathbf{v}}$, the electric field must be expressed with the absolute position $\breve{\mathbf{r}}$, etc.
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsubsection*{Observations}}
+
+\bigskip \smallskip
+
+\noindent \S \ In this article, the quantities $( \, \breve{t}, \, \breve{\mathbf{r}}, \, \breve{\mathbf{v}}, \, \breve{\mathbf{a}}, \, \mathbf{P}, \, \mathbf{F}, \, \mathrm{W}, \, \mathrm{K} \, )$ are invariant under generalized Lorentz transformations.
+\par \bigskip \smallskip
+\noindent \S \ In arbitrary inertial reference frames ( $\breve{t}_{\mathrm{fp}} \ne \tau_{\mathrm{\hspace{+0.06em}fp}}$ or $\breve{\mathbf{r}}_{\mathrm{fp}} \ne 0$ ) \hbox {( ${\mathrm{fp}}$ = free-point )} a constant must be included in the definition of absolute time such that the \hbox {absolute} time and the proper time of the free-point are the same \hbox {( $\breve{t}_{\mathrm{fp}} = \tau_{\mathrm{\hspace{+0.06em}fp}}$ )} and another constant must also be included in the definition of absolute position such that the absolute position of the free-point is zero \hbox {( $\breve{\mathbf{r}}_{\mathrm{fp}} = 0$ )}
+\par \bigskip \smallskip
+\noindent \S \ Finally, this article considers, on one hand, that it would also be possible to obtain kinematic and dynamic quantities $( \, \breve{t}, \, \breve{\mathbf{r}}, \, \breve{\mathbf{v}}, \, \breve{\mathbf{a}}, \, \mathbf{P}, \, \mathbf{F}, \, \mathrm{W}, \, \mathrm{K} \, )$ that would be invariant under transformations between inertial and non-inertial reference frames and, on the other hand, that the dynamic quantities $( \, \mathbf{P}, \, \mathbf{F}, \, \mathrm{W}, \, \mathrm{K} \, )$ would also be given by the above equations.
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Appendix}}
+
+\smallskip
+
+\par \bigskip {\centering\subsubsection*{Generalized Lorentz Transformations}}
+
+\bigskip \smallskip
+
+\noindent The time $( \, {t}' \, )$, the position $( \, {\mathbf{r}}' \, )$, the velocity $( \, {\mathbf{v}}' \, )$ and the acceleration $( \, {\mathbf{a}}' \, )$ of a particle relative to an inertial reference frame S' are given by:
+\par \vspace{+0.21em}
+\begin{eqnarray*}
+{t}' ~=~ \hspace{+0.24em} \gamma \left ( t - \frac{\mathbf{r} \cdot \mathbf{V}}{c^2} \right )
+\end{eqnarray*}
+\vspace{-0.45em}
+\begin{eqnarray*}
+{\mathbf{r}}' ~=~ \hspace{-0.09em} \left [ \; \mathbf{r} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{r} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} - \gamma \, \mathbf{V} \, t \; \right ]
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+{\mathbf{v}}' \hspace{-0.12em} ~=~ \hspace{-0.12em} \left [ \; \mathbf{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{v} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} - \hspace{+0.114em} \gamma \, \mathbf{V} \hspace{+0.114em} \; \right ] \frac{1}{\gamma \, ( 1 - \frac{\mathbf{v} \cdot \mathbf{V}}{c^2} )}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+{\mathbf{a}}' ~=~ \hspace{-0.18em} \left [ \; \mathbf{a} - \frac{\gamma}{\gamma + 1} \frac{( \mathbf{a} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} + \frac{( \mathbf{a} \times \mathbf{v} ) \times \mathbf{V}}{c^2} \; \right ] \frac{1}{\gamma^2 \, ( 1 - \frac{\mathbf{v} \cdot \mathbf{V}}{c^2} )^3}
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent where $( \, t, \, \mathbf{r}, \, \mathbf{v}, \, \mathbf{a} \, )$ are the time, the position, the velocity and the acceleration of the particle relative to an inertial reference frame S, $( \, ${\small $\mathbf{V}$}$ \, )$ is the velocity of the inertial reference frame S' relative to the inertial reference frame S and $( \, c \, )$ is the speed of light in vacuum. $( \, ${\small $\mathbf{V}$}$ \, )$ is a constant. {\small $\gamma = ({1 - \mathbf{V} \hspace{-0.114em}\cdot\hspace{-0.114em} \mathbf{V}/c^2})^{-1/2}$}
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsubsection*{Bibliography}}
+
+\bigskip \smallskip
+
+\par \noindent \textbf{A. Einstein}, Relativity: The Special and General Theory.
+\bigskip
+\par \noindent \textbf{E. Mach}, The Science of Mechanics.
+\bigskip
+\par \noindent \textbf{R. Resnick and D. Halliday}, Physics.
+\bigskip
+\par \noindent \textbf{J. Kane and M. Sternheim}, Physics.
+\bigskip
+\par \noindent \textbf{B. Russell}, ABC of Relativity.
+\bigskip
+\par \noindent \textbf{A. French}, Special Relativity.
+
+\end{document}
+

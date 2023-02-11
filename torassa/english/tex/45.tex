@@ -1,0 +1,498 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={164.1mm,223.5mm}}
+\geometry{totalwidth=143.1mm,totalheight=187.5mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={A Reformulation of Classical Mechanics}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\unitlength}{0.84pt}
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\mW}{W}
+\newcommand{\mK}{K}
+\newcommand{\mU}{U}
+\newcommand{\mE}{E}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rs}{_s}
+\newcommand{\ri}{_i}
+\newcommand{\rS}{_S}
+\newcommand{\yya}{30}
+\newcommand{\xxa}{36}
+\newcommand{\xxb}{42}
+\newcommand{\xxc}{45}
+\newcommand{\xxd}{48}
+\newcommand{\rab}{_{ab}}
+\newcommand{\ris}{_{is}}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\bre}{\breve}
+\newcommand{\ricm}{_{icm}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\vP}{\mathbf{P}}
+\newcommand{\vL}{\mathbf{L}}
+\newcommand{\aV}{\mathbf{\omega}}
+\newcommand{\aA}{\mathbf{\alpha}}
+\newcommand{\rt}{\hspace{+0.03em}'}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.12em\lower.45ex\hbox{$\scriptstyle 2$}\;}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE A Reformulation of Classical Mechanics}
+
+\bigskip \bigskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \bigskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+{\fontsize{9.27}{11.01}\selectfont\textbf{Abstract}}
+
+\bigskip
+
+\parbox{99.12mm}{\fontsize{9.27}{11.01}\selectfont This paper presents a reformulation of classical mechanics which is invariant under transformations between reference frames and which can be applied in any reference frame (rotating or non-rotating) (inertial or non-inertial) \hbox {without} the necessity of introducing fictitious forces.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsection*{Introduction}}
+
+\vspace{+1.20em}
+
+\par The reformulation of classical mechanics presented in this paper is obtained starting from a general equation of motion. This paper considers that any observer S uses a reference frame S and a dynamic reference frame $\bre\mathrm S$. The general equation of motion is a transformation equation between the reference frame S and the dynamic reference frame $\bre\mathrm S$.
+\medskip
+\par The dynamic position $\bre\vR\ra$, the dynamic velocity $\bre\vV\ra$, and the dynamic acceleration $\bre\vA\ra$ of a particle A of mass $\mM\ra$ relative to the dynamic reference frame $\bre\mathrm S$ are given by:
+\vspace{+0.81em}
+\par \begin{tabular}{l}
+$\hspace{+6.00em} \bre\vR\ra = \int \int \hspace{+0.12em} (\vF\ra/\mM\ra) \; dt \; dt$ \vspace{+1.20em} \\
+$\hspace{+6.00em} \bre\vV\ra = \int \hspace{+0.12em} (\vF\ra/\mM\ra) \; dt$ \vspace{+1.20em} \\
+$\hspace{+6.00em} \bre\vA\ra = (\vF\ra/\mM\ra)$
+\end{tabular}
+\vspace{+0.81em}
+\par \noindent where $\vF\ra$ is the net force acting on particle A.
+\medskip
+\par The dynamic angular velocity $\bre\aV\rS$ and the dynamic angular acceleration $\bre\aA\rS$ of the reference \hbox {frame S} fixed to a particle S relative to the dynamic reference frame $\bre\mathrm S$ are given by:
+\vspace{+0.81em}
+\par \begin{tabular}{l}
+$\hspace{+6.00em} \bre\aV\rS = \pm \hspace{+0.12em} \big| (\vF_{\scriptscriptstyle 1}/\mM\rs - \vF_{\scriptscriptstyle 0}/\mM\rs) \cdot (\vR_{\scriptscriptstyle 1} - \vR_{\scriptscriptstyle 0})/(\vR_{\scriptscriptstyle 1} - \vR_{\scriptscriptstyle 0})^2 \big|^{1/2}$ \vspace{+1.20em} \\
+$\hspace{+6.00em} \bre\aA\rS = d(\bre\aV\rS)/dt$
+\end{tabular}
+\vspace{+0.90em}
+\par \noindent where $\vF_{\scriptscriptstyle 0}$ and $\vF_{\scriptscriptstyle 1}$ are the net forces acting on the reference frame S in the points 0 and 1, $\vR_{\scriptscriptstyle 0}$ and $\vR_{\scriptscriptstyle 1}$ are the positions of the points 0 and 1 relative to the reference frame S, and $\mM\rs$ is the mass of \hbox {particle S} \hbox {(the point 0} is the origin of the reference frame S and the center of mass of particle S) (the point 0 belongs to the axis of dynamic rotation, and the segment 01 is perpendicular to the axis of dynamic rotation) (the vector $\bre\aV\rS$ is along the axis of dynamic rotation)
+
+\newpage
+
+{\centering\subsection*{General Equation of Motion}}
+
+\vspace{+1.20em}
+
+\par The general equation of motion for two particles A and B relative to an observer S is:
+\begin{eqnarray*}
+\mM\ra \, \mM\rb \big[ \hspace{+0.045em} \vR\ra - \vR\rb \big] - \mM\ra \, \mM\rb \big[ \hspace{+0.045em} \bre\vR\ra - \bre\vR\rb \big] = 0
+\end{eqnarray*}
+\noindent where $\mM\ra$ and $\mM\rb$ are the masses of particles A and B, $\vR\ra$ and $\vR\rb$ are the positions of particles A and B, $\bre\vR\ra$ and $\bre\vR\rb$ are the dynamic positions of particles A and B.
+\medskip
+\par Differentiating the above equation with respect to time, we obtain:
+\begin{eqnarray*}
+\mM\ra \, \mM\rb \big[ (\vV\ra - \vV\rb) + \bre\aV\rS \times (\vR\ra - \vR\rb) \big] - \mM\ra \, \mM\rb \big[ \hspace{+0.036em} \bre\vV\ra - \bre\vV\rb \big] = 0
+\end{eqnarray*}
+\par Differentiating again with respect to time, we obtain:
+\begin{eqnarray*}
+\mM\ra \, \mM\rb \big[ (\vA\ra - \vA\rb) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rb) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rb)) + \bre\aA\rS \times (\vR\ra - \vR\rb) \big] - \mM\ra \, \mM\rb \big[ \hspace{+0.045em} \bre\vA\ra - \bre\vA\rb \big] = 0
+\end{eqnarray*}
+
+\vspace{+1.20em}
+
+{\centering\subsection*{Reference Frames}}
+
+\vspace{+1.50em}
+
+\par Applying the above equation to two particles A and S, we have:
+\begin{eqnarray*}
+\mM\ra \, \mM\rs \big[ (\vA\ra - \vA\rs) + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \vV\rs) + \bre\aV\rS \times (\bre\aV\rS \times (\vR\ra - \vR\rs)) + \bre\aA\rS \times (\vR\ra - \vR\rs) \big] - \mM\ra \, \mM\rs \big[ \hspace{+0.045em} \bre\vA\ra - \bre\vA\rs \big] = 0
+\end{eqnarray*}
+\par If we divide by $\mM\rs$ and if the reference frame S fixed to particle S $(\vR\rs=0, \vV\rs=0$ and $\vA\rs=0)$ is rotating relative to the dynamic reference frame $\bre\mathrm S$ $(\bre\aV\rS \neq 0)$ then we obtain:
+\begin{eqnarray*}
+\mM\ra \big[ \vA\ra + 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra + \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) + \bre\aA\rS \times \vR\ra \big] - \mM\ra \big[ \hspace{+0.045em} \bre\vA\ra - \bre\vA\rs \big] = 0
+\end{eqnarray*}
+\par If the reference frame S is non-rotating relative to the dynamic reference frame $\bre\mathrm S$ $(\bre\aV\rS=0)$ then \hbox {we obtain}:
+\begin{eqnarray*}
+\mM\ra \, \vA\ra - \mM\ra \big[ \hspace{+0.045em} \bre\vA\ra - \bre\vA\rs \big] = 0
+\end{eqnarray*}
+\par If the reference frame S is inertial relative to the dynamic reference frame $\bre\mathrm S$ $(\bre\aV\rS=0$ and $\bre\vA\rs=0)$ then we obtain:
+\begin{eqnarray*}
+\mM\ra \, \vA\ra - \mM\ra \, \bre\vA\ra = 0
+\end{eqnarray*}
+\noindent that is:
+\begin{eqnarray*}
+\mM\ra \, \vA\ra - \vF\ra = 0
+\end{eqnarray*}
+\noindent or else:
+\begin{eqnarray*}
+\vF\ra = \mM\ra \, \vA\ra
+\end{eqnarray*}
+\par \vspace{+0.45em} \noindent where this equation is Newton's second law.
+
+\newpage
+
+{\centering\subsection*{Equation of Motion}}
+
+\vspace{+1.20em}
+
+\par From the general equation of motion it follows that the acceleration $\vA\ra$ of a particle A of mass $\mM\ra$ relative to a reference frame S fixed to a particle S of mass $\mM\rs$ is given by:
+\begin{eqnarray*}
+\vA\ra = \frac{\vF\ra}{\mM\ra} - 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra - \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) - \bre\aA\rS \times \vR\ra - \frac{\vF\rs}{\mM\rs}
+\end{eqnarray*}
+\noindent where $\vF\ra$ is the net force acting on particle A, $\bre\aV\rS$ is the dynamic angular velocity of the reference frame S, $\vV\ra$ is the velocity of particle A, $\vR\ra$ is the position of particle A, $\bre\aA\rS$ is the dynamic angular acceleration of the reference frame S, and $\vF\rs$ is the net force acting on particle S.
+\medskip
+\par In contradiction with Newton's first and second laws, from the above equation it follows that particle A can have a non-zero acceleration even if there is no force acting on particle A, and also that particle A can have zero acceleration (state of rest or of uniform linear motion) even if there is \hbox {an unbalanced} force acting on particle A.
+\medskip
+\par Therefore, in order to apply Newton's first and second laws in a non-inertial reference frame it is necessary to introduce fictitious forces.
+\medskip
+\par However, this paper considers that Newton's first and second laws are false. Therefore, in this paper there is no need to introduce fictitious forces.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{System of Equations}}
+
+\vspace{+1.20em}
+
+\par If we consider a system of N particles (of total mass M and center of mass CM) and a single \hbox {particle J} relative to a reference frame S (fixed to a particle S) then from the general equation of motion the following equations are obtained:
+
+\vspace{+2.10em}
+
+\begin{center}
+\begin{tabular}{ccccccc}
+& & {\framebox(\xxa,\yya){[1]}} & {\makebox(\xxd,\yya){$\rightarrow \int \hspace{+0.03em} d\bre\vR\rij \rightarrow$}} & {\framebox(\xxa,\yya){[6]}} & {\makebox(\xxb,\yya){$\rightarrow \frac{1}{2} \; dt \rightarrow$}} & {\framebox(\xxa,\yya){[8]}} \\
+& & {\makebox(\xxa,\yya){$\downarrow$ $dt$ $\downarrow$}} & & & & {\makebox(\xxa,\yya){$\downarrow$ $dt$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[4]}} & {\makebox(\xxc,\yya){$\leftarrow \times \: \bre\vR\rij \leftarrow$}} & {\framebox(\xxa,\yya){[2]}} & {\makebox(\xxd,\yya){$\rightarrow \int \hspace{+0.03em} d\bre\vV\rij \rightarrow$}} & {\framebox(\xxa,\yya){[7]}} & & {\framebox(\xxa,\yya){[9]}} \\
+{\makebox(\xxa,\yya){$\downarrow$ $dt$ $\downarrow$}} & & {\makebox(\xxa,\yya){$\downarrow$ $dt$ $\downarrow$}} & {\makebox(\xxd,\yya){$\nearrow \hspace{-0.001em} \int \hspace{+0.03em} d\bre\vR\rij \hspace{+0.001em} \nearrow$}} \\
+{\framebox(\xxa,\yya){[5]}} & {\makebox(\xxc,\yya){$\leftarrow \times \: \bre\vR\rij \leftarrow$}} & {\framebox(\xxa,\yya){[3]}}
+\end{tabular}
+\end{center}
+
+\vspace{+1.20em}
+
+\par The equations [1, 2, 3, 4 and 5] are vector equations, and the equations [6, 7, 8 and 9] are scalar equations. The principles of conservation are obtained from the equations [2, 4, 7 and 9]
+
+\newpage
+
+\par {\fontsize{11}{11}\selectfont\textbf{Equation [1]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \mM\ri \hspace{+0.03em} \big[ (\vR\rij) - (\bre\vR\rij) \big] = 0$
+\bigskip
+\par {\fontsize{11}{11}\selectfont\textbf{Equation [2]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \mM\ri \hspace{+0.03em} \big[ (\vV\rij + \bre\aV\rS \times \vR\rij) - (\bre\vV\rij) \big] = 0$
+\bigskip
+\par {\fontsize{11}{11}\selectfont\textbf{Equation [3]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \mM\ri \hspace{+0.03em} \big[ (\vA\rij + 2 \hspace{+0.06em} \bre\aV\rS \times \vV\rij + \bre\aV\rS \times (\bre\aV\rS \times \vR\rij) + \bre\aA\rS \times \vR\rij) - (\bre\vA\rij) \big] = 0$
+\bigskip
+\par {\fontsize{11}{11}\selectfont\textbf{Equation [4]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \mM\ri \hspace{+0.03em} \big[ (\vV\rij + \bre\aV\rS \times \vR\rij) \times \vR\rij - (\bre\vV\rij) \times \bre\vR\rij \big] = 0$
+\bigskip
+\par {\fontsize{11}{11}\selectfont\textbf{Equation [5]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \mM\ri \hspace{+0.03em} \big[ (\vA\rij + 2 \hspace{+0.06em} \bre\aV\rS \times \vV\rij + \bre\aV\rS \times (\bre\aV\rS \times \vR\rij) + \bre\aA\rS \times \vR\rij) \times \vR\rij - (\bre\vA\rij) \times \bre\vR\rij \big] = 0$
+\bigskip
+\par {\fontsize{11}{11}\selectfont\textbf{Equation [6]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.09em} \med \mM\ri \hspace{+0.03em} \big[ (\vR\rij)^2 - (\bre\vR\rij)^2 \big] = 0$
+\bigskip
+\par {\fontsize{11}{11}\selectfont\textbf{Equation [7]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.09em} \med \mM\ri \hspace{+0.03em} \big[ (\vV\rij + \bre\aV\rS \times \vR\rij)^2 - (\bre\vV\rij)^2 \big] = 0$
+\bigskip
+\par {\fontsize{11}{11}\selectfont\textbf{Equation [8]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.09em} \med \mM\ri \hspace{+0.03em} \big[ (\vR\rij \cdot \vV\rij) - (\bre\vR\rij \cdot \bre\vV\rij) \big] = 0$
+\bigskip
+\par {\fontsize{11}{11}\selectfont\textbf{Equation [9]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.09em} \med \mM\ri \hspace{+0.03em} \big[ (\vV\rij \cdot \vV\rij + \vA\rij \cdot \vR\rij) - (\bre\vV\rij \cdot \bre\vV\rij + \bre\vA\rij \cdot \bre\vR\rij) \big] = 0$
+
+\vspace{+1.20em}
+
+\par \rule{131.40mm}{0.10mm}
+
+\vspace{+1.50em}
+
+\par {\fontsize{10.00}{10.00}\selectfont The \textit{i}-th particle (of mass $\mM\ri$) relative to particle J, to particle S, and to the center of mass CM}
+
+\vspace{+1.50em}
+
+{\fontsize{10.26}{10.26}\selectfont\begin{tabular}{llllll}
+\hspace{-0.81em} $\vR\rij = \vR\ri - \vR\rj$ & \hspace{-0.60em} $\bre\vR\rij = \bre\vR\ri - \bre\vR\rj$ & $\vR\ris = \vR\ri - \vR\rs$ & \hspace{-0.60em} $\bre\vR\ris = \bre\vR\ri - \bre\vR\rs$ & $\vR\ricm = \vR\ri - \vR\rcm$ & \hspace{-0.60em} $\bre\vR\ricm = \bre\vR\ri - \bre\vR\rcm$ \vspace{+1.20em} \\
+\hspace{-0.81em} $\vV\rij = \vV\ri - \vV\rj$ & \hspace{-0.60em} $\bre\vV\rij = \bre\vV\ri - \bre\vV\rj$ & $\vV\ris = \vV\ri - \vV\rs$ & \hspace{-0.60em} $\bre\vV\ris = \bre\vV\ri - \bre\vV\rs$ & $\vV\ricm = \vV\ri - \vV\rcm$ & \hspace{-0.60em} $\bre\vV\ricm = \bre\vV\ri - \bre\vV\rcm$ \vspace{+1.20em} \\
+\hspace{-0.81em} $\vA\rij = \vA\ri - \vA\rj$ & \hspace{-0.60em} $\bre\vA\rij = \bre\vA\ri - \bre\vA\rj$ & $\vA\ris = \vA\ri - \vA\rs$ & \hspace{-0.60em} $\bre\vA\ris = \bre\vA\ri - \bre\vA\rs$ & $\vA\ricm = \vA\ri - \vA\rcm$ & \hspace{-0.60em} $\bre\vA\ricm = \bre\vA\ri - \bre\vA\rcm$
+\end{tabular}}
+
+\newpage
+
+\par {\fontsize{11}{11}\selectfont\textbf{{\large $\Delta$} Equation [2]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \Delta \; \mM\ri \hspace{+0.03em} \big[ (\vV\rij + \bre\aV\rS \times \vR\rij) - (\bre\vV\rij) \big] = 0$
+\bigskip
+\par Now, replacing particle J by particle S and distributing $(\Delta \; \mM\ri)$ we have:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \; \mM\ri \, (\vV\ris + \bre\aV\rS \times \vR\ris) - \Delta \; \mM\ri \, (\bre\vV\ris) \big] = 0$
+\bigskip
+\par If the reference frame S $(\vV\rs=0)$ is inertial $(\bre\aV\rS=0$ and $\bre\vV\rs=\mathrm{constant})$ then:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \; \mM\ri \, \vV\ri - \Delta \; \mM\ri \, \bre\vV\ri \big] = 0$
+\bigskip
+\par Since \hspace{-0.36em} $\big[ \hspace{+0.045em} \Delta \; \mM\ri \, \bre\vV\ri = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \bre\vA\ri \: dt = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \: dt \big]$ \hspace{-0.36em} we obtain:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \; \mM\ri \, \vV\ri - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \: dt \big] = 0$
+\bigskip
+\par If the system of particles is isolated and if the internal forces obey Newton's third law in its weak form $( \hspace{+0.09em} \sum_{i=1}^N \vF\ri = 0 \hspace{+0.03em} )$ then:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \mM\ri \, \vV\ri = \vP = \mathrm{constant}$
+\bigskip
+\par Therefore, if the system of particles is isolated and if the internal forces obey Newton's third law in its weak form then the total linear momentum $\vP$ of the system of particles remains constant relative to an inertial reference frame.
+\bigskip
+\par {\fontsize{11}{11}\selectfont\textbf{{\large $\Delta$} Equation [4]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \Delta \; \mM\ri \hspace{+0.03em} \big[ (\vV\rij + \bre\aV\rS \times \vR\rij) \times \vR\rij - (\bre\vV\rij) \times \bre\vR\rij \big] = 0$
+\bigskip
+\par Now, replacing particle J by the center of mass CM and distributing $(\Delta \; \mM\ri)$ we have:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \; \mM\ri \, (\vV\ricm + \bre\aV\rS \times \vR\ricm) \times \vR\ricm - \Delta \; \mM\ri \, (\bre\vV\ricm) \times \bre\vR\ricm \big] = 0$
+\bigskip
+\par Since \hspace{-0.36em} $\big[ \hspace{+0.045em} \Delta \; \mM\ri \, (\bre\vV\ricm) \times \bre\vR\ricm = \Delta \; \mM\ri \, \bre\vV\ricm \times \bre\vR\ricm = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} (\mM\ri \, \bre\vA\ricm \times \bre\vR\ricm) \, dt = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} (\mM\ri \, \bre\vA\ricm \times \vR\ricm) \, dt \big]$ \hspace{-0.36em} we obtain:
+\bigskip \vspace{-1.20em}
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \; \mM\ri \, (\vV\ricm + \bre\aV\rS \times \vR\ricm) \times \vR\ricm - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} (\mM\ri \, \bre\vA\ricm \times \vR\ricm) \, dt \big] = 0$
+\bigskip
+\par Given that \hspace{-0.36em} $\big[ \sum_{i=1}^N \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} (\mM\ri \, \bre\vA\ricm \times \vR\ricm) \, dt = \sum_{i=1}^N \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} (\mM\ri \, \bre\vA\ri \times \vR\ricm) \, dt = \sum_{i=1}^N \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} (\vF\ri \times \vR\ricm) \, dt \big]$ \hspace{-0.36em} we get:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \; \mM\ri \, (\vV\ricm + \bre\aV\rS \times \vR\ricm) \times \vR\ricm - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} (\vF\ri \times \vR\ricm) \, dt \big] = 0$
+\bigskip
+\par If the system of particles is isolated and if the internal forces obey Newton's third law in its strong form $( \hspace{+0.09em} \sum_{i=1}^N \vF\ri \times \vR\ricm = 0 \hspace{+0.03em} )$ then:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \mM\ri \, (\vV\ricm + \bre\aV\rS \times \vR\ricm) \times \vR\ricm = \vL = \mathrm{constant}$
+\bigskip
+\par Therefore, if the system of particles is isolated and if the internal forces obey Newton's third law in its strong form then the total angular momentum $\vL$ of the system of particles remains constant.
+
+\newpage
+
+\par {\fontsize{11}{11}\selectfont\textbf{{\large $\Delta$} Equation [7]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \Delta \, \med \mM\ri \hspace{+0.03em} \big[ (\vV\rij + \bre\aV\rS \times \vR\rij)^2 - (\bre\vV\rij)^2 \big] = 0$
+\bigskip
+\par Now, replacing particle J by the center of mass CM and distributing $(\Delta \, \med \mM\ri)$ we have:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \, \med \mM\ri \, (\vV\ricm + \bre\aV\rS \times \vR\ricm)^2 - \Delta \, \med \mM\ri \, (\bre\vV\ricm)^2 \big] = 0$
+\bigskip
+\par \hypertarget{eq_a}{} Since \hspace{-0.36em} $\big[ \hspace{+0.045em} \Delta \, \med \mM\ri \, (\bre\vV\ricm)^2 = \Delta \, \med \mM\ri \, \bre\vV\ricm \cdot \bre\vV\ricm = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \bre\vA\ricm \cdot d\bre\vR\ricm = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \bre\vA\ricm \cdot d\vR\ricm \big]$ \hspace{-0.51em} $\big[$ \hspace{-0.48em} {\fontsize{9.75}{9.75}\selectfont Eq. \hspace{-0.42em} A} \hspace{-0.51em} $\big]$ \hspace{-0.36em} we obtain:
+\bigskip \vspace{-1.20em}
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \, \med \mM\ri \, (\vV\ricm + \bre\aV\rS \times \vR\ricm)^2 - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \bre\vA\ricm \cdot d\vR\ricm \big] = 0$
+\bigskip
+\par \hypertarget{eq_b}{} Given that \hspace{-0.36em} $\big[ \sum_{i=1}^N \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \bre\vA\ricm \cdot d\vR\ricm = \sum_{i=1}^N \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \bre\vA\ri \cdot d\vR\ricm = \sum_{i=1}^N \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ricm \big]$ \hspace{-0.51em} $\big[$ \hspace{-0.48em} {\fontsize{9.75}{9.75}\selectfont Eq. \hspace{-0.42em} B} \hspace{-0.51em} $\big]$ \hspace{-0.36em} we get:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \, \med \mM\ri \, (\vV\ricm + \bre\aV\rS \times \vR\ricm)^2 - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ricm \big] = 0$
+\bigskip
+\par Therefore, we can consider that the total work $\mW$ done by the forces acting on the system of particles, the total kinetic energy $\mK$ of the system of particles and the total potential energy $\mU$ of the system of particles are as follows:
+\bigskip
+\par \hspace{+1.20em} $\mW = \sum_{i=1}^N \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ricm$
+\bigskip
+\par \hspace{+1.20em} $\Delta \, \mK = \sum_{i=1}^N \Delta \, \med \mM\ri \, (\vV\ricm + \bre\aV\rS \times \vR\ricm)^2$
+\bigskip
+\par \hspace{+1.20em} $\Delta \, \mU = \sum_{i=1}^N - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ricm$
+\bigskip
+\par If the system of particles is isolated and if the internal forces obey Newton's third law in its weak form $( \hspace{+0.09em} \sum_{i=1}^N \vF\ri = 0 \hspace{+0.03em} )$ then:
+\bigskip
+\par \hspace{+1.20em} $\mW = \sum_{i=1}^N \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ri$
+\bigskip
+\par \hspace{+1.20em} $\Delta \, \mU = \sum_{i=1}^N - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ri$
+\bigskip
+\par The total work $\mW$ done by the forces acting on the system of particles is equal to the change in the total kinetic energy $\mK$ of the system of particles.
+\bigskip
+\par \hspace{+1.20em} $\mW = \Delta \, \mK$
+\bigskip
+\par The total work $\mW$ done by the conservative forces acting on the system of particles is equal and opposite in sign to the change in the total potential energy $\mU$ of the system of particles.
+\bigskip
+\par \hspace{+1.20em} $\mW = - \, \Delta \, \mU$
+\bigskip
+\par Therefore, if the system of particles is exclusively subject to conservative forces then the total mechanical energy $\mE$ of the system of particles remains constant.
+\bigskip
+\par \hspace{+1.20em} $\mE = \mK + \mU = \mathrm{constant}$
+
+\newpage
+
+\par {\fontsize{11}{11}\selectfont\textbf{{\large $\Delta$} Equation [9]}}
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \Delta \, \med \mM\ri \hspace{+0.03em} \big[ (\vV\rij \cdot \vV\rij + \vA\rij \cdot \vR\rij) - (\bre\vV\rij \cdot \bre\vV\rij + \bre\vA\rij \cdot \bre\vR\rij) \big] = 0$
+\bigskip
+\par Now, replacing particle J by the center of mass CM and distributing $(\Delta \, \med \mM\ri)$ we have:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \, \med \mM\ri \, (\vV\ricm \cdot \vV\ricm + \vA\ricm \cdot \vR\ricm) - (\Delta \, \med \mM\ri \, \bre\vV\ricm \cdot \bre\vV\ricm + \Delta \, \med \mM\ri \, \bre\vA\ricm \cdot \bre\vR\ricm) \big] = 0$
+\bigskip
+\par Since \hspace{-0.36em} $\big[$ \hspace{-0.48em} \hyperlink{eq_a}{\fontsize{9.75}{9.75}\selectfont Eq. \hspace{-0.42em} A} \hspace{-0.51em} $\big]$ \hspace{-0.36em} and \hspace{-0.36em} $\big[ \hspace{+0.045em} \Delta \, \med \mM\ri \, \bre\vA\ricm \cdot \bre\vR\ricm = \Delta \, \med \mM\ri \, \bre\vA\ricm \cdot \vR\ricm \big]$ \hspace{-0.36em} we obtain:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \, \med \mM\ri \, (\vV\ricm \cdot \vV\ricm + \vA\ricm \cdot \vR\ricm) - (\int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \bre\vA\ricm \cdot d\vR\ricm + \Delta \, \med \mM\ri \, \bre\vA\ricm \cdot \vR\ricm) \big] = 0$
+\bigskip
+\par Given that \hspace{-0.36em} $\big[$ \hspace{-0.48em} \hyperlink{eq_b}{\fontsize{9.75}{9.75}\selectfont Eq. \hspace{-0.42em} B} \hspace{-0.51em} $\big]$ \hspace{-0.36em} and \hspace{-0.36em} $\big[ \sum_{i=1}^N \Delta \, \med \mM\ri \, \bre\vA\ricm \cdot \vR\ricm = \sum_{i=1}^N \Delta \, \med \mM\ri \, \bre\vA\ri \cdot \vR\ricm = \sum_{i=1}^N \Delta \, \med \vF\ri \cdot \vR\ricm \big]$ \hspace{-0.36em} we get:
+\bigskip
+\par \hspace{+1.20em} $\sum_{i=1}^N \hspace{-0.12em} \big[ \hspace{+0.045em} \Delta \, \med \mM\ri \, (\vV\ricm \cdot \vV\ricm + \vA\ricm \cdot \vR\ricm) - (\int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ricm + \Delta \, \med \vF\ri \cdot \vR\ricm) \big] = 0$
+\bigskip
+\par Therefore, we can consider that the total work $\mW\rt$ done by the forces acting on the system of particles, the total kinetic energy $\mK\rt$ of the system of particles and the total potential energy $\mU\rt$ of the system of particles are as follows:
+\bigskip
+\par \hspace{+1.20em} $\mW\rt = \sum_{i=1}^N \hspace{+0.036em} (\int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ricm + \Delta \, \med \vF\ri \cdot \vR\ricm)$
+\bigskip
+\par \hspace{+1.20em} $\Delta \, \mK\rt = \sum_{i=1}^N \Delta \, \med \mM\ri \, (\vV\ricm \cdot \vV\ricm + \vA\ricm \cdot \vR\ricm)$
+\bigskip
+\par \hspace{+1.20em} $\Delta \, \mU\rt = \sum_{i=1}^N - \, (\int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ricm + \Delta \, \med \vF\ri \cdot \vR\ricm)$
+\bigskip
+\par If the system of particles is isolated and if the internal forces obey Newton's third law in its weak form $( \hspace{+0.09em} \sum_{i=1}^N \vF\ri = 0 \hspace{+0.03em} )$ then:
+\bigskip
+\par \hspace{+1.20em} $\mW\rt = \sum_{i=1}^N \hspace{+0.036em} (\int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ri + \Delta \, \med \vF\ri \cdot \vR\ri)$
+\bigskip
+\par \hspace{+1.20em} $\Delta \, \mU\rt = \sum_{i=1}^N - \, (\int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \hspace{+0.045em} \vF\ri \cdot d\vR\ri + \Delta \, \med \vF\ri \cdot \vR\ri)$
+\bigskip
+\par The total work $\mW\rt$ done by the forces acting on the system of particles is equal to the change in the total kinetic energy $\mK\rt$ of the system of particles.
+\bigskip
+\par \hspace{+1.20em} $\mW\rt = \Delta \, \mK\rt$
+\bigskip
+\par The total work $\mW\rt$ done by the conservative forces acting on the system of particles is equal and opposite in sign to the change in the total potential energy $\mU\rt$ of the system of particles.
+\bigskip
+\par \hspace{+1.20em} $\mW\rt = - \, \Delta \, \mU\rt$
+\bigskip
+\par Therefore, if the system of particles is exclusively subject to conservative forces then the total mechanical energy $\mE\rt$ of the system of particles remains constant.
+\bigskip
+\par \hspace{+1.20em} $\mE\rt = \mK\rt + \mU\rt = \mathrm{constant}$
+
+\newpage
+
+{\centering\subsection*{General Observations}}
+
+\vspace{+1.20em}
+
+\par The magnitudes $\bre\vR$, $\bre\vV$, $\bre\vA$, $\bre\aV$ and $\bre\aA$ are invariant under transformations between reference frames.
+\bigskip
+\par In any reference frame $\vR\rij = \bre\vR\rij$. Therefore, $\vR\rij$ is invariant under transformations between reference frames.
+\bigskip
+\par In any non-rotating reference frame $\vV\rij = \bre\vV\rij$ and $\vA\rij = \bre\vA\rij$. Therefore, $\vV\rij$ and $\vA\rij$ are invariant under transformations between non-rotating reference frames.
+\bigskip
+\par In any inertial reference frame $\vA\ri = \bre\vA\ri$. Therefore, $\vA\ri$ is invariant under transformations between inertial reference frames. Any inertial reference frame is a non-rotating reference frame.
+\bigskip
+\par In the universal reference frame $\vR\ri = \bre\vR\ri$, $\vV\ri = \bre\vV\ri$ and $\vA\ri = \bre\vA\ri$. Therefore, the universal reference frame is an inertial reference frame.
+\bigskip
+\par The total angular momentum $\vL$ of a system of particles is invariant under transformations between reference frames.
+\bigskip
+\par The total kinetic energy $\mK$ and the total potential energy $\mU$ of a system of particles are invariant under transformations between reference frames. Therefore, the total mechanical energy $\mE$ of a system of particles is invariant under transformations between reference frames.
+\bigskip
+\par The total kinetic energy $\mK\rt$ and the total potential energy $\mU\rt$ of a system of particles are invariant under transformations between reference frames. Therefore, the total mechanical energy $\mE\rt$ of a system of particles is invariant under transformations between reference frames.
+\bigskip
+\par The total mechanical energy $\mE$ of a system of particles is equal to the total mechanical energy $\mE\rt$ of the system of particles $(\hspace{+0.01em}\mE=\mE\rt\hspace{+0.03em})$
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Bibliography}}
+
+\vspace{+1.20em}
+
+\par \textbf{A. Einstein}, Relativity: The Special and General Theory.
+\bigskip
+\par \textbf{E. Mach}, The Science of Mechanics.
+\bigskip
+\par \textbf{R. Resnick and D. Halliday}, Physics.
+\bigskip
+\par \textbf{J. Kane and M. Sternheim}, Physics.
+\bigskip
+\par \textbf{H. Goldstein}, Classical Mechanics.
+\bigskip
+\par \textbf{L. Landau and E. Lifshitz}, Mechanics.
+
+\newpage
+
+{\centering\subsection*{Appendix}}
+
+\vspace{+1.20em}
+
+\par \hspace{+0.81em} {\fontsize{10.50}{10.50}\selectfont\textbf{Definitions and Relations}}
+
+\vspace{+1.02em}
+
+\begin{tabular}{lll}
+\hspace{+0.30em} $\vR\ri = \vR\ri$ & \hspace{+8.70em} & $\vR\rij = \vR\ri - \vR\rj$ \vspace{+0.90em} \\
+\hspace{+0.30em} $\vV\ri = d\vR\ri/dt$ & \hspace{+8.70em} & $\vV\rij = d\vR\rij/dt$ \vspace{+0.90em} \\
+\hspace{+0.30em} $\vA\ri = d\vV\ri/dt$ & \hspace{+8.70em} & $\vA\rij = d\vV\rij/dt$ \vspace{+0.90em} \\
+\hspace{+0.30em} $\vV\ri = \int \vA\ri \; dt$ & \hspace{+8.70em} & $\vV\rij = \int \vA\rij \; dt$ \vspace{+0.90em} \\
+\hspace{+0.30em} $\Delta \, \vV\ri = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \vA\ri \; dt$ & \hspace{+8.70em} & $\Delta \, \vV\rij = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \vA\rij \; dt$ \vspace{+0.90em} \\
+\hspace{+0.30em} $\med \vV\ri \cdot \vV\ri = \int \vA\ri \cdot d\vR\ri$ & \hspace{+8.70em} & $\med \vV\rij \cdot \vV\rij = \int \vA\rij \cdot d\vR\rij$ \vspace{+0.90em} \\
+\hspace{+0.30em} $\Delta \, \med \vV\ri \cdot \vV\ri = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \vA\ri \cdot d\vR\ri$ & \hspace{+8.70em} & $\Delta \, \med \vV\rij \cdot \vV\rij = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \vA\rij \cdot d\vR\rij$ \vspace{+0.90em} \\
+\hspace{+0.30em} $\vV\ri \times \vR\ri = \int (\vA\ri \times \vR\ri) \; dt$ & \hspace{+8.70em} & $\vV\rij \times \vR\rij = \int (\vA\rij \times \vR\rij) \; dt$ \vspace{+0.90em} \\
+\hspace{+0.30em} $\Delta \, \vV\ri \times \vR\ri = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} (\vA\ri \times \vR\ri) \; dt$ & \hspace{+8.70em} & $\Delta \, \vV\rij \times \vR\rij = \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} (\vA\rij \times \vR\rij) \; dt$
+\end{tabular}
+
+\vspace{+1.20em}
+
+\par \hspace{+0.81em} {\fontsize{10.50}{10.50}\selectfont\textbf{Invariant Equations}}
+
+\vspace{+1.20em}
+
+\par \hspace{+0.90em} $\vR\rij \cdot \vR\rij = \acute\vR\rij \cdot \acute\vR\rij$
+\bigskip
+\par \hspace{+0.90em} $\vR\rij \cdot \vV\rij = \acute\vR\rij \cdot \acute\vV\rij$
+\bigskip
+\par \hspace{+0.90em} $\vV\rij \cdot \vV\rij + \vA\rij \cdot \vR\rij = \acute\vV\rij \cdot \acute\vV\rij + \acute\vA\rij \cdot \acute\vR\rij$
+\bigskip
+\par \hspace{+0.90em} $\vR\rij = \acute\vR\rij$
+\bigskip
+\par \hspace{+0.90em} $\vV\rij + \bre\aV_{S \vphantom{\acute S}} \times \vR\rij = \acute\vV\rij + \bre\aV_{\acute S} \times \acute\vR\rij$
+\bigskip
+\par \hspace{+0.90em} $\vA\rij + 2 \hspace{+0.06em} \bre\aV_{S \vphantom{\acute S}} \times \vV\rij + \bre\aV_{S \vphantom{\acute S}} \times (\bre\aV_{S \vphantom{\acute S}} \times \vR\rij) + \bre\aA_{S \vphantom{\acute S}} \times \vR\rij = \acute\vA\rij + 2 \hspace{+0.06em} \bre\aV_{\acute S} \times \acute\vV\rij + \bre\aV_{\acute S} \times (\bre\aV_{\acute S} \times \acute\vR\rij) + \bre\aA_{\acute S} \times \acute\vR\rij$
+
+\vspace{+1.20em}
+
+\par \hspace{+0.81em} {\fontsize{10.50}{10.50}\selectfont\textbf{Alternative Equations}}
+
+\vspace{+1.20em}
+
+\par \hspace{+0.90em} $\vL = \sum_{i=1}^N \mM\ri \, (\vV\ri + \bre\aV\rS \times \vR\ri) \times \vR\ri - {\mathrm M} \, (\vV\rcm + \bre\aV\rS \times \vR\rcm) \times \vR\rcm$
+\bigskip
+\par \hspace{+0.90em} $\vL = \sum_{i=1}^N \sum_{j{\scriptscriptstyle >}i}^N \, \mM\ri \, \mM\rj \, {\mathrm M^{\scriptscriptstyle -1}} (\vV\rij + \bre\aV\rS \times \vR\rij) \times \vR\rij$
+\bigskip
+\par \hspace{+0.90em} $\mK = \sum_{i=1}^N \hspace{-0.09em} \med \mM\ri \, (\vV\ri + \bre\aV\rS \times \vR\ri)^2 - \med {\mathrm M} \, (\vV\rcm + \bre\aV\rS \times \vR\rcm)^2$
+\bigskip
+\par \hspace{+0.90em} $\mK = \sum_{i=1}^N \sum_{j{\scriptscriptstyle >}i}^N \hspace{+0.045em} \med \mM\ri \, \mM\rj \, {\mathrm M^{\scriptscriptstyle -1}} (\vV\rij + \bre\aV\rS \times \vR\rij)^2$
+\bigskip
+\par \hspace{+0.90em} $\mK\rt \hspace{-0.06em} = \sum_{i=1}^N \hspace{-0.09em} \med \mM\ri \, (\vV\ri \cdot \vV\ri + \vA\ri \cdot \vR\ri) - \med {\mathrm M} \, (\vV\rcm \cdot \vV\rcm + \vA\rcm \cdot \vR\rcm)$
+\bigskip
+\par \hspace{+0.90em} $\mK\rt \hspace{-0.06em} = \sum_{i=1}^N \sum_{j{\scriptscriptstyle >}i}^N \hspace{+0.045em} \med \mM\ri \, \mM\rj \, {\mathrm M^{\scriptscriptstyle -1}} (\vV\rij \cdot \vV\rij + \vA\rij \cdot \vR\rij)$
+
+\end{document}
+

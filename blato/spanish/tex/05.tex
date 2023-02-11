@@ -1,0 +1,139 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={131.1mm,202.5mm}}
+\geometry{totalwidth=110.1mm,totalheight=166.5mm}
+
+\usepackage{graphicx}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+\spanishdecimal{.}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Relatividad Especial \& Segunda Ley de Newton}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.12em\lower.45ex\hbox{$\scriptstyle 2$}\;}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{10.77}{10.77}\selectfont \sc Relatividad Especial \hspace{+0.06em}\&\hspace{+0.06em} Segunda Ley de Newton}
+
+\bigskip \medskip
+
+{A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2016) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{87.60mm}{En relatividad especial, este artículo demuestra que la segunda ley de Newton puede ser aplicada en cualquier sistema de referencia inercial.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsubsection*{Introducción}}
+
+\bigskip \smallskip
+
+\noindent En relatividad especial, el momento lineal $\mathbf{P}$ de una partícula con masa en reposo $m_o$ está dado por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ \frac{m_o \, \mathbf{v}}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent La relación entre la fuerza einsteniana neta $\mathbf{F}$ que actúa sobre la partícula y el momento lineal $\mathbf{P}$ de la partícula, está dada por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ \frac{d\mathbf{P}}{d{t}} ~=~ m_o \left [ \; \frac{\mathbf{a}}{\sqrt{1 - \frac{v^2}{c^2}}} + \frac{(\mathbf{a} \cdot \mathbf{v}) \: \mathbf{v}}{c^2\hspace{-0.18em}\left(1 - \frac{v^2}{c^2}\right)^{\hspace{-0.09em}{3/2}}} \; \right ]
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent Ahora, puesto que $\mathbf{a} = \mathbf{1} \cdot \mathbf{a}$ ( tensor unitario ) y $( \mathbf{a} \cdot \mathbf{v} ) \: \mathbf{v} = ( \mathbf{v} \otimes \mathbf{v} ) \cdot \mathbf{a}$ \hbox {( producto} tensorial o diádico ) entonces reemplazando se tiene:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ m_o \left [ \; \frac{\mathbf{1} \cdot \mathbf{a}}{\sqrt{1 - \frac{v^2}{c^2}}} + \frac{( \mathbf{v} \otimes \mathbf{v} ) \cdot \mathbf{a}}{c^2\hspace{-0.18em}\left(1 - \frac{v^2}{c^2}\right)^{\hspace{-0.09em}{3/2}}} \; \right ]
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent que es:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ m_o \left [ \; \frac{\mathbf{1}}{\sqrt{1 - \frac{v^2}{c^2}}} + \frac{\hspace{-0.33em}( \mathbf{v} \otimes \mathbf{v} )}{c^2\hspace{-0.18em}\left(1 - \frac{v^2}{c^2}\right)^{\hspace{-0.09em}{3/2}}} \; \right ] \cdot \hspace{+0.06em}\mathbf{a}
+\end{eqnarray*}
+
+\newpage
+
+\noindent Pasando el tensor entre corchetes de la ecuación anterior ( denominado en este artículo como el tensor de Newton ) al primer miembro, se obtiene:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\left [ \; \frac{\mathbf{1}}{\sqrt{1 - \frac{v^2}{c^2}}} + \frac{\hspace{-0.33em}( \mathbf{v} \otimes \mathbf{v} )}{c^2\hspace{-0.18em}\left(1 - \frac{v^2}{c^2}\right)^{\hspace{-0.09em}{3/2}}} \; \right ]^{\hspace{-0.15em}-1} \hspace{-0.24em}\cdot \hspace{+0.12em}\mathbf{F} ~=~ m_o \, \mathbf{a}
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent Si identificamos el primer miembro de la ecuación anterior como la fuerza newtoniana neta $\mathbf{\overline{F}}$ que actúa sobre la partícula, entonces finalmente se tiene:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+\mathbf{\overline{F}} ~=~ m_o \, \mathbf{a}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent Por lo tanto, la fuerza newtoniana neta $\mathbf{\overline{F}}$ que actúa sobre una partícula siempre tiene igual dirección y sentido que la aceleración $\mathbf{a}$ de la partícula.
+
+\vspace{-0.60em}
+
+\par \bigskip {\centering\subsubsection*{Dinámica Newtoniana}}
+
+\bigskip \smallskip
+
+\noindent En relatividad especial, sea una partícula con masa en reposo $m_o$ entonces el momento lineal $\mathbf{P}$ de la partícula, la fuerza newtoniana neta $\mathbf{\overline{F}}$ que actúa sobre la partícula, el trabajo $\mathrm{W}$ realizado por la fuerza newtoniana neta que actúa sobre la partícula y la energía cinética $\mathrm{K}$ de la partícula, para un sistema de referencia inercial, están dados por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ m_o \, \mathbf{v}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{\overline{F}} ~=~ \frac{d\mathbf{P}}{d{t}} ~=~ m_o \, \mathbf{a}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{W} ~\doteq~ \int_1^{\hspace{+0.06em}2} \mathbf{\overline{F}} \cdot d{\mathbf{r}} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{K} ~\doteq~ \med \, m_o \, ( \mathbf{v} \cdot \mathbf{v} )
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent donde $( \, \mathbf{r}, \, \mathbf{v}, \, \mathbf{a} \, )$ son la posición, la velocidad y la aceleración de la partícula respecto al sistema de referencia inercial. {\small $\mathbf{\overline{F}} ~=~ \mathbf{N}^{-1} \cdot \mathbf{F}$}, donde {\small $\mathbf{N}$} es el tensor de Newton y {\small $\mathbf{F}$} es la fuerza einsteniana neta que actúa sobre la partícula.
+
+\end{document}
+

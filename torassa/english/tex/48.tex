@@ -1,0 +1,571 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={147.0mm,197.4mm}}
+\geometry{totalwidth=126.0mm,totalheight=161.4mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+\usepackage{chngpage}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Alternative Classical Mechanics IV}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\MM}{M}
+\newcommand{\mW}{W}
+\newcommand{\mK}{K}
+\newcommand{\mU}{U}
+\newcommand{\mE}{E}
+\newcommand{\mL}{L}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\ri}{_i}
+\newcommand{\rs}{_s}
+\newcommand{\rS}{_S}
+\newcommand{\rat}{\hat}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\bre}{\breve}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\VR}{\mathbf{R}}
+\newcommand{\VV}{\mathbf{V}}
+\newcommand{\VA}{\mathbf{A}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\vP}{\mathbf{P}}
+\newcommand{\vL}{\mathbf{L}}
+\newcommand{\vI}{\mathbf{I}}
+\newcommand{\aV}{\mathbf{\omega}}
+\newcommand{\aA}{\mathbf{\alpha}}
+\newcommand{\rt}{\hspace{+0.03em}'}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}\:}
+
+\newcommand{\Mass}{Mass}
+\newcommand{\Linear}{Linear Momentum}
+\newcommand{\Angular}{Angular Momentum}
+\newcommand{\Work}{Work}
+\newcommand{\Kinetic}{Kinetic Energy}
+\newcommand{\Potential}{Potential Energy}
+\newcommand{\Lagrangian}{Lagrangian}
+\newcommand{\Cte}{\mathrm{constant}}
+\newcommand{\Cti}{\;=\;}
+\newcommand{\Cto}{~=~}
+
+\begin{document}
+
+\enlargethispage{+0.51em}
+
+\begin{center}
+
+{\LARGE Alternative Classical Mechanics {\fontsize{16.50}{16.50}\selectfont IV}}
+
+\bigskip \medskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\smallskip
+
+{\bf - version 1 -}
+
+\bigskip \medskip
+
+\parbox{94.08mm}{This paper presents an alternative classical mechanics which is invariant under transformations between reference frames and which can be applied in any reference frame without the necessity of introducing fictitious forces. Additionally, a new principle of conservation of energy is also presented.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.15em}
+
+{\centering\subsection*{The Inertial Reference Frame}}
+
+\vspace{+0.90em}
+
+\par The inertial reference frame $\rat\mathrm S$ is a reference frame fixed to a system of particles, whose origin coincides with the center of mass of the system of particles. This system of particles (referred from now on as the free-system) is always free of external and internal forces.
+\bigskip
+\par The inertial position $\rat\vR\ra$, the inertial velocity $\rat\vV\ra$ and the inertial acceleration $\rat\vA\ra$ of a particle A relative to the inertial reference frame $\rat\mathrm S$, are as follows:
+\bigskip
+\par \hspace{+10.80em} \begin{tabular}{l}
+$\rat\vR\ra ~\doteq~ (\vR\ra)$ \vspace{+0.90em} \\
+$\rat\vV\ra ~\doteq~ d(\vR\ra)/dt$ \vspace{+0.90em} \\
+$\rat\vA\ra ~\doteq~ d^2(\vR\ra)/dt^2$
+\end{tabular}
+\bigskip
+\par \noindent where $\vR\ra$ is the position of particle A relative to the inertial reference frame $\rat\mathrm S$.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{The New Dynamics}}
+
+\vspace{+0.90em}
+
+\par [1] \hspace{-0.003em} A force is always caused by the interaction between two particles.
+\bigskip
+\par [2] \hspace{-0.300em} The resultant force $\vF\ra$ acting on a particle A of mass $\mM\ra$ produces an inertial \hbox {acceleration} $\rat\vA\ra$ according to the following equation: \hspace{+0.015em} $\rat\vA\ra = \vF\ra/\mM\ra$
+\bigskip
+\par [3] \hspace{+0.045em} This paper considers that not all forces obey Newton's third law (in its strong form or in its weak form)
+
+\newpage
+
+{\centering\subsection*{The Definitions}}
+
+\vspace{+1.02em}
+
+\par For a system of N particles, the following definitions are applicable:
+
+\vspace{+1.80em}
+
+\par \hspace{+0.60em} \begin{tabular}{ll}
+\Mass & $\MM ~\doteq~ \sum_i \, \mM\ri$ \vspace{+1.41em} \\
+\Linear & $\rat\vP ~\doteq~ \sum_i \, \mM\ri \, \rat\vV\ri$ \vspace{+1.41em} \\
+\Angular & $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL} ~\doteq~ \sum_i \, \mM\ri \, \rat\vR\ri \times \rat\vV\ri$ \vspace{+1.41em} \\
+\Work & $\rat\mW ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\rat\vR\ri ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri)^2$ \vspace{+1.41em} \\
+\Kinetic & $\Delta \; \rat\mK ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri)^2$ \vspace{+1.41em} \\
+\Potential & $\Delta \; \rat\mU ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\rat\vR\ri$ \vspace{+1.41em} \\
+\Lagrangian & $\hspace{+0.06em} \rat{\hspace{-0.06em}\mL} ~\doteq~ \rat\mK - \rat\mU$
+\end{tabular}
+
+\vspace{+1.80em}
+
+{\centering\subsection*{The Principles of Conservation}}
+
+\vspace{+1.02em}
+
+\par The linear momentum $\rat\vP$ of an isolated system of N particles remains constant if the internal forces obey Newton's third law in its weak form.
+\bigskip
+\par \hspace{+1.20em} $\rat\vP ~=~ \Cte \hspace{+7.29em} \big[ \; d(\rat\vP)/dt ~=~ \sum_i \, \mM\ri \, \rat\vA\ri ~=~ \sum_i \, \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par The angular momentum $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}$ of an isolated system of N particles remains constant if the internal forces obey Newton's third law in its strong form.
+\bigskip
+\par \hspace{+1.20em} $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL} ~=~ \Cte \hspace{+7.23em} \big[ \; d(\hspace{-0.30em} \rat{\hspace{+0.30em}\vL})/dt ~=~ \sum_i \, \mM\ri \, \rat\vR\ri \times \rat\vA\ri ~=~ \sum_i \, \rat\vR\ri \times \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par The mechanical energy $\rat\mE$ of a system of N particles remains constant if the system is only subject to conservative forces.
+\bigskip
+\par \hspace{+1.20em} $\rat\mE ~\doteq~ \rat\mK + \rat\mU ~=~ \Cte \hspace{+2.97em} \big[ \; \Delta \; \rat\mE ~=~ \Delta \; \rat\mK + \Delta \; \rat\mU ~=~ 0 \; \big]$
+
+\newpage
+
+\begin{adjustwidth}{-0.12em}{-0.12em}
+
+{\centering\subsection*{The Transformations}}
+
+\vspace{+0.90em}
+
+\par The inertial position $\rat\vR\ra$, the inertial velocity $\rat\vV\ra$ and the inertial acceleration $\rat\vA\ra$ of a particle A relative to a reference frame S, are given by:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\rat\vR\ra ~=~ \vR\ra - \VR$ \vspace{+1.20em} \\
+$\rat\vV\ra ~=~ \vV\ra\:-\:${\large$\aV$}$ \times (\vR\ra - \VR) - \VV$ \vspace{+1.20em} \\
+$\rat\vA\ra ~=~ \vA\ra - 2 \hspace{+0.06em} ${\large$\aV$}$ \times (\vV\ra - \VV)\:+\:${\large$\aV$}$ \times [${\large$\aV$}$ \times (\vR\ra - \VR)]\:-\:${\large$\aA$}$ \times (\vR\ra - \VR) - \VA$
+\end{tabular}
+\bigskip
+\par \noindent where $\vR\ra$, $\vV\ra$ and $\vA\ra$ are the position, the velocity and the acceleration of particle A relative to the reference frame S. $\VR$, $\VV$ and $\VA$ are the position, the velocity and the acceleration of the center of mass of the free-system relative to the reference frame S. {\large$\aV$} and {\large$\aA$} are the angular velocity and the angular acceleration of the free-system relative to the \hbox {reference frame S.}
+\medskip
+\par The position $\VR$, the velocity $\VV$ and the acceleration $\VA$ of the center of mass of the free-system relative to the reference frame S, and the angular velocity {\large$\aV$} and the angular acceleration {\large$\aA$} of the free-system relative to the reference frame S, are as follows:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\MM ~\doteq~ \sum_i^{\scriptscriptstyle N} \, \mM\ri$ \vspace{+1.20em} \\
+$\VR ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle N} \, \mM\ri \, \vR\ri$ \vspace{+1.20em} \\
+$\VV ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle N} \, \mM\ri \, \vV\ri$ \vspace{+1.20em} \\
+$\VA ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle N} \, \mM\ri \, \vA\ri$ \vspace{+1.20em} \\
+$${\large$\aV$}$ ~\doteq~ \vI^{\scriptscriptstyle -1} \cdot \vL$ \vspace{+1.20em} \\
+$${\large$\aA$}$ ~\doteq~ d(${\large$\aV$}$)/dt$ \vspace{+1.20em} \\
+$\vI ~\doteq~ \sum_i^{\scriptscriptstyle N} \, \mM\ri \, [\hspace{+0.045em}|\vR\ri - \VR|^2 \: \mathbf{1} - (\vR\ri - \VR) \otimes (\vR\ri - \VR)\hspace{+0.030em}]$ \vspace{+1.20em} \\
+$\vL ~\doteq~ \sum_i^{\scriptscriptstyle N} \, \mM\ri \, (\vR\ri - \VR) \times (\vV\ri - \VV)$
+\end{tabular}
+\bigskip
+\par \noindent where $\MM$ is the mass of the free-system, $\vI$ is the inertia tensor of the free-system (relative to $\VR$) and $\vL$ is the angular momentum of the free-system relative to the reference frame S (the free-system of N particles must be three-dimensional, and the relative distances between the N particles must be constant\hspace{+0.030em})
+
+\end{adjustwidth}
+
+\newpage
+
+{\centering\subsection*{The Equation of Motion}}
+
+\vspace{+0.90em}
+
+\par From the third transformation it follows that the acceleration $\vA\ra$ of a particle A of \hbox {mass $\mM\ra$} relative to a reference frame S, is given by:
+\bigskip
+\begin{center}
+$\vA\ra ~=~ \vF\ra/\mM\ra + 2 \hspace{+0.06em} ${\large$\aV$}$ \times (\vV\ra - \VV)\:-\:${\large$\aV$}$ \times [${\large$\aV$}$ \times (\vR\ra - \VR)]\:+\:${\large$\aA$}$ \times (\vR\ra - \VR) + \VA$
+\end{center}
+\medskip
+\par \noindent where $\vF\ra$ is the resultant force acting on particle A \hspace{+0.09em}($\hspace{+0.12em}\rat\vA\ra = \vF\ra/\mM\ra\hspace{+0.09em}$)
+
+\vspace{+0.00em}
+
+{\centering\subsection*{Observations}}
+
+\vspace{+0.90em}
+
+\par The alternative classical mechanics of particles presented in this paper is invariant under transformations between reference frames and can be applied in any reference frame without the necessity of introducing fictitious forces.
+\bigskip
+\par This paper considers, on one hand, that not all forces obey Newton's third law (in its strong form or in its weak form) and, on the other hand, that all forces are invariant under transformations between reference frames ($\hspace{+0.09em}\vF\,'\hspace{-0.18em}=\vF\hspace{+0.12em}$)
+\bigskip
+\par Additionally, from the equation of motion it follows that a reference frame S is inertial when ({\large$\aV$} $=0$ and $\VA=0\hspace{+0.09em}$) and that it is non-inertial when ({\large$\aV$} $\ne 0$ or $\VA \ne 0\hspace{+0.09em}$)
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Bibliography}}
+
+\vspace{+1.20em}
+
+\par \textbf{D. Lynden-Bell and J. Katz}, Classical Mechanics without Absolute Space (1995)
+\bigskip
+\par \textbf{J. Barbour}, Scale-Invariant Gravity: Particle Dynamics (2002)
+\bigskip
+\par \textbf{R. Ferraro}, Relational Mechanics as a Gauge Theory (2014)
+\bigskip
+\par \textbf{A. Torassa}, General Equation of Motion (2013)
+\bigskip
+\par \textbf{A. Torassa}, Alternative Classical Mechanics (2013)
+\bigskip
+\par \textbf{A. Torassa}, A Reformulation of Classical Mechanics (2014)
+\bigskip
+\par \textbf{A. Torassa}, A New Principle of Conservation of Energy (2014)
+
+\newpage
+
+\begin{adjustwidth}{-0.15em}{-0.15em}
+
+{\centering\subsection*{Appendix}}
+
+\vspace{+1.02em}
+
+\par For a system of N particles, the following definitions are also applicable:
+
+\vspace{+1.02em}
+
+\par \hspace{-0.83em} \begin{tabular}{ll}
+\Angular & $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\rat\vR\ri - \rat\vR\rcm) \times (\rat\vV\ri - \rat\vV\rcm)$ \vspace{+0.90em} \\
+\Work & $\rat\mW\rt ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\rat\vR\ri - \rat\vR\rcm) ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri - \rat\vV\rcm)^2$ \vspace{+0.90em} \\
+\Kinetic & $\Delta \; \rat\mK\hspace{+0.045em}\rt ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri - \rat\vV\rcm)^2$ \vspace{+0.90em} \\
+\Potential & $\Delta \; \rat\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\rat\vR\ri - \rat\vR\rcm)$ \vspace{+0.90em} \\
+\Lagrangian & $\hspace{+0.06em} \rat{\hspace{-0.06em}\mL}\hspace{-0.09em}\rt ~\doteq~ \rat\mK\hspace{+0.045em}\rt - \rat\mU\rt$
+\end{tabular}
+
+\vspace{+1.02em}
+
+\par \noindent where $\rat\vR\rcm$ and $\rat\vV\rcm$ are the inertial position and the inertial velocity of the center of mass {\fontsize{15.30}{15.30}\selectfont \vphantom{K}}\hbox{of the} system of particles. {\hspace{+12.45em} \makebox(0,7.20){\fontsize{7.89}{7.89}\selectfont $\sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \rat\vA\ri \cdot d(\rat\vR\ri - \rat\vR\rcm) = \sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, (\rat\vA\ri - \rat\vA\rcm) \cdot d(\rat\vR\ri - \rat\vR\rcm) = \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri - \rat\vV\rcm)^2$}}
+
+\vspace{+1.02em}
+
+\par The angular momentum $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt$ of an isolated system of N particles remains constant if the internal forces obey Newton's third law in its strong form.
+\bigskip
+\par $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~=~ \Cte$
+\bigskip
+\par $d(\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt)/dt ~=~ \sum_i \, \mM\ri \, (\rat\vR\ri - \rat\vR\rcm) \times (\rat\vA\ri - \rat\vA\rcm) \,=\, \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times \rat\vA\ri \,=\, \sum_i \, \vR\ri \times \vF\ri \;=\; 0$
+\bigskip
+\par $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\rat\vR\ri - \rat\vR\rcm) \times (\rat\vV\ri - \rat\vV\rcm) ~=~ \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times [\, \vV\ri\:-\:${\large$\aV$}$ \times (\vR\ri - \vR\rcm) - \vV\rcm \,]$
+
+\vspace{+1.02em}
+
+\par The mechanical energy $\rat\mE\rt$ of a system of N particles remains constant if the system is only subject to conservative forces.
+\bigskip
+\par $\rat\mE\rt \,\doteq\, \rat\mK\hspace{+0.045em}\rt + \rat\mU\rt \Cto \Cte$
+\bigskip
+\par $\Delta \; \rat\mE\rt ~=~ \Delta \; \rat\mK\hspace{+0.045em}\rt + \, \Delta \; \rat\mU\rt ~=~ 0$
+\bigskip
+\par $\Delta \; \rat\mK\hspace{+0.045em}\rt ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri - \rat\vV\rcm)^2 ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, [\, \vV\ri\:-\:${\large$\aV$}$ \times (\vR\ri - \vR\rcm) - \vV\rcm \,]^{\hspace{+0.024em}2}$
+\bigskip
+\par $\Delta \; \rat\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\rat\vR\ri - \rat\vR\rcm) ~=~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\vR\ri - \vR\rcm)$
+\bigskip
+\par \noindent where $\vR\rcm$ and $\vV\rcm$ are the position and the velocity of the center of mass of the system of particles relative to a reference frame S, and {\large$\aV$} is the angular velocity of the free-system relative to the reference frame S. If the system of particles is isolated and if the internal forces obey Newton's third law in its weak form then: {\hspace{+6.18em} \makebox(0,7.20){\fontsize{7.89}{7.89}\selectfont $\sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\vR\ri - \vR\rcm) = \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\vR\ri$}}
+
+\end{adjustwidth}
+
+\newpage\thispagestyle{empty}{\small
+
+\vspace*{\fill}
+
+\begin{adjustwidth}{+3.00em}{+3.00em}
+
+\begin{center}{{\fontsize{14.10}{14.10}\selectfont The New Principle of Conservation of Energy}}\end{center}
+
+\bigskip\smallskip
+
+\begin{center}{\bf - versions 1 \& 2 -}\end{center}
+
+\bigskip\smallskip
+
+\par For a system of N particles, the following definitions are also applicable:
+\bigskip
+\par \hspace{+0.51em} \begin{tabular}{ll}
+\Work & $\mW ~\doteq~ \sum_i \hspace{+0.012em} \big( \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\bar\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \; \med \, \vF\ri \cdot \bar\vR\ri \hspace{+0.09em} \big) ~=~ \Delta \; \mK$ \vspace{+1.20em} \\
+\Kinetic & $\Delta \; \mK ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, \big( \hspace{+0.09em} \bar\vV\ri \cdot \bar\vV\ri \hspace{+0.12em} + \hspace{+0.12em} \bar\vA\ri \cdot \bar\vR\ri \hspace{+0.09em} \big)$ \vspace{+1.20em} \\
+\Potential & $\Delta \; \mU ~\doteq~ - \hspace{+0.012em} \sum_i \hspace{+0.012em} \big( \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\bar\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \; \med \, \vF\ri \cdot \bar\vR\ri \hspace{+0.09em} \big)$
+\end{tabular}
+\bigskip
+\par \noindent where $\bar\vR\ri = \vR\ri - \vR\rcm$, $\bar\vV\ri = \vV\ri - \vV\rcm$, $\bar\vA\ri = \vA\ri - \vA\rcm$, $\vR\ri$, $\vV\ri$ and $\vA\ri$ are the position, the velocity and the acceleration of the \textit{i}-th particle, $\vR\rcm$, $\vV\rcm$ and $\vA\rcm$ are the position, the velocity and the acceleration of the center of mass of the system of particles, $\mM\ri$ is the mass of the \textit{i}-th particle, and $\vF\ri$ is the resultant force acting on the \textit{i}-th particle. If the system of particles is isolated and if the internal forces obey Newton's third law in its weak form then: {\hspace{+10.47em} \makebox(0,7.20){\fontsize{7.89}{7.89}\selectfont $\sum_i \hspace{+0.012em} \big( \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\bar\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \; \med \, \vF\ri \cdot \bar\vR\ri \hspace{+0.09em} \big) \,=\, \sum_i \hspace{+0.012em} \big( \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \; \med \, \vF\ri \cdot \vR\ri \hspace{+0.09em} \big)$}}
+\bigskip
+\par The new principle of conservation of energy establishes that if a system of N particles is only subject to conservative forces then the mechanical energy $\mE$ of the system of particles remains constant.
+\bigskip
+\par \hspace{+1.20em} $\mE ~\doteq~ \mK + \mU ~=~ \Cte \hspace{+2.97em} \big[ \; \Delta \; \mE ~=~ \Delta \; \mK + \Delta \; \mU ~=~ 0 \; \big]$
+\bigskip
+\par The new principle of conservation of energy is invariant under transformations between reference frames since the kinetic energy $\mK$, the potential energy $\mU$ and the mechanical energy $\mE$ of a system of N particles are invariant under transformations between reference frames \hspace{-0.18em} ({\fontsize{7.89}{7.89}\selectfont $\hspace{+0.24em} \vF\,'\hspace{-0.18em}\,=\,\vF$}{\fontsize{8.10}{8.10}\selectfont $\hspace{+0.48em}|\hspace{+0.48em} \mM\,'\hspace{-0.18em}\,=\,\mM \hspace{+0.48em}|\hspace{+0.48em} \bar\vR\,'\hspace{-0.18em}\,=\,\bar\vR \hspace{+0.48em}|\hspace{+0.48em} \bar\vV\,'\hspace{-0.18em}\cdot\bar\vV\,'\hspace{-0.18em}\,+\:\bar\vA\,'\hspace{-0.18em}\cdot\bar\vR\,'\hspace{-0.18em}\;=\;\bar\vV\cdot\bar\vV\,+\:\bar\vA\cdot\bar\vR \hspace{+0.30em}$})
+\bigskip
+\par The new principle of conservation of energy can be applied in any reference frame without the necessity of introducing fictitious forces and without the necessity of introducing additional external variables (\hspace{-0.15em} such as {\fontsize{10.20}{10.20}\selectfont $\aV$}, {\fontsize{7.89}{7.89}\selectfont $\VR$}, {\fontsize{7.89}{7.89}\selectfont $\VV$}, {\fontsize{7.89}{7.89}\selectfont $\bre\aV\rS$}, etc. \hspace{-0.18em})
+
+\end{adjustwidth}
+
+\vspace*{\fill}}
+
+\newpage\setcounter{page}{1}
+
+\enlargethispage{+0.51em}
+
+\begin{center}
+
+{\LARGE Alternative Classical Mechanics {\fontsize{16.50}{16.50}\selectfont IV}}
+
+\bigskip \medskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\smallskip
+
+{\bf - version 2 -}
+
+\bigskip \medskip
+
+\parbox{94.08mm}{This paper presents an alternative classical mechanics which is invariant under transformations between reference frames and which can be applied in any reference frame without the necessity of introducing fictitious forces. Additionally, a new principle of conservation of energy is also presented.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.15em}
+
+{\centering\subsection*{The Dynamic Reference Frame}}
+
+\vspace{+0.90em}
+
+\par The dynamic reference frame $\bre\mathrm S$ is basically a reference frame that can be used to obtain kinematic quantities (such as dynamic position, dynamic velocity, etc.) starting primarily from dynamic quantities (such as force, mass, etc.)
+\bigskip
+\par The dynamic position $\bre\vR\ra$, the dynamic velocity $\bre\vV\ra$ and the dynamic acceleration $\bre\vA\ra$ of a particle A of mass $\mM\ra$ relative to the dynamic reference frame $\bre\mathrm S$, are as follows:
+\bigskip
+\par \hspace{+10.80em} \begin{tabular}{l}
+$\bre\vR\ra ~\doteq~ \int\int \hspace{+0.12em} (\vF\ra/\mM\ra) \; dt \; dt$ \vspace{+0.90em} \\
+$\bre\vV\ra ~\doteq~ \int \hspace{+0.12em} (\vF\ra/\mM\ra) \; dt$ \vspace{+0.90em} \\
+$\bre\vA\ra ~\doteq~ (\vF\ra/\mM\ra)$
+\end{tabular}
+\bigskip
+\par \noindent where $\vF\ra$ is the resultant force acting on particle A.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{The New Dynamics}}
+
+\vspace{+0.90em}
+
+\par [1] \hspace{-0.003em} A force is always caused by the interaction between two particles.
+\bigskip
+\par [2] \hspace{-0.300em} The resultant force $\vF\ra$ acting on a particle A of mass $\mM\ra$ produces a dynamic acceleration $\bre\vA\ra$ according to the following equation: \hspace{+0.015em} $\bre\vA\ra \doteq \vF\ra/\mM\ra$
+\bigskip
+\par [3] \hspace{+0.045em} This paper considers that not all forces obey Newton's third law (in its strong form or in its weak form)
+
+\newpage
+
+{\centering\subsection*{The Definitions}}
+
+\vspace{+1.02em}
+
+\par For a system of N particles, the following definitions are applicable:
+
+\vspace{+1.80em}
+
+\par \hspace{+0.60em} \begin{tabular}{ll}
+\Mass & $\MM ~\doteq~ \sum_i \, \mM\ri$ \vspace{+1.41em} \\
+\Linear & $\bre\vP ~\doteq~ \sum_i \, \mM\ri \, \bre\vV\ri$ \vspace{+1.41em} \\
+\Angular & $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL} ~\doteq~ \sum_i \, \mM\ri \, \bre\vR\ri \times \bre\vV\ri$ \vspace{+1.41em} \\
+\Work & $\bre\mW ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\bre\vR\ri ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri)^2$ \vspace{+1.41em} \\
+\Kinetic & $\Delta \; \bre\mK ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri)^2$ \vspace{+1.41em} \\
+\Potential & $\Delta \; \bre\mU ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\bre\vR\ri$ \vspace{+1.41em} \\
+\Lagrangian & $\hspace{+0.06em} \bre{\hspace{-0.06em}\mL} ~\doteq~ \bre\mK - \bre\mU$
+\end{tabular}
+
+\vspace{+1.80em}
+
+{\centering\subsection*{The Principles of Conservation}}
+
+\vspace{+1.02em}
+
+\par The linear momentum $\bre\vP$ of an isolated system of N particles remains constant if the internal forces obey Newton's third law in its weak form.
+\bigskip
+\par \hspace{+1.20em} $\bre\vP ~=~ \Cte \hspace{+7.29em} \big[ \; d(\bre\vP)/dt ~=~ \sum_i \, \mM\ri \, \bre\vA\ri ~=~ \sum_i \, \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par The angular momentum $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}$ of an isolated system of N particles remains constant if the internal forces obey Newton's third law in its strong form.
+\bigskip
+\par \hspace{+1.20em} $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL} ~=~ \Cte \hspace{+7.23em} \big[ \; d(\hspace{-0.30em} \bre{\hspace{+0.30em}\vL})/dt ~=~ \sum_i \, \mM\ri \, \bre\vR\ri \times \bre\vA\ri ~=~ \sum_i \, \bre\vR\ri \times \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par The mechanical energy $\bre\mE$ of a system of N particles remains constant if the system is only subject to conservative forces.
+\bigskip
+\par \hspace{+1.20em} $\bre\mE ~\doteq~ \bre\mK + \bre\mU ~=~ \Cte \hspace{+2.97em} \big[ \; \Delta \; \bre\mE ~=~ \Delta \; \bre\mK + \Delta \; \bre\mU ~=~ 0 \; \big]$
+
+\newpage
+
+\begin{adjustwidth}{+0.15em}{+0.15em}
+
+{\centering\subsection*{The Transformations}}
+
+\vspace{+0.90em}
+
+\par The dynamic position $\bre\vR\ra$, the dynamic velocity $\bre\vV\ra$ and the dynamic acceleration $\bre\vA\ra$ of a particle A relative to a reference frame S, are given by:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\bre\vR\ra ~=~ \vR\ra + \bre\vR\rS$ \vspace{+1.50em} \\
+$\bre\vV\ra ~=~ \vV\ra + \bre\aV\rS \times \vR\ra + \bre\vV\rS$ \vspace{+1.50em} \\
+$\bre\vA\ra ~=~ \vA\ra + 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra + \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) + \bre\aA\rS \times \vR\ra + \bre\vA\rS$
+\end{tabular}
+\bigskip
+\par \noindent where $\vR\ra$, $\vV\ra$ and $\vA\ra$ are the position, the velocity and the acceleration of particle A relative to the reference frame S. $\bre\vR\rS$, $\bre\vV\rS$, $\bre\vA\rS$, $\bre\aV\rS$ and $\bre\aA\rS$ are the dynamic position, the dynamic velocity, the dynamic acceleration, the dynamic angular velocity and the dynamic angular acceleration of the reference frame S relative to the dynamic reference frame $\bre\mathrm S$.
+\bigskip
+\par The dynamic position $\bre\vR\rS$, the dynamic velocity $\bre\vV\rS$, the dynamic acceleration $\bre\vA\rS$, the dynamic angular velocity $\bre\aV\rS$ and the dynamic angular acceleration $\bre\aA\rS$ of a reference frame S fixed to a particle S relative to the dynamic reference frame $\bre\mathrm S$, are as follows:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\bre\vR\rS ~\doteq~ \int\int \hspace{+0.12em} (\vF_0/\mM\rs) \; dt \; dt$ \vspace{+1.50em} \\
+$\bre\vV\rS ~\doteq~ \int \hspace{+0.12em} (\vF_0/\mM\rs) \; dt$ \vspace{+1.50em} \\
+$\bre\vA\rS ~\doteq~ (\vF_0/\mM\rs)$ \vspace{+1.50em} \\
+$\bre\aV\rS ~\doteq~ \pm \hspace{+0.12em} \big|(\vF_1/\mM\rs - \vF_0/\mM\rs) \cdot (\vR_1 - \vR_0)/(\vR_1 - \vR_0)^2\big|^{1/2}$ \vspace{+1.50em} \\
+$\bre\aA\rS ~\doteq~ d(\bre\aV\rS)/dt$
+\end{tabular}
+\bigskip
+\par \noindent where $\vF_0$ and $\vF_1$ are the resultant forces acting on the reference frame S in the points 0 and 1, $\vR_0$ and $\vR_1$ are the positions of the points 0 and 1 relative to the reference frame S and $\mM\rs$ is the mass of particle S (the point 0 is the origin of the reference frame S and the center of mass of particle S) (the point 0 belongs to the axis of dynamic rotation, and the segment 01 is perpendicular to the axis of dynamic rotation) (the vector $\bre\aV\rS$ is along the axis of dynamic rotation)
+
+\end{adjustwidth}
+
+\newpage
+
+{\centering\subsection*{The Equation of Motion}}
+
+\vspace{+0.90em}
+
+\par From the third transformation it follows that the acceleration $\vA\ra$ of a particle A of \hbox {mass $\mM\ra$} relative to a reference frame S, is given by:
+\bigskip
+\begin{center}
+$\vA\ra ~=~ \vF\ra/\mM\ra - 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra - \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) - \bre\aA\rS \times \vR\ra - \bre\vA\rS$
+\end{center}
+\medskip
+\par \noindent where $\vF\ra$ is the resultant force acting on particle A \hspace{+0.09em}($\hspace{+0.12em}\bre\vA\ra \doteq \vF\ra/\mM\ra\hspace{+0.09em}$)
+
+\vspace{+0.00em}
+
+{\centering\subsection*{Observations}}
+
+\vspace{+0.90em}
+
+\par The alternative classical mechanics of particles presented in this paper is invariant under transformations between reference frames and can be applied in any reference frame without the necessity of introducing fictitious forces.
+\bigskip
+\par This paper considers, on one hand, that not all forces obey Newton's third law (in its strong form or in its weak form) and, on the other hand, that all forces are invariant under transformations between reference frames ($\hspace{+0.09em}\vF\,'\hspace{-0.18em}=\vF\hspace{+0.12em}$)
+\bigskip
+\par Additionally, from the equation of motion it follows that a reference frame S is inertial when ($\bre\aV\rS=0$ and $\bre\vA\rS=0\hspace{+0.09em}$) and that it is non-inertial when ($\bre\aV\rS \ne 0$ or $\bre\vA\rS \ne 0\hspace{+0.09em}$)
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Bibliography}}
+
+\vspace{+1.20em}
+
+\par \textbf{D. Lynden-Bell and J. Katz}, Classical Mechanics without Absolute Space (1995)
+\bigskip
+\par \textbf{J. Barbour}, Scale-Invariant Gravity: Particle Dynamics (2002)
+\bigskip
+\par \textbf{R. Ferraro}, Relational Mechanics as a Gauge Theory (2014)
+\bigskip
+\par \textbf{A. Torassa}, General Equation of Motion (2013)
+\bigskip
+\par \textbf{A. Torassa}, Alternative Classical Mechanics (2013)
+\bigskip
+\par \textbf{A. Torassa}, A Reformulation of Classical Mechanics (2014)
+\bigskip
+\par \textbf{A. Torassa}, A New Principle of Conservation of Energy (2014)
+
+\newpage
+
+\begin{adjustwidth}{-0.15em}{-0.15em}
+
+{\centering\subsection*{Appendix}}
+
+\vspace{+1.02em}
+
+\par For a system of N particles, the following definitions are also applicable:
+
+\vspace{+1.02em}
+
+\par \hspace{-0.83em} \begin{tabular}{ll}
+\Angular & $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\bre\vR\ri - \bre\vR\rcm) \times (\bre\vV\ri - \bre\vV\rcm)$ \vspace{+0.90em} \\
+\Work & $\bre\mW\rt ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\bre\vR\ri - \bre\vR\rcm) ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri - \bre\vV\rcm)^2$ \vspace{+0.90em} \\
+\Kinetic & $\Delta \; \bre\mK\hspace{+0.045em}\rt ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri - \bre\vV\rcm)^2$ \vspace{+0.90em} \\
+\Potential & $\Delta \; \bre\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\bre\vR\ri - \bre\vR\rcm)$ \vspace{+0.90em} \\
+\Lagrangian & $\hspace{+0.06em} \bre{\hspace{-0.06em}\mL}\hspace{-0.09em}\rt ~\doteq~ \bre\mK\hspace{+0.045em}\rt - \bre\mU\rt$
+\end{tabular}
+
+\vspace{+1.02em}
+
+\par \noindent where $\bre\vR\rcm$ and $\bre\vV\rcm$ are the dynamic position and the dynamic velocity of the center of mass {\fontsize{15.30}{15.30}\selectfont \vphantom{K}}of the system of particles. {\hspace{+12.45em} \makebox(0,7.20){\fontsize{7.89}{7.89}\selectfont $\sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \bre\vA\ri \cdot d(\bre\vR\ri - \bre\vR\rcm) = \sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, (\bre\vA\ri - \bre\vA\rcm) \cdot d(\bre\vR\ri - \bre\vR\rcm) = \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri - \bre\vV\rcm)^2$}}
+
+\vspace{+1.02em}
+
+\par The angular momentum $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt$ of an isolated system of N particles remains constant if the internal forces obey Newton's third law in its strong form.
+\bigskip
+\par $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~=~ \Cte$
+\bigskip
+\par $d(\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt)/dt ~=~ \sum_i \, \mM\ri \, (\bre\vR\ri - \bre\vR\rcm) \times (\bre\vA\ri - \bre\vA\rcm) \;=\; \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times \bre\vA\ri ~=~ \sum_i \, \vR\ri \times \vF\ri \Cti 0$
+\bigskip
+\par $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\bre\vR\ri - \bre\vR\rcm) \times (\bre\vV\ri - \bre\vV\rcm) ~=~ \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times [\, \vV\ri + \bre\aV\rS \times (\vR\ri - \vR\rcm) - \vV\rcm \,]$
+
+\vspace{+1.02em}
+
+\par The mechanical energy $\bre\mE\rt$ of a system of N particles remains constant if the system is only subject to conservative forces.
+\bigskip
+\par $\bre\mE\rt \,\doteq\, \bre\mK\hspace{+0.045em}\rt + \bre\mU\rt \Cto \Cte$
+\bigskip
+\par $\Delta \; \bre\mE\rt ~=~ \Delta \; \bre\mK\hspace{+0.045em}\rt + \, \Delta \; \bre\mU\rt ~=~ 0$
+\bigskip
+\par $\Delta \; \bre\mK\hspace{+0.045em}\rt ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri - \bre\vV\rcm)^2 ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, [\, \vV\ri + \bre\aV\rS \times (\vR\ri - \vR\rcm) - \vV\rcm \,]^{\hspace{+0.024em}2}$
+\bigskip
+\par $\Delta \; \bre\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\bre\vR\ri - \bre\vR\rcm) ~=~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\vR\ri - \vR\rcm)$
+\bigskip
+\par \noindent where $\vR\rcm$ and $\vV\rcm$ are the position and the velocity of the center of mass of the system of particles relative to a reference frame S, and $\bre\aV\rS$ is the dynamic angular velocity of the reference frame S. If the system of particles is isolated and if the internal forces obey Newton's third law in its weak form then: {\hspace{+6.18em} \makebox(0,7.20){\fontsize{7.89}{7.89}\selectfont $\sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\vR\ri - \vR\rcm) = \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\vR\ri$}}
+
+\end{adjustwidth}
+
+\end{document}
+

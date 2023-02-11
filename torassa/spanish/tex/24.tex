@@ -1,0 +1,135 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={129.0mm,192.0mm}}
+\geometry{totalwidth=106.6mm,totalheight=158.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Principio de Relatividad}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\unitlength}{0.57pt}
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mX}{x}
+\newcommand{\mY}{y}
+\newcommand{\mZ}{z}
+\newcommand{\mT}{t}
+\newcommand{\rt}{'}
+\newcommand{\rot}{_{o'}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Principio de Relatividad}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Licencia Creative Commons Atribución 3.0
+
+(2013) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{81mm}{Este trabajo presenta un principio de relatividad, que establece que las leyes de la física deben solamente tener la misma forma en todos los sistemas de referencia no rotantes.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsubsection*{Principio de Relatividad}}
+
+\vspace{+0.75em}
+
+\par Cualquier sistema de referencia debe estar fijo a un cuerpo.
+\medskip
+\par Un sistema de referencia rotante no puede representar en todos los puntos del espacio la velocidad angular de rotación de un cuerpo que gira.
+\medskip
+\par Cualquier sistema de referencia es un cuerpo rígido ideal y, según la teoría de relatividad, ningún cuerpo puede superar la velocidad de la luz.
+\medskip
+\par Por lo tanto, ningún sistema de referencia rotante puede tener la misma velocidad angular de rotación en todos los puntos del espacio, debido a que su velocidad tangencial no puede superar la velocidad de la luz.
+\medskip
+\par Sin embargo, es posible convenir que cualquier sistema de referencia fijo a un cuerpo debe ser no rotante.
+\medskip
+\par Las leyes de la física deben ser las mismas para todos los observadores.
+\medskip
+\par Por lo tanto, según este trabajo, las leyes de la física deben solamente tener la misma forma en todos los sistemas de referencia no rotantes.
+\medskip
+\par En adición, varias leyes de la física adoptarían una forma más simple si ningún sistema de referencia fuese un sistema de referencia rotante.
+\medskip
+\par Por último, todo cuerpo es un observador posible. Por lo tanto, según este trabajo, todo cuerpo es también un sistema de referencia no rotante posible.
+
+\newpage
+
+{\centering\subsubsection*{Mecánica Clásica}}
+
+\vspace{+0.75em}
+
+\par Si cualquier sistema de referencia es un sistema de referencia no rotante, entonces los ejes de dos sistemas de referencia S y S' permanecerán siempre fijos entre sí. Por lo tanto, se puede convenir, para facilitar los cálculos, que los ejes de los sistemas de referencia S y S' tengan la misma orientación entre sí, según como muestra la siguiente figura:
+
+\vspace{+1.2em}
+
+\begin{center}
+\begin{picture}(228,198)
+\multiput(75,75)(45,18){2}{\vector(1,0){90}}
+\multiput(75,75)(45,18){2}{\vector(0,1){90}}
+\multiput(75,75)(45,18){2}{\vector(-1,-1){60}}
+\put(72,171){$\mZ$}\put(117,189){$\mZ\rt$}
+\put(171,72){$\mX$}\put(216,90){$\mX\rt$}
+\put(3,3){$\mY$}\put(45,18){$\mY\rt$}
+\put(78,78){$O$}\put(123,96){$O\rt$}
+\put(24,96){S}\put(162,141){S'}
+\end{picture}
+\end{center}
+
+\smallskip
+
+\par Se puede pasar de las coordenadas $\mX$, $\mY$, $\mZ$, $\mT$ del sistema de \hbox {referencia S} a las coordenadas $\mX\rt$, $\mY\rt$, $\mZ\rt$, $\mT\rt$ del sistema de referencia S' cuyo origen de coordenadas $O\rt$ se encuentra en la posición $\mX\rot$, $\mY\rot$, $\mZ\rot$ respecto al sistema de referencia S, aplicando las siguientes ecuaciones:
+\begin{eqnarray*}
+\mX\rt & = & \mX - \mX\rot \\*
+\mY\rt & = & \mY - \mY\rot \\*
+\mZ\rt & = & \mZ - \mZ\rot \\*
+\mT\rt & = & \mT
+\end{eqnarray*}
+\par Desde estas ecuaciones, es posible transformar en forma vectorial las posiciones, las velocidades y las aceleraciones del sistema de referencia S al sistema de referencia S', aplicando las siguientes ecuaciones:
+\begin{eqnarray*}
+\vR\hspace{+0.06em}\rt & = & \vR - \vR\rot \\
+\vV\hspace{+0.06em}\rt & = & \vV - \vV\rot \\
+\vA\hspace{+0.06em}\rt & = & \vA - \vA\rot
+\end{eqnarray*}
+\noindent donde $\vR\rot$, $\vV\rot$ y $\vA\rot$ son la posición, la velocidad y la aceleración del sistema de referencia S' respecto al sistema de referencia S.
+
+\end{document}
+

@@ -1,0 +1,567 @@
+
+\documentclass[12pt]{article}
+%\documentclass[a4paper,12pt]{article}
+%\documentclass[letterpaper,12pt]{article}
+\usepackage[totalwidth=177mm,totalheight=243mm]{geometry}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Sobre La Mecánica Clásica}}
+\hypersetup{pdfsubject={Nueva dinámica que establece la existencia de una nueva fuerza universal de interacción, denominada fuerza cinética.}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+\hypersetup{pdfkeywords={mecánica clásica, ciencia, física, mecánica, relatividad, cinemática, dinámica, clásica, general, principio, conservación, movimiento, fuerza, masa, trabajo, energía, inercia, interacción, cinética, viva, sistema, referencia, inercial, fundamental, ficticia, real, newton, einstein, torassa}}
+
+%\makeatletter
+%\let\@afterindentfalse\@afterindenttrue
+%\@afterindenttrue
+%\setlength{\parindent}{0em}
+
+\setlength{\unitlength}{0.72pt}
+\setlength{\arraycolsep}{1.74pt}
+%\renewcommand{\baselinestretch}{0.93}
+
+\newcommand{\xt}{\huge}
+\newcommand{\xe}{\textup}
+\newcommand{\xa}{\normalsize}
+\newcommand{\yA}{\vspace{0em}}
+\newcommand{\yI}{\vspace{0em}}
+\newcommand{\yi}{\vspace{0em}}
+\newcommand{\yt}{\vspace{0em}}
+\newcommand{\ye}{\vspace{0em}}
+\newcommand{\ya}{\vspace{0em}}
+
+\newcommand{\za}{\ \vspace{-0.9em}}
+\newcommand{\zb}{  \vspace{+0.9em}}
+\newcommand{\zc}{  \vspace{+0.9em}}
+
+\newcommand{\yN}{\newpage}%{}
+\newcommand{\yT}{\bigskip}%{}
+\newcommand{\yS}{\medskip}%{}
+\newcommand{\cA}{\centering}%{}
+\newcommand{\cC}{\cA\tableofcontents}%{}
+\newcommand{\cT}{\cA\section}%{\cA\section*}
+\newcommand{\cS}{\cA\subsection}%{\cA\subsection*}
+\newcommand{\ct}[1]{}%{\vspace{-3em}\section*{}\addcontentsline{toc}{section}{\numberline {}#1}}
+\newcommand{\cs}[1]{}%{\vspace{-2em}\subsection*{}\addcontentsline{toc}{subsection}{\numberline {}#1}}
+
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\vP}{\mathbf{P}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\nK}{{\scriptstyle C}}
+\newcommand{\nN}{{\scriptstyle N}}
+\newcommand{\nL}{{\scriptstyle V}}
+\newcommand{\mX}{x}
+\newcommand{\mY}{y}
+\newcommand{\mZ}{z}
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\mN}{M}
+\newcommand{\mW}{W}
+\newcommand{\mE}{E}
+\newcommand{\rt}{'}
+\newcommand{\rS}{_S}
+\newcommand{\rT}{_T}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rc}{_c}
+\newcommand{\rn}{_n}
+\newcommand{\ri}{_i}
+\newcommand{\ro}{_o}
+\newcommand{\rs}{_s}
+\newcommand{\rab}{_{ab}}
+\newcommand{\rao}{_{a_o}}
+\newcommand{\rbo}{_{b_o}}
+\newcommand{\rno}{_{n_o}}
+\newcommand{\rfn}{_{fn}}
+\newcommand{\rfk}{_{fc}}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\rot}{_{o'}}
+\newcommand{\tf}{Figura}
+\newcommand{\tc}{constante}
+
+\title{\yt \xt {SOBRE LA MECÁNICA CLÁSICA} \ya}
+\author{\xa {Licencia Creative Commons Atribución 3.0} \ye \\* \xa {\copyright 1996 por Alejandro A. Torassa} \ye \\* \xa \xe {atorassa@gmail.com} \ye \\* \xa {Argentina}}
+\date{}
+
+\begin{document}
+
+\baselineskip=14.5pt \enlargethispage{0em}
+
+\maketitle
+
+\yA
+
+\begin{abstract}
+\noindent En pocas palabras, este trabajo desarrolla una nueva dinámica, válida para todos los observadores, que establece, entre otras cosas, la existencia de una nueva fuerza universal de interacción, denominada fuerza cinética, que tiene como finalidad equilibrar a las otras fuerzas que actúan sobre los cuerpos. Para la nueva dinámica, el movimiento de los cuerpos no esta determinado por las fuerzas que actúan sobre ellos, sino que son los propios cuerpos quienes determinan su movimiento, ya que a través de su movimiento ejercen sobre los otros cuerpos la fuerza cinética necesaria para mantener al sistema de fuerzas que actúa sobre los cuerpos siempre en equilibrio.
+\end{abstract}
+
+\yI
+
+{\centering\section*{Introducción}}
+
+\par Es sabido que la mecánica clásica no puede formular la dinámica de Newton para todos los sistemas de referencia, debido a que ésta no siempre conserva su forma al ser pasada de un sistema de referencia a otro. Si admitimos, por ejemplo, que la dinámica de Newton es válida para un sistema de referencia, entonces no podemos admitir que sea válida para otro sistema de referencia acelerado con respecto al primero, porque el comportamiento de los cuerpos para el segundo sistema de referencia es distinto a lo establecido por la dinámica de Newton.
+\yi
+\par La mecánica clásica soluciona esta dificultad, distinguiendo a los sistemas de referencia: en sistemas de referencia inerciales, para los cuales se formula la dinámica de Newton, y en sistemas de referencia no inerciales, para los cuales no se formula la dinámica de Newton; contradiciendo con esta solución, al principio de relatividad general, que afirma: todos los sistemas de referencia obtendrán las mismas leyes naturales.
+\yi
+\par Sin embargo, este trabajo cree que es posible solucionar la dificultad expuesta de la mecánica clásica de una manera diferente, sin necesidad de distinguir a los sistemas de referencia y acorde con el principio de relatividad general, desarrollando a partir de la dinámica de Newton y de las transformaciones de la cinemática una nueva dinámica, que podrá ser formulada para todos los sistemas de referencia ya que la misma conservará siempre su forma al ser pasada de un sistema de referencia a otro.
+\yi
+\par El desarrollo de esta nueva dinámica se dividirá en dos partes: en la primera parte, que trata sobre la mecánica clásica de los cuerpos puntuales, se desarrollará la nueva dinámica de los cuerpos puntuales, a partir de la dinámica de Newton de los cuerpos puntuales y de las transformaciones de la cinemática de los cuerpos puntuales, y en la segunda parte, que trata sobre la mecánica clásica de los cuerpos rígidos, se desarrollará la nueva dinámica de los cuerpos rígidos, a partir de la dinámica de Newton de los cuerpos rígidos y de las transformaciones de la cinemática de los cuerpos rígidos.
+\yi
+\par Este trabajo sólo desarrollará la primera parte.
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\za
+
+{\cA\section*{\LARGE {SOBRE LA MECÁNICA CLÁSICA DE LOS CUERPOS PUNTUALES}}}
+
+\zb
+
+{\cC}
+
+\zc
+
+{\ct{MECÁNICA DE LOS CUERPOS PUNTUALES}}
+{\cT{MECÁNICA DE LOS CUERPOS PUNTUALES}}
+
+\par La mecánica clásica de los cuerpos puntuales considera que el universo está constituido solamente por cuerpos puntuales y asume que todo sistema de referencia está ligado a un cuerpo puntual. Por lo tanto, en la mecánica clásica de los cuerpos puntuales, se puede asumir que los sistemas de referencia no están rotando.
+
+\yT \vspace{0em}
+
+{\ct{CINEMÁTICA DE LOS CUERPOS PUNTUALES}}
+{\cT{CINEMÁTICA DE LOS CUERPOS PUNTUALES}}
+
+{\cs{Sistemas de Referencia}}
+{\cS{Sistemas de Referencia}}
+
+\par Si los sistemas de referencia no están rotando, entonces los ejes de dos sistemas de referencia S y S' permanecerán siempre fijos entre sí. Por lo tanto, se puede convenir, para facilitar los cálculos, que los ejes de los sistemas de referencia S y S' tengan la misma orientación entre sí, según como muestra la Figura 1.
+\smallskip
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\begin{center}
+\begin{picture}(228,198)
+\multiput(75,75)(45,18){2}{\vector(1,0){90}}
+\multiput(75,75)(45,18){2}{\vector(0,1){90}}
+\multiput(75,75)(45,18){2}{\vector(-1,-1){60}}
+\put(72,171){$\mZ$}\put(117,189){$\mZ\rt$}
+\put(171,72){$\mX$}\put(216,90){$\mX\rt$}
+\put(3,3){$\mY$}\put(45,18){$\mY\rt$}
+\put(78,78){$O$}\put(123,96){$O\rt$}
+\put(24,96){S}\put(162,141){S'}
+\end{picture}
+\\* \tf \ 1
+\end{center}
+
+{\cs{Transformaciones de la Cinemática}}
+{\cS{Transformaciones de la Cinemática}}
+
+\par Si un sistema de referencia S de ejes $O(\mX,\mY,\mZ)$ determina un suceso por medio de tres coordenadas espaciales $\mX$, $\mY$, $\mZ$ y una coordenada temporal $\mT$, entonces otro sistema de referencia S' de ejes $O\rt(\mX\rt,\mY\rt,\mZ\rt)$ también determinará a este mismo suceso por medio de tres coordenadas espaciales $\mX\rt$, $\mY\rt$, $\mZ\rt$ y una coordenada temporal $\mT\rt$.
+\par Se puede pasar de las coordenadas $\mX$, $\mY$, $\mZ$, $\mT$ del sistema de referencia S a las coordenadas $\mX\rt$, $\mY\rt$, $\mZ\rt$, $\mT\rt$ del sistema de referencia S' cuyo origen de coordenadas $O\rt$ se encuentra en la posición $\mX\rot$, $\mY\rot$, $\mZ\rot$ con respecto al sistema de referencia S, aplicando las siguientes ecuaciones:
+\begin{eqnarray*}
+\mX\rt & = & \mX - \mX\rot \\*
+\mY\rt & = & \mY - \mY\rot \\*
+\mZ\rt & = & \mZ - \mZ\rot \\*
+\mT\rt & = & \mT
+\end{eqnarray*}
+\par De estas ecuaciones, se deduce como se transforman las velocidades y las aceleraciones del sistema de referencia S al sistema de referencia S', que en forma vectorial pueden ser expresadas a través de las siguientes ecuaciones:
+\begin{eqnarray*}
+\vV\rt & = & \vV - \vV\rot \\*
+\vA\rt & = & \vA - \vA\rot
+\end{eqnarray*}
+\noindent donde $\vV\rot$ y $\vA\rot$ es la velocidad y la aceleración respectivamente del sistema de referencia S' con respecto al sistema de referencia S.
+
+\yT \vspace{0em}
+
+{\ct{DINÁMICA DE LOS CUERPOS PUNTUALES}}
+{\cT{DINÁMICA DE LOS CUERPOS PUNTUALES}}
+
+{\cs{Dinámica de Newton}}
+{\cS{Dinámica de Newton}}
+
+\par Primera ley de Newton: Todo cuerpo puntual permanece en estado de reposo o de movimiento rectilíneo uniforme, a menos que actúe sobre él una fuerza externa no equilibrada que modifique su estado.
+\par Segunda ley de Newton: Si sobre un cuerpo puntual A actúan fuerzas, entonces la aceleración del mismo es proporcional a la resultante de las fuerzas actuantes y tiene igual dirección y sentido que ella.
+\begin{eqnarray*}
+\sum \vF\ra = \mM\ra\vA\ra
+\end{eqnarray*}
+\noindent donde $\mM\ra$ es la masa inercial del cuerpo puntual A.
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par Tercera ley de Newton: Si un cuerpo puntual A ejerce una fuerza $\vF$ sobre un cuerpo puntual B, entonces el cuerpo puntual B ejerce una fuerza $-\vF$ igual y de sentido contrario sobre el cuerpo puntual A.
+\begin{eqnarray*}
+\vF\ra = -\vF\rb
+\end{eqnarray*}
+\par La transformación de las fuerzas reales de un sistema de referencia a otro, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\vF\rt = \vF
+\end{eqnarray*}
+\par La transformación de las masas inerciales de un sistema de referencia a otro, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\mM\rt = \mM
+\end{eqnarray*}
+
+\yS \vspace{-1.8em}
+
+{\cs{Comportamiento Dinámico de los Cuerpos Puntuales}}
+{\cS{Comportamiento Dinámico de los Cuerpos Puntuales}}
+
+\par Consideremos que el universo está constituido solamente por los cuerpos puntuales A, B y C y que estos cuerpos puntuales se comportan para un sistema de referencia S (sistema inercial) según como lo establece la dinámica de Newton. Por lo tanto, el comportamiento de los cuerpos puntuales A, B y C estará determinado para el sistema de referencia S por las ecuaciones:
+\begin{eqnarray}
+\sum \vF\ra & = & \mM\ra\vA\ra \nonumber \\*
+\sum \vF\rb & = & \mM\rb\vA\rb \label{e1} \\*
+\sum \vF\rc & = & \mM\rc\vA\rc \nonumber
+\end{eqnarray}
+\par A partir de las ecuaciones (\ref{e1}) y por medio de las transformaciones de la cinemática y de la dinámica, se puede establecer que el comportamiento de los cuerpos puntuales A, B y C estará determinado para otro sistema de referencia S' por las ecuaciones:
+\begin{eqnarray}
+\sum \vF\rt\ra & = & \mM\rt\ra(\vA\rt\ra - \vA\rt\ro) \nonumber \\*
+\sum \vF\rt\rb & = & \mM\rt\rb(\vA\rt\rb - \vA\rt\ro) \label{e2} \\*
+\sum \vF\rt\rc & = & \mM\rt\rc(\vA\rt\rc - \vA\rt\ro) \nonumber
+\end{eqnarray}
+\noindent donde $\vA\rt\ro$ es la aceleración del sistema de referencia S con respecto al sistema de referencia S', que es igual al opuesto de la aceleración $-\vA\rot$ del sistema de referencia S' con respecto al sistema de \hbox {referencia S.}
+\par Como las ecuaciones (\ref{e2}) sólo pueden tener la misma forma que las ecuaciones (\ref{e1}) si la aceleración $\vA\rt\ro$ del sistema de referencia S con respecto al sistema de referencia S' es igual a cero, entonces no se puede establecer que el comportamiento de los cuerpos puntuales A, B y C estará determinado para cualquier sistema de referencia por las ecuaciones (\ref{e1}).
+\par Ahora, si se suman las fuerzas de las ecuaciones (\ref{e2}), se obtiene:
+\begin{eqnarray}
+\sum \vF\rt\ra + \sum \vF\rt\rb + \sum \vF\rt\rc = \mM\rt\ra(\vA\rt\ra - \vA\rt\ro) + \mM\rt\rb(\vA\rt\rb - \vA\rt\ro) + \mM\rt\rc(\vA\rt\rc - \vA\rt\ro) \label{e3}
+\end{eqnarray}
+\par Despejando $\vA\rt\ro$ y como $\sum \vF\rt\ra + \sum \vF\rt\rb + \sum \vF\rt\rc$ es igual a cero, por la tercer ley de Newton, resulta:
+\begin{eqnarray}
+\vA\rt\ro = \frac{\mM\rt\ra\vA\rt\ra + \mM\rt\rb\vA\rt\rb + \mM\rt\rc\vA\rt\rc}{\mM\rt\ra + \mM\rt\rb + \mM\rt\rc} \label{e4}
+\end{eqnarray}
+\par Como el segundo miembro es la aceleración $\vA\rt\rcm$ del centro de masa del universo con respecto al sistema de referencia S', queda:
+\begin{eqnarray}
+\vA\rt\ro = \vA\rt\rcm \label{e5}
+\end{eqnarray}
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par Reemplazando en las ecuaciones (\ref{e2}) $\vA\rt\ro$ por $\vA\rt\rcm$, se obtiene:
+\begin{eqnarray}
+\sum \vF\rt\ra & = & \mM\rt\ra(\vA\rt\ra - \vA\rt\rcm) \nonumber \\*
+\sum \vF\rt\rb & = & \mM\rt\rb(\vA\rt\rb - \vA\rt\rcm) \label{e6} \\*
+\sum \vF\rt\rc & = & \mM\rt\rc(\vA\rt\rc - \vA\rt\rcm) \nonumber
+\end{eqnarray}
+\par Por lo tanto, el comportamiento de los cuerpos puntuales A, B y C estará determinado ahora para el sistema de referencia S' por las ecuaciones (\ref{e6}), que son equivalentes a las ecuaciones (\ref{e2}) ya que $\vA\rt\rcm$ es igual a $\vA\rt\ro$.
+\par Ahora si se pasan las ecuaciones (\ref{e6}) del sistema de referencia S' al sistema de referencia S, por medio de las transformaciones de la cinemática y de la dinámica, se obtiene:
+\begin{eqnarray}
+\sum \vF\ra & = & \mM\ra(\vA\ra - \vA\rcm) \nonumber \\*
+\sum \vF\rb & = & \mM\rb(\vA\rb - \vA\rcm) \label{e7} \\*
+\sum \vF\rc & = & \mM\rc(\vA\rc - \vA\rcm) \nonumber
+\end{eqnarray}
+\par Por lo tanto, el comportamiento de los cuerpos puntuales A, B y C estará determinado ahora para el sistema de referencia S por las ecuaciones (\ref{e7}), que sólo pueden ser equivalentes a las ecuaciones (\ref{e1}) si la aceleración $\vA\rcm$ del centro de masa del universo con respecto al sistema de referencia S es igual a cero; lo cual puede ser verificado sumando las fuerzas de las ecuaciones (\ref{e1}); o sea:
+\begin{eqnarray}
+\sum \vF\ra + \sum \vF\rb + \sum \vF\rc = \mM\ra\vA\ra + \mM\rb\vA\rb + \mM\rc\vA\rc \label{e8}
+\end{eqnarray}
+\noindent de donde dividiendo luego ambos miembros por $\mM\ra + \mM\rb + \mM\rc$ y como $\sum \vF\ra + \sum \vF\rb + \sum \vF\rc$ es igual a cero, por la tercer ley de Newton, resulta:
+\begin{eqnarray}
+\vA\rcm = \frac{\mM\ra\vA\ra + \mM\rb\vA\rb + \mM\rc\vA\rc}{\mM\ra + \mM\rb + \mM\rc} = 0 \label{e9}
+\end{eqnarray}
+\par Como las ecuaciones (\ref{e7}) tienen la misma forma que las ecuaciones (\ref{e6}), entonces se puede establecer que el comportamiento de los cuerpos puntuales A, B y C estará determinado para cualquier sistema de referencia por las ecuaciones (\ref{e7}), y que sólo estará determinado por las ecuaciones (\ref{e1}) si la aceleración del centro de masa del universo con respecto al sistema de referencia es igual a cero.
+\par Ahora, si en las ecuaciones (\ref{e7}) se pasa el segundo miembro al primero, se obtiene:
+\begin{eqnarray}
+\sum \vF\ra + \mM\ra(\vA\rcm - \vA\ra) & = & 0 \nonumber \\*
+\sum \vF\rb + \mM\rb(\vA\rcm - \vA\rb) & = & 0 \label{e10} \\*
+\sum \vF\rc + \mM\rc(\vA\rcm - \vA\rc) & = & 0 \nonumber
+\end{eqnarray}
+\par Reemplazando $\vA\rcm$ por su expresión, resulta luego de factorizar:
+\begin{eqnarray}
+\sum \vF\ra + \frac{\mM\ra\mM\rb(\vA\rb - \vA\ra)}{\mM\ra + \mM\rb + \mM\rc} + \frac{\mM\ra\mM\rc(\vA\rc - \vA\ra)}{\mM\ra + \mM\rb + \mM\rc} & = & 0 \nonumber \\* \nonumber \\*
+\sum \vF\rb + \frac{\mM\rb\mM\ra(\vA\ra - \vA\rb)}{\mM\ra + \mM\rb + \mM\rc} + \frac{\mM\rb\mM\rc(\vA\rc - \vA\rb)}{\mM\ra + \mM\rb + \mM\rc} & = & 0 \label{e11} \\* \nonumber \\*
+\sum \vF\rc + \frac{\mM\rc\mM\ra(\vA\ra - \vA\rc)}{\mM\ra + \mM\rb + \mM\rc} + \frac{\mM\rc\mM\rb(\vA\rb - \vA\rc)}{\mM\ra + \mM\rb + \mM\rc} & = & 0 \nonumber
+\end{eqnarray}
+
+\yN \baselineskip=16.3pt \enlargethispage{0em}
+
+\par Si se interpreta al segundo y tercer término, como una nueva fuerza $\vF^{\circ}$ que actúa sobre los cuerpos puntuales, ejercida por los otros cuerpos puntuales, entonces se notará: que la fuerza $\vF^{\circ}$ conserva siempre su forma al ser pasada de un sistema de referencia a otro y además que si un cuerpo puntual ejerce una fuerza $\vF^{\circ}$ sobre otro cuerpo puntual, entonces el segundo cuerpo puntual ejerce una fuerza $-\vF^{\circ}$ igual y de sentido contrario sobre el primer cuerpo puntual. Por lo tanto, como el segundo y tercer término representa la suma de las nuevas fuerzas $\sum \vF^{\circ}$ que actúan sobre los cuerpos puntuales, queda:
+\begin{eqnarray}
+\sum \vF\ra + \sum \vF^{\circ}\ra & = & 0 \nonumber \\*
+\sum \vF\rb + \sum \vF^{\circ}\rb & = & 0 \label{e12} \\*
+\sum \vF\rc + \sum \vF^{\circ}\rc & = & 0 \nonumber
+\end{eqnarray}
+\par Agregando, por último, el segundo término al primero, se obtiene:
+\begin{eqnarray}
+\sum \vF\ra & = & 0 \nonumber \\*
+\sum \vF\rb & = & 0 \label{e13} \\*
+\sum \vF\rc & = & 0 \nonumber
+\end{eqnarray}
+\par Por lo tanto, finalmente se puede establecer que el comportamiento de los cuerpos puntuales \hbox {A, B y C} estará determinado para cualquier sistema de referencia por las ecuaciones (\ref{e13}); que pueden ser enunciadas de la siguiente manera: Si al conjunto de las fuerzas reales agregamos la nueva fuerza, entonces el total formará un sistema en equilibrio.
+\par Es posible, por lo tanto, concebir una nueva dinámica, que podrá ser formulada para todos los sistemas de referencia; cuya explicación sobre la causa del movimiento de los cuerpos puntuales no será: que los cuerpos puntuales se mueven de determinada manera porque están sometidos bajo la acción de las fuerzas reales que actúan sobre ellos, según como lo establece la primera y segunda ley de Newton, sino que será: que los cuerpos puntuales se mueven de determinada manera porque de esa manera equilibran, por medio de la nueva fuerza, al sistema de fuerzas reales que actúa sobre los cuerpos puntuales.
+\par Por otro lado, de ahora en más, a la nueva fuerza se la denominará fuerza cinética, ya que es una fuerza que depende del movimiento de los cuerpos puntuales, y a la magnitud $\mM$ (masa) se la denominará masa cinética en vez de masa inercial, porque los cuerpos puntuales ya no poseen más la propiedad de la inercia.
+
+\yS \vspace{-1.5em}
+
+{\cs{Nueva Dinámica}}
+{\cS{Nueva Dinámica}}
+
+\par Primer principio: Un cuerpo puntual puede tener cualquier estado de movimiento.
+\par Segundo principio: Las fuerzas que actúan sobre un cuerpo puntual A, siempre están en equilibrio.
+\begin{eqnarray*}
+\sum \vF\ra = 0
+\end{eqnarray*}
+\par Tercer principio: Si un cuerpo puntual A ejerce una fuerza $\vF$ sobre un cuerpo puntual B, entonces el cuerpo puntual B ejerce una fuerza $-\vF$ igual y de sentido contrario sobre el cuerpo puntual A.
+\begin{eqnarray*}
+\vF\ra = -\vF\rb
+\end{eqnarray*}
+\par La transformación de las fuerzas reales de un sistema de referencia a otro, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\vF\rt = \vF
+\end{eqnarray*}
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par La fuerza cinética $\vF\nK\rab$ ejercida sobre un cuerpo puntual A por otro cuerpo puntual B, causada por la interacción entre el cuerpo puntual A y el cuerpo puntual B, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\vF\nK\rab = \frac{\mM\ra\mM\rb}{\mN\rT}(\vA\rb - \vA\ra)
+\end{eqnarray*}
+\noindent donde $\mM\ra$ es la masa cinética del cuerpo puntual A, $\mM\rb$ es la masa cinética del cuerpo puntual B, $\vA\rb$ es la aceleración del cuerpo puntual B, $\vA\ra$ es la aceleración del cuerpo puntual A y $\mN\rT$ es la masa cinética total del universo.
+\par La transformación de las masas cinéticas de un sistema de referencia a otro, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\mM\rt = \mM
+\end{eqnarray*}
+\par De los enunciados anteriores, se deduce que la suma de las fuerzas cinéticas $\sum \vF\nK\ra$ que actúa sobre un cuerpo puntual A es igual a:
+\begin{eqnarray}
+\sum \vF\nK\ra = \mM\ra(\vA\rcm - \vA\ra) \label{e14}
+\end{eqnarray}
+\noindent donde $\mM\ra$ es la masa cinética del cuerpo puntual A, $\vA\rcm$ es la aceleración del centro de masa cinética del universo y $\vA\ra$ es la aceleración del cuerpo puntual A.
+
+\yS \vspace{-1.5em}
+
+{\cs{Determinación del Movimiento de los Cuerpos Puntuales}}
+{\cS{Determinación del Movimiento de los Cuerpos Puntuales}}
+
+\par La ecuación que determina la aceleración $\vA\ra$ de un cuerpo puntual A con respecto a un sistema de referencia S ligado a un cuerpo puntual S, puede ser calculada de la siguiente manera: la suma de las fuerzas cinéticas $\sum \vF\nK\ra$ que actúan sobre el cuerpo puntual A y la suma de las fuerzas cinéticas $\sum \vF\nK\rs$ que actúan sobre el cuerpo puntual S, están dadas por las siguientes ecuaciones:
+\begin{eqnarray*}
+\sum \vF\nK\ra & = & \mM\ra(\vA\rcm - \vA\ra) \\*
+\sum \vF\nK\rs & = & \mM\rs(\vA\rcm - \vA\rs)
+\end{eqnarray*}
+\par Despejando en ambas ecuaciones $\vA\rcm$ e igualando luego las ecuaciones obtenidas, se tiene:
+\begin{eqnarray*}
+\frac{\sum \vF\nK\ra}{\mM\ra} + \vA\ra = \frac{\sum \vF\nK\rs}{\mM\rs} + \vA\rs
+\end{eqnarray*}
+\par Despejando $\vA\ra$ y como la aceleración $\vA\rs$ del cuerpo puntual S con respecto al sistema de referencia S siempre es igual a cero, resulta:
+\begin{eqnarray*}
+\vA\ra = \frac{\sum \vF\nK\rs}{\mM\rs} - \frac{\sum \vF\nK\ra}{\mM\ra}
+\end{eqnarray*}
+\par Como la suma de las fuerzas cinéticas $(\sum \vF\nK)$ que actúan sobre un cuerpo puntual es igual al opuesto de la suma de las fuerzas no cinéticas $(-\sum \vF\nN)$ que actúan sobre el cuerpo puntual, por el segundo principio de la nueva dinámica, entonces queda:
+\begin{eqnarray*}
+\vA\ra = \frac{\sum \vF\nN\ra}{\mM\ra} - \frac{\sum \vF\nN\rs}{\mM\rs}
+\end{eqnarray*}
+\par Por lo tanto, la aceleración $\vA\ra$ de un cuerpo puntual A con respecto a un sistema de referencia S ligado a un cuerpo puntual S estará determinada por la ecuación anterior; donde $\sum \vF\nN\ra$ es la suma de las fuerzas no cinéticas que actúan sobre el cuerpo puntual A, $\mM\ra$ es la masa del cuerpo puntual A (de ahora en más para abreviar, se dirá directamente masa en vez de masa cinética), $\sum \vF\nN\rs$ es la suma de las fuerzas no cinéticas que actúan sobre el cuerpo puntual S y $\mM\rs$ es la masa del cuerpo puntual S.
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\yS \vspace{0em}
+
+{\cs{Circunstancia Galileana}}
+{\cS{Circunstancia Galileana}}
+
+\par Digamos que un sistema de referencia S ligado a un cuerpo puntual S se halla en la circunstancia galileana si la suma de las fuerzas no cinéticas que actúan sobre el cuerpo puntual S es igual a cero.
+\par Si un sistema de referencia S se halla en la circunstancia galileana, entonces se deduce, por el segundo principio de la nueva dinámica, que la suma de las fuerzas cinéticas $\sum \vF\nK\rs$ que actúan sobre el cuerpo puntual S es igual a cero; o sea:
+\begin{eqnarray*}
+\sum \vF\nK\rs = \mM\rs(\vA\rcm - \vA\rs) = 0
+\end{eqnarray*}
+\par Despejando $\vA\rcm$ y como la aceleración $\vA\rs$ del cuerpo puntual S con respecto al sistema de referencia S siempre es igual a cero, resulta:
+\begin{eqnarray*}
+\vA\rcm = 0
+\end{eqnarray*}
+\par Por lo tanto, la aceleración del centro de masa del universo con respecto a un sistema de referencia que se halla en la circunstancia galileana es igual a cero.
+
+\yS \vspace{0em}
+
+{\cs{Sistema Aislado}}
+{\cS{Sistema Aislado}}
+
+\par Digamos que un sistema de cuerpos puntuales es un sistema aislado, si la suma de las fuerzas no cinéticas externas que actúan sobre el sistema de cuerpos puntuales es igual a cero.
+\par Por lo tanto, si un sistema de cuerpos puntuales es un sistema aislado, entonces se deduce, por el segundo principio de la nueva dinámica, que la suma de las fuerzas no cinéticas internas $\sum \vF\nN\ri$ y de las fuerzas cinéticas internas y externas $\sum \vF\nK$ es igual a cero; o sea:
+\begin{eqnarray*}
+\sum \vF\nN\ri + \sum \vF\nK = 0
+\end{eqnarray*}
+\par Reemplazando $\sum \vF\nK$ por su expresión (\ref{e14}) y como $\sum \vF\nN\ri$ es igual a cero, por el tercer principio de la nueva dinámica, se deduce:
+\begin{eqnarray*}
+\mM\ra(\vA\rcm - \vA\ra) + \mM\rb(\vA\rcm - \vA\rb) + \cdots + \mM\rn(\vA\rcm - \vA\rn) = 0
+\end{eqnarray*}
+\noindent de donde despejando $\vA\rcm$ resulta:
+\begin{eqnarray*}
+\vA\rcm = \frac{\mM\ra\vA\ra + \mM\rb\vA\rb + \cdots + \mM\rn\vA\rn}{\mM\ra + \mM\rb + \cdots + \mM\rn}
+\end{eqnarray*}
+\par Como el segundo miembro es la aceleración $\vA\rcm{\rs}$ del centro de masa del sistema aislado, entonces se obtiene:
+\begin{eqnarray*}
+\vA\rcm{\rs} = \vA\rcm
+\end{eqnarray*}
+\par Por lo tanto, la aceleración del centro de masa de un sistema aislado es igual a la aceleración del centro de masa del universo.
+
+\yT \vspace{0em}
+
+{\ct{CONSERVACIONES DE LOS CUERPOS PUNTUALES}}
+{\cT{CONSERVACIONES DE LOS CUERPOS PUNTUALES}}
+
+{\cs{Conservación Restringida de la Cantidad de Movimiento}}
+{\cS{Conservación Restringida de la Cantidad de Movimiento}}
+
+\par Por un lado, se tiene que la aceleración del centro de masa de un sistema aislado es igual a la aceleración del centro de masa del universo y, por otro lado, se tiene que la aceleración del centro de masa del universo con respecto a un sistema de referencia que se halla en la circunstancia galileana es igual a cero.
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par Por lo tanto, la aceleración del centro de masa de un sistema aislado con respecto a un sistema de referencia que se halla en la circunstancia galileana es igual a cero; o sea:
+\begin{eqnarray*}
+\frac{\mM\ra\vA\ra + \mM\rb\vA\rb + \cdots + \mM\rn\vA\rn}{\mM\ra + \mM\rb + \cdots + \mM\rn} = 0
+\end{eqnarray*}
+\par Multiplicando ambos miembros por $\mM\ra + \mM\rb + \cdots + \mM\rn$ e integrando luego respecto al tiempo, se deduce:
+\begin{eqnarray*}
+\mM\ra\vV\ra + \mM\rb\vV\rb + \cdots + \mM\rn\vV\rn = \tc
+\end{eqnarray*}
+\par Como el primer miembro es la cantidad de movimiento total $\vP$ del sistema aislado, entonces queda:
+\begin{eqnarray*}
+\vP = \tc
+\end{eqnarray*}
+\par Por lo tanto, para un sistema de referencia que se halla en la circunstancia galileana la cantidad de movimiento total de un sistema aislado se conserva.
+
+\yS \vspace{-1.5em}
+
+{\cs{Trabajo y Energía Viva}}
+{\cS{Trabajo y Energía Viva}}
+
+\par El trabajo total $\mW$ realizado por las fuerzas que actúan sobre un cuerpo puntual es:
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\ro}^{\vR}{\vF\ra \cdot d\vR} + \int\limits_{\vR\ro}^{\vR}{\vF\rb \cdot d\vR} + \cdots + \int\limits_{\vR\ro}^{\vR}{\vF\rn \cdot d\vR}
+\end{eqnarray*}
+\noindent o sea:
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\ro}^{\vR}{(\vF\ra + \vF\rb + \cdots + \vF\rn) \cdot d\vR}
+\end{eqnarray*}
+\par Como $\vF\ra + \vF\rb + \cdots + \vF\rn$ es igual a cero, por el segundo principio de la nueva dinámica, entonces resulta:
+\begin{eqnarray*}
+\mW = 0
+\end{eqnarray*}
+\par Por lo tanto, el trabajo total realizado por las fuerzas que actúan sobre un cuerpo puntual es igual a cero.
+\par Ahora, el trabajo total $\mW$ realizado por las fuerzas cinéticas de interacción $\vF\nK\ra$ y $\vF\nK\rb$ que actúan sobre un cuerpo puntual A y un cuerpo puntual B respectivamente es:
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\rao}^{\vR\ra}{\vF\nK\ra \cdot d\vR\ra} + \int\limits_{\vR\rbo}^{\vR\rb}{\vF\nK\rb \cdot d\vR\rb}
+\end{eqnarray*}
+\noindent o bien:
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\rao}^{\vR\ra}{\frac{\mM\ra\mM\rb}{\mN\rT}(\vA\rb - \vA\ra) \cdot d\vR\ra} + \int\limits_{\vR\rbo}^{\vR\rb}{\frac{\mM\rb\mM\ra}{\mN\rT}(\vA\ra - \vA\rb) \cdot d\vR\rb}
+\end{eqnarray*}
+\noindent de donde se deduce:
+\begin{eqnarray*}
+\mW = -\Delta \Bigg(\frac{\mM\ra\mM\rb}{2\mN\rT}(\vV\ra - \vV\rb)^2\Bigg)
+\end{eqnarray*}
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par Si a la energía de la fuerza cinética la denominamos energía viva, entonces la expresión entre paréntesis representa la energía viva $\mE\nL\rab$ del sistema cuerpo puntual A - cuerpo puntual B; por consiguiente reemplazando queda:
+\begin{eqnarray*}
+\mW = -\Delta \mE\nL\rab
+\end{eqnarray*}
+\par Por lo tanto, el trabajo total realizado por las fuerzas cinéticas de interacción que actúan sobre un cuerpo puntual A y un cuerpo puntual B es igual al opuesto de la variación de la energía viva del sistema cuerpo puntual A - cuerpo puntual B; siendo la energía viva $\mE\nL\rab$ de un sistema cuerpo puntual A - cuerpo puntual B igual a:
+\begin{eqnarray*}
+\mE\nL\rab = \frac{\mM\ra\mM\rb}{2\mN\rT}(\vV\ra - \vV\rb)^2
+\end{eqnarray*}
+\noindent donde $\mM\ra$ es la masa del cuerpo puntual A, $\mM\rb$ es la masa del cuerpo puntual B, $\vV\ra$ es la velocidad del cuerpo puntual A, $\vV\rb$ es la velocidad del cuerpo puntual B y $\mN\rT$ es la masa total del universo.
+\par Ahora, el trabajo total $\mW$ realizado por las fuerzas cinéticas que actúan sobre un sistema aislado es:
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\rao}^{\vR\ra}{\sum \vF\nK\ra \cdot d\vR\ra} + \cdots + \int\limits_{\vR\rno}^{\vR\rn}{\sum \vF\nK\rn \cdot d\vR\rn}
+\end{eqnarray*}
+\noindent o sea:
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\rao}^{\vR\ra}{\mM\ra(\vA\rcm - \vA\ra) \cdot d\vR\ra} + \cdots + \int\limits_{\vR\rno}^{\vR\rn}{\mM\rn(\vA\rcm - \vA\rn) \cdot d\vR\rn}
+\end{eqnarray*}
+\noindent de donde reemplazando $\vA\rcm$ por la aceleración $\vA\rcm{\rs}$ del centro de masa del sistema aislado, ya que $\vA\rcm{\rs}$ es igual a $\vA\rcm$, se deduce:
+\begin{eqnarray*}
+\mW = -\Delta \Bigg(\sum \raise.5ex\hbox{$\scriptstyle 1$}\kern-.1em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}\mM\ri\vV\ri^2 - \frac{(\sum \mM\ri\vV\ri)^2}{2\sum \mM\ri}\Bigg)
+\end{eqnarray*}
+\par Como la expresión entre paréntesis representa la energía viva total $\mE\nL$ del sistema aislado, entonces queda:
+\begin{eqnarray*}
+\mW = -\Delta \mE\nL
+\end{eqnarray*}
+\par Por lo tanto, el trabajo total realizado por las fuerzas cinéticas que actúan sobre un sistema aislado es igual al opuesto de la variación de la energía viva total del sistema aislado; siendo la energía viva total $\mE\nL$ de un sistema aislado igual a:
+\begin{eqnarray*}
+\mE\nL = \mE\nK - \frac{\vP^2}{2\mN\rS}
+\end{eqnarray*}
+\noindent donde $\mE\nK$ es la energía cinética total del sistema aislado, $\vP$ es la cantidad de movimiento total del sistema aislado y $\mN\rS$ es la masa total del sistema aislado.
+
+\yS \vspace{-1.5em}
+
+{\cs{Conservación de la Energía Viva}}
+{\cS{Conservación de la Energía Viva}}
+
+\par Se tiene que el trabajo total realizado por las fuerzas que actúan sobre un cuerpo puntual es igual a cero; por lo tanto, el trabajo total $\mW$ realizado por las fuerzas que actúan sobre un sistema aislado es igual a cero.
+\begin{eqnarray*}
+\mW = 0
+\end{eqnarray*}
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par Si al trabajo total $\mW$ se lo clasifica: en el trabajo total $\mW\rfn$ realizado por las fuerzas no cinéticas y en el trabajo total $\mW\rfk$ realizado por las fuerzas cinéticas, entonces reemplazando queda:
+\begin{eqnarray*}
+\mW\rfn + \mW\rfk = 0
+\end{eqnarray*}
+\par Como $\mW\rfk$ es igual al opuesto de la variación de la energía viva total del sistema aislado, se tiene:
+\begin{eqnarray*}
+\mW\rfn - \Delta \mE\nL = 0
+\end{eqnarray*}
+\par Ahora si las fuerzas no cinéticas que actúan sobre el sistema aislado no realizan trabajo, entonces resulta:
+\begin{eqnarray*}
+\! -\Delta \mE\nL = 0
+\end{eqnarray*}
+\noindent o sea:
+\begin{eqnarray*}
+\mE\nL = \tc
+\end{eqnarray*}
+\noindent o bien:
+\begin{eqnarray*}
+\mE\nK - \frac{\vP^2}{2\mN\rS} = \tc
+\end{eqnarray*}
+\par Por lo tanto, si las fuerzas no cinéticas que actúan sobre un sistema aislado no realizan trabajo, entonces la energía viva total del sistema aislado se conserva.
+\par Por otro lado, si la energía viva total de un sistema aislado se conserva, entonces para un sistema de referencia que se halla en la circunstancia galileana la energía cinética total del sistema aislado también se conserva, ya que para tal sistema de referencia la cantidad de movimiento total del sistema aislado permanece constante.
+
+\yT \vspace{-1.8em}
+
+{\ct{OBSERVACIONES GENERALES}}
+{\cT{OBSERVACIONES GENERALES}}
+
+\par Actualmente es sabido que la mecánica clásica para describir el comportamiento (movimiento) de los cuerpos desde un sistema de referencia no inercial necesita introducir fuerzas aparentes conocidas como fuerzas ficticias (también conocidas como pseudofuerzas, fuerzas inerciales o fuerzas no inerciales). A diferencia de las fuerzas reales, las fuerzas ficticias no son causadas por la interacción entre los cuerpos, es decir, si sobre un cuerpo A actúa una fuerza ficticia $\vF$, entonces no se podrá hallar una fuerza ficticia $-\vF$ igual y de sentido contrario que actúe sobre otro cuerpo B; o sea, las fuerzas ficticias no cumplen la tercera ley de Newton.
+\par Por otro lado, la teoría de relatividad general, basándose en el principio de equivalencia, establece que las fuerzas ficticias son causadas, en un sentido generalizado, por un campo gravitatorio que experimentan todos los sistemas de referencia no inerciales, es decir, para la teoría de relatividad general las fuerzas ficticias son equivalentes a las fuerzas gravitatorias.
+\par Pero, ¿Por qué las fuerzas ficticias no son causadas por la interacción entre los cuerpos, así como son causadas las fuerzas reales? ¿Por qué las fuerzas ficticias no conservan su valor al ser pasadas de un sistema de referencia no inercial a otro sistema de referencia inercial, así como conservan su valor las fuerzas reales? ¿Si las fuerzas ficticias son equivalentes a las fuerzas gravitatorias, entonces por qué las fuerzas ficticias no son causadas por la interacción entre los cuerpos y no conservan su valor al ser pasadas de un sistema de referencia no inercial a otro sistema de referencia inercial, así como son causadas y conservan su valor las fuerzas gravitatorias?
+\par Podemos decir que ni la mecánica clásica ni la teoría de relatividad general dan respuestas satisfactorias a las preguntas antes mencionadas y que debemos aceptar, por lo tanto, que aparentemente la experiencia muestra que para describir el comportamiento (movimiento) de los cuerpos desde un sistema de referencia no inercial es necesario introducir fuerzas ficticias que no se comportan como las fuerzas reales.
+
+\yN \baselineskip=14.5pt \enlargethispage{+1.2em}
+
+\par Sin embargo, este trabajo sí da respuestas satisfactorias a las preguntas antes mencionadas, ya que del mismo se deduce que en realidad la experiencia no muestra que existen fuerzas ficticias que no se comportan como las fuerzas reales, sino que la experiencia muestra que existe una nueva fuerza real que aún es desconocida y que las denominadas fuerzas ficticias son en realidad expresiones matemáticas que parcialmente representan a esta nueva fuerza real.
+\par Este trabajo establece que la nueva fuerza real, denominada fuerza cinética, se comporta igual que las otras fuerzas reales, es decir, que es una fuerza causada por la interacción entre los cuerpos y que conserva siempre su valor al ser pasada de un sistema de referencia a otro. Pero, por otro lado, este trabajo también establece que la finalidad de la fuerza cinética es equilibrar a las otras fuerzas reales que actúan sobre un cuerpo, es decir, la fuerza cinética es la fuerza real que hace que la suma de todas las fuerzas reales que actúan sobre un cuerpo sea siempre igual a cero.
+\par Ahora, ¿Cómo es posible entonces modificar el estado natural de movimiento de un cuerpo, si según la primera y segunda ley de Newton, basándose en el principio de inercia, establecen que para modificar el estado natural de movimiento de un cuerpo es necesario que actúe sobre él una fuerza externa no equilibrada?
+\par En contradicción con el principio de inercia, este trabajo establece que el estado natural de movimiento de un cuerpo en ausencia de fuerzas externas no es sólo el estado de reposo o de movimiento rectilíneo uniforme, sino que el estado natural de movimiento de un cuerpo en ausencia de fuerzas externas es cualquier estado posible de movimiento; o sea, todo estado posible de movimiento es un estado natural de movimiento. Sin embargo, la afirmación anterior no significa que no exista una relación entre el movimiento de los cuerpos y las fuerzas que actúan sobre los mismos, ya que tal relación existe y está matemáticamente expresada en la nueva dinámica desarrollada por este trabajo.
+\par Para la nueva dinámica el movimiento es el mecanismo que tienen los cuerpos, que hace posible que la fuerza cinética mantenga en equilibrio al sistema de fuerzas que actúa sobre los cuerpos, ya que los cuerpos a través de su movimiento ejercen sobre los otros cuerpos la fuerza cinética necesaria para mantener al sistema de fuerzas que actúa sobre los cuerpos siempre en equilibrio.
+\par Por otro lado, para este trabajo es innecesario distinguir a los sistemas de referencia: en sistemas de referencia inerciales y en sistemas de referencia no inerciales, ya que a través de la nueva dinámica se puede describir el comportamiento (movimiento) de los cuerpos exactamente de la misma forma desde cualquier sistema de referencia. Es decir, la nueva dinámica es acorde con el principio de relatividad general, que afirma: todos los sistemas de referencia obtendrán las mismas leyes naturales.
+\par Como conclusión final se puede decir que la física tiene dos opciones posibles: desarrollar la mecánica clásica basándose en el principio de inercia, como primera opción, o desarrollar la mecánica clásica no basándose en el principio de inercia, como segunda opción.
+\par Sin embargo, este trabajo, por lo menos en la mecánica clásica de los cuerpos puntuales, demuestra, por un lado, que la segunda opción es acorde con lo que muestra la experiencia y, por otro lado, que desde un punto de vista teórico la segunda opción es ampliamente superior a la primera opción.
+
+\yT \vspace{-1.5em}
+
+{\ct{BIBLIOGRAFÍA}}
+{\cT{BIBLIOGRAFÍA}}
+
+\par \textbf{A. Einstein}, \textit{Sobre la Teoría de la Relatividad Especial y General}.
+\bigskip
+\par \textbf{E. Mach}, \textit{La Ciencia de la Mecánica}.
+\bigskip
+\par \textbf{R. Resnick y D. Halliday}, \textit{Física}.
+\bigskip
+\par \textbf{J. Kane y M. Sternheim}, \textit{Física}.
+\bigskip
+\par \textbf{H. Goldstein}, \textit{Mecánica Clásica}.
+\bigskip
+\par \textbf{L. Landau y E. Lifshitz}, \textit{Mecánica}.
+
+\end{document}
+

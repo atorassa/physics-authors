@@ -1,0 +1,168 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={153.0mm,219.0mm}}
+\geometry{totalwidth=132.0mm,totalheight=183.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Una Ecuación Escalar de Movimiento}}
+\hypersetup{pdfauthor={Antonio A. Blatter}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\ri}{_i}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+\newcommand{\meu}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 1$}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Una Ecuación Escalar de Movimiento}
+
+\bigskip \medskip
+
+{\large Antonio A. Blatter}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2015) Buenos Aires
+
+\smallskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{113mm}{Este trabajo presenta una ecuación escalar de movimiento que es invariante bajo transformaciones entre sistemas de referencia y que puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir las fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.50em}
+
+\par \bigskip {\centering\subsection*{Introducción}}
+
+\par \bigskip Un par de partículas es una bipartícula. El sistema de partículas $\{${\hspace{+0.12em}\it a, b, c\hspace{+0.18em}} y {\it d} $\}$ puede formar el sistema de bipartículas $\{${\hspace{+0.12em}\it ab, ac, ad, bc, bd\hspace{+0.18em}} y {\it cd} $\}$ o también el sistema de bipartículas $\{${\hspace{+0.12em}\it ad, bd\hspace{+0.18em}} y {\it cd} $\}$
+
+\par \bigskip La masa $m_{\hspace{+0.060em}ij}$ de una bipartícula $ij$, está dada por: $m_{\hspace{+0.060em}ij} \,\doteq\, m_i \, m_j / M$, donde $m_i$ es la masa de las partícula $i$, $m_j$ es la masa de la partícula $j$\hspace{+0.045em} y $M$ {\small $(\, \doteq \sum_k \, m_k)$} es la masa del sistema de partículas en observación.
+
+\par \bigskip La posición escalar ${\mathit{r}}_{\hspace{+0.060em}ij}$, la velocidad escalar ${\mathit{v}}_{\hspace{+0.060em}ij}$ y la aceleración escalar ${\mathit{a}}_{\hspace{+0.060em}ij}$ de una bipartícula $ij$, están dadas por:
+
+\par \bigskip \hspace{+1.23em} ${\mathit{r}}_{\hspace{+0.060em}ij} \,\doteq\, \med \; [ \, ({\mathbf{r}}_i - {\mathbf{r}}_j) \cdot ({\mathbf{r}}_i - {\mathbf{r}}_j) \, ]$
+
+\par \bigskip \hspace{+1.23em} ${\mathit{v}}_{\hspace{+0.060em}ij} \,\doteq\, \meu \; [ \, ({\mathbf{v}}_i - {\mathbf{v}}_j) \cdot ({\mathbf{r}}_i - {\mathbf{r}}_j) \, ]$
+
+\par \bigskip \hspace{+1.23em} ${\mathit{a}}_{\hspace{+0.060em}ij} \,\doteq\, \meu \; [ \, ({\mathbf{a}}_i - {\mathbf{a}}_j) \cdot ({\mathbf{r}}_i - {\mathbf{r}}_j) + ({\mathbf{v}}_i - {\mathbf{v}}_j) \cdot ({\mathbf{v}}_i - {\mathbf{v}}_j) \, ]$
+
+\par \bigskip \noindent donde ${\mathbf{r}}_i$ es el vector de posición de la partícula $i$ y ${\mathbf{r}}_j$ es el vector de posición de la partícula $j$ {\small $( \, {\mathit{v}_{\hspace{+0.060em}ij} \doteq d({\mathit{\hspace{+0.045em}r_{\hspace{+0.060em}ij}}})/dt} \, )$} y {\small $( \, {\mathit{a}_{\hspace{+0.060em}ij} \doteq d^2({\mathit{\hspace{+0.045em}r_{\hspace{+0.060em}ij}}})/dt^2} \, )$}
+
+\par \bigskip El momento escalar ${\mathit{P}}_{\hspace{+0.060em}ij}$ de una bipartícula $ij$ ($m_{\hspace{+0.060em}ij}$) está dado por: ${\mathit{P}}_{\hspace{+0.060em}ij} \,\doteq\, m_{\hspace{+0.060em}ij} \, {\mathit{v}}_{\hspace{+0.060em}ij}$, donde ${\mathit{v}}_{\hspace{+0.060em}ij}$ es la velocidad escalar de la bipartícula $ij$.
+
+\par \bigskip La fuerza escalar ${\mathit{F}}_{\hspace{+0.060em}ij}$ que actúa sobre una bipartícula $ij$ ($m_{\hspace{+0.060em}ij}$) está dada por:
+
+\par \bigskip \hspace{+1.23em} ${\mathit{F}}_{\hspace{+0.060em}ij} \,\doteq\, m_{\hspace{+0.060em}ij} \, [ \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot ({\mathbf{r}}_i -{\mathbf{r}}_j) + 2 \int ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot d({\mathbf{r}}_i - {\mathbf{r}}_j) \, ]$
+
+\par \bigskip \noindent donde ${\mathbf{F}}_i$ es la fuerza neta que actúa sobre la partícula $i$, ${\mathbf{F}}_j$ es la fuerza neta que actúa sobre la partícula $j$, $m_i$ es la masa de las partícula $i$, $m_j$ es la masa de la partícula $j$, ${\mathbf{r}}_i$ es el vector de posición de la partícula $i$ y ${\mathbf{r}}_j$ es el vector de posición de la \hbox {partícula $j$.}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Dinámica Escalar}}
+
+\par \bigskip La ecuación escalar de movimiento para una bipartícula $ij$ ($m_{\hspace{+0.060em}ij}$) está dada por:
+
+\par \bigskip \hspace{+1.23em} ${\mathit{F}}_{\hspace{+0.060em}ij} \,=\, d({\mathit{P}}_{\hspace{+0.060em}ij})/dt \,=\, m_{\hspace{+0.060em}ij} \, {\mathit{a}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \noindent donde ${\mathit{F}}_{\hspace{+0.060em}ij}$ es la fuerza escalar que actúa sobre la bipartícula $ij$, ${\mathit{P}}_{\hspace{+0.060em}ij}$ es el momento escalar de la bipartícula $ij$ y ${\mathit{a}}_{\hspace{+0.060em}ij}$ es la aceleración escalar de la bipartícula $ij$.
+
+\par \bigskip\medskip {\centering\subsubsection*{W, K, U, E y L}}
+
+\par \bigskip El trabajo ${\mathit{W}}_{\hspace{+0.060em}ij}$ realizado por las fuerzas (vectoriales) que actúan sobre una bipartícula $ij$, está dado por:
+
+\par \bigskip \hspace{+1.23em} ${\mathit{W}}_{\hspace{+0.060em}ij} \,\doteq\, \int_1^2 \hspace{+0.045em} {\mathit{F}}_{\hspace{+0.060em}ij} \; d\hspace{+0.090em}({\mathit{r}}_{\hspace{+0.060em}ij}) \,=\, \Delta \, \med \; m_{\hspace{+0.060em}ij} \, ({\mathit{v}}_{\hspace{+0.060em}ij})^2 \,\doteq\, \Delta \, {\mathit{K}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \noindent donde ${\mathit{F}}_{\hspace{+0.060em}ij}$ es la fuerza escalar que actúa sobre la bipartícula $ij$, ${\mathit{r}}_{\hspace{+0.060em}ij}$ es la posición escalar de la bipartícula $ij$, $m_{\hspace{+0.060em}ij}$ es la masa de la bipartícula $ij$, ${\mathit{v}}_{\hspace{+0.060em}ij}$ es la velocidad escalar de la bipartícula $ij$ y ${\mathit{K}}_{\hspace{+0.060em}ij}$ es la energía cinética de la bipartícula $ij$.
+
+\par \bigskip El trabajo ${\mathit{W}}_{\hspace{+0.060em}ij}$ realizado por las fuerzas (vectoriales) conservativas que actúan sobre una bipartícula $ij$ es igual y de signo opuesto a la variación en la energía potencial ${\mathit{U}}_{\hspace{+0.060em}ij}$ de la bipartícula $ij$.
+
+\par \bigskip \hspace{+1.23em} $\Delta \, {\mathit{U}}_{\hspace{+0.060em}ij} \,\doteq\, - \, \int_1^2 \hspace{+0.045em} {\mathit{F}}_{\hspace{+0.060em}ij} \; d\hspace{+0.090em}({\mathit{r}}_{\hspace{+0.060em}ij})$
+
+\par \bigskip Por lo tanto, la energía mecánica ${\mathit{E}}_{\hspace{+0.060em}ij}$ de una bipartícula $ij$ permanece constante si la bipartícula $ij$ está sujeta sólo a fuerzas (vectoriales) conservativas. 
+
+\par \bigskip \hspace{+1.23em} $\Delta \, {\mathit{E}}_{\hspace{+0.060em}ij} \,\doteq\, \Delta \, {\mathit{K}}_{\hspace{+0.060em}ij} + \Delta \, {\mathit{U}}_{\hspace{+0.060em}ij} \,=\, 0$
+
+\par \bigskip \hspace{+1.23em} ${\mathit{E}}_{\hspace{+0.060em}ij} \,\doteq\, {\mathit{K}}_{\hspace{+0.060em}ij} + {\mathit{U}}_{\hspace{+0.060em}ij} \,=\, {\mathit{constante}}$
+
+\par \bigskip \noindent donde ${\mathit{K}}_{\hspace{+0.060em}ij}$ es la energía cinética de la bipartícula $ij$ y ${\mathit{U}}_{\hspace{+0.060em}ij}$ es la energía potencial de la bipartícula $ij$.
+
+\par \bigskip Finalmente, el Lagrangiano ${\mathit{L}}_{\hspace{+0.060em}ij}$ de una bipartícula $ij$, está dado por:
+
+\par \bigskip \hspace{+1.23em} ${\mathit{L}}_{\hspace{+0.060em}ij} \,\doteq\, {\mathit{K}}_{\hspace{+0.060em}ij} - {\mathit{U}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \noindent donde ${\mathit{K}}_{\hspace{+0.060em}ij}$ es la energía cinética de la bipartícula $ij$ y ${\mathit{U}}_{\hspace{+0.060em}ij}$ es la energía potencial de la bipartícula $ij$.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Observaciones}}
+
+\par \bigskip\smallskip Todas las ecuaciones de este trabajo pueden ser aplicadas en cualquier sistema de referencia inercial o no inercial.
+
+\par \bigskip Los sistemas de referencia inerciales y no inerciales no deben introducir las fuerzas ficticias sobre ${\mathbf{F}}_i$ ni sobre ${\mathbf{F}}_j$.
+
+\par \bigskip Todas las magnitudes de este trabajo $({\hspace{+0.045em}}{\mathit{r}}_{\hspace{+0.060em}ij}, {\mathit{v}}_{\hspace{+0.060em}ij}, {\mathit{a}}_{\hspace{+0.060em}ij}, {\mathit{P}}_{\hspace{+0.060em}ij}, {\mathit{F}}_{\hspace{+0.060em}ij}, {\mathit{W}}_{\hspace{+0.060em}ij}, {\mathit{K}}_{\hspace{+0.060em}ij}, {\mathit{U}}_{\hspace{+0.060em}ij}, {\mathit{E}}_{\hspace{+0.060em}ij}$ y ${\mathit{L}}_{\hspace{+0.060em}ij})$ son invariantes bajo transformaciones entre sistemas de referencia.
+
+\par \bigskip Las magnitudes $({\mathit{W}}_{\hspace{+0.060em}ij}, {\mathit{K}}_{\hspace{+0.060em}ij}, {\mathit{U}}_{\hspace{+0.060em}ij}, {\mathit{E}}_{\hspace{+0.060em}ij}$ y ${\mathit{L}}_{\hspace{+0.060em}ij})$ son en realidad magnitudes escalares \hbox {nuevas que} por comodidad en este trabajo se les quitó el adjetivo <<\hspace{+0.045em}escalar\hspace{+0.045em}>>
+
+\par \bigskip La integral de la definición de ${\mathit{F}}_{\hspace{+0.060em}ij}$ es una integral indefinida. Si ninguna fuerza actúa sobre las partículas $i$ y $j$ entonces la integral da como resultado una constante.
+
+\par \bigskip La definición de ${\mathit{F}}_{\hspace{+0.060em}ij}$ podría modificarse de manera tal que no haya necesidad de trabajar con una integral indefinida. Sin embargo, este cambio podría obligar a tener que modificar también otras ecuaciones del trabajo.
+
+\par \bigskip Por otro lado, este trabajo no contradice la dinámica de Newton. De hecho, si un sistema de referencia inercial está fijo sobre la partícula $j$ $({\mathbf{r}}_j={\mathbf{v}}_j={\mathbf{a}}_j={\mathbf{F}}_j=0)$ de una bipartícula $ij$ ($m_{\hspace{+0.060em}ij}$) entonces de la ecuación escalar de movimiento, se obtiene:
+
+\par \bigskip \hspace{+1.23em} $m_{\hspace{+0.060em}ij} \, [ \, {\mathbf{F}}_i / m_i \cdot {\mathbf{r}}_i + 2 \int {\mathbf{F}}_i / m_i \cdot d{\mathbf{r}}_i \, ] \,=\, m_{\hspace{+0.060em}ij} \, [ \, {\mathbf{a}}_i \cdot {\mathbf{r}}_i + {\mathbf{v}}_i \cdot {\mathbf{v}}_i \, ]$
+
+\par \bigskip \hspace{+1.23em} $m_{\hspace{+0.060em}ij} \, [ \, ({\mathbf{F}}_i / m_i - {\mathbf{a}}_i) \cdot {\mathbf{r}}_i + 2 \int {\mathbf{F}}_i / m_i \cdot d{\mathbf{r}}_i -{\mathbf{v}}_i \cdot {\mathbf{v}}_i \, ] \,=\, 0$
+
+\par \bigskip \hspace{+1.23em} $\rightarrow$ \hspace{+0.045em} $ ({\mathbf{F}}_i / m_i - {\mathbf{a}}_i) \cdot {\mathbf{r}}_i \,=\, 0 \hspace{+0.45em} \rightarrow \hspace{+0.45em} 2 \int {\mathbf{F}}_i / m_i \cdot d{\mathbf{r}}_i -{\mathbf{v}}_i \cdot {\mathbf{v}}_i \,=\, 0$
+
+\par \bigskip \noindent puesto que en todo sistema de referencia inercial siempre ${\mathbf{a}}_i = {\mathbf{F}}_i/m_i$ (así como en todo sistema de referencia no inercial introduciendo las fuerzas ficticias sobre ${\mathbf{F}}_i$)
+
+\par \bigskip Finalmente, este trabajo considera que es posible desarrollar una dinámica escalar alternativa basada en el Lagrangiano ${\mathit{L}}_{\hspace{+0.060em}ij}$ que puede ser aplicada en cualquier sistema de referencia inercial o no inercial sin necesidad de introducir las fuerzas ficticias.
+
+\vspace{+1.50em}
+
+\par {\centering\subsection*{Bibliografía}}
+
+\vspace{+1.20em}
+
+\par \textbf{A. Einstein}, Sobre la Teoría de la Relatividad Especial y General.
+\bigskip
+\par \textbf{E. Mach}, La Ciencia de la Mecánica.
+\bigskip
+\par \textbf{H. Goldstein}, Mecánica Clásica.
+
+\end{document}
+

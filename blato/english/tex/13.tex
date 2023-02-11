@@ -1,0 +1,168 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={131.1mm,195.6mm}}
+\geometry{totalwidth=110.1mm,totalheight=159.6mm}
+
+\usepackage{graphicx}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Generalized Lorentz Transformations}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{10.92}{10.92}\selectfont \sc Generalized Lorentz Transformations}
+
+\bigskip \medskip
+
+{\fontsize{9.60}{9.60}\selectfont A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2018) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{84.00mm}{This article presents the generalized Lorentz transformations of time, space, velocity and acceleration which can be applied in any inertial or non-inertial (\,non-rotating\,) frame.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsubsection*{Introduction}}
+
+\bigskip \smallskip
+
+\noindent If we consider a (\,non-rotating\,) frame S relative to another inertial frame $\Sigma$ then the time $( \, {t} \, )$, the position $( \, \mathbf{r} \, )$, the velocity $( \, \mathbf{v} \, )$ and the acceleration $( \, \mathbf{a} \, )$ of a (\,massive or non-massive\,) particle relative to the frame $\Sigma$ are given by:
+\par \vspace{+0.36em}
+\begin{eqnarray*}
+t ~= \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \mathtt{dt} \: + \, \gamma \; \frac{\vec{r} \cdot \boldsymbol{\varphi}}{c^2} \: + \, \mathtt{h}
+\end{eqnarray*}
+\vspace{+0.15em}
+\begin{eqnarray*}
+\mathbf{r} ~=~ \vec{r} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{( \, \vec{r} \cdot \boldsymbol{\varphi} \hspace{+0.09em}) \: \boldsymbol{\varphi}}{c^2} \: + \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \boldsymbol{\varphi} \; \mathtt{dt} \: + \, \mathtt{k}
+\end{eqnarray*}
+\vspace{+0.15em}
+\begin{eqnarray*}
+\mathbf{v} ~\doteq~ \dfrac{d\mathbf{r}}{dt}
+\end{eqnarray*}
+\vspace{+0.15em}
+\begin{eqnarray*}
+\mathbf{a} ~\doteq~ \dfrac{d\mathbf{v}}{dt}
+\end{eqnarray*}
+\par \vspace{+1.80em}
+\noindent where $(\hspace{+0.12em}\mathtt{t}, \, \vec{r}\hspace{+0.21em})$ are the time and the position of the particle relative to the \hbox {frame S} $( \, ${\small $\boldsymbol{\mu}$}$, \, ${\small $\boldsymbol{\varphi}$}$, \, ${\small $\boldsymbol{\alpha}$}$ \, )$ are the position, the velocity and the acceleration of the origin of the frame S relative to the frame $\Sigma$, $( \, ${\small $\vec{\mu}$}$ \, )$ is the position of the origin of the frame $\Sigma$ relative to the frame S, $( \, \mathtt{h}, \, \mathtt{k} \, )$ are constant between the frames \hbox {$\Sigma$ {\small \&} S} \hbox {$( \, c \, )$ is the speed} of light in vacuum, and {\small $\gamma ~\doteq~ ({1 - \boldsymbol{\varphi} \hspace{-0.114em}\cdot\hspace{-0.114em} \boldsymbol{\varphi}/c^2})^{-1/2}$}
+
+\newpage
+
+\noindent\begin{eqnarray*}
+\hspace{-2.60em} \bullet \hspace{+0.90em} \dfrac{\gamma^2}{\gamma + 1} \, \dfrac{1}{c^2} ~=~ \dfrac{\gamma - 1}{\boldsymbol{\varphi}^2} \hspace{+1.68em} ( \: \boldsymbol{\varphi}^2 \,\doteq~ \boldsymbol{\varphi} \cdot \boldsymbol{\varphi} \: )
+\end{eqnarray*}
+\medskip
+\begin{eqnarray*}
+\hspace{-2.60em} \bullet \hspace{+0.90em} \vec{r} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.15em} \vec{r} \cdot \boldsymbol{\varphi} \hspace{+0.09em}) \: \boldsymbol{\varphi}}{c^2} ~=~ \gamma \; \vec{r} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.15em} \vec{r} \times \boldsymbol{\varphi} \hspace{+0.09em}) \times \boldsymbol{\varphi}}{c^2}
+\end{eqnarray*}
+\medskip
+\begin{eqnarray*}
+\hspace{-2.60em} \bullet \hspace{+0.90em} \vec{\mu} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.15em} \vec{\mu} \cdot \boldsymbol{\varphi} \hspace{+0.09em}) \: \boldsymbol{\varphi}}{c^2} ~=~ \gamma \; \vec{\mu} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.15em} \vec{\mu} \times \boldsymbol{\varphi} \hspace{+0.09em}) \times \boldsymbol{\varphi}}{c^2}
+\end{eqnarray*}
+\medskip
+\begin{eqnarray*}
+\hspace{-2.60em} \bullet \hspace{+0.90em} \boldsymbol{\mu} ~= \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \boldsymbol{\varphi} \; \mathtt{dt} \: + \, \mathtt{k} ~= \int_{\hspace{-0.045em}\mathtt{O}}^{t} \boldsymbol{\varphi} \; dt \: + \, \mathtt{k} ~=\: - \; \vec{\mu} \, - \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.15em} \vec{\mu} \cdot \boldsymbol{\varphi} \hspace{+0.09em}) \: \boldsymbol{\varphi}}{c^2}
+\end{eqnarray*}
+\par \bigskip \medskip
+\noindent The frame S is inertial when {\small $( \: \boldsymbol{\alpha} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent The frame S is non-inertial (\,rectilinear accelerated motion\,) when {\small $( \: \boldsymbol{\alpha} ~\ne~ 0 \: )$} and {\small $( \: \boldsymbol{\alpha} \times \boldsymbol{\varphi} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent The frame S is non-inertial (\,uniform circular motion\,) when {\small $( \: \boldsymbol{\alpha} ~\ne~ 0 \: )$} and {\small $( \: \boldsymbol{\alpha} \cdot \boldsymbol{\varphi} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent If the frame S is inertial then the observer S must use a fixed origin O such that {\small $( \: \vec{\mu} \times \boldsymbol{\varphi} ~=~ 0 \: )$} 
+\par \medskip \smallskip
+\noindent If the frame S is non-inertial (\,rectilinear accelerated motion\,) then the observer S must use a fixed origin O such that {\small $( \: \vec{\mu} \times \boldsymbol{\varphi} ~=~ 0 \: )$} 
+\par \medskip \smallskip
+\noindent If the frame S is non-inertial (\,uniform circular motion\,) then the observer S must use a fixed origin O such that {\small $( \: \vec{\mu} \cdot \boldsymbol{\varphi} ~=~ 0 \: )$} 
+\par \medskip \smallskip
+\noindent If the frame S is inertial then {\small $( \: \boldsymbol{\alpha} ~=~ 0 \; )$ , $( \, \boldsymbol{\varphi} ~=~ \mathrm{constant} \, )$ , $( \, \gamma ~=~ \mathrm{constant} \, )$ $( \, \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \mathtt{dt} = \gamma \; \mathtt{t} \, )$ , $( \, \boldsymbol{\mu} ~=~ \gamma \; \boldsymbol{\varphi} \: \mathtt{t} + \mathtt{k} \, )$} and {\small $( \: \vec{\mu} \times \boldsymbol{\varphi} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent If the frame S is non-inertial (\,rectilinear accelerated motion\,) then {\small $( \: \boldsymbol{\alpha} ~\ne~ 0 \: )$ \hbox {$( \: \boldsymbol{\alpha} \times \boldsymbol{\varphi} ~=~ 0 \: )$}} and {\small $( \: \vec{\mu} \times \boldsymbol{\varphi} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent If the frame S is non-inertial (\,uniform circular motion\,) then {\small $( \: \boldsymbol{\alpha} ~\ne~ 0 \: )$ \hbox {$( \: \boldsymbol{\alpha} \cdot \boldsymbol{\varphi} ~=~ 0 \: )$} , $( \, \gamma ~=~ \mathrm{constant} \, )$ , $( \, \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \mathtt{dt} = \gamma \; \mathtt{t} \, )$} and {\small $( \: \vec{\mu} \cdot \boldsymbol{\varphi} ~=~ 0 \: )$}
+\par \medskip \smallskip
+\noindent If the frame S is inertial or non-inertial (\,non-rotating\,) then the observer S can use test particles such that {\small $( \; \vec{r} \hspace{+0.045em}\cdot \boldsymbol{\varphi} ~=~ 0 \; )$} {or} {\small $( \; \vec{r} \times \boldsymbol{\varphi} ~=~ 0 \; )$}
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{General Observations}}
+
+\bigskip \smallskip
+
+\noindent It is known that in inertial frames the local geometry is Euclidean and that in non-inertial frames the local geometry is in general non-Euclidean.
+\par \medskip \smallskip
+\noindent According to this article, the local line element of the frame S must be obtained from the local line element of the frame $\Sigma$.
+\par \medskip \smallskip
+\noindent Therefore, the local line element (\,in rectilinear coordinates\,) in the frame $\Sigma$ and the local line element in the frame S are given by:
+\par \vspace{-0.06em}
+\begin{eqnarray*}
+\hspace{-2.50em} ds^{\hspace{+0.03em}2} ~=~ c^2 dt^{\hspace{+0.03em}2} - d\mathbf{r}^{\hspace{+0.03em}2}
+\end{eqnarray*}
+\vspace{-0.45em}
+\begin{eqnarray*}
+ds^{\hspace{+0.03em}2} ~=~ \Big [ \; \Big ( \, 1 + \frac{{\mathbf w} \cdot \vec{r}}{c^2} \: \Big )^{\hspace{-0.18em}2} \hspace{-0.21em}- \Big ( \, \frac{\boldsymbol{\phi} \times \vec{r}}{c} \: \Big )^{\hspace{-0.18em}2} \,\, \Big ] \, c^2 \, \mathtt{dt}^2 \,-\, 2 \, \Big ( \, \boldsymbol{\phi} \times \vec{r} \: \Big ) \, d\vec{r} \,\, \mathtt{dt} \,-\, d\vec{r}^{\hspace{+0.24em}2}
+\end{eqnarray*}
+\vspace{+0.06em}
+\begin{eqnarray*}
+\hspace{+0.03em} {\mathbf w} ~\doteq~ \gamma^2 \: \Big ( \, \boldsymbol{\alpha} + \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.09em} \boldsymbol{\alpha} \cdot \boldsymbol{\varphi} \hspace{+0.09em}) \: \boldsymbol{\varphi}}{c^2} \: \Big ) \hspace{+2.04em} , \hspace{+2.04em} \boldsymbol{\phi} ~\doteq\, \gamma^1 \: \Big ( \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.09em} \boldsymbol{\varphi} \times \boldsymbol{\alpha} \hspace{+0.09em})}{c^2} \: \Big )
+\end{eqnarray*}
+\par \vspace{+1.35em}
+\noindent According to this article, the kinematic quantities $( \: t , \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$ are the proper kinematic quantities of the frame $\Sigma$.
+\par \medskip \smallskip
+\noindent Therefore, the kinematic quantity $( \: t \: )$ is a tensor of rank 0 and the kinematic quantities $( \: \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$ are tensors of rank 1.
+\par \medskip \smallskip
+\noindent Finally, the velocity of light in vacuum is $( \, \mathbf{c} \, )$ in the frame $\Sigma$ and $( \, \vec{c} \; )$ in the frame S and $( \, \mathbf{c} \cdot \mathbf{c} \, )$ {\small \&} $( \, \vec{c} \cdot \vec{c} \; )$ are constant in the frames $\Sigma$ {\small \&} S.
+
+\vspace{+0.90em}
+
+\par \bigskip {\centering\subsubsection*{Bibliography}}
+
+\bigskip \medskip
+
+\par \noindent [1] \, R. A. Nelson, J. Math. Phys. {\bf 28}, 2379 (1987).
+\medskip \medskip
+\par \noindent [2] \, R. A. Nelson, J. Math. Phys. {\bf 35}, 6224 (1994).
+\medskip \medskip
+\par \noindent [3] \, C. M{\o}ller, The Theory of Relativity (1952).
+
+\end{document}
+

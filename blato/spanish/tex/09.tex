@@ -1,0 +1,304 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={131.7mm,210.0mm}}
+\geometry{totalwidth=110.7mm,totalheight=174.0mm}
+
+\usepackage{graphicx}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{chngpage}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+\spanishdecimal{.}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Una Formulación Alternativa de la Relatividad Especial}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\yya}{27}
+\newcommand{\xxa}{33}
+\newcommand{\xxc}{45}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{9.60}{9.60}\selectfont \sc Una Formulación Alternativa de la Relatividad Especial}
+
+\bigskip \medskip
+
+{\fontsize{9.60}{9.60}\selectfont A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2016) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{96.00mm}{Este artículo presenta una formulación alternativa de la relatividad especial que puede ser aplicada en cualquier sistema de referencia inercial. Además, una nueva fuerza universal es propuesta.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.50em}
+
+\par \bigskip {\centering\subsubsection*{Introducción}}
+
+\bigskip \smallskip
+
+\noindent La masa intrínseca $( \, m \, )$ y el factor frecuencia $( \, f \, )$ de una partícula masiva \hbox {están dados por}:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+m ~\doteq~ m_o
+\end{eqnarray*}
+\vspace{-0.90em}
+\begin{eqnarray*}
+f ~\doteq~ \Big ( 1 - \dfrac{\mathbf{v} \cdot \mathbf{v}}{c^2} \hspace{+0.15em} \Big )^{\hspace{-0.24em}-\hspace{+0.03em}1/2}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent donde $( \, m_o \, )$ es la masa en reposo de la partícula masiva, $( \, \mathbf{v} \, )$ es la velocidad de la partícula masiva y $( \, c \, )$ es la velocidad de la luz en el vacío.
+\par \vspace{+0.60em}
+\noindent La masa intrínseca $( \, m \, )$ y el factor frecuencia $( \, f \, )$ de una partícula no masiva \hbox {están dados por}:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+m ~\doteq~ \dfrac{h \, \kappa}{c^2}
+\end{eqnarray*}
+\vspace{-0.60em}
+\begin{eqnarray*}
+f ~\doteq~ \dfrac{\nu}{\kappa}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent donde $( \, h \, )$ es la constante de Planck, $( \, \nu \, )$ es la frecuencia de la partícula no masiva, $( \, \kappa \, )$ es una constante universal positiva con dimensión de frecuencia y $( \, c \, )$ es la velocidad de la luz en el vacío.
+\par \vspace{+0.60em}
+\noindent En este artículo, una partícula masiva es una partícula con masa en reposo no nula y una partícula no masiva es una partícula con masa en reposo nula.
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Cinemática Alternativa}}
+
+\bigskip \smallskip
+
+\noindent La posición especial $( \, \bar{\mathbf{r}} \, )$, la velocidad especial $( \, \bar{\mathbf{v}} \, )$ y la aceleración especial $( \, \bar{\mathbf{a}} \, )$ de una partícula ( masiva o no masiva ) están dadas por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\bar{\mathbf{r}} ~\doteq~ \int f \, \mathbf{v} \; d\hspace{+0.012em}t
+\end{eqnarray*}
+\vspace{-0.60em}
+\begin{eqnarray*}
+\bar{\mathbf{v}} ~\doteq~ \dfrac{d\hspace{+0.036em}\bar{\mathbf{r}}}{d\hspace{+0.012em}t} ~=~ f \, \mathbf{v}
+\end{eqnarray*}
+\vspace{-0.45em}
+\begin{eqnarray*}
+\bar{\mathbf{a}} ~\doteq~ \dfrac{d\hspace{+0.021em}\bar{\mathbf{v}}}{d\hspace{+0.012em}t} ~=~ f \, \dfrac{d\hspace{+0.021em}\mathbf{v}}{d\hspace{+0.012em}t} + \dfrac{d\hspace{-0.12em}f}{d\hspace{+0.012em}t} \, \mathbf{v}
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent donde $( \, f \, )$ y $( \, \mathbf{v} \, )$ son el factor frecuencia y la velocidad de la partícula.
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsubsection*{Dinámica Alternativa}}
+
+\bigskip \smallskip
+
+\noindent Sea una partícula ( masiva o no masiva ) con masa intrínseca $( \, m \, )$ entonces el \hbox {momento} lineal $( \, \mathbf{P} \, )$ de la partícula, el momento angular $( \, \mathbf{L} \, )$ de la partícula \hbox {la fuerza} neta $( \, \mathbf{F} \, )$ que actúa sobre la partícula, el trabajo $( \, \mathrm{W} \, )$ realizado por la fuerza neta que actúa sobre la partícula y la energía cinética $( \, \mathrm{K} \, )$ de la partícula \hbox {están dados por}:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ m \, \bar{\mathbf{v}} ~=~ m \, f \, \mathbf{v}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{L} ~\doteq~ \mathbf{P} \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ m \, \bar{\mathbf{v}} \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ m \, f \, \mathbf{v} \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} ~=~ m \, \bar{\mathbf{a}} ~=~ m \, \bigg [ \, f \, \dfrac{d\hspace{+0.021em}\mathbf{v}}{d\hspace{+0.012em}t} + \dfrac{d\hspace{-0.12em}f}{d\hspace{+0.012em}t} \, \mathbf{v} \, \bigg ]
+\end{eqnarray*}
+\vspace{-0.15em}
+\begin{eqnarray*}
+\mathrm{W} ~\doteq~ \hspace{-0.36em} \int_{\scriptscriptstyle 1}^{\hspace{+0.09em}{\scriptscriptstyle 2}} \mathbf{F} \cdot d\hspace{+0.036em}\mathbf{r} ~=~ \hspace{-0.36em} \int_{\scriptscriptstyle 1}^{\hspace{+0.09em}{\scriptscriptstyle 2}} \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} \cdot d\hspace{+0.036em}\mathbf{r} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{K} ~\doteq~ m \, f \, c^2
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent donde $( \, f, \, \mathbf{r}, \, \mathbf{v}, \, \bar{\mathbf{v}}, \, \bar{\mathbf{a}} \, )$ son el factor frecuencia, la posición, la velocidad, la velocidad especial y la aceleración especial de la partícula y $( \, c \, )$ es la velocidad de la luz en el vacío. La energía cinética $( \, \mathrm{K}_o \, )$ de una partícula masiva en reposo es $( \, m_o \, c^2 \, )$ § Por otro lado, {\small $( \, \mathbf{a} \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{b} = \mathbf{b} \times \mathbf{a} \, )$} o {\small $( \, \mathbf{a} \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{b} = \mathbf{b} \wedge \mathbf{a} \, )$}
+
+\newpage
+
+\begin{adjustwidth}{-0.63mm}{-0.63mm}
+
+\par \bigskip {\centering\subsubsection*{Fuerza Cinética}}
+
+\bigskip \smallskip
+
+\noindent La fuerza cinética $\mathbf{K}^{a}_{\hspace{+0.012em}ij}$ ejercida sobre una partícula $i$ con masa intrínseca $m_i$ por otra partícula $j$ con masa intrínseca $m_j$ está dada por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{K}^{a}_{\hspace{+0.012em}ij} ~=\, - \; \Bigg [ \; \dfrac{m_i \, m_j}{\mathbb{M}} \, ( \, \bar{\mathbf{a}}_{\hspace{+0.045em}i} - \bar{\mathbf{a}}_{j} \, ) \; \Bigg ]
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent donde $\bar{\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración especial de la partícula $i$, $\bar{\mathbf{a}}_{j}$ es la aceleración especial de la partícula $j$ y $\mathbb{M}$ {\small ( $ = \sum_z m_z$ )} es la suma de las masas intrínsecas de todas las partículas del Universo.
+\par \vspace{+0.60em}
+\noindent La fuerza cinética $\mathbf{K}^{u}_{\hspace{+0.030em}i}$ ejercida sobre una partícula $i$ con masa intrínseca $m_i$ por el Universo está dada por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{K}^{u}_{\hspace{+0.030em}i} ~=\, - \; m_i \; \dfrac{\sum_z m_z \, \bar{\mathbf{a}}_{\hspace{+0.045em}z}}{\sum_z m_z}
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent donde $m_z$ y $\bar{\mathbf{a}}_{\hspace{+0.045em}z}$ son la masa intrínseca y la aceleración especial de la \textit{z}-ésima partícula del Universo.
+\par \vspace{+0.60em}
+\noindent De las ecuaciones anteriores se deduce que la fuerza cinética neta $\mathbf{K}_i$ {\small ( $ = \sum_j \, \mathbf{K}^{a}_{\hspace{+0.012em}ij}$ $+ \; \mathbf{K}^{u}_{\hspace{+0.030em}i}$ )} que actúa sobre una partícula $i$ con masa intrínseca $m_i$ está dada por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{K}_i ~=\, - \; m_i \, \bar{\mathbf{a}}_{\hspace{+0.045em}i}
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent donde $\bar{\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración especial de la partícula $i$.
+\par \vspace{+0.60em}
+\noindent Ahora, reemplazando ( $\mathbf{F}_i = m_i \, \bar{\mathbf{a}}_{\hspace{+0.045em}i}$ ) y reordenando, se obtiene:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{T}_i ~\doteq~ \mathbf{K}_i + \mathbf{F}_i ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent Por lo tanto, la fuerza total $\mathbf{T}_i$ que actúa sobre una partícula $i$ es siempre cero.
+
+\vspace{-0.60em}
+
+\par \bigskip {\centering\subsubsection*{Bibliografía}}
+
+\bigskip \smallskip
+
+\par \noindent \textbf{A. Einstein}, Sobre la Teoría de la Relatividad Especial y General.
+\bigskip \smallskip
+\par \noindent \textbf{E. Mach}, La Ciencia de la Mecánica.
+\bigskip \smallskip
+\par \noindent \textbf{C. M{\small{\o}}ller}, La Teoría de Relatividad.
+
+\end{adjustwidth}
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Apéndice I}}
+
+\smallskip
+
+\par \bigskip {\centering\subsubsection*{Sistema de Ecuaciones I}}
+
+\bigskip \bigskip
+
+\begin{center}
+\begin{tabular}{ccccc}
+& & {\framebox(\xxa,\yya){[1]}} \\
+& & {\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[4]}} & {\makebox(\xxc,\yya){$\leftarrow \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} \leftarrow$}} & {\framebox(\xxa,\yya){[2]}} \\
+{\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} & & {\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[5]}} & {\makebox(\xxc,\yya){$\leftarrow \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} \leftarrow$}} & {\framebox(\xxa,\yya){[3]}} & {\makebox(\xxc,\yya){$\rightarrow \hspace{-0.001em} \int \hspace{+0.03em} d\hspace{+0.036em}\mathbf{r} \hspace{+0.001em} \rightarrow$}} & {\framebox(\xxa,\yya){[6]}}
+\end{tabular}
+\end{center}
+\par \vspace{+0.90em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,1\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \int \mathbf{P} \; d\hspace{+0.012em}t \; - \int \hspace{-0.30em} \int \mathbf{F} \; d\hspace{+0.012em}t \, d\hspace{+0.012em}t \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,2\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \mathbf{P} \; - \int \mathbf{F} \; d\hspace{+0.012em}t \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,3\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} \, - \; \mathbf{F} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,4\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \mathbf{P} \; - \int \mathbf{F} \; d\hspace{+0.012em}t \,\, \bigg ] \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,5\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} \, - \; \mathbf{F} \,\, \bigg ] \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,6\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \int \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} \cdot d\hspace{+0.036em}\mathbf{r} \; - \int \mathbf{F} \cdot d\hspace{+0.036em}\mathbf{r} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.33em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,\mu\,] \; \textrm{es una constante arbitraria con dimensión de masa {\small $( \, \mathrm{M} \, )$}}
+\end{eqnarray*}
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Apéndice II}}
+
+\smallskip
+
+\par \bigskip {\centering\subsubsection*{Sistema de Ecuaciones II}}
+
+\bigskip \bigskip
+
+\begin{center}
+\begin{tabular}{ccccc}
+& & {\framebox(\xxa,\yya){[1]}} \\
+& & {\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[4]}} & {\makebox(\xxc,\yya){$\leftarrow \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} \leftarrow$}} & {\framebox(\xxa,\yya){[2]}} \\
+{\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} & & {\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[5]}} & {\makebox(\xxc,\yya){$\leftarrow \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} \leftarrow$}} & {\framebox(\xxa,\yya){[3]}} & {\makebox(\xxc,\yya){$\rightarrow \hspace{-0.001em} \int \hspace{+0.03em} d\hspace{+0.036em}\mathbf{r} \hspace{+0.001em} \rightarrow$}} & {\framebox(\xxa,\yya){[6]}}
+\end{tabular}
+\end{center}
+\par \vspace{+0.90em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,1\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, \bar{\mathbf{r}} \, - \int \hspace{-0.30em} \int \mathbf{F} \; d\hspace{+0.012em}t \, d\hspace{+0.012em}t \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,2\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, \bar{\mathbf{v}} \, - \int \mathbf{F} \; d\hspace{+0.012em}t \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,3\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, \bar{\mathbf{a}} \: - \; \mathbf{F} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,4\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, \bar{\mathbf{v}} \, - \int \mathbf{F} \; d\hspace{+0.012em}t \,\, \bigg ] \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,5\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, \bar{\mathbf{a}} \: - \; \mathbf{F} \,\, \bigg ] \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,6\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, f \, c^2 \, - \int \mathbf{F} \cdot d\hspace{+0.036em}\mathbf{r} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.33em}
+\begin{eqnarray*}
+\hspace{+1.26em} [\,\mu\,] \; \textrm{es una constante arbitraria con dimensión de masa {\small $( \, \mathrm{M} \, )$}}
+\end{eqnarray*}
+
+\end{document}
+

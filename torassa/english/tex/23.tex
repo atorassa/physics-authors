@@ -1,0 +1,244 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={167.1mm,213.9mm}}
+\geometry{totalwidth=146.1mm,totalheight=177.9mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Alternative Classical Mechanics}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rs}{_s}
+\newcommand{\rS}{_S}
+\newcommand{\dos}{^{2}}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\bre}{\breve}
+\newcommand{\til}{\tilde}
+\newcommand{\uni}{\mathring}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\vK}{\mathbf{K}}
+\newcommand{\aV}{\mathbf{\omega}}
+\newcommand{\aA}{\mathbf{\alpha}}
+\newcommand{\daa}{\hspace{-0.36em}^2\hspace{+0.06em}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}\:}
+
+\begin{document}
+
+\begin{center}
+
+{\huge Alternative Classical Mechanics}
+
+\bigskip \bigskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \bigskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+(2013) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{96mm}{This paper presents an alternative classical mechanics, which can be applied in any reference frame (rotating or non-rotating) (inertial or non-inertial) without the necessity of introducing fictitious forces.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsection*{Universal Reference Frame}}
+
+\vspace{+1.20em}
+
+\par The universal reference frame is a reference frame fixed to the center of mass of the universe.
+\medskip
+\par The universal position $\uni\vR\ra$, the universal velocity $\uni\vV\ra$, and the universal acceleration $\uni\vA\ra$ of a particle A relative to the universal reference frame $\uni\mathrm S$, are given by:
+\bigskip
+\begin{center}
+\begin{tabular}{l}
+\hspace{-3.09em} $\uni\vR\ra = (\vR\ra)$ \vspace{+1.20em} \\
+\hspace{-3.09em} $\uni\vV\ra = d(\vR\ra)/d\mT$ \vspace{+1.20em} \\
+\hspace{-3.09em} $\uni\vA\ra = d^2(\vR\ra)/d\mT^2$
+\end{tabular}
+\end{center}
+\medskip
+\noindent where $\vR\ra$ is the position of particle A relative to the universal reference frame $\uni\mathrm S$.
+\medskip
+\par The dynamic position $\bre\vR\ra$, the dynamic velocity $\bre\vV\ra$, and the dynamic acceleration $\bre\vA\ra$ of a particle A of mass $\mM\ra$, are given by:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+$\bre\vR\ra = \int\int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT \; d\mT$ \vspace{+1.20em} \\
+$\bre\vV\ra = \int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT$ \vspace{+1.20em} \\
+$\bre\vA\ra = (\vF\ra/\mM\ra)$
+\end{tabular}
+\end{center}
+\medskip
+\noindent where $\vF\ra$ is the net force acting on particle A.
+
+\newpage
+
+{\centering\subsection*{General Principle}}
+
+\vspace{+1.20em}
+
+\par The total position $\til\vR\ra$ of a particle A, is given by:
+\begin{eqnarray*}
+\hspace{+0.60em} \til\vR\ra = \uni\vR\ra - \bre\vR\ra
+\end{eqnarray*}
+\par The general principle establishes that the total position $\til\vR\ra$ of a particle A is always in equilibrium.
+\begin{eqnarray*}
+\hspace{+0.45em} \til\vR\ra = 0
+\end{eqnarray*}
+
+\vspace{+0.60em}
+
+{\centering\subsection*{Observations}}
+
+\vspace{+1.20em}
+
+\par Applying the general principle to a particle A, it follows:
+\bigskip\smallskip
+\begin{center}
+\begin{tabular}{ccc}
+{\framebox(96,27){$\mM\ra\uni\vR\ra - \mM\ra\bre\vR\ra = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(120,27){$\med\mM\ra\uni\vR\ra\daa - \med\mM\ra\bre\vR\ra\daa = 0$}} \\
+{\makebox(96,12){$\downarrow$}} & & {\makebox(120,12){$\downarrow$}} \\
+{\framebox(96,27){$\mM\ra\uni\vV\ra - \mM\ra\bre\vV\ra = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(120,27){$\med\mM\ra\uni\vV\ra\daa - \med\mM\ra\bre\vV\ra\daa = 0$}} \\
+{\makebox(96,12){$\downarrow$}} & {\makebox(3,12){$\nearrow$}} & {\makebox(120,12){$\downarrow$}} \\
+{\framebox(96,27){$\mM\ra\uni\vA\ra - \mM\ra\bre\vA\ra = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(120,27){$\med\mM\ra\uni\vA\ra\daa - \med\mM\ra\bre\vA\ra\daa = 0$}}
+\end{tabular}
+\end{center}
+\medskip\smallskip
+\par Substituting $\bre\vR\ra$, $\bre\vV\ra$ and $\bre\vA\ra$ from page [1] into the above equations, we obtain:
+\bigskip\smallskip
+\begin{center}
+\begin{tabular}{ccc}
+{\framebox(123,27){$\mM\ra\uni\vR\ra - \int\int \hspace{+0.12em} \vF\ra \; d\mT \; d\mT = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(192,27){$\med\mM\ra\uni\vR\ra\daa - \med\mM\ra(\hspace{+0.03em} \int\int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT \; d\mT)\dos = 0$}} \\
+{\makebox(123,12){$\downarrow$}} & & {\makebox(192,12){$\downarrow$}} \\
+{\framebox(123,27){$\mM\ra\uni\vV\ra - \int \hspace{+0.12em} \vF\ra \; d\mT = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(192,27){$\med\mM\ra\uni\vV\ra\daa - \int \hspace{+0.12em} \vF\ra \; d\uni\vR\ra = 0$}} \\
+{\makebox(123,12){$\downarrow$}} & {\makebox(3,12){$\nearrow$}} & {\makebox(192,12){$\downarrow$}} \\
+{\framebox(123,27){$\mM\ra\uni\vA\ra - \vF\ra = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(192,27){$\med\mM\ra\uni\vA\ra\daa - \med\mM\ra(\vF\ra/\mM\ra)\dos = 0$}}
+\end{tabular}
+\end{center}
+\medskip\smallskip
+\par Where $\; \med\bre\vV\ra\daa=\int\hspace{+0.12em}\bre\vA\ra\;d\bre\vR\ra \;\rightarrow\; \med\mM\ra\bre\vV\ra\daa=\int\hspace{+0.12em}\mM\ra\,\bre\vA\ra\;d\bre\vR\ra \;\rightarrow\; \med\mM\ra\bre\vV\ra\daa=\int\hspace{+0.12em}\vF\ra\;d\bre\vR\ra \;\;\; (\bre\vR\ra=\uni\vR\ra)$
+
+\newpage
+
+{\centering\subsection*{Transformations}}
+
+\vspace{+1.20em}
+
+\par The universal position $\uni\vR\ra$, the universal velocity $\uni\vV\ra$, and the universal acceleration $\uni\vA\ra$ of a particle A relative to a reference frame S, are given by:
+\bigskip
+\begin{center}
+\begin{tabular}{l}
+$\uni\vR\ra = \vR\ra + \bre\vR\rS$ \vspace{+1.20em} \\
+$\uni\vV\ra = \vV\ra + \bre\aV\rS \times \vR\ra + \bre\vV\rS$ \vspace{+1.20em} \\
+$\uni\vA\ra = \vA\ra + 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra + \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) + \bre\aA\rS \times \vR\ra + \bre\vA\rS$
+\end{tabular}
+\end{center}
+\medskip
+\noindent where $\vR\ra$, $\vV\ra$, and $\vA\ra$ are the position, the velocity, and the acceleration of particle A relative to the reference frame S; $\bre\vR\rS$, $\bre\vV\rS$, $\bre\vA\rS$, $\bre\aV\rS$, and $\bre\aA\rS$ are the dynamic position, the dynamic velocity, the dynamic acceleration, the dynamic angular velocity and the dynamic angular acceleration of the reference \hbox {frame S}.
+\vspace{-0.75em}
+\par The dynamic position $\bre\vR\rS$, the dynamic velocity $\bre\vV\rS$, the dynamic acceleration $\bre\vA\rS$, the dynamic angular velocity $\bre\aV\rS$, and the dynamic angular acceleration $\bre\aA\rS$ of a reference frame S fixed to a particle S, are given by:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+\hspace {-5.10em} $\bre\vR\rS = \int\int \hspace{+0.12em} (\vF_0/\mM\rs) \; d\mT \; d\mT$ \vspace{+1.20em} \\
+\hspace {-5.10em} $\bre\vV\rS = \int \hspace{+0.12em} (\vF_0/\mM\rs) \; d\mT$ \vspace{+1.20em} \\
+\hspace {-5.10em} $\bre\vA\rS = (\vF_0/\mM\rs)$ \vspace{+1.20em} \\
+\hspace {-5.10em} $\bre\aV\rS = \pm \hspace{+0.12em} \big|(\vF_1/\mM\rs - \vF_0/\mM\rs) \cdot (\vR_1 - \vR_0)/(\vR_1 - \vR_0)^2\big|^{1/2}$ \vspace{+1.20em} \\
+\hspace {-5.10em} $\bre\aA\rS = d(\bre\aV\rS)/d\mT$
+\end{tabular}
+\end{center}
+\medskip
+\noindent where $\vF_0$ and $\vF_1$ are the net forces acting on the reference frame S in the points 0 and 1, $\vR_0$ and $\vR_1$ are the positions of the points 0 and 1 relative to the reference frame S, and $\mM\rs$ is the mass of \hbox {particle S} \hbox {(the point 0} is the origin of the reference frame S and the center of mass of particle S) (the point 0 belongs to the axis of dynamic rotation, and the segment 01 is perpendicular to the axis of dynamic rotation) \hbox {(the vector} $\bre\aV\rS$ is along the axis of dynamic rotation)
+\medskip
+\par The magnitudes $\bre\vR$, $\bre\vV$, $\bre\vA$, $\bre\aV$, and $\bre\aA$ are invariant under transformations between reference frames.
+
+\vspace{+0.30em}
+
+{\centering\subsection*{Inertial Reference Frame}}
+
+\vspace{+1.20em}
+
+\par A reference frame S is inertial if $\bre\aV\rS=0$ and $\bre\vA\rS=0$, but it is non-inertial if $\bre\aV\rS \ne 0$ or $\bre\vA\rS \ne 0$.
+\medskip
+\par This paper considers that the universal reference frame $\uni\mathrm S$ is always inertial.
+
+\newpage
+
+{\centering\subsection*{Equation of Motion}}
+
+\vspace{+1.20em}
+
+\par From the general principle and the transformations it follows that the acceleration $\vA\ra$ of a particle A of mass $\mM\ra$ relative to a reference frame S fixed to a particle S of mass $\mM\rs$, is given by:
+\begin{eqnarray*}
+\vA\ra = \vF\ra/\mM\ra - 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra - \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) - \bre\aA\rS \times \vR\ra - \vF\rs/\mM\rs
+\end{eqnarray*}
+\noindent where $\vF\ra$ is the net force acting on particle A, and $\vF\rs$ is the net force acting on particle S.
+\medskip
+\par In contradiction with Newton's first and second laws, from the last equation it follows that \hbox {particle A} can have non-zero acceleration even if there is no force acting on particle A, and also that particle A can have zero acceleration (state of rest or of uniform linear motion) even if there is an unbalanced force acting on particle A.
+\medskip
+\par In order to apply Newton's first and second laws in a non-inertial reference frame, it is necessary to introduce fictitious forces.
+\medskip
+\par However, this paper considers that Newton's first and second laws are false. Therefore, in this paper there is no need to introduce fictitious forces.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Kinetic Force}}
+
+\vspace{+1.20em}
+
+\par The kinetic force $\vK_{a|b}$ exerted on a particle A of mass $\mM\ra$ by another particle B of mass $\mM\rb$, caused by the interaction between particle A and particle B, is given by:
+\begin{eqnarray*}
+\vK_{a|b} = \frac{\mM\ra\mM\rb}{\mM\rcm}(\uni\vA\ra - \uni\vA\rb)
+\end{eqnarray*}
+\noindent where $\mM\rcm$ is the mass of the center of mass of the universe, $\uni\vA\ra$ and $\uni\vA\rb$ are the universal accelerations of particles A and B.
+\medskip
+\par From the above equation it follows that the net kinetic force $\vK\ra$ acting on a particle A of mass $\mM\ra$, is given by:
+\begin{eqnarray*}
+\vK\ra = \mM\ra\uni\vA\ra
+\end{eqnarray*}
+\noindent where $\uni\vA\ra$ is the universal acceleration of particle A.
+\medskip
+\par Now from page [2], we have:
+\begin{eqnarray*}
+\mM\ra\uni\vA\ra - \vF\ra = 0
+\end{eqnarray*}
+\par That is:
+\begin{eqnarray*}
+\vK\ra - \vF\ra = 0
+\end{eqnarray*}
+\par Therefore, the total force $(\vK\ra - \vF\ra)$ acting on a particle A is always in equilibrium.
+
+\end{document}
+

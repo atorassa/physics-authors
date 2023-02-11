@@ -1,0 +1,165 @@
+
+\documentclass[11pt]{article}
+%\documentclass[a4paper,11pt]{article}
+%\documentclass[letterpaper,11pt]{article}
+\usepackage[totalwidth=114mm,totalheight=174mm]{geometry}
+
+\usepackage{graphicx}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\parindent=3mm
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Sobre los Sistemas de Referencia}}
+\hypersetup{pdfauthor={Author: A. Torassa - Editor: W. Babin}}
+
+\setlength{\unitlength}{0.57pt}
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\mX}{x}
+\newcommand{\mY}{y}
+\newcommand{\mZ}{z}
+\newcommand{\mT}{t}
+\newcommand{\rt}{'}
+\newcommand{\rot}{_{o'}}
+\newcommand{\tf}{Figura}
+
+\begin{document}
+
+\begin{figure}
+\includegraphics{logo6.jpg}
+%\includegraphics{logo6.eps}
+\end{figure}
+
+\enlargethispage{0em}
+
+\begin{center}
+
+\ \vspace{-1.5em}
+
+{\LARGE Sobre los Sistemas de Referencia}
+
+\vspace{+1.5em}
+
+\normalsize
+
+Alejandro A. Torassa
+
+\smallskip
+
+\footnotesize
+
+Buenos Aires, Argentina, E-mail: atorassa@gmail.com
+
+\smallskip
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(Copyright 2009)
+
+\vspace{+1.2em}
+
+\end{center}
+
+\begin{abstract}
+
+\noindent En este trabajo se establece, por un lado, que cualquier sistema de referencia debe estar fijo a un cuerpo material y, por otro lado, que es posible convenir que cualquier sistema de referencia fijo a un cuerpo material debe ser no rotante.
+
+\medskip
+
+\noindent Keywords: mecánica clásica, observador, cuerpo material, centro de masa, sistema de referencia rotante, sistema de referencia no rotante.
+
+\vspace{+0.3em}
+
+\end{abstract}
+
+\normalsize
+
+{\centering\subsection*{Primera Parte}}
+
+\par Es sabido que a partir de las observaciones de un sistema de \hbox {referencia S} y utilizando las leyes de transformación adecuadas es posible conocer las observaciones de otro sistema de referencia S'.
+\smallskip
+\par Sin embargo, las observaciones del sistema de referencia S' obtenidas a través del método anterior son observaciones hipotéticas, puesto que las observaciones reales del sistema de referencia S' son las observaciones hechas por el propio sistema de referencia S'.
+\smallskip
+\par Según este trabajo, para conocer las observaciones reales de un sistema de referencia es necesario que el sistema de referencia exista. Y para que un sistema de referencia exista es necesario que el sistema de referencia esté fijo a un cuerpo material.
+\smallskip
+\par En consecuencia, cualquier sistema de referencia debe estar fijo a un cuerpo material.
+
+\newpage \enlargethispage{0em}
+
+{\centering\subsection*{Segunda Parte}}
+
+\par ¿Cómo debe estar fijo un sistema de referencia a un cuerpo material?
+\smallskip
+\par Según este trabajo, si se considera que cualquier cuerpo material es un cuerpo formado por una partícula o por un sistema de partículas, entonces el origen de coordenadas de cualquier sistema de referencia debe estar fijo al centro de masa de un cuerpo material.
+\smallskip
+\par Como el centro de masa de cualquier cuerpo material es un punto en el espacio sin rotación, entonces es posible que el origen de coordenadas de un sistema de referencia no rotante esté siempre fijo al centro de masa de cualquier cuerpo material. Sin embargo, no es posible que el origen de coordenadas de un sistema de referencia inercial esté siempre fijo al centro de masa de cualquier cuerpo material.
+\smallskip
+\par En consecuencia, si el origen de coordenadas de cualquier sistema de referencia debe estar fijo al centro de masa de un cuerpo material, entonces es posible convenir que cualquier sistema de referencia fijo a un cuerpo material debe ser no rotante.
+
+\bigskip
+
+{\centering\subsection*{Conclusiones}}
+
+\par Según este trabajo, cada sistema de referencia no rotante está definido por un origen de coordenadas fijo al centro de masa de un cuerpo material, y por tres ejes de coordenadas perpendiculares entre sí, donde cada eje es paralelo al correspondiente eje de un sistema de referencia universal definido por cuatro estrellas lejanas muy distantes entre sí.
+\smallskip
+\par Por otro lado, varias leyes de la física adoptarían una forma más simple si ningún sistema de referencia fuese un sistema de referencia rotante. Sin embargo, la rotación de un cuerpo material sería absoluta; por ejemplo, la rotación de la Tierra sería absoluta. Pero, en la teoría de relatividad, la velocidad de la luz es también absoluta.
+\smallskip
+\par En adición, según este trabajo, cada cuerpo material es un sistema de referencia no rotante posible. Por lo tanto, cada cuerpo material es también un observador posible.
+\smallskip
+\par Por último, las leyes de la física deben ser las mismas para todos los observadores. Por lo tanto, según este trabajo, las leyes de la física deben tener la misma forma en todos los sistemas de referencia no rotantes.
+
+\newpage \enlargethispage{+0.3em}
+
+{\centering\subsection*{Apéndice}}
+
+{\centering\subsection*{Transformaciones de la Mecánica Clásica}}
+
+\par Si cualquier sistema de referencia es un sistema de referencia no rotante, entonces los ejes de un sistema de referencia S y otro S' permanecerán siempre fijos entre sí. Por lo tanto, se puede convenir, para facilitar los cálculos, que los ejes de los sistemas de referencia S y S' tengan la misma orientación entre sí, según como muestra la Figura 1.
+
+\vspace{+1.2em}
+
+\begin{center}
+\begin{picture}(228,198)
+\multiput(75,75)(45,18){2}{\vector(1,0){90}}
+\multiput(75,75)(45,18){2}{\vector(0,1){90}}
+\multiput(75,75)(45,18){2}{\vector(-1,-1){60}}
+\put(72,171){$\mZ$}\put(117,189){$\mZ\rt$}
+\put(171,72){$\mX$}\put(216,90){$\mX\rt$}
+\put(3,3){$\mY$}\put(45,18){$\mY\rt$}
+\put(78,78){$O$}\put(123,96){$O\rt$}
+\put(24,96){S}\put(162,141){S'}
+\end{picture}
+\\* \tf \ 1
+\end{center}
+
+\smallskip
+
+\par Se puede pasar de las coordenadas $\mX$, $\mY$, $\mZ$, $\mT$ del sistema de \hbox {referencia S} a las coordenadas $\mX\rt$, $\mY\rt$, $\mZ\rt$, $\mT\rt$ del sistema de referencia S' cuyo origen de coordenadas $O\rt$ se encuentra en la posición $\mX\rot$, $\mY\rot$, $\mZ\rot$ con respecto al sistema de referencia S, aplicando las siguientes ecuaciones:
+\begin{eqnarray*}
+\mX\rt & = & \mX - \mX\rot \\*
+\mY\rt & = & \mY - \mY\rot \\*
+\mZ\rt & = & \mZ - \mZ\rot \\*
+\mT\rt & = & \mT
+\end{eqnarray*}
+\par De estas ecuaciones, se deduce como se transforman las velocidades y las aceleraciones del sistema de referencia S al sistema de referencia S', que en forma vectorial pueden ser expresadas como sigue:
+\begin{eqnarray*}
+\vV\rt & = & \vV - \vV\rot \\*
+\vA\rt & = & \vA - \vA\rot
+\end{eqnarray*}
+\noindent donde $\vV\rot$ y $\vA\rot$ es la velocidad y la aceleración respectivamente del sistema de referencia S' con respecto al sistema de referencia S.
+
+\end{document}
+

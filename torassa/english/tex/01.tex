@@ -1,0 +1,563 @@
+
+\documentclass[12pt]{article}
+%\documentclass[a4paper,12pt]{article}
+%\documentclass[letterpaper,12pt]{article}
+\usepackage[totalwidth=165mm,totalheight=237mm]{geometry}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={On Classical Mechanics}}
+\hypersetup{pdfsubject={A new dynamics which establishes the existence of a new universal force of interaction, called kinetic force.}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+\hypersetup{pdfkeywords={classical mechanics, science, physics, mechanics, relativity, kinematics, dynamics, classical, general, principle, conservation, motion, force, mass, work, energy, inertia, interaction, kinetic, live, frame, reference, inertial, fundamental, fictitious, real, newton, einstein, torassa}}
+
+%\makeatletter
+%\let\@afterindentfalse\@afterindenttrue
+%\@afterindenttrue
+%\setlength{\parindent}{0em}
+
+\setlength{\unitlength}{0.84pt}
+\setlength{\arraycolsep}{1.86pt}
+%\renewcommand{\baselinestretch}{0.93}
+
+\newcommand{\xt}{\huge}
+\newcommand{\xe}{\textup}
+\newcommand{\xa}{\normalsize}
+\newcommand{\yA}{\vspace{0em}}
+\newcommand{\yI}{\vspace{0em}}
+\newcommand{\yi}{\vspace{0em}}
+\newcommand{\yt}{\vspace{0em}}
+\newcommand{\ye}{\vspace{0em}}
+\newcommand{\ya}{\vspace{0em}}
+
+\newcommand{\za}{\ \vspace{-0.9em}}
+\newcommand{\zb}{  \vspace{+0.9em}}
+\newcommand{\zc}{  \vspace{+0.9em}}
+
+\newcommand{\yN}{\newpage}%{}
+\newcommand{\yT}{\bigskip}%{}
+\newcommand{\yS}{\medskip}%{}
+\newcommand{\cA}{\centering}%{}
+\newcommand{\cC}{\cA\tableofcontents}%{}
+\newcommand{\cT}{\cA\section}%{\cA\section*}
+\newcommand{\cS}{\cA\subsection}%{\cA\subsection*}
+\newcommand{\ct}[1]{}%{\vspace{-3em}\section*{}\addcontentsline{toc}{section}{\numberline {}#1}}
+\newcommand{\cs}[1]{}%{\vspace{-2em}\subsection*{}\addcontentsline{toc}{subsection}{\numberline {}#1}}
+
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\vP}{\mathbf{P}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\nK}{{\scriptstyle K}}
+\newcommand{\nN}{{\scriptstyle N}}
+\newcommand{\nL}{{\scriptstyle L}}
+\newcommand{\mX}{x}
+\newcommand{\mY}{y}
+\newcommand{\mZ}{z}
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\mN}{M}
+\newcommand{\mW}{W}
+\newcommand{\mE}{E}
+\newcommand{\rt}{'}
+\newcommand{\rS}{_S}
+\newcommand{\rT}{_T}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rc}{_c}
+\newcommand{\rn}{_n}
+\newcommand{\ri}{_i}
+\newcommand{\ro}{_o}
+\newcommand{\rs}{_s}
+\newcommand{\rab}{_{ab}}
+\newcommand{\rao}{_{a_o}}
+\newcommand{\rbo}{_{b_o}}
+\newcommand{\rno}{_{n_o}}
+\newcommand{\rfn}{_{fn}}
+\newcommand{\rfk}{_{fk}}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\rot}{_{o'}}
+\newcommand{\tf}{Figure}
+\newcommand{\tc}{constant}
+
+\title{\yt \xt {ON CLASSICAL MECHANICS} \ya}
+\author{\xa {Creative Commons Attribution 3.0 License} \ye \\* \xa {\copyright 1996 by Alejandro A. Torassa} \ye \\* \xa \xe {atorassa@gmail.com} \ye \\* \xa {Argentina}}
+\date{}
+
+\begin{document}
+
+\baselineskip=14.5pt \enlargethispage{0em}
+
+\maketitle
+
+\yA
+
+\begin{abstract}
+\noindent In this work a new dynamics is developed, which is valid for all observers, and which establishes, among other things, the existence of a new universal force of interaction, called kinetic force, which balances the remaining forces acting on a body. In this new dynamics, the motion of a body is not determined by the forces acting on it; instead, the body itself determines its own motion, since as a result of such motion it exerts over all other bodies the kinetic force which is necessary to keep the system of forces acting on each of them always in equilibrium.
+\end{abstract}
+
+\yI
+
+{\centering\section*{Introduction}}
+
+\par It is known that in classical mechanics Newton's dynamics cannot be formulated for all reference frames, since it does not conserve its form when passing from one reference frame to another. For instance, if we admit that Newton's dynamics is valid for a chosen reference frame, then we cannot admit it to be valid for a reference frame which is accelerated relative to the first one, for the description of the behavior of a body from the accelerated reference frame differs from the description given by Newton's dynamics.
+\yi
+\par Classical mechanics solves this difficulty by separating reference frames into two classes: inertial reference frames, for which Newton's dynamics applies, and non-inertial reference frames, where Newton's dynamics does not apply; but this solution contradicts the principle of general relativity, which states: the laws of physics shall be valid for all reference frames.
+\yi
+\par However, this work puts forward a different solution to the difficulty from classical mechanics mentioned above, with no need to distinguish among reference frames, and in accordance to the principle of general relativity, starting from Newton's dynamics and the transformations of kinematics and developing a new dynamics which can be formulated for all reference frames, since it conserves its form when passing from one reference frame to another.
+\yi
+\par The development of the new dynamics will be made in two parts: in the first part, which deals with the classical mechanics of particles, the new dynamics of particles will be developed, starting from Newton's dynamics of particles and the transformations of the kinematics of particles; in the second part, which deals with the classical mechanics of rigid bodies, the new dynamics of rigid bodies will be developed, starting from Newton's dynamics of rigid bodies and the transformations of the kinematics of rigid bodies.
+\yi
+\par In this work only the first part will be formulated.
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\za
+
+{\cA\section*{\LARGE {ON THE CLASSICAL MECHANICS OF PARTICLES}}}
+
+\zb
+
+{\cC}
+
+\zc
+
+{\ct{MECHANICS OF PARTICLES}}
+{\cT{MECHANICS OF PARTICLES}}
+
+\par The classical mechanics of particles considers that the only kind of bodies found in the Universe are particles, and assumes that any reference frame is fixed to a particle. Therefore, in the classical mechanics of particles, it can be assumed that reference frames are not rotating.
+
+\yT \vspace{0em}
+
+{\ct{KINEMATICS OF PARTICLES}}
+{\cT{KINEMATICS OF PARTICLES}}
+
+{\cs{Reference Frames}}
+{\cS{Reference Frames}}
+
+\par If reference frames are not rotating, then each coordinate axis of a reference frame S will remain at a fixed angle to the corresponding coordinate axis of another reference frame S'. Therefore, to simplify calculations it will be assumed that each axis of S is parallel to the corresponding axis \hbox {of S'}, as shown in Figure 1.
+\smallskip
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\begin{center}
+\begin{picture}(228,198)
+\multiput(75,75)(45,18){2}{\vector(1,0){90}}
+\multiput(75,75)(45,18){2}{\vector(0,1){90}}
+\multiput(75,75)(45,18){2}{\vector(-1,-1){60}}
+\put(72,171){$\mZ$}\put(117,189){$\mZ\rt$}
+\put(171,72){$\mX$}\put(216,90){$\mX\rt$}
+\put(3,3){$\mY$}\put(45,18){$\mY\rt$}
+\put(78,78){$O$}\put(123,96){$O\rt$}
+\put(24,96){S}\put(162,141){S'}
+\end{picture}
+\\* \tf \ 1
+\end{center}
+
+{\cs{Transformations of Kinematics}}
+{\cS{Transformations of Kinematics}}
+
+\par If a reference frame S of axes $O(\mX,\mY,\mZ)$ determines an event by means of three space coordinates $\mX$, $\mY$, $\mZ$ and one time coordinate $\mT$, then another reference frame S' of axes $O\rt(\mX\rt,\mY\rt,\mZ\rt)$ determines the same event by means of three space coordinates $\mX\rt$, $\mY\rt$, $\mZ\rt$ and one time coordinate $\mT\rt$.
+\par A change of coordinates $\mX$, $\mY$, $\mZ$, $\mT$ from reference frame S to coordinates $\mX\rt$, $\mY\rt$, $\mZ\rt$, $\mT\rt$ from reference frame S' whose origin $O\rt$ has coordinates $\mX\rot$, $\mY\rot$, $\mZ\rot$ measured from S, can be carried out by means of the following equations:
+\begin{eqnarray*}
+\mX\rt & = & \mX - \mX\rot \\*
+\mY\rt & = & \mY - \mY\rot \\*
+\mZ\rt & = & \mZ - \mZ\rot \\*
+\mT\rt & = & \mT
+\end{eqnarray*}
+\par From these equations, the transformation of velocity and acceleration from reference frame S to reference frame S' may be carried out, and expressed in vector form as follows:
+\begin{eqnarray*}
+\vV\rt & = & \vV - \vV\rot \\*
+\vA\rt & = & \vA - \vA\rot
+\end{eqnarray*}
+\noindent where $\vV\rot$ and $\vA\rot$ are the velocity and acceleration respectively, of reference frame S' relative to S.
+
+\yT \vspace{0em}
+
+{\ct{DYNAMICS OF PARTICLES}}
+{\cT{DYNAMICS OF PARTICLES}}
+
+{\cs{Newton's Dynamics}}
+{\cS{Newton's Dynamics}}
+
+\par Newton's first law: Any particle in a state of rest or of uniform linear motion tends to remain in such a state unless acted upon by an unbalanced external force.
+\par Newton's second law: The sum of all forces acting on a particle A produces an acceleration in the direction of the force, and directly proportional to that force.
+\begin{eqnarray*}
+\sum \vF\ra = \mM\ra\vA\ra
+\end{eqnarray*}
+\noindent where $\mM\ra$ is the inertial mass of particle A.
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par Newton's third law: If a particle A exerts a force $\vF$ on a particle B, then particle B exerts on particle A a force $-\vF$ of the same magnitude but opposite direction.
+\begin{eqnarray*}
+\vF\ra = -\vF\rb
+\end{eqnarray*}
+\par The transformation of real forces from one reference frame to another is given by
+\begin{eqnarray*}
+\vF\rt = \vF
+\end{eqnarray*}
+\par The transformation of inertial masses from one reference frame to another is given by
+\begin{eqnarray*}
+\mM\rt = \mM
+\end{eqnarray*}
+
+\yS \vspace{-2.1em}
+
+{\cs{Dynamical Behavior of Particles}}
+{\cS{Dynamical Behavior of Particles}}
+
+\par Let us consider a Universe composed of three particles A, B, and C which follow Newton's dynamics from reference frame S (inertial frame). Therefore, the behavior of such particles will be given (from S) by the equations
+\begin{eqnarray}
+\sum \vF\ra & = & \mM\ra\vA\ra \nonumber \\*
+\sum \vF\rb & = & \mM\rb\vA\rb \label{e1} \\*
+\sum \vF\rc & = & \mM\rc\vA\rc \nonumber
+\end{eqnarray}
+\par From the equations (\ref{e1}) and by means of the transformations of dynamics and kinematics, it can be shown that the behavior of particles A, B, and C will be determined from a reference frame S' by the equations
+\begin{eqnarray}
+\sum \vF\rt\ra & = & \mM\rt\ra(\vA\rt\ra - \vA\rt\ro) \nonumber \\*
+\sum \vF\rt\rb & = & \mM\rt\rb(\vA\rt\rb - \vA\rt\ro) \label{e2} \\*
+\sum \vF\rt\rc & = & \mM\rt\rc(\vA\rt\rc - \vA\rt\ro) \nonumber
+\end{eqnarray}
+\noindent where $\vA\rt\ro$ is the acceleration of reference frame S relative to S', which is equal and opposite to the acceleration $-\vA\rot$ of reference frame S' relative to S.
+\par As the equations (\ref{e2}) are the same as the equations (\ref{e1}) only if the acceleration $\vA\rt\ro$ of reference frame S relative to S' is equal to zero, then the behavior of particles A, B, and C cannot be determined from any (accelerated) reference frame by the equations (\ref{e1}).
+\par Now, if the equations (\ref{e2}) are added together, it yields
+\begin{eqnarray}
+\sum \vF\rt\ra + \sum \vF\rt\rb + \sum \vF\rt\rc = \mM\rt\ra(\vA\rt\ra - \vA\rt\ro) + \mM\rt\rb(\vA\rt\rb - \vA\rt\ro) + \mM\rt\rc(\vA\rt\rc - \vA\rt\ro) \label{e3}
+\end{eqnarray}
+\par It follows from Newton's third law that $\sum \vF\rt\ra + \sum \vF\rt\rb + \sum \vF\rt\rc = 0$, and from (\ref{e3}), $\vA\rt\ro$ may be expressed as
+\begin{eqnarray}
+\vA\rt\ro = \frac{\mM\rt\ra\vA\rt\ra + \mM\rt\rb\vA\rt\rb + \mM\rt\rc\vA\rt\rc}{\mM\rt\ra + \mM\rt\rb + \mM\rt\rc} \label{e4}
+\end{eqnarray}
+\par As the right-hand side of (\ref{e4}) is the acceleration $\vA\rt\rcm$ of the center of mass of the Universe relative to the reference frame S', then
+\begin{eqnarray}
+\vA\rt\ro = \vA\rt\rcm \label{e5}
+\end{eqnarray}
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par Substituting into the equations (\ref{e2}) yields the following equations:
+\begin{eqnarray}
+\sum \vF\rt\ra & = & \mM\rt\ra(\vA\rt\ra - \vA\rt\rcm) \nonumber \\*
+\sum \vF\rt\rb & = & \mM\rt\rb(\vA\rt\rb - \vA\rt\rcm) \label{e6} \\*
+\sum \vF\rt\rc & = & \mM\rt\rc(\vA\rt\rc - \vA\rt\rcm) \nonumber
+\end{eqnarray}
+\par Therefore, the behavior of particles A, B, and C is now determined from the reference \hbox {frame S'} by the equations (\ref{e6}), which are equivalent to the equations (\ref{e2}).
+\par Now, if the equations (\ref{e6}) are transformed from reference frame S' to S using the transformations of kinematics and dynamics, the resulting equations become
+\begin{eqnarray}
+\sum \vF\ra & = & \mM\ra(\vA\ra - \vA\rcm) \nonumber \\*
+\sum \vF\rb & = & \mM\rb(\vA\rb - \vA\rcm) \label{e7} \\*
+\sum \vF\rc & = & \mM\rc(\vA\rc - \vA\rcm) \nonumber
+\end{eqnarray}
+\par It follows that the behavior of particles A, B, and C will now be determined from reference frame S by the equations (\ref{e7}), which are equivalent to the equations (\ref{e1}) only if the acceleration $\vA\rcm$ of the center of mass of the Universe relative to the reference frame S equals zero, a fact that may be verified by adding together the equations (\ref{e1}):
+\begin{eqnarray}
+\sum \vF\ra + \sum \vF\rb + \sum \vF\rc = \mM\ra\vA\ra + \mM\rb\vA\rb + \mM\rc\vA\rc \label{e8}
+\end{eqnarray}
+\par Dividing both sides of (\ref{e8}) by $\mM\ra + \mM\rb + \mM\rc$ and using the fact that $\sum \vF\ra + \sum \vF\rb + \sum \vF\rc = 0$ from Newton's third law, (\ref{e8}) yields
+\begin{eqnarray}
+\vA\rcm = \frac{\mM\ra\vA\ra + \mM\rb\vA\rb + \mM\rc\vA\rc}{\mM\ra + \mM\rb + \mM\rc} = 0 \label{e9}
+\end{eqnarray}
+\par Considering that the equations (\ref{e7}) have the same form as the equations (\ref{e6}), then the behavior of particles A, B, and C will be determined from any reference frame by the equations (\ref{e7}), and will be determined by the equations (\ref{e1}) only if the acceleration of the center of mass of the Universe relative to that reference frame is zero.
+\par Now, the equations (\ref{e7}) can be arranged as follows:
+\begin{eqnarray}
+\sum \vF\ra + \mM\ra(\vA\rcm - \vA\ra) & = & 0 \nonumber \\*
+\sum \vF\rb + \mM\rb(\vA\rcm - \vA\rb) & = & 0 \label{e10} \\*
+\sum \vF\rc + \mM\rc(\vA\rcm - \vA\rc) & = & 0 \nonumber
+\end{eqnarray}
+\par Substituting (\ref{e9}) into (\ref{e10}) and factoring
+\begin{eqnarray}
+\sum \vF\ra + \frac{\mM\ra\mM\rb(\vA\rb - \vA\ra)}{\mM\ra + \mM\rb + \mM\rc} + \frac{\mM\ra\mM\rc(\vA\rc - \vA\ra)}{\mM\ra + \mM\rb + \mM\rc} & = & 0 \nonumber \\* \nonumber \\*
+\sum \vF\rb + \frac{\mM\rb\mM\ra(\vA\ra - \vA\rb)}{\mM\ra + \mM\rb + \mM\rc} + \frac{\mM\rb\mM\rc(\vA\rc - \vA\rb)}{\mM\ra + \mM\rb + \mM\rc} & = & 0 \label{e11} \\* \nonumber \\*
+\sum \vF\rc + \frac{\mM\rc\mM\ra(\vA\ra - \vA\rc)}{\mM\ra + \mM\rb + \mM\rc} + \frac{\mM\rc\mM\rb(\vA\rb - \vA\rc)}{\mM\ra + \mM\rb + \mM\rc} & = & 0 \nonumber
+\end{eqnarray}
+
+\yN \baselineskip=15.4pt \enlargethispage{0em}
+
+\par If the second and third terms of the left-hand sides of each one of the equations (\ref{e11}) is taken as a new force $\vF^{\circ}$ acting on the corresponding particle, and exerted by the remaining particles, then it can be seen that $\vF^{\circ}$ conserves its form when passing from one reference frame to another; in addition, if a particle exerts a force $\vF^{\circ}$ on another particle, the latter exerts on the first particle a force $-\vF^{\circ}$ of equal magnitude and opposite direction. Therefore, as the second and third terms of the left-hand sides of each one of the equations (\ref{e11}) represent the sum of the new forces $\sum \vF^{\circ}$ acting on the particles, then
+\begin{eqnarray}
+\sum \vF\ra + \sum \vF^{\circ}\ra & = & 0 \nonumber \\*
+\sum \vF\rb + \sum \vF^{\circ}\rb & = & 0 \label{e12} \\*
+\sum \vF\rc + \sum \vF^{\circ}\rc & = & 0 \nonumber
+\end{eqnarray}
+\par And adding the second term to the first yields
+\begin{eqnarray}
+\sum \vF\ra & = & 0 \nonumber \\*
+\sum \vF\rb & = & 0 \label{e13} \\*
+\sum \vF\rc & = & 0 \nonumber
+\end{eqnarray}
+\par Consequently, it can be established that the behavior of particles A, B, and C will be determined from any reference frame by the equations (\ref{e13}), which may be stated as follows: if the new force is added to the sum of real forces, the resulting force will be zero, yielding a system in equilibrium.
+\par Consequently, it is possible to conceive a new dynamics, which can be formulated for all reference frames. The usual explanation for the motion of particles is that particles undergo a certain motion in response to the external forces acting on them, following Newton's first and second laws. The new dynamics, instead, considers that particles experience a certain motion because in that way they balance the sum of real forces with the new force.
+\par From now on, the new force will be called kinetic force, since it is a force which depends on the motion of particles, and the magnitude $\mM$ (mass) will be called kinetic mass instead of inertial mass, since in the new dynamics particles do not exhibit the property known as inertia.
+
+\yS \vspace{-1.2em}
+
+{\cs{The New Dynamics}}
+{\cS{The New Dynamics}}
+
+\par First principle: A particle can have any state of motion.
+\par Second principle: The forces acting upon a particle A always remain balanced.
+\begin{eqnarray*}
+\sum \vF\ra = 0
+\end{eqnarray*}
+\par Third principle: If a particle A exerts a force $\vF$ on a particle B, then particle B exerts on parti- cle A a force $-\vF$ of the same magnitude but opposite direction.
+\begin{eqnarray*}
+\vF\ra = -\vF\rb
+\end{eqnarray*}
+\par The transformation of real forces from one reference frame to another, is given by the following equation:
+\begin{eqnarray*}
+\vF\rt = \vF
+\end{eqnarray*}
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par The kinetic force $\vF\nK\rab$ exerted on a particle A by another particle B, caused by the interaction between particle A and particle B, is given by the following equation:
+\begin{eqnarray*}
+\vF\nK\rab = \frac{\mM\ra\mM\rb}{\mN\rT}(\vA\rb - \vA\ra)
+\end{eqnarray*}
+\noindent where $\mM\ra$ is the kinetic mass of particle A, $\mM\rb$ is the kinetic mass of particle B, $\vA\rb$ is the acceleration of particle B, $\vA\ra$ is the acceleration of particle A, and $\mN\rT$ is the total kinetic mass of the Universe.
+\par The transformation of kinetic masses from one reference frame to another is given by the following equation:
+\begin{eqnarray*}
+\mM\rt = \mM
+\end{eqnarray*}
+\par From the previous statements it follows that the sum of kinetic forces $\sum \vF\nK\ra$ acting on a parti- cle A is given by
+\begin{eqnarray}
+\sum \vF\nK\ra = \mM\ra(\vA\rcm - \vA\ra) \label{e14}
+\end{eqnarray}
+\noindent where $\mM\ra$ is the kinetic mass of particle A, $\vA\rcm$ is the acceleration of the center of kinetic mass of the Universe and $\vA\ra$ is the acceleration of particle A.
+
+\yS \vspace{-1.5em}
+
+{\cs{Determination of the Motion of Particles}}
+{\cS{Determination of the Motion of Particles}}
+
+\par The equation determining the acceleration $\vA\ra$ of a particle A relative to a reference frame S fixed to a particle S may be calculated as follows: the sum of the kinetic forces $\sum \vF\nK\ra$ acting on particle A and the sum of the kinetic forces $\sum \vF\nK\rs$ acting on particle S, are given by the following equations:
+\begin{eqnarray*}
+\sum \vF\nK\ra & = & \mM\ra(\vA\rcm - \vA\ra) \\*
+\sum \vF\nK\rs & = & \mM\rs(\vA\rcm - \vA\rs)
+\end{eqnarray*}
+\par Combining both equations yields
+\begin{eqnarray*}
+\frac{\sum \vF\nK\ra}{\mM\ra} + \vA\ra = \frac{\sum \vF\nK\rs}{\mM\rs} + \vA\rs
+\end{eqnarray*}
+\par Since the acceleration $\vA\rs$ of particle S relative to the reference frame S equals zero always, $\vA\ra$ may be obtained from the last equation as
+\begin{eqnarray*}
+\vA\ra = \frac{\sum \vF\nK\rs}{\mM\rs} - \frac{\sum \vF\nK\ra}{\mM\ra}
+\end{eqnarray*}
+\par Since from the second principle of the new dynamics the sum of the kinetic forces $(\sum \vF\nK)$ acting on a particle equals the opposite of the sum of the non-kinetic forces $(-\sum \vF\nN)$ acting on the particle, we have
+\begin{eqnarray*}
+\vA\ra = \frac{\sum \vF\nN\ra}{\mM\ra} - \frac{\sum \vF\nN\rs}{\mM\rs}
+\end{eqnarray*}
+\par Therefore, the acceleration $\vA\ra$ of a particle A relative to a reference frame S fixed to a \hbox {particle S} will be determined by the last equation, where $\sum \vF\nN\ra$ is the sum of the non-kinetic forces acting on particle A, $\mM\ra$ is the mass of particle A (from now on, kinetic mass will be referred to as mass), $\sum \vF\nN\rs$ is the sum of the non-kinetic forces acting on particle S, and $\mM\rs$ is the mass of particle S.
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\yS \vspace{0em}
+
+{\cs{Galilean Circumstance}}
+{\cS{Galilean Circumstance}}
+
+\par A reference frame S fixed to a particle S is said to be in the galilean circumstance if the sum of the non-kinetic forces acting on particle S equals zero.
+\par If reference frame S is in the galilean circumstance, then, by the second principle of the new dynamics it can be shown that the sum of the kinetic forces $\sum \vF\nK\rs$ acting on particle S equals zero, that is
+\begin{eqnarray*}
+\sum \vF\nK\rs = \mM\rs(\vA\rcm - \vA\rs) = 0
+\end{eqnarray*}
+\par And, as the acceleration $\vA\rs$ of particle S relative to the reference frame S equals zero always, then
+\begin{eqnarray*}
+\vA\rcm = 0
+\end{eqnarray*}
+\par That is, the acceleration of the center of mass of the Universe relative to a reference frame in the galilean circumstance is zero.
+
+\yS \vspace{0em}
+
+{\cs{Isolated System}}
+{\cS{Isolated System}}
+
+\par A system of particles is said to be isolated if the sum of the non-kinetic external forces acting on the system equals zero.
+\par Therefore, if a system of particles is isolated, by the second principle of the new dynamics, the sum of the internal non-kinetic forces $\sum \vF\nN\ri$ and the internal and external kinetic forces $\sum \vF\nK$ equals zero:
+\begin{eqnarray*}
+\sum \vF\nN\ri + \sum \vF\nK = 0
+\end{eqnarray*}
+\par Substituting $\sum \vF\nK$ from expression (\ref{e14}) applied to a system of N particles, and taking into account that $\sum \vF\nN\ri = 0$ from the third principle of the new dynamics, it follows that
+\begin{eqnarray*}
+\mM\ra(\vA\rcm - \vA\ra) + \mM\rb(\vA\rcm - \vA\rb) + \cdots + \mM\rn(\vA\rcm - \vA\rn) = 0
+\end{eqnarray*}
+\noindent from which $\vA\rcm$ can be expressed as
+\begin{eqnarray*}
+\vA\rcm = \frac{\mM\ra\vA\ra + \mM\rb\vA\rb + \cdots + \mM\rn\vA\rn}{\mM\ra + \mM\rb + \cdots + \mM\rn}
+\end{eqnarray*}
+\par And as the right-hand side is the acceleration $\vA\rcm{\rs}$ of the isolated system, then
+\begin{eqnarray*}
+\vA\rcm{\rs} = \vA\rcm
+\end{eqnarray*}
+\par Therefore, the acceleration of the center of mass of an isolated system equals the acceleration of the center of mass of the Universe.
+
+\yT \vspace{0em}
+
+{\ct{CONSERVATION LAWS OF PARTICLES}}
+{\cT{CONSERVATION LAWS OF PARTICLES}}
+
+{\cs{Restricted Conservation of Linear Momentum}}
+{\cS{Restricted Conservation of Linear Momentum}}
+
+\par On one hand, the acceleration of the center of mass of an isolated system equals the acceleration of the center of mass of the Universe and, on the other hand, the acceleration of the center of mass of the Universe relative to a reference frame in the galilean circumstance equals zero.
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par Therefore, the acceleration of the center of mass of an isolated system relative to a reference frame in the galilean circumstance equals zero; that is
+\begin{eqnarray*}
+\frac{\mM\ra\vA\ra + \mM\rb\vA\rb + \cdots + \mM\rn\vA\rn}{\mM\ra + \mM\rb + \cdots + \mM\rn} = 0
+\end{eqnarray*}
+\par Multiplying both sides of this equation by $\mM\ra + \mM\rb + \cdots + \mM\rn$ and integrating with respect to time yields
+\begin{eqnarray*}
+\mM\ra\vV\ra + \mM\rb\vV\rb + \cdots + \mM\rn\vV\rn = \tc
+\end{eqnarray*}
+\par As the left-hand side is the total linear momentum $\vP$ of the isolated system, then
+\begin{eqnarray*}
+\vP = \tc
+\end{eqnarray*}
+\par Therefore, for a reference frame in the galilean circumstance the total linear momentum of an isolated system is conserved.
+
+\yS \vspace{-1.5em}
+
+{\cs{Work and Live Energy}}
+{\cS{Work and Live Energy}}
+
+\par The total work $\mW$ done by the forces acting on a particle is given by
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\ro}^{\vR}{\vF\ra \cdot d\vR} + \int\limits_{\vR\ro}^{\vR}{\vF\rb \cdot d\vR} + \cdots + \int\limits_{\vR\ro}^{\vR}{\vF\rn \cdot d\vR}
+\end{eqnarray*}
+\par Grouping yields
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\ro}^{\vR}{(\vF\ra + \vF\rb + \cdots + \vF\rn) \cdot d\vR}
+\end{eqnarray*}
+\par As $\vF\ra + \vF\rb + \cdots + \vF\rn = 0$ by the second principle of the new dynamics, it follows that
+\begin{eqnarray*}
+\mW = 0
+\end{eqnarray*}
+\par That is, the total work done by the forces acting on a particle equals zero.
+\par But the total work $\mW$ done by the interacting kinetic forces $\vF\nK\ra$ and $\vF\nK\rb$ acting on particles A and B respectively, is given by
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\rao}^{\vR\ra}{\vF\nK\ra \cdot d\vR\ra} + \int\limits_{\vR\rbo}^{\vR\rb}{\vF\nK\rb \cdot d\vR\rb}
+\end{eqnarray*}
+\noindent or else
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\rao}^{\vR\ra}{\frac{\mM\ra\mM\rb}{\mN\rT}(\vA\rb - \vA\ra) \cdot d\vR\ra} + \int\limits_{\vR\rbo}^{\vR\rb}{\frac{\mM\rb\mM\ra}{\mN\rT}(\vA\ra - \vA\rb) \cdot d\vR\rb}
+\end{eqnarray*}
+\noindent resulting in
+\begin{eqnarray*}
+\mW = -\Delta \Bigg(\frac{\mM\ra\mM\rb}{2\mN\rT}(\vV\ra - \vV\rb)^2\Bigg)
+\end{eqnarray*}
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par If we call the energy of the kinetic force live energy, then the expression between brackets represents the live energy $\mE\nL\rab$ of the system particle A - particle B; therefore
+\begin{eqnarray*}
+\mW = -\Delta \mE\nL\rab
+\end{eqnarray*}
+\par It follows that the total work done by the interacting kinetic forces acting on a particle A and a particle B is equal and opposite in sign to the live energy difference of the system particle A - particle B; with the live energy of the system given by
+\begin{eqnarray*}
+\mE\nL\rab = \frac{\mM\ra\mM\rb}{2\mN\rT}(\vV\ra - \vV\rb)^2
+\end{eqnarray*}
+\noindent where $\mM\ra$ is the mass of particle A, $\mM\rb$ is the mass of particle B, $\vV\ra$ is the velocity of particle A, $\vV\rb$ is the velocity of particle B, and $\mN\rT$ is the total mass of the Universe.
+\par The total work $\mW$ done by the kinetic forces acting on an isolated system is
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\rao}^{\vR\ra}{\sum \vF\nK\ra \cdot d\vR\ra} + \cdots + \int\limits_{\vR\rno}^{\vR\rn}{\sum \vF\nK\rn \cdot d\vR\rn}
+\end{eqnarray*}
+\noindent that is
+\begin{eqnarray*}
+\mW = \int\limits_{\vR\rao}^{\vR\ra}{\mM\ra(\vA\rcm - \vA\ra) \cdot d\vR\ra} + \cdots + \int\limits_{\vR\rno}^{\vR\rn}{\mM\rn(\vA\rcm - \vA\rn) \cdot d\vR\rn}
+\end{eqnarray*}
+\par Substituting $\vA\rcm$ in the last equation by the acceleration $\vA\rcm{\rs}$ of the center of mass of the isolated system, since $\vA\rcm{\rs}$ is equal to $\vA\rcm$, yields
+\begin{eqnarray*}
+\mW = -\Delta \Bigg(\sum \raise.5ex\hbox{$\scriptstyle 1$}\kern-.1em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}\mM\ri\vV\ri^2 - \frac{(\sum \mM\ri\vV\ri)^2}{2\sum \mM\ri}\Bigg)
+\end{eqnarray*}
+\par The expression between brackets represents the total live energy $\mE\nL$ of the isolated system, then
+\begin{eqnarray*}
+\mW = -\Delta \mE\nL
+\end{eqnarray*}
+\par Therefore, the total work done by the kinetic forces acting on an isolated system equals minus the total live energy difference of the isolated system, where the total live energy $\mE\nL$ of an isolated system is given by
+\begin{eqnarray*}
+\mE\nL = \mE\nK - \frac{\vP^2}{2\mN\rS}
+\end{eqnarray*}
+\noindent where $\mE\nK$ is the total kinetic energy of the isolated system, $\vP$ is the total linear momentum of the isolated system, and $\mN\rS$ is the total mass of the isolated system.
+
+\yS \vspace{-1.5em}
+
+{\cs{Conservation of Live Energy}}
+{\cS{Conservation of Live Energy}}
+
+\par The total work done by the forces acting on a particle equals zero; therefore, the total work $\mW$ done by the forces acting on an isolated system equals zero.
+\begin{eqnarray*}
+\mW = 0
+\end{eqnarray*}
+
+\yN \baselineskip=14.5pt \enlargethispage{0em}
+
+\par If the total work $\mW$ is divided into two parts: the total work $\mW\rfn$ done by the non-kinetic forces and the total work $\mW\rfk$ done by the kinetic forces, then
+\begin{eqnarray*}
+\mW\rfn + \mW\rfk = 0
+\end{eqnarray*}
+\par As $\mW\rfk$ equals minus the total live energy difference of the isolated system, then
+\begin{eqnarray*}
+\mW\rfn - \Delta \mE\nL = 0
+\end{eqnarray*}
+\par If the non-kinetic forces acting on the isolated system do not perform work, it follows that
+\begin{eqnarray*}
+\! -\Delta \mE\nL = 0
+\end{eqnarray*}
+\noindent that is
+\begin{eqnarray*}
+\mE\nL = \tc
+\end{eqnarray*}
+\noindent or else
+\begin{eqnarray*}
+\mE\nK - \frac{\vP^2}{2\mN\rS} = \tc
+\end{eqnarray*}
+\par Therefore, if the non-kinetic forces acting on an isolated system do not perform work, the total live energy of the isolated system is conserved.
+\par On the other hand, if the total live energy of an isolated system is conserved, then from a reference frame in the galilean circumstance the total kinetic energy of the isolated system is conserved too, since for such system the total linear momentum remains constant.
+
+\yT \vspace{-1.5em}
+
+{\ct{GENERAL OBSERVATIONS}}
+{\cT{GENERAL OBSERVATIONS}}
+
+\par It is currently known that in order to describe the behavior (motion) of a body from a non-inertial reference frame in classical mechanics, it is necessary to introduce apparent forces called fictitious forces (also called pseudo-forces, inertial forces or non-inertial forces). Unlike real forces, fictitious forces are not caused by the interaction between bodies, that is, if there is a fictitious force $\vF$ acting on a body A, then a fictitious force $-\vF$ of the same magnitude but opposite direction acting on another body B cannot be found; that is, fictitious forces do not obey Newton's third law.
+\par On the other hand, in the theory of general relativity, based on the principle of equivalence, it is established that fictitious forces are caused, in a generalized sense, by a gravitational field which all non-inertial reference frames experience, that is, in the theory of general relativity fictitious forces are equivalent to gravitational forces.
+\par But, why are fictitious forces not caused by the interaction between bodies, just as real forces are? Why do not fictitious forces conserve their value when passing from one non-inertial reference frame to another inertial reference frame, just as real forces do? If fictitious forces are equivalent to gravitational forces, then why are fictitious forces not caused by the interaction between bodies and do not conserve their value when passing from one non-inertial reference frame to another inertial reference frame, just as gravitational forces are caused and conserve their value?
+\par It can be stated that neither classical mechanics nor the theory of general relativity give satisfactory answers to the above mentioned questions and that, therefore, it should be accepted that apparently experience shows that to describe the behavior (motion) of a body from a non-inertial reference frame it is necessary to introduce fictitious forces that do not behave in the same way that real forces do.
+
+\yN \baselineskip=14.5pt \enlargethispage{+0.3em}
+
+\par However, this work does give satisfactory answers to the above mentioned questions, since it is deduced from it that, in fact, experience does not show that fictitious forces that do not behave as real forces exist, but experience does show that there exists a new real force which is still ignored and that the so called fictitious forces are in fact mathematical expressions that partially represent this new real force.
+\par In this work the new real force, called kinetic force, behaves like the other real forces, that is, it is a force caused by the interaction between bodies and conserves its value when passing from one reference frame to another. But, on the other hand, it is established in this work that the goal of the kinetic force is to balance the remaining real forces acting on a body, that is, the kinetic force is the real force that makes the sum of all the real forces acting on a body be always equal to zero.
+\par Now, how is it possible then to change the natural state of motion of a body, if according to Newton's first and second laws, based on the principle of inertia, it is established that the natural state of motion of a body will only change when there is an unbalanced external force acting on it?
+\par In contradiction with the principle of inertia, it is established in this work that in the absence of external forces the natural state of motion of a body is not only the state of rest or of uniform linear motion, but that the natural state of motion of a body in the absence of external forces is any possible state of motion; that is, any possible state of motion is a natural state of motion. However, the previous statement does not mean that there is no relation between the motion of bodies and the forces acting on them, since such a relation exists and is mathematically expressed in the new dynamics developed in this work.
+\par In the new dynamics the motion is the mechanism that bodies have, which makes it possible for the kinetic force to balance the remaining forces acting on a body, since as a result of its motion a body exerts over all other bodies the kinetic force which is necessary to keep the system of forces acting on each of them always in equilibrium.
+\par On the other hand, in this work it is not necessary to separate reference frames into two classes: inertial reference frames and non-inertial reference frames, since through the new dynamics the behavior (motion) of a body can be described exactly in the same way from any reference frame. That is, the new dynamics is in accord with the principle of general relativity, which states: the laws of physics shall be valid for all reference frames.
+\par As a final conclusion it can be said that physics has two possible options: to develop classical mechanics based on the principle of inertia, as a first option, or to develop classical mechanics not based on the principle of inertia, as a second option.
+\par However, this work, at least in the classical mechanics of particles, demonstrates, on one hand, that the second option is in accord with what experience shows and, on the other hand, that from a theoretical point of view the second option is widely superior to the first one.
+
+\yT \vspace{-1.5em}
+
+{\ct{BIBLIOGRAPHY}}
+{\cT{BIBLIOGRAPHY}}
+
+\par \textbf{A. Einstein}, \textit{Relativity: The Special and General Theory}.
+\bigskip
+\par \textbf{E. Mach}, \textit{The Science of Mechanics}.
+\bigskip
+\par \textbf{R. Resnick and D. Halliday}, \textit{Physics}.
+\bigskip
+\par \textbf{J. Kane and M. Sternheim}, \textit{Physics}.
+\bigskip
+\par \textbf{H. Goldstein}, \textit{Classical Mechanics}.
+\bigskip
+\par \textbf{L. Landau and E. Lifshitz}, \textit{Mechanics}.
+
+\end{document}
+

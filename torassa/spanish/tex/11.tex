@@ -1,0 +1,122 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={127.0mm,165.1mm}}
+\geometry{totalwidth=106.0mm,totalheight=132.9mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Sistema de Referencia Central}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{2pt}
+
+\newcommand{\mm}{m}
+\newcommand{\mW}{W}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\ri}{_{\scriptstyle \mathit i}}
+\newcommand{\ra}{_{\scriptscriptstyle \mathrm A}}
+\newcommand{\rc}{^{\scriptscriptstyle \mathrm (c)}}
+\newcommand{\rs}{_{\scriptscriptstyle \mathrm {CM}}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\ \vspace{+0.3em}
+
+\begin{center}
+
+{\LARGE Sistema de Referencia Central}
+
+\bigskip \medskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\footnotesize
+
+Licencia Creative Commons Atribución 3.0
+
+(2011) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{89mm}{En este trabajo se presenta un sistema de referencia, que puede ser utilizado por cualquier observador (rotante o no rotante) (inercial o no inercial) para describir el comportamiento dinámico (movimiento) de un sistema de partículas sin necesidad de introducir fuerzas ficticias.}
+
+\vspace{+0.3em}
+
+\end{center}
+
+\normalsize
+
+{\centering\subsection*{Sistema de Referencia Central}}
+
+\par Un sistema de referencia central S$\rc$ es un sistema de referencia no rotante fijo al centro de masa de un sistema de partículas.
+
+\vspace{+0.6em}
+
+{\centering\subsection*{Ecuación de Movimiento}}
+
+\par En un sistema de partículas, la aceleración $\vA\ra\rc$ de una partícula A con respecto al sistema de referencia central está dada por:
+\begin{eqnarray*}
+\vA\ra\rc = \frac{\vF\ra}{\mm\ra} - \frac{\vF\rs}{\mm\rs}
+\end{eqnarray*}
+\noindent donde $\vF\ra$ es la fuerza resultante que actúa sobre la partícula A, $\mm\ra$ es la masa de la partícula A, $\vF\rs$ es la fuerza resultante que actúa sobre el centro de masa y $\mm\rs$ es la masa del centro de masa.
+
+\newpage
+
+{\centering\subsection*{Trabajo y Energía Cinética}}
+
+\par En un sistema de partículas, el trabajo total $\mW\rc$ realizado por las fuerzas que actúan sobre el sistema de partículas con respecto al sistema de referencia central está dado por:
+\begin{eqnarray*}
+\mW\rc = \sum \: \int{\vF\ri^{\vphantom{\scriptscriptstyle \mathrm (c)}} \cdot d\vR\ri\rc} = \Delta \, \left( \sum \: \med \, {\mm\ri^{\vphantom{\scriptscriptstyle \mathrm (c)}}}{\vV\ri\rc}^2 \right)
+\end{eqnarray*}
+\noindent donde ${\vF\ri^{\vphantom{\scriptscriptstyle \mathrm (c)}}}$ es la fuerza resultante que actúa sobre la \textit{i}-ésima partícula, ${\mm\ri^{\vphantom{\scriptscriptstyle \mathrm (c)}}}$ es la masa de la \textit{i}-ésima partícula, $\vR\ri\rc$ y $\vV\ri\rc$ son la posición y la velocidad de la \textit{i}-ésima partícula con respecto al sistema de referencia central.
+
+\vspace{+0.6em}
+
+{\centering\subsection*{Conservación de Energía Cinética}}
+
+\par En un sistema de partículas, si las fuerzas que actúan sobre el sistema de partículas no realizan trabajo con respecto al sistema de referencia central entonces la energía cinética total del sistema de partículas permanece constante con respecto al sistema de referencia central.
+
+\vspace{+0.6em}
+
+{\centering\subsection*{Apéndice}}
+
+\par Las transformaciones entre un sistema de referencia central S$\rc$ y otro sistema de referencia S (rotante o no rotante) (inercial o no inercial) son:
+
+\vspace{-0.6em}
+
+\begin{eqnarray*}
+\vR\ra\rc & = & (\vR\ra - \vR\rs) \\ \\
+\vV\ra\rc & = & (\vV\ra - \vV\rs) \; + \; {\mathbf{\omega}} \times (\vR\ra - \vR\rs) \\ \\
+\vA\ra\rc & = & \frac{\vF\ra}{\mm\ra} - \frac{\vF\rs}{\mm\rs}
+\end{eqnarray*}
+\smallskip
+\par \noindent donde ${\mathbf{\omega}}$ es la velocidad angular de rotación del sistema de referencia S con respecto al sistema de referencia central S$\rc$.
+
+\end{document}
+

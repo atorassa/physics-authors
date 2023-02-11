@@ -1,0 +1,89 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={138.0mm,174.0mm}}
+\geometry{totalwidth=117.0mm,totalheight=138.0mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Angular Kinetic Energy}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\mI}{I}
+\newcommand{\ra}{_a}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\aV}{\mathbf{\omega}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Angular Kinetic Energy}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{87.3mm}{This paper presents an alternative equation to calculate the angular kinetic energy of a particle which describes a circular motion.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.60em}
+
+{\centering\subsubsection*{Angular Kinetic Energy}}
+
+\vspace{+0.60em}
+
+\par The angular kinetic energy of a particle A of mass $\mM\ra$, is given by:
+\begin{eqnarray*}
+\med \hspace{+0.24em} \mM\ra \hspace{+0.06em} (\hspace{+0.03em} \vR \times \vV\ra)^{\hspace{+0.03em} 2}
+\end{eqnarray*}
+\noindent where $\vR$ is a position vector which is constant in magnitude and direction, and $\vV\ra$ is the velocity of particle A.
+\medskip
+\par If particle A has an angular velocity $\aV\ra$ and since $\vV\ra = \aV\ra \times \vR\ra$, then we have:
+\begin{eqnarray*}
+\med \hspace{+0.24em} \mM\ra \hspace{+0.06em} (\hspace{+0.03em} \vR \times (\aV\ra \times \vR\ra))^{\hspace{+0.03em} 2}
+\end{eqnarray*}
+\par If the position vector $\vR$ is parallel to the angular velocity $\aV\ra$, it follows that:
+\begin{eqnarray*}
+\med \hspace{+0.24em} \mM\ra^{\vphantom{2}} \hspace{+0.06em} \vR\ra^{\hspace{+0.09em} 2} \hspace{+0.09em} (\hspace{+0.03em} \vR \cdot \aV\ra^{\vphantom{2}})^{\hspace{+0.03em} 2}
+\end{eqnarray*}
+\par Finally, since $\mM\ra^{\vphantom{2}} \hspace{+0.06em} \vR\ra^{\hspace{+0.09em} 2}$ is the moment of inertia $\mI\ra$ of particle A, we obtain:
+\begin{eqnarray*}
+\med \hspace{+0.24em} \mI\ra \hspace{+0.06em} (\hspace{+0.03em} \vR \cdot \aV\ra)^{\hspace{+0.03em} 2}
+\end{eqnarray*}
+
+\end{document}
+

@@ -1,0 +1,131 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={121.0mm,188.0mm}}
+\geometry{totalwidth=99.9mm,totalheight=154.0mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Principle of Relativity}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\unitlength}{0.51pt}
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mX}{x}
+\newcommand{\mY}{y}
+\newcommand{\mZ}{z}
+\newcommand{\mT}{t}
+\newcommand{\rt}{'}
+\newcommand{\rot}{_{o'}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Principle of Relativity}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2013) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{75mm}{This paper presents a principle of relativity, which states that the laws of physics should only have the same form in all non-rotating reference frames.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.45em}
+
+{\centering\subsubsection*{Principle of Relativity}}
+
+\vspace{+0.75em}
+
+\par Any reference frame should be fixed to a body.
+\medskip
+\par A rotating reference frame cannot represent at all points of space the angular velocity of rotation of a rotating body.
+\medskip
+\par Any reference frame is an ideal rigid body and, according to the theory of relativity, no body can exceed the speed of light.
+\medskip
+\par Therefore, no rotating reference frame can have the same angular velocity of rotation at all points of space, since its tangential velocity cannot exceed the speed of light.
+\medskip
+\par However, it is possible to agree that any reference frame fixed to a body should be non-rotating.
+\medskip
+\par The laws of physics should be the same for all observers.
+\medskip
+\par Therefore, according to this paper, the laws of physics should only have the same form in all non-rotating reference frames.
+\medskip
+\par In addition, several laws of physics would take a simpler form if no reference frame were a rotating reference frame.
+\medskip
+\par Finally, every body is a possible observer. Therefore, according to this paper, every body is also a possible non-rotating reference frame.
+
+\newpage
+
+{\centering\subsubsection*{Classical Mechanics}}
+
+\vspace{+0.75em}
+
+\par If any reference frame is a non-rotating reference frame, then each coordinate axis of a reference frame S will remain at a fixed angle to the corresponding coordinate axis of another reference frame S'. Therefore, to simplify calculations it will be assumed that each axis of S is parallel to the corresponding axis of S', as shown in the following figure:
+
+\vspace{+1.2em}
+
+\begin{center}
+\begin{picture}(228,198)
+\multiput(75,75)(45,18){2}{\vector(1,0){90}}
+\multiput(75,75)(45,18){2}{\vector(0,1){90}}
+\multiput(75,75)(45,18){2}{\vector(-1,-1){60}}
+\put(72,171){$\mZ$}\put(117,189){$\mZ\rt$}
+\put(171,72){$\mX$}\put(216,90){$\mX\rt$}
+\put(3,3){$\mY$}\put(45,18){$\mY\rt$}
+\put(78,78){$O$}\put(123,96){$O\rt$}
+\put(24,96){S}\put(162,141){S'}
+\end{picture}
+\end{center}
+
+\smallskip
+
+\par A change of coordinates $\mX$, $\mY$, $\mZ$, $\mT$ from reference frame S to coordinates $\mX\rt$, $\mY\rt$, $\mZ\rt$, $\mT\rt$ from reference frame S' whose origin $O\rt$ has coordinates $\mX\rot$, $\mY\rot$, $\mZ\rot$ measured from S, can be carried out by means of the following equations:
+\begin{eqnarray*}
+\mX\rt & = & \mX - \mX\rot \\*
+\mY\rt & = & \mY - \mY\rot \\*
+\mZ\rt & = & \mZ - \mZ\rot \\*
+\mT\rt & = & \mT
+\end{eqnarray*}
+\par From these equations, the transformation of position, velocity and acceleration from reference frame S to reference frame S' may be carried out, and expressed in vector form as follows:
+\begin{eqnarray*}
+\vR\hspace{+0.06em}\rt & = & \vR - \vR\rot \\
+\vV\hspace{+0.06em}\rt & = & \vV - \vV\rot \\
+\vA\hspace{+0.06em}\rt & = & \vA - \vA\rot
+\end{eqnarray*}
+\noindent where $\vR\rot$, $\vV\rot$ and $\vA\rot$ are the position, the velocity and the acceleration, of reference frame S' relative to reference frame S.
+
+\end{document}
+

@@ -1,0 +1,119 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={131.1mm,162.0mm}}
+\geometry{totalwidth=110.1mm,totalheight=126.0mm}
+
+\usepackage{graphicx}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+\spanishdecimal{.}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Una Nueva Dinámica en Relatividad Especial}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.12em\lower.45ex\hbox{$\scriptstyle 2$}\;}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{10.77}{10.77}\selectfont \sc Una Nueva Dinámica en Relatividad Especial}
+
+\bigskip \medskip
+
+{A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2016) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{83.10mm}{En relatividad especial, este artículo presenta una nueva dinámica que puede ser aplicada en cualquier sistema de referencia inercial.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsubsection*{Introducción}}
+
+\bigskip \smallskip
+
+\noindent En relatividad especial, la posición relativista $( \, {\boldsymbol{\varphi}} \, )$, la velocidad relativista $( \, \dot{\boldsymbol{\varphi}} \, )$ y la aceleración relativista $( \, \ddot{\boldsymbol{\varphi}} \, )$ de una partícula están dadas por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+{\boldsymbol{\varphi}} ~\doteq~ \mathbf{r}
+\end{eqnarray*}
+\par \vspace{+0.30em}
+\begin{eqnarray*}
+\dot{\boldsymbol{\varphi}} ~\doteq~ \frac{d{\boldsymbol{\varphi}}}{d{\tau}} ~=~ \frac{\mathbf{v}}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{eqnarray*}
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\ddot{\boldsymbol{\varphi}} ~\doteq~ \frac{d{\dot{\boldsymbol{\varphi}}}}{d{\tau}} ~=~ \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} \left [ \; \frac{\mathbf{a}}{\sqrt{1 - \frac{v^2}{c^2}}} + \frac{(\mathbf{a} \cdot \mathbf{v}) \: \mathbf{v}}{c^2\hspace{-0.18em}\left(1 - \frac{v^2}{c^2}\right)^{\hspace{-0.09em}{3/2}}} \; \right ]
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent donde $( \, \mathbf{r}, \, \mathbf{v}, \, \mathbf{a} \, )$ son la posición, la velocidad y la aceleración de la partícula. $( \, {\tau} \, )$ es el tiempo propio de la partícula. {\small $d{\tau} = \sqrt{1 - v^2/c^2} \; d{t}$}
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Dinámica Poincariana}}
+
+\bigskip \smallskip
+
+\noindent En relatividad especial, sea una partícula con masa en reposo $m_o$ entonces el momento lineal $\mathbf{P}$ de la partícula, la fuerza poincariana neta $\mathbf{\widehat{F}}$ que actúa sobre la partícula, el trabajo $\mathrm{W}$ realizado por la fuerza poincariana neta que actúa sobre la partícula y la energía cinética $\mathrm{K}$ de la partícula, para un sistema de referencia inercial, están dados por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ m_o \, \dot{\boldsymbol{\varphi}}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{\widehat{F}} ~=~ \frac{d\mathbf{P}}{d{\tau}} ~=~ m_o \, \ddot{\boldsymbol{\varphi}}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{W} ~\doteq~ \int_1^{\hspace{+0.06em}2} \mathbf{\widehat{F}} \cdot d{{\boldsymbol{\varphi}}} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{K} ~\doteq~ \med \, m_o \, ( \dot{\boldsymbol{\varphi}} \cdot \dot{\boldsymbol{\varphi}} )
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent $( \, {\boldsymbol{\varphi}}, \, \dot{\boldsymbol{\varphi}}, \, \ddot{\boldsymbol{\varphi}} \, )$ son la posición relativista, la velocidad relativista y la aceleración relativista de la partícula respecto al sistema de referencia inercial.
+\par \vspace{+1.50em}
+\noindent {\small $\mathbf{\widehat{F}} = \gamma \: \mathbf{F}$} ( donde {\small $\gamma$} es el factor de Lorentz y {\small $\mathbf{F}$} es la fuerza einsteniana neta que actúa sobre la partícula )
+\par \vspace{+1.50em}
+\noindent La fuerza poincariana neta $\mathbf{\widehat{F}}$ que actúa sobre una partícula siempre tiene igual dirección y sentido que la aceleración relativista $\ddot{\boldsymbol{\varphi}}$ de la partícula.
+
+\end{document}
+

@@ -1,0 +1,118 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={127.0mm,165.1mm}}
+\geometry{totalwidth=106.0mm,totalheight=129.3mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Central Reference Frame}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{2pt}
+
+\newcommand{\mm}{m}
+\newcommand{\mW}{W}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\ri}{_{\scriptstyle \mathit i}}
+\newcommand{\ra}{_{\scriptscriptstyle \mathrm A}}
+\newcommand{\rc}{^{\scriptscriptstyle \mathrm (c)}}
+\newcommand{\rs}{_{\scriptscriptstyle \mathrm {CM}}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\ \vspace{-0.6em}
+
+\begin{center}
+
+{\LARGE Central Reference Frame}
+
+\bigskip \medskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2011) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{89mm}{In this paper a reference frame is presented, which can be used by any observer (rotating or non-rotating) (inertial or non-inertial) to describe the behavior (motion) of a system of particles without the necessity of introducing fictitious forces.}
+
+\vspace{+0.3em}
+
+\end{center}
+
+\normalsize
+
+{\centering\subsection*{Central Reference Frame}}
+
+\par A central reference frame S$\rc$ is a non-rotating reference frame fixed to the center of mass of a system of particles.
+
+\vspace{+0.6em}
+
+{\centering\subsection*{Equation of Motion}}
+
+\par In a system of particles, the acceleration $\vA\ra\rc$ of a particle A relative to the central reference frame is given by
+\begin{eqnarray*}
+\vA\ra\rc = \frac{\vF\ra}{\mm\ra} - \frac{\vF\rs}{\mm\rs}
+\end{eqnarray*}
+\noindent where $\vF\ra$ is the net force acting on particle A, $\mm\ra$ is the mass of particle A, $\vF\rs$ is the net force acting on the center of mass, and $\mm\rs$ is the mass of the center of mass.
+
+\newpage
+
+{\centering\subsection*{Work and Kinetic Energy}}
+
+\par In a system of particles, the total work $\mW\rc$ done by the forces acting on the system of particles relative to the central reference frame is given by
+\begin{eqnarray*}
+\mW\rc = \sum \: \int{\vF\ri^{\vphantom{\scriptscriptstyle \mathrm (c)}} \cdot d\vR\ri\rc} = \Delta \, \left( \sum \: \med \, {\mm\ri^{\vphantom{\scriptscriptstyle \mathrm (c)}}}{\vV\ri\rc}^2 \right)
+\end{eqnarray*}
+\noindent where ${\vF\ri^{\vphantom{\scriptscriptstyle \mathrm (c)}}}$ is the net force acting on the \textit{i}-th particle, ${\mm\ri^{\vphantom{\scriptscriptstyle \mathrm (c)}}}$ is the mass of the \textit{i}-th particle, $\vR\ri\rc$ and $\vV\ri\rc$ are the position and velocity of the \textit{i}-th particle relative to the central reference frame.
+
+\vspace{+0.6em}
+
+{\centering\subsection*{Conservation of Kinetic Energy}}
+
+\par In a system of particles, if the forces acting on the system of particles do not perform work relative to the central reference frame then the total kinetic energy of the system of particles is conserved relative to the central reference frame.
+
+\vspace{+0.6em}
+
+{\centering\subsection*{Appendix}}
+
+\par The transformations between a central reference frame S$\rc$ and another reference frame S (rotating or non-rotating) (inertial or non-inertial) are
+
+\vspace{-0.6em}
+
+\begin{eqnarray*}
+\vR\ra\rc & = & (\vR\ra - \vR\rs) \\ \\
+\vV\ra\rc & = & (\vV\ra - \vV\rs) \; + \; {\mathbf{\omega}} \times (\vR\ra - \vR\rs) \\ \\
+\vA\ra\rc & = & \frac{\vF\ra}{\mm\ra} - \frac{\vF\rs}{\mm\rs}
+\end{eqnarray*}
+\smallskip
+\par \noindent where ${\mathbf{\omega}}$ is the angular velocity of rotation of the reference frame S relative to the central reference frame S$\rc$.
+
+\end{document}
+

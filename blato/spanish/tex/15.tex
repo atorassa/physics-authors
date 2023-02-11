@@ -1,0 +1,313 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={162.0mm,235.8mm}}
+\geometry{totalwidth=141.0mm,totalheight=199.8mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Una Reformulación de la Mecánica Clásica}}
+\hypersetup{pdfauthor={Alfonso A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Una Reformulación de la Mecánica Clásica}
+
+\bigskip \medskip
+
+{\large Alfonso A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2019) Buenos Aires
+
+\smallskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{108.60mm}{Este trabajo presenta una reformulación de la mecánica clásica que es \hbox {invariante} bajo transformaciones entre sistemas de referencia inerciales y no inerciales y que puede ser aplicada en cualquier sistema de referencia \hbox {sin necesidad} de introducir fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsection*{Introducción}}\addcontentsline{toc}{subsection}{Introducción}
+
+\par \bigskip \noindent La reformulación de la mecánica clásica que este trabajo presenta se desarrolla a partir \hbox {de una fuerza} auxiliar de interacción ( denominada fuerza cinética, puesto que esta fuerza auxiliar de interacción está directamente relacionada con la energía cinética )
+
+\par \bigskip\smallskip \noindent La fuerza cinética ${\mathbf{K}}_{\hspace{+0.009em}ij}$ ejercida sobre una partícula $i$ de masa $m_i$ por otra partícula $j$ de masa $m_j$, causada por la interacción entre la partícula $i$ y la partícula $j$, está dada por:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: - \; \dfrac{m_i \, m_j}{\mathit{M}} \, \Big[ \, ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, \Big]$
+
+\par \bigskip \noindent donde ${\vec{\mathit{a}}}_{i}$, ${\vec{\mathit{v}}}_{i}$, ${\vec{\mathit{r}}}_{i}$ son la aceleración, la velocidad y la posición de la partícula $i$, ${\vec{\mathit{a}}}_{j}$, ${\vec{\mathit{v}}}_{j}$, ${\vec{\mathit{r}}}_{j}$ son la aceleración, la velocidad y la posición de la partícula $j$ (\hspace{+0.150em}que pertenece a un sistema auxiliar de {\small N} partículas, denominado Systema\hspace{+0.150em}) y ${\mathit{M}}$, ${\vec{\omega}}$, ${\vec{\alpha}}$ son la masa, la velocidad angular y la aceleración angular del Systema \hyperlink{a1p1}{(ver Anexo I\hspace{+0.120em})}
+
+\par \bigskip \noindent Desde la ecuación anterior se deduce que la fuerza cinética neta ${\mathbf{K}}_{\hspace{+0.009em}i}$ (\hspace{+0.237em}$ = \sum_{j}^{\scriptscriptstyle{\mathrm{N}}} \, {\mathbf{K}}_{\hspace{+0.009em}ij}$\hspace{+0.237em}) que actúa sobre una partícula $i$ de masa $m_i$, está dada por:
+
+\par \bigskip \hypertarget{e1p2}{} ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: - \; m_i \, \Big[ \, ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{A}}}\hspace{+0.06em}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, \Big]$$\;\;$$\big[\,{\mathrm{Ec.\,2}}\,\big]$
+
+\par \bigskip \noindent donde ${\vec{\mathit{R}}}$, ${\vec{\mathit{V}}}$ y ${\vec{\mathit{A}}}$ son la posición, la velocidad y la aceleración del centro de masa del Systema.
+
+\par \bigskip \noindent Las magnitudes $[ \, m_i, \: m_j,\hspace{+0.06em} {\mathit{M}}\hspace{-0.09em}, \: {\mathbf{K}}_{\hspace{+0.009em}ij}, \: {\mathbf{K}}_{\hspace{+0.009em}i} \, ]$ son invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales.
+
+\par \bigskip \noindent Cualquier sistema de referencia S es un sistema de referencia inercial cuando la velocidad angular ${\vec{\omega}}$ del Systema y la aceleración ${\vec{\mathit{A}}}$ del centro de masa del Systema son iguales a cero (\:${\vec{\omega}}=0$ {\hspace{+0.06em}\small y\hspace{+0.06em}} ${\vec{\mathit{A}}}=0$\:) con respecto a S. Por lo tanto, el sistema de referencia S es un sistema de referencia no inercial cuando la velocidad angular ${\vec{\omega}}$ del Systema y{\small /}o la aceleración ${\vec{\mathit{A}}}$ del centro de masa del Systema no son iguales a cero (\:${\vec{\omega}}\ne 0$ {\hspace{+0.06em}\small y/o\hspace{+0.06em}} ${\vec{\mathit{A}}}\ne 0$\:) con respecto a S.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Ecuación de Movimiento}}\addcontentsline{toc}{subsection}{Ecuación de Movimiento}
+
+\par \bigskip \noindent La fuerza total ${\mathbf{T}}_{\hspace{-0.09em}i}$ que actúa sobre una partícula $i$ es siempre cero.
+
+\par \bigskip ${\mathbf{T}}_{\hspace{-0.09em}i} \;=\: \mathrm{0}$
+
+\par \bigskip \noindent Si la fuerza total ${\mathbf{T}}_{\hspace{-0.09em}i}$ es dividida en las siguientes dos partes: la fuerza cinética neta ${\mathbf{K}}_{\hspace{+0.009em}i}$ y la fuerza dinámica neta ${\mathbf{F}}_{\hspace{-0.09em}i}$ (\hspace{+0.060em}$\sum$ de fuerzas gravitatorias, fuerzas electrostáticas, etc.\hspace{+0.060em}) entonces:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} + {\mathbf{F}}_{\hspace{-0.09em}i} \;=\: \mathrm{0}$
+
+\par \bigskip \noindent Ahora, sustituyendo ${\mathbf{K}}_{\hspace{+0.009em}i}$ por \hyperlink{e1p2}{$\big[\,{\mathrm{Ec.\,2}}\,\big]$} dividiendo por $m_i$ y reordenando, se obtiene:
+
+\par \bigskip ${\vec{\mathit{a}}}_{i} \;=\: {\mathbf{F}}_{\hspace{-0.09em}i}/m_i + {\vec{\mathit{A}}} \hspace{+0.15em} + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}})$
+
+\par \bigskip \noindent Desde la ecuación anterior se deduce que la partícula $i$ puede estar acelerada incluso si sobre la partícula $i$ no actúa fuerza dinámica alguna y también que la partícula $i$ puede no estar acelerada (estado de reposo o de movimiento rectilíneo uniforme) incluso si sobre la \hbox {partícula $i$} actúa una fuerza dinámica neta no equilibrada.
+
+\par \bigskip \noindent Sin embargo, desde la ecuación anterior también se deduce que la primera y segunda ley de Newton son válidas en cualquier sistema de referencia inercial, puesto que la velocidad angular ${\vec{\omega}}$ del Systema y la aceleración ${\vec{\mathit{A}}}$ del centro de masa del Systema son iguales a cero con respecto a cualquier sistema de referencia inercial.
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsection*{Observaciones Generales}}\addcontentsline{toc}{subsection}{Observaciones Generales}
+
+\par \vspace{+0.63em} \noindent Todas las ecuaciones presentadas en este trabajo pueden ser aplicadas en cualquier sistema de referencia inercial o no inercial.
+
+\par \vspace{+0.63em} \noindent Los observadores inerciales y no inerciales no deben introducir fuerzas ficticias sobre ${\mathbf{F}}_{\hspace{-0.09em}i}$.
+
+\par \vspace{+0.63em} \noindent En este trabajo, las siguientes magnitudes $[ \, {\mathit{m}},\, {\mathbf{r}},\, {\mathbf{v}},\, {\mathbf{a}},\, {\mathit{M}}\hspace{-0.09em},\, {\mathit{K}}\hspace{-0.09em},\, {\mathbf{T}},\, {\mathbf{K}},\, {\mathbf{F}} \, ]$ son invariantes bajo transformaciones entre sistemas de referencia inerciales y no \hbox {inerciales}.
+
+\par \vspace{+0.63em} \noindent Las fuerzas cinéticas son causadas por las interacciones entre las partículas y la fuerza cinética neta es la fuerza que equilibra a la fuerza dinámica neta en cada partícula del Universo.
+
+\par \vspace{+0.63em} \noindent Además, las fuerzas cinéticas permanecen invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales ( como lo hacen todas las fuerzas dinámicas )
+
+\par \vspace{+0.63em} \noindent En este trabajo, las fuerzas cinéticas y las fuerzas dinámicas pueden obedecer o desobedecer la tercera ley de Newton en su forma débil y{\small /}o en su forma fuerte ( éste es uno de los objetivos principales de este trabajo )
+
+\par \vspace{+0.63em} \noindent Por otro lado, este trabajo no contradice la primera y segunda ley de Newton puesto que estas dos leyes son válidas en cualquier sistema de referencia inercial ( en la mecánica newtoniana las fuerzas cinéticas son completamente excluidas )
+
+\par \vspace{+0.63em} \noindent Finalmente, la reformulación de la mecánica clásica presentada en este trabajo y la mecánica newtoniana son observacionalmente equivalentes. Sin embargo, los observadores no inerciales solamente pueden utilizar la mecánica newtoniana si introducen fuerzas ficticias sobre ${\mathbf{F}}_{\hspace{-0.09em}i}$.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexos}}
+
+\par \medskip {\centering\subsubsection*{Systema Relacional}}\addcontentsline{toc}{subsection}{Anexo I : Systema Relacional}\hypertarget{a1p1}{}
+
+\par \bigskip \noindent En mecánica clásica, el Systema es un sistema auxiliar de {\small N} partículas que está siempre libre de fuerzas dinámicas externas e internas, que es tridimensional y que las distancias relativas entre las {\small N} partículas permanecen siempre constantes.
+
+\par \bigskip \noindent La posición ${\vec{\mathit{R}}}$, la velocidad ${\vec{\mathit{V}}}$ y la aceleración ${\vec{\mathit{A}}}$ del centro de masa del Systema con respecto a un sistema de referencia S, la velocidad angular ${\vec{\omega}}$ y la aceleración angular ${\vec{\alpha}}$ del Systema con respecto al sistema de referencia S, están dadas por:
+
+\par \bigskip\smallskip \hspace{-2.40em} \begin{tabular}{l}
+${\mathit{M}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i$ \vspace{+1.20em} \\
+${\vec{\mathit{R}}} ~\doteq~ {\mathit{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{r}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{V}}} ~\doteq~ {\mathit{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{v}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{A}}} ~\doteq~ {\mathit{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{a}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\omega}} ~\doteq~ {\mathit{I}}^{\scriptscriptstyle -1}{\vphantom{\sum_1^2}}^{\hspace{-1.500em}\leftrightarrow}\hspace{+0.600em} \cdot {\vec{\mathit{L}}}$ \vspace{+1.20em} \\
+${\vec{\alpha}} ~\doteq~ d({\vec{\omega}})/dt$ \vspace{+1.20em} \\
+${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.210em} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, [ \, |\hspace{+0.090em}{\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}\,|^2 \hspace{+0.309em} {\mathrm{1}}{\vphantom{\sum_1^2}}^{\hspace{-0.639em}\leftrightarrow}\hspace{-0.129em} - ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \otimes ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, ]$ \vspace{+1.20em} \\
+${\vec{\mathit{L}}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \times ({\vec{\mathit{v}}_{i}} - \hspace{-0.120em}{\vec{\mathit{V}}})$
+\end{tabular}
+
+\par \bigskip \noindent donde ${\mathit{M}}$ es la masa del Systema, ${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.300em}$ es el tensor de inercia del Systema (con respecto a ${\vec{\mathit{R}}}$) \hbox {y ${\vec{\mathit{L}}}$ es el momento} angular del Systema con respecto al sistema de referencia S.
+
+\vspace{+1.80em}
+
+\par {\centering\subsubsection*{Magnitudes Invariantes}}\addcontentsline{toc}{subsection}{Anexo II : Magnitudes Invariantes}\hypertarget{a1p2}{}
+
+\par \bigskip\medskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~\doteq~ {\mathbf{r}}_i ~=~ {\mathbf{r}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~\doteq~ {\mathbf{r}}_i\hspace{-0.300em}' ~=~ {\mathbf{r}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~\doteq~ {\mathbf{v}}_i ~=~ {\mathbf{v}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') - {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~\doteq~ {\mathbf{v}}_i\hspace{-0.300em}' ~=~ {\mathbf{v}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~\doteq~ {\mathbf{a}}_{\hspace{+0.045em}i} ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i\hspace{-0.150em}' - {\vec{\mathit{A}}}\hspace{-0.045em}') - 2 \; {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') + {\vec{\omega}}\hspace{+0.060em}' \times [ \, {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') \, ] - {\vec{\alpha}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~\doteq~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}' ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Apéndice A}}
+
+\par \bigskip {\centering\subsection*{Campos y Potenciales I}}\addcontentsline{toc}{subsection}{Apéndice A : Campos y Potenciales I}
+
+\par \bigskip \noindent La fuerza cinética neta ${\mathbf{K}}_{\hspace{+0.009em}i}$ que actúa sobre una partícula $i$ de masa $m_i$ puede ser también expresada como sigue:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ \: {\mathbf{E}} \, + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{A}}}\hspace{+0.06em}) + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, \Big]$
+
+\par \bigskip \noindent donde:
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ]^{\hspace{+0.006em}2} \, + \, \med \, ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}})^{\hspace{+0.03em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] \, + ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}})$
+
+\par \bigskip $\dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} \;=\: - \; {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) + ( {\vec{\mathit{a}}}_{i} - {\vec{\mathit{A}}}\hspace{+0.06em})$
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] \hspace{+0.06em}$
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$
+
+\par \bigskip \noindent La fuerza cinética neta ${\mathbf{K}}_{\hspace{+0.009em}i}$ que actúa sobre una partícula $i$ de masa $m_i$ puede ser también obtenida a partir de la siguiente energía cinética:
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: - \; m_i \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Dado que la energía cinética ${\mathit{K}}_{\hspace{+0.009em}i}$ debe ser positiva, entonces aplicando la siguiente ecuación Euler-Lagrange, se obtiene:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{v}}_i} \, \Bigg] + \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{r}}_i} \;=\: - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent donde ${\mathbf{r}}_i, {\mathbf{v}}_i$ y ${\mathbf{a}}_{\hspace{+0.045em}i}$ son la posición invariante, la velocidad invariante y la aceleración invariante de la partícula $i$ \hbox {\hyperlink{a1p2}{(ver Anexo II\hspace{+0.120em})}}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Apéndice B}}
+
+\par \bigskip {\centering\subsection*{Campos y Potenciales II}}\addcontentsline{toc}{subsection}{Apéndice B : Campos y Potenciales II}
+
+\par \bigskip \noindent La fuerza cinética neta ${\mathbf{K}}_{\hspace{+0.009em}i}$ que actúa sobre una partícula $i$ de masa $m_i$ ( con respecto a un sistema de referencia S fijo a una partícula $s$ ( ${\vec{\mathit{r}}}_{s} = {\vec{\mathit{v}}}_{s} = {\vec{\mathit{a}}}_{s} = 0$ ) de masa $m_s$, con velocidad invariante ${\mathbf{v}}_s$ y aceleración invariante ${\mathbf{a}}_s$ ) puede ser también expresada como sigue:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ \: {\mathbf{E}} \, + {\vec{\mathit{v}}}_{i} \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} + {\vec{\mathit{v}}}_{i} \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - ({\vec{\mathit{a}}}_{i} + {\mathbf{a}}_s) + 2 \; {\vec{\omega}} \times {\vec{\mathit{v}}}_{i} - {\vec{\omega}} \times ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, ) + {\vec{\alpha}} \times {\vec{\mathit{r}}}_{i} \; \Big]$
+
+\par \bigskip \noindent donde:
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, )^{\hspace{+0.006em}2} \, + \, \med \: ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s)^{\hspace{+0.006em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, ) + ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s)$
+
+\par \bigskip $\dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} \;=\: - \; {\vec{\alpha}} \times {\vec{\mathit{r}}}_{i} \, + ({\vec{\mathit{a}}}_{i} + {\mathbf{a}}_s)$
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, )$
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$
+
+\par \bigskip \noindent La fuerza cinética neta ${\mathbf{K}}_{\hspace{+0.009em}i}$ que actúa sobre una partícula $i$ de masa $m_i$ puede ser también obtenida a partir de la siguiente energía cinética:
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: - \; m_i \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s) - ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, ) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Dado que la energía cinética ${\mathit{K}}_{\hspace{+0.009em}i}$ debe ser positiva, entonces aplicando la siguiente ecuación Euler-Lagrange, se obtiene:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{v}}_i} \, \Bigg] + \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{r}}_i} \;=\: - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent donde ${\mathbf{r}}_i, {\mathbf{v}}_i$ y ${\mathbf{a}}_{\hspace{+0.045em}i}$ son la posición invariante, la velocidad invariante y la aceleración invariante de la partícula $i$ \hbox {\hyperlink{a1p2}{(ver Anexo II\hspace{+0.120em})}}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Apéndice C}}
+
+\par \bigskip {\centering\subsection*{Campos y Potenciales III}}\addcontentsline{toc}{subsection}{Apéndice C : Campos y Potenciales III}
+
+\par \bigskip \noindent La fuerza cinética ${\mathbf{K}}_{\hspace{+0.009em}ij}$ ejercida sobre una partícula $i$ de masa $m_i$ por otra partícula $j$ de masa $m_j$ puede ser también expresada como sigue:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ \: {\mathbf{E}} \, + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ - \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ - ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}\hspace{+0.06em}) + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, \Big]$
+
+\par \bigskip \noindent donde:
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ]^{\hspace{+0.006em}2} \, + \, \med \, ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j})^{\hspace{+0.03em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] \, + ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j})$
+
+\par \bigskip $\dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} \;=\: - \; {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) + ( {\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}\hspace{+0.06em})$
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] \hspace{+0.06em}$
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$
+
+\par \bigskip \noindent La fuerza cinética ${\mathbf{K}}_{\hspace{+0.009em}ij}$ ejercida sobre una partícula $i$ de masa $m_i$ por otra partícula $j$ de masa $m_j$ puede ser también obtenida a partir de la siguiente energía cinética:
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.03em}ij} \;=\: - \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.03em}ij} \;=\: \med \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{v}}}_{j}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_{j}) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.03em}ij} \;=\: \med \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Dado que la energía cinética ${\mathit{K}}_{\hspace{+0.03em}ij}$ debe ser positiva, entonces aplicando la siguiente ecuación Euler-Lagrange, se obtiene:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial \, \med \, \frac{m_i \, m_j}{\mathit{M}} \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2}{\partial \, [ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, ]} \, \Bigg] + \dfrac{\partial \, \med \, \frac{m_i \, m_j}{\mathit{M}} \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2}{\partial \, [ \, {\mathbf{r}}_i - {\mathbf{r}}_{\hspace{-0.015em}j} \, ]} \;=\: - \; \dfrac{m_i \, m_j}{\mathit{M}} \, \big[ \, {\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_{\hspace{-0.015em}j} \, \big]$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent donde ${\mathbf{r}}_i, {\mathbf{v}}_i, {\mathbf{a}}_{\hspace{+0.045em}i}, {\mathbf{r}}_{\hspace{-0.015em}j}, {\mathbf{v}}_{\hspace{-0.06em}j}$ y ${\mathbf{a}}_{\hspace{-0.015em}j}$ son las posiciones invariantes, las velocidades invariantes y las aceleraciones invariantes de la partícula $i$ y de la partícula $j$ \hbox {\hyperlink{a1p2}{(ver Anexo II\hspace{+0.120em})}}
+
+\end{document}
+

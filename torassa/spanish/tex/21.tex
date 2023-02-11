@@ -1,0 +1,192 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={150.0mm,210.0mm}}
+\geometry{totalwidth=129.0mm,totalheight=174.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Sistema de Referencia Universal}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rs}{_s}
+\newcommand{\rS}{_S}
+\newcommand{\dos}{^{2}}
+\newcommand{\rab}{_{ab}}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\vK}{\mathbf{K}}
+\newcommand{\til}{\mathring}
+\newcommand{\aV}{\mathbf{\omega}}
+\newcommand{\aA}{\mathbf{\alpha}}
+\newcommand{\daa}{\hspace{-0.36em}^2\hspace{+0.06em}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}\:}
+
+\begin{document}
+
+\begin{center}
+
+{\huge Sistema de Referencia Universal}
+
+\bigskip \bigskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \bigskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+(2013) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+{\bf Resumen}
+
+\bigskip
+
+En mecánica clásica, este trabajo presenta el sistema de referencia universal.
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsection*{Sistema de Referencia Universal}}
+
+\vspace{+1.20em}
+
+\par El sistema de referencia universal es un sistema de referencia fijo al centro de masa del universo.
+\medskip
+\par La posición $\til\vR\ra$, la velocidad $\til\vV\ra$ y la aceleración $\til\vA\ra$ de una partícula A de masa $\mM\ra$ respecto al sistema de referencia universal $\til\mathrm S$, están dadas por:
+\bigskip\smallskip
+\begin{center}
+\begin{tabular}{l}
+$\til\vR\ra = \int\int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT \; d\mT$ \vspace{+1.20em} \\
+$\til\vV\ra = \int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT$ \vspace{+1.20em} \\
+$\til\vA\ra = (\vF\ra/\mM\ra)$
+\end{tabular}
+\end{center}
+\medskip\smallskip
+\noindent donde $\vF\ra$ es la fuerza resultante que actúa sobre la partícula A.
+\bigskip
+\par Desde las ecuaciones anteriores se obtienen las siguientes ecuaciones:
+\bigskip\smallskip
+\begin{center}
+\begin{tabular}{ccc}
+\hspace {-2.31em} {\framebox(108,21){$\mM\ra\til\vR\ra - \int\int \hspace{+0.12em} \vF\ra \; d\mT \; d\mT = 0$}} & {\makebox(3,21){$\rightarrow$}} & {\framebox(180,21){$\med\mM\ra\til\vR\ra\daa - \med\mM\ra(\hspace{+0.03em} \int\int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT \; d\mT)\dos = 0$}} \\
+\hspace {-2.31em} {\makebox(108,12){$\downarrow$}} & & {\makebox(180,12){$\downarrow$}} \\
+\hspace {-2.31em} {\framebox(108,21){$\mM\ra\til\vV\ra - \int \hspace{+0.12em} \vF\ra \; d\mT = 0$}} & {\makebox(3,21){$\rightarrow$}} & {\framebox(180,21){$\med\mM\ra\til\vV\ra\daa - \int \hspace{+0.12em} \vF\ra \; d\til\vR\ra = 0$}} \\
+\hspace {-2.31em} {\makebox(108,12){$\downarrow$}} & {\makebox(3,12){$\nearrow$}} & {\makebox(180,12){$\downarrow$}} \\
+\hspace {-2.31em} {\framebox(108,21){$\mM\ra\til\vA\ra - \vF\ra = 0$}} & {\makebox(3,21){$\rightarrow$}} & {\framebox(180,21){$\med\mM\ra\til\vA\ra\daa - \med\mM\ra(\vF\ra/\mM\ra)\dos = 0$}}
+\end{tabular}
+\end{center}
+\medskip\smallskip
+\noindent donde $\; \med\til\vV\ra\daa=\int\hspace{+0.12em}\til\vA\ra\;d\til\vR\ra \;\rightarrow\; \med\mM\ra\til\vV\ra\daa=\int\hspace{+0.12em}\mM\ra\,\til\vA\ra\;d\til\vR\ra \;\rightarrow\; \med\mM\ra\til\vV\ra\daa=\int\hspace{+0.12em}\vF\ra\;d\til\vR\ra$
+
+\newpage
+
+{\centering\subsection*{Sistema de Referencia}}
+
+\vspace{+1.20em}
+
+\par La posición $\til\vR\ra$, la velocidad $\til\vV\ra$ y la aceleración $\til\vA\ra$ de una partícula A de masa $\mM\ra$ respecto a un sistema de referencia S, están dadas por:
+\bigskip
+\begin{center}
+\begin{tabular}{l}
+$\til\vR\ra = \vR\ra + \til\vR\rS$ \vspace{+1.20em} \\
+$\til\vV\ra = \vV\ra + \til\aV\rS \times \vR\ra + \til\vV\rS$ \vspace{+1.20em} \\
+$\til\vA\ra = \vA\ra + 2 \hspace{+0.12em} \til\aV\rS \times \vV\ra + \til\aV\rS \times (\til\aV\rS \times \vR\ra) + \til\aA\rS \times \vR\ra + \til\vA\rS$
+\end{tabular}
+\end{center}
+\medskip
+\noindent donde $\vR\ra$, $\vV\ra$ y $\vA\ra$ son la posición, la velocidad y la aceleración de la partícula A respecto al sistema de referencia S; $\til\vR\rS$, $\til\vV\rS$, $\til\vA\rS$, $\til\aV\rS$ y $\til\aA\rS$ son la posición, la velocidad, la aceleración, la velocidad angular y la aceleración angular del sistema de referencia S respecto al sistema de referencia universal $\til\mathrm S$.
+\medskip
+\par La posición $\til\vR\rS$, la velocidad $\til\vV\rS$, la aceleración $\til\vA\rS$, la velocidad angular $\til\aV\rS$ y la aceleración angular $\til\aA\rS$ de un sistema de referencia S fijo a una partícula S respecto al sistema de referencia universal $\til\mathrm S$, están dadas por:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+\hspace {-5.7em} $\til\vR\rS = \int\int \hspace{+0.12em} (\vF_0/\mM\rs) \; d\mT \; d\mT$ \vspace{+1.20em} \\
+\hspace {-5.7em} $\til\vV\rS = \int \hspace{+0.12em} (\vF_0/\mM\rs) \; d\mT$ \vspace{+1.20em} \\
+\hspace {-5.7em} $\til\vA\rS = (\vF_0/\mM\rs)$ \vspace{+1.20em} \\
+\hspace {-5.7em} $\til\aV\rS = \big|(\vF_1/\mM\rs - \vF_0/\mM\rs)/(\vR_1 - \vR_0)\big|^{1/2}$ \vspace{+1.20em} \\
+\hspace {-5.7em} $\til\aA\rS = d(\til\aV\rS)/d\mT$
+\end{tabular}
+\end{center}
+\medskip
+\noindent donde $\vF_0$ es la fuerza resultante que actúa sobre el sistema de referencia S en un punto 0, $\vF_1$ es la fuerza resultante que actúa sobre el sistema de referencia S en un punto 1, $\vR_0$ es la posición del punto 0 respecto al sistema de referencia S (el punto 0 es el centro de masa de la partícula S y el origen del sistema de referencia S) $\vR_1$ es la posición del punto 1 respecto al sistema de referencia S (el punto 1 no pertenece al eje de rotación) y $\mM\rs$ es la masa de la partícula S \hspace{+0.09em}(el vector $\til\aV\rS$ es colineal con el eje de rotación)
+\medskip
+\par Por otro lado, la posición $\til\vR\rS$, la velocidad $\til\vV\rS$ y la aceleración $\til\vA\rS$ de un sistema de referencia S respecto al sistema de referencia universal $\til\mathrm S$ están relacionadas con la posición $\vR\rcm$, la velocidad $\vV\rcm$ y la aceleración $\vA\rcm$ del centro de masa del universo respecto al sistema de referencia S.
+
+\newpage
+
+{\centering\subsection*{Fuerza Cinética}}
+
+\vspace{+1.20em}
+
+\par La fuerza cinética $\vK\rab$ ejercida sobre una partícula A de masa $\mM\ra$ por otra partícula B de masa $\mM\rb$, causada por la interacción entre la partícula A y la partícula B, está dada por:
+\begin{eqnarray*}
+\vK\rab = \frac{\mM\ra\mM\rb}{\mM\rcm}(\til\vA\ra - \til\vA\rb)
+\end{eqnarray*}
+\noindent donde $\mM\rcm$ es la masa del centro de masa del universo, $\til\vA\ra$ y $\til\vA\rb$ son las aceleraciones de las partículas A y B respecto al sistema de referencia universal $\til\mathrm S$.
+\medskip
+\par Desde la ecuación anterior se deduce que la fuerza cinética resultante $\vK\ra$ que actúa sobre una partícula A de masa $\mM\ra$, está dada por:
+\begin{eqnarray*}
+\vK\ra = \mM\ra\til\vA\ra
+\end{eqnarray*}
+\noindent donde $\til\vA\ra$ es la aceleración de la partícula A respecto al sistema de referencia universal $\til\mathrm S$.
+\medskip
+\par Desde la página [1], se tiene:
+\begin{eqnarray*}
+\mM\ra\til\vA\ra - \vF\ra = 0
+\end{eqnarray*}
+\par O sea:
+\begin{eqnarray*}
+\vK\ra - \vF\ra = 0
+\end{eqnarray*}
+\par Por lo tanto, la fuerza total $(\vK\ra - \vF\ra)$ que actúa sobre una partícula A está siempre en equilibrio.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Bibliografía}}
+
+\vspace{+1.20em}
+
+\par \textbf{A. Einstein}, Sobre la Teoría de la Relatividad Especial y General.
+\bigskip
+\par \textbf{E. Mach}, La Ciencia de la Mecánica.
+\bigskip
+\par \textbf{R. Resnick y D. Halliday}, Física.
+\bigskip
+\par \textbf{J. Kane y M. Sternheim}, Física.
+\bigskip
+\par \textbf{H. Goldstein}, Mecánica Clásica.
+\bigskip
+\par \textbf{L. Landau y E. Lifshitz}, Mecánica.
+
+\end{document}
+

@@ -1,0 +1,94 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={148.2mm,204.0mm}}
+\geometry{totalwidth=127.2mm,totalheight=168.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Un Principio de Conservación de la Energía Relacional}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\begin{center}
+
+{\Large Un Principio de Conservación de la Energía Relacional}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Licencia Creative Commons Atribución 3.0
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{90mm}{En mecánica clásica, este trabajo presenta un principio de conservación de la energía relacional que puede ser aplicado en cualquier sistema de referencia sin necesidad de introducir fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsubsection*{Principio de Conservación}}
+
+\vspace{+0.90em}
+
+\par La energía cinética $K$ de un sistema de {\small N} partículas de masa total $M$, está dada por:
+\vspace{+0.45em}
+\begin{eqnarray*}
+K = \hspace{+0.06em} \sum_{i={\scriptscriptstyle 1}}^{\mathrm N} \hspace{+0.18em} \sum_{j>i}^{\mathrm N} \hspace{+0.12em} \frac{m_i \hspace{+0.09em} m_j}{M} \hspace{+0.18em} ( \hspace{+0.12em} \dot{r}_{ij} \, \dot{r}_{ij} + \ddot{r}_{ij} \, r_{ij} \hspace{+0.09em} )
+\end{eqnarray*}
+\vspace{+0.15em}
+\par El principio de conservación de la energía relacional establece que en un sistema aislado de {\small N} partículas que está sujeto solamente a fuerzas conservativas (de acción y reacción y proporcionales a $1/r^2$) la energía relacional del sistema de partículas permanece constante.
+\vspace{-0.60em}
+\begin{eqnarray*}
+K + U = constante
+\end{eqnarray*}
+\vspace{-0.45em}
+\par \noindent donde $r_{ij}=|\vec{r}_i - \vec{r}_j|$, $\dot{r}_{ij}=d|\vec{r}_i - \vec{r}_j|/dt$, $\ddot{r}_{ij}=d^2|\vec{r}_i - \vec{r}_j|/dt^2$, $\vec{r}_i$ y $\vec{r}_j$ son las posiciones de las partículas \textit{i}-ésima y \textit{j}-ésima, $m_i$ y $m_j$ son las masas de las partículas \textit{i}-ésima y \textit{j}-ésima. $U$ es la energía potencial interna del sistema aislado de partículas.
+
+\vspace{+1.50em}
+
+{\centering\subsubsection*{Bibliografía}}
+
+\vspace{+1.20em}
+
+{\small
+
+\par \hspace{-0.36em} E. Schr\"{o}dinger. Die Erf\"{u}llbarkeit der Relativit\"{a}tsforderung in der klassischen Mechanik. Annalen der Physik, 1925.
+\medskip
+\par \hspace{-0.36em} A. K. T. Assis. Relational Mechanics and Implementation of Mach's Principle with Weber's Gravitational Force. Apeiron, 2014.
+\medskip
+\par \hspace{-0.36em} V. W. Hughes, H. G. Robinson, and V. Beltran-Lopez. Upper Limit for the Anisotropy of Inertial Mass from Nuclear Resonance Experiments. Physical Review Letters, 1960.
+
+}
+
+\end{document}
+

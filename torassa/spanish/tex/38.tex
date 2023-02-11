@@ -1,0 +1,168 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={168.9mm,194.1mm}}
+\geometry{totalwidth=147.9mm,totalheight=152.1mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Mecánica Clásica Lineal}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\ri}{_i}
+\newcommand{\bre}{\breve}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}\:}
+
+\begin{document}
+
+\begin{center}
+
+{\huge Mecánica Clásica Lineal}
+
+\bigskip \bigskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \bigskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{96mm}{Este trabajo presenta una mecánica clásica lineal, que puede ser aplicada en cualquier sistema de referencia (rotante o no rotante) (inercial o no inercial) sin necesidad de introducir fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsection*{Introducción}}
+
+\vspace{+1.20em}
+
+\par La posición $\vR$, la velocidad $\vV$ y la aceleración $\vA$ de una sola partícula de masa $\mM$, están dadas por:
+\bigskip
+\begin{center}
+\begin{tabular}{l}
+\hspace{-3.09em} $\vR = (\vR)$ \vspace{+1.20em} \\
+\hspace{-3.09em} $\vV = d(\vR)/d\mT$ \vspace{+1.20em} \\
+\hspace{-3.09em} $\vA = d^2(\vR)/d\mT^2$
+\end{tabular}
+\end{center}
+\bigskip
+\noindent donde $\vR$ es el vector posición de la partícula.
+\medskip
+\par Y la posición dinámica $\bre\vR$, la velocidad dinámica $\bre\vV$ y la aceleración dinámica $\bre\vA$, están dadas por:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+$\bre\vR = \int\int \hspace{+0.12em} (\vF/\mM) \; d\mT \; d\mT$ \vspace{+1.20em} \\
+$\bre\vV = \int \hspace{+0.12em} (\vF/\mM) \; d\mT$ \vspace{+1.20em} \\
+$\bre\vA = (\vF/\mM)$
+\end{tabular}
+\end{center}
+\medskip
+\noindent donde $\vF$ es la fuerza resultante que actúa sobre la partícula.
+
+\newpage
+
+{\centering\subsection*{Ecuaciones de Movimiento}}
+
+\vspace{+1.20em}
+
+\par Dadas dos partículas i y j entonces para un sistema de referencia S las ecuaciones de movimiento son:
+\vspace{-0.15em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - (\vR \cdot \bre\vR\rij) \hspace{+0.12em} (\vR \cdot \bre\vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) - (\vR \cdot \bre\vR\rij) \hspace{+0.12em} (\vR \cdot \bre\vV\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vV\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) + (\vR \cdot \vA\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - (\vR \cdot \bre\vV\rij) \hspace{+0.12em} (\vR \cdot \bre\vV\rij) - (\vR \cdot \bre\vA\rij) \hspace{+0.12em} (\vR \cdot \bre\vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par Ahora, como $(\vR \cdot \bre\vV\rij) = \int (\vR \cdot \bre\vA\rij) \hspace{+0.18em} dt$, y $(\vR \cdot \bre\vV\rij) \hspace{+0.12em} (\vR \cdot \bre\vV\rij) = 2 \int (\vR \cdot \bre\vA\rij) \hspace{+0.12em} d(\vR \cdot \bre\vR\rij)$, entonces:
+\vspace{+1.50em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - (\vR \cdot \bre\vR\rij) \hspace{+0.12em} (\vR \cdot \bre\vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) - (\vR \cdot \bre\vR\rij) \hspace{+0.12em} \int (\vR \cdot \bre\vA\rij) \hspace{+0.18em} dt \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vV\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) + (\vR \cdot \vA\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - 2 \int (\vR \cdot \bre\vA\rij) \hspace{+0.12em} d(\vR \cdot \bre\vR\rij) - (\vR \cdot \bre\vA\rij) \hspace{+0.12em} (\vR \cdot \bre\vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par Y como $\vR\rij = \bre\vR\rij$ en cualquier sistema de referencia, finalmente se deduce:
+\vspace{+1.50em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) - (\vR \cdot \vR\rij) \hspace{+0.12em} \int (\vR \cdot \bre\vA\rij) \hspace{+0.18em} dt \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par $\med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \big[ \hspace{+0.12em} (\vR \cdot \vV\rij) \hspace{+0.12em} (\vR \cdot \vV\rij) + (\vR \cdot \vA\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) - 2 \int (\vR \cdot \bre\vA\rij) \hspace{+0.12em} d(\vR \cdot \vR\rij) - (\vR \cdot \bre\vA\rij) \hspace{+0.12em} (\vR \cdot \vR\rij) \hspace{+0.12em} \big] = \hspace{+0.12em} 0$ \\
+\vspace{+0.30em}
+\par \noindent donde $\vR\rij = \vR\ri - \vR\rj$, $\vV\rij = \vV\ri - \vV\rj$, $\vA\rij = \vA\ri - \vA\rj$, $\bre\vR\rij = \bre\vR\ri - \bre\vR\rj$, $\bre\vV\rij = \bre\vV\ri - \bre\vV\rj$, $\bre\vA\rij = \bre\vA\ri - \bre\vA\rj$, $\mM\ri$ y $\mM\rj$ son las masas de las partículas i y j, $\vR\ri$, $\vR\rj$, $\vV\ri$, $\vV\rj$, $\vA\ri$ y $\vA\rj$ son las posiciones, las velocidades y las aceleraciones de las partículas i y j, y $\bre\vR\ri$, $\bre\vR\rj$, $\bre\vV\ri$, $\bre\vV\rj$, $\bre\vA\ri$ y $\bre\vA\rj$ son las posiciones dinámicas, las velocidades dinámicas y las aceleraciones dinámicas de las partículas i y j.
+\vspace{+0.60em}
+\par \noindent $\vR$ es un vector posición definido por dos puntos fijos 1 y 2 del sistema de referencia S ($\vR = \vR_1 - \vR_2$) en el que la aceleración dinámica del punto 1 es igual a la aceleración dinámica del punto 2 ($\bre\vA_1 = \bre\vA_2$)
+
+\newpage
+
+{\centering\subsection*{Sistemas de Referencia}}
+
+\vspace{+1.20em}
+
+\par Las magnitudes $\bre\vR$, $\bre\vV$ y $\bre\vA$ son invariantes bajo transformaciones entre sistemas de referencia.
+\bigskip
+\par En cualquier sistema de referencia $\vR\rij = \bre\vR\rij$. Por lo tanto, $\vR\rij$ es invariante bajo transformaciones entre sistemas de referencia.
+\bigskip
+\par En cualquier sistema de referencia no rotante $\vV\rij = \bre\vV\rij$ y $\vA\rij = \bre\vA\rij$. Por lo tanto, $\vV\rij$ y $\vA\rij$ son invariantes bajo transformaciones entre sistemas de referencia no rotantes.
+\bigskip
+\par En cualquier sistema de referencia inercial $\vA = \bre\vA$. Por lo tanto, $\vA$ es invariante bajo transformaciones entre sistemas de referencia inerciales. Cualquier sistema de referencia inercial es un sistema de referencia no rotante.
+\bigskip
+\par En el sistema de referencia universal $\vR = \bre\vR$, $\vV = \bre\vV$ y $\vA = \bre\vA$. Por lo tanto, el sistema de referencia universal es un sistema de referencia inercial.
+\bigskip
+\par El sistema de referencia universal es un sistema de referencia fijo al centro de masa del universo (si la fuerza resultante que actúa sobre el centro de masa del universo es siempre cero)
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Observaciones}}
+
+\vspace{+1.20em}
+
+\par Las ecuaciones de movimiento son invariantes bajo transformaciones entre sistemas de referencia.
+\bigskip
+\par Las ecuaciones de movimiento pueden ser aplicadas en cualquier sistema de referencia (rotante o no rotante) (inercial o no inercial) sin necesidad de introducir fuerzas ficticias.
+\bigskip
+\par Las ecuaciones de movimiento serían válidas incluso si la tercera ley de movimiento de Newton fuera falsa en un sistema de referencia inercial.
+\bigskip
+\par Las ecuaciones de movimiento serían válidas incluso si las tres leyes de movimiento de Newton fueran falsas en un sistema de referencia no inercial.
+\bigskip
+\par Las ecuaciones de movimiento son ecuaciones de transformación entre sistemas de referencia y pueden obtenerse desde la ecuación general de movimiento ( \hspace{-0.45em} \textbf{A. Torassa}, Ecuación General de Movimiento \hspace{-0.45em} )
+
+\end{document}
+

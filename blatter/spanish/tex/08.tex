@@ -1,0 +1,168 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={151.5mm,219.3mm}}
+\geometry{totalwidth=130.8mm,totalheight=186.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Una Energía Mecánica Alternativa}}
+\hypersetup{pdfauthor={Antonio A. Blatter}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Una Energía Mecánica Alternativa}
+
+\bigskip \medskip
+
+{\large Antonio A. Blatter}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2015) Buenos Aires
+
+\smallskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{104.70mm}{Este trabajo presenta una energía mecánica alternativa que es invariante bajo transformaciones entre sistemas de referencia inerciales y no inerciales.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.50em}
+
+\par \bigskip {\centering\subsection*{Introducción}}
+
+\par \bigskip \noindent El trabajo ${\mathrm{W}}$ realizado por las fuerzas que actúan sobre un sistema de N partículas, la energía cinética ${\mathrm{K}}$ del sistema de partículas, la energía potencial ${\mathrm{U}}$ del sistema de partículas y la energía mecánica ${\mathrm{E}}$ del sistema de partículas, están dados por:
+
+\par \bigskip\medskip ${\mathrm{W}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=\, \Delta \, {\mathrm{K}}$
+
+\par \bigskip\smallskip $\Delta \, {\mathrm{K}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, \big [ \, ({\vec{\mathit{v}}_{i}} - {\vec{\mathit{V}}}_{cm})^2 + ({\vec{\mathit{a}}_{i}} - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) \, \big ]$
+
+\par \bigskip\smallskip $\Delta \, {\mathrm{U}} ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) \, \big ]$
+
+\par \bigskip\smallskip ${\mathrm{E}} ~\doteq~ {\mathrm{K}} + {\mathrm{U}}$
+
+\par \bigskip\smallskip \noindent donde ${\vec{\mathit{r}}_{i}}$, ${\vec{\mathit{v}}_{i}}$ y ${\vec{\mathit{a}}_{i}}$ son la posición, la velocidad y la aceleración de la \textit{i}-ésima partícula, ${\vec{\mathit{R}}}_{cm}$, ${\vec{\mathit{V}}}_{cm}$ y ${\vec{\mathit{A}}}_{cm}$ son la posición, la velocidad y la aceleración del centro de masa del sistema de partículas, $m_i$ es la masa de la \textit{i}-ésima partícula y ${\mathbf{F}}_i$ es la fuerza neta que actúa sobre la \textit{i}-ésima partícula.
+
+\vspace{+0.30em}
+
+\par \bigskip {\centering\subsection*{Principio}}
+
+\par \bigskip \noindent La energía mecánica ${\mathrm{E}}$ de un sistema de N partículas permanece constante si el sistema está sujeto solamente a fuerzas conservativas.
+
+\par \bigskip\medskip ${\mathrm{E}} ~\doteq~ {\mathrm{K}} + {\mathrm{U}} ~=~ {\mathrm{constante}}$
+
+\par \bigskip\medskip \noindent donde ${\mathrm{K}}$ es la energía cinética del sistema de partículas y ${\mathrm{U}}$ es la energía potencial del sistema de partículas.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Relaciones}}
+
+\par \bigskip \noindent El trabajo ${\mathrm{W}}$, la energía cinética ${\mathrm{K}}$ y la energía potencial ${\mathrm{U}}$ de un sistema de N partículas (de masa ${\mathrm{M}}$) pueden ser también expresados como sigue:
+
+\par \bigskip \noindent ${\mathrm{W}} ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, (\frac{{\mathbf{F}}_i}{m_i} - \frac{{\mathbf{F}}_j}{m_j}) \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) + \Delta \, \med \; (\frac{{\mathbf{F}}_i}{m_i} - \frac{{\mathbf{F}}_j}{m_j}) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) \, \big ] ~=~ \Delta \, {\mathrm{K}}$
+
+\par \bigskip \noindent $\Delta \, {\mathrm{K}} ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\vec{\mathit{v}}_{i}} - {\vec{\mathit{v}}_{j}})^2 + ({\vec{\mathit{a}}_{i}} - {\vec{\mathit{a}}_{j}}) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) \, \big ]$
+
+\par \bigskip \noindent $\Delta \, {\mathrm{U}} ~=~ - \, \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, (\frac{{\mathbf{F}}_i}{m_i} - \frac{{\mathbf{F}}_j}{m_j}) \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) + \Delta \, \med \; (\frac{{\mathbf{F}}_i}{m_i} - \frac{{\mathbf{F}}_j}{m_j}) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) \, \big ]$
+
+\par \bigskip \noindent Si la posición radial ${\mathit{r}}_{\hspace{+0.060em}ij}$, la velocidad radial ${\dot{\mathit{r}}}_{\hspace{+0.060em}ij}$ y la aceleración radial ${\ddot{\mathit{r}}}_{\hspace{+0.060em}ij}$ de un par de partículas $ij$, están dadas por: ${\mathit{r}}_{\hspace{+0.060em}ij} \hspace{-0.060em} \doteq \hspace{-0.060em} | \hspace{+0.090em} {\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j} \hspace{+0.090em} |$, ${\dot{\mathit{r}}}_{\hspace{+0.060em}ij} \doteq d(\hspace{+0.045em}{\mathit{r}}_{\hspace{+0.060em}ij})/dt$ y ${\ddot{\mathit{r}}}_{\hspace{+0.060em}ij} \doteq d^2(\hspace{+0.045em}{\mathit{r}}_{\hspace{+0.060em}ij})/dt^2$ entonces la energía cinética ${\mathrm{K}}$ de un sistema de N partículas puede ser también \hbox {expresada como} sigue:
+
+\par \bigskip \noindent $\Delta \, {\mathrm{K}} ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, {\dot{\mathit{r}}}_{\hspace{+0.060em}ij} \, {\dot{\mathit{r}}}_{\hspace{+0.060em}ij} + {\ddot{\mathit{r}}}_{\hspace{+0.060em}ij} \, {\mathit{r}}_{\hspace{+0.060em}ij} \, \big ]$
+
+\par \bigskip \noindent Si la posición escalar ${\tau}_{\hspace{+0.060em}ij}$, la velocidad escalar ${\dot{\tau}}_{\hspace{+0.060em}ij}$ y la aceleración escalar ${\ddot{\tau}}_{\hspace{+0.060em}ij}$ de un par de partículas $ij$, están dadas por: ${\tau}_{\hspace{+0.060em}ij} \doteq \med \: ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \cdot ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j})$, ${\dot{\tau}}_{\hspace{+0.060em}ij} \doteq d(\hspace{+0.045em}{\tau}_{\hspace{+0.060em}ij})/dt$ y ${\ddot{\tau}}_{\hspace{+0.060em}ij} \doteq d^2(\hspace{+0.045em}{\tau}_{\hspace{+0.060em}ij})/dt^2$ entonces la energía cinética ${\mathrm{K}}$ de un sistema de N partículas puede ser también expresada como sigue:
+
+\par \bigskip \noindent $\Delta \, {\mathrm{K}} ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, {\ddot{\tau}}_{\hspace{+0.060em}ij} \, \big ]$
+
+\par \bigskip \noindent El trabajo ${\mathrm{W}}$ y la energía potencial ${\mathrm{U}}$ de un sistema aislado de N partículas cuyas fuerzas internas obedecen la tercera ley de Newton en su forma débil se reducen a:
+
+\par \bigskip \noindent ${\mathrm{W}} ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\vec{\mathit{r}}_{i}} + \Delta \, \med \; {\mathbf{F}}_i \cdot {\vec{\mathit{r}}_{i}} \, \big ] ~=~ \Delta \, {\mathrm{K}}$
+
+\par \bigskip \noindent $\Delta \, {\mathrm{U}} ~=~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\vec{\mathit{r}}_{i}} + \Delta \, \med \; {\mathbf{F}}_i \cdot {\vec{\mathit{r}}_{i}} \, \big ]$
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsection*{Observaciones}}
+
+\par \bigskip \noindent Todas las ecuaciones de este trabajo pueden ser aplicadas en cualquier sistema de referencia inercial o no inercial.
+
+\par \bigskip \noindent Los sistemas de referencia inerciales y no inerciales no deben introducir las fuerzas ficticias sobre ${\mathbf{F}}_i$ ni sobre ${\mathbf{F}}_j$.
+
+\par \bigskip \noindent En este trabajo, las magnitudes $[ \, {\mathit{m}}, {\vec{\mathit{r}}}_{\hspace{+0.060em}ij}, {\mathit{r}}_{\hspace{+0.060em}ij}, {\dot{\mathit{r}}}_{\hspace{+0.060em}ij}, {\ddot{\mathit{r}}}_{\hspace{+0.060em}ij}, {\tau}_{\hspace{+0.060em}ij}, {\dot{\tau}}_{\hspace{+0.060em}ij}, {\ddot{\tau}}_{\hspace{+0.060em}ij}, {\mathrm{M}}, {\mathbf{F}}, {\mathrm{W}}, {\mathrm{K}}, {\mathrm{U}}$ y ${\mathrm{E}} \; ]$ son invariantes bajo transformaciones entre sistemas de referencia inerciales y no \hbox {inerciales}.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexo}}
+
+\par \bigskip \noindent Si se considera un sistema cualquiera de N partículas entonces entre las siguientes magnitudes cinemáticas del sistema se dan siempre estas relaciones:
+
+\par \bigskip \noindent ${\mathbf{r}}_i$, ${\mathbf{v}}_i$ y ${\mathbf{a}}_{\hspace{+0.045em}i}$ son la posición, la velocidad y la aceleración de la \textit{i}-ésima partícula respecto a un sistema de referencia inercial S.
+
+\par \bigskip \noindent ${\mathbf{R}}_{cm}$, ${\mathbf{V}}_{cm}$ y ${\mathbf{A}}_{cm}$ son la posición, la velocidad y la aceleración del centro de masa del sistema de partículas respecto al sistema de referencia inercial S.
+
+\par \bigskip \noindent ${\vec{\mathit{r}}_{i}}$, ${\vec{\mathit{v}}_{i}}$ y ${\vec{\mathit{a}}_{i}}$ son la posición, la velocidad y la aceleración de la \textit{i}-ésima partícula respecto a un sistema de referencia inercial o no inercial S'.
+
+\par \bigskip \noindent ${\vec{\mathit{R}}}_{cm}$, ${\vec{\mathit{V}}}_{cm}$ y ${\vec{\mathit{A}}}_{cm}$ son la posición, la velocidad y la aceleración del centro de masa del sistema de partículas respecto al sistema de referencia inercial o no inercial S'.
+
+\par \bigskip \noindent ${\vec{\omega}}$ y ${\vec{\alpha}}$ son la velocidad angular y la aceleración angular del sistema de referencia inercial o no inercial S' respecto al sistema de referencia inercial S.
+
+{\small
+
+\par \bigskip\smallskip \noindent $\longrightarrow \hspace{+0.90em} ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \,=\, ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})$
+
+\par \bigskip\smallskip \noindent $({\mathbf{v}}_i - {\mathbf{V}}_{cm}) \cdot ({\mathbf{v}}_i - {\mathbf{V}}_{cm}) \,=\, \big [ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) + {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) + {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) + 2 \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) - 2 \, ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) - \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm})^2 - \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ]^2$
+
+\par \bigskip\smallskip \noindent $({\mathbf{a}}_{\hspace{+0.045em}i} \,-\, {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_i \,-\, {\mathbf{R}}_{cm}) \;=\; \big \{ \, ({\vec{\mathit{a}}}_i \,-\, {\vec{\mathit{A}}}_{cm}) \;+\; 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i \,-\, \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \;+\; {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i \,-\, {\vec{\mathit{R}}}_{cm}) \, ] ~\,+$
+
+\par \bigskip\smallskip \noindent ${\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big \} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \,=\, ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) ~\,+$
+
+\par \bigskip\smallskip \noindent $\big \{ \, {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, ] \, \big \} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \,=\, ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) ~\,+$
+
+\par \bigskip\smallskip \noindent $\big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big \{ \, \big [ \, {\vec{\omega}} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \: {\vec{\omega}} - ( \, {\vec{\omega}} \cdot {\vec{\omega}} \, ) \: ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big \} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, {\vec{\omega}} \hspace{+0.120em}\cdot\hspace{+0.090em} ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ]^2 -\, ( \, {\vec{\omega}} \, )^2 \: ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})^2$
+
+\par \bigskip\smallskip \noindent $\longrightarrow \hspace{+0.90em} ({\mathbf{v}}_i - {\mathbf{V}}_{cm})^2 + ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \,=\, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm})^2 + ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})$
+
+}
+
+\end{document}
+

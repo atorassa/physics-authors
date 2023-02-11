@@ -1,0 +1,92 @@
+
+\documentclass[12pt]{article}
+%\documentclass[a4paper,12pt]{article}
+%\documentclass[letterpaper,12pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={153mm,198mm}}
+\geometry{totalwidth=132mm,totalheight=162mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={¿ Es el principio de energía una tautología ?}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{4.5pt}
+
+\newcommand{\mM}{m}
+\newcommand{\mT}{T}
+\newcommand{\mV}{V}
+\newcommand{\dos}{^{\,2}}
+\newcommand{\ct}{constante}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\ep}{\hspace{+3.6em}}
+\newcommand{\eq}{\hspace{+4.2em}}
+\newcommand{\ra}{_{\scriptscriptstyle \mathrm A}}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{18}{18}\selectfont ¿ Es el principio de energía una tautología ?}
+
+\bigskip \bigskip
+
+{\fontsize{12}{12}\selectfont Alejandro A. Torassa}
+
+\bigskip \bigskip
+
+\footnotesize
+
+Licencia Creative Commons Atribución 3.0
+
+(2011) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \bigskip
+
+\small
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{102mm}{Este trabajo muestra que es posible obtener el principio de energía a partir de la aceleración de una partícula.}
+
+\end{center}
+
+\normalsize
+
+\bigskip \bigskip
+
+\noindent En mecánica clásica, si consideramos un campo de fuerzas (uniforme o no uniforme) en el que la aceleración $\vA\ra$ de una partícula A es constante, entonces
+
+\vspace{-0.3em}
+
+\begin{eqnarray*}
+\ep {\vphantom{\int}} \vA\ra & = & \vA\ra \\
+\ep \int_a^b \vA\ra \cdot d\vR\ra & = & \int_a^b \vA\ra \cdot d\vR\ra \\
+\ep {\vphantom{\int}} \Delta \; {\textstyle \frac{1}{2}} \; \vV\ra\dos & = & \Delta \; \vA\ra \cdot \vR\ra \\
+\ep {\vphantom{\int}} \Delta \; {\textstyle \frac{1}{2}} \; \vV\ra\dos - \, \Delta \; \vA\ra^{\vphantom{\dos}} \cdot \vR\ra^{\vphantom{\dos}} & = & 0 \\
+\ep {\vphantom{\int}} \mM\ra^{\vphantom{\dos}} \left( \Delta \; {\textstyle \frac{1}{2}} \; \vV\ra\dos - \, \Delta \; \vA\ra^{\vphantom{\dos}} \cdot \vR\ra^{\vphantom{\dos}} \right) & = & 0 \\
+\ep {\vphantom{\int}} \Delta \; \mT\ra + \, \Delta \; \mV\ra & = & 0 \eq {\hphantom{\ct}} \mT\ra = {\textstyle \frac{1}{2}} \; \mM\ra^{\vphantom{\dos}}\vV\ra\dos \\
+\ep {\vphantom{\int}} \mT\ra + \, \mV\ra & = & \ct \eq {\hphantom{0}} \mV\ra = - \; \mM\ra^{\vphantom{\dos}} \; \vA\ra^{\vphantom{\dos}} \cdot \vR\ra^{\vphantom{\dos}}
+\end{eqnarray*}
+
+\vspace{+0.9em}
+
+\noindent Si $\vA\ra$ no es constante pero $\vA\ra$ es función de $\vR\ra$ entonces se obtiene el mismo resultado, aun si la segunda ley de Newton no fuese válida.
+
+\end{document}
+

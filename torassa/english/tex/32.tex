@@ -1,0 +1,121 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={128.4mm,165.0mm}}
+\geometry{totalwidth=107.4mm,totalheight=129.0mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={A Scalar Equation of Motion}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\mE}{E}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\ri}{_i}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\Hs}{\hspace{+2.10em}}
+\newcommand{\He}{\hspace{+1.20em}}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+
+\begin{document}
+
+\begin{center}
+
+{\Large A Scalar Equation of Motion}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{74mm}{In classical mechanics, this paper presents a scalar equation of motion, which can be applied in any reference frame (rotating or non-rotating) (inertial or non-inertial) without the necessity of introducing fictitious forces.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.60em}
+
+{\centering\subsubsection*{Scalar Equation of Motion}}
+
+\vspace{+1.20em}
+
+\par If we consider two particles A and B of mass $\mM\ra$ and $\mM\rb$ respectively, then the scalar equation of motion, is given by:
+{\fontsize{6}{6}\selectfont\begin{eqnarray*}
+\Hs \frac{1}{2} \hspace{+0.24em} \mM\ra\mM\rb \left[(\vV\ra - \vV\rb)^{\hspace{+0.03em} 2} + (\vA\ra - \vA\rb) \cdot (\vR\ra - \vR\rb)\right] = \frac{1}{2} \hspace{+0.24em} \mM\ra\mM\rb \left[ \hspace{+0.12em} 2 \hspace{-0.12em} \int \hspace{-0.12em} \left(\frac{\vF\ra}{\mM\ra} - \frac{\vF\rb}{\mM\rb}\right) \cdot d(\vR\ra - \vR\rb) + \left(\frac{\vF\ra}{\mM\ra} - \frac{\vF\rb}{\mM\rb}\right) \cdot (\vR\ra - \vR\rb) \hspace{+0.12em} \right]
+\end{eqnarray*}}
+\vspace{-0.90em}
+\par \noindent where $\vV\ra$ and $\vV\rb$ are the velocities of particles A and B, $\vA\ra$ and $\vA\rb$ are the accelerations of particles A and B, $\vR\ra$ and $\vR\rb$ are the positions of particles A and B, and $\vF\ra$ and $\vF\rb$ are the net forces acting on particles A and B.
+\medskip
+\par This scalar equation of motion can be applied in any reference frame (rotating or non-rotating) (inertial or non-inertial) without the necessity of introducing fictitious forces. In addition, this scalar equation of motion is invariant under transformations between reference frames.
+\medskip
+\par On the other hand, this scalar equation of motion would be valid even if Newton's three laws of motion were false.
+
+\newpage
+
+{\centering\subsubsection*{Annex}}
+
+\vspace{+0.90em}
+
+{\centering\subsubsection*{Conservation of Energy}}
+
+\vspace{+0.90em}
+
+\par A system of particles forms a system of biparticles. For example, the system of particles A, B, C and D forms the system of biparticles AB, AC, AD, BC, BD and CD.
+\medskip
+\par In this paper, the total energy $\mE\rij$ of a system of biparticles is:
+{\fontsize{6}{6}\selectfont\begin{eqnarray*}
+\He \mE\rij \hspace{+0.12em} = \hspace{+0.12em} \sum_{\scriptscriptstyle i} \hspace{+0.12em} \sum_{\scriptscriptstyle j>i} \hspace{+0.24em} \frac{1}{2} \hspace{+0.24em} \mM\ri\mM\rj \left[ \hspace{+0.12em} (\vV\ri - \vV\rj)^{\hspace{+0.03em} 2} + (\vA\ri - \vA\rj) \cdot (\vR\ri - \vR\rj) - \hspace{+0.12em} 2 \hspace{-0.12em} \int \hspace{-0.12em} \left(\frac{\vF\ri}{\mM\ri} - \frac{\vF\rj}{\mM\rj}\right) \cdot d(\vR\ri - \vR\rj) - \left(\frac{\vF\ri}{\mM\ri} - \frac{\vF\rj}{\mM\rj}\right) \cdot (\vR\ri - \vR\rj) \hspace{+0.12em} \right]
+\end{eqnarray*}}
+\vspace{-0.90em}
+\par \noindent where $\mM\ri$ and $\mM\rj$ are the masses of the \textit{i}-th and \textit{j}-th particles, $\vV\ri$ and $\vV\rj$ are the velocities of the \textit{i}-th and \textit{j}-th particles, $\vA\ri$ and $\vA\rj$ are the accelerations of the \textit{i}-th and \textit{j}-th particles, $\vR\ri$ and $\vR\rj$ are the positions of the \textit{i}-th and \textit{j}-th particles, and $\vF\ri$ and $\vF\rj$ are the net forces acting on the \textit{i}-th and \textit{j}-th particles.
+\medskip
+\par Therefore, from the scalar equation of motion it follows that the total energy $\mE\rij$ of a system of biparticles is always in equilibrium.
+
+\vspace{+1.50em}
+
+{\centering\subsubsection*{General Equation of Motion}}
+
+\vspace{+1.20em}
+
+\par The scalar equation of motion can be obtained from the following general equation of motion:
+{\fontsize{6}{6}\selectfont\begin{eqnarray*}
+\sum_{\scriptscriptstyle i} \hspace{+0.24em} \sum_{\scriptscriptstyle j>i} \hspace{+0.36em} \mM\ri\mM\rj \left[ \hspace{+0.03em} \frac{(\vR\ri - \vR\rj)}{|\vR\ri - \vR\rj|} \cdot (\vR\ri - \vR\rj) \hspace{+0.06em} - \frac{(\vR\ri - \vR\rj)}{|\vR\ri - \vR\rj|} \cdot \hspace{-0.12em} \int \hspace{-0.12em} \int \hspace{-0.12em} \left(\frac{\vF\ri}{\mM\ri} - \frac{\vF\rj}{\mM\rj}\right) \hspace{+0.12em} dt \hspace{+0.12em} dt \hspace{+0.12em} \right] = \hspace{+0.15em} 0
+\end{eqnarray*}}
+\vspace{-0.90em}
+\par \noindent where $\mM\ri$ and $\mM\rj$ are the masses of the \textit{i}-th and \textit{j}-th particles, $\vR\ri$ and $\vR\rj$ are the positions of the \textit{i}-th and \textit{j}-th particles, and $\vF\ri$ and $\vF\rj$ are the net forces acting on the \textit{i}-th and \textit{j}-th particles.
+
+\end{document}
+

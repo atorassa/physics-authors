@@ -1,0 +1,248 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={167.1mm,213.9mm}}
+\geometry{totalwidth=146.1mm,totalheight=177.9mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Mecánica Clásica Alternativa}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rs}{_s}
+\newcommand{\rS}{_S}
+\newcommand{\dos}{^{2}}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\bre}{\breve}
+\newcommand{\til}{\tilde}
+\newcommand{\uni}{\mathring}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\vK}{\mathbf{K}}
+\newcommand{\aV}{\mathbf{\omega}}
+\newcommand{\aA}{\mathbf{\alpha}}
+\newcommand{\daa}{\hspace{-0.36em}^2\hspace{+0.06em}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}\:}
+
+\begin{document}
+
+\begin{center}
+
+{\huge Mecánica Clásica Alternativa}
+
+\bigskip \bigskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \bigskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+(2013) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{99mm}{Este trabajo presenta una mecánica clásica alternativa, que puede ser aplicada en cualquier sistema de referencia (rotante o no rotante) (inercial o no inercial) sin necesidad de introducir fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsection*{Sistema de Referencia Universal}}
+
+\vspace{+1.20em}
+
+\par El sistema de referencia universal es un sistema de referencia fijo al centro de masa del universo.
+\medskip
+\par La posición universal $\uni\vR\ra$, la velocidad universal $\uni\vV\ra$ y la aceleración universal $\uni\vA\ra$ de una partícula A respecto al sistema de referencia universal $\uni\mathrm S$, están dadas por:
+\bigskip
+\begin{center}
+\begin{tabular}{l}
+\hspace{-3.09em} $\uni\vR\ra = (\vR\ra)$ \vspace{+1.20em} \\
+\hspace{-3.09em} $\uni\vV\ra = d(\vR\ra)/d\mT$ \vspace{+1.20em} \\
+\hspace{-3.09em} $\uni\vA\ra = d^2(\vR\ra)/d\mT^2$
+\end{tabular}
+\end{center}
+\medskip
+\noindent donde $\vR\ra$ es la posición de la partícula A respecto al sistema de referencia universal $\uni\mathrm S$.
+\medskip
+\par La posición dinámica $\bre\vR\ra$, la velocidad dinámica $\bre\vV\ra$ y la aceleración dinámica $\bre\vA\ra$ de una partícula A de masa $\mM\ra$, están dadas por:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+$\bre\vR\ra = \int\int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT \; d\mT$ \vspace{+1.20em} \\
+$\bre\vV\ra = \int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT$ \vspace{+1.20em} \\
+$\bre\vA\ra = (\vF\ra/\mM\ra)$
+\end{tabular}
+\end{center}
+\medskip
+\noindent donde $\vF\ra$ es la fuerza resultante que actúa sobre la partícula A.
+
+\newpage
+
+{\centering\subsection*{Principio General}}
+
+\vspace{+1.20em}
+
+\par La posición total $\til\vR\ra$ de una partícula A, está dada por:
+\begin{eqnarray*}
+\hspace{+0.60em} \til\vR\ra = \uni\vR\ra - \bre\vR\ra
+\end{eqnarray*}
+\par El principio general establece que la posición total $\til\vR\ra$ de una partícula A está siempre en equilibrio.
+\begin{eqnarray*}
+\hspace{+0.45em} \til\vR\ra = 0
+\end{eqnarray*}
+
+\vspace{+0.60em}
+
+{\centering\subsection*{Observaciones}}
+
+\vspace{+1.20em}
+
+\par Aplicando el principio general a una partícula A, se deduce:
+\bigskip\smallskip
+\begin{center}
+\begin{tabular}{ccc}
+{\framebox(96,27){$\mM\ra\uni\vR\ra - \mM\ra\bre\vR\ra = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(120,27){$\med\mM\ra\uni\vR\ra\daa - \med\mM\ra\bre\vR\ra\daa = 0$}} \\
+{\makebox(96,12){$\downarrow$}} & & {\makebox(120,12){$\downarrow$}} \\
+{\framebox(96,27){$\mM\ra\uni\vV\ra - \mM\ra\bre\vV\ra = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(120,27){$\med\mM\ra\uni\vV\ra\daa - \med\mM\ra\bre\vV\ra\daa = 0$}} \\
+{\makebox(96,12){$\downarrow$}} & {\makebox(3,12){$\nearrow$}} & {\makebox(120,12){$\downarrow$}} \\
+{\framebox(96,27){$\mM\ra\uni\vA\ra - \mM\ra\bre\vA\ra = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(120,27){$\med\mM\ra\uni\vA\ra\daa - \med\mM\ra\bre\vA\ra\daa = 0$}}
+\end{tabular}
+\end{center}
+\medskip\smallskip
+\par Sustituyendo $\bre\vR\ra$, $\bre\vV\ra$ y $\bre\vA\ra$ de la página [1] en las ecuaciones anteriores, se obtiene:
+\bigskip\smallskip
+\begin{center}
+\begin{tabular}{ccc}
+{\framebox(123,27){$\mM\ra\uni\vR\ra - \int\int \hspace{+0.12em} \vF\ra \; d\mT \; d\mT = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(192,27){$\med\mM\ra\uni\vR\ra\daa - \med\mM\ra(\hspace{+0.03em} \int\int \hspace{+0.12em} (\vF\ra/\mM\ra) \; d\mT \; d\mT)\dos = 0$}} \\
+{\makebox(123,12){$\downarrow$}} & & {\makebox(192,12){$\downarrow$}} \\
+{\framebox(123,27){$\mM\ra\uni\vV\ra - \int \hspace{+0.12em} \vF\ra \; d\mT = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(192,27){$\med\mM\ra\uni\vV\ra\daa - \int \hspace{+0.12em} \vF\ra \; d\uni\vR\ra = 0$}} \\
+{\makebox(123,12){$\downarrow$}} & {\makebox(3,12){$\nearrow$}} & {\makebox(192,12){$\downarrow$}} \\
+{\framebox(123,27){$\mM\ra\uni\vA\ra - \vF\ra = 0$}} & {\makebox(3,27){$\rightarrow$}} & {\framebox(192,27){$\med\mM\ra\uni\vA\ra\daa - \med\mM\ra(\vF\ra/\mM\ra)\dos = 0$}}
+\end{tabular}
+\end{center}
+\medskip\smallskip
+\par Donde $\; \med\bre\vV\ra\daa=\int\hspace{+0.12em}\bre\vA\ra\;d\bre\vR\ra \;\rightarrow\; \med\mM\ra\bre\vV\ra\daa=\int\hspace{+0.12em}\mM\ra\,\bre\vA\ra\;d\bre\vR\ra \;\rightarrow\; \med\mM\ra\bre\vV\ra\daa=\int\hspace{+0.12em}\vF\ra\;d\bre\vR\ra \;\;\; (\bre\vR\ra=\uni\vR\ra)$
+
+\newpage
+
+{\centering\subsection*{Transformaciones}}
+
+\vspace{+1.20em}
+
+\par La posición universal $\uni\vR\ra$, la velocidad universal $\uni\vV\ra$ y la aceleración universal $\uni\vA\ra$ de una partícula A respecto a un sistema de referencia S, están dadas por:
+\bigskip
+\begin{center}
+\begin{tabular}{l}
+$\uni\vR\ra = \vR\ra + \bre\vR\rS$ \vspace{+1.20em} \\
+$\uni\vV\ra = \vV\ra + \bre\aV\rS \times \vR\ra + \bre\vV\rS$ \vspace{+1.20em} \\
+$\uni\vA\ra = \vA\ra + 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra + \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) + \bre\aA\rS \times \vR\ra + \bre\vA\rS$
+\end{tabular}
+\end{center}
+\medskip
+\noindent donde $\vR\ra$, $\vV\ra$ y $\vA\ra$ son la posición, la velocidad y la aceleración de la partícula A respecto al sistema de referencia S; $\bre\vR\rS$, $\bre\vV\rS$, $\bre\vA\rS$, $\bre\aV\rS$ y $\bre\aA\rS$ son la posición dinámica, la velocidad dinámica, la aceleración dinámica, la velocidad angular dinámica y la aceleración angular dinámica del sistema de referencia S.
+\vspace{+0.45em}
+\par La posición dinámica $\bre\vR\rS$, la velocidad dinámica $\bre\vV\rS$, la aceleración dinámica $\bre\vA\rS$, la velocidad angular dinámica $\bre\aV\rS$ y la aceleración angular dinámica $\bre\aA\rS$ de un sistema de referencia S fijo a una partícula S, están dadas por:
+\medskip
+\begin{center}
+\begin{tabular}{l}
+\hspace {-5.10em} $\bre\vR\rS = \int\int \hspace{+0.12em} (\vF_0/\mM\rs) \; d\mT \; d\mT$ \vspace{+1.20em} \\
+\hspace {-5.10em} $\bre\vV\rS = \int \hspace{+0.12em} (\vF_0/\mM\rs) \; d\mT$ \vspace{+1.20em} \\
+\hspace {-5.10em} $\bre\vA\rS = (\vF_0/\mM\rs)$ \vspace{+1.20em} \\
+\hspace {-5.10em} $\bre\aV\rS = \pm \hspace{+0.12em} \big|(\vF_1/\mM\rs - \vF_0/\mM\rs) \cdot (\vR_1 - \vR_0)/(\vR_1 - \vR_0)^2\big|^{1/2}$ \vspace{+1.20em} \\
+\hspace {-5.10em} $\bre\aA\rS = d(\bre\aV\rS)/d\mT$
+\end{tabular}
+\end{center}
+\medskip
+\noindent donde $\vF_0$ y $\vF_1$ son las fuerzas resultantes que actúan sobre el sistema de referencia S en los \hbox {puntos 0 y 1}, $\vR_0$ y $\vR_1$ son las posiciones de los puntos 0 y 1 respecto al sistema de referencia S y $\mM\rs$ es la masa de la partícula S (el punto 0 es el origen del sistema de referencia S y el centro de masa de la partícula S) (el punto 0 pertenece al eje de rotación dinámica y el segmento 01 es perpendicular al eje de rotación dinámica) (el vector $\bre\aV\rS$ es colineal con el eje de rotación dinámica)
+\medskip
+\par Las magnitudes $\bre\vR$, $\bre\vV$, $\bre\vA$, $\bre\aV$ y $\bre\aA$ son invariantes bajo transformaciones entre sistemas de referencia.
+
+\vspace{+0.30em}
+
+{\centering\subsection*{Sistema de Referencia Inercial}}
+
+\vspace{+1.20em}
+
+\par Un sistema de referencia S es inercial si $\bre\aV\rS=0$ y $\bre\vA\rS=0$, pero éste es no inercial si $\bre\aV\rS \ne 0$ o $\bre\vA\rS \ne 0$.
+\medskip
+\par Este trabajo considera que el sistema de referencia universal $\uni\mathrm S$ es siempre inercial.
+
+\newpage
+
+{\centering\subsection*{Ecuación de Movimiento}}
+
+\vspace{+1.20em}
+
+\par Desde el principio general y las transformaciones se deduce que la aceleración $\vA\ra$ de una partícula A de masa $\mM\ra$ respecto a un sistema de referencia S fijo a una partícula S de masa $\mM\rs$, está dada por:
+\begin{eqnarray*}
+\vA\ra = \vF\ra/\mM\ra - 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra - \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) - \bre\aA\rS \times \vR\ra - \vF\rs/\mM\rs
+\end{eqnarray*}
+\noindent donde $\vF\ra$ es la fuerza resultante que actúa sobre la partícula A y $\vF\rs$ es la fuerza resultante que actúa sobre la partícula S.
+\medskip
+\par En contradicción con la primera y segunda ley de Newton, desde la última ecuación se deduce que la partícula A puede estar acelerada aun si sobre la partícula A no actúa fuerza alguna y también que la partícula A puede no estar acelerada (estado de reposo o de movimiento rectilíneo uniforme) aun si sobre la partícula A actúa una fuerza no equilibrada.
+\medskip
+\par Para poder aplicar la primera y segunda ley de Newton en un sistema de referencia no inercial es necesario introducir fuerzas ficticias.
+\medskip
+\par Sin embargo, este trabajo considera que la primera y segunda ley de Newton son falsas. Por lo tanto, en este trabajo no hay ninguna necesidad de introducir fuerzas ficticias.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Fuerza Cinética}}
+
+\vspace{+1.20em}
+
+\par La fuerza cinética $\vK_{a|b}$ ejercida sobre una partícula A de masa $\mM\ra$ por otra partícula B de masa $\mM\rb$, causada por la interacción entre la partícula A y la partícula B, está dada por:
+\begin{eqnarray*}
+\vK_{a|b} = \frac{\mM\ra\mM\rb}{\mM\rcm}(\uni\vA\ra - \uni\vA\rb)
+\end{eqnarray*}
+\noindent donde $\mM\rcm$ es la masa del centro de masa del universo, $\uni\vA\ra$ y $\uni\vA\rb$ son las aceleraciones universales de las partículas A y B.
+\medskip
+\par Desde la ecuación anterior se deduce que la fuerza cinética resultante $\vK\ra$ que actúa sobre una partícula A de masa $\mM\ra$, está dada por:
+\begin{eqnarray*}
+\vK\ra = \mM\ra\uni\vA\ra
+\end{eqnarray*}
+\noindent donde $\uni\vA\ra$ es la aceleración universal de la partícula A.
+\medskip
+\par Ahora desde la página [2], se tiene:
+\begin{eqnarray*}
+\mM\ra\uni\vA\ra - \vF\ra = 0
+\end{eqnarray*}
+\par O sea:
+\begin{eqnarray*}
+\vK\ra - \vF\ra = 0
+\end{eqnarray*}
+\par Por lo tanto, la fuerza total $(\vK\ra - \vF\ra)$ que actúa sobre una partícula A está siempre en equilibrio.
+
+\end{document}
+

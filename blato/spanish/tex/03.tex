@@ -1,0 +1,119 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={134.1mm,195.0mm}}
+\geometry{totalwidth=113.1mm,totalheight=159.0mm}
+
+\usepackage{graphicx}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+\spanishdecimal{.}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Relatividad Especial con Espacio y Tiempo Absolutos}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\begin{center}
+
+{\sc Relatividad Especial con Espacio y Tiempo Absolutos}
+
+\bigskip \medskip
+
+{A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2016) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{90.60mm}{En relatividad especial, este artículo presenta magnitudes cinemáticas que son invariantes bajo las transformaciones de Lorentz.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsubsection*{Introducción}}
+
+\bigskip \smallskip
+
+\noindent A partir de un cuerpo puntual auxiliar (denominado free-point) es posible obtener magnitudes cinemáticas (denominadas absolutas) que son invariantes bajo las transformaciones de Lorentz.
+\par \bigskip \smallskip
+\noindent El free-point es un cuerpo puntual (partícula masiva) que está siempre libre de fuerzas externas e internas (o que su fuerza resultante está siempre en equilibrio)
+\par \bigskip \smallskip
+\noindent La posición absoluta $( \, \breve{x}_i, \, \breve{y}_i, \, \breve{z}_i \, )$ y el tiempo absoluto $( \, \breve{t}_i \, )$ de una partícula $i$ respecto a un sistema de referencia inercial S, están dados por:
+\par \vspace{+0.30em}
+\begin{eqnarray*}
+\breve{x}_i ~\doteq~ \dfrac{x_i - V_x \, t_i}{\sqrt{1 - \dfrac{V_x^2}{c^2}}} \;\;\;\;\;\; , \;\;\;\;\;\; \breve{y}_i ~\doteq~ y_i \;\;\;\;\;\; , \;\;\;\;\;\; \breve{z}_i ~\doteq~ z_i
+\end{eqnarray*}
+\vspace{+0.60em}
+\begin{eqnarray*}
+\breve{t}_i ~\doteq~ \dfrac{t_i - \dfrac{V_x \, x_i}{c^2}}{\sqrt{1 - \dfrac{V_x^2}{c^2}}}
+\end{eqnarray*}
+\par \vspace{+1.50em}
+\noindent donde $( \, x_i, \, y_i, \, z_i, \, t_i \, )$ son la posición y el tiempo de la partícula $i$ respecto al sistema de referencia inercial S, $( \, V_x \, )$ es la velocidad ( sobre el eje $x$ ) del free-point respecto al sistema de referencia inercial S y $( \, c \, )$ es la velocidad de la luz en el vacío.
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Observaciones}}
+
+\bigskip \smallskip
+
+\noindent En este artículo, las magnitudes cinemáticas $( \, \breve{x}, \, \breve{y}, \, \breve{z}, \, \breve{t} \, )$ son invariantes bajo las transformaciones de Lorentz.
+\par \bigskip \smallskip
+\noindent A partir de las magnitudes anteriores sería posible obtener la posición absoluta $\breve{\mathbf{r}}$, la velocidad absoluta $\breve{\mathbf{v}}$ y la aceleración absoluta $\breve{\mathbf{a}}$ de una partícula con masa en reposo $m_o$ respecto a un sistema de referencia inercial S.
+\par \bigskip \smallskip
+\noindent Luego, el momento lineal $\mathbf{P}$, la fuerza $\mathbf{F}$, el trabajo $\mathrm{W}$ y la energía cinética $\mathrm{K}$, para el sistema de referencia inercial S, estarían dados por:
+\par \vspace{+0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ \dfrac{m_o \, \breve{\mathbf{v}}}{\sqrt{1 - \dfrac{\breve{v}^2}{c^2}}}
+\end{eqnarray*}
+\vspace{+0.60em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ \dfrac{d\mathbf{P}}{d\breve{t}}
+\end{eqnarray*}
+\vspace{+0.30em}
+\begin{eqnarray*}
+\mathrm{W} ~\doteq~ \int_1^{\hspace{+0.06em}2} \mathbf{F} \cdot d\breve{\mathbf{r}} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray*}
+\vspace{+0.30em}
+\begin{eqnarray*}
+\mathrm{K} ~\doteq~ m_o \, c^2 \left ( \: \dfrac{1}{\sqrt{1 - \dfrac{\breve{v}^2}{c^2}}} - 1 \: \right )
+\end{eqnarray*}
+\par \vspace{+1.50em}
+\noindent Según este artículo, las magnitudes $( \, \breve{\mathbf{r}}, \, \breve{\mathbf{v}}, \, \breve{\mathbf{a}}, \, \mathbf{P}, \, \mathbf{F}, \, \mathrm{W}, \, \mathrm{K} \, )$ serían invariantes también bajo las transformaciones de Lorentz.
+\par \bigskip \smallskip
+\noindent Sin embargo, este artículo considera, por un lado, que sería también posible \hbox {obtener} magnitudes cinemáticas y dinámicas $( \, \breve{\mathbf{r}}, \, \breve{\mathbf{v}}, \, \breve{\mathbf{a}}, \, \mathbf{P}, \, \mathbf{F}, \, \mathrm{W}, \, \mathrm{K} \, )$ que serían invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales y, por otro lado, que las magnitudes dinámicas $( \, \mathbf{P}, \, \mathbf{F}, \, \mathrm{W}, \, \mathrm{K} \, )$ \hbox {estarían} dadas también por las ecuaciones de arriba.
+
+\end{document}
+

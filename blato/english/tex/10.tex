@@ -1,0 +1,231 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={131.1mm,210.6mm}}
+\geometry{totalwidth=110.1mm,totalheight=174.6mm}
+
+\usepackage{graphicx}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Vector Lorentz Transformations}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{10.92}{10.92}\selectfont \sc Vector Lorentz Transformations}
+
+\bigskip \medskip
+
+{\fontsize{9.60}{9.60}\selectfont A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2016) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{84.00mm}{This article presents the vector Lorentz transformations of time, space, velocity and acceleration.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsubsection*{Introduction}}
+
+\bigskip \smallskip
+
+\noindent If we consider two inertial reference frames ( S and S' ) whose origins coincide at time zero ( in both frames ) then the time $( \, {t}' \, )$, the position $( \, {\mathbf{r}}' \, )$, the velocity $( \, {\mathbf{v}}' \, )$ and the acceleration $( \, {\mathbf{a}}' \, )$ of a (massive or non-massive) particle relative to the inertial reference frame S' are given by:
+\par \vspace{+0.21em}
+\begin{eqnarray*}
+{t}' ~=~ \hspace{+0.24em} \gamma \left ( t - \frac{\mathbf{r} \cdot \mathbf{V}}{c^2} \right )
+\end{eqnarray*}
+\vspace{+0.15em}
+\begin{eqnarray*}
+{\mathbf{r}}' ~=~ \hspace{-0.09em} \left [ \; \mathbf{r} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{r} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} - \gamma \, \mathbf{V} \, t \; \right ]
+\end{eqnarray*}
+\vspace{+0.30em}
+\begin{eqnarray*}
+{\mathbf{v}}' \hspace{-0.12em} ~=~ \hspace{-0.12em} \left [ \; \mathbf{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{v} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} - \hspace{+0.114em} \gamma \, \mathbf{V} \hspace{+0.114em} \; \right ] \frac{1}{\gamma \, ( 1 - \frac{\mathbf{v} \cdot \mathbf{V}}{c^2} )}
+\end{eqnarray*}
+\vspace{+0.30em}
+\begin{eqnarray*}
+{\mathbf{a}}' ~=~ \hspace{-0.18em} \left [ \; \mathbf{a} - \frac{\gamma}{\gamma + 1} \frac{( \mathbf{a} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} + \frac{( \mathbf{a} \times \mathbf{v} ) \times \mathbf{V}}{c^2} \; \right ] \frac{1}{\gamma^2 \, ( 1 - \frac{\mathbf{v} \cdot \mathbf{V}}{c^2} )^3}
+\end{eqnarray*}
+\par \vspace{+1.80em}
+\noindent where $( \, t, \, \mathbf{r}, \, \mathbf{v}, \, \mathbf{a} \, )$ are the time, the position, the velocity and the acceleration of the particle relative to the inertial reference frame S, $( \, ${\small $\mathbf{V}$}$ \, )$ is the velocity of the inertial reference frame S' relative to the inertial reference frame S and $( \, c \, )$ is the speed of light in vacuum. $( \, ${\small $\mathbf{V}$}$ \, )$ is a constant and {\small $\gamma ~=~ ({1 - \mathbf{V} \hspace{-0.114em}\cdot\hspace{-0.114em} \mathbf{V}/c^2})^{-1/2}$}
+
+\newpage
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} {\mathbf{v}}' ~=~ \dfrac{{d\mathbf{r}}'}{{dt}'} ~=~ \dfrac{{d\mathbf{r}}'}{{dt}'} \: \dfrac{dt}{dt} ~=~ \dfrac{{d\mathbf{r}}'}{dt} \: \dfrac{dt}{{dt}'} ~=~ \left ( \dfrac{{d\mathbf{r}}'}{dt} \right ) \dfrac{1}{\left ( \dfrac{{dt}'}{dt} \right )}
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} {\mathbf{a}}' ~=~ \dfrac{{d\mathbf{v}}'}{{dt}'} ~=~ \dfrac{{d\mathbf{v}}'}{{dt}'} \: \dfrac{dt}{dt} ~=~ \dfrac{{d\mathbf{v}}'}{dt} \: \dfrac{dt}{{dt}'} ~=~ \left ( \dfrac{{d\mathbf{v}}'}{dt} \right ) \dfrac{1}{\left ( \dfrac{{dt}'}{dt} \right )}
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} {dt}' ~=~ \hspace{+0.24em} \gamma \left ( dt - \frac{d\mathbf{r} \cdot \mathbf{V}}{c^2} \right )
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} \left ( \dfrac{{dt}'}{dt} \right ) ~=~ \hspace{+0.24em} \gamma \left ( 1 - \frac{\mathbf{v} \cdot \mathbf{V}}{c^2} \right )
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} {d\mathbf{r}}' ~=~ \hspace{-0.09em} \left [ \; d\mathbf{r} + \frac{\gamma^2}{\gamma + 1} \frac{( d\mathbf{r} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} - \gamma \, \mathbf{V} \, dt \; \right ]
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} \left ( \dfrac{{d\mathbf{r}}'}{dt} \right ) ~=~ \hspace{-0.09em} \left [ \; \mathbf{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{v} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} - \gamma \, \mathbf{V} \; \right ]
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} {d\mathbf{v}}' ~=~ \Big [ \; d\mathbf{m} \cdot n - \mathbf{m} \cdot dn \; \Big ] \: \dfrac{1}{n^2}
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} \mathbf{m} ~=~ \hspace{-0.18em} \left [ \; \mathbf{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \mathbf{v} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} - \hspace{+0.114em} \gamma \, \mathbf{V} \hspace{+0.114em} \; \right ]
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} d\mathbf{m} ~=~ \hspace{-0.18em} \left [ \; d\mathbf{v} + \frac{\gamma^2}{\gamma + 1} \frac{( d\mathbf{v} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} \; \right ]
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} n ~=~ \hspace{-0.18em} \left [ \; \gamma \, ( 1 - \frac{\mathbf{v} \cdot \mathbf{V}}{c^2} ) \; \right ]
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} dn ~=~ \hspace{-0.18em} \left [ \; - \, \gamma \, \frac{d\mathbf{v} \cdot \mathbf{V}}{c^2} \; \right ]
+$
+
+\par \vspace{+2.07em}
+
+\noindent $\bullet$
+$
+\hspace{+1.20em} \left ( \dfrac{{d\mathbf{v}}'}{dt} \right ) ~=~ \hspace{-0.18em} \left [ \; \mathbf{a} - \frac{\gamma}{\gamma + 1} \frac{( \mathbf{a} \cdot \mathbf{V} ) \, \mathbf{V}}{c^2} + \frac{( \mathbf{a} \times \mathbf{v} ) \times \mathbf{V}}{c^2} \; \right ] \frac{1}{\gamma \, ( 1 - \frac{\mathbf{v} \cdot \mathbf{V}}{c^2} )^2}
+$
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Bibliography}}
+
+\bigskip \smallskip
+
+\par \noindent https://it.wikipedia.org/wiki/Trasformazione\_di\_Lorentz
+\bigskip \medskip
+\par \noindent https://en.wikipedia.org/wiki/Lorentz\_transformation
+\bigskip \medskip
+\par \noindent https://arxiv.org/abs/physics/0507099
+\bigskip \medskip
+\par \noindent https://arxiv.org/abs/physics/0702191
+\bigskip \medskip
+\par \noindent https://archive.org/details/blato\_links
+\bigskip \medskip
+\par \noindent https://archive.org/details/@a\_blato
+
+\par \vspace{+1.20em}
+
+\par \bigskip {\centering\subsubsection*{Appendix I}}
+
+\bigskip \medskip
+
+\noindent In the previous bibliography, if the velocity of the inertial reference frame S' relative to the inertial reference frame S is non-zero $( \, ${\small $\mathbf{V} \ne 0$}$ \, )$ then we have:
+
+\par \vspace{+1.80em}
+
+$\dfrac{\gamma - 1}{\mathbf{V}^2} ~=~ \dfrac{\gamma^2}{\gamma + 1} \, \dfrac{1}{c^2}$ \hspace{+2.40em} $( \: ${\small $\mathbf{V}^2 = \mathbf{V} \hspace{-0.114em}\cdot\hspace{-0.114em} \mathbf{V}$}$ \: )$
+
+\par \vspace{+2.10em}
+
+\noindent where $( \, c \, )$ is the speed of light in vacuum and \hbox {{\small $\gamma ~=~ ({1 - \mathbf{V} \hspace{-0.114em}\cdot\hspace{-0.114em} \mathbf{V}/c^2})^{-1/2}$}}
+
+\par \vspace{+1.20em}
+
+\par \bigskip {\centering\subsubsection*{Appendix II}}
+
+\bigskip \medskip
+
+\noindent Quotient rule:
+$
+\hspace{+1.20em} \mathbf{a} ~=~ \dfrac{\mathbf{m}}{n} \hspace{+1.29em} \rightarrow \hspace{+1.29em} d\mathbf{a} ~=~ \Big [ \; d\mathbf{m} \cdot n - \mathbf{m} \cdot dn \; \Big ] \: \dfrac{1}{n^2}
+$
+
+\par \vspace{+2.40em}
+
+\noindent Triple product expansion:
+$
+\hspace{+1.20em} \mathbf{a} \times ( \, \mathbf{b} \times \mathbf{c} \, ) ~=~ \mathbf{b} \, ( \, \mathbf{a} \cdot \mathbf{c} \, ) - \mathbf{c} \, ( \, \mathbf{a} \cdot \mathbf{b} \, )
+$
+
+\par \vspace{+2.61em}
+
+\noindent Anticommutativity:
+$
+\hspace{+1.20em} ( \, \mathbf{a} \times \mathbf{b} \, ) ~=~ - ( \, \mathbf{b} \times \mathbf{a} \, )
+$
+
+\end{document}
+

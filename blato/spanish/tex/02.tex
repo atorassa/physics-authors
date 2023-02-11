@@ -1,0 +1,154 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={134.1mm,183.0mm}}
+\geometry{totalwidth=113.1mm,totalheight=147.0mm}
+
+\usepackage{graphicx}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+\spanishdecimal{.}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Sobre el Principio de Mínima Acción}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Sobre el Principio de Mínima Acción}
+
+\bigskip \medskip
+
+{\large A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2015) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{90.60mm}{En mecánica clásica, este artículo obtiene el principio de mínima acción de una manera didáctica y sencilla para una sola partícula.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsection*{Introducción}}
+
+\bigskip \medskip
+
+\noindent Consideremos la siguiente ecuación tautológica (ecuación que no se puede refutar empíricamente) para una sola partícula:
+\par \bigskip \smallskip
+\noindent $\dfrac{d(\mathbf{v} \cdot \delta \mathbf{r})}{dt} = \delta \dfrac{1}{2} \mathbf{v} \cdot \mathbf{v} + \mathbf{a} \cdot \delta \mathbf{r}$
+\par \bigskip \smallskip
+\noindent Ahora integrando con respecto al tiempo desde $t_1$ a $t_2$, resulta:
+\par \bigskip \smallskip
+\noindent $\int_{t_1}^{t_2} \left[ \dfrac{d(\mathbf{v} \cdot \delta \mathbf{r})}{dt} \right] \hspace{+0.12em} dt = \int_{t_1}^{t_2} \left[ \delta \dfrac{1}{2} \mathbf{v} \cdot \mathbf{v} + \mathbf{a} \cdot \delta \mathbf{r} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent El lado izquierdo de la ecuación es igual a cero, por lo tanto, se obtiene:
+\par \bigskip \smallskip
+\noindent $0 = \int_{t_1}^{t_2} \left[ \delta \dfrac{1}{2} \mathbf{v} \cdot \mathbf{v} + \mathbf{a} \cdot \delta \mathbf{r} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent Esta última ecuación aún es tautológica y sería la ecuación, la estructura o la base matemática del principio de mínima acción en mecánica clásica para una sola partícula.
+
+\newpage
+
+\noindent Ahora si multiplicamos por la masa m de la partícula que es un invariante nos da la siguiente ecuación que también es tautológica:
+\par \bigskip \smallskip
+\noindent $0 = \int_{t_1}^{t_2} \left[ \delta \dfrac{1}{2} \hspace{+0.12em} m \hspace{+0.12em} (\mathbf{v} \cdot \mathbf{v}) + m \hspace{+0.12em} \mathbf{a} \cdot \delta \mathbf{r} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent Pero como en todo sistema inercial $\mathbf{a}=\mathbf{F}/m$ (así como en todo sistema no inercial considerando a las fuerzas ficticias) entonces reemplazando nos da la siguiente ecuación que ya es empírica:
+\par \bigskip \smallskip
+\noindent $0 = \int_{t_1}^{t_2} \left[ \delta \dfrac{1}{2} \hspace{+0.12em} m \hspace{+0.12em} (\mathbf{v} \cdot \mathbf{v}) + \mathbf{F} \cdot \delta \mathbf{r} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent Si sobre la partícula sólo actúan fuerzas conservativas entonces $\delta V = - \mathbf{F} \cdot \delta \mathbf{r}$ y como $T = \dfrac{1}{2} m \hspace{+0.12em} (\mathbf{v} \cdot \mathbf{v})$ reemplazando queda:
+\par \bigskip \smallskip
+\noindent $0 = \int_{t_1}^{t_2} \left[ \hspace{+0.12em} \delta T - \delta V \hspace{+0.12em} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent Esto es:
+\par \bigskip \smallskip
+\noindent $0 = \delta \int_{t_1}^{t_2} \left[ \hspace{+0.12em} T - V \hspace{+0.12em} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent O bien:
+\par \bigskip \smallskip
+\noindent $\delta \int_{t_1}^{t_2} \left[ \hspace{+0.12em} T - V \hspace{+0.12em} \right] \hspace{+0.12em} dt = 0$
+\par \bigskip \smallskip
+\noindent Finalmente se obtiene:
+\par \bigskip \smallskip
+\noindent $\delta \int_{t_1}^{t_2} L \hspace{+0.24em} dt = 0$
+\par \bigskip \smallskip
+\noindent Puesto que $L= T - V$.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexo}}
+
+\bigskip \medskip
+
+\noindent $\dfrac{d}{dt}(\bf{v} \cdot \delta \bf{r}) = \ldots$
+\par \bigskip
+\par \bigskip
+\noindent $\dfrac{d}{dt}(m \, \bf{v} \cdot \delta \bf{r}) = \ldots$
+\par \bigskip
+\noindent $\sum_i \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \delta {\bf{r}}_i) = \ldots$
+\par \bigskip
+\noindent $\sum_{i,j} \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j) = \ldots$
+\par \bigskip
+\par \bigskip
+\noindent $\sum_{i,j} \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j) = \sum_{i,j} m_i \, {\bf{v}}_i \cdot \dfrac{d}{dt}(\dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j) + \sum_{i,j} m_i \, {\bf{a}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j$
+\par \bigskip
+\noindent $\sum_{i,j} \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j) - \sum_{i,j} m_i \, {\bf{v}}_i \cdot \dfrac{d}{dt}(\dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j) = \sum_{i,j} m_i \, {\bf{a}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j$
+\par \bigskip
+\noindent $\sum_{i,j} \big [ \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j}) - m_i \, {\bf{v}}_i \cdot \dfrac{d}{dt}(\dfrac{\partial {\bf{r}}_i}{\partial q_j}) \big ] \, \delta q_j = \sum_{i,j} m_i \, {\bf{a}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j$
+\par \bigskip
+\par \bigskip
+\noindent $\sum_{i,j} \big [ \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j}) - m_i \, {\bf{v}}_i \cdot \dfrac{d}{dt}(\dfrac{\partial {\bf{r}}_i}{\partial q_j}) \big ] \, \delta q_j = \sum_{i,j} {\bf{F}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j$
+
+\bigskip \smallskip
+
+\par \bigskip {\centering\subsection*{Bibliografía}}
+
+\bigskip \medskip
+
+{\fontsize{8.83}{8.83}\selectfont
+
+\noindent http://forum.lawebdefisica.com/threads/28510-Estructura-del-principio-de-mínima-acción
+\par \bigskip \smallskip
+\noindent http://es.wikipedia.org/wiki/Principio\_de\_mínima\_acción
+\par \bigskip \smallskip
+\noindent http://es.wikipedia.org/wiki/Desplazamiento\_virtual
+
+}
+
+\end{document}
+

@@ -1,0 +1,134 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={129.0mm,202.5mm}}
+\geometry{totalwidth=108.0mm,totalheight=166.5mm}
+
+\usepackage{graphicx}
+
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Special Relativity \& Newton's Second Law}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.12em\lower.45ex\hbox{$\scriptstyle 2$}\;}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{10.98}{10.98}\selectfont \sc Special Relativity \hspace{+0.06em}\&\hspace{+0.06em} Newton's Second Law}
+
+\bigskip \medskip
+
+{A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2016) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{81.00mm}{In special relativity, this article shows that Newton's second law can be applied in any inertial reference frame.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsubsection*{Introduction}}
+
+\bigskip \smallskip
+
+\noindent In special relativity, the linear momentum $\mathbf{P}$ of a particle with rest mass $m_o$ is given by the following equation:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ \frac{m_o \, \mathbf{v}}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent The relationship between the net Einsteinian force $\mathbf{F}$ acting on the particle and the linear momentum $\mathbf{P}$ of the particle is given by:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ \frac{d\mathbf{P}}{d{t}} ~=~ m_o \left [ \; \frac{\mathbf{a}}{\sqrt{1 - \frac{v^2}{c^2}}} + \frac{(\mathbf{a} \cdot \mathbf{v}) \: \mathbf{v}}{c^2\hspace{-0.18em}\left(1 - \frac{v^2}{c^2}\right)^{\hspace{-0.09em}{3/2}}} \; \right ]
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent Now, substituting $\mathbf{a} = \mathbf{1} \cdot \mathbf{a}$ ( $\mathbf{1}$ is the unit tensor ) and $( \mathbf{a} \cdot \mathbf{v} ) \: \mathbf{v} = ( \mathbf{v} \otimes \mathbf{v} ) \cdot \mathbf{a}$ \hbox {( $\otimes$ is the tensor product or dyadic product )} we obtain:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ m_o \left [ \; \frac{\mathbf{1} \cdot \mathbf{a}}{\sqrt{1 - \frac{v^2}{c^2}}} + \frac{( \mathbf{v} \otimes \mathbf{v} ) \cdot \mathbf{a}}{c^2\hspace{-0.18em}\left(1 - \frac{v^2}{c^2}\right)^{\hspace{-0.09em}{3/2}}} \; \right ]
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent that is:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ m_o \left [ \; \frac{\mathbf{1}}{\sqrt{1 - \frac{v^2}{c^2}}} + \frac{\hspace{-0.33em}( \mathbf{v} \otimes \mathbf{v} )}{c^2\hspace{-0.18em}\left(1 - \frac{v^2}{c^2}\right)^{\hspace{-0.09em}{3/2}}} \; \right ] \cdot \hspace{+0.06em}\mathbf{a}
+\end{eqnarray*}
+
+\newpage
+
+\noindent The tensor in brackets is defined as the Newton tensor, and the above equation can be rearranged as follows:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\left [ \; \frac{\mathbf{1}}{\sqrt{1 - \frac{v^2}{c^2}}} + \frac{\hspace{-0.33em}( \mathbf{v} \otimes \mathbf{v} )}{c^2\hspace{-0.18em}\left(1 - \frac{v^2}{c^2}\right)^{\hspace{-0.09em}{3/2}}} \; \right ]^{\hspace{-0.15em}-1} \hspace{-0.24em}\cdot \hspace{+0.12em}\mathbf{F} ~=~ m_o \, \mathbf{a}
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent Identifying the left-hand side as the net Newtonian force $\mathbf{\overline{F}}$ acting on the particle, then we finally obtain:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+\mathbf{\overline{F}} ~=~ m_o \, \mathbf{a}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent Therefore, the acceleration $\mathbf{a}$ of a particle is always in the direction of the \hbox {net Newtonian} force $\mathbf{\overline{F}}$ acting on the particle.
+
+\vspace{-0.60em}
+
+\par \bigskip {\centering\subsubsection*{The Newtonian Dynamics}}
+
+\bigskip \smallskip
+
+\noindent In special relativity, if we consider a particle with rest mass $m_o$ then the linear momentum $\mathbf{P}$ of the particle, the net Newtonian force $\mathbf{\overline{F}}$ acting on the particle, the work $\mathrm{W}$ done by the net Newtonian force acting on the particle, and the kinetic energy $\mathrm{K}$ of the particle, for an inertial reference frame, are given by:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ m_o \, \mathbf{v}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{\overline{F}} ~=~ \frac{d\mathbf{P}}{d{t}} ~=~ m_o \, \mathbf{a}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{W} ~\doteq~ \int_1^{\hspace{+0.06em}2} \mathbf{\overline{F}} \cdot d{\mathbf{r}} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{K} ~\doteq~ \med \, m_o \, ( \mathbf{v} \cdot \mathbf{v} )
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent where $( \, \mathbf{r}, \, \mathbf{v}, \, \mathbf{a} \, )$ are the position, the velocity and the acceleration of the particle relative to the inertial reference frame. {\small $\mathbf{\overline{F}} ~=~ \mathbf{N}^{-1} \cdot \mathbf{F}$}, where {\small $\mathbf{N}$} is the Newton tensor and {\small $\mathbf{F}$} is the net Einsteinian force acting on the particle.
+
+\end{document}
+

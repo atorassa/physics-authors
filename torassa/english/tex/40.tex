@@ -1,0 +1,100 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={157.0mm,210.0mm}}
+\geometry{totalwidth=136.0mm,totalheight=168.0mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={A New Principle of Least Action}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\mL}{L}
+\newcommand{\mT}{T}
+\newcommand{\mV}{V}
+\newcommand{\ri}{_i}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\Hs}{\hspace{+0.90em}}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE A New Principle of Least Action}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{102mm}{In classical mechanics, this paper presents a new principle of least action which is invariant under transformations between reference frames and which can be applied in any reference frame (rotating or non-rotating) (inertial or non-inertial) without the necessity of introducing fictitious forces.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.30em}
+
+{\centering\subsubsection*{The New Principle of Least Action}}
+
+\vspace{+0.90em}
+
+\par If we consider two particles i and j then the new principle of least action is given by:
+\vspace{+0.90em}
+\begin{eqnarray*}
+\Hs \delta \int_{t_1}^{t_2} \mL\rij \hspace{+0.24em} dt = 0
+\end{eqnarray*}
+\vspace{+0.30em}
+\begin{eqnarray*}
+\Hs \delta \int_{t_1}^{t_2} (\mT\rij - \mV\rij) \hspace{+0.24em} dt = 0
+\end{eqnarray*}
+\vspace{+0.30em}
+\begin{eqnarray*}
+\Hs \mT\rij = + \hspace{+0.18em} \med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.12em} \left[ \hspace{+0.12em} (\vV\ri - \vV\rj) \cdot (\vV\ri - \vV\rj) + (\vA\ri - \vA\rj) \cdot (\vR\ri - \vR\rj) \hspace{+0.12em} \right]
+\end{eqnarray*}
+\vspace{+0.30em}
+\begin{eqnarray*}
+\Hs \mV\rij = - \hspace{+0.18em} \med \hspace{+0.15em} \mM\ri\hspace{+0.09em}\mM\rj \hspace{+0.03em} \left[ \hspace{+0.12em} 2 \hspace{-0.12em} \int \hspace{-0.12em} \left(\frac{\vF\ri}{\mM\ri} - \frac{\vF\rj}{\mM\rj}\right) \cdot d(\vR\ri - \vR\rj) + \left(\frac{\vF\ri}{\mM\ri} - \frac{\vF\rj}{\mM\rj}\right) \cdot (\vR\ri - \vR\rj) \hspace{+0.12em} \right]
+\end{eqnarray*}
+\vspace{+0.60em}
+\par \noindent where $\mM\ri$ and $\mM\rj$ are the masses of particles i and j, $\vR\ri$, $\vR\rj$, $\vV\ri$, $\vV\rj$, $\vA\ri$ and $\vA\rj$ are the positions, the velocities and the accelerations of particles i and j, and $\vF\ri$ and $\vF\rj$ are the net (conservative) forces acting on particles i and j.
+\bigskip
+\par The Lagrangian $\mL\rij$ is invariant under transformations between reference frames.
+\bigskip
+\par The Lagrangian $\mL\rij$ can be applied in any reference frame (rotating or non-rotating) (inertial or non-inertial) without the necessity of introducing fictitious forces.
+
+\end{document}
+

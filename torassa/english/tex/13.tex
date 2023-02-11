@@ -1,0 +1,518 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={127.0mm,165.1mm}}
+\geometry{totalwidth=108.0mm,totalheight=129.7mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+\usepackage{chngpage}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Classical Mechanics: Particles and Biparticles}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\unitlength}{0.81pt}
+\setlength{\arraycolsep}{1.47pt}
+
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\VR}{\mathbf{R}}
+\newcommand{\VV}{\mathbf{V}}
+\newcommand{\VA}{\mathbf{A}}
+\newcommand{\ER}{\mathrm{R}}
+\newcommand{\EV}{\mathrm{V}}
+\newcommand{\EA}{\mathrm{A}}
+\newcommand{\mX}{x}
+\newcommand{\mY}{y}
+\newcommand{\mZ}{z}
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\EM}{M}
+\newcommand{\EW}{W}
+\newcommand{\rt}{'}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rc}{_c}
+\newcommand{\ri}{_i}
+\newcommand{\rs}{_s}
+\newcommand{\rab}{_{ab}}
+\newcommand{\rot}{_{o'}}
+\newcommand{\dos}{^{\,2}}
+\newcommand{\ccc}{^{\,cm}}
+\newcommand{\uuu}{\mathring}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+
+\newcommand{\xgg}{63}
+\newcommand{\xff}{12}
+\newcommand{\xee}{51}
+\newcommand{\xdd}{0}
+\newcommand{\xcc}{63}
+\newcommand{\xbb}{12}
+\newcommand{\xaa}{75}
+
+\newcommand{\ykk}{33}
+\newcommand{\yjj}{12}
+\newcommand{\yii}{33}
+\newcommand{\yhh}{12}
+\newcommand{\ygg}{33}
+\newcommand{\yff}{33}
+\newcommand{\yee}{33}
+\newcommand{\ydd}{12}
+\newcommand{\ycc}{33}
+\newcommand{\ybb}{12}
+\newcommand{\yaa}{33}
+
+\newcommand{\daa}{\hspace{-0.36em}^2\hspace{+0.06em}}
+\newcommand{\dab}{\hspace{-0.72em}^2\hspace{+0.36em}}
+
+\newcommand{\xaaykk}{{\color[rgb]{0,0,1}$\frac{1}{2}\vA\rab\dab = \frac{1}{2}\uuu\vA\rab\dab$}}
+\newcommand{\xaayjj}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xaayii}{{\color[rgb]{0,0,1}$\frac{1}{2}\vV\rab\dab = \frac{1}{2}\uuu\vV\rab\dab$}}
+\newcommand{\xaayhh}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xaaygg}{{\color[rgb]{0,0,1}$\frac{1}{2}\vR\rab\dab = \frac{1}{2}\uuu\vR\rab\dab$}}
+\newcommand{\xaayff}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xaayee}{{\color[rgb]{0,0,1}$\frac{1}{2}\mM\rab\vR\rab\dab = \frac{1}{2}\mM\rab\uuu\vR\rab\dab$}}
+\newcommand{\xaaydd}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xaaycc}{{\color[rgb]{0,0,1}$\frac{1}{2}\mM\rab\vV\rab\dab = \frac{1}{2}\mM\rab\uuu\vV\rab\dab$}}
+\newcommand{\xaaybb}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xaayaa}{{\color[rgb]{0,0,1}$\frac{1}{2}\mM\rab\vA\rab\dab = \frac{1}{2}\mM\rab\uuu\vA\rab\dab$}}
+
+\newcommand{\xbbykk}{{\color[rgb]{0,0,0}$\leftarrow$}}
+\newcommand{\xbbyjj}{{\color[rgb]{0,0,0}$\swarrow$}}
+\newcommand{\xbbyii}{{\color[rgb]{0,0,0}$\leftarrow$}}
+\newcommand{\xbbyhh}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xbbygg}{{\color[rgb]{0,0,0}$\leftarrow$}}
+\newcommand{\xbbyff}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xbbyee}{{\color[rgb]{0,0,0}$\leftarrow$}}
+\newcommand{\xbbydd}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xbbycc}{{\color[rgb]{0,0,0}$\leftarrow$}}
+\newcommand{\xbbybb}{{\color[rgb]{0,0,0}$\nwarrow$}}
+\newcommand{\xbbyaa}{{\color[rgb]{0,0,0}$\leftarrow$}}
+
+\newcommand{\xccykk}{{\color[rgb]{0,0,1}$\vA\rab = \uuu\vA\rab$}}
+\newcommand{\xccyjj}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xccyii}{{\color[rgb]{0,0,1}$\vV\rab = \uuu\vV\rab$}}
+\newcommand{\xccyhh}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xccygg}{{\color[rgb]{0,0,1}$\vR\rab = \uuu\vR\rab$}}
+\newcommand{\xccyff}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xccyee}{{\color[rgb]{0,0,1}$\mM\rab\vR\rab = \mM\rab\uuu\vR\rab$}}
+\newcommand{\xccydd}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xccycc}{{\color[rgb]{0,0,1}$\mM\rab\vV\rab = \mM\rab\uuu\vV\rab$}}
+\newcommand{\xccybb}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xccyaa}{{\color[rgb]{0,0,1}$\mM\rab\vA\rab = \mM\rab\uuu\vA\rab$}}
+
+\newcommand{\xddykk}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xddyjj}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xddyii}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xddyhh}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xddygg}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xddyff}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xddyee}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xddydd}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xddycc}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xddybb}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xddyaa}{{\color[rgb]{0,0,0}$\rightarrow$}}
+
+\newcommand{\xeeykk}{{\color[rgb]{1,0,0}$\vA\ra = \uuu\vA\ra$}}
+\newcommand{\xeeyjj}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xeeyii}{{\color[rgb]{0,0,0}$\vV\ra = \uuu\vV\ra$}}
+\newcommand{\xeeyhh}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xeeygg}{{\color[rgb]{0,0,0}$\vR\ra = \uuu\vR\ra$}}
+\newcommand{\xeeyff}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xeeyee}{{\color[rgb]{0,0,0}$\mM\ra\vR\ra = \mM\ra\uuu\vR\ra$}}
+\newcommand{\xeeydd}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xeeycc}{{\color[rgb]{0,0,0}$\mM\ra\vV\ra = \mM\ra\uuu\vV\ra$}}
+\newcommand{\xeeybb}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xeeyaa}{{\color[rgb]{1,0,0}$\mM\ra\vA\ra = \mM\ra\uuu\vA\ra$}}
+
+\newcommand{\xffykk}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xffyjj}{{\color[rgb]{0,0,0}$\searrow$}}
+\newcommand{\xffyii}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xffyhh}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xffygg}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xffyff}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xffyee}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xffydd}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xffycc}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xffybb}{{\color[rgb]{0,0,0}$\nearrow$}}
+\newcommand{\xffyaa}{{\color[rgb]{0,0,0}$\rightarrow$}}
+
+\newcommand{\xggykk}{{\color[rgb]{1,0,0}$\frac{1}{2}\vA\ra\daa = \frac{1}{2}\uuu\vA\ra\daa$}}
+\newcommand{\xggyjj}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xggyii}{{\color[rgb]{0,0,0}$\frac{1}{2}\vV\ra\daa = \frac{1}{2}\uuu\vV\ra\daa$}}
+\newcommand{\xggyhh}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xggygg}{{\color[rgb]{0,0,0}$\frac{1}{2}\vR\ra\daa = \frac{1}{2}\uuu\vR\ra\daa$}}
+\newcommand{\xggyff}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xggyee}{{\color[rgb]{0,0,0}$\frac{1}{2}\mM\ra\vR\ra\daa = \frac{1}{2}\mM\ra\uuu\vR\ra\daa$}}
+\newcommand{\xggydd}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xggycc}{{\color[rgb]{0,0,0}$\frac{1}{2}\mM\ra\vV\ra\daa = \frac{1}{2}\mM\ra\uuu\vV\ra\daa$}}
+\newcommand{\xggybb}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xggyaa}{{\color[rgb]{1,0,0}$\frac{1}{2}\mM\ra\vA\ra\daa = \frac{1}{2}\mM\ra\uuu\vA\ra\daa$}}
+
+\begin{document}
+
+\ \vspace{-1.5em}
+
+\begin{center}
+
+{\fontsize{24}{24}\selectfont Classical Mechanics} \\
+\vspace{+0.54em}
+{\fontsize{13}{13}\selectfont ( Particles and Biparticles )}
+
+\bigskip \medskip
+
+{\fontsize{11}{11}\selectfont Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2011) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{80.1mm}{This paper considers the existence of biparticles and presents a general equation of motion, which can be applied in any non-rotating reference frame (inertial or non-inertial) without \hbox {the necessity} of introducing fictitious forces.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.6em}
+
+{\centering\subsection*{Universal Reference Frame}}
+
+\vspace{+0.3em}
+
+\par The universal reference frame $\uuu\mathrm S$ is a reference frame in which the acceleration $\uuu\vA$ of any particle is given by the following equation:
+\begin{eqnarray*}
+\uuu\vA = \frac{\vF}{\mM}
+\end{eqnarray*}
+\noindent {\fontsize{10.08}{10.08}\selectfont where $\vF$ is the net force acting on the particle, and $\mM$ is the mass of the particle.}
+\smallskip
+\par The universal reference frame $\uuu\mathrm S$ is an inertial reference frame. Therefore, it can be stated that the universal reference frame $\uuu\mathrm S$ is also a non-rotating reference frame.
+
+\newpage \enlargethispage{-0.63em}
+
+{\centering\subsection*{General Equation of Motion}}
+
+\par The general equation of motion for two particles A and B, is as follows:
+\begin{eqnarray*}
+\mM\ra\mM\rb(\vR\ra - \vR\rb) = \mM\ra\mM\rb(\uuu\vR\ra - \uuu\vR\rb)
+\end{eqnarray*}
+\noindent where $\mM\ra$ and $\mM\rb$ are the masses of particles A and B, $\vR\ra$ and $\vR\rb$ are the positions of particles A and B relative to a non-rotating reference frame S, $\uuu\vR\ra$ and $\uuu\vR\rb$ are the positions of particles A and B relative to the universal reference frame $\uuu\mathrm S$.
+
+\smallskip
+
+\par If $\mM\ra\mM\rb = \mM\rab$, \hspace{-0.09em}$(\vR\ra - \vR\rb) = \vR\rab$ and \hspace{-0.09em}$(\uuu\vR\ra - \uuu\vR\rb) = \uuu\vR\rab$, then the above equation reduces to:
+\begin{eqnarray*}
+\mM\rab \, \vR\rab = \mM\rab \, \uuu\vR\rab
+\end{eqnarray*}
+
+\medskip
+
+\par The general equation of motion for a system of N particles, is as follows:
+\begin{eqnarray*}
+\sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\ri\mM\rj(\vR\ri - \vR\rj) = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\ri\mM\rj(\uuu\vR\ri - \uuu\vR\rj)
+\end{eqnarray*}
+\noindent where $\mM\ri$ and $\mM\rj$ are the masses of the \textit{i}-th and \textit{j}-th particles, $\vR\ri$ and $\vR\rj$ are the positions of the \textit{i}-th and \textit{j}-th particles relative to a non-rotating reference frame S, $\uuu\vR\ri$ and $\uuu\vR\rj$ are the positions of the \textit{i}-th and \textit{j}-th particles relative to the universal reference frame $\uuu\mathrm S$.
+
+\smallskip
+
+\par If $\mM\ri\mM\rj = \mM\rij$, $(\vR\ri - \vR\rj) = \vR\rij$ and $(\uuu\vR\ri - \uuu\vR\rj) = \uuu\vR\rij$, then the above equation reduces to:
+\begin{eqnarray*}
+\sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij \, \vR\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij \, \uuu\vR\rij
+\end{eqnarray*}
+
+\medskip
+
+\par A system of particles forms a system of biparticles. For example, the system of particles A, B, C and D forms the system of biparticles AB, AC, AD, BC, BD and CD.
+
+\newpage
+
+{\centering\subsection*{Particles and Biparticles}}
+
+\vspace{+0.6em}
+
+\par From the general equation of motion for two particles A and B (underlined blue equation) the following equations are obtained:
+
+\vspace{+1.8em}
+
+\begin{adjustwidth}{0mm}{0mm}
+
+\begin{center}
+
+\scriptsize
+
+\begin{tabular}{ccc}
+BIPARTICLE & & PARTICLE \\
+{\makebox(\xaa,12){}} {\makebox(\xbb,0){}} {\makebox(\xcc,0){}} & {\makebox(\xdd,0){}} & {\makebox(\xee,0){}} {\makebox(\xff,0){}} {\makebox(\xgg,0){}}
+\end{tabular}
+
+\begin{tabular}{c}
+K\\I\\N\\E\\M\\A\\T\\I\\C\\S
+\end{tabular}
+\begin{tabular}{ccc}
+{\framebox(\xaa,\ykk){\xaaykk}} {\makebox(\xbb,\ykk){\xbbykk}} {\framebox(\xcc,\ykk){\xccykk}} & {\makebox(\xdd,\ykk){\xddykk}} & {\framebox(\xee,\ykk){\xeeykk}} {\makebox(\xff,\ykk){\xffykk}} {\framebox(\xgg,\ykk){\xggykk}} \\
+{\makebox(\xaa,\yjj){\xaayjj}} {\makebox(\xbb,\yjj){\xbbyjj}} {\makebox(\xcc,\yjj){\xccyjj}} & {\makebox(\xdd,\yjj){\xddyjj}} & {\makebox(\xee,\yjj){\xeeyjj}} {\makebox(\xff,\yjj){\xffyjj}} {\makebox(\xgg,\yjj){\xggyjj}} \\
+{\framebox(\xaa,\yii){\xaayii}} {\makebox(\xbb,\yii){\xbbyii}} {\framebox(\xcc,\yii){\xccyii}} & {\makebox(\xdd,\yii){\xddyii}} & {\framebox(\xee,\yii){\xeeyii}} {\makebox(\xff,\yii){\xffyii}} {\framebox(\xgg,\yii){\xggyii}} \\
+{\makebox(\xaa,\yhh){\xaayhh}} {\makebox(\xbb,\yhh){\xbbyhh}} {\makebox(\xcc,\yhh){\xccyhh}} & {\makebox(\xdd,\yhh){\xddyhh}} & {\makebox(\xee,\yhh){\xeeyhh}} {\makebox(\xff,\yhh){\xffyhh}} {\makebox(\xgg,\yhh){\xggyhh}} \\
+{\framebox(\xaa,\ygg){\xaaygg}} {\makebox(\xbb,\ygg){\xbbygg}} {\framebox(\xcc,\ygg){\xccygg}} & {\makebox(\xdd,\ygg){\xddygg}} & {\framebox(\xee,\ygg){\xeeygg}} {\makebox(\xff,\ygg){\xffygg}} {\framebox(\xgg,\ygg){\xggygg}}
+\end{tabular}
+\begin{tabular}{c}
+K\\I\\N\\E\\M\\A\\T\\I\\C\\S
+\end{tabular}
+
+\begin{tabular}{ccc}
+{\makebox(\xaa,\yff){\xaayff}} {\makebox(\xbb,\yff){\xbbyff}} {\makebox(\xcc,\yff){\xccyff}} & {\makebox(\xdd,\yff){\xddyff}} & {\makebox(\xee,\yff){\xeeyff}} {\makebox(\xff,\yff){\xffyff}} {\makebox(\xgg,\yff){\xggyff}}
+\end{tabular}
+
+\begin{tabular}{c}
+D\\Y\\N\\A\\M\\I\\C\\S
+\end{tabular}
+\begin{tabular}{ccc}
+{\framebox(\xaa,\yee){\xaayee}} {\makebox(\xbb,\yee){\xbbyee}} {\framebox(\xcc,\yee){\xccyee}} & {\makebox(\xdd,\yee){\xddyee}} & {\framebox(\xee,\yee){\xeeyee}} {\makebox(\xff,\yee){\xffyee}} {\framebox(\xgg,\yee){\xggyee}} \\
+{\makebox(\xaa,\ydd){\xaaydd}} {\makebox(\xbb,\ydd){\xbbydd}} {\makebox(\xcc,\ydd){\xccydd}} & {\makebox(\xdd,\ydd){\xddydd}} & {\makebox(\xee,\ydd){\xeeydd}} {\makebox(\xff,\ydd){\xffydd}} {\makebox(\xgg,\ydd){\xggydd}} \\
+{\framebox(\xaa,\ycc){\xaaycc}} {\makebox(\xbb,\ycc){\xbbycc}} {\framebox(\xcc,\ycc){\xccycc}} & {\makebox(\xdd,\ycc){\xddycc}} & {\framebox(\xee,\ycc){\xeeycc}} {\makebox(\xff,\ycc){\xffycc}} {\framebox(\xgg,\ycc){\xggycc}} \\
+{\makebox(\xaa,\ybb){\xaaybb}} {\makebox(\xbb,\ybb){\xbbybb}} {\makebox(\xcc,\ybb){\xccybb}} & {\makebox(\xdd,\ybb){\xddybb}} & {\makebox(\xee,\ybb){\xeeybb}} {\makebox(\xff,\ybb){\xffybb}} {\makebox(\xgg,\ybb){\xggybb}} \\
+{\framebox(\xaa,\yaa){\xaayaa}} {\makebox(\xbb,\yaa){\xbbyaa}} {\framebox(\xcc,\yaa){\xccyaa}} & {\makebox(\xdd,\yaa){\xddyaa}} & {\framebox(\xee,\yaa){\xeeyaa}} {\makebox(\xff,\yaa){\xffyaa}} {\framebox(\xgg,\yaa){\xggyaa}}
+\end{tabular}
+\begin{tabular}{c}
+D\\Y\\N\\A\\M\\I\\C\\S
+\end{tabular}
+
+\begin{picture}(3,3)
+\put(-64.7,110.7){\line(1,0){63.8}}
+\end{picture}
+
+\begin{tabular}{ccc}
+{\makebox(\xaa,3){}} {\makebox(\xbb,0){}} {\makebox(\xcc,0){}} & {\makebox(\xdd,0){}} & {\makebox(\xee,0){}} {\makebox(\xff,0){}} {\makebox(\xgg,0){}} \\
+BIPARTICLE & & PARTICLE
+\end{tabular}
+
+\normalsize
+
+\end{center}
+
+\end{adjustwidth}
+
+\newpage \enlargethispage{+0.18em}
+
+\par The blue equations are valid in any non-rotating reference frame, since $(\vR\rab = \uuu\vR\rab)$, $(\vV\rab = \uuu\vV\rab)$ and $(\vA\rab = \uuu\vA\rab)$
+\medskip
+\par The red equations are valid in any inertial reference frame, since \hbox {$(\vA\ra = \uuu\vA\ra)$}
+\medskip \vspace{-1.2em}
+\par {\fontsize{10.08}{10.08}\selectfont The kinematic equations are obtained from the dynamic equations if} \hbox {we consider} that all particles have the same mass. Therefore, the kinematic equations are a special case of the dynamic equations.
+\medskip
+\par The dynamics of particles is obtained from the dynamics of biparticles if we only consider biparticles that have the same particle.
+\vspace{+0.6em}
+\par For example:
+\vspace{+0.6em}
+\par If we consider a system of biparticles AB, AC and BC, we have:
+\begin{eqnarray*}
+\mathrm {\textstyle AB + AC + BC} = \mathrm {\textstyle \uuu{AB} + \uuu{AC} + \uuu{BC}}
+\end{eqnarray*}
+\par Considering only the biparticles that have particle C, it follows:
+\begin{eqnarray*}
+\mathrm {\textstyle AC + BC} = \mathrm {\textstyle \uuu{AC} + \uuu{BC}}
+\end{eqnarray*}
+\par Applying the general equation of motion, we obtain:
+\begin{eqnarray*}
+\mM\ra\mM\rc(\vR\ra - \vR\rc) + \mM\rb\mM\rc(\vR\rb - \vR\rc) = \mM\ra\mM\rc(\uuu\vR\ra - \uuu\vR\rc) + \mM\rb\mM\rc(\uuu\vR\rb - \uuu\vR\rc)
+\end{eqnarray*}
+\par Differentiating twice with respect to time, yields:
+\begin{eqnarray*}
+\mM\ra\mM\rc(\vA\ra - \vA\rc) + \mM\rb\mM\rc(\vA\rb - \vA\rc) = \mM\ra\mM\rc(\uuu\vA\ra - \uuu\vA\rc) + \mM\rb\mM\rc(\uuu\vA\rb - \uuu\vA\rc)
+\end{eqnarray*}
+\par Dividing by $\mM\rc$, using a reference frame C fixed to particle C (\hspace{-0.21em} $\vA\rc = 0$ \hbox {{\hphantom{\hspace{+1.32em}}} relative} to reference frame C \hspace{-0.21em}) and assuming that reference frame C is \hbox {{\hphantom{\hspace{+1.32em}}} inertial} $(\vA\rc = \uuu\vA\rc)$, we obtain:
+\begin{eqnarray*}
+\mM\ra\vA\ra + \mM\rb\vA\rb = \mM\ra\uuu\vA\ra + \mM\rb\uuu\vA\rb
+\end{eqnarray*}
+\par Substituting $\uuu\vA = \vF / \mM$ and rearranging, finally yields:
+\begin{eqnarray*}
+\vF\ra + \vF\rb = \mM\ra\vA\ra + \mM\rb\vA\rb
+\end{eqnarray*}
+
+\newpage
+
+{\centering\subsection*{Equation of Motion}}
+
+\par From the general equation of motion it follows that the acceleration $\vA\ra$ of a particle A relative to a reference frame S (non-rotating) fixed to a \hbox {particle S}, is given by the following equation:
+\begin{eqnarray*}
+\vA\ra = \frac{\vF\ra}{\mM\ra} - \frac{\vF\rs}{\mM\rs}
+\end{eqnarray*}
+\noindent where $\vF\ra$ is the net force acting on particle A, $\mM\ra$ is the mass of particle A, \hbox {$\vF\rs$ is} the net force acting on particle S, and $\mM\rs$ is the mass of particle S.
+\smallskip
+\par In contradiction with Newton's first and second laws, from the above equation it follows that particle A can have non-zero acceleration even if there is no force acting on particle A, and also that particle A can have zero acceleration (state of rest or of uniform linear motion) even if there is an unbalanced force acting on particle A.
+\smallskip
+\par On the other hand, from the above equation it also follows that Newton's first and second laws are valid in the reference frame S only if the net force acting on particle S equals zero. Therefore, the reference frame S is an inertial reference frame only if the net force acting on particle S equals zero.
+
+\vspace{+0.6em}
+
+{\centering\subsection*{Bibliography}}
+
+\vspace{+0.3em}
+
+\par \textbf{A. Einstein}, \textit{Relativity: The Special and General Theory}.
+\medskip
+\par \textbf{E. Mach}, \textit{The Science of Mechanics}.
+\medskip
+\par \textbf{R. Resnick and D. Halliday}, \textit{Physics}.
+\medskip
+\par \textbf{J. Kane and M. Sternheim}, \textit{Physics}.
+\medskip
+\par \textbf{H. Goldstein}, \textit{Classical Mechanics}.
+\medskip
+\par \textbf{L. Landau and E. Lifshitz}, \textit{Mechanics}.
+
+\newpage \baselineskip=13.2pt
+
+{\centering\subsection*{Appendix}}
+
+{\centering\subsection*{Transformations}}
+
+\vspace{+0.3em}
+
+\par The universal reference frame $\uuu\mathrm S$ is an inertial reference frame.
+\smallskip
+\par Any inertial reference frame is a non-rotating reference frame.
+\smallskip
+\par Any central reference frame S$\ccc$ (reference frame fixed to the center of mass of a system of particles) is a non-rotating reference frame.
+\smallskip
+\par A change of coordinates $\mX$, $\mY$, $\mZ$, $\mT$ from a reference frame S (non-rotating) to coordinates $\mX\hspace{+0.06em}\rt$, $\mY\hspace{+0.06em}\rt$, $\mZ\hspace{+0.06em}\rt$, $\mT\rt$ from another reference frame S' (non-rotating) whose origin {\small \it O}$\hspace{+0.03em}\rt$ has coordinates $\mX\rot$, $\mY\rot$, $\mZ\rot$ measured from reference \hbox {frame S}, can be carried out by means of the following equations:
+\begin{eqnarray*}
+\mX\hspace{+0.06em}\rt & = & \mX - \mX\rot \\
+\mY\hspace{+0.06em}\rt & = & \mY - \mY\rot \\
+\mZ\hspace{+0.06em}\rt & = & \mZ - \mZ\rot \\
+\mT\rt & = & \mT
+\end{eqnarray*}
+\par From the above equations, the transformation of position, velocity and acceleration from reference frame S to reference frame S' may be carried out, and expressed in vector form as follows:
+\begin{eqnarray*}
+\vR\hspace{+0.06em}\rt & = & \vR - \vR\rot \\
+\vV\hspace{+0.06em}\rt & = & \vV - \vV\rot \\
+\vA\hspace{+0.06em}\rt & = & \vA - \vA\rot
+\end{eqnarray*}
+\noindent where $\vR\rot$, $\vV\rot$ and $\vA\rot$ are the position, velocity and acceleration respectively, of reference frame S' relative to reference frame S.
+
+\newpage \baselineskip=12pt
+
+{\centering\subsection*{Def\hspace{+0.03em}initions}}
+
+\begin{center}
+\begin{tabular}{lll}
+& Particles & Biparticles \hspace{-0.6em} \vspace{+0.9em} \\
+Mass & $\hspace{-0.06em}\EM\ri = \sum_{\scriptscriptstyle i} \; \mM\ri$ & $\hspace{-0.06em}\EM\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij$ \hspace{-0.6em} \vspace{+0.9em} \\
+Vector position & $\VR\ri = \sum_{\scriptscriptstyle i} \; \mM\ri\vR\ri \, / \EM\ri$ & $\VR\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij\vR\rij \, / \EM\rij$ \hspace{-0.6em} \vspace{+0.3em} \\
+Vector velocity & $\VV\ri = \sum_{\scriptscriptstyle i} \; \mM\ri\vV\ri \, / \EM\ri$ & $\VV\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij\vV\rij \, / \EM\rij$ \hspace{-0.6em} \vspace{+0.3em} \\
+Vector acceleration & $\VA\ri = \sum_{\scriptscriptstyle i} \; \mM\ri\vA\ri \, / \EM\ri$ & $\VA\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij\vA\rij \, / \EM\rij$ \hspace{-0.6em} \vspace{+0.9em} \\
+Scalar position & $\ER\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \frac{1}{2}\mM\ri^{\vphantom{\dos}}\vR\ri\dos / \EM\ri^{\vphantom{\dos}}$ & $\ER\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \frac{1}{2}\mM\rij^{\vphantom{\dos}}\vR\rij\dos \, / \EM\rij^{\vphantom{\dos}}$ \hspace{-0.6em} \vspace{+0.3em} \\
+Scalar velocity & $\EV\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \frac{1}{2}\mM\ri^{\vphantom{\dos}}\vV\ri\dos / \EM\ri^{\vphantom{\dos}}$ & $\EV\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \frac{1}{2}\mM\rij^{\vphantom{\dos}}\vV\rij\dos \, / \EM\rij^{\vphantom{\dos}}$ \hspace{-0.6em} \vspace{+0.3em} \\
+Scalar acceleration & $\EA\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \frac{1}{2}\mM\ri^{\vphantom{\dos}}\vA\ri\dos / \EM\ri^{\vphantom{\dos}}$ & $\EA\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \frac{1}{2}\mM\rij^{\vphantom{\dos}}\vA\rij\dos \, / \EM\rij^{\vphantom{\dos}}$ \hspace{-0.6em} \vspace{+0.9em} \\
+Work & $\EW\ri = \sum_{\scriptscriptstyle i} \; \int \mM\ri\vA\ri \cdot d\vR\ri$ & $\EW\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \int \mM\rij\vA\rij \cdot d\vR\rij$ \hspace{-0.6em} \vspace{+0.3em} \\
+& $\EW\ri^{\vphantom{\dos}} = \Delta \left( \sum_{\scriptscriptstyle i} \; \frac{1}{2}\mM\ri^{\vphantom{\dos}}\vV\ri\dos \right)$ & $\EW\rij^{\vphantom{\dos}} = \Delta \left( \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \frac{1}{2}\mM\rij^{\vphantom{\dos}}\vV\rij\dos \right)$ \hspace{-0.6em}
+\end{tabular}
+\end{center}
+
+\vspace{-1.2em}
+
+{\centering\subsection*{Relations}}
+
+\vspace{-1.5em}
+
+\begin{eqnarray*}
+\EM\rij^{\vphantom{\dos}} \: \ER\rij^{\vphantom{\dos}} & = & \EM\ri\dos \left( \ER\ri^{\vphantom{\dos}} - {\textstyle \frac{1}{2}}\VR\ri\dos \right) \\
+\EM\rij^{\vphantom{\dos}} \: \EV\rij^{\vphantom{\dos}} & = & \EM\ri\dos \left( \EV\ri^{\vphantom{\dos}} - {\textstyle \frac{1}{2}}\VV\ri\dos \right) \\
+\EM\rij^{\vphantom{\dos}} \: \EA\rij^{\vphantom{\dos}} & = & \EM\ri\dos \left( \EA\ri^{\vphantom{\dos}} - {\textstyle \frac{1}{2}}\VA\ri\dos \right)
+\end{eqnarray*}
+
+\vspace{-0.3em}
+
+\par If $\EM\ri\dos / \EM\rij^{\vphantom{\dos}} = k$, then the above equations relative to the central reference frame S$\ccc$ reduces to:
+
+\vspace{-0.9em}
+
+\begin{eqnarray*}
+\ER\rij\ccc & = & k \; \ER\ri\ccc \\
+\EV\rij\ccc & = & k \; \EV\ri\ccc \\
+\EA\rij\ccc & = & k \; \EA\ri\ccc
+\end{eqnarray*}
+
+\newpage
+
+{\centering\subsection*{Principles}}
+
+\par {\Large T}he positions, velocities and accelerations (vector and scalar) of a system of biparticles are invariant under transformations between non-rotating reference frames.
+\begin{eqnarray*}
+\VR\rij^{\vphantom{\rt}} = \uuu\VR\rij^{\vphantom{\rt}} = \VR\rij\ccc = \VR\rij\rt & \qquad & \hspace{+0.06em}\ER\rij^{\vphantom{\rt}} = \hspace{+0.06em}\uuu\ER\rij^{\vphantom{\rt}} = \hspace{+0.06em}\ER\rij\ccc = \hspace{+0.06em}\ER\rij\rt \\
+\VV\rij^{\vphantom{\rt}} = \uuu\VV\rij^{\vphantom{\rt}} = \VV\rij\ccc = \VV\rij\rt & \qquad & \EV\rij^{\vphantom{\rt}} = \uuu\EV\rij^{\vphantom{\rt}} = \EV\rij\ccc = \EV\rij\rt \\
+\VA\rij^{\vphantom{\rt}} = \uuu\VA\rij^{\vphantom{\rt}} = \VA\rij\ccc = \VA\rij\rt & \qquad & \EA\rij^{\vphantom{\rt}} = \uuu\EA\rij^{\vphantom{\rt}} = \EA\rij\ccc = \EA\rij\rt
+\end{eqnarray*}
+
+\smallskip
+
+\par From this principle it follows that the acceleration $\vA\ra$ of a particle A rela- \hbox {tive} to a non-rotating reference frame S fixed to a particle S, is given by the following equation:
+\begin{eqnarray*}
+\vA\ra = \frac{\vF\ra}{\mM\ra} - \frac{\vF\rs}{\mM\rs}
+\end{eqnarray*}
+\noindent where $\vF\ra$ is the net force acting on particle A, $\mM\ra$ is the mass of particle A, \hbox {$\vF\rs$ is} the net force acting on particle S, and $\mM\rs$ is the mass of particle S.
+
+\bigskip
+
+\par {\Large T}he accelerations (vector and scalar) of a system of particles are invariant under transformations between inertial reference frames.
+\begin{eqnarray*}
+\VA\ri^{\vphantom{\rt}} = \uuu\VA\ri^{\vphantom{\rt}} = \VA\ri\rt & \qquad & \EA\ri^{\vphantom{\rt}} = \uuu\EA\ri^{\vphantom{\rt}} = \EA\ri\rt
+\end{eqnarray*}
+
+\smallskip
+
+\par From this principle it follows that the acceleration $\vA\ra$ of a particle A relative to an inertial reference frame S, is given by the following equation:
+\begin{eqnarray*}
+\vA\ra = \frac{\vF\ra}{\mM\ra}
+\end{eqnarray*}
+\noindent where $\vF\ra$ is the net force acting on particle A, and $\mM\ra$ is the mass of \hbox {particle A.}
+
+\newpage \baselineskip=13.2pt
+
+{\centering\subsection*{Work and Force}}
+
+\par The work $\EW\rij$ done by the forces acting on a system of biparticles relative to a non-rotating reference frame, is given by:
+\begin{eqnarray*}
+\EW\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \int \mM\ri\mM\rj \left( \frac{\vF\ri}{\mM\ri} - \frac{\vF\rj}{\mM\rj} \right) \cdot d \left( \vR\ri - \vR\rj \right)
+\end{eqnarray*}
+\par The work $\EW\ri$ done by the forces acting on a system of particles relative to the central reference frame, is given by:
+\begin{eqnarray*}
+\EW\ri = \sum_{\scriptscriptstyle i} \; \int \vF\ri \cdot d\vR\ri
+\end{eqnarray*}
+\par The work $\EW\ri$ done by the forces acting on a system of particles relative to an inertial reference frame, is given by:
+\begin{eqnarray*}
+\EW\ri = \sum_{\scriptscriptstyle i} \; \int \vF\ri \cdot d\vR\ri
+\end{eqnarray*}
+
+{\centering\subsection*{Conservation of Kinetic Energy}}
+
+\par If the forces acting on a system of particles do not perform work relative to the central reference frame, then the kinetic energy of the system of particles is conserved relative to the central reference frame.
+\smallskip
+\par If the kinetic energy of the system of particles is conserved relative to the central reference frame, then the kinetic energy of the system of biparticles is conserved relative to any non-rotating reference frame.
+\smallskip
+\par If the forces acting on the system of particles do not perform work relative to an inertial reference frame, then the kinetic energy and linear momentum (magnitude) of the system of particles are conserved relative to the inertial reference frame; even if Newton's third law were not valid.
+
+\end{document}
+

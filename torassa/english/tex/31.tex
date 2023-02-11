@@ -1,0 +1,170 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={126.0mm,165.0mm}}
+\geometry{totalwidth=104.7mm,totalheight=129.0mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Linear Magnitudes}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\mY}{Y}
+\newcommand{\mP}{P}
+\newcommand{\mF}{F}
+\newcommand{\mW}{W}
+\newcommand{\mU}{U}
+\newcommand{\mE}{E}
+\newcommand{\mL}{L}
+\newcommand{\mT}{T}
+\newcommand{\mV}{V}
+\newcommand{\ra}{_a}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Linear Magnitudes}
+
+\bigskip \medskip
+
+Alejandro A. Torassa
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{81mm}{In classical mechanics, this paper presents definitions of linear magnitudes from vector magnitudes.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.60em}
+
+{\centering\subsubsection*{Linear Magnitudes}}
+
+\vspace{+0.60em}
+
+\par The linear magnitudes for a particle A of mass $\mM\ra$ are defined with respect to a position vector $\vR$ which is constant in magnitude and direction.
+
+\vspace{+1.20em}
+
+\begin{center}
+\begin{tabular}{ll}
+Linear Mass & \hspace{+1.20em} $\mY\ra = \mM\ra \hspace{+0.12em} (\hspace{+0.03em} \vR \cdot \vR\ra)$ \vspace{+0.90em} \\
+Linear Momentum & \hspace{+1.20em} $\mP\ra = \mM\ra \hspace{+0.12em} (\hspace{+0.03em} \vR \cdot \vV\ra)$ \vspace{+0.90em} \\
+Linear Force & \hspace{+1.20em} $\mF\ra = \mM\ra \hspace{+0.12em} (\hspace{+0.03em} \vR \cdot \vA\ra)$ \vspace{+0.90em} \\
+Linear Work & \hspace{+1.20em} $\mW\ra = \int \hspace{+0.18em} \mF\ra \hspace{+0.27em} d(\hspace{+0.03em} \vR \cdot \vR\ra)$ \vspace{+0.90em} \\
+Theorem & \hspace{+1.20em} $\mW\ra = \hspace{+0.09em} \Delta \hspace{+0.24em} \med \hspace{+0.24em} \mM\ra \hspace{+0.12em} (\hspace{+0.03em} \vR \cdot \vV\ra)^{\hspace{+0.03em} 2}$
+\end{tabular}
+\end{center}
+
+\vspace{+0.60em}
+
+\par Where $\vR\ra$, $\vV\ra$, and $\vA\ra$ are the position, the velocity, and the acceleration of particle A.
+\medskip
+\par The linear magnitudes for a system of particles are also defined with respect to a position vector $\vR$ which is constant in magnitude and direction.
+
+\newpage
+
+{\centering\subsubsection*{Linear Potential Energy}}
+
+\vspace{+0.75em}
+
+\par The linear potential energy $\mU\ra$ of a particle A on which a resultant force $\vF\ra$ acts, is given by:
+\begin{eqnarray*}
+\mU\ra = - \int (\hspace{+0.03em} \vR \cdot \vF\ra) \hspace{+0.27em} d(\hspace{+0.03em} \vR \cdot \vR\ra)
+\end{eqnarray*}
+\noindent where $\vR$ is a position vector which is constant in magnitude and direction, and $\vR\ra$ is the position of particle A.
+\medskip
+\par If $\vF\ra$ is constant and since $\vF\ra = \mM\ra \hspace{+0.09em} \vA\ra$, it follows that:
+\begin{eqnarray*}
+\mU\ra = - \hspace{+0.18em} \mM\ra \hspace{+0.06em} (\hspace{+0.03em} \vR \cdot \vA\ra) \hspace{+0.06em} (\hspace{+0.03em} \vR \cdot \vR\ra)
+\end{eqnarray*}
+\noindent where $\mM\ra$ is the mass of particle A, and $\vA\ra$ is the constant acceleration of particle A.
+
+\vspace{+0.75em}
+
+{\centering\subsubsection*{Linear Mechanical Energy}}
+
+\vspace{+0.75em}
+
+\par The linear mechanical energy $\mE\ra$ of a particle A of mass $\mM\ra$ which moves in a uniform force field, is given by:
+\begin{eqnarray*}
+\mE\ra = \med \hspace{+0.24em} \mM\ra \hspace{+0.06em} (\hspace{+0.03em} \vR \cdot \vV\ra)^{\hspace{+0.03em} 2} - \hspace{+0.09em} \mM\ra \hspace{+0.06em} (\hspace{+0.03em} \vR \cdot \vA\ra) \hspace{+0.06em} (\hspace{+0.03em} \vR \cdot \vR\ra)
+\end{eqnarray*}
+\noindent where $\vR$ is a position vector which is constant in magnitude and direction, and $\vV\ra$, $\vA\ra$ and $\vR\ra$ are the velocity, the constant acceleration and the position of particle A.
+\medskip
+\par The principle of conservation of the linear mechanical energy establishes that if a particle A moves in a uniform force field then the linear mechanical energy of particle A remains constant.
+
+\newpage
+
+{\centering\subsubsection*{Principle of Least Linear Action}}
+
+\vspace{+0.75em}
+
+\par If we consider a single particle A of mass $\mM\ra$ then the principle of least linear action, is given by:
+\begin{eqnarray*}
+\delta \int_{t_1}^{t_2} \med \hspace{+0.24em} \mM\ra \hspace{+0.06em} (\hspace{+0.03em} \vR \cdot \vV\ra)^{\hspace{+0.03em} 2} \hspace{+0.12em} dt \hspace{+0.12em} + \int_{t_1}^{t_2} (\hspace{+0.03em} \vR \cdot \vF\ra) \hspace{+0.12em} \delta (\hspace{+0.03em} \vR \cdot \vR\ra) \hspace{+0.18em} dt = 0
+\end{eqnarray*}
+\noindent where $\vR$ is a position vector which is constant in magnitude and direction, $\vV\ra$ is the velocity of particle A, $\vF\ra$ is the net force acting on particle A, and $\vR\ra$ is the position of particle A.
+\medskip
+\par If $- \hspace{+0.03em} \delta \hspace{+0.09em} \mV\ra = (\hspace{+0.03em} \vR \cdot \vF\ra) \hspace{+0.12em} \delta (\hspace{+0.03em} \vR \cdot \vR\ra)$ and since $\mT\ra = \med \hspace{+0.24em} \mM\ra \hspace{+0.06em} (\hspace{+0.03em} \vR \cdot \vV\ra)^{\hspace{+0.03em} 2}$, then:
+\begin{eqnarray*}
+\delta \int_{t_1}^{t_2} (\mT\ra - \mV\ra) \hspace{+0.18em} dt = 0
+\end{eqnarray*}
+\par And since $\mL\ra = \mT\ra - \mV\ra$, then we obtain:
+\begin{eqnarray*}
+\delta \int_{t_1}^{t_2} \mL\ra \hspace{+0.24em} dt = 0
+\end{eqnarray*}
+
+\vspace{+1.20em}
+
+{\centering\subsubsection*{Bibliography}}
+
+\vspace{+0.75em}
+
+\par \textbf{A. Einstein}, Relativity: The Special and General Theory.
+\bigskip
+\par \textbf{E. Mach}, The Science of Mechanics.
+\bigskip
+\par \textbf{R. Resnick and D. Halliday}, Physics.
+\bigskip
+\par \textbf{J. Kane and M. Sternheim}, Physics.
+\bigskip
+\par \textbf{H. Goldstein}, Classical Mechanics.
+\bigskip
+\par \textbf{L. Landau and E. Lifshitz}, Mechanics.
+
+\end{document}
+

@@ -1,0 +1,166 @@
+
+\documentclass[11pt]{article}
+%\documentclass[a4paper,11pt]{article}
+%\documentclass[letterpaper,11pt]{article}
+\usepackage[totalwidth=108mm,totalheight=183mm]{geometry}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\parindent=3mm
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={On the Classical Mechanics of Particles II}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\unitlength}{0.84pt}
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\mM}{m}
+\newcommand{\rt}{'}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rs}{_s}
+\newcommand{\rot}{_{o'}}
+
+\begin{document}
+
+\begin{center}
+
+{\Large On the Classical Mechanics of Particles II}
+
+\bigskip \bigskip
+
+\small
+
+Alejandro A. Torassa
+
+\footnotesize
+
+\bigskip
+
+{\em Buenos Aires, Argentina, E-mail: atorassa@gmail.com}
+
+\bigskip
+
+Creative Commons Attribution 3.0 License
+
+\bigskip
+
+(Copyright 2008)
+
+\end{center}
+
+\bigskip
+
+\footnotesize
+
+{\em Abstract.\/} This work presents a new dynamics which can be formulated for all reference frames, inertial and non-inertial.
+
+\bigskip
+
+{\em Keywords:\/} classical mechanics, dynamics, force, interaction, mass, acceleration, inertial reference frame, non-inertial reference frame.
+
+\normalsize
+
+{\centering\subsection*{Introduction}}
+
+\par It is known that in classical mechanics Newton's dynamics cannot be formulated for all reference frames, since it does not conserve its form when passing from one reference frame to another. For instance, if we admit that Newton's dynamics is valid for a chosen reference frame, then we cannot admit it to be valid for a reference frame which is accelerated relative to the first one, for the description of the behavior of a particle from the accelerated reference frame differs from the description given by Newton's dynamics.
+\medskip
+\par Classical mechanics solves this difficulty by separating reference frames into two classes: inertial reference frames, for which Newton's dynamics applies, and non-inertial reference frames, where Newton's dynamics does not apply; but this solution contradicts the principle of general relativity, which states: the laws of physics shall be valid for all reference frames.
+\medskip
+\par However, this work puts forward a different solution to the difficulty from classical mechanics mentioned above, presenting a new dynamics which can be formulated for all reference frames, inertial and non-inertial, since it conserves its form when passing from one reference frame to another; that is, this work presents a new dynamics which is in accord with the principle of general relativity.
+
+\newpage
+
+{\centering\subsection*{The New Dynamics}}
+
+\par First definition: The force $\vF$ acting on a particle is a vector quantity representing the interaction between particles.
+\bigskip \bigskip
+\par Second definition: The mass $\mM$ of a particle is a scalar quantity representing a constant characteristic of the particle.
+\bigskip \bigskip
+\par Third definition: The virtual acceleration $\vA^{\circ}$ of a particle is equal to the sum of the forces $\sum \vF$ acting on the particle divided by the mass $\mM$ of the particle.
+\begin{eqnarray*}
+\vA^{\circ} = \frac{\sum \vF}{\mM}
+\end{eqnarray*}
+\par First principle: The difference between the virtual acceleration $\vA^{\circ}\ra$ and the real acceleration $\vA\ra$ of a particle A is equal to the difference between the virtual acceleration $\vA^{\circ}\rb$ and the real acceleration $\vA\rb$ of another particle B.
+\begin{eqnarray*}
+\vA^{\circ}\ra - \vA\ra = \vA^{\circ}\rb - \vA\rb
+\end{eqnarray*}
+
+\medskip
+
+{\centering\subsection*{Determination of the Motion of Particles}}
+
+\par The equation determining the real acceleration $\vA\ra$ of a particle A relative to a reference frame S fixed to a particle S may be calculated as follows: from the first principle of the new dynamics it follows that the virtual acceleration $\vA^{\circ}\ra$ and the real acceleration $\vA\ra$ of particle A are related to the virtual acceleration $\vA^{\circ}\rs$ and the real acceleration $\vA\rs$ of particle S by the following equation:
+\begin{eqnarray*}
+\vA^{\circ}\ra - \vA\ra = \vA^{\circ}\rs - \vA\rs
+\end{eqnarray*}
+\par Since the real acceleration $\vA\rs$ of particle S relative to the reference frame S equals zero always, $\vA\ra$ may be obtained from the last equation as follows:
+\begin{eqnarray*}
+\vA\ra = \vA^{\circ}\ra - \vA^{\circ}\rs
+\end{eqnarray*}
+
+\newpage \baselineskip=14.40pt
+
+\par Finally substituting $\vA^{\circ}\ra$ and $\vA^{\circ}\rs$ from the third definition of the new dynamics, we have
+\begin{eqnarray*}
+\vA\ra = \frac{\sum \vF\ra}{\mM\ra} - \frac{\sum \vF\rs}{\mM\rs}
+\end{eqnarray*}
+\par Therefore, the real acceleration $\vA\ra$ of a particle A relative to a reference frame S fixed to a particle S will be determined by the last equation, where $\sum \vF\ra$ is the sum of the forces acting on particle A, $\mM\ra$ is the mass of particle A, $\sum \vF\rs$ is the sum of the forces acting on particle S, and $\mM\rs$ is the mass of particle S.
+
+\vspace{-0.9em}
+
+{\centering\subsection*{Conclusions}}
+
+\par In contradiction with Newton's first and second laws, from the last equation above it follows that the real acceleration of particle A relative to the reference frame S fixed to particle S depends not only on the forces acting on particle A, but also on the forces acting on \hbox {particle S}. That is, particle A can have a real acceleration relative to the reference frame S even if there is no force acting on particle A, and also parti- cle A cannot have a real acceleration (state of rest or of uniform linear motion) relative to the reference frame S even if there is an unbalanced force acting on particle A.
+\medskip
+\par On the other hand, from the last equation above it also follows that Newton's second law is valid for the reference frame S only if the sum of the forces acting on particle S is equal to zero. Therefore, the reference frame S is an inertial reference frame if the sum of the forces acting on particle S is equal to zero, but it is a non-inertial reference frame if the sum of the forces acting on particle S is not equal to zero.
+\medskip
+\par In addition, it can be seen that through the new dynamics the behavior (motion) of a particle can be described exactly in the same way from any reference frame, inertial or non-inertial, and without the necessity of introducing fictitious forces (also known as pseudo-forces, \hbox {inertial} forces or non-inertial forces).
+\medskip
+\par Finally, it can also be seen that the new dynamics would be valid even if Newton's third law were not valid.
+
+\newpage \baselineskip=13.60pt
+
+{\centering\subsection*{Appendix}}
+
+{\centering\subsection*{Dynamical Behavior of Particles}}
+
+\par The behavior of two particles A and B which follow Newton's dynamics from a reference frame S (inertial) is determined by the equations \hspace{-0.12em}:
+\begin{eqnarray}
+\sum \vF\ra = \mM\ra\vA\ra \ \ \ \ \ \ and \ \ \ \ \ \ 
+\sum \vF\rb = \mM\rb\vA\rb
+\end{eqnarray}
+\noindent that is
+\begin{eqnarray}
+\frac{\sum \vF\ra}{\mM\ra} - \vA\ra = 0 \ \ \ \ \ \ and \ \ \ \ \ \ 
+\frac{\sum \vF\rb}{\mM\rb} - \vA\rb = 0
+\end{eqnarray}
+\par Combining the equations (2) yields
+\begin{eqnarray}
+\frac{\sum \vF\ra}{\mM\ra} - \vA\ra = \frac{\sum \vF\rb}{\mM\rb} - \vA\rb
+\end{eqnarray}
+\par Therefore, the behavior of particles A and B is now determined from the reference frame S by the equation (3).
+\par If the equation (3) is transformed from the reference frame S to another reference frame S' (inertial or non-inertial) using the transformations of kinematics and dynamics ($\vA\rt = \vA - \vA\rot$, $\vF\rt = \vF$, and $\mM\rt = \mM$), \hbox {it follows that}
+\begin{eqnarray}
+\frac{\sum \vF\rt\ra}{\mM\rt\ra} - \vA\rt\ra = \frac{\sum \vF\rt\rb}{\mM\rt\rb} - \vA\rt\rb
+\end{eqnarray}
+\par Considering that the equation (4) have the same form as the equa- \hbox {tion (3)}, then it can be assumed that the behavior of particles A and B will be determined from any reference frame (inertial or non-inertial) by the equation (3), which represents the first principle of the new dynamics using the third definition of the new dynamics.
+
+\medskip
+
+{\centering\subsection*{Bibliography}}
+
+\par \textbf{A. Einstein}, \textit{Relativity: The Special and General Theory}.
+\bigskip
+\par \textbf{E. Mach}, \textit{The Science of Mechanics}.
+\bigskip
+\par \textbf{H. Goldstein}, \textit{Classical Mechanics}.
+
+\end{document}
+

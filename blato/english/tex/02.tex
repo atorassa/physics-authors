@@ -1,0 +1,147 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={134.1mm,177.0mm}}
+\geometry{totalwidth=113.1mm,totalheight=141.0mm}
+
+\usepackage{graphicx}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={The Principle of Least Action}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE The Principle of Least Action}
+
+\bigskip \medskip
+
+{\large A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2015) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{87.60mm}{In classical mechanics, this article obtains the principle of least action for a single particle in a didactic and simple way.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsection*{Introduction}}
+
+\bigskip \medskip
+
+\noindent Let us consider the following tautological equation for a single particle:
+\par \bigskip \smallskip
+\noindent $\dfrac{d(\mathbf{v} \cdot \delta \mathbf{r})}{dt} = \delta \dfrac{1}{2} \mathbf{v} \cdot \mathbf{v} + \mathbf{a} \cdot \delta \mathbf{r}$
+\par \bigskip \smallskip
+\noindent Now, integrating with respect to time from $t_1$ to $t_2$, yields:
+\par \bigskip \smallskip
+\noindent $\int_{t_1}^{t_2} \left[ \dfrac{d(\mathbf{v} \cdot \delta \mathbf{r})}{dt} \right] \hspace{+0.12em} dt = \int_{t_1}^{t_2} \left[ \delta \dfrac{1}{2} \mathbf{v} \cdot \mathbf{v} + \mathbf{a} \cdot \delta \mathbf{r} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent The left side of the equation is zero, therefore, we obtain:
+\par \bigskip \smallskip
+\noindent $0 = \int_{t_1}^{t_2} \left[ \delta \dfrac{1}{2} \mathbf{v} \cdot \mathbf{v} + \mathbf{a} \cdot \delta \mathbf{r} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent In classical mechanics, this last tautological equation is the mathematical basis of the principle of least action for a single particle.
+
+\newpage
+
+\noindent Now, multiplying by $m$ (mass of the particle) the following tautological equation is obtained:
+\par \bigskip \smallskip
+\noindent $0 = \int_{t_1}^{t_2} \left[ \delta \dfrac{1}{2} \hspace{+0.12em} m \hspace{+0.12em} (\mathbf{v} \cdot \mathbf{v}) + m \hspace{+0.12em} \mathbf{a} \cdot \delta \mathbf{r} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent Substituting $\mathbf{a}=\mathbf{F}/m$ (Newton's second law) the following empirical equation is obtained:
+\par \bigskip \smallskip
+\noindent $0 = \int_{t_1}^{t_2} \left[ \delta \dfrac{1}{2} \hspace{+0.12em} m \hspace{+0.12em} (\mathbf{v} \cdot \mathbf{v}) + \mathbf{F} \cdot \delta \mathbf{r} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent If the particle is only subject to conservative forces then $\delta V = - \mathbf{F} \cdot \delta \mathbf{r}$ and since $T = \dfrac{1}{2} m \hspace{+0.12em} (\mathbf{v} \cdot \mathbf{v})$ yields:
+\par \bigskip \smallskip
+\noindent $0 = \int_{t_1}^{t_2} \left[ \hspace{+0.12em} \delta T - \delta V \hspace{+0.12em} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent That is:
+\par \bigskip \smallskip
+\noindent $0 = \delta \int_{t_1}^{t_2} \left[ \hspace{+0.12em} T - V \hspace{+0.12em} \right] \hspace{+0.12em} dt$
+\par \bigskip \smallskip
+\noindent Or else:
+\par \bigskip \smallskip
+\noindent $\delta \int_{t_1}^{t_2} \left[ \hspace{+0.12em} T - V \hspace{+0.12em} \right] \hspace{+0.12em} dt = 0$
+\par \bigskip \smallskip
+\noindent Finally we obtain:
+\par \bigskip \smallskip
+\noindent $\delta \int_{t_1}^{t_2} L \hspace{+0.24em} dt = 0$
+\par \bigskip \smallskip
+\noindent Since $L= T - V$.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Annex}}
+
+\bigskip \medskip
+
+\noindent $\dfrac{d}{dt}(\bf{v} \cdot \delta \bf{r}) = \ldots$
+\par \bigskip
+\par \bigskip
+\noindent $\dfrac{d}{dt}(m \, \bf{v} \cdot \delta \bf{r}) = \ldots$
+\par \bigskip
+\noindent $\sum_i \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \delta {\bf{r}}_i) = \ldots$
+\par \bigskip
+\noindent $\sum_{i,j} \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j) = \ldots$
+\par \bigskip
+\par \bigskip
+\noindent $\sum_{i,j} \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j) = \sum_{i,j} m_i \, {\bf{v}}_i \cdot \dfrac{d}{dt}(\dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j) + \sum_{i,j} m_i \, {\bf{a}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j$
+\par \bigskip
+\noindent $\sum_{i,j} \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j) - \sum_{i,j} m_i \, {\bf{v}}_i \cdot \dfrac{d}{dt}(\dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j) = \sum_{i,j} m_i \, {\bf{a}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j$
+\par \bigskip
+\noindent $\sum_{i,j} \big [ \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j}) - m_i \, {\bf{v}}_i \cdot \dfrac{d}{dt}(\dfrac{\partial {\bf{r}}_i}{\partial q_j}) \big ] \, \delta q_j = \sum_{i,j} m_i \, {\bf{a}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j$
+\par \bigskip
+\par \bigskip
+\noindent $\sum_{i,j} \big [ \dfrac{d}{dt}(m_i \, {\bf{v}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j}) - m_i \, {\bf{v}}_i \cdot \dfrac{d}{dt}(\dfrac{\partial {\bf{r}}_i}{\partial q_j}) \big ] \, \delta q_j = \sum_{i,j} {\bf{F}}_i \cdot \dfrac{\partial {\bf{r}}_i}{\partial q_j} \; \delta q_j$
+
+\bigskip \smallskip
+
+\par \bigskip {\centering\subsection*{Bibliography}}
+
+\bigskip \medskip
+
+\noindent \href{http://en.wikipedia.org/wiki/Principle\_of\_least\_action}{http://en.wikipedia.org/wiki/Principle\_of\_least\_action}
+\par \bigskip \smallskip
+\noindent \href{http://en.wikipedia.org/wiki/Virtual\_displacement}{http://en.wikipedia.org/wiki/Virtual\_displacement}
+\par \bigskip \smallskip
+\noindent \href{http://vixra.org/abs/1112.0052}{http://vixra.org/abs/{\small 1112.0052}}
+
+\end{document}
+

@@ -1,0 +1,88 @@
+
+\documentclass[12pt]{article}
+%\documentclass[a4paper,12pt]{article}
+%\documentclass[letterpaper,12pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={153mm,198mm}}
+\geometry{totalwidth=132mm,totalheight=162mm}
+
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Is the principle of least action a tautology ?}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{4.5pt}
+
+\newcommand{\mM}{m}
+\newcommand{\mT}{T}
+\newcommand{\mV}{V}
+\newcommand{\mL}{L}
+\newcommand{\dos}{^{\,2}}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\ep}{\hspace{+3.6em}}
+\newcommand{\eq}{\hspace{+5.7em}}
+\newcommand{\ra}{_{\scriptscriptstyle \mathrm A}}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{18}{18}\selectfont Is the principle of least action a tautology ?}
+
+\bigskip \medskip
+
+{\fontsize{12}{12}\selectfont Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\footnotesize
+
+Creative Commons Attribution 3.0 License
+
+(2011) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \medskip
+
+\small
+
+{\bf Abstract}
+
+\bigskip
+
+\parbox{102mm}{This paper shows that it is possible to obtain the principle of least action starting from the acceleration of a particle.}
+
+\end{center}
+
+\normalsize
+
+\bigskip \medskip
+
+\noindent In classical mechanics, if we consider a force field (uniform or non-uniform) in which the acceleration $\vA\ra$ of a particle A is constant, then
+
+\vspace{-0.6em}
+
+\begin{eqnarray*}
+\ep {\vphantom{\delta \int_{t_{1}}^{t_{2}}}} \vA\ra - \, \vA\ra & = & 0 \\
+\ep {\vphantom{\delta \int_{t_{1}}^{t_{2}}}} \left( \vA\ra - \, \vA\ra \right) \cdot \delta \vR\ra & = & 0 \\
+\ep \int_{t_{1}}^{t_{2}} \left( \vA\ra - \, \vA\ra \right) \cdot \delta \vR\ra \; \, dt & = & 0 \\
+\ep \delta \int_{t_{1}}^{t_{2}} \left( {\textstyle \frac{1}{2}} \; \vV\ra\dos \, + \, \vA\ra^{\vphantom{\dos}} \cdot \vR\ra^{\vphantom{\dos}} \right) \, dt & = & 0 \\
+\ep \mM\ra^{\vphantom{\dos}} \; \delta \int_{t_{1}}^{t_{2}} \left( {\textstyle \frac{1}{2}} \; \vV\ra\dos \, + \, \vA\ra^{\vphantom{\dos}} \cdot \vR\ra^{\vphantom{\dos}} \right) \, dt & = & 0 \\
+\ep \delta \int_{t_{1}}^{t_{2}} \left( \mT\ra - \, \mV\ra \right) \, dt & = & 0 \eq \mT\ra = {\textstyle \frac{1}{2}} \; \mM\ra^{\vphantom{\dos}}\vV\ra\dos \\
+\ep \delta \int_{t_{1}}^{t_{2}} \mL\ra \; \, dt & = & 0 \eq \mV\ra = - \; \mM\ra^{\vphantom{\dos}} \; \vA\ra^{\vphantom{\dos}} \cdot \vR\ra^{\vphantom{\dos}}
+\end{eqnarray*}
+
+\vspace{+1.2em}
+
+\noindent If $\vA\ra$ is not constant but $\vA\ra$ is function of $\vR\ra$ then the same result is obtained, even if Newton's second law were not valid.
+
+\end{document}
+

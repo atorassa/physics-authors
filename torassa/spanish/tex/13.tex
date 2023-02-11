@@ -1,0 +1,522 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={127.0mm,165.1mm}}
+\geometry{totalwidth=108.0mm,totalheight=129.7mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{chngpage}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Mecánica Clásica: Partículas y Bipartículas}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\unitlength}{0.81pt}
+\setlength{\arraycolsep}{1.47pt}
+
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\VR}{\mathbf{R}}
+\newcommand{\VV}{\mathbf{V}}
+\newcommand{\VA}{\mathbf{A}}
+\newcommand{\ER}{\mathrm{R}}
+\newcommand{\EV}{\mathrm{V}}
+\newcommand{\EA}{\mathrm{A}}
+\newcommand{\mX}{x}
+\newcommand{\mY}{y}
+\newcommand{\mZ}{z}
+\newcommand{\mT}{t}
+\newcommand{\mM}{m}
+\newcommand{\EM}{M}
+\newcommand{\EW}{W}
+\newcommand{\rt}{'}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\rc}{_c}
+\newcommand{\ri}{_i}
+\newcommand{\rs}{_s}
+\newcommand{\rab}{_{ab}}
+\newcommand{\rot}{_{o'}}
+\newcommand{\dos}{^{\,2}}
+\newcommand{\ccc}{^{\,cm}}
+\newcommand{\uuu}{\mathring}
+\newcommand{\rj}{_{\hspace{-0.081em}j}}
+\newcommand{\rij}{_{i\hspace{-0.081em}j}}
+
+\newcommand{\xgg}{63}
+\newcommand{\xff}{12}
+\newcommand{\xee}{51}
+\newcommand{\xdd}{0}
+\newcommand{\xcc}{63}
+\newcommand{\xbb}{12}
+\newcommand{\xaa}{75}
+
+\newcommand{\ykk}{33}
+\newcommand{\yjj}{12}
+\newcommand{\yii}{33}
+\newcommand{\yhh}{12}
+\newcommand{\ygg}{33}
+\newcommand{\yff}{33}
+\newcommand{\yee}{33}
+\newcommand{\ydd}{12}
+\newcommand{\ycc}{33}
+\newcommand{\ybb}{12}
+\newcommand{\yaa}{33}
+
+\newcommand{\daa}{\hspace{-0.36em}^2\hspace{+0.06em}}
+\newcommand{\dab}{\hspace{-0.72em}^2\hspace{+0.36em}}
+
+\newcommand{\xaaykk}{{\color[rgb]{0,0,1}$\frac{1}{2}\vA\rab\dab = \frac{1}{2}\uuu\vA\rab\dab$}}
+\newcommand{\xaayjj}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xaayii}{{\color[rgb]{0,0,1}$\frac{1}{2}\vV\rab\dab = \frac{1}{2}\uuu\vV\rab\dab$}}
+\newcommand{\xaayhh}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xaaygg}{{\color[rgb]{0,0,1}$\frac{1}{2}\vR\rab\dab = \frac{1}{2}\uuu\vR\rab\dab$}}
+\newcommand{\xaayff}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xaayee}{{\color[rgb]{0,0,1}$\frac{1}{2}\mM\rab\vR\rab\dab = \frac{1}{2}\mM\rab\uuu\vR\rab\dab$}}
+\newcommand{\xaaydd}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xaaycc}{{\color[rgb]{0,0,1}$\frac{1}{2}\mM\rab\vV\rab\dab = \frac{1}{2}\mM\rab\uuu\vV\rab\dab$}}
+\newcommand{\xaaybb}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xaayaa}{{\color[rgb]{0,0,1}$\frac{1}{2}\mM\rab\vA\rab\dab = \frac{1}{2}\mM\rab\uuu\vA\rab\dab$}}
+
+\newcommand{\xbbykk}{{\color[rgb]{0,0,0}$\leftarrow$}}
+\newcommand{\xbbyjj}{{\color[rgb]{0,0,0}$\swarrow$}}
+\newcommand{\xbbyii}{{\color[rgb]{0,0,0}$\leftarrow$}}
+\newcommand{\xbbyhh}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xbbygg}{{\color[rgb]{0,0,0}$\leftarrow$}}
+\newcommand{\xbbyff}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xbbyee}{{\color[rgb]{0,0,0}$\leftarrow$}}
+\newcommand{\xbbydd}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xbbycc}{{\color[rgb]{0,0,0}$\leftarrow$}}
+\newcommand{\xbbybb}{{\color[rgb]{0,0,0}$\nwarrow$}}
+\newcommand{\xbbyaa}{{\color[rgb]{0,0,0}$\leftarrow$}}
+
+\newcommand{\xccykk}{{\color[rgb]{0,0,1}$\vA\rab = \uuu\vA\rab$}}
+\newcommand{\xccyjj}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xccyii}{{\color[rgb]{0,0,1}$\vV\rab = \uuu\vV\rab$}}
+\newcommand{\xccyhh}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xccygg}{{\color[rgb]{0,0,1}$\vR\rab = \uuu\vR\rab$}}
+\newcommand{\xccyff}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xccyee}{{\color[rgb]{0,0,1}$\mM\rab\vR\rab = \mM\rab\uuu\vR\rab$}}
+\newcommand{\xccydd}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xccycc}{{\color[rgb]{0,0,1}$\mM\rab\vV\rab = \mM\rab\uuu\vV\rab$}}
+\newcommand{\xccybb}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xccyaa}{{\color[rgb]{0,0,1}$\mM\rab\vA\rab = \mM\rab\uuu\vA\rab$}}
+
+\newcommand{\xddykk}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xddyjj}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xddyii}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xddyhh}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xddygg}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xddyff}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xddyee}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xddydd}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xddycc}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xddybb}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xddyaa}{{\color[rgb]{0,0,0}$\rightarrow$}}
+
+\newcommand{\xeeykk}{{\color[rgb]{1,0,0}$\vA\ra = \uuu\vA\ra$}}
+\newcommand{\xeeyjj}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xeeyii}{{\color[rgb]{0,0,0}$\vV\ra = \uuu\vV\ra$}}
+\newcommand{\xeeyhh}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xeeygg}{{\color[rgb]{0,0,0}$\vR\ra = \uuu\vR\ra$}}
+\newcommand{\xeeyff}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xeeyee}{{\color[rgb]{0,0,0}$\mM\ra\vR\ra = \mM\ra\uuu\vR\ra$}}
+\newcommand{\xeeydd}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xeeycc}{{\color[rgb]{0,0,0}$\mM\ra\vV\ra = \mM\ra\uuu\vV\ra$}}
+\newcommand{\xeeybb}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xeeyaa}{{\color[rgb]{1,0,0}$\mM\ra\vA\ra = \mM\ra\uuu\vA\ra$}}
+
+\newcommand{\xffykk}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xffyjj}{{\color[rgb]{0,0,0}$\searrow$}}
+\newcommand{\xffyii}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xffyhh}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xffygg}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xffyff}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xffyee}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xffydd}{{\color[rgb]{0,0,0}$$}}
+\newcommand{\xffycc}{{\color[rgb]{0,0,0}$\rightarrow$}}
+\newcommand{\xffybb}{{\color[rgb]{0,0,0}$\nearrow$}}
+\newcommand{\xffyaa}{{\color[rgb]{0,0,0}$\rightarrow$}}
+
+\newcommand{\xggykk}{{\color[rgb]{1,0,0}$\frac{1}{2}\vA\ra\daa = \frac{1}{2}\uuu\vA\ra\daa$}}
+\newcommand{\xggyjj}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xggyii}{{\color[rgb]{0,0,0}$\frac{1}{2}\vV\ra\daa = \frac{1}{2}\uuu\vV\ra\daa$}}
+\newcommand{\xggyhh}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xggygg}{{\color[rgb]{0,0,0}$\frac{1}{2}\vR\ra\daa = \frac{1}{2}\uuu\vR\ra\daa$}}
+\newcommand{\xggyff}{{\color[rgb]{0,0,0}$\uparrow$}}
+\newcommand{\xggyee}{{\color[rgb]{0,0,0}$\frac{1}{2}\mM\ra\vR\ra\daa = \frac{1}{2}\mM\ra\uuu\vR\ra\daa$}}
+\newcommand{\xggydd}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xggycc}{{\color[rgb]{0,0,0}$\frac{1}{2}\mM\ra\vV\ra\daa = \frac{1}{2}\mM\ra\uuu\vV\ra\daa$}}
+\newcommand{\xggybb}{{\color[rgb]{0,0,0}$\downarrow$}}
+\newcommand{\xggyaa}{{\color[rgb]{1,0,0}$\frac{1}{2}\mM\ra\vA\ra\daa = \frac{1}{2}\mM\ra\uuu\vA\ra\daa$}}
+
+\begin{document}
+
+\ \vspace{-1.5em}
+
+\begin{center}
+
+{\fontsize{27}{27}\selectfont Mecánica Clásica} \\
+\vspace{+0.54em}
+{\fontsize{13}{13}\selectfont ( Partículas y Bipartículas )}
+
+\bigskip \medskip
+
+{\fontsize{11}{11}\selectfont Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\footnotesize
+
+Licencia Creative Commons Atribución 3.0
+
+(2011) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\bigskip \smallskip
+
+\small
+
+{\bf Resumen}
+
+\bigskip
+
+\parbox{80.1mm}{Este trabajo considera la existencia de bipartículas y presenta una ecuación general de movimiento, que puede ser aplicada en cualquier sistema de referencia no rotante (inercial o no inercial) sin necesidad de introducir fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.6em}
+
+{\centering\subsection*{Sistema de Referencia Universal}}
+
+\vspace{+0.3em}
+
+\par El sistema de referencia universal $\uuu\mathrm S$ es un sistema de referencia en el que la aceleración $\uuu\vA$ de cualquier partícula está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\uuu\vA = \frac{\vF}{\mM}
+\end{eqnarray*}
+\noindent donde $\vF$ es la fuerza resultante que actúa sobre la partícula y $\mM$ es la masa de la partícula.
+\smallskip
+\par El sistema de referencia universal $\uuu\mathrm S$ es un sistema de referencia inercial. Por lo tanto, se puede afirmar que el sistema de referencia universal $\uuu\mathrm S$ es también un sistema de referencia no rotante.
+
+\newpage \enlargethispage{-0.42em}
+
+{\centering\subsection*{Ecuación General de Movimiento}}
+
+\par La ecuación general de movimiento para dos partículas A y B es:
+\begin{eqnarray*}
+\mM\ra\mM\rb(\vR\ra - \vR\rb) = \mM\ra\mM\rb(\uuu\vR\ra - \uuu\vR\rb)
+\end{eqnarray*}
+\noindent donde $\mM\ra$ y $\mM\rb$ son las masas de las partículas A y B, $\vR\ra$ y $\vR\rb$ son las posiciones de las partículas A y B con respecto a un sistema de referencia no rotante S, $\uuu\vR\ra$ y $\uuu\vR\rb$ son las posiciones de las partículas A y B con respecto al sistema de referencia universal $\uuu\mathrm S$.
+
+\smallskip
+
+\par Si $\mM\ra\mM\rb = \mM\rab$, $(\vR\ra - \vR\rb) = \vR\rab$ y $(\uuu\vR\ra - \uuu\vR\rb) = \uuu\vR\rab$, entonces la ecuación anterior queda:
+\begin{eqnarray*}
+\mM\rab \, \vR\rab = \mM\rab \, \uuu\vR\rab
+\end{eqnarray*}
+
+\medskip
+
+\par La ecuación general de movimiento para un sistema de N partículas es:
+\begin{eqnarray*}
+\sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\ri\mM\rj(\vR\ri - \vR\rj) = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\ri\mM\rj(\uuu\vR\ri - \uuu\vR\rj)
+\end{eqnarray*}
+\noindent donde $\mM\ri$ y $\mM\rj$ son las masas de las partículas \textit{i}-ésima y \textit{j}-ésima, $\vR\ri$ y $\vR\rj$ son las posiciones de las partículas \textit{i}-ésima y \textit{j}-ésima con respecto a un sistema de referencia no rotante S, $\uuu\vR\ri$ y $\uuu\vR\rj$ son las posiciones de las partículas \textit{i}-ésima y \textit{j}-ésima con respecto al sistema de referencia universal $\uuu\mathrm S$.
+
+\smallskip
+
+\par Si $\mM\ri\mM\rj = \mM\rij$, $(\vR\ri - \vR\rj) = \vR\rij$ y $(\uuu\vR\ri - \uuu\vR\rj) = \uuu\vR\rij$, entonces la ecuación anterior queda:
+\begin{eqnarray*}
+\sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij \, \vR\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij \, \uuu\vR\rij
+\end{eqnarray*}
+
+\medskip
+
+\par Un sistema de partículas forma un sistema de bipartículas. Por ejemplo, el sistema de partículas A, B, C y D forma el sistema de bipartículas AB, AC, AD, BC, BD y CD.
+
+\newpage
+
+{\centering\subsection*{Partículas y Bipartículas}}
+
+\vspace{+0.6em}
+
+\par A partir de la ecuación general de movimiento para dos partículas A y B (ecuación azul subrayada) se obtienen las siguientes ecuaciones:
+
+\vspace{+1.8em}
+
+\begin{adjustwidth}{0mm}{0mm}
+
+\begin{center}
+
+\scriptsize
+
+\begin{tabular}{ccc}
+BIPARTÍCULA & & PARTÍCULA \\
+{\makebox(\xaa,12){}} {\makebox(\xbb,0){}} {\makebox(\xcc,0){}} & {\makebox(\xdd,0){}} & {\makebox(\xee,0){}} {\makebox(\xff,0){}} {\makebox(\xgg,0){}}
+\end{tabular}
+
+\begin{tabular}{c}
+C\\I\\N\\E\\M\\Á\\T\\I\\C\\A
+\end{tabular}
+\begin{tabular}{ccc}
+{\framebox(\xaa,\ykk){\xaaykk}} {\makebox(\xbb,\ykk){\xbbykk}} {\framebox(\xcc,\ykk){\xccykk}} & {\makebox(\xdd,\ykk){\xddykk}} & {\framebox(\xee,\ykk){\xeeykk}} {\makebox(\xff,\ykk){\xffykk}} {\framebox(\xgg,\ykk){\xggykk}} \\
+{\makebox(\xaa,\yjj){\xaayjj}} {\makebox(\xbb,\yjj){\xbbyjj}} {\makebox(\xcc,\yjj){\xccyjj}} & {\makebox(\xdd,\yjj){\xddyjj}} & {\makebox(\xee,\yjj){\xeeyjj}} {\makebox(\xff,\yjj){\xffyjj}} {\makebox(\xgg,\yjj){\xggyjj}} \\
+{\framebox(\xaa,\yii){\xaayii}} {\makebox(\xbb,\yii){\xbbyii}} {\framebox(\xcc,\yii){\xccyii}} & {\makebox(\xdd,\yii){\xddyii}} & {\framebox(\xee,\yii){\xeeyii}} {\makebox(\xff,\yii){\xffyii}} {\framebox(\xgg,\yii){\xggyii}} \\
+{\makebox(\xaa,\yhh){\xaayhh}} {\makebox(\xbb,\yhh){\xbbyhh}} {\makebox(\xcc,\yhh){\xccyhh}} & {\makebox(\xdd,\yhh){\xddyhh}} & {\makebox(\xee,\yhh){\xeeyhh}} {\makebox(\xff,\yhh){\xffyhh}} {\makebox(\xgg,\yhh){\xggyhh}} \\
+{\framebox(\xaa,\ygg){\xaaygg}} {\makebox(\xbb,\ygg){\xbbygg}} {\framebox(\xcc,\ygg){\xccygg}} & {\makebox(\xdd,\ygg){\xddygg}} & {\framebox(\xee,\ygg){\xeeygg}} {\makebox(\xff,\ygg){\xffygg}} {\framebox(\xgg,\ygg){\xggygg}}
+\end{tabular}
+\begin{tabular}{c}
+C\\I\\N\\E\\M\\Á\\T\\I\\C\\A
+\end{tabular}
+
+\begin{tabular}{ccc}
+{\makebox(\xaa,\yff){\xaayff}} {\makebox(\xbb,\yff){\xbbyff}} {\makebox(\xcc,\yff){\xccyff}} & {\makebox(\xdd,\yff){\xddyff}} & {\makebox(\xee,\yff){\xeeyff}} {\makebox(\xff,\yff){\xffyff}} {\makebox(\xgg,\yff){\xggyff}}
+\end{tabular}
+
+\begin{tabular}{c}
+D\\I\\N\\Á\\M\\I\\C\\A
+\end{tabular}
+\begin{tabular}{ccc}
+{\framebox(\xaa,\yee){\xaayee}} {\makebox(\xbb,\yee){\xbbyee}} {\framebox(\xcc,\yee){\xccyee}} & {\makebox(\xdd,\yee){\xddyee}} & {\framebox(\xee,\yee){\xeeyee}} {\makebox(\xff,\yee){\xffyee}} {\framebox(\xgg,\yee){\xggyee}} \\
+{\makebox(\xaa,\ydd){\xaaydd}} {\makebox(\xbb,\ydd){\xbbydd}} {\makebox(\xcc,\ydd){\xccydd}} & {\makebox(\xdd,\ydd){\xddydd}} & {\makebox(\xee,\ydd){\xeeydd}} {\makebox(\xff,\ydd){\xffydd}} {\makebox(\xgg,\ydd){\xggydd}} \\
+{\framebox(\xaa,\ycc){\xaaycc}} {\makebox(\xbb,\ycc){\xbbycc}} {\framebox(\xcc,\ycc){\xccycc}} & {\makebox(\xdd,\ycc){\xddycc}} & {\framebox(\xee,\ycc){\xeeycc}} {\makebox(\xff,\ycc){\xffycc}} {\framebox(\xgg,\ycc){\xggycc}} \\
+{\makebox(\xaa,\ybb){\xaaybb}} {\makebox(\xbb,\ybb){\xbbybb}} {\makebox(\xcc,\ybb){\xccybb}} & {\makebox(\xdd,\ybb){\xddybb}} & {\makebox(\xee,\ybb){\xeeybb}} {\makebox(\xff,\ybb){\xffybb}} {\makebox(\xgg,\ybb){\xggybb}} \\
+{\framebox(\xaa,\yaa){\xaayaa}} {\makebox(\xbb,\yaa){\xbbyaa}} {\framebox(\xcc,\yaa){\xccyaa}} & {\makebox(\xdd,\yaa){\xddyaa}} & {\framebox(\xee,\yaa){\xeeyaa}} {\makebox(\xff,\yaa){\xffyaa}} {\framebox(\xgg,\yaa){\xggyaa}}
+\end{tabular}
+\begin{tabular}{c}
+D\\I\\N\\Á\\M\\I\\C\\A
+\end{tabular}
+
+\begin{picture}(3,3)
+\put(-64.7,110.7){\line(1,0){63.8}}
+\end{picture}
+
+\begin{tabular}{ccc}
+{\makebox(\xaa,3){}} {\makebox(\xbb,0){}} {\makebox(\xcc,0){}} & {\makebox(\xdd,0){}} & {\makebox(\xee,0){}} {\makebox(\xff,0){}} {\makebox(\xgg,0){}} \\
+BIPARTÍCULA & & PARTÍCULA
+\end{tabular}
+
+\normalsize
+
+\end{center}
+
+\end{adjustwidth}
+
+\newpage \enlargethispage{+0.48em}
+
+\par Las ecuaciones azules son válidas en cualquier sistema de referencia no rotante, debido a que $(\vR\rab = \uuu\vR\rab)$, $(\vV\rab = \uuu\vV\rab)$ y $(\vA\rab = \uuu\vA\rab)$
+\medskip
+\par Las ecuaciones rojas son válidas en cualquier sistema de referencia inercial, debido a que $(\vA\ra = \uuu\vA\ra)$
+\medskip
+\par Las ecuaciones cinemáticas se obtienen de las ecuaciones dinámicas si consideramos que todas las partículas tienen la misma masa. Por lo tanto, las ecuaciones cinemáticas son un caso especial de las ecuaciones dinámicas.
+\medskip
+\par La dinámica de partículas se obtiene de la dinámica de bipartículas si sólo consideramos bipartículas que tienen la misma partícula.
+\vspace{+0.6em}
+\par Por ejemplo:
+\vspace{+0.6em}
+\par Si consideramos un sistema de bipartículas AB, AC y BC, se tiene:
+\begin{eqnarray*}
+\mathrm {\textstyle AB + AC + BC} = \mathrm {\textstyle \uuu{AB} + \uuu{AC} + \uuu{BC}}
+\end{eqnarray*}
+\par Considerando sólo las bipartículas que tienen la partícula C, sigue:
+\begin{eqnarray*}
+\mathrm {\textstyle AC + BC} = \mathrm {\textstyle \uuu{AC} + \uuu{BC}}
+\end{eqnarray*}
+\par Aplicando la ecuación general de movimiento, se obtiene:
+\begin{eqnarray*}
+\mM\ra\mM\rc(\vR\ra - \vR\rc) + \mM\rb\mM\rc(\vR\rb - \vR\rc) = \mM\ra\mM\rc(\uuu\vR\ra - \uuu\vR\rc) + \mM\rb\mM\rc(\uuu\vR\rb - \uuu\vR\rc)
+\end{eqnarray*}
+\par Derivando dos veces con respecto al tiempo, se deduce:
+\begin{eqnarray*}
+\mM\ra\mM\rc(\vA\ra - \vA\rc) + \mM\rb\mM\rc(\vA\rb - \vA\rc) = \mM\ra\mM\rc(\uuu\vA\ra - \uuu\vA\rc) + \mM\rb\mM\rc(\uuu\vA\rb - \uuu\vA\rc)
+\end{eqnarray*}
+\par Dividiendo por $\mM\rc$, usando un sistema de referencia C fijo a la \hbox {partícula C} {\hphantom{\hspace{+1.17em}}} (\hspace{-0.21em} $\vA\rc = 0$ con respecto al sistema de referencia C \hspace{-0.21em}) y asumiendo que el \hbox {{\hphantom{\hspace{+1.32em}}} sistema} de referencia C es inercial $(\vA\rc = \uuu\vA\rc)$, se obtiene:
+\begin{eqnarray*}
+\mM\ra\vA\ra + \mM\rb\vA\rb = \mM\ra\uuu\vA\ra + \mM\rb\uuu\vA\rb
+\end{eqnarray*}
+\par Sustituyendo $\uuu\vA = \vF / \mM$ y reordenando, finalmente se deduce:
+\begin{eqnarray*}
+\vF\ra + \vF\rb = \mM\ra\vA\ra + \mM\rb\vA\rb
+\end{eqnarray*}
+
+\newpage
+
+{\centering\subsection*{Ecuación de Movimiento}}
+
+\par A partir de la ecuación general de movimiento se deduce que la aceleración $\vA\ra$ de una partícula A con respecto a un sistema de referencia S (no rotante) fijo a una partícula S, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\vA\ra = \frac{\vF\ra}{\mM\ra} - \frac{\vF\rs}{\mM\rs}
+\end{eqnarray*}
+\noindent donde $\vF\ra$ es la fuerza resultante que actúa sobre la partícula A, $\mM\ra$ es la masa de la partícula A, $\vF\rs$ es la fuerza resultante que actúa sobre la partícula S y $\mM\rs$ es la masa de la partícula S.
+\smallskip
+\par En contradicción con la primera y segunda ley de Newton, de la ecuación anterior se deduce que la partícula A puede estar acelerada aun si sobre la partícula A no actúa fuerza alguna y también que la partícula A puede no estar acelerada (estado de reposo o de movimiento rectilíneo uniforme) aun si sobre la partícula A actúa una fuerza no equilibrada.
+\smallskip
+\par Por otro lado, de la ecuación anterior también se deduce que la primera y segunda ley de Newton son válidas en el sistema de referencia S sólo si la fuerza resultante que actúa sobre la partícula S es igual a cero. Por lo tanto, el sistema de referencia S es un sistema de referencia inercial sólo si la fuerza resultante que actúa sobre la partícula S es igual a cero.
+
+\vspace{+0.6em}
+
+{\centering\subsection*{Bibliografía}}
+
+\vspace{+0.3em}
+
+\par \textbf{A. Einstein}, \textit{Sobre la Teoría de la Relatividad Especial y General}.
+\medskip
+\par \textbf{E. Mach}, \textit{La Ciencia de la Mecánica}.
+\medskip
+\par \textbf{R. Resnick y D. Halliday}, \textit{Física}.
+\medskip
+\par \textbf{J. Kane y M. Sternheim}, \textit{Física}.
+\medskip
+\par \textbf{H. Goldstein}, \textit{Mecánica Clásica}.
+\medskip
+\par \textbf{L. Landau y E. Lifshitz}, \textit{Mecánica}.
+
+\newpage \enlargethispage{+0.24em}
+
+{\centering\subsection*{Apéndice}}
+
+{\centering\subsection*{Transformaciones}}
+
+\vspace{+0.3em}
+
+\par El sistema de referencia universal $\uuu\mathrm S$ es un sistema de referencia inercial.
+\smallskip
+\par Cualquier sistema de referencia inercial es un sistema de referencia no rotante.
+\smallskip
+\par Cualquier sistema de referencia central S$\ccc$ (sistema de referencia fijo al centro de masa de un sistema de partículas) es un sistema de referencia no rotante.
+\smallskip
+\par Se puede pasar de las coordenadas $\mX$, $\mY$, $\mZ$, $\mT$ de un sistema de referencia S (no rotante) a las coordenadas $\mX\hspace{+0.06em}\rt$, $\mY\hspace{+0.06em}\rt$, $\mZ\hspace{+0.06em}\rt$, $\mT\rt$ de otro sistema de referencia S' (no rotante) cuyo origen de coordenadas {\small \it O}$\hspace{+0.03em}\rt$ se encuentra en la posición $\mX\rot$, $\mY\rot$, $\mZ\rot$ con respecto al sistema de referencia S, aplicando las siguientes ecuaciones:
+\begin{eqnarray*}
+\mX\hspace{+0.06em}\rt & = & \mX - \mX\rot \\
+\mY\hspace{+0.06em}\rt & = & \mY - \mY\rot \\
+\mZ\hspace{+0.06em}\rt & = & \mZ - \mZ\rot \\
+\mT\rt & = & \mT
+\end{eqnarray*}
+\par A partir de estas ecuaciones, es posible transformar en forma vectorial las posiciones, velocidades y aceleraciones del sistema de referencia S al sistema de referencia S', aplicando las siguientes ecuaciones:
+\begin{eqnarray*}
+\vR\hspace{+0.06em}\rt & = & \vR - \vR\rot \\
+\vV\hspace{+0.06em}\rt & = & \vV - \vV\rot \\
+\vA\hspace{+0.06em}\rt & = & \vA - \vA\rot
+\end{eqnarray*}
+\noindent donde $\vR\rot$, $\vV\rot$ y $\vA\rot$ son la posición, velocidad y aceleración respectivamente del sistema de referencia S' con respecto al sistema de referencia S.
+
+\newpage
+
+{\centering\subsection*{Def\hspace{+0.03em}iniciones}}
+
+\begin{center}
+\begin{tabular}{lll}
+& Partículas & Bipartículas \hspace{-0.6em} \vspace{+0.9em} \\
+Masa & $\hspace{-0.06em}\EM\ri = \sum_{\scriptscriptstyle i} \; \mM\ri$ & $\hspace{-0.06em}\EM\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij$ \hspace{-0.6em} \vspace{+0.9em} \\
+Posición vectorial & $\VR\ri = \sum_{\scriptscriptstyle i} \; \mM\ri\vR\ri \, / \EM\ri$ & $\VR\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij\vR\rij \, / \EM\rij$ \hspace{-0.6em} \vspace{+0.3em} \\
+Velocidad vectorial & $\VV\ri = \sum_{\scriptscriptstyle i} \; \mM\ri\vV\ri \, / \EM\ri$ & $\VV\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij\vV\rij \, / \EM\rij$ \hspace{-0.6em} \vspace{+0.3em} \\
+Aceleración vectorial & $\VA\ri = \sum_{\scriptscriptstyle i} \; \mM\ri\vA\ri \, / \EM\ri$ & $\VA\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \mM\rij\vA\rij \, / \EM\rij$ \hspace{-0.6em} \vspace{+0.9em} \\
+Posición escalar & $\ER\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \frac{1}{2}\mM\ri^{\vphantom{\dos}}\vR\ri\dos / \EM\ri^{\vphantom{\dos}}$ & $\ER\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \frac{1}{2}\mM\rij^{\vphantom{\dos}}\vR\rij\dos \, / \EM\rij^{\vphantom{\dos}}$ \hspace{-0.6em} \vspace{+0.3em} \\
+Velocidad escalar & $\EV\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \frac{1}{2}\mM\ri^{\vphantom{\dos}}\vV\ri\dos / \EM\ri^{\vphantom{\dos}}$ & $\EV\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \frac{1}{2}\mM\rij^{\vphantom{\dos}}\vV\rij\dos \, / \EM\rij^{\vphantom{\dos}}$ \hspace{-0.6em} \vspace{+0.3em} \\
+Aceleración escalar & $\EA\ri^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \; \frac{1}{2}\mM\ri^{\vphantom{\dos}}\vA\ri\dos / \EM\ri^{\vphantom{\dos}}$ & $\EA\rij^{\vphantom{\dos}} = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \frac{1}{2}\mM\rij^{\vphantom{\dos}}\vA\rij\dos \, / \EM\rij^{\vphantom{\dos}}$ \hspace{-0.6em} \vspace{+0.9em} \\
+Trabajo & $\EW\ri = \sum_{\scriptscriptstyle i} \; \int \mM\ri\vA\ri \cdot d\vR\ri$ & $\EW\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \int \mM\rij\vA\rij \cdot d\vR\rij$ \hspace{-0.6em} \vspace{+0.3em} \\
+& $\EW\ri^{\vphantom{\dos}} = \Delta \left( \sum_{\scriptscriptstyle i} \; \frac{1}{2}\mM\ri^{\vphantom{\dos}}\vV\ri\dos \right)$ & $\EW\rij^{\vphantom{\dos}} = \Delta \left( \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \frac{1}{2}\mM\rij^{\vphantom{\dos}}\vV\rij\dos \right)$ \hspace{-0.6em}
+\end{tabular}
+\end{center}
+
+\vspace{-1.2em}
+
+{\centering\subsection*{Relaciones}}
+
+\vspace{-1.5em}
+
+\begin{eqnarray*}
+\EM\rij^{\vphantom{\dos}} \: \ER\rij^{\vphantom{\dos}} & = & \EM\ri\dos \left( \ER\ri^{\vphantom{\dos}} - {\textstyle \frac{1}{2}}\VR\ri\dos \right) \\
+\EM\rij^{\vphantom{\dos}} \: \EV\rij^{\vphantom{\dos}} & = & \EM\ri\dos \left( \EV\ri^{\vphantom{\dos}} - {\textstyle \frac{1}{2}}\VV\ri\dos \right) \\
+\EM\rij^{\vphantom{\dos}} \: \EA\rij^{\vphantom{\dos}} & = & \EM\ri\dos \left( \EA\ri^{\vphantom{\dos}} - {\textstyle \frac{1}{2}}\VA\ri\dos \right)
+\end{eqnarray*}
+
+\vspace{-0.3em}
+
+\par Si $\EM\ri\dos / \EM\rij^{\vphantom{\dos}} = k$, entonces las ecuaciones anteriores con respecto al sistema de referencia central S$\ccc$ quedan:
+
+\vspace{-0.9em}
+
+\begin{eqnarray*}
+\ER\rij\ccc & = & k \; \ER\ri\ccc \\
+\EV\rij\ccc & = & k \; \EV\ri\ccc \\
+\EA\rij\ccc & = & k \; \EA\ri\ccc
+\end{eqnarray*}
+
+\newpage \enlargethispage{+0.24em}
+
+{\centering\subsection*{Principios}}
+
+\par {\Large L}as posiciones, velocidades y aceleraciones (vectorial y escalar) de un sistema de bipartículas son invariantes bajo transformaciones entre sistemas de referencia no rotantes.
+\begin{eqnarray*}
+\VR\rij^{\vphantom{\rt}} = \uuu\VR\rij^{\vphantom{\rt}} = \VR\rij\ccc = \VR\rij\rt & \qquad & \hspace{+0.06em}\ER\rij^{\vphantom{\rt}} = \hspace{+0.06em}\uuu\ER\rij^{\vphantom{\rt}} = \hspace{+0.06em}\ER\rij\ccc = \hspace{+0.06em}\ER\rij\rt \\
+\VV\rij^{\vphantom{\rt}} = \uuu\VV\rij^{\vphantom{\rt}} = \VV\rij\ccc = \VV\rij\rt & \qquad & \EV\rij^{\vphantom{\rt}} = \uuu\EV\rij^{\vphantom{\rt}} = \EV\rij\ccc = \EV\rij\rt \\
+\VA\rij^{\vphantom{\rt}} = \uuu\VA\rij^{\vphantom{\rt}} = \VA\rij\ccc = \VA\rij\rt & \qquad & \EA\rij^{\vphantom{\rt}} = \uuu\EA\rij^{\vphantom{\rt}} = \EA\rij\ccc = \EA\rij\rt
+\end{eqnarray*}
+
+\smallskip
+
+\par A partir del principio anterior se deduce que la aceleración $\vA\ra$ de una partícula A con respecto a un sistema de referencia no rotante S fijo a una partícula S, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\vA\ra = \frac{\vF\ra}{\mM\ra} - \frac{\vF\rs}{\mM\rs}
+\end{eqnarray*}
+\noindent donde $\vF\ra$ es la fuerza resultante que actúa sobre la partícula A, $\mM\ra$ es la masa de la partícula A, $\vF\rs$ es la fuerza resultante que actúa sobre la partícula S y $\mM\rs$ es la masa de la partícula S.
+
+\bigskip
+
+\par {\Large L}as aceleraciones (vectorial y escalar) de un sistema de partículas son invariantes bajo transformaciones entre sistemas de referencia inerciales.
+\begin{eqnarray*}
+\VA\ri^{\vphantom{\rt}} = \uuu\VA\ri^{\vphantom{\rt}} = \VA\ri\rt & \qquad & \EA\ri^{\vphantom{\rt}} = \uuu\EA\ri^{\vphantom{\rt}} = \EA\ri\rt
+\end{eqnarray*}
+
+\smallskip
+
+\par A partir del principio anterior se deduce que la aceleración $\vA\ra$ de una partícula A con respecto a un sistema de referencia inercial S, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\vA\ra = \frac{\vF\ra}{\mM\ra}
+\end{eqnarray*}
+\noindent donde $\vF\ra$ es la fuerza resultante que actúa sobre la partícula A y $\mM\ra$ es la masa de la partícula A.
+
+\newpage \enlargethispage{+0.03em}
+
+{\centering\subsection*{Trabajo y Fuerza}}
+
+\par El trabajo $\EW\rij$ realizado por las fuerzas que actúan sobre un sistema de bipartículas con respecto a un sistema de referencia no rotante, está dado por:
+\begin{eqnarray*}
+\EW\rij = \sum_{\scriptscriptstyle i} \, \sum_{\scriptscriptstyle j>i} \; \int \mM\ri\mM\rj \left( \frac{\vF\ri}{\mM\ri} - \frac{\vF\rj}{\mM\rj} \right) \cdot d \left( \vR\ri - \vR\rj \right)
+\end{eqnarray*}
+\par El trabajo $\EW\ri$ realizado por las fuerzas que actúan sobre un sistema de partículas con respecto al sistema de referencia central, está dado por:
+\begin{eqnarray*}
+\EW\ri = \sum_{\scriptscriptstyle i} \; \int \vF\ri \cdot d\vR\ri
+\end{eqnarray*}
+\par El trabajo $\EW\ri$ realizado por las fuerzas que actúan sobre un sistema de partículas con respecto a un sistema de referencia inercial, está dado por:
+\begin{eqnarray*}
+\EW\ri = \sum_{\scriptscriptstyle i} \; \int \vF\ri \cdot d\vR\ri
+\end{eqnarray*}
+
+{\centering\subsection*{Conservación de Energía Cinética}}
+
+\par Si las fuerzas que actúan sobre un sistema de partículas no realizan trabajo con respecto al sistema de referencia central, entonces la energía cinética del sistema de partículas permanece constante con respecto al sistema de referencia central.
+\smallskip
+\par Si la energía cinética del sistema de partículas permanece constante con respecto al sistema de referencia central, entonces la energía cinética del sistema de bipartículas permanece constante con respecto a cualquier sistema de referencia no rotante.
+\smallskip
+\par Si las fuerzas que actúan sobre el sistema de partículas no realizan trabajo con respecto a un sistema de referencia inercial, entonces la energía cinética y la cantidad de movimiento (magnitud) del sistema de partículas permanecen constantes con respecto al sistema de referencia inercial; aun si la tercera ley de Newton no fuese válida.
+
+\end{document}
+

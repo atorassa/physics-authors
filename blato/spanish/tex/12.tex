@@ -1,0 +1,456 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={134.1mm,216.0mm}}
+\geometry{totalwidth=113.1mm,totalheight=180.0mm}
+
+\usepackage{graphicx}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+\spanishdecimal{.}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Sistemas no Inerciales en Relatividad Especial}}
+\hypersetup{pdfauthor={A. Blato}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\yya}{27}
+\newcommand{\xxa}{33}
+\newcommand{\xxc}{45}
+
+\begin{document}
+
+\begin{center}
+
+{\fontsize{10.20}{10.20}\selectfont \sc Sistemas no Inerciales en Relatividad Especial}
+
+\bigskip \medskip
+
+{\fontsize{9.60}{9.60}\selectfont A. Blato}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2018) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{90.00mm}{Este artículo presenta una nueva formulación de la relatividad especial que es invariante bajo transformaciones entre sistemas inerciales y no inerciales (\,no rotantes\,) Además, una simple solución a la paradoja de los gemelos es presentada y una nueva fuerza universal es propuesta.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.50em}
+
+\par \bigskip {\centering\subsubsection*{Introducción}}
+
+\bigskip \smallskip
+
+\noindent La masa intrínseca $( \, m \, )$ y el factor frecuencia $( \, f \, )$ de una partícula masiva \hbox {están dados por}:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+m ~\doteq~ m_o
+\end{eqnarray*}
+\vspace{-0.90em}
+\begin{eqnarray*}
+f ~\doteq~ \Big ( 1 - \dfrac{\mathbf{v} \cdot \mathbf{v}}{c^2} \hspace{+0.15em} \Big )^{\hspace{-0.24em}-\hspace{+0.03em}1/2}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent donde $( \, m_o \, )$ es la masa en reposo de la partícula masiva, $( \, \mathbf{v} \, )$ es la velocidad relacional de la partícula masiva y $( \, c \, )$ es la velocidad de la luz en el vacío.
+\par \vspace{+0.60em}
+\noindent La masa intrínseca $( \, m \, )$ y el factor frecuencia $( \, f \, )$ de una partícula no masiva \hbox {están dados por}:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+m ~\doteq~ \dfrac{h \, \kappa}{c^2}
+\end{eqnarray*}
+\vspace{-0.60em}
+\begin{eqnarray*}
+f ~\doteq~ \dfrac{\nu}{\kappa}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent donde $( \hspace{+0.33em} h \hspace{+0.33em} )$ es la constante de Planck, \hspace{+0.06em}$( \hspace{+0.30em} \nu \hspace{+0.30em} )$ es la frecuencia relacional de la partícula no masiva, $( \, \kappa \, )$ es una constante universal positiva con dimensión de frecuencia y $( \, c \, )$ es la velocidad de la luz en el vacío.
+\par \vspace{+0.60em}
+\noindent En este artículo, una partícula masiva es una partícula con masa en reposo no nula y una partícula no masiva es una partícula con masa en reposo nula.
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Cinemática Invariante}}
+
+\bigskip \smallskip
+
+\noindent La posición especial $( \, \bar{\mathbf{r}} \, )$, la velocidad especial $( \, \bar{\mathbf{v}} \, )$ y la aceleración especial $( \, \bar{\mathbf{a}} \, )$ de una partícula ( masiva o no masiva ) están dadas por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\bar{\mathbf{r}} ~\doteq~ \int f \, \mathbf{v} \; d\hspace{+0.012em}t
+\end{eqnarray*}
+\vspace{-0.45em}
+\begin{eqnarray*}
+\bar{\mathbf{v}} ~\doteq~ \dfrac{d\hspace{+0.036em}\bar{\mathbf{r}}}{d\hspace{+0.012em}t} ~=~ f \, \mathbf{v}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\bar{\mathbf{a}} ~\doteq~ \dfrac{d\hspace{+0.021em}\bar{\mathbf{v}}}{d\hspace{+0.012em}t} ~=~ f \, \dfrac{d\hspace{+0.021em}\mathbf{v}}{d\hspace{+0.012em}t} + \dfrac{d\hspace{-0.12em}f}{d\hspace{+0.012em}t} \, \mathbf{v}
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent donde $( \, f \, )$ es el factor frecuencia de la partícula, $( \, \mathbf{v} \, )$ es la velocidad relacional de la partícula y $( \, t \, )$ es el tiempo relacional de la partícula.
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsubsection*{Dinámica Invariante}}
+
+\bigskip \smallskip
+
+\noindent Sea una partícula ( masiva o no masiva ) con masa intrínseca $( \, m \, )$ entonces el \hbox {momento} lineal $( \, \mathbf{P} \, )$ de la partícula, el momento angular $( \, \mathbf{L} \, )$ de la partícula \hbox {la fuerza} neta $( \, \mathbf{F} \, )$ que actúa sobre la partícula, el trabajo $( \, \mathrm{W} \, )$ realizado por la fuerza neta que actúa sobre la partícula y la energía cinética $( \, \mathrm{K} \, )$ de la partícula están dados por:
+\par \vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{P} ~\doteq~ m \, \bar{\mathbf{v}} ~=~ m \, f \, \mathbf{v}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{L} ~\doteq~ \mathbf{P} \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ m \, \bar{\mathbf{v}} \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ m \, f \, \mathbf{v} \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathbf{F} ~=~ \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} ~=~ m \, \bar{\mathbf{a}} ~=~ m \, \bigg [ \, f \, \dfrac{d\hspace{+0.021em}\mathbf{v}}{d\hspace{+0.012em}t} + \dfrac{d\hspace{-0.12em}f}{d\hspace{+0.012em}t} \, \mathbf{v} \, \bigg ]
+\end{eqnarray*}
+\vspace{-0.15em}
+\begin{eqnarray*}
+\mathrm{W} ~\doteq~ \hspace{-0.36em} \int_{\scriptscriptstyle 1}^{\hspace{+0.09em}{\scriptscriptstyle 2}} \mathbf{F} \cdot d\hspace{+0.036em}\mathbf{r} ~=~ \hspace{-0.36em} \int_{\scriptscriptstyle 1}^{\hspace{+0.09em}{\scriptscriptstyle 2}} \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} \cdot d\hspace{+0.036em}\mathbf{r} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray*}
+\vspace{-0.30em}
+\begin{eqnarray*}
+\mathrm{K} ~\doteq~ m \, f \, c^2
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent donde $( \: f, \: \mathbf{r}, \: \mathbf{v}, \: t, \: \bar{\mathbf{v}}, \: \bar{\mathbf{a}} \: )$ son el factor frecuencia, la posición relacional, la velocidad relacional, el tiempo relacional, la velocidad especial y la aceleración especial de la partícula y $( \, c \, )$ es la velocidad de la luz en el vacío. La energía cinética $( \, \mathrm{K}_o \, )$ de una partícula masiva en reposo relacional es $( \, m_o \, c^2 \, )$
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Magnitudes Relacionales}}
+
+\bigskip \smallskip
+
+\noindent A partir de una partícula masiva auxiliar (\,denominada punto-auxiliar\,) es posible obtener magnitudes cinemáticas (\,denominadas relacionales\,) que son invariantes bajo transformaciones entre sistemas inerciales y no inerciales (\,no rotantes\,)
+\par \medskip \smallskip
+\noindent Un punto-auxiliar es una partícula masiva arbitraria que está libre de fuerzas externas ( es decir, la fuerza neta que actúa sobre ésta es cero )
+\par \medskip \smallskip
+\noindent El tiempo relacional $( \, t \, )$, la posición relacional $( \, \mathbf{r} \, )$, la velocidad relacional $( \, \mathbf{v} \, )$ y la aceleración relacional $( \, \mathbf{a} \, )$ de una partícula (\,masiva o no masiva\,) respecto a un sistema inercial o no inercial (\,no rotante\,) S están dados por:
+\par \vspace{-0.18em}
+\begin{eqnarray*}
+t ~\doteq~ \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \mathtt{dt} \, - \, \gamma \; \frac{\vec{r} \cdot \vec{\varphi}}{c^2}
+\end{eqnarray*}
+\vspace{-0.15em}
+\begin{eqnarray*}
+\mathbf{r} ~\doteq~ \vec{r} \: + \, \frac{\gamma^2}{\gamma + 1} \, \frac{( \vec{r} \cdot \vec{\varphi} \hspace{+0.09em}) \: \vec{\varphi}}{c^2} \, - \int_{\hspace{-0.045em}\mathtt{O}}^{\mathtt{t}} \gamma \; \vec{\varphi} \; \mathtt{dt}
+\end{eqnarray*}
+\vspace{-0.15em}
+\begin{eqnarray*}
+\mathbf{v} ~\doteq~ \dfrac{d\mathbf{r}}{dt} \hspace{+1.29em} , \hspace{+1.20em} \mathbf{a} ~\doteq~ \dfrac{d\mathbf{v}}{dt}
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent donde $(\, \mathtt{t}, \, \vec{r} \: )$ son el tiempo y la posición de la partícula respecto al \hbox {sistema S}, $( \, \vec{\varphi} \, )$ es la velocidad del punto-auxiliar respecto al sistema S, $( \, c \, )$ es la velocidad de la luz en el vacío y {\small $\, \gamma ~\doteq~ (\,{1 - \vec{\varphi} \cdot \vec{\varphi}\hspace{+0.09em}/\hspace{+0.09em}c^2}\,)^{-1/2}$}
+\par \medskip \smallskip
+\noindent La velocidad del punto-auxiliar $( \, \vec{\varphi} \, )$ es una constante en sistemas inerciales y $( \, \gamma \, )$ es una constante en sistemas no inerciales (\,movimiento circular uniforme\,)
+\par \medskip \smallskip
+\noindent La velocidad relacional de la luz (\,partícula no masiva\,) en el vacío es $( \, \mathbf{c} \, )$ y $( \, \mathbf{c} \cdot \mathbf{c} \, )$ es una constante en sistemas inerciales y no inerciales (\,no rotantes\,)
+\par \medskip \smallskip
+\noindent La frecuencia relacional $( \: \nu \: )$ de una partícula no masiva respecto a un sistema inercial o no inercial (\,no rotante\,) S está dada por:
+\par \vspace{-0.18em}
+\begin{eqnarray*}
+\nu ~\doteq~ \mathtt{v} \;\, \gamma \: \left ( 1 - \dfrac{\vec{c} \cdot \vec{\varphi}}{c^2} \: \right )
+\end{eqnarray*}
+\par \vspace{+0.90em}
+\noindent donde $( \: \mathtt{v} \: )$ es la frecuencia de la partícula no masiva respecto al sistema S, $( \, \vec{c} \, )$ es la velocidad de la partícula no masiva respecto al sistema S, $( \, \vec{\varphi} \, )$ es la velocidad del punto-auxiliar respecto al sistema S, $( \, c \, )$ es la velocidad de la luz en el vacío y {\small $\, \gamma ~\doteq~ (\,{1 - \vec{\varphi} \cdot \vec{\varphi}\hspace{+0.09em}/\hspace{+0.09em}c^2}\,)^{-1/2}$}
+
+\newpage
+
+\noindent § En los sistemas no coincidentes \hbox {{\small (\, $t_{\alpha} \ne \tau_{\alpha}$\hspace{+0.15em} \, y/o \, \hspace{+0.18em}$\mathbf{r}_{\alpha} \ne 0$ \,)}} \hbox {{\small (\, $\alpha$ = punto-auxiliar \,)}} \hbox {una constante} debe ser sumada en la definición de tiempo relacional tal que \hbox {el tiempo} relacional y el tiempo propio del punto-auxiliar sean iguales \hbox {{\small ( $t_{\alpha} = \tau_{\alpha}$ )}} y otra constante debe ser sumada en la definición de posición relacional tal que la posición relacional del punto-auxiliar sea cero \hbox {{\small ( $\mathbf{r}_{\alpha} = 0$ )}}
+\par \medskip \smallskip
+\noindent § En el estudio de un sistema aislado de partículas ( masivas {\small y/o} no masivas ) \hbox {todos los observadores} deberían preferentemente usar un punto-auxiliar tal que el momento lineal del sistema aislado de partículas sea cero \hbox {{\small ( $\sum_z m_z \hspace{+0.09em} \bar{\mathbf{v}}_z = 0$ )}}
+\par \medskip \smallskip
+\noindent § Es importante resaltar que todo punto-auxiliar debe ser una partícula masiva libre ( es decir, la fuerza neta que actúa sobre ésta debe ser cero )
+
+\vspace{-0.6em}
+
+\par \bigskip {\centering\subsubsection*{Métrica Relacional}}
+
+\bigskip \smallskip
+
+\noindent Es sabido que en sistemas inerciales la geometría local es euclidiana y que en sistemas no inerciales la geometría local es en general no euclidiana.
+\par \medskip \smallskip
+\noindent Según este artículo, en un sistema inercial o no inercial (\,no rotante\,) S el elemento de línea local debe ser obtenido desde el elemento de línea relacional.
+\par \medskip \smallskip
+\noindent Por lo tanto, en el sistema S el elemento de línea relacional (\,en coordenadas rectilíneas\,) y el elemento de línea local están dados por:
+\par \vspace{+0.06em}
+\begin{eqnarray*}
+\hspace{-1.65em} ds^{\hspace{+0.03em}2} ~=~ c^2 dt^{\hspace{+0.03em}2} - d\mathbf{r}^{\hspace{+0.03em}2}
+\end{eqnarray*}
+\vspace{-0.45em}
+\begin{eqnarray*}
+ds^{\hspace{+0.03em}2} ~=~ \Big [ \; \Big ( \, 1 + \frac{\vec{\mathrm w} \cdot \vec{r}}{c^2} \: \Big )^{\hspace{-0.18em}2} \hspace{-0.21em}- \Big ( \, \frac{\vec{\phi} \times \vec{r}}{c} \: \Big )^{\hspace{-0.18em}2} \,\, \Big ] \, c^2 \, \mathtt{dt}^2 \,-\, 2 \, \Big ( \, \vec{\phi} \times \vec{r} \: \Big ) \, d\vec{r} \,\, \mathtt{dt} \,-\, d\vec{r}^{\hspace{+0.24em}2}
+\end{eqnarray*}
+\vspace{+0.06em}
+\begin{eqnarray*}
+\hspace{+0.90em} \vec{\mathrm w} ~\doteq\, - \; \gamma^1 \: \Big ( \, \vec{\alpha} \: + \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.09em} \vec{\alpha} \cdot \vec{\varphi} \hspace{+0.09em}) \: \vec{\varphi}}{c^2} \: \Big ) \hspace{+1.15em} , \hspace{+1.15em} \vec{\phi} ~\doteq\, - \; \gamma^0 \: \Big ( \, \frac{\gamma^2}{\gamma + 1} \, \frac{(\hspace{+0.09em} \vec{\alpha} \times \vec{\varphi} \hspace{+0.09em})}{c^2} \: \Big )
+\end{eqnarray*}
+\par \vspace{+1.20em}
+\noindent donde $( \, t, \, \mathbf{r} \, )$ son tiempo relacional y posición relacional respecto al sistema S, $( \, \mathtt{t}, \, \vec{r} \, )$ son tiempo y posición respecto al sistema S, $( \, \vec{\varphi}, \, \vec{\alpha} \, )$ son la velocidad y la aceleración del punto-auxiliar respecto al sistema S, $( \, c \, )$ es la velocidad de la luz en el vacío y {\small $\, \gamma ~\doteq~ (\,{1 - \vec{\varphi} \cdot \vec{\varphi}\hspace{+0.09em}/\hspace{+0.09em}c^2}\,)^{-1/2}$}
+\par \vspace{+0.90em}
+\noindent El sistema S es inercial cuando $( \: \vec{\alpha} ~=~ 0 \: )$ el sistema S es no inercial (\,movimiento rectilíneo acelerado\,) cuando $( \: \vec{\alpha} ~\ne~ 0 \: )$ {\small \&} $( \: \vec{\alpha} \times \vec{\varphi} ~=~ 0 \: )$ y el sistema S es no inercial (\,movimiento circular uniforme\,) cuando $( \: \vec{\alpha} ~\ne~ 0 \: )$ {\small \&} $( \: \vec{\alpha} \hspace{+0.12em}\cdot\hspace{+0.12em} \vec{\varphi} ~=~ 0 \: )$
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Observaciones Generales}}
+
+\bigskip \smallskip
+
+\noindent § Las fuerzas y los campos deben ser expresados con magnitudes relacionales \hbox {( la fuerza} de Lorentz debe ser expresada con la velocidad relacional {\small $\mathbf{v}$}, el campo eléctrico debe ser expresado con la posición relacional {\small $\mathbf{r}$}, etc. )
+\par \medskip \smallskip
+\noindent § El operador {\small $( \, \dot{\times} \, )$} debe ser reemplazado por el operador {\small $( \, \times \, )$} o el operador {\small $( \, \wedge \, )$} tal como sigue: {\small $( \, \mathbf{a} \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{b} = \mathbf{b} \times \mathbf{a} \, )$} o {\small $( \, \mathbf{a} \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{b} = \mathbf{b} \wedge \mathbf{a} \, )$}
+\par \medskip \smallskip
+\noindent § Sistemas inerciales y no inerciales no deben introducir fuerzas ficticias en ${\mathbf{F}}$.
+\par \medskip \smallskip
+\noindent § Según este artículo y la relatividad especial, la masa intrínseca no es aditiva.
+\par \medskip \smallskip
+\noindent § La magnitud masa intrínseca {\small $( \: m \: )$} es invariante bajo transformaciones entre sistemas inerciales y no inerciales.
+\par \medskip \smallskip
+\noindent § Las magnitudes relacionales {\small $( \, \nu, t, \mathbf{r}, \mathbf{v}, \mathbf{a} \, )$} son invariantes bajo \hbox {transformaciones} entre sistemas inerciales y no inerciales (\,no rotantes\,)
+\par \medskip \smallskip
+\noindent § Por lo tanto, las magnitudes cinemáticas y dinámicas {\small $( \: f, \bar{\mathbf{r}}, \bar{\mathbf{v}}, \bar{\mathbf{a}}, \mathbf{P}, \mathbf{L}, \mathbf{F}, \mathrm{W}, \mathrm{K} \: )$} son invariantes bajo transformaciones entre sistemas inerciales y no inerciales \hbox {(\,no rotantes\,)}
+\par \medskip \smallskip
+\noindent § Sin embargo, es natural considerar la siguiente generalización:
+\par \medskip \smallskip
+\noindent $\bullet$ Sería también posible obtener magnitudes relacionales {\small $( \; \nu, t, \mathbf{r}, \mathbf{v}, \mathbf{a} \; )$} que serían invariantes bajo transformaciones entre sistemas inerciales y no inerciales.
+\par \medskip \smallskip
+\noindent $\bullet$ Las magnitudes cinemáticas y dinámicas {\small $( \: f, \bar{\mathbf{r}}, \bar{\mathbf{v}}, \bar{\mathbf{a}}, \mathbf{P}, \mathbf{L}, \mathbf{F}, \mathrm{W}, \mathrm{K} \: )$} estarían \hbox {dadas} también por las ecuaciones de este artículo.
+\par \medskip \smallskip
+\noindent $\bullet$ Por lo tanto, las magnitudes cinemáticas y dinámicas {\small $( \: f, \bar{\mathbf{r}}, \bar{\mathbf{v}}, \bar{\mathbf{a}}, \mathbf{P}, \mathbf{L}, \mathbf{F}, \mathrm{W}, \mathrm{K} \: )$} serían invariantes bajo transformaciones entre sistemas inerciales y no inerciales.
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsubsection*{Bibliografía}}
+
+\bigskip \smallskip
+
+\par \noindent [1] \, R. A. Nelson, J. Math. Phys. {\bf 28}, 2379 (1987).
+\medskip \smallskip
+\par \noindent [2] \, R. A. Nelson, J. Math. Phys. {\bf 35}, 6224 (1994).
+\medskip \smallskip
+\par \noindent [3] \, H. Nikoli\'c,\hspace{+0.12em} Phys. Rev. A\hspace{+0.12em} {\bf 61},\hspace{+0.09em} 032109\hspace{+0.09em} (2000).
+\medskip \smallskip
+\par \noindent [4] \, V. V. Voytik, Gravit. Cosmol. {\bf 19}, 193 (2013).
+\medskip \smallskip
+\par \noindent [5] \, C. M{\o}ller, The Theory of Relativity (1952).
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Paradoja de los Gemelos}}
+
+\bigskip \smallskip
+
+\noindent Si un reloj A está en reposo en el origen O de un sistema inercial o no inercial (\,movimiento circular uniforme\,) S y otro reloj B está en reposo en el origen O' de un sistema no inercial (\,movimiento circular uniforme\,) S' entonces el tiempo relacional $t_{A}$ del reloj A y el tiempo relacional $t_{B}$ del reloj B están dados por:
+\par \vspace{-0.66em}
+\begin{eqnarray*}
+t_{A} ~=~ \int_0^{\mathtt{t}_A} \gamma_{(\,\vec\varphi\;)} \; \mathtt{dt}_{A} \, - \, \gamma_{(\,\vec\varphi\;)} \; \frac{\vec{r}_{A} \cdot \vec{\varphi}}{c^2}
+\end{eqnarray*}
+\begin{eqnarray*}
+t_{B} ~=~ \int_0^{\mathtt{t}_B} \gamma_{(\,\vec\varphi\,')} \; \mathtt{dt}_{B} \, - \, \gamma_{(\,\vec\varphi\,')} \; \frac{\vec{r}_{B} \cdot \vec{\varphi}{\,'}}{c^2}
+\end{eqnarray*}
+\par \vspace{+0.81em}
+\noindent La posición del origen O respecto al sistema S es siempre igual a cero {\small ( $\vec{r}_{A} = 0$ )} y puesto que $\,\gamma_{(\,\vec\varphi\;)}\,$ es una constante en el sistema S, entonces:
+\par \vspace{-0.66em}
+\begin{eqnarray*}
+t_{A} ~=~ \int_0^{\mathtt{t}_A} \gamma_{(\,\vec\varphi\;)} \; \mathtt{dt}_{A}
+\end{eqnarray*}
+\begin{eqnarray*}
+t_{A} ~=~ \gamma_{(\,\vec\varphi\;)} \; \mathtt{t}_{A}
+\end{eqnarray*}
+\par \vspace{+0.81em}
+\noindent La posición del origen O' respecto al sistema S' es siempre igual a cero \hbox {{\small ( $\vec{r}_{B} = 0$ )}} y puesto que $\,\gamma_{(\,\vec\varphi\,')}\,$ es una constante en el sistema S', entonces:
+\par \vspace{-0.66em}
+\begin{eqnarray*}
+t_{B} ~=~ \int_0^{\mathtt{t}_B} \gamma_{(\,\vec\varphi\,')} \; \mathtt{dt}_{B}
+\end{eqnarray*}
+\begin{eqnarray*}
+t_{B} ~=~ \gamma_{(\,\vec\varphi\,')} \; \mathtt{t}_{B}
+\end{eqnarray*}
+\par \vspace{+0.81em}
+\noindent Los relojes A y B coinciden espacialmente en el tiempo relacional {\small ( $t_0 = t_{0A} = t_{0B}$ )} y en el tiempo relacional {\small (\, $t = t_{A} = t_{B}$ \,)} Puesto que {\small (\, $t_{A} = t_{B}$ \,)} \hbox {se obtiene:}
+\par \vspace{-0.66em}
+\begin{eqnarray*}
+\gamma_{(\,\vec\varphi\;)} \; \mathtt{t}_{A} ~=~ \gamma_{(\,\vec\varphi\,')} \; \mathtt{t}_{B}
+\end{eqnarray*}
+\par \vspace{+0.81em}
+\noindent Por lo tanto, si {\small $\,\gamma_{(\,\vec\varphi\;)} > \gamma_{(\,\vec\varphi\,')}\,$} entonces {\small (\:$\mathtt{t}_{A} < \mathtt{t}_{B}$\:)} si {\small $\,\gamma_{(\,\vec\varphi\;)} = \gamma_{(\,\vec\varphi\,')}\,$} entonces \hbox {\small {(\:$\mathtt{t}_{A} = \mathtt{t}_{B}$\:)}} y por último si {\small $\,\gamma_{(\,\vec\varphi\;)} < \gamma_{(\,\vec\varphi\,')}\,$} entonces {\small (\:$\mathtt{t}_{A} > \mathtt{t}_{B}$\:)}
+\par \vspace{+0.90em}
+\noindent Donde {\small ( $\vec\varphi$ )} es la velocidad del punto-auxiliar respecto al sistema S y \hbox {{\small ( $\vec\varphi\,'$ )}} es \hbox {la velocidad} del punto-auxiliar respecto al sistema S'.
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Fuerza Cinética}}
+
+\bigskip \smallskip
+
+\noindent La fuerza cinética $\mathbf{K}^{a}_{\hspace{+0.012em}ij}$ ejercida sobre una partícula $i$ con masa intrínseca $m_i$ por otra partícula $j$ con masa intrínseca $m_j$ está dada por:
+\par \vspace{-0.54em}
+\begin{eqnarray*}
+\mathbf{K}^{a}_{\hspace{+0.012em}ij} ~=\, - \; \Bigg [ \; \dfrac{m_i \, m_j}{\mathbb{M}} \, ( \, \bar{\mathbf{a}}_{\hspace{+0.045em}i} - \bar{\mathbf{a}}_{j} \, ) \; \Bigg ]
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent donde $\bar{\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración especial de la partícula $i$, $\bar{\mathbf{a}}_{j}$ es la aceleración especial de la partícula $j$ y $\mathbb{M}$ {\small ( $ = \sum_z m_z$ )} es la suma de las masas intrínsecas de todas las partículas del Universo.
+\par \vspace{+0.60em}
+\noindent La fuerza cinética $\mathbf{K}^{u}_{\hspace{+0.030em}i}$ ejercida sobre una partícula $i$ con masa intrínseca $m_i$ por el Universo está dada por:
+\par \vspace{-0.45em}
+\begin{eqnarray*}
+\mathbf{K}^{u}_{\hspace{+0.030em}i} ~=\, - \; m_i \; \dfrac{\sum_z m_z \, \bar{\mathbf{a}}_{\hspace{+0.045em}z}}{\sum_z m_z}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent donde $m_z$ y $\bar{\mathbf{a}}_{\hspace{+0.045em}z}$ son la masa intrínseca y la aceleración especial de la \textit{z}-ésima partícula del Universo.
+\par \vspace{+0.60em}
+\noindent De las ecuaciones anteriores se deduce que la fuerza cinética neta $\mathbf{K}_i$ {\small ( $ = \sum_j \, \mathbf{K}^{a}_{\hspace{+0.012em}ij}$ $+ \; \mathbf{K}^{u}_{\hspace{+0.030em}i}$ )} que actúa sobre una partícula $i$ con masa intrínseca $m_i$ está dada por:
+\par \vspace{-0.60em}
+\begin{eqnarray*}
+\mathbf{K}_i ~=\, - \; m_i \, \bar{\mathbf{a}}_{\hspace{+0.045em}i}
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent donde $\bar{\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración especial de la partícula $i$.
+\par \vspace{+0.60em}
+\noindent Ahora, reemplazando ( $\mathbf{F}_i = m_i \, \bar{\mathbf{a}}_{\hspace{+0.045em}i}$ ) y reordenando, se obtiene:
+\par \vspace{-0.75em}
+\begin{eqnarray*}
+\mathbf{K}_i + \mathbf{F}_i ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent Si $\mathbf{T}_i$ ( $\doteq\, \mathbf{K}_i + \mathbf{F}_i$ ) es la fuerza total que actúa sobre la partícula $i$, entonces:
+\par \vspace{-0.75em}
+\begin{eqnarray*}
+\mathbf{T}_i ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.60em}
+\noindent Por lo tanto, la fuerza total $\mathbf{T}_i$ que actúa sobre toda partícula $i$ es siempre cero.
+\par \vspace{+0.75em}
+\noindent Por otro lado, si un observador usa un punto-auxiliar tal que el momento lineal del Universo ( es decir, un sistema aislado de partículas ) sea cero {\hbox {\small ( $\sum_z m_z \hspace{+0.09em} \bar{\mathbf{v}}_z = 0$ )}} entonces para el observador la fuerza cinética $\mathbf{K}^{u}_{\hspace{+0.030em}i}$ ejercida sobre toda partícula $i$ por el Universo también será cero, puesto que {\hbox {\small ( $\sum_z m_z \hspace{+0.09em} \bar{\mathbf{a}}_z = 0$ )}}
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Apéndice I}}
+
+\smallskip
+
+\par \bigskip {\centering\subsubsection*{Sistema de Ecuaciones I}}
+
+\bigskip \bigskip
+
+\begin{center}
+\begin{tabular}{ccccc}
+& & {\framebox(\xxa,\yya){[1]}} \\
+& & {\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[4]}} & {\makebox(\xxc,\yya){$\leftarrow \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} \leftarrow$}} & {\framebox(\xxa,\yya){[2]}} \\
+{\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} & & {\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[5]}} & {\makebox(\xxc,\yya){$\leftarrow \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} \leftarrow$}} & {\framebox(\xxa,\yya){[3]}} & {\makebox(\xxc,\yya){$\rightarrow \hspace{-0.001em} \int \hspace{+0.03em} d\hspace{+0.036em}\mathbf{r} \hspace{+0.001em} \rightarrow$}} & {\framebox(\xxa,\yya){[6]}}
+\end{tabular}
+\end{center}
+\par \vspace{+0.90em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,1\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \int \mathbf{P} \; d\hspace{+0.012em}t \; - \int \hspace{-0.30em} \int \mathbf{F} \; d\hspace{+0.012em}t \, d\hspace{+0.012em}t \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,2\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \mathbf{P} \; - \int \mathbf{F} \; d\hspace{+0.012em}t \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,3\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} \, - \; \mathbf{F} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,4\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \mathbf{P} \; - \int \mathbf{F} \; d\hspace{+0.012em}t \,\, \bigg ] \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,5\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} \, - \; \mathbf{F} \,\, \bigg ] \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,6\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, \int \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} \cdot d\hspace{+0.036em}\mathbf{r} \; - \int \mathbf{F} \cdot d\hspace{+0.036em}\mathbf{r} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.33em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,\mu\,] \; \textrm{es una constante arbitraria con dimensión de masa {\small $( \, \mathrm{M} \, )$}}
+\end{eqnarray*}
+
+\newpage
+
+\par \bigskip {\centering\subsubsection*{Apéndice II}}
+
+\smallskip
+
+\par \bigskip {\centering\subsubsection*{Sistema de Ecuaciones II}}
+
+\bigskip \bigskip
+
+\begin{center}
+\begin{tabular}{ccccc}
+& & {\framebox(\xxa,\yya){[1]}} \\
+& & {\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[4]}} & {\makebox(\xxc,\yya){$\leftarrow \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} \leftarrow$}} & {\framebox(\xxa,\yya){[2]}} \\
+{\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} & & {\makebox(\xxa,\yya){$\downarrow$ $d\hspace{+0.012em}t$ $\downarrow$}} \\
+{\framebox(\xxa,\yya){[5]}} & {\makebox(\xxc,\yya){$\leftarrow \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} \leftarrow$}} & {\framebox(\xxa,\yya){[3]}} & {\makebox(\xxc,\yya){$\rightarrow \hspace{-0.001em} \int \hspace{+0.03em} d\hspace{+0.036em}\mathbf{r} \hspace{+0.001em} \rightarrow$}} & {\framebox(\xxa,\yya){[6]}}
+\end{tabular}
+\end{center}
+\par \vspace{+0.90em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,1\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, \bar{\mathbf{r}} \, - \int \hspace{-0.30em} \int \mathbf{F} \; d\hspace{+0.012em}t \, d\hspace{+0.012em}t \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,2\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, \bar{\mathbf{v}} \, - \int \mathbf{F} \; d\hspace{+0.012em}t \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,3\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, \bar{\mathbf{a}} \: - \; \mathbf{F} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,4\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, \bar{\mathbf{v}} \, - \int \mathbf{F} \; d\hspace{+0.012em}t \,\, \bigg ] \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,5\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, \bar{\mathbf{a}} \: - \; \mathbf{F} \,\, \bigg ] \hspace{+0.24em}\dot{\times}\hspace{+0.30em} \mathbf{r} ~=~ 0
+\end{eqnarray*}
+\par \vspace{+0.15em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,6\,] \;\;\;\;\;\; \dfrac{1}{\mu} \; \bigg [ \,\, m \, f \, c^2 \, - \int \mathbf{F} \cdot d\hspace{+0.036em}\mathbf{r} \,\, \bigg ] =~ 0
+\end{eqnarray*}
+\par \vspace{+0.33em}
+\begin{eqnarray*}
+\hspace{+1.59em} [\,\mu\,] \; \textrm{es una constante arbitraria con dimensión de masa {\small $( \, \mathrm{M} \, )$}}
+\end{eqnarray*}
+
+\end{document}
+

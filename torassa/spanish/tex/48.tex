@@ -1,0 +1,575 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={153.0mm,197.4mm}}
+\geometry{totalwidth=132.0mm,totalheight=161.4mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{chngpage}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Mecánica Clásica Alternativa IV}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\MM}{M}
+\newcommand{\mW}{W}
+\newcommand{\mK}{K}
+\newcommand{\mU}{U}
+\newcommand{\mE}{E}
+\newcommand{\mL}{L}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\ri}{_i}
+\newcommand{\rs}{_s}
+\newcommand{\rS}{_S}
+\newcommand{\rat}{\hat}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\bre}{\breve}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\VR}{\mathbf{R}}
+\newcommand{\VV}{\mathbf{V}}
+\newcommand{\VA}{\mathbf{A}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\vP}{\mathbf{P}}
+\newcommand{\vL}{\mathbf{L}}
+\newcommand{\vI}{\mathbf{I}}
+\newcommand{\aV}{\mathbf{\omega}}
+\newcommand{\aA}{\mathbf{\alpha}}
+\newcommand{\rt}{\hspace{+0.03em}'}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}\:}
+
+\newcommand{\Mass}{Masa}
+\newcommand{\Linear}{Momento Lineal}
+\newcommand{\Angular}{Momento Angular}
+\newcommand{\Work}{Trabajo}
+\newcommand{\Kinetic}{Energía Cinética}
+\newcommand{\Potential}{Energía Potencial}
+\newcommand{\Lagrangian}{Lagrangiano}
+\newcommand{\Cte}{\mathrm{constante}}
+\newcommand{\Cti}{~=~}
+\newcommand{\Cto}{=\,}
+
+\begin{document}
+
+\enlargethispage{+0.51em}
+
+\begin{center}
+
+{\LARGE Mecánica Clásica Alternativa {\fontsize{16.50}{16.50}\selectfont IV}}
+
+\bigskip \medskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\smallskip
+
+{\bf - versión 1 -}
+
+\bigskip \medskip
+
+\parbox{95.10mm}{Este trabajo presenta una mecánica clásica alternativa que es invariante bajo transformaciones entre sistemas de referencia y que puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir fuerzas ficticias. En adición, un nuevo principio de conservación de la energía es presentado.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.15em}
+
+{\centering\subsection*{Sistema de Referencia Inercial}}
+
+\vspace{+0.90em}
+
+\par \hspace{-0.42em}El sistema de referencia inercial $\rat\mathrm S$ es un sistema de referencia que está fijo a un sistema de partículas y cuyo origen coincide con el centro de masa del sistema de partículas. Este sistema de partículas (de ahora en más sistema-libre) está siempre libre de fuerzas externas e internas.
+\bigskip
+\par \hspace{-0.42em}La posición inercial $\rat\vR\ra$, la velocidad inercial $\rat\vV\ra$ y la aceleración inercial $\rat\vA\ra$ de una \hbox {partícula A} respecto al sistema de referencia inercial $\rat\mathrm S$, son como sigue:
+\bigskip
+\par \hspace{+12.21em} \begin{tabular}{l}
+$\rat\vR\ra ~\doteq~ (\vR\ra)$ \vspace{+0.90em} \\
+$\rat\vV\ra ~\doteq~ d(\vR\ra)/dt$ \vspace{+0.90em} \\
+$\rat\vA\ra ~\doteq~ d^2(\vR\ra)/dt^2$
+\end{tabular}
+\bigskip
+\par \noindent donde $\vR\ra$ es la posición de la partícula A respecto al sistema de referencia inercial $\rat\mathrm S$.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Nueva Dinámica}}
+
+\vspace{+0.90em}
+
+\par \hspace{-0.42em}[1] \hspace{+0.120em} Una fuerza siempre es causada por la interacción entre dos partículas.
+\bigskip
+\par \hspace{-0.42em}[2] \hspace{+0.150em} La fuerza neta $\vF\ra$ que actúa sobre una partícula A de masa $\mM\ra$ produce una aceleración inercial $\rat\vA\ra$ según la siguiente ecuación: \hspace{+0.015em} $\rat\vA\ra = \vF\ra/\mM\ra$
+\bigskip
+\par \hspace{-0.42em}[3] \hspace{-0.180em} Este trabajo considera que no todas las fuerzas obedecen la tercera ley de Newton \hbox {(en su forma} fuerte o en su forma débil)
+
+\newpage
+
+{\centering\subsection*{Definiciones}}
+
+\vspace{+1.02em}
+
+\par Para un sistema de N partículas, las siguientes definiciones son aplicables:
+
+\vspace{+1.80em}
+
+\par \hspace{+0.60em} \begin{tabular}{ll}
+\Mass & $\MM ~\doteq~ \sum_i \, \mM\ri$ \vspace{+1.41em} \\
+\Linear & $\rat\vP ~\doteq~ \sum_i \, \mM\ri \, \rat\vV\ri$ \vspace{+1.41em} \\
+\Angular & $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL} ~\doteq~ \sum_i \, \mM\ri \, \rat\vR\ri \times \rat\vV\ri$ \vspace{+1.41em} \\
+\Work & $\rat\mW ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\rat\vR\ri ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri)^2$ \vspace{+1.41em} \\
+\Kinetic & $\Delta \; \rat\mK ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri)^2$ \vspace{+1.41em} \\
+\Potential & $\Delta \; \rat\mU ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\rat\vR\ri$ \vspace{+1.41em} \\
+\Lagrangian & $\hspace{+0.06em} \rat{\hspace{-0.06em}\mL} ~\doteq~ \rat\mK - \rat\mU$
+\end{tabular}
+
+\vspace{+1.80em}
+
+{\centering\subsection*{Principios de Conservación}}
+
+\vspace{+1.02em}
+
+\par El momento lineal $\rat\vP$ de un sistema aislado de N partículas permanece constante si las fuerzas internas obedecen la tercera ley de Newton en su forma débil.
+\bigskip
+\par \hspace{+1.20em} $\rat\vP ~=~ \Cte \hspace{+7.29em} \big[ \; d(\rat\vP)/dt ~=~ \sum_i \, \mM\ri \, \rat\vA\ri ~=~ \sum_i \, \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par El momento angular $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}$ de un sistema aislado de N partículas permanece constante si las fuerzas internas obedecen la tercera ley de Newton en su forma fuerte.
+\bigskip
+\par \hspace{+1.20em} $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL} ~=~ \Cte \hspace{+7.23em} \big[ \; d(\hspace{-0.30em} \rat{\hspace{+0.30em}\vL})/dt ~=~ \sum_i \, \mM\ri \, \rat\vR\ri \times \rat\vA\ri ~=~ \sum_i \, \rat\vR\ri \times \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par La energía mecánica $\rat\mE$ de un sistema de N partículas permanece constante si el sistema está sujeto solamente a fuerzas conservativas.
+\bigskip
+\par \hspace{+1.20em} $\rat\mE ~\doteq~ \rat\mK + \rat\mU ~=~ \Cte \hspace{+2.97em} \big[ \; \Delta \; \rat\mE ~=~ \Delta \; \rat\mK + \Delta \; \rat\mU ~=~ 0 \; \big]$
+
+\newpage
+
+\begin{adjustwidth}{0em}{0em}
+
+{\centering\subsection*{Transformaciones}}
+
+\vspace{+0.90em}
+
+\par \hspace{-0.42em}La posición inercial $\rat\vR\ra$, la velocidad inercial $\rat\vV\ra$ y la aceleración inercial $\rat\vA\ra$ de una \hbox {partícula A} respecto a un sistema de referencia S, están dadas por:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\rat\vR\ra ~=~ \vR\ra - \VR$ \vspace{+1.20em} \\
+$\rat\vV\ra ~=~ \vV\ra\:-\:${\large$\aV$}$ \times (\vR\ra - \VR) - \VV$ \vspace{+1.20em} \\
+$\rat\vA\ra ~=~ \vA\ra - 2 \hspace{+0.06em} ${\large$\aV$}$ \times (\vV\ra - \VV)\:+\:${\large$\aV$}$ \times [${\large$\aV$}$ \times (\vR\ra - \VR)]\:-\:${\large$\aA$}$ \times (\vR\ra - \VR) - \VA$
+\end{tabular}
+\bigskip
+\par \noindent donde $\vR\ra$, $\vV\ra$ y $\vA\ra$ son la posición, la velocidad y la aceleración de la partícula A respecto al sistema de referencia S. $\VR$, $\VV$ y $\VA$ son la posición, la velocidad y la aceleración del centro de masa del sistema-libre respecto al sistema de referencia S. {\large$\aV$} y {\large$\aA$} son la velocidad angular y la aceleración angular del sistema-libre respecto al sistema de referencia S.
+\medskip
+\par \hspace{-0.42em}La posición $\VR$, la velocidad $\VV$ y la aceleración $\VA$ del centro de masa del sistema-libre \hbox {respecto} al sistema de referencia S, y la velocidad angular {\large$\aV$} y la aceleración angular {\large$\aA$} del sistema-libre respecto al sistema de referencia S, son como sigue:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\MM ~\doteq~ \sum_i^{\scriptscriptstyle N} \, \mM\ri$ \vspace{+1.20em} \\
+$\VR ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle N} \, \mM\ri \, \vR\ri$ \vspace{+1.20em} \\
+$\VV ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle N} \, \mM\ri \, \vV\ri$ \vspace{+1.20em} \\
+$\VA ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle N} \, \mM\ri \, \vA\ri$ \vspace{+1.20em} \\
+$${\large$\aV$}$ ~\doteq~ \vI^{\scriptscriptstyle -1} \cdot \vL$ \vspace{+1.20em} \\
+$${\large$\aA$}$ ~\doteq~ d(${\large$\aV$}$)/dt$ \vspace{+1.20em} \\
+$\vI ~\doteq~ \sum_i^{\scriptscriptstyle N} \, \mM\ri \, [\hspace{+0.045em}|\vR\ri - \VR|^2 \: \mathbf{1} - (\vR\ri - \VR) \otimes (\vR\ri - \VR)\hspace{+0.030em}]$ \vspace{+1.20em} \\
+$\vL ~\doteq~ \sum_i^{\scriptscriptstyle N} \, \mM\ri \, (\vR\ri - \VR) \times (\vV\ri - \VV)$
+\end{tabular}
+\bigskip
+\par \noindent donde $\MM$ es la masa del sistema-libre, $\vI$ es el tensor de inercia del sistema-libre (respecto a $\VR$) y \hbox {$\vL$ es el momento} angular del sistema-libre respecto al sistema de referencia S (el sistema-libre de N partículas debe ser tridimensional y las distancias relativas entre las N partículas deben ser constantes\hspace{+0.045em})
+
+\end{adjustwidth}
+
+\newpage
+
+{\centering\subsection*{Ecuación de Movimiento}}
+
+\vspace{+0.90em}
+
+\par Desde la tercera transformación se deduce que la aceleración $\vA\ra$ de una partícula A de \hbox {masa $\mM\ra$} respecto a un sistema de referencia S, está dada por:
+\bigskip
+\begin{center}
+$\vA\ra ~=~ \vF\ra/\mM\ra + 2 \hspace{+0.06em} ${\large$\aV$}$ \times (\vV\ra - \VV)\:-\:${\large$\aV$}$ \times [${\large$\aV$}$ \times (\vR\ra - \VR)]\:+\:${\large$\aA$}$ \times (\vR\ra - \VR) + \VA$
+\end{center}
+\medskip
+\par \noindent donde $\vF\ra$ es la fuerza neta que actúa sobre la partícula A \hspace{+0.09em}($\hspace{+0.12em}\rat\vA\ra = \vF\ra/\mM\ra\hspace{+0.09em}$)
+
+\vspace{+0.00em}
+
+{\centering\subsection*{Observaciones}}
+
+\vspace{+0.90em}
+
+\par La mecánica clásica alternativa de partículas presentada en este trabajo es invariante bajo transformaciones entre sistemas de referencia y puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir fuerzas ficticias.
+\bigskip
+\par Este trabajo considera, por un lado, que no todas las fuerzas obedecen la tercera ley de Newton (en su forma fuerte o en su forma débil) y, por otro lado, que todas las fuerzas son invariantes bajo transformaciones entre sistemas de referencia ($\hspace{+0.09em}\vF\,'\hspace{-0.18em}=\vF\hspace{+0.12em}$)
+\bigskip
+\par Finalmente, desde la ecuación de movimiento se deduce que un sistema de referencia S es inercial cuando ({\large$\aV$} $=0$ y $\VA=0\hspace{+0.09em}$) y que éste es no inercial cuando ({\large$\aV$} $\ne 0$ o $\VA \ne 0\hspace{+0.09em}$)
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Bibliografía}}
+
+\vspace{+1.20em}
+
+\par \textbf{D. Lynden-Bell and J. Katz}, Classical Mechanics without Absolute Space (1995)
+\bigskip
+\par \textbf{J. Barbour}, Scale-Invariant Gravity: Particle Dynamics (2002)
+\bigskip
+\par \textbf{R. Ferraro}, Relational Mechanics as a Gauge Theory (2014)
+\bigskip
+\par \textbf{A. Torassa}, Ecuación General de Movimiento (2013)
+\bigskip
+\par \textbf{A. Torassa}, Mecánica Clásica Alternativa (2013)
+\bigskip
+\par \textbf{A. Torassa}, Una Reformulación de la Mecánica Clásica (2014)
+\bigskip
+\par \textbf{A. Torassa}, Un Nuevo Principio de Conservación de la Energía (2014)
+
+\newpage
+
+\begin{adjustwidth}{+0.15em}{+0.15em}
+
+{\centering\subsection*{Apéndice}}
+
+\vspace{+1.02em}
+
+\par Para un sistema de N partículas, las siguientes definiciones son también aplicables:
+
+\vspace{+1.02em}
+
+\par \hspace{-0.83em} \begin{tabular}{ll}
+\Angular & $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\rat\vR\ri - \rat\vR\rcm) \times (\rat\vV\ri - \rat\vV\rcm)$ \vspace{+0.90em} \\
+\Work & $\rat\mW\rt ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\rat\vR\ri - \rat\vR\rcm) ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri - \rat\vV\rcm)^2$ \vspace{+0.90em} \\
+\Kinetic & $\Delta \; \rat\mK\hspace{+0.045em}\rt ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri - \rat\vV\rcm)^2$ \vspace{+0.90em} \\
+\Potential & $\Delta \; \rat\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\rat\vR\ri - \rat\vR\rcm)$ \vspace{+0.90em} \\
+\Lagrangian & $\hspace{+0.06em} \rat{\hspace{-0.06em}\mL}\hspace{-0.09em}\rt ~\doteq~ \rat\mK\hspace{+0.045em}\rt - \rat\mU\rt$
+\end{tabular}
+
+\vspace{+1.02em}
+
+\par \noindent donde $\rat\vR\rcm$ y $\rat\vV\rcm$ son la posición inercial y la velocidad inercial del centro de masa del {\fontsize{15.30}{15.30}\selectfont \vphantom{K}}\hbox{sistema de} partículas. {\hspace{+13.95em} \makebox(0,8.01){\fontsize{8.79}{8.79}\selectfont $\sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \rat\vA\ri \cdot d(\rat\vR\ri - \rat\vR\rcm) = \sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, (\rat\vA\ri - \rat\vA\rcm) \cdot d(\rat\vR\ri - \rat\vR\rcm) = \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri - \rat\vV\rcm)^2$}}
+
+\vspace{+1.02em}
+
+\par El momento angular $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt$ de un sistema aislado de N partículas permanece constante si las fuerzas internas obedecen la tercera ley de Newton en su forma fuerte.
+\bigskip
+\par $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~=~ \Cte$
+\bigskip
+\par $d(\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt)/dt ~=~ \sum_i \, \mM\ri \, (\rat\vR\ri - \rat\vR\rcm) \times (\rat\vA\ri - \rat\vA\rcm) \,=\, \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times \rat\vA\ri \,=\, \sum_i \, \vR\ri \times \vF\ri \;=\; 0$
+\bigskip
+\par $\hspace{-0.30em} \rat{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\rat\vR\ri - \rat\vR\rcm) \times (\rat\vV\ri - \rat\vV\rcm) ~=~ \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times [\, \vV\ri\:-\:${\large$\aV$}$ \times (\vR\ri - \vR\rcm) - \vV\rcm \,]$
+
+\vspace{+1.02em}
+
+\par La energía mecánica $\rat\mE\rt$ de un sistema de N partículas permanece constante si el sistema está sujeto solamente a fuerzas conservativas.
+\bigskip
+\par $\rat\mE\rt \,\doteq\, \rat\mK\hspace{+0.045em}\rt + \rat\mU\rt \Cto \Cte$
+\bigskip
+\par $\Delta \; \rat\mE\rt ~=~ \Delta \; \rat\mK\hspace{+0.045em}\rt + \, \Delta \; \rat\mU\rt ~=~ 0$
+\bigskip
+\par $\Delta \; \rat\mK\hspace{+0.045em}\rt ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\rat\vV\ri - \rat\vV\rcm)^2 ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, [\, \vV\ri\:-\:${\large$\aV$}$ \times (\vR\ri - \vR\rcm) - \vV\rcm \,]^{\hspace{+0.024em}2}$
+\bigskip
+\par $\Delta \; \rat\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\rat\vR\ri - \rat\vR\rcm) ~=~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\vR\ri - \vR\rcm)$
+\bigskip
+\par \noindent donde $\vR\rcm$ y $\vV\rcm$ son la posición y la velocidad del centro de masa del sistema de partículas respecto a un sistema de referencia S y {\large$\aV$} es la velocidad angular del sistema-libre respecto al sistema de referencia S. Si el sistema de partículas es aislado y si las fuerzas internas obedecen la tercera ley de Newton en su forma débil entonces: {\hspace{+7.05em} \makebox(0,8.01){\fontsize{8.88}{8.88}\selectfont $\sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\vR\ri - \vR\rcm) = \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\vR\ri$}}
+
+\end{adjustwidth}
+
+\newpage\thispagestyle{empty}{\small
+
+\vspace*{\fill}
+
+\begin{adjustwidth}{+3.30em}{+3.30em}
+
+\begin{center}{{\fontsize{14.40}{14.40}\selectfont Nuevo Principio de Conservación de la Energía}}\end{center}
+
+\bigskip\smallskip
+
+\begin{center}{\bf - versiones 1 \& 2 -}\end{center}
+
+\bigskip\smallskip
+
+\par Para un sistema de N partículas, las siguientes definiciones son también aplicables:
+\bigskip
+\par \hspace{+0.51em} \begin{tabular}{ll}
+\Work & $\mW ~\doteq~ \sum_i \hspace{+0.012em} \big( \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\bar\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \; \med \, \vF\ri \cdot \bar\vR\ri \hspace{+0.09em} \big) ~=~ \Delta \; \mK$ \vspace{+1.20em} \\
+\Kinetic & $\Delta \; \mK ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, \big( \hspace{+0.09em} \bar\vV\ri \cdot \bar\vV\ri \hspace{+0.12em} + \hspace{+0.12em} \bar\vA\ri \cdot \bar\vR\ri \hspace{+0.09em} \big)$ \vspace{+1.20em} \\
+\Potential & $\Delta \; \mU ~\doteq~ - \hspace{+0.012em} \sum_i \hspace{+0.012em} \big( \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\bar\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \; \med \, \vF\ri \cdot \bar\vR\ri \hspace{+0.09em} \big)$
+\end{tabular}
+\bigskip
+\par \noindent donde $\bar\vR\ri = \vR\ri - \vR\rcm$, $\bar\vV\ri = \vV\ri - \vV\rcm$, $\bar\vA\ri = \vA\ri - \vA\rcm$, $\vR\ri$, $\vV\ri$ y $\vA\ri$ son la posición, la velocidad y la aceleración de la \textit{i}-ésima partícula, $\vR\rcm$, $\vV\rcm$ y $\vA\rcm$ son la posición, la velocidad y la aceleración del centro de masa del sistema de partículas, $\mM\ri$ es la masa de la \textit{i}-ésima partícula y $\vF\ri$ es la fuerza neta que actúa sobre la \textit{i}-ésima partícula. Si el sistema de partículas es aislado y si las fuerzas internas obedecen la tercera ley de Newton en su forma débil entonces: {\hspace{+11.31em} \makebox(0,7.20){\fontsize{8.40}{8.40}\selectfont $\sum_i \hspace{+0.012em} \big( \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\bar\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \; \med \, \vF\ri \cdot \bar\vR\ri \hspace{+0.09em} \big) \,=\, \sum_i \hspace{+0.012em} \big( \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\vR\ri \hspace{+0.12em} + \hspace{+0.12em} \Delta \; \med \, \vF\ri \cdot \vR\ri \hspace{+0.09em} \big)$}}
+\bigskip
+\par El nuevo principio de conservación de la energía establece que si un sistema de N partículas está sujeto sólo a fuerzas conservativas entonces la energía mecánica $\mE$ del sistema de partículas permanece constante.
+\bigskip
+\par \hspace{+1.20em} $\mE ~\doteq~ \mK + \mU ~=~ \Cte \hspace{+2.97em} \big[ \; \Delta \; \mE ~=~ \Delta \; \mK + \Delta \; \mU ~=~ 0 \; \big]$
+\bigskip
+\par El nuevo principio de conservación de la energía es invariante bajo transformaciones entre sistemas de referencia ya que la energía cinética $\mK$, la energía potencial $\mU$ y la energía mecánica $\mE$ de un sistema de N partículas son invariantes bajo transformaciones entre sistemas de referencia \hspace{-0.18em} ({\fontsize{8.40}{8.40}\selectfont $\hspace{+0.24em} \vF\,'\hspace{-0.18em}\,=\,\vF \hspace{+0.48em}|\hspace{+0.48em} \mM\,'\hspace{-0.18em}\,=\,\mM \hspace{+0.48em}|\hspace{+0.48em} \bar\vR\,'\hspace{-0.18em}\,=\,\bar\vR \hspace{+0.48em}|\hspace{+0.48em} \bar\vV\,'\hspace{-0.18em}\cdot\bar\vV\,'\hspace{-0.18em}\,+\:\bar\vA\,'\hspace{-0.18em}\cdot\bar\vR\,'\hspace{-0.18em}\;=\;\bar\vV\cdot\bar\vV\,+\:\bar\vA\cdot\bar\vR \hspace{+0.30em}$})
+\bigskip
+\par El nuevo principio de conservación de la energía puede ser aplicado en cualquier sistema de referencia sin necesidad de introducir fuerzas ficticias y sin necesidad de introducir variables externas adicionales (\hspace{-0.15em} tales como {\fontsize{10.80}{10.80}\selectfont $\aV$}, {\fontsize{8.40}{8.40}\selectfont $\VR$}, {\fontsize{8.40}{8.40}\selectfont $\VV$}, {\fontsize{8.40}{8.40}\selectfont $\bre\aV\rS$}, etc. \hspace{-0.18em})
+
+\end{adjustwidth}
+
+\vspace*{\fill}}
+
+\newpage\setcounter{page}{1}
+
+\enlargethispage{+0.51em}
+
+\begin{center}
+
+{\LARGE Mecánica Clásica Alternativa {\fontsize{16.50}{16.50}\selectfont IV}}
+
+\bigskip \medskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\smallskip
+
+{\bf - versión 2 -}
+
+\bigskip \medskip
+
+\parbox{95.10mm}{Este trabajo presenta una mecánica clásica alternativa que es invariante bajo transformaciones entre sistemas de referencia y que puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir fuerzas ficticias. En adición, un nuevo principio de conservación de la energía es presentado.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.15em}
+
+{\centering\subsection*{Sistema de Referencia Dinámico}}
+
+\vspace{+0.90em}
+
+\par El sistema de referencia dinámico $\bre\mathrm S$ es un sistema de referencia que puede ser utilizado para obtener magnitudes cinemáticas (tales como posición dinámica, velocidad dinámica, etc.) a partir principalmente de magnitudes dinámicas (tales como fuerza, masa, etc.)
+\bigskip
+\par La posición dinámica $\bre\vR\ra$, la velocidad dinámica $\bre\vV\ra$ y la aceleración dinámica $\bre\vA\ra$ de una partícula A de masa $\mM\ra$ respecto al sistema de referencia dinámico $\bre\mathrm S$, son como sigue:
+\bigskip
+\par \hspace{+12.21em} \begin{tabular}{l}
+$\bre\vR\ra ~\doteq~ \int\int \hspace{+0.12em} (\vF\ra/\mM\ra) \; dt \; dt$ \vspace{+0.90em} \\
+$\bre\vV\ra ~\doteq~ \int \hspace{+0.12em} (\vF\ra/\mM\ra) \; dt$ \vspace{+0.90em} \\
+$\bre\vA\ra ~\doteq~ (\vF\ra/\mM\ra)$
+\end{tabular}
+\bigskip
+\par \noindent donde $\vF\ra$ es la fuerza neta que actúa sobre la partícula A.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Nueva Dinámica}}
+
+\vspace{+0.90em}
+
+\par \hspace{-0.12em}[1] \hspace{+0.090em} Una fuerza siempre es causada por la interacción entre dos partículas.
+\bigskip
+\par \hspace{-0.12em}[2] \hspace{+0.150em} La fuerza neta $\vF\ra$ que actúa sobre una partícula A de masa $\mM\ra$ produce una aceleración dinámica $\bre\vA\ra$ según la siguiente ecuación: \hspace{+0.015em} $\bre\vA\ra \doteq \vF\ra/\mM\ra$
+\bigskip
+\par \hspace{-0.12em}[3] \hspace{-0.150em} Este trabajo considera que no todas las fuerzas obedecen la tercera ley de Newton \hbox {(en su forma} fuerte o en su forma débil)
+
+\newpage
+
+{\centering\subsection*{Definiciones}}
+
+\vspace{+1.02em}
+
+\par Para un sistema de N partículas, las siguientes definiciones son aplicables:
+
+\vspace{+1.80em}
+
+\par \hspace{+0.60em} \begin{tabular}{ll}
+\Mass & $\MM ~\doteq~ \sum_i \, \mM\ri$ \vspace{+1.41em} \\
+\Linear & $\bre\vP ~\doteq~ \sum_i \, \mM\ri \, \bre\vV\ri$ \vspace{+1.41em} \\
+\Angular & $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL} ~\doteq~ \sum_i \, \mM\ri \, \bre\vR\ri \times \bre\vV\ri$ \vspace{+1.41em} \\
+\Work & $\bre\mW ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\bre\vR\ri ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri)^2$ \vspace{+1.41em} \\
+\Kinetic & $\Delta \; \bre\mK ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri)^2$ \vspace{+1.41em} \\
+\Potential & $\Delta \; \bre\mU ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\bre\vR\ri$ \vspace{+1.41em} \\
+\Lagrangian & $\hspace{+0.06em} \bre{\hspace{-0.06em}\mL} ~\doteq~ \bre\mK - \bre\mU$
+\end{tabular}
+
+\vspace{+1.80em}
+
+{\centering\subsection*{Principios de Conservación}}
+
+\vspace{+1.02em}
+
+\par El momento lineal $\bre\vP$ de un sistema aislado de N partículas permanece constante si las fuerzas internas obedecen la tercera ley de Newton en su forma débil.
+\bigskip
+\par \hspace{+1.20em} $\bre\vP ~=~ \Cte \hspace{+7.29em} \big[ \; d(\bre\vP)/dt ~=~ \sum_i \, \mM\ri \, \bre\vA\ri ~=~ \sum_i \, \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par El momento angular $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}$ de un sistema aislado de N partículas permanece constante si las fuerzas internas obedecen la tercera ley de Newton en su forma fuerte.
+\bigskip
+\par \hspace{+1.20em} $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL} ~=~ \Cte \hspace{+7.23em} \big[ \; d(\hspace{-0.30em} \bre{\hspace{+0.30em}\vL})/dt ~=~ \sum_i \, \mM\ri \, \bre\vR\ri \times \bre\vA\ri ~=~ \sum_i \, \bre\vR\ri \times \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par La energía mecánica $\bre\mE$ de un sistema de N partículas permanece constante si el sistema está sujeto solamente a fuerzas conservativas.
+\bigskip
+\par \hspace{+1.20em} $\bre\mE ~\doteq~ \bre\mK + \bre\mU ~=~ \Cte \hspace{+2.97em} \big[ \; \Delta \; \bre\mE ~=~ \Delta \; \bre\mK + \Delta \; \bre\mU ~=~ 0 \; \big]$
+
+\newpage
+
+\begin{adjustwidth}{0em}{0em}
+
+{\centering\subsection*{Transformaciones}}
+
+\vspace{+0.90em}
+
+\par La posición dinámica $\bre\vR\ra$, la velocidad dinámica $\bre\vV\ra$ y la aceleración dinámica $\bre\vA\ra$ de una partícula A respecto a un sistema de referencia S, están dadas por:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\bre\vR\ra ~=~ \vR\ra + \bre\vR\rS$ \vspace{+1.50em} \\
+$\bre\vV\ra ~=~ \vV\ra + \bre\aV\rS \times \vR\ra + \bre\vV\rS$ \vspace{+1.50em} \\
+$\bre\vA\ra ~=~ \vA\ra + 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra + \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) + \bre\aA\rS \times \vR\ra + \bre\vA\rS$
+\end{tabular}
+\bigskip
+\par \noindent donde $\vR\ra$, $\vV\ra$ y $\vA\ra$ son la posición, la velocidad y la aceleración de la partícula A respecto al sistema de referencia S. $\bre\vR\rS$, $\bre\vV\rS$, $\bre\vA\rS$, $\bre\aV\rS$ y $\bre\aA\rS$ son la posición dinámica, la velocidad dinámica, la aceleración dinámica, la velocidad angular dinámica y la aceleración angular dinámica del sistema de referencia S respecto al sistema de referencia dinámico $\bre\mathrm S$.
+\bigskip
+\par La posición dinámica $\bre\vR\rS$, la velocidad dinámica $\bre\vV\rS$, la aceleración dinámica $\bre\vA\rS$, la velocidad angular dinámica $\bre\aV\rS$ y la aceleración angular dinámica $\bre\aA\rS$ de un sistema de referencia S fijo a una partícula S respecto al sistema de referencia dinámico $\bre\mathrm S$, son como sigue:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\bre\vR\rS ~\doteq~ \int\int \hspace{+0.12em} (\vF_0/\mM\rs) \; dt \; dt$ \vspace{+1.50em} \\
+$\bre\vV\rS ~\doteq~ \int \hspace{+0.12em} (\vF_0/\mM\rs) \; dt$ \vspace{+1.50em} \\
+$\bre\vA\rS ~\doteq~ (\vF_0/\mM\rs)$ \vspace{+1.50em} \\
+$\bre\aV\rS ~\doteq~ \pm \hspace{+0.12em} \big|(\vF_1/\mM\rs - \vF_0/\mM\rs) \cdot (\vR_1 - \vR_0)/(\vR_1 - \vR_0)^2\big|^{1/2}$ \vspace{+1.50em} \\
+$\bre\aA\rS ~\doteq~ d(\bre\aV\rS)/dt$
+\end{tabular}
+\bigskip
+\par \noindent donde $\vF_0$ y $\vF_1$ son las fuerzas netas que actúan sobre el sistema de referencia S en los puntos 0 y 1, $\vR_0$ y $\vR_1$ son las posiciones de los puntos 0 y 1 respecto al sistema de referencia S y $\mM\rs$ es la masa de la partícula S (el punto 0 es el origen del sistema de referencia S y el centro de masa de la partícula S) (el punto 0 pertenece al eje de rotación dinámica y el segmento 01 es perpendicular al eje de rotación dinámica) (el vector $\bre\aV\rS$ es colineal con el eje de rotación dinámica)
+
+\end{adjustwidth}
+
+\newpage
+
+{\centering\subsection*{Ecuación de Movimiento}}
+
+\vspace{+0.90em}
+
+\par Desde la tercera transformación se deduce que la aceleración $\vA\ra$ de una partícula A de \hbox {masa $\mM\ra$} respecto a un sistema de referencia S, está dada por:
+\bigskip
+\begin{center}
+$\vA\ra ~=~ \vF\ra/\mM\ra - 2 \hspace{+0.06em} \bre\aV\rS \times \vV\ra - \bre\aV\rS \times (\bre\aV\rS \times \vR\ra) - \bre\aA\rS \times \vR\ra - \bre\vA\rS$
+\end{center}
+\medskip
+\par \noindent donde $\vF\ra$ es la fuerza neta que actúa sobre la partícula A \hspace{+0.09em}($\hspace{+0.12em}\bre\vA\ra \doteq \vF\ra/\mM\ra\hspace{+0.09em}$)
+
+\vspace{+0.00em}
+
+{\centering\subsection*{Observaciones}}
+
+\vspace{+0.90em}
+
+\par La mecánica clásica alternativa de partículas presentada en este trabajo es invariante bajo transformaciones entre sistemas de referencia y puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir fuerzas ficticias.
+\bigskip
+\par Este trabajo considera, por un lado, que no todas las fuerzas obedecen la tercera ley de Newton (en su forma fuerte o en su forma débil) y, por otro lado, que todas las fuerzas son invariantes bajo transformaciones entre sistemas de referencia ($\hspace{+0.09em}\vF\,'\hspace{-0.18em}=\vF\hspace{+0.12em}$)
+\bigskip
+\par Finalmente, desde la ecuación de movimiento se deduce que un sistema de referencia S es inercial cuando ($\bre\aV\rS=0$ y $\bre\vA\rS=0\hspace{+0.09em}$) y que éste es no inercial cuando ($\bre\aV\rS \ne 0$ o $\bre\vA\rS \ne 0\hspace{+0.09em}$)
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Bibliografía}}
+
+\vspace{+1.20em}
+
+\par \textbf{D. Lynden-Bell and J. Katz}, Classical Mechanics without Absolute Space (1995)
+\bigskip
+\par \textbf{J. Barbour}, Scale-Invariant Gravity: Particle Dynamics (2002)
+\bigskip
+\par \textbf{R. Ferraro}, Relational Mechanics as a Gauge Theory (2014)
+\bigskip
+\par \textbf{A. Torassa}, Ecuación General de Movimiento (2013)
+\bigskip
+\par \textbf{A. Torassa}, Mecánica Clásica Alternativa (2013)
+\bigskip
+\par \textbf{A. Torassa}, Una Reformulación de la Mecánica Clásica (2014)
+\bigskip
+\par \textbf{A. Torassa}, Un Nuevo Principio de Conservación de la Energía (2014)
+
+\newpage
+
+\begin{adjustwidth}{0em}{0em}
+
+{\centering\subsection*{Apéndice}}
+
+\vspace{+1.02em}
+
+\par Para un sistema de N partículas, las siguientes definiciones son también aplicables:
+
+\vspace{+1.02em}
+
+\par \hspace{-0.83em} \begin{tabular}{ll}
+\Angular & $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\bre\vR\ri - \bre\vR\rcm) \times (\bre\vV\ri - \bre\vV\rcm)$ \vspace{+0.90em} \\
+\Work & $\bre\mW\rt ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\bre\vR\ri - \bre\vR\rcm) ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri - \bre\vV\rcm)^2$ \vspace{+0.90em} \\
+\Kinetic & $\Delta \; \bre\mK\hspace{+0.045em}\rt ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri - \bre\vV\rcm)^2$ \vspace{+0.90em} \\
+\Potential & $\Delta \; \bre\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\bre\vR\ri - \bre\vR\rcm)$ \vspace{+0.90em} \\
+\Lagrangian & $\hspace{+0.06em} \bre{\hspace{-0.06em}\mL}\hspace{-0.09em}\rt ~\doteq~ \bre\mK\hspace{+0.045em}\rt - \bre\mU\rt$
+\end{tabular}
+
+\vspace{+1.02em}
+
+\par \noindent donde $\bre\vR\rcm$ y $\bre\vV\rcm$ son la posición dinámica y la velocidad dinámica del centro de masa del {\fontsize{15.30}{15.30}\selectfont \vphantom{K}}sistema de partículas. {\hspace{+14.10em} \makebox(0,8.01){\fontsize{8.88}{8.88}\selectfont $\sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \bre\vA\ri \cdot d(\bre\vR\ri - \bre\vR\rcm) = \sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, (\bre\vA\ri - \bre\vA\rcm) \cdot d(\bre\vR\ri - \bre\vR\rcm) = \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri - \bre\vV\rcm)^2$}}
+
+\vspace{+1.02em}
+
+\par El momento angular $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt$ de un sistema aislado de N partículas permanece constante si las fuerzas internas obedecen la tercera ley de Newton en su forma fuerte.
+\bigskip
+\par $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~=~ \Cte$
+\bigskip
+\par $d(\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt)/dt ~=~ \sum_i \, \mM\ri \, (\bre\vR\ri - \bre\vR\rcm) \times (\bre\vA\ri - \bre\vA\rcm) \;=\; \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times \bre\vA\ri ~=~ \sum_i \, \vR\ri \times \vF\ri \Cti 0$
+\bigskip
+\par $\hspace{-0.30em} \bre{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\bre\vR\ri - \bre\vR\rcm) \times (\bre\vV\ri - \bre\vV\rcm) ~=~ \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times [\, \vV\ri + \bre\aV\rS \times (\vR\ri - \vR\rcm) - \vV\rcm \,]$
+
+\vspace{+1.02em}
+
+\par La energía mecánica $\bre\mE\rt$ de un sistema de N partículas permanece constante si el sistema está sujeto solamente a fuerzas conservativas.
+\bigskip
+\par $\bre\mE\rt \,\doteq\, \bre\mK\hspace{+0.045em}\rt + \bre\mU\rt \Cto \Cte$
+\bigskip
+\par $\Delta \; \bre\mE\rt ~=~ \Delta \; \bre\mK\hspace{+0.045em}\rt + \, \Delta \; \bre\mU\rt ~=~ 0$
+\bigskip
+\par $\Delta \; \bre\mK\hspace{+0.045em}\rt ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\bre\vV\ri - \bre\vV\rcm)^2 ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, [\, \vV\ri + \bre\aV\rS \times (\vR\ri - \vR\rcm) - \vV\rcm \,]^{\hspace{+0.024em}2}$
+\bigskip
+\par $\Delta \; \bre\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\bre\vR\ri - \bre\vR\rcm) ~=~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\vR\ri - \vR\rcm)$
+\bigskip
+\par \noindent donde $\vR\rcm$ y $\vV\rcm$ son la posición y la velocidad del centro de masa del sistema de partículas respecto a un sistema de referencia S y $\bre\aV\rS$ es la velocidad angular dinámica del sistema de referencia S. Si el sistema de partículas es aislado y si las fuerzas internas obedecen la tercera ley de Newton en su forma débil entonces: {\hspace{+7.05em} \makebox(0,8.01){\fontsize{8.88}{8.88}\selectfont $\sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\vR\ri - \vR\rcm) = \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\vR\ri$}}
+
+\end{adjustwidth}
+
+\end{document}
+

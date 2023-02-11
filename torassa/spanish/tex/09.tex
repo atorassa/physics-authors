@@ -1,0 +1,153 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={127mm,257mm}}
+\geometry{totalwidth=106mm,totalheight=221mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Mecánica Clásica (Trabajos Básicos: Una breve revisión)}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\unitlength}{0.63pt}
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mX}{x}
+\newcommand{\mY}{y}
+\newcommand{\mZ}{z}
+\newcommand{\mT}{t}
+\newcommand{\mm}{m}
+\newcommand{\rt}{'}
+\newcommand{\rot}{_{o'}}
+\newcommand{\tf}{Figura}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\ra}{_{\mbox {\scriptsize A}}}
+\newcommand{\rs}{_{\mbox {\scriptsize S}}}
+\newcommand{\ras}{_{\mbox {\scriptsize {A$\vert$S}}}}
+
+\begin{document}
+
+\begin{center}
+
+\noindent \smallskip
+
+{\huge Mecánica Clásica}
+
+\bigskip \bigskip
+
+{\Large Trabajos Básicos}
+
+\medskip
+
+( Una breve revisión )
+
+\end{center}
+
+\vspace{-0.3em}
+
+{\centering\subsection*{- Cinemática -}}
+
+{\centering\subsubsection*{Trabajo 6}}
+
+\medskip
+\par Primer principio: Cualquier sistema de referencia debe estar fijo a un cuerpo material.
+\medskip
+\par Segundo principio: Es posible convenir que cualquier sistema de referencia fijo a un cuerpo material debe ser no rotante.
+\medskip
+\par Si cualquier sistema de referencia es un sistema de referencia no rotante, entonces los ejes de dos sistemas de referencia S y S' permanecerán siempre fijos entre sí. Por lo tanto, se puede convenir, para facilitar los cálculos, que los ejes de los sistemas de referencia S y S' tengan la misma orientación entre sí, según como muestra la Figura 1.
+
+\vspace{+1.2em}
+
+\begin{center}
+\begin{picture}(228,198)
+\multiput(75,75)(45,18){2}{\vector(1,0){90}}
+\multiput(75,75)(45,18){2}{\vector(0,1){90}}
+\multiput(75,75)(45,18){2}{\vector(-1,-1){60}}
+\put(72,171){$\mZ$}\put(117,189){$\mZ\rt$}
+\put(171,72){$\mX$}\put(216,90){$\mX\rt$}
+\put(3,3){$\mY$}\put(45,18){$\mY\rt$}
+\put(78,78){$O$}\put(123,96){$O\rt$}
+\put(24,96){S}\put(162,141){S'}
+\end{picture}
+\\* \medskip \tf \ 1
+\end{center}
+
+\smallskip
+
+\par Se puede pasar de las coordenadas $\mX$, $\mY$, $\mZ$, $\mT$ del sistema de \hbox {referencia S} a las coordenadas $\mX\rt$, $\mY\rt$, $\mZ\rt$, $\mT\rt$ del sistema de referencia S' cuyo origen de coordenadas $O\rt$ se encuentra en la posición $\mX\rot$, $\mY\rot$, $\mZ\rot$ con respecto al sistema de referencia S, aplicando las siguientes ecuaciones:
+\begin{eqnarray*}
+\mX\rt & = & \mX - \mX\rot \\*
+\mY\rt & = & \mY - \mY\rot \\*
+\mZ\rt & = & \mZ - \mZ\rot \\*
+\mT\rt & = & \mT
+\end{eqnarray*}
+\par De estas ecuaciones, se deduce como se transforman las velocidades y las aceleraciones del sistema de referencia S al sistema de referencia S', que en forma vectorial pueden ser expresadas como sigue:
+\begin{eqnarray*}
+\vV\rt & = & \vV - \vV\rot \\*
+\vA\rt & = & \vA - \vA\rot
+\end{eqnarray*}
+\noindent donde $\vV\rot$ y $\vA\rot$ son la velocidad y la aceleración respectivamente del sistema de referencia S' con respecto al sistema de referencia S.
+
+\newpage
+
+{\centering\subsection*{- Leyes de Movimiento -}}
+
+{\centering\subsubsection*{Trabajo 8}}
+
+\medskip
+\par Primera nueva ley de movimiento: Las fuerzas que actúan sobre un cuerpo puntual A y las fuerzas que actúan sobre un sistema de referencia S pueden cambiar el estado de movimiento del cuerpo puntual A con respecto al sistema de referencia S.
+\medskip
+\par Segunda nueva ley de movimiento: La aceleración $\vA\ras$ de un cuerpo puntual A con respecto a un sistema de referencia S (no rotante) fijo a un cuerpo puntual S, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\vA\ras = \frac{\sum \vF\ra}{\mm\ra} - \frac{\sum \vF\rs}{\mm\rs}
+\end{eqnarray*}
+\noindent donde $\sum \vF\ra$ es la suma de las fuerzas que actúan sobre el cuerpo \hbox {puntual A}, $\mm\ra$ es la masa del cuerpo puntual A, $\sum \vF\rs$ es la suma de las fuerzas que actúan sobre el cuerpo puntual S y $\mm\rs$ es la masa del cuerpo puntual S.
+
+\bigskip
+
+{\centering\subsection*{- Dinámica -}}
+
+{\centering\subsubsection*{Trabajo 5}}
+
+\medskip
+\par Primera definición: La fuerza $\vF$ que actúa sobre un cuerpo puntual es una magnitud vectorial y representa la interacción entre los cuerpos puntuales.
+\medskip
+\par La transformación de las fuerzas (reales) de un sistema de referencia a otro, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\vF\rt = \vF
+\end{eqnarray*}
+\par Segunda definición: La masa $\mm$ de un cuerpo puntual es una magnitud escalar y representa una constante característica del cuerpo puntual.
+\medskip
+\par La transformación de las masas de un sistema de referencia a otro, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\mm\rt = \mm
+\end{eqnarray*}
+\par Tercera definición: La aceleración universal $\vA^{\circ}\ra$ de un cuerpo puntual A es la aceleración real $\vA\ra$ del cuerpo puntual A con respecto al sistema de referencia universal S$^{\circ}$ (el sistema de referencia universal S$^{\circ}$ es un sistema de referencia que está fijo a un cuerpo puntual sobre el cual ninguna fuerza está actuando y que es usado como un sistema de referencia universal)
+\medskip
+\par La transformación de las aceleraciones universales de un sistema de referencia a otro, está dada por la siguiente ecuación:
+\begin{eqnarray*}
+\vA^{\circ}{\rt} = \vA^{\circ}
+\end{eqnarray*}
+\par Primer principio: Todo cuerpo puntual permanece en estado de reposo universal o de movimiento rectilíneo uniforme universal, a menos que actúe sobre él una fuerza externa no equilibrada que modifique su estado.
+\medskip
+\par Segundo principio: La suma de todas las fuerzas $\sum \vF\ra$ que actúan sobre un cuerpo puntual A de masa $\mm\ra$ produce una aceleración universal $\vA^{\circ}\ra$ según la siguiente ecuación:
+\begin{eqnarray*}
+\sum \vF^{\vphantom{\vA\circ}}\ra = \mm^{\vphantom{\vA\circ}}\ra\vA^{\circ}\ra
+\end{eqnarray*}
+\par Por último, las nuevas leyes de movimiento del trabajo [8] pueden ser deducidas de los enunciados de los trabajos [5] y [6].
+
+\end{document}
+

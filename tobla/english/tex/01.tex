@@ -1,0 +1,102 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={163.05mm,240.0mm}}
+\geometry{totalwidth=142.05mm,totalheight=204.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Linear, Radial \& Scalar Magnitudes}}
+\hypersetup{pdfauthor={Agustín A. Tobla}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Linear, Radial \& Scalar Magnitudes}
+
+\bigskip \medskip
+
+{\large Agustín A. Tobla}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2015) Buenos Aires
+
+\smallskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{104.70mm}{In classical mechanics, this paper presents the definitions and the relations of the linear, radial and scalar magnitudes of a pair of particles $ij$.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.50em}
+ 
+\par \bigskip {\centering\subsection*{Introduction}}
+
+\par \bigskip \noindent i) The definitions of the linear, radial and scalar magnitudes of a pair of particles $ij$, \hbox {where ${\vec{\mathit{r}}}_{i}$} and ${\vec{\mathit{r}}}_{j}$ are the positions of the particles $i$ and $j$, are as follows:
+
+\par \bigskip \noindent $\S$ The linear position ${\vec{\mathit{r}}}_{\hspace{+0.060em}ij}$, the linear velocity ${\vec{\mathit{v}}}_{\hspace{+0.060em}ij}$ and the linear acceleration ${\vec{\mathit{a}}}_{\hspace{+0.060em}ij}$, are given by:
+
+\par \bigskip \noindent ${\vec{\mathit{r}}}_{\hspace{+0.060em}ij} \doteq ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j})$
+
+\par \bigskip \noindent ${\vec{\mathit{v}}}_{\hspace{+0.060em}ij} \doteq d(\hspace{+0.045em}{\vec{\mathit{r}}}_{\hspace{+0.060em}ij})/dt = ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j})$
+
+\par \bigskip \noindent ${\vec{\mathit{a}}}_{\hspace{+0.060em}ij} \doteq d^2(\hspace{+0.045em}{\vec{\mathit{r}}}_{\hspace{+0.060em}ij})/dt^2 = ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j})$
+
+\par \bigskip \noindent $\S$ The radial position ${\mathit{r}}_{\hspace{+0.060em}ij}$, the radial velocity ${\dot{\mathit{r}}}_{\hspace{+0.060em}ij}$ and the radial acceleration ${\ddot{\mathit{r}}}_{\hspace{+0.060em}ij}$, are given by:
+
+\par \bigskip \noindent ${\mathit{r}}_{\hspace{+0.060em}ij} \doteq | \hspace{+0.090em} {\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j} \hspace{+0.090em} |$
+
+\par \bigskip \noindent ${\dot{\mathit{r}}}_{\hspace{+0.060em}ij} \doteq d(\hspace{+0.045em}{\mathit{r}}_{\hspace{+0.060em}ij})/dt = [ \, ({\vec{\mathit{v}}}_i - {\vec{\mathit{v}}}_j) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j) \, ] \,/\, | \, {\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j \, |$
+
+\par \bigskip \noindent ${\ddot{\mathit{r}}}_{\hspace{+0.060em}ij} \doteq d^2(\hspace{+0.045em}{\mathit{r}}_{\hspace{+0.060em}ij})/dt^2 = [ \, ({\vec{\mathit{a}}}_i - {\vec{\mathit{a}}}_j) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j) + ({\vec{\mathit{v}}}_i - {\vec{\mathit{v}}}_j) \cdot ({\vec{\mathit{v}}}_i - {\vec{\mathit{v}}}_j) - [ ({\vec{\mathit{v}}}_i - {\vec{\mathit{v}}}_j) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j) ]^2 \hspace{-0.06em} / ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j)^2 \, ] \,/\, | \, {\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_j \, |$
+
+\par \bigskip \noindent $\S$ The scalar position ${\tau}_{\hspace{+0.060em}ij}$, the scalar velocity ${\dot{\tau}}_{\hspace{+0.060em}ij}$ and the scalar acceleration ${\ddot{\tau}}_{\hspace{+0.060em}ij}$, are given by:
+
+\par \bigskip \noindent ${\tau}_{\hspace{+0.060em}ij} \doteq \med \; ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \cdot ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j})$
+
+\par \bigskip \noindent ${\dot{\tau}}_{\hspace{+0.060em}ij} \doteq d(\hspace{+0.045em}{\tau}_{\hspace{+0.060em}ij})/dt = ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \cdot ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j})$
+
+\par \bigskip \noindent ${\ddot{\tau}}_{\hspace{+0.060em}ij} \doteq d^2(\hspace{+0.045em}{\tau}_{\hspace{+0.060em}ij})/dt^2 = ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}) \cdot ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \hspace{+0.060em}+\hspace{+0.060em} ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \cdot ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j})$
+
+\par \bigskip \noindent ii) The relations between the linear, radial and scalar magnitudes of a pair of particles $ij$, they can be obtained from the above definitions, are as follows:
+
+\par \bigskip \noindent ${\tau}_{\hspace{+0.060em}ij} = \med \: {\mathit{r}}_{\hspace{+0.060em}ij} \, {\mathit{r}}_{\hspace{+0.060em}ij} = \med \: {\vec{\mathit{r}}}_{\hspace{+0.060em}ij} \cdot {\vec{\mathit{r}}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \noindent ${\dot{\tau}}_{\hspace{+0.060em}ij} = {\dot{\mathit{r}}}_{\hspace{+0.060em}ij} \, {\mathit{r}}_{\hspace{+0.060em}ij} = {\vec{\mathit{v}}}_{\hspace{+0.060em}ij} \cdot {\vec{\mathit{r}}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \noindent ${\ddot{\tau}}_{\hspace{+0.060em}ij} = {\ddot{\mathit{r}}}_{\hspace{+0.060em}ij} \, {\mathit{r}}_{\hspace{+0.060em}ij} + {\dot{\mathit{r}}}_{\hspace{+0.060em}ij} \, {\dot{\mathit{r}}}_{\hspace{+0.060em}ij} = {\vec{\mathit{a}}}_{\hspace{+0.060em}ij} \cdot {\vec{\mathit{r}}}_{\hspace{+0.060em}ij} + {\vec{\mathit{v}}}_{\hspace{+0.060em}ij} \cdot {\vec{\mathit{v}}}_{\hspace{+0.060em}ij}$
+
+\par \bigskip \noindent iii) The magnitudes $[ \: {\vec{\mathit{r}}}_{\hspace{+0.060em}ij}, {\mathit{r}}_{\hspace{+0.060em}ij}, {\dot{\mathit{r}}}_{\hspace{+0.060em}ij}, {\ddot{\mathit{r}}}_{\hspace{+0.060em}ij}, {\tau}_{\hspace{+0.060em}ij}, {\dot{\tau}}_{\hspace{+0.060em}ij}$ and ${\ddot{\tau}}_{\hspace{+0.060em}ij} \: ]$ are invariant under transformations between inertial and non-inertial reference frames.
+
+\end{document}
+

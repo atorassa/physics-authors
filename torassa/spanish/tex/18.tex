@@ -1,0 +1,388 @@
+
+\documentclass[11pt,fleqn]{article}
+%\documentclass[a4paper,11pt]{article}
+%\documentclass[letterpaper,11pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={127.0mm,165.1mm}}
+\geometry{totalwidth=106.0mm,totalheight=129.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Mecánica Clásica (Definiciones Generales)}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.47pt}
+
+\begin{document}
+
+\vspace*{\fill}
+
+\begin{center}
+
+{\fontsize{27}{27}\selectfont Mecánica Clásica} \\
+\vspace{+0.54em}
+{\fontsize{17}{17}\selectfont ( Definiciones Generales )}
+
+\medskip \medskip \medskip \medskip
+
+{\fontsize{13}{13}\selectfont Alejandro A. Torassa}
+
+\medskip \medskip \medskip \medskip
+
+\footnotesize
+
+Licencia Creative Commons Atribución 3.0
+
+(2011) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\end{center}
+
+\vspace*{\fill}
+
+\normalsize
+
+\newpage
+
+{\underline {Definiciones para una sola partícula A}}
+\medskip
+\begin{eqnarray*}
+m & = & m_{\mbox {\tiny A}} \\
+\mathbf{r} & = & \mathbf{r}_{\mbox {\tiny A}} \\
+\mathbf{v} & = & \mathbf{v}_{\mbox {\tiny A}} \\
+\mathbf{a} & = & \mathbf{a}_{\mbox {\tiny A}}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Trabajo}}
+\medskip
+\begin{eqnarray*}
+W = \int_{\mathbf{r}_1}^{\mathbf{r}_2} m \, \mathbf{a} \cdot d\mathbf{r} \; \; \rightarrow \; \; W = \Delta \, {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Impulso}}
+\medskip
+\begin{eqnarray*}
+\mathbf{I} \; = \int_{t_1}^{t_2} m \, \mathbf{a} \, dt \; \; \rightarrow \; \; \mathbf{I} = \Delta \, m \, \mathbf{v}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Conservación de Energía}}
+\medskip
+\begin{eqnarray*}
+\Delta \, E = \Delta \, {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2} \, - \int_{\mathbf{r}_1}^{\mathbf{r}_2} m \, \mathbf{a} \cdot d\mathbf{r} \; \; \rightarrow \; \; \Delta \, E = 0 \; \; \rightarrow \; \; E = cte.
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Conservación de Moméntum}}
+\medskip
+\begin{eqnarray*}
+\Delta \, \mathbf{M} = \Delta \, m \, \mathbf{v} \; - \int_{t_1}^{t_2} m \, \mathbf{a} \, dt \; \; \rightarrow \; \; \Delta \, \mathbf{M} = 0 \; \; \rightarrow \; \; \mathbf{M} = cte.
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Principio de Mínima Acción}}
+\medskip
+\begin{eqnarray*}
+\delta \int_{t_1}^{t_2} {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2} dt \; + \int_{t_1}^{t_2} m \, \mathbf{a} \cdot \delta \mathbf{r} \; dt = 0
+\end{eqnarray*}
+
+\newpage
+
+{\underline {Definiciones para una sola bipartícula AB}}
+\medskip
+\begin{eqnarray*}
+m & = & m_{\mbox {\tiny A}} \, m_{\mbox {\tiny B}} \\
+\mathbf{r} & = & \mathbf{r}_{\mbox {\tiny A}} - \mathbf{r}_{\mbox {\tiny B}} \\
+\mathbf{v} & = & \mathbf{v}_{\mbox {\tiny A}} - \mathbf{v}_{\mbox {\tiny B}} \\
+\mathbf{a} & = & \mathbf{a}_{\mbox {\tiny A}} - \mathbf{a}_{\mbox {\tiny B}}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Trabajo}}
+\medskip
+\begin{eqnarray*}
+W = \int_{\mathbf{r}_1}^{\mathbf{r}_2} m \, \mathbf{a} \cdot d\mathbf{r} \; \; \rightarrow \; \; W = \Delta \, {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Impulso}}
+\medskip
+\begin{eqnarray*}
+\mathbf{I} \; = \int_{t_1}^{t_2} m \, \mathbf{a} \, dt \; \; \rightarrow \; \; \mathbf{I} = \Delta \, m \, \mathbf{v}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Conservación de Energía}}
+\medskip
+\begin{eqnarray*}
+\Delta \, E = \Delta \, {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2} \, - \int_{\mathbf{r}_1}^{\mathbf{r}_2} m \, \mathbf{a} \cdot d\mathbf{r} \; \; \rightarrow \; \; \Delta \, E = 0 \; \; \rightarrow \; \; E = cte.
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Conservación de Moméntum}}
+\medskip
+\begin{eqnarray*}
+\Delta \, \mathbf{M} = \Delta \, m \, \mathbf{v} \; - \int_{t_1}^{t_2} m \, \mathbf{a} \, dt \; \; \rightarrow \; \; \Delta \, \mathbf{M} = 0 \; \; \rightarrow \; \; \mathbf{M} = cte.
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Principio de Mínima Acción}}
+\medskip
+\begin{eqnarray*}
+\delta \int_{t_1}^{t_2} {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2} dt \; + \int_{t_1}^{t_2} m \, \mathbf{a} \cdot \delta \mathbf{r} \; dt = 0
+\end{eqnarray*}
+
+\newpage
+
+{\underline {Definiciones para una sola partícula A ($\,$vector $\mathbf{u}\,$)}}
+\medskip
+\begin{eqnarray*}
+m & = & m_{\mbox {\tiny A}} \\
+\mathbf{u} & = & \cdots {\mbox {\, ó \,}} (\mathbf{r}_{\mbox {\tiny A}}) {\mbox {\, ó \,}} (\mathbf{v}_{\mbox {\tiny A}}) {\mbox {\, ó \,}} (\mathbf{a}_{\mbox {\tiny A}}) {\mbox {\, ó \,}} \cdots \\
+\dot\mathbf{u} & = & d\mathbf{u} \, / dt \\
+\ddot\mathbf{u} & = & d^{\, 2}\mathbf{u} \, / dt^{\, 2}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Trabajo}}
+\medskip
+\begin{eqnarray*}
+W = \int_{\mathbf{u}_1}^{\mathbf{u}_2} m \, \ddot\mathbf{u} \cdot d\mathbf{u} \; \; \rightarrow \; \; W = \Delta \, {\textstyle \frac{1}{2}} \, m \, \dot\mathbf{u}^{\, 2}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Impulso}}
+\medskip
+\begin{eqnarray*}
+\mathbf{I} \; = \int_{t_1}^{t_2} m \, \ddot\mathbf{u} \, dt \; \; \rightarrow \; \; \mathbf{I} = \Delta \, m \, \dot\mathbf{u}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Conservación de Energía}}
+\medskip
+\begin{eqnarray*}
+\Delta \, E = \Delta \, {\textstyle \frac{1}{2}} \, m \, \dot\mathbf{u}^{\, 2} \, - \int_{\mathbf{u}_1}^{\mathbf{u}_2} m \, \ddot\mathbf{u} \cdot d\mathbf{u} \; \; \rightarrow \; \; \Delta \, E = 0 \; \; \rightarrow \; \; E = cte.
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Conservación de Moméntum}}
+\medskip
+\begin{eqnarray*}
+\Delta \, \mathbf{M} = \Delta \, m \, \dot\mathbf{u} \; - \int_{t_1}^{t_2} m \, \ddot\mathbf{u} \, dt \; \; \rightarrow \; \; \Delta \, \mathbf{M} = 0 \; \; \rightarrow \; \; \mathbf{M} = cte.
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Principio de Mínima Acción}}
+\medskip
+\begin{eqnarray*}
+\delta \int_{t_1}^{t_2} {\textstyle \frac{1}{2}} \, m \, \dot\mathbf{u}^{\, 2} dt \; + \int_{t_1}^{t_2} m \, \ddot\mathbf{u} \cdot \delta \mathbf{u} \; dt = 0
+\end{eqnarray*}
+
+\newpage
+
+{\underline {Definiciones para una sola bipartícula AB ($\,$vector $\mathbf{u}\,$)}}
+\medskip
+\begin{eqnarray*}
+m & = & m_{\mbox {\tiny A}} \, m_{\mbox {\tiny B}} \\
+\mathbf{u} & = & \cdots {\mbox {\, ó \,}} (\mathbf{r}_{\mbox {\tiny A}} - \mathbf{r}_{\mbox {\tiny B}}) {\mbox {\, ó \,}} (\mathbf{v}_{\mbox {\tiny A}} - \mathbf{v}_{\mbox {\tiny B}}) {\mbox {\, ó \,}} (\mathbf{a}_{\mbox {\tiny A}} - \mathbf{a}_{\mbox {\tiny B}}) {\mbox {\, ó \,}} \cdots \\
+\dot\mathbf{u} & = & d\mathbf{u} \, / dt \\
+\ddot\mathbf{u} & = & d^{\, 2}\mathbf{u} \, / dt^{\, 2}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Trabajo}}
+\medskip
+\begin{eqnarray*}
+W = \int_{\mathbf{u}_1}^{\mathbf{u}_2} m \, \ddot\mathbf{u} \cdot d\mathbf{u} \; \; \rightarrow \; \; W = \Delta \, {\textstyle \frac{1}{2}} \, m \, \dot\mathbf{u}^{\, 2}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Impulso}}
+\medskip
+\begin{eqnarray*}
+\mathbf{I} \; = \int_{t_1}^{t_2} m \, \ddot\mathbf{u} \, dt \; \; \rightarrow \; \; \mathbf{I} = \Delta \, m \, \dot\mathbf{u}
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Conservación de Energía}}
+\medskip
+\begin{eqnarray*}
+\Delta \, E = \Delta \, {\textstyle \frac{1}{2}} \, m \, \dot\mathbf{u}^{\, 2} \, - \int_{\mathbf{u}_1}^{\mathbf{u}_2} m \, \ddot\mathbf{u} \cdot d\mathbf{u} \; \; \rightarrow \; \; \Delta \, E = 0 \; \; \rightarrow \; \; E = cte.
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Conservación de Moméntum}}
+\medskip
+\begin{eqnarray*}
+\Delta \, \mathbf{M} = \Delta \, m \, \dot\mathbf{u} \; - \int_{t_1}^{t_2} m \, \ddot\mathbf{u} \, dt \; \; \rightarrow \; \; \Delta \, \mathbf{M} = 0 \; \; \rightarrow \; \; \mathbf{M} = cte.
+\end{eqnarray*}
+
+\medskip
+
+{\underline {Principio de Mínima Acción}}
+\medskip
+\begin{eqnarray*}
+\delta \int_{t_1}^{t_2} {\textstyle \frac{1}{2}} \, m \, \dot\mathbf{u}^{\, 2} dt \; + \int_{t_1}^{t_2} m \, \ddot\mathbf{u} \cdot \delta \mathbf{u} \; dt = 0
+\end{eqnarray*}
+
+\newpage
+
+{\centering\subsection*{Apéndice}}
+
+\medskip
+
+\par Si consideramos una sola partícula de masa $m$ entonces
+\vspace{+0.9em}
+\begin{eqnarray}
+\mathbf{a} - \mathbf{a} = 0 \\
+\nonumber \\
+m \, \mathbf{a} - m \, \mathbf{a} = 0 \\
+\nonumber \\
+(m \, \mathbf{a} - m \, \mathbf{a}) \cdot \delta \mathbf{r} = 0 \\
+\nonumber \\
+\delta \int_{t_1}^{t_2} {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2} dt \; + \int_{t_1}^{t_2} m \, \mathbf{a} \cdot \delta \mathbf{r} \; dt = 0 \\
+\nonumber \\
+\frac{d}{dt} \left( \frac{\partial {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2}}{\partial \dot{q}_k} \right) - \, \frac{\partial {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2}}{\partial {q}_k} = m \, \mathbf{a} \cdot \frac{\partial \mathbf{r}}{\partial {q}_k}
+\end{eqnarray}
+
+\bigskip \medskip
+
+\par La ecuación (3) es el Principio de D'Alembert.
+\bigskip
+\par La ecuación (4) es el Principio de Hamilton.
+\bigskip
+\par Las ecuaciones (5) son las Ecuaciones de Euler-Lagrange.
+
+\bigskip \medskip
+
+{\centering\subsection*{Principio de D'Alembert}}
+
+\medskip
+
+\par En la ecuación (3) si $\mathbf{a} = \mathbf{F} / m$ entonces
+\begin{eqnarray*}
+(\mathbf{F} - m \, \mathbf{a}) \cdot \delta \mathbf{r} = 0
+\end{eqnarray*}
+
+\newpage
+
+{\centering\subsection*{Principio de Hamilton}}
+
+\medskip
+
+\par En la ecuación (4) si $\mathbf{a} = \mathbf{F} / m$ entonces
+\begin{eqnarray*}
+\delta \int_{t_1}^{t_2} {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2} dt \; + \int_{t_1}^{t_2} \mathbf{F} \cdot \delta \mathbf{r} \; dt = 0
+\end{eqnarray*}
+\par Si $- \delta V = \mathbf{F} \cdot \delta \mathbf{r}$ y como $T = {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2}$ entonces
+\begin{eqnarray*}
+\delta \int_{t_1}^{t_2} (T - V) \: dt = 0
+\end{eqnarray*}
+\par Como $L = T - V$ entonces
+\begin{eqnarray*}
+\delta \int_{t_1}^{t_2} L \; dt = 0
+\end{eqnarray*}
+
+\bigskip
+
+{\centering\subsection*{Ecuaciones de Euler-Lagrange}}
+
+\bigskip
+
+\par En las ecuaciones (5) si $\mathbf{a} = \mathbf{F} / m$ y $Q_k = \mathbf{F} \cdot \partial \mathbf{r} / \partial {q}_k$ entonces
+\begin{eqnarray*}
+\frac{d}{dt} \left( \frac{\partial {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2}}{\partial \dot{q}_k} \right) - \, \frac{\partial {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2}}{\partial {q}_k} = Q_k
+\end{eqnarray*}
+\par Si $- \partial V / \partial {q}_k = Q_k$ y $\partial V / \partial \dot{q}_k = 0$ y como $T = {\textstyle \frac{1}{2}} \, m \, \mathbf{v}^{\, 2}$ entonces
+\begin{eqnarray*}
+\frac{d}{dt} \left( \frac{\partial (T - V)}{\partial \dot{q}_k} \right) - \frac{\partial (T - V)}{\partial {q}_k} = 0
+\end{eqnarray*}
+\par Como $L = T - V$ entonces
+\begin{eqnarray*}
+\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_k} \right) - \frac{\partial L}{\partial {q}_k} = 0
+\end{eqnarray*}
+
+\newpage
+
+{\centering\subsection*{Apéndice II}}
+
+\vspace{-0.9em}
+
+\begin{eqnarray*}
+k & = & \cdots {\mbox {\, ó \,}} (m_{\mbox {\tiny A}}) {\mbox {\, ó \,}} \cdots \\
+k & = & \cdots {\mbox {\, ó \,}} (m_{\mbox {\tiny A}} \, m_{\mbox {\tiny B}}) {\mbox {\, ó \,}} \cdots \\
+\mathbf{u} & = & \cdots {\mbox {\, ó \,}} (\mathbf{r}_{\mbox {\tiny A}}) {\mbox {\, ó \,}} (\mathbf{v}_{\mbox {\tiny A}}) {\mbox {\, ó \,}} (\mathbf{a}_{\mbox {\tiny A}}) {\mbox {\, ó \,}} \cdots \\
+\mathbf{u} & = & \cdots {\mbox {\, ó \,}} (\mathbf{r}_{\mbox {\tiny A}} - \mathbf{r}_{\mbox {\tiny B}}) {\mbox {\, ó \,}} (\mathbf{v}_{\mbox {\tiny A}} - \mathbf{v}_{\mbox {\tiny B}}) {\mbox {\, ó \,}} (\mathbf{a}_{\mbox {\tiny A}} - \mathbf{a}_{\mbox {\tiny B}}) {\mbox {\, ó \,}} \cdots \\
+\dot\mathbf{u} & = & d\mathbf{u} \, / dt \\
+\ddot\mathbf{u} & = & d^{\, 2}\mathbf{u} \, / dt^{\, 2}
+\end{eqnarray*}
+
+\vspace{+0.75em}
+
+{\centering\subsection*{Conservación de Escalar $\dot\mathrm{U}$}}
+
+\vspace{-0.9em}
+
+\begin{eqnarray*}
+\Delta \, \dot\mathrm{U} = \left( \Delta \, {\textstyle \frac{1}{2}} \, k \: \dot\mathbf{u}^{\, 2} \, - \int_{\mathbf{u}_1}^{\mathbf{u}_2} k \: \ddot\mathbf{u} \cdot d\mathbf{u} \right) / \left( k \right)
+\end{eqnarray*}
+\vspace{-0.9em}
+\begin{eqnarray*}
+\Delta \, \dot\mathrm{U} = 0
+\end{eqnarray*}
+\vspace{-0.9em}
+\begin{eqnarray*}
+\dot\mathrm{U} = cte.
+\end{eqnarray*}
+
+\vspace{+0.75em}
+
+{\centering\subsection*{Conservación de Vector $\dot\mathbf{U}$}}
+
+\vspace{-0.9em}
+
+\begin{eqnarray*}
+\Delta \, \dot\mathbf{U} = \left( \Delta \, k \: \dot\mathbf{u} \; - \int_{t_1}^{t_2} k \: \ddot\mathbf{u} \, dt \right) / \left( k \right)
+\end{eqnarray*}
+\vspace{-0.9em}
+\begin{eqnarray*}
+\Delta \, \dot\mathbf{U} = 0
+\end{eqnarray*}
+\vspace{-0.9em}
+\begin{eqnarray*}
+\dot\mathbf{U} = cte.
+\end{eqnarray*}
+
+\end{document}
+

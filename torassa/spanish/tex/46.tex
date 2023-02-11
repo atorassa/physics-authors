@@ -1,0 +1,543 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={153.0mm,191.4mm}}
+\geometry{totalwidth=132.0mm,totalheight=155.4mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{chngpage}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Mecánica Clásica Alternativa II}}
+\hypersetup{pdfauthor={Alejandro A. Torassa}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\mM}{m}
+\newcommand{\MM}{M}
+\newcommand{\mW}{W}
+\newcommand{\mK}{K}
+\newcommand{\mU}{U}
+\newcommand{\mE}{E}
+\newcommand{\mL}{L}
+\newcommand{\ra}{_a}
+\newcommand{\rb}{_b}
+\newcommand{\ri}{_i}
+\newcommand{\rs}{_s}
+\newcommand{\rS}{_S}
+\newcommand{\rcm}{_{cm}}
+\newcommand{\bre}{\breve}
+\newcommand{\uni}{\mathring}
+\newcommand{\vR}{\mathbf{r}}
+\newcommand{\vV}{\mathbf{v}}
+\newcommand{\vA}{\mathbf{a}}
+\newcommand{\VR}{\mathbf{R}}
+\newcommand{\VV}{\mathbf{V}}
+\newcommand{\VA}{\mathbf{A}}
+\newcommand{\vF}{\mathbf{F}}
+\newcommand{\vP}{\mathbf{P}}
+\newcommand{\vL}{\mathbf{L}}
+\newcommand{\vI}{\mathbf{I}}
+\newcommand{\aV}{\mathbf{\omega}}
+\newcommand{\aA}{\mathbf{\alpha}}
+\newcommand{\rt}{\hspace{+0.03em}'}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.15em\lower.25ex\hbox{$\scriptstyle 2$}\:}
+
+\newcommand{\Mass}{Masa}
+\newcommand{\Linear}{Momento Lineal}
+\newcommand{\Angular}{Momento Angular}
+\newcommand{\Work}{Trabajo}
+\newcommand{\Kinetic}{Energía Cinética}
+\newcommand{\Potential}{Energía Potencial}
+\newcommand{\Lagrangian}{Lagrangiano}
+\newcommand{\Cte}{\mathrm{constante}}
+\newcommand{\Cto}{=\,}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Mecánica Clásica Alternativa {\fontsize{16.50}{16.50}\selectfont II}}
+
+\bigskip \medskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\smallskip
+
+{\bf - versión 1 -}
+
+\bigskip \medskip
+
+\parbox{95.1mm}{Este trabajo presenta una mecánica clásica alternativa que es invariante bajo transformaciones entre sistemas de referencia y que puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.15em}
+
+{\centering\subsection*{Sistema de Referencia Universal}}
+
+\vspace{+0.90em}
+
+\par En este trabajo, el sistema de referencia universal $\uni\mathrm S$ es un sistema de referencia fijo al universo, cuyo origen coincide con el centro de masa del universo.
+\bigskip
+\par La posición universal $\uni\vR\ra$, la velocidad universal $\uni\vV\ra$ y la aceleración universal $\uni\vA\ra$ de una partícula A respecto al sistema de referencia universal $\uni\mathrm S$, son como sigue:
+\bigskip
+\par \hspace{+12.21em} \begin{tabular}{l}
+$\uni\vR\ra ~\doteq~ (\vR\ra)$ \vspace{+0.90em} \\
+$\uni\vV\ra ~\doteq~ d(\vR\ra)/dt$ \vspace{+0.90em} \\
+$\uni\vA\ra ~\doteq~ d^2(\vR\ra)/dt^2$
+\end{tabular}
+\bigskip
+\par \noindent donde $\vR\ra$ es la posición de la partícula A respecto al sistema de referencia universal $\uni\mathrm S$.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Nueva Dinámica}}
+
+\vspace{+0.90em}
+
+\par [1] \hspace{-0.024em} Una fuerza siempre es causada por la interacción entre dos partículas.
+\bigskip
+\par [2] \hspace{+0.030em} La fuerza neta $\vF\ra$ que actúa sobre una partícula A de masa $\mM\ra$ produce una aceleración universal $\uni\vA\ra$ según la siguiente ecuación: \hspace{+0.045em}{\fontsize{10.50}{10.50}\selectfont $\vF\ra = \mM\ra \, \uni\vA\ra$}
+\bigskip
+\par [3] \hspace{-0.150em} Si una partícula A ejerce una fuerza $\vF\rb$ sobre una partícula B entonces la partícula B ejerce sobre la partícula A una fuerza $-\vF\ra$ igual y de sentido contrario $(\vF\rb=-\vF\ra)$
+
+\newpage
+
+{\centering\subsection*{Definiciones}}
+
+\vspace{+1.02em}
+
+\par Para un sistema de N partículas, las siguientes definiciones son aplicables:
+
+\vspace{+1.80em}
+
+\par \hspace{+0.60em} \begin{tabular}{ll}
+\Mass & $\MM ~\doteq~ \sum_i \, \mM\ri$ \vspace{+1.20em} \\
+\Linear & $\uni\vP ~\doteq~ \sum_i \, \mM\ri \, \uni\vV\ri$ \vspace{+1.20em} \\
+\Angular & $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL} ~\doteq~ \sum_i \, \mM\ri \, \uni\vR\ri \times \uni\vV\ri$ \vspace{+1.20em} \\
+\Work & $\uni\mW ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\uni\vR\ri ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri)^2$ \vspace{+1.20em} \\
+\Kinetic & $\Delta \; \uni\mK ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri)^2$ \vspace{+1.20em} \\
+\Potential & $\Delta \; \uni\mU ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\uni\vR\ri$ \vspace{+1.20em} \\
+\Lagrangian & $\hspace{+0.06em} \uni{\hspace{-0.06em}\mL} ~\doteq~ \uni\mK - \uni\mU$
+\end{tabular}
+
+\vspace{+1.80em}
+
+{\centering\subsection*{Principios de Conservación}}
+
+\vspace{+1.02em}
+
+\par Si un sistema de N partículas es aislado entonces el momento lineal $\uni\vP$ del sistema de partículas permanece constante.
+\bigskip
+\par \hspace{+1.20em} $\uni\vP ~=~ \Cte \hspace{+7.29em} \big[ \; d(\uni\vP)/dt ~=~ \sum_i \, \mM\ri \, \uni\vA\ri ~=~ \sum_i \, \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par Si un sistema de N partículas es aislado entonces el momento angular $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}$ del sistema de partículas permanece constante.
+\bigskip
+\par \hspace{+1.20em} $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL} ~=~ \Cte \hspace{+7.41em} \big[ \; d(\hspace{-0.30em} \uni{\hspace{+0.30em}\vL})/dt ~=~ \sum_i \, \mM\ri \, \uni\vR\ri \times \uni\vA\ri ~=~ \sum_i \, \uni\vR\ri \times \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par Si un sistema de N partículas está sujeto sólo a fuerzas conservativas entonces la energía mecánica $\uni\mE$ del sistema de partículas permanece constante.
+\bigskip
+\par \hspace{+1.20em} $\uni\mE ~\doteq~ \uni\mK + \uni\mU ~=~ \Cte \hspace{+3.00em} \big[ \; \Delta \; \uni\mE ~=~ \Delta \; \uni\mK + \Delta \; \uni\mU ~=~ 0 \; \big]$
+
+\newpage
+
+{\centering\subsection*{Transformaciones}}
+
+\vspace{+0.90em}
+
+\par La posición universal $\uni\vR\ra$, la velocidad universal $\uni\vV\ra$ y la aceleración universal $\uni\vA\ra$ de una partícula A respecto a un sistema de referencia S, están dadas por:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\uni\vR\ra ~=~ \vR\ra - \VR$ \vspace{+1.20em} \\
+$\uni\vV\ra ~=~ \vV\ra\:-\:${\large$\aV$}$ \times (\vR\ra - \VR) - \VV$ \vspace{+1.20em} \\
+$\uni\vA\ra ~=~ \vA\ra - 2 \hspace{+0.06em} ${\large$\aV$}$ \times (\vV\ra - \VV)\:+\:${\large$\aV$}$ \times [${\large$\aV$}$ \times (\vR\ra - \VR)]\:-\:${\large$\aA$}$ \times (\vR\ra - \VR) - \VA$
+\end{tabular}
+\bigskip
+\par \noindent donde $\vR\ra$, $\vV\ra$ y $\vA\ra$ son la posición, la velocidad y la aceleración de la partícula A respecto al sistema de referencia S. $\VR$, $\VV$ y $\VA$ son la posición, la velocidad y la aceleración del centro de masa del universo respecto al sistema de referencia S. {\large$\aV$} y {\large$\aA$} son la velocidad angular y la aceleración angular del universo respecto al sistema de referencia S.
+\medskip
+\par La posición $\VR$, la velocidad $\VV$ y la aceleración $\VA$ del centro de masa del universo respecto al sistema de referencia S, y la velocidad angular {\large$\aV$} y la aceleración angular {\large$\aA$} del universo respecto al sistema de referencia S, son como sigue:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\MM ~\doteq~ \sum_i^{all} \, \mM\ri$ \vspace{+1.20em} \\
+$\VR ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{all} \, \mM\ri \, \vR\ri$ \vspace{+1.20em} \\
+$\VV ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{all} \, \mM\ri \, \vV\ri$ \vspace{+1.20em} \\
+$\VA ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{all} \, \mM\ri \, \vA\ri$ \vspace{+1.20em} \\
+$${\large$\aV$}$ ~\doteq~ \vI^{\scriptscriptstyle -1} \cdot \vL$ \vspace{+1.20em} \\
+$${\large$\aA$}$ ~\doteq~ d(${\large$\aV$}$)/dt$ \vspace{+1.20em} \\
+$\vI ~\doteq~ \sum_i^{all} \, \mM\ri \, [\hspace{+0.045em}|\vR\ri - \VR|^2 \: \mathbf{1} - (\vR\ri - \VR) \otimes (\vR\ri - \VR)\hspace{+0.030em}]$ \vspace{+1.20em} \\
+$\vL ~\doteq~ \sum_i^{all} \, \mM\ri \, (\vR\ri - \VR) \times (\vV\ri - \VV)$
+\end{tabular}
+\bigskip
+\par \noindent donde $\MM$ es la masa del universo, $\vI$ es el tensor de inercia del universo (respecto a $\VR$) y \hbox {$\vL$ es el momento} angular del universo respecto al sistema de referencia S.
+
+\newpage
+
+{\centering\subsection*{Observaciones Generales}}
+
+\vspace{+0.90em}
+
+\par La mecánica clásica alternativa de partículas presentada en este trabajo es invariante bajo transformaciones entre sistemas de referencia y puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir fuerzas ficticias.
+\bigskip
+\par Este trabajo considera que si todas las fuerzas obedecen la tercera ley de Newton (en su forma fuerte) entonces el sistema de referencia universal $\uni\mathrm S$ es siempre inercial. Por lo tanto, \hbox {un sistema} de referencia S es también inercial cuando {\large$\aV$} $=0$ y $\VA=0$.
+\bigskip
+\par Sin embargo, si una fuerza no obedece la tercera ley de Newton (en su forma fuerte o \hbox {en su} forma débil) entonces el sistema de referencia universal $\uni\mathrm S$ es no inercial y el sistema de referencia S es también no inercial cuando {\large$\aV$} $=0$ y $\VA=0$.
+\bigskip
+\par Por lo tanto, si una fuerza no obedece la tercera ley de Newton (en su forma fuerte o en su forma débil) entonces la nueva dinámica y los principios de conservación son falsos.
+\bigskip
+\par Sin embargo, este trabajo considera, por un lado, que todas las fuerzas obedecen la tercera ley de Newton (en su forma fuerte) y, por otro lado, que todas las fuerzas son invariantes bajo transformaciones entre sistemas de referencia $(\vF\,'\hspace{-0.18em}=\vF)$
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Bibliografía}}
+
+\vspace{+1.20em}
+
+\par \textbf{D. Lynden-Bell and J. Katz}, Classical Mechanics without Absolute Space (1995)
+\bigskip
+\par \textbf{J. Barbour}, Scale-Invariant Gravity: Particle Dynamics (2002)
+\bigskip
+\par \textbf{R. Ferraro}, Relational Mechanics as a Gauge Theory (2014)
+\bigskip
+\par \textbf{A. Torassa}, Sobre La Mecánica Clásica (1996)
+\bigskip
+\par \textbf{A. Torassa}, Mecánica Clásica Alternativa (2013)
+\bigskip
+\par \textbf{A. Torassa}, Una Reformulación de la Mecánica Clásica (2014)
+\bigskip
+\par \textbf{A. Torassa}, Un Nuevo Principio de Conservación de la Energía (2014)
+
+\newpage
+
+\begin{adjustwidth}{0em}{0em}
+
+{\centering\subsection*{Apéndice}}
+
+\vspace{+1.02em}
+
+\par Para un sistema de N partículas, las siguientes definiciones son también aplicables:
+
+\vspace{+1.02em}
+
+\par \hspace{-0.83em} \begin{tabular}{ll}
+\Angular & $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\uni\vR\ri - \uni\vR\rcm) \times (\uni\vV\ri - \uni\vV\rcm)$ \vspace{+0.90em} \\
+\Work & $\uni\mW\rt ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\uni\vR\ri - \uni\vR\rcm) ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri - \uni\vV\rcm)^2$ \vspace{+0.90em} \\
+\Kinetic & $\Delta \; \uni\mK\hspace{+0.045em}\rt ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri - \uni\vV\rcm)^2$ \vspace{+0.90em} \\
+\Potential & $\Delta \; \uni\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\uni\vR\ri - \uni\vR\rcm)$ \vspace{+0.90em} \\
+\Lagrangian & $\hspace{+0.06em} \uni{\hspace{-0.06em}\mL}\hspace{-0.09em}\rt ~\doteq~ \uni\mK\hspace{+0.045em}\rt - \uni\mU\rt$
+\end{tabular}
+
+\vspace{+1.02em}
+
+\par \noindent donde $\uni\vR\rcm$ y $\uni\vV\rcm$ son la posición universal y la velocidad universal del centro de masa del {\fontsize{15.30}{15.30}\selectfont \vphantom{K}}sistema de partículas. {\hspace{+14.10em} \makebox(0,8.01){\fontsize{8.88}{8.88}\selectfont $\sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \uni\vA\ri \cdot d(\uni\vR\ri - \uni\vR\rcm) = \sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, (\uni\vA\ri - \uni\vA\rcm) \cdot d(\uni\vR\ri - \uni\vR\rcm) = \sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri - \uni\vV\rcm)^2$}}
+
+\vspace{+1.02em}
+
+\par Si un sistema de N partículas es aislado entonces el momento angular $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt$ del sistema de partículas permanece constante.
+\bigskip
+\par $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~=~ \Cte$
+\bigskip
+\par $d(\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt)/dt ~=~ \sum_i \, \mM\ri \, (\uni\vR\ri - \uni\vR\rcm) \times (\uni\vA\ri - \uni\vA\rcm) \,=\, \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times \uni\vA\ri \,=\, \sum_i \, \vR\ri \times \vF\ri \;=\; 0$
+\bigskip
+\par $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\uni\vR\ri - \uni\vR\rcm) \times (\uni\vV\ri - \uni\vV\rcm) ~=~ \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times [\, \vV\ri\:-\:${\large$\aV$}$ \times (\vR\ri - \vR\rcm) - \vV\rcm \,]$
+
+\vspace{+1.02em}
+
+\par Si un sistema de N partículas es aislado y está sujeto sólo a fuerzas conservativas entonces la energía mecánica $\uni\mE\rt$ del sistema de partículas permanece constante.
+\bigskip
+\par $\uni\mE\rt \,\doteq\, \uni\mK\hspace{+0.045em}\rt + \uni\mU\rt \Cto \Cte$
+\bigskip
+\par $\Delta \; \uni\mE\rt ~=~ \Delta \; \uni\mK\hspace{+0.045em}\rt + \, \Delta \; \uni\mU\rt ~=~ 0$
+\bigskip
+\par $\Delta \; \uni\mK\hspace{+0.045em}\rt ~\doteq~\sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri - \uni\vV\rcm)^2 ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, [\, \vV\ri\:-\:${\large$\aV$}$ \times (\vR\ri - \vR\rcm) - \vV\rcm \,]^{\hspace{+0.024em}2}$
+\bigskip
+\par $\Delta \; \uni\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\uni\vR\ri - \uni\vR\rcm) ~=~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\vR\ri - \vR\rcm) ~=~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\vR\ri$
+\bigskip
+\par \noindent donde $\vR\rcm$ y $\vV\rcm$ son la posición y la velocidad del centro de masa del sistema de partículas respecto a un sistema de referencia S y {\large$\aV$} es la velocidad angular del universo respecto al sistema de referencia S.
+
+\end{adjustwidth}
+
+\newpage\thispagestyle{empty}{\small
+
+\vspace*{\fill}
+
+\begin{adjustwidth}{+1.80em}{+1.80em}
+
+\begin{center}{\LARGE Mecánica Clásica Alternativa {\fontsize{16.50}{16.50}\selectfont II}}\end{center}
+
+\bigskip\bigskip
+
+\begin{center}{\bf - versión 1 -}\end{center}
+
+\bigskip\bigskip
+
+\par \noindent Todas las fuerzas obedecen la tercera ley de Newton (en su forma fuerte)
+\bigskip
+\par \noindent El sistema de referencia universal $\uni\mathrm S$ es un sistema de referencia fijo al universo, cuyo origen coincide con el centro de masa del universo.
+\bigskip
+\par \noindent Por lo tanto, el sistema de referencia universal $\uni\mathrm S$ es siempre inercial y un sistema de \hbox {referencia S} es también inercial cuando {\large$\aV$} $=0$ y $\VA=0$.
+
+\bigskip\bigskip
+
+\begin{center}{\bf - versión 2 -}\end{center}
+
+\bigskip\bigskip
+
+\par \noindent Todas las fuerzas obedecen la tercera ley de Newton (en su forma fuerte o en su forma débil)
+\bigskip
+\par \noindent El sistema de referencia universal $\uni\mathrm S$ es un sistema de referencia no rotante {\small$(\bre\aV_{\uni\mathrm S}=0)$} cuyo origen coincide con el centro de masa del universo.
+\bigskip
+\par \noindent Por lo tanto, el sistema de referencia universal $\uni\mathrm S$ es siempre inercial y un sistema de \hbox {referencia S} es también inercial cuando $\bre\aV\rS=0$ y $\VA=0$.
+
+\end{adjustwidth}
+
+\vspace*{\fill}}
+
+\newpage\setcounter{page}{1}
+
+\begin{center}
+
+{\LARGE Mecánica Clásica Alternativa {\fontsize{16.50}{16.50}\selectfont II}}
+
+\bigskip \medskip
+
+{\large Alejandro A. Torassa}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+(2014) Buenos Aires, Argentina
+
+atorassa@gmail.com
+
+\smallskip
+
+{\bf - versión 2 -}
+
+\bigskip \medskip
+
+\parbox{95.1mm}{Este trabajo presenta una mecánica clásica alternativa que es invariante bajo transformaciones entre sistemas de referencia y que puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir fuerzas ficticias.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-0.15em}
+
+{\centering\subsection*{Sistema de Referencia Universal}}
+
+\vspace{+0.90em}
+
+\par En este trabajo, el sistema de referencia universal $\uni\mathrm S$ es un sistema de referencia no rotante {\small$(\bre\aV_{\uni\mathrm S}=0)$} cuyo origen coincide con el centro de masa del universo.
+\bigskip
+\par La posición universal $\uni\vR\ra$, la velocidad universal $\uni\vV\ra$ y la aceleración universal $\uni\vA\ra$ de una partícula A respecto al sistema de referencia universal $\uni\mathrm S$, son como sigue:
+\bigskip
+\par \hspace{+12.21em} \begin{tabular}{l}
+$\uni\vR\ra ~\doteq~ (\vR\ra)$ \vspace{+0.90em} \\
+$\uni\vV\ra ~\doteq~ d(\vR\ra)/dt$ \vspace{+0.90em} \\
+$\uni\vA\ra ~\doteq~ d^2(\vR\ra)/dt^2$
+\end{tabular}
+\bigskip
+\par \noindent donde $\vR\ra$ es la posición de la partícula A respecto al sistema de referencia universal $\uni\mathrm S$.
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Nueva Dinámica}}
+
+\vspace{+0.90em}
+
+\par [1] \hspace{-0.024em} Una fuerza siempre es causada por la interacción entre dos partículas.
+\bigskip
+\par [2] \hspace{+0.030em} La fuerza neta $\vF\ra$ que actúa sobre una partícula A de masa $\mM\ra$ produce una aceleración universal $\uni\vA\ra$ según la siguiente ecuación: \hspace{+0.045em}{\fontsize{10.50}{10.50}\selectfont $\vF\ra = \mM\ra \, \uni\vA\ra$}
+\bigskip
+\par [3] \hspace{-0.150em} Si una partícula A ejerce una fuerza $\vF\rb$ sobre una partícula B entonces la partícula B ejerce sobre la partícula A una fuerza $-\vF\ra$ igual y de sentido contrario $(\vF\rb=-\vF\ra)$
+
+\newpage
+
+{\centering\subsection*{Definiciones}}
+
+\vspace{+1.02em}
+
+\par Para un sistema de N partículas, las siguientes definiciones son aplicables:
+
+\vspace{+1.80em}
+
+\par \hspace{+0.60em} \begin{tabular}{ll}
+\Mass & $\MM ~\doteq~ \sum_i \, \mM\ri$ \vspace{+1.20em} \\
+\Linear & $\uni\vP ~\doteq~ \sum_i \, \mM\ri \, \uni\vV\ri$ \vspace{+1.20em} \\
+\Angular & $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL} ~\doteq~ \sum_i \, \mM\ri \, \uni\vR\ri \times \uni\vV\ri$ \vspace{+1.20em} \\
+\Work & $\uni\mW ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\uni\vR\ri ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri)^2$ \vspace{+1.20em} \\
+\Kinetic & $\Delta \; \uni\mK ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri)^2$ \vspace{+1.20em} \\
+\Potential & $\Delta \; \uni\mU ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\uni\vR\ri$ \vspace{+1.20em} \\
+\Lagrangian & $\hspace{+0.06em} \uni{\hspace{-0.06em}\mL} ~\doteq~ \uni\mK - \uni\mU$
+\end{tabular}
+
+\vspace{+1.80em}
+
+{\centering\subsection*{Principios de Conservación}}
+
+\vspace{+1.02em}
+
+\par Si un sistema de N partículas es aislado entonces el momento lineal $\uni\vP$ del sistema de partículas permanece constante.
+\bigskip
+\par \hspace{+1.20em} $\uni\vP ~=~ \Cte \hspace{+7.29em} \big[ \; d(\uni\vP)/dt ~=~ \sum_i \, \mM\ri \, \uni\vA\ri ~=~ \sum_i \, \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par Si un sistema de N partículas es aislado entonces el momento angular $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}$ del sistema de partículas permanece constante.
+\bigskip
+\par \hspace{+1.20em} $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL} ~=~ \Cte \hspace{+7.41em} \big[ \; d(\hspace{-0.30em} \uni{\hspace{+0.30em}\vL})/dt ~=~ \sum_i \, \mM\ri \, \uni\vR\ri \times \uni\vA\ri ~=~ \sum_i \, \uni\vR\ri \times \vF\ri ~=~ 0 \; \big]$
+
+\vspace{+1.50em}
+
+\par Si un sistema de N partículas está sujeto sólo a fuerzas conservativas entonces la energía mecánica $\uni\mE$ del sistema de partículas permanece constante.
+\bigskip
+\par \hspace{+1.20em} $\uni\mE ~\doteq~ \uni\mK + \uni\mU ~=~ \Cte \hspace{+3.00em} \big[ \; \Delta \; \uni\mE ~=~ \Delta \; \uni\mK + \Delta \; \uni\mU ~=~ 0 \; \big]$
+
+\newpage
+
+{\centering\subsection*{Transformaciones}}
+
+\vspace{+0.90em}
+
+\par La posición universal $\uni\vR\ra$, la velocidad universal $\uni\vV\ra$ y la aceleración universal $\uni\vA\ra$ de una partícula A respecto a un sistema de referencia S fijo a una partícula S, están dadas por:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\uni\vR\ra ~=~ \vR\ra - \VR$ \vspace{+1.20em} \\
+$\uni\vV\ra ~=~ \vV\ra + \bre\aV\rS \times (\vR\ra - \VR) - \VV$ \vspace{+1.20em} \\
+$\uni\vA\ra ~=~ \vA\ra + 2 \hspace{+0.06em} \bre\aV\rS \times (\vV\ra - \VV) + \bre\aV\rS \times [\bre\aV\rS \times (\vR\ra - \VR)] + \bre\aA\rS \times (\vR\ra - \VR) - \VA$
+\end{tabular}
+\bigskip
+\par \noindent donde $\vR\ra$, $\vV\ra$ y $\vA\ra$ son la posición, la velocidad y la aceleración de la partícula A respecto al sistema de referencia S. $\VR$, $\VV$ y $\VA$ son la posición, la velocidad y la aceleración del centro de masa del universo respecto al sistema de referencia S. $\bre\aV\rS$ y $\bre\aA\rS$ son la velocidad angular dinámica y la aceleración angular dinámica del sistema de referencia S.
+\medskip
+\par La posición $\VR$, la velocidad $\VV$ y la aceleración $\VA$ del centro de masa del universo respecto al sistema de referencia S, y la velocidad angular dinámica $\bre\aV\rS$ y la aceleración angular dinámica $\bre\aA\rS$ del sistema de referencia S, son como sigue:
+\bigskip
+\par \hspace{+0.60em} \begin{tabular}{l}
+$\MM ~\doteq~ \sum_i^{all} \, \mM\ri$ \vspace{+1.20em} \\
+$\VR ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{all} \, \mM\ri \, \vR\ri$ \vspace{+1.20em} \\
+$\VV ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{all} \, \mM\ri \, \vV\ri$ \vspace{+1.20em} \\
+$\VA ~\doteq~ \MM^{\scriptscriptstyle -1} \, \sum_i^{all} \, \mM\ri \, \vA\ri$ \vspace{+1.20em} \\
+$\bre\aV\rS ~\doteq~ \pm \hspace{+0.12em} \big| (\vF_{\scriptscriptstyle 1}/\mM\rs - \vF_{\scriptscriptstyle 0}/\mM\rs) \cdot (\vR_{\scriptscriptstyle 1} - \vR_{\scriptscriptstyle 0})/(\vR_{\scriptscriptstyle 1} - \vR_{\scriptscriptstyle 0})^2 \big|^{1/2}$ \vspace{+1.20em} \\
+$\bre\aA\rS ~\doteq~ d(\bre\aV\rS)/dt$
+\end{tabular}
+\bigskip
+\par \noindent donde $\vF_{\scriptscriptstyle 0}$ y $\vF_{\scriptscriptstyle 1}$ son las fuerzas netas que actúan sobre el sistema de referencia S en los puntos 0 y 1, $\vR_{\scriptscriptstyle 0}$ y $\vR_{\scriptscriptstyle 1}$ son las posiciones de los puntos 0 y 1 respecto al sistema de referencia S y \hbox {$\mM\rs$ es la masa} de la partícula S (el punto 0 es el origen del sistema de referencia S y el centro de masa de la partícula S) (el punto 0 pertenece al eje de rotación dinámica y el segmento 01 es perpendicular al eje de rotación dinámica) (el vector $\bre\aV\rS$ es colineal con el eje de rotación dinámica) ($\MM$ es la masa del universo)
+
+\newpage
+
+{\centering\subsection*{Observaciones Generales}}
+
+\vspace{+0.90em}
+
+\par La mecánica clásica alternativa de partículas presentada en este trabajo es invariante bajo transformaciones entre sistemas de referencia y puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir fuerzas ficticias.
+\bigskip
+\par Este trabajo considera que si todas las fuerzas obedecen la tercera ley de Newton (en su forma fuerte o en su forma débil) entonces el sistema de referencia universal $\uni\mathrm S$ es siempre inercial. Por lo tanto, un sistema de referencia S es también inercial cuando $\bre\aV\rS=0$ y $\VA=0$.
+\bigskip
+\par Sin embargo, si una fuerza no obedece la tercera ley de Newton (en su forma débil) \hbox {entonces} el sistema de referencia universal $\uni\mathrm S$ es no inercial y el sistema de referencia S es también no inercial cuando $\bre\aV\rS=0$ y $\VA=0$.
+\bigskip
+\par Por lo tanto, si una fuerza no obedece la tercera ley de Newton (en su forma débil) entonces la nueva dinámica y los principios de conservación son falsos.
+\bigskip
+\par Sin embargo, este trabajo considera, por un lado, que todas las fuerzas obedecen la tercera ley de Newton (en su forma fuerte o en su forma débil) y, por otro lado, que todas las fuerzas son invariantes bajo transformaciones entre sistemas de referencia $(\vF\,'\hspace{-0.18em}=\vF)$
+
+\vspace{+1.50em}
+
+{\centering\subsection*{Bibliografía}}
+
+\vspace{+1.20em}
+
+\par \textbf{D. Lynden-Bell and J. Katz}, Classical Mechanics without Absolute Space (1995)
+\bigskip
+\par \textbf{J. Barbour}, Scale-Invariant Gravity: Particle Dynamics (2002)
+\bigskip
+\par \textbf{R. Ferraro}, Relational Mechanics as a Gauge Theory (2014)
+\bigskip
+\par \textbf{A. Torassa}, Sobre La Mecánica Clásica (1996)
+\bigskip
+\par \textbf{A. Torassa}, Mecánica Clásica Alternativa (2013)
+\bigskip
+\par \textbf{A. Torassa}, Una Reformulación de la Mecánica Clásica (2014)
+\bigskip
+\par \textbf{A. Torassa}, Un Nuevo Principio de Conservación de la Energía (2014)
+
+\newpage
+
+\begin{adjustwidth}{0em}{0em}
+
+{\centering\subsection*{Apéndice}}
+
+\vspace{+1.02em}
+
+\par Para un sistema de N partículas, las siguientes definiciones son también aplicables:
+
+\vspace{+1.02em}
+
+\par \hspace{-0.83em} \begin{tabular}{ll}
+\Angular & $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\uni\vR\ri - \uni\vR\rcm) \times (\uni\vV\ri - \uni\vV\rcm)$ \vspace{+0.90em} \\
+\Work & $\uni\mW\rt ~\doteq~ \sum_i \, \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\uni\vR\ri - \uni\vR\rcm) ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri - \uni\vV\rcm)^2$ \vspace{+0.90em} \\
+\Kinetic & $\Delta \; \uni\mK\hspace{+0.045em}\rt ~\doteq~ \sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri - \uni\vV\rcm)^2$ \vspace{+0.90em} \\
+\Potential & $\Delta \; \uni\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\uni\vR\ri - \uni\vR\rcm)$ \vspace{+0.90em} \\
+\Lagrangian & $\hspace{+0.06em} \uni{\hspace{-0.06em}\mL}\hspace{-0.09em}\rt ~\doteq~ \uni\mK\hspace{+0.045em}\rt - \uni\mU\rt$
+\end{tabular}
+
+\vspace{+1.02em}
+
+\par \noindent donde $\uni\vR\rcm$ y $\uni\vV\rcm$ son la posición universal y la velocidad universal del centro de masa del {\fontsize{15.30}{15.30}\selectfont \vphantom{K}}sistema de partículas. {\hspace{+14.10em} \makebox(0,8.01){\fontsize{8.88}{8.88}\selectfont $\sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, \uni\vA\ri \cdot d(\uni\vR\ri - \uni\vR\rcm) = \sum_i \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \mM\ri \, (\uni\vA\ri - \uni\vA\rcm) \cdot d(\uni\vR\ri - \uni\vR\rcm) = \sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri - \uni\vV\rcm)^2$}}
+
+\vspace{+1.02em}
+
+\par Si un sistema de N partículas es aislado entonces el momento angular $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt$ del sistema de partículas permanece constante.
+\bigskip
+\par $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~=~ \Cte$
+\bigskip
+\par $d(\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt)/dt ~=~ \sum_i \, \mM\ri \, (\uni\vR\ri - \uni\vR\rcm) \times (\uni\vA\ri - \uni\vA\rcm) \;=\; \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times \uni\vA\ri \;=\; \sum_i \, \vR\ri \times \vF\ri \;=\; 0$
+\bigskip
+\par $\hspace{-0.30em} \uni{\hspace{+0.30em}\vL}\hspace{-0.24em}\rt ~\doteq~ \sum_i \, \mM\ri \, (\uni\vR\ri - \uni\vR\rcm) \times (\uni\vV\ri - \uni\vV\rcm) ~=~ \sum_i \, \mM\ri \, (\vR\ri - \vR\rcm) \times [\, \vV\ri + \bre\aV\rS \times (\vR\ri - \vR\rcm) - \vV\rcm \,]$
+
+\vspace{+1.02em}
+
+\par Si un sistema de N partículas es aislado y está sujeto sólo a fuerzas conservativas entonces la energía mecánica $\uni\mE\rt$ del sistema de partículas permanece constante.
+\bigskip
+\par $\uni\mE\rt \,\doteq\, \uni\mK\hspace{+0.045em}\rt + \uni\mU\rt \Cto \Cte$
+\bigskip
+\par $\Delta \; \uni\mE\rt ~=~ \Delta \; \uni\mK\hspace{+0.045em}\rt + \, \Delta \; \uni\mU\rt ~=~ 0$
+\bigskip
+\par $\Delta \; \uni\mK\hspace{+0.045em}\rt ~\doteq~\sum_i \, \Delta \; \med \, \mM\ri \, (\uni\vV\ri - \uni\vV\rcm)^2 ~=~ \sum_i \, \Delta \; \med \, \mM\ri \, [\, \vV\ri + \bre\aV\rS \times (\vR\ri - \vR\rcm) - \vV\rcm \,]^{\hspace{+0.024em}2}$
+\bigskip
+\par $\Delta \; \uni\mU\rt ~\doteq~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\uni\vR\ri - \uni\vR\rcm) ~=~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d(\vR\ri - \vR\rcm) ~=~ \sum_i \, - \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \; \vF\ri \cdot d\vR\ri$
+\bigskip
+\par \noindent donde $\vR\rcm$ y $\vV\rcm$ son la posición y la velocidad del centro de masa del sistema de partículas respecto a un sistema de referencia S y $\bre\aV\rS$ es la velocidad angular dinámica del sistema de referencia S.
+
+\end{adjustwidth}
+
+\end{document}
+

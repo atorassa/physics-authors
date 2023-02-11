@@ -1,0 +1,210 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={153.0mm,217.4mm}}
+\geometry{totalwidth=132.0mm,totalheight=181.4mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Una Simple Mecánica Clásica Rotacional}}
+\hypersetup{pdfauthor={Antonio A. Blatter}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE Una Simple Mecánica Clásica Rotacional}
+
+\bigskip \medskip
+
+{\large Antonio A. Blatter}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2015) Buenos Aires
+
+\smallskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{95.10mm}{En mecánica clásica, este trabajo presenta una simple mecánica clásica rotacional que puede ser aplicada en cualquier sistema de referencia inercial o no inercial.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsection*{Introducción}}
+
+\par \bigskip i) Poder hallar de la manera más sencilla posible la velocidad angular ${\boldsymbol{\omega}}$ de cualquier sistema de N partículas (sea un cuerpo rígido o no) respecto a cualquier sistema de referencia inercial o no inercial de manera tal que no sea necesario utilizar una componente radial y otra componente angular en cada una de las partículas del sistema.
+
+\par \bigskip ii) Posteriormente, poder desarrollar una dinámica rotacional lo más sencilla posible que se pueda aplicar en cualquier sistema de referencia inercial o no inercial.
+
+\par \bigskip {\centering\subsubsection*{Opción A}}
+
+\par \medskip {\centering\subsubsection*{Cinemática}}
+
+\par \bigskip En mecánica clásica, para cualquier sistema de referencia S (inercial o no inercial) la velocidad angular ${\boldsymbol{\omega}}$ de cualquier sistema de N partículas (que gira sobre su centro de masa) respecto al sistema de referencia S es igual a la velocidad angular ${\boldsymbol{\omega}}_{S'}$ de un sistema de referencia S' (que gira sobre su origen O') respecto al sistema de referencia S de manera tal que el origen O' del sistema de referencia S' coincida siempre con el centro de masa del sistema de partículas y que el momento angular ${\mathbf{L}}'$ del sistema de partículas respecto al sistema de referencia S' siempre sea igual a cero.
+
+\par \bigskip Por lo tanto, el momento angular ${\mathbf{L}}'$ del sistema de partículas respecto al sistema de referencia S' siempre es igual a cero.
+
+\par \bigskip ${\mathbf{L}}' = \sum_i \, m_i \, ( \, {\mathbf{r}}_i' \times {\mathbf{v}}_i') = 0$
+
+\newpage
+
+\par \bigskip Ahora, la posición ${\mathbf{r}}_i'$ y la velocidad ${\mathbf{v}}_i'$ de la i-ésima partícula respecto al sistema de referencia S, están dadas por:
+
+\par \bigskip ${\mathbf{r}}_i' ~=~ {\mathbf{r}}_i - {\mathbf{R}} ~=~ ({\mathbf{r}}_i - {\mathbf{R}}) ~=~ \bar{\mathbf{r}}_i$
+
+\par \bigskip ${\mathbf{v}}_i' ~=~ {\mathbf{v}}_i - {\boldsymbol{\omega}}_{S'} \times {\mathbf{r}}_i' - {\mathbf{V}} ~=~ ({\mathbf{v}}_i - {\mathbf{V}}) - {\boldsymbol{\omega}}_{S'} \times ({\mathbf{r}}_i - {\mathbf{R}}) ~=~ \bar{\mathbf{v}}_i - {\boldsymbol{\omega}}_{S'} \times \bar{\mathbf{r}}_i$
+
+\par \bigskip \noindent donde ${\mathbf{R}}$ y ${\mathbf{V}}$ son la posición y la velocidad respectivamente del centro de masa del sistema de partículas respecto al sistema de referencia S.
+
+\par \bigskip Sustituyendo ${\mathbf{r}}_i'$ y ${\mathbf{v}}_i'$ en la primera ecuación, se obtiene:
+
+\par \bigskip $\sum_i \, m_i \, [ \, \bar{\mathbf{r}}_i \times ( \bar{\mathbf{v}}_i - {\boldsymbol{\omega}}_{S'} \times \bar{\mathbf{r}}_i ) ] = 0$
+
+\par \bigskip $\sum_i \, m_i \, ( \bar{\mathbf{r}}_i \times \bar{\mathbf{v}}_i ) - \sum_i \, m_i \, [ \, \bar{\mathbf{r}}_i \times ( {\boldsymbol{\omega}}_{S'} \times \bar{\mathbf{r}}_i ) ] = 0$
+
+\par \bigskip Puesto que $\bar{\mathbf{r}}_i \times ( {\boldsymbol{\omega}}_{S'} \times \bar{\mathbf{r}}_i ) = |\bar{\mathbf{r}}_i|^2 \, {\boldsymbol{\omega}}_{S'} - ({\boldsymbol{\omega}}_{S'} \cdot \bar{\mathbf{r}}_i) \, \bar{\mathbf{r}}_i$, resulta:
+
+\par \bigskip $\sum_i \, m_i \, ( \bar{\mathbf{r}}_i \times \bar{\mathbf{v}}_i ) - \sum_i \, m_i \, [ \, |\bar{\mathbf{r}}_i|^2 \, {\boldsymbol{\omega}}_{S'} - ( {\boldsymbol{\omega}}_{S'} \cdot \bar{\mathbf{r}}_i ) \: \bar{\mathbf{r}}_i \, ] = 0$
+
+\par \bigskip Como ${\boldsymbol{\omega}}_{S'} = \mathbf{1} \cdot {\boldsymbol{\omega}}_{S'}$ (tensor unitario) y $( {\boldsymbol{\omega}}_{S'} \cdot \bar{\mathbf{r}}_i ) \: \bar{\mathbf{r}}_i = ( \bar{\mathbf{r}}_i \otimes \bar{\mathbf{r}}_i ) \cdot {\boldsymbol{\omega}}_{S'}$ (producto tensorial o diádico) entonces:
+
+\par \bigskip $\sum_i \, m_i \, ( \bar{\mathbf{r}}_i \times \bar{\mathbf{v}}_i ) - \sum_i \, m_i \, [ \, |\bar{\mathbf{r}}_i|^2 \, \mathbf{1} \cdot {\boldsymbol{\omega}}_{S'} - ( \bar{\mathbf{r}}_i \otimes \bar{\mathbf{r}}_i ) \cdot {\boldsymbol{\omega}}_{S'} \, ] = 0$
+
+\par \bigskip $\sum_i \, m_i \, ( \bar{\mathbf{r}}_i \times \bar{\mathbf{v}}_i ) - \sum_i \, m_i \, [ \, |\bar{\mathbf{r}}_i|^2 \, \mathbf{1} - ( \bar{\mathbf{r}}_i \otimes \bar{\mathbf{r}}_i ) \, ] \cdot {\boldsymbol{\omega}}_{S'} = 0$
+
+\par \bigskip Si definimos a $\sum_i \, m_i \, ( \bar{\mathbf{r}}_i \times \bar{\mathbf{v}}_i )$ como el momento angular ${\mathbf{L}}$ del sistema de partículas respecto al sistema de referencia S y a $\sum_i \, m_i \, [ \, |\bar{\mathbf{r}}_i|^2 \, \mathbf{1} - ( \bar{\mathbf{r}}_i \otimes \bar{\mathbf{r}}_i ) \, ]$ como el tensor de inercia ${\mathbf{I}}$ del sistema de partículas con respecto al punto ${\mathbf{R}}$, entonces queda:
+
+\par \bigskip ${\mathbf{L}} - {\mathbf{I}} \cdot {\boldsymbol{\omega}}_{S'} = 0$
+
+\par \bigskip Despejando ${\boldsymbol{\omega}}_{S'}$ y como la velocidad angular ${\boldsymbol{\omega}}_{S'}$ del sistema de referencia S' respecto al sistema de referencia S es igual a la velocidad angular ${\boldsymbol{\omega}}$ del sistema de partículas respecto al sistema de referencia S, finalmente se obtiene:
+
+\par \bigskip ${\boldsymbol{\omega}} ~=~ {\mathbf{I}}^{-1} \cdot {\mathbf{L}}$
+
+\par \bigskip ${\boldsymbol{\alpha}} ~=~ d({\boldsymbol{\omega}})/dt$
+
+\par \bigskip ${\mathbf{L}} ~=~ \sum_i \, m_i \, ( \bar{\mathbf{r}}_i \times \bar{\mathbf{v}}_i ) ~=~ \sum_i \, m_i \, [ ({\mathbf{r}}_i - {\mathbf{R}}) \times ({\mathbf{v}}_i - {\mathbf{V}}) ]$
+
+\par \bigskip ${\mathbf{I}} ~=~ \sum_i \, m_i \, [ \, |\bar{\mathbf{r}}_i|^2 \, \mathbf{1} - ( \bar{\mathbf{r}}_i \otimes \bar{\mathbf{r}}_i ) \, ] ~=~ \sum_i \, m_i \, [ \, |({\mathbf{r}}_i - {\mathbf{R}})|^2 \, \mathbf{1} - ({\mathbf{r}}_i - {\mathbf{R}}) \otimes ({\mathbf{r}}_i - {\mathbf{R}}) \, ]$
+
+\par \bigskip El sistema de partículas puede ser cualquier sistema de partículas (sea un cuerpo rígido o no) y si el sistema es de 1 sola partícula entonces el momento angular y la velocidad angular siempre son iguales a cero.
+
+\par \medskip {\centering\subsubsection*{Dinámica}}
+
+\par \bigskip En mecánica clásica, para cualquier sistema de referencia S (inercial o no inercial) el momento angular ${\mathbf{L}}$ de un sistema de N partículas, está ahora dado por:
+
+\par \bigskip ${\mathbf{L}} = \sum_i \, m_i \, [ ({\mathbf{r}}_i - {\mathbf{R}}) \times ({\mathbf{v}}_i - {\mathbf{V}}) ] = \sum_i \, m_i \, [ ({\mathbf{r}}_i - {\mathbf{R}}) \times {\mathbf{v}}_i \, ] = \sum_i \, m_i \, [ \, {\mathbf{r}}_i \times ({\mathbf{v}}_i - {\mathbf{V}}) ]$
+
+\par \bigskip Derivando con respecto al tiempo, resulta:
+
+\par \bigskip $d({\mathbf{L}})/dt = \sum_i \, m_i \, [ ({\mathbf{r}}_i - {\mathbf{R}}) \times ({\mathbf{a}}_i - {\mathbf{A}}) ] = \sum_i \, m_i \, [ ({\mathbf{r}}_i - {\mathbf{R}}) \times {\mathbf{a}}_i \, ] = \sum_i \, m_i \, [ \, {\mathbf{r}}_i \times ({\mathbf{a}}_i - {\mathbf{A}}) ]$
+
+\par \bigskip Utilizando solamente la segunda igualdad, se tiene:
+
+\par \bigskip $d({\mathbf{L}})/dt = \sum_i \, m_i \, [ ({\mathbf{r}}_i - {\mathbf{R}}) \times {\mathbf{a}}_i \, ]$
+
+\par \bigskip Ahora como en todo sistema de referencia inercial ${\mathbf{a}}_i = {\mathbf{F}}_i/m_i$ (así como en todo sistema de referencia no inercial considerando a las fuerzas ficticias) finalmente se obtiene:
+
+\par \bigskip $d({\mathbf{L}})/dt = \sum_i \, [ ({\mathbf{r}}_i - {\mathbf{R}}) \times {\mathbf{F}}_i \, ] = {\mathbf{M}}$
+
+\par \bigskip\medskip {\centering\subsubsection*{Opción B}} \smallskip
+
+\par \bigskip En mecánica clásica, para cualquier sistema de referencia S con origen O (inercial o no inercial) la velocidad angular ${\boldsymbol{\omega}}$ de cualquier sistema de N partículas (que gira sobre el origen O) respecto al sistema de referencia S es igual a la velocidad angular ${\boldsymbol{\omega}}_{S'}$ de un sistema de referencia S' (que gira sobre su origen O') respecto al sistema de referencia S de manera tal que el origen O' del sistema de referencia S' coincida siempre con el origen O del sistema de referencia S y que el momento angular ${\mathbf{L}}'$ del sistema de partículas respecto al sistema de referencia S' siempre sea igual a cero.
+
+\par \bigskip El desarrollo de la opción B es el mismo que el desarrollo de la opción A y las ecuaciones de la opción B son las mismas que las ecuaciones de la opción A con la particularidad que ${\mathbf{R}}$, ${\mathbf{V}}$ y ${\mathbf{A}}$ siempre son iguales a cero, ya que ahora no representan la posición, la velocidad y la aceleración del centro de masa del sistema de partículas respecto al sistema de referencia S sino que representan la posición, la velocidad y la aceleración del origen O del sistema de referencia S respecto al sistema de referencia S.
+
+\par \bigskip La ventaja de la opción B es que el momento angular y la velocidad angular de un sistema de 1 sola partícula no siempre son iguales a cero.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Generalizando}}
+
+\par \bigskip En mecánica clásica, para cualquier sistema de referencia S (inercial o no inercial) el momento angular ${\mathbf{L}}$ de cualquier sistema de N partículas (sea un cuerpo rígido o no) con respecto a un punto O (con posición ${\mathbf{R}}_o$ y velocidad ${\mathbf{V}}_o$) está ahora dado por:
+
+\par \bigskip\bigskip ${\mathbf{L}} \,=\, \sum_i \, m_i \, [ \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times ({\mathbf{v}}_i - {\mathbf{V}}_o) \, ]$
+
+\par \bigskip\smallskip $d({\mathbf{L}})/dt \,=\, \sum_i \, m_i \, [ \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times ({\mathbf{a}}_i - {\mathbf{A}}_o) \, ]$
+
+\par \bigskip\smallskip ${\mathbf{M}}_o \,=\, \sum_i \, [ \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times ({\mathbf{F}}_i - m_i {\mathbf{A}}_o) \, ]$
+
+\par \bigskip\smallskip ${\mathbf{I}} \,=\, \sum_i \, m_i \, [ \, |({\mathbf{r}}_i - {\mathbf{R}}_o)|^2 \, \mathbf{1} - ({\mathbf{r}}_i - {\mathbf{R}}_o) \otimes ({\mathbf{r}}_i - {\mathbf{R}}_o) \, ]$
+
+\par \bigskip\bigskip Por lo tanto, en cualquier sistema de N partículas, se tiene:
+
+\par \bigskip\bigskip ${\mathbf{L}} \,=\, {\mathbf{I}} \cdot {\boldsymbol{\omega}}$
+
+\par \bigskip\smallskip ${\mathbf{M}} \,=\, {\mathbf{I}} \cdot {\boldsymbol{\alpha}}$
+
+\par \bigskip\bigskip ${\boldsymbol{\omega}} \,=\, {\mathbf{I}}^{-1} \cdot {\mathbf{L}}$
+
+\par \bigskip ${\boldsymbol{\alpha}} \,=\, {\mathbf{I}}^{-1} \cdot {\mathbf{M}}$
+
+\par \bigskip\bigskip ${\mathbf{M}} ~=~ {\mathbf{M}}_o \,+\, {\mathbf{M}}_1 \,+\, {\mathbf{M}}_2$
+
+\par \bigskip\smallskip ${\mathbf{M}}_o \,=\, + \sum_i \, [ \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times ({\mathbf{F}}_i - m_i {\mathbf{A}}_o) \, ]$
+
+\par \bigskip\smallskip ${\mathbf{M}}_1 \,=\, - \sum_i \, m_i \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times \{ \, 2 \, {\boldsymbol{\omega}} \times ({\mathbf{v}}_i - {\mathbf{V}}_o) \, \}$
+
+\par \bigskip\smallskip ${\mathbf{M}}_2 \,=\, + \sum_i \, m_i \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times \{ \, {\boldsymbol{\omega}} \times [ \, {\boldsymbol{\omega}} \times ({\mathbf{r}}_i - {\mathbf{R}}_o) \,] \, \}$
+
+\par \bigskip\bigskip Por lo tanto, se deduce que el momento angular ${\mathbf{L}}$ de un sistema aislado de N partículas permanece constante si los momentos internos ${\mathbf{M}}_{o{\hspace{+0.120em}(int)}}$ logran anularse.
+
+\newpage
+
+\par \bigskip\bigskip {\centering\subsection*{Observaciones}} \smallskip
+
+\par \bigskip Estas ecuaciones son válidas en cualquier sistema de referencia inercial o no inercial.
+
+\par \bigskip Los sistemas de referencia inerciales nunca deben introducir las fuerzas ficticias sobre ${\mathbf{F}}_i$ y los sistemas de referencia no inerciales siempre deben introducir las fuerzas ficticias sobre ${\mathbf{F}}_i$.
+
+\par \bigskip La magnitud ${\mathbf{M}}$ contiene un momento <<\hspace{+0.045em}real\hspace{+0.045em}>> $( \, {\mathbf{M}}_o \, )$ y dos momentos <<\hspace{+0.045em}ficticios\hspace{+0.045em}>> $( \, {\mathbf{M}}_1$ y ${\mathbf{M}}_2 \, )$
+
+\par \bigskip Los sistemas de referencia inerciales y los sistemas de referencia no inerciales siempre deben introducir los momentos <<\hspace{+0.045em}ficticios\hspace{+0.045em}>> sobre ${\mathbf{M}}$.
+
+\par \bigskip La magnitud ${\mathbf{M}}$ puede hallarse a partir de $[ \, d({\mathbf{L}}')/dt = \sum_i \, m_i \, ( \, {\mathbf{r}}_i' \times {\mathbf{a}}_i') = 0 \, ]$ (Opción A) utilizando el mismo procedimiento que se utilizó para hallar ${\boldsymbol{\omega}}$ pero esta vez es para hallar ${\boldsymbol{\alpha}}$ (considerando que ${\boldsymbol{\alpha}}={\boldsymbol{\alpha}}_{S'}$)
+
+\par \bigskip Al trabajar con cualquier sistema de N partículas (sea un cuerpo rígido o no) entonces casi nunca el tensor de inercia ${\mathbf{I}}$ puede permanecer constante.
+
+\par \bigskip La ecuación ${\mathbf{M}}_o \,=\, \sum_i \, [ \, ({\mathbf{r}}_i - {\mathbf{R}}_o) \times ({\mathbf{F}}_i - m_i {\mathbf{A}}_o) \, ]$ solamente puede ser válida si ${\mathbf{A}}_o$ es igual a cero o si ${\mathbf{A}}_o$ puede quitarse de la ecuación.
+
+\par \bigskip En cualquier sistema de referencia S (inercial o no inercial) la elección del punto O es libre pero teniendo en cuenta el punto anterior.
+
+\par \bigskip Si el punto O es el origen del sistema de referencia S entonces ${\mathbf{R}}_o$, ${\mathbf{V}}_o$ y ${\mathbf{A}}_o$ siempre son iguales a cero.
+
+\par \bigskip Si el punto O es un punto fijo o si tiene velocidad vectorial constante respecto al sistema de referencia S entonces ${\mathbf{A}}_o$ es igual a cero.
+
+\par \bigskip Si el punto O es el centro de masa del sistema de partículas entonces ${\mathbf{V}}_o$ y ${\mathbf{A}}_o$ se pueden quitar de las ecuaciones ya que las ecuaciones obtenidas son iguales a las ecuaciones originales.
+
+\par \bigskip La velocidad angular ${\boldsymbol{\omega}}$ de cualquier sistema de partículas (respecto al punto O) siempre es igual a la velocidad angular ${\boldsymbol{\omega}}_{S'}$ de un sistema de referencia S' (cuyo origen siempre coincide con el punto O) en el cual el momento angular ${\mathbf{L}}'$ del sistema de partículas siempre es igual a cero.
+
+\par \bigskip La aceleración angular ${\boldsymbol{\alpha}}$ de cualquier sistema de partículas (respecto al punto O) siempre es igual a la aceleración angular ${\boldsymbol{\alpha}}_{S'}$ de un sistema de referencia S' (cuyo origen siempre coincide con el punto O) en el cual el momento angular ${\mathbf{L}}'$ del sistema de partículas siempre es igual a cero.
+
+\end{document}
+
