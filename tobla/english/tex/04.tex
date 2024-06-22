@@ -1,0 +1,404 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={162.0mm,234.0mm}}
+\geometry{totalwidth=141.0mm,totalheight=198.0mm}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,bookmarksopen=true}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={A Reformulation of Special Relativity}}
+\hypersetup{pdfauthor={Agustín A. Tobla}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\tauxi}{{\smash{t}\hspace{-0.39em}\rule[2.8pt]{3.6pt}{0.3pt}}}
+\newcommand{\sauxi}{{\smash{r}\hspace{-0.39em}\rule[5.7pt]{3.6pt}{0.3pt}}}
+
+\begin{document}
+
+\addcontentsline{toc}{section}{A Reformulation of Special Relativity}
+
+\begin{center}
+
+{\LARGE A Reformulation of Special Relativity}
+
+\bigskip \medskip
+
+{\large Agustín A. Tobla}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2024) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{109.50mm}{This paper presents a reformulation of special relativity, whose kinematic and dynamic magnitudes are invariant under transformations between inertial and non-inertial reference frames, which can be applied in massive and non-massive particles, and where the relationship between net force and special acceleration is as in Newton's second law. Additionally, new universal forces are proposed.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsection*{Introduction}}\addcontentsline{toc}{subsection}{1. Introduction}
+
+\bigskip \smallskip
+
+\noindent The reformulation of special relativity presented in this paper is obtained starting from an auxiliary massive particle ( called auxiliary-point ) that is used to obtain kinematic magnitudes ( such as relational time,\, relational position,\, relational velocity,\, etc. \hspace{-0.30em}) that are invariant under transformations between inertial and non-inertial reference frames.
+\par \bigskip \smallskip
+\noindent The relational time $( \, t \, )$, the relational position $( \, \mathbf{r} \, )$, the relational velocity $( \, \mathbf{v} \, )$ and the relational acceleration $( \, \mathbf{a} \, )$ of a particle ( massive or non-massive ) \hbox {relative} to an inertial reference frame S, are given by:
+\par \vspace{+0.21em}
+\begin{eqnarray}
+t \hspace{+0.12em}~\doteq~ \tauxi ~=~ \hspace{+0.00em} \gamma \left ( \mathtt{t} - \frac{\vec{r} \cdot \vec{u}}{c^2} \right )
+\end{eqnarray}
+\vspace{-0.45em}
+\begin{eqnarray}
+\mathbf{r} ~\doteq~ (\hspace{+0.090em}\sauxi\hspace{+0.090em}) ~=~ \hspace{-0.12em} \left [ \; \vec{r} + \frac{\gamma^2}{\gamma + 1} \frac{( \vec{r} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} - \gamma \, \vec{u} \; \mathtt{t} \; \right ]
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\mathbf{v} \hspace{-0.15em}~\doteq~ d\hspace{+0.090em}(\hspace{+0.090em}\sauxi\hspace{+0.090em})\hspace{+0.045em}/d\hspace{+0.03em}\tauxi ~=~ \hspace{-0.12em} \left [ \; \vec{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \vec{v} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} - \hspace{+0.114em} \gamma \, \vec{u} \hspace{+0.114em} \; \right ] \frac{1}{\gamma \, ( 1 - \frac{\vec{v} \cdot \vec{u}}{c^2} )}
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\mathbf{a} \hspace{-0.09em}~\doteq~ d^{\hspace{+0.060em}2}(\hspace{+0.090em}\sauxi\hspace{+0.090em})\hspace{+0.045em}/d\hspace{+0.03em}\tauxi^{\hspace{+0.090em}2} ~=~ \hspace{-0.12em} \left [ \; \vec{a} - \frac{\gamma}{\gamma + 1} \frac{( \vec{a} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} + \frac{( \vec{a} \times \vec{v} \hspace{+0.09em}) \times \vec{u}}{c^2} \; \right ] \frac{1}{\gamma^2 \, ( 1 - \frac{\vec{v} \cdot \vec{u}}{c^2} )^3}
+\end{eqnarray}
+\par \vspace{+1.20em}
+\noindent where $( \, {\tauxi}\hspace{+0.060em}, \, \sauxi \, )$ are the time and the position of the particle relative to the auxiliary frame, $( \, \mathtt{t}, \, \vec{r}, \, \vec{v}, \, \vec{a} \, )$ are the time, the position, the velocity and the acceleration of the particle relative to the frame S, $( \, \vec{u} \, )$ is the velocity of the auxiliary-point relative to the frame S, $( \, c \, )$ is the speed of light in vacuum, and {\small $\gamma \doteq (\hspace{+0.03em}{1 - \vec{u} \cdot \vec{u}/c^2}\hspace{+0.06em})^{-1/2}$} \hyperlink{p1a1}{(\hspace{+0.120em}see {\small A}nnex {\small I}\hspace{+0.120em})}
+\par \bigskip \smallskip
+\noindent The auxiliary-point is an arbitrary massive particle free of external forces ( or that the net force acting on it is equal to zero ) The auxiliary frame is an inertial reference frame whose origin always coincides with the auxiliary-point (\hspace{+0.180em}$\vec{u} = 0$ and $\gamma = 1$\hspace{+0.180em})
+
+\newpage
+
+\noindent On the other hand, the relational frequency $( \, \nu \, )$ of a non-massive particle relative to an inertial reference frame S, is given by:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+\nu ~\doteq~ \mathtt{v} \;\, \dfrac{\left ( 1 - \dfrac{\vec{c} \cdot \vec{u}}{c^2} \right )}{\sqrt{1 - \dfrac{\vec{u} \cdot \vec{u}}{c^2}}}
+\end{eqnarray}
+\par \vspace{+0.45em}
+\noindent where $( \, \mathtt{v} \, )$ is the ( ordinary ) frequency of the non-massive particle relative to the frame S, $( \, \vec{c} \, )$ is the velocity of the non-massive particle relative to the frame S, $( \, \vec{u} \, )$ is the velocity of the auxiliary-point relative to the frame S, and $( \, c \, )$ is the speed of light in \hbox {vacuum \hyperlink{p1a2}{(\hspace{+0.120em}see {\small A}nnex {\small II}\hspace{+0.120em})}}
+
+\vspace{+0.90em}
+
+\noindent Note : In arbitrary inertial reference frames ( $t_{\alpha} \ne \tau_{\alpha}$ or \hspace{+0.06em}$\mathbf{r}_{\alpha} \ne 0$ ) \hbox {( $\alpha$ = auxiliary-point )} \hbox {a constant} must be add in the equation of relational time since the relational time and the proper time of the auxiliary-point must be equal \hbox {( $t_{\alpha} = \tau_{\alpha}$ )} and another constant must be add in the equation of relational position since the relational position of the auxiliary-point must be zero \hbox {( $\mathbf{r}_{\alpha} = 0$ )}
+
+\vspace{-0.90em}
+
+\par \bigskip {\centering\subsection*{Intrinsic Mass \& Relativistic Factor}}\addcontentsline{toc}{subsection}{2. Intrinsic Mass \& Relativistic Factor}
+
+\bigskip \smallskip
+
+\noindent The intrinsic mass $( \, m \, )$ and the relativistic factor $( \, f \, )$ of a massive particle, \hbox {are given by}:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+m ~\doteq~ m_o
+\end{eqnarray}
+\vspace{-0.90em}
+\begin{eqnarray}
+f ~\doteq~ \Big ( 1 - \dfrac{\mathbf{v} \cdot \mathbf{v}}{c^2} \hspace{+0.15em} \Big )^{\hspace{-0.24em}-\hspace{+0.03em}1/2}
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent where $( \, m_o \, )$ is the rest mass of the massive particle, $( \, \mathbf{v} \, )$ is the relational velocity of the massive particle, and $( \, c \, )$ is the speed of light in vacuum.
+\par \vspace{+0.60em}
+\noindent The intrinsic mass $( \, m \, )$ and the relativistic factor $( \, f \, )$ of a non-massive particle, \hbox {are given by}:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+m ~\doteq~ \dfrac{h \, \kappa}{c^2}
+\end{eqnarray}
+\vspace{-0.60em}
+\begin{eqnarray}
+f ~\doteq~ \dfrac{\nu}{\kappa}
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent where $( \hspace{+0.33em} h \hspace{+0.33em} )$ is the Planck constant, \hspace{+0.06em}$( \hspace{+0.30em} \nu \hspace{+0.30em} )$ is the relational frequency of the \hbox {non-massive} particle, $( \, \kappa \, )$ is a positive universal constant with dimension of frequency\hspace{-0.03em}, and $( \, c \, )$ is the speed of light in vacuum.
+\par \vspace{+0.60em}
+\noindent According to this paper, a massive particle is a particle with non-zero rest mass ( or a particle whose speed in vacuum is less than $c$ ) and a non-massive particle is a particle with zero rest mass ( or a particle whose speed in vacuum is $c$ )
+\par \vspace{+0.60em}
+\noindent Note : The rest mass $( \, m_o \, )$ and the intrinsic mass $( \, m \, )$ are in general not additive, and the relativistic mass $( \, {\mathrm{m}} \, )$ of a particle ( massive or non-massive ) is given by : \hbox {\hspace{-0.09em}( ${\mathrm{m}} ~\doteq~ m \, f$ )}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{The Special Kinematics}}\addcontentsline{toc}{subsection}{3. The Special Kinematics}
+
+\bigskip \smallskip
+
+\noindent The special position $( \, \bar{\mathbf{r}} \, )$, the special velocity $( \, \bar{\mathbf{v}} \, )$ and the special acceleration $( \, \bar{\mathbf{a}} \, )$ of a particle \hbox {( massive or non-massive )} are given by:
+\par \vspace{-0.30em}
+\begin{eqnarray}
+\bar{\mathbf{r}} \hspace{+0.12em}~\doteq~ \int f \, \mathbf{v} \; d\hspace{+0.012em}t
+\end{eqnarray}
+\vspace{-0.45em}
+\begin{eqnarray}
+\bar{\mathbf{v}} \hspace{-0.03em}~\doteq~ \dfrac{d\hspace{+0.036em}\bar{\mathbf{r}}}{d\hspace{+0.012em}t} ~=~ f \, \mathbf{v}
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\bar{\mathbf{a}} \hspace{+0.03em}~\doteq~ \dfrac{d\hspace{+0.021em}\bar{\mathbf{v}}}{d\hspace{+0.012em}t} ~=~ f \, \dfrac{d\hspace{+0.021em}\mathbf{v}}{d\hspace{+0.012em}t} + \dfrac{d\hspace{-0.12em}f}{d\hspace{+0.012em}t} \, \mathbf{v}
+\end{eqnarray}
+\par \vspace{+1.20em}
+\noindent where $( \, f \, )$ is the relativistic factor of the particle, $( \, \mathbf{v} \, )$ is the relational velocity of the particle, and $( \, t \, )$ is the relational time of the particle.
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsection*{The Special Dynamics}}\addcontentsline{toc}{subsection}{4. The Special Dynamics}
+
+\bigskip \smallskip
+
+\noindent If we consider a particle ( massive or non-massive ) with intrinsic mass $( \, m \, )$ then the linear momentum $( \, \mathbf{P} \, )$ of the particle, the angular momentum $( \, \mathbf{L} \, )$ of the particle, the net force $( \, \mathbf{F} \, )$ acting on the particle, the work $( \, \mathrm{W} \, )$ done by the net force acting on the particle, and the kinetic energy $( \, \mathrm{K} \, )$ of the particle, are given by:
+\par \vspace{-0.30em}
+\begin{eqnarray}
+\mathbf{P} \hspace{-0.06em}~\doteq~ m \, \bar{\mathbf{v}} ~=~ m \, f \, \mathbf{v}
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\mathbf{L} \hspace{+0.03em}~\doteq~ \mathbf{r} \times \mathbf{P} ~=~ m \; \mathbf{r} \times \bar{\mathbf{v}} ~=~ m \, f \: \mathbf{r} \times \mathbf{v}
+\end{eqnarray}
+\vspace{-0.30em}
+\hypertarget{p1e15}{}
+\begin{eqnarray}
+\mathbf{F} ~=~ \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} ~=~ m \, \bar{\mathbf{a}} ~=~ m \, \bigg [ \, f \, \dfrac{d\hspace{+0.021em}\mathbf{v}}{d\hspace{+0.012em}t} + \dfrac{d\hspace{-0.12em}f}{d\hspace{+0.012em}t} \, \mathbf{v} \, \bigg ]
+\end{eqnarray}
+\vspace{-0.15em}
+\begin{eqnarray}
+\mathrm{W} \hspace{-0.312em}~\doteq~ \hspace{-0.36em} \int_{\scriptscriptstyle 1}^{\hspace{+0.09em}{\scriptscriptstyle 2}} \mathbf{F} \cdot d\hspace{+0.036em}\mathbf{r} ~=~ \hspace{-0.36em} \int_{\scriptscriptstyle 1}^{\hspace{+0.09em}{\scriptscriptstyle 2}} \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} \cdot d\hspace{+0.036em}\mathbf{r} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\mathrm{K} \hspace{-0.06em}~\doteq~ m \, f \, c^2
+\end{eqnarray}
+\par \vspace{+0.90em}
+\noindent where $( \: f, \: \mathbf{r}, \: \mathbf{v}, \: t, \: \bar{\mathbf{v}}, \: \bar{\mathbf{a}} \: )$ are the relativistic factor, the relational position, the relational velocity, the relational time, the special velocity and the special acceleration of the particle, and $( \, c \, )$ is the speed of light in vacuum. The kinetic energy $( \, \mathrm{K}_o \, )$ of a massive particle at relational rest is $( \, m_o \, c^2 \, )$ since in this paper the relativistic total energy $( \, \mathrm{E} \,\doteq\, \mathrm{T} + m_o \, c^2 \, )$ and the kinetic energy $( \, \mathrm{K} \,\doteq\, m \, f \, c^2 \, )$ are the same $( \, \mathrm{E} \,=\, \mathrm{K} \, )$
+\par \vspace{+0.60em}
+\noindent {\small Note :} {\footnotesize $\mathrm{E}^2 - \mathbf{P}^2 c^2 = m^2 \, f^2 \, c^4 \, (\hspace{+0.12em} 1 - \mathbf{v}^2/c^2 \hspace{+0.15em})$} {\small [ in massive particle :} {\footnotesize $f^2 \, (\hspace{+0.12em} 1 - \mathbf{v}^2/c^2 \hspace{+0.15em}) = 1$ \hspace{+0.27em}$\rightarrow$\hspace{+0.27em} \hbox {{$\mathrm{E}^2 - \mathbf{P}^2 c^2 = {m_o}^2 c^4$}} \,and\, $m \ne 0$} {\small ]} \,{\footnotesize\&}\, {\small [ in non-massive particle :} {\footnotesize $\mathbf{v}^2 = c^2$ \hspace{+0.27em}$\rightarrow$\hspace{+0.27em} $(\hspace{+0.12em} 1 - \mathbf{v}^2/c^2 \hspace{+0.15em}) = 0$ \hspace{+0.27em}$\rightarrow$\hspace{+0.27em} \hbox {{$\mathrm{E}^2 - \mathbf{P}^2 c^2 = 0$ \:and\: $m \ne 0$} {\small ]}}}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{General Observations}}\addcontentsline{toc}{subsection}{5. General Observations}
+
+\bigskip \smallskip
+
+\noindent According to this paper, in the auxiliary reference frame relational magnitudes and ordinary magnitudes are always the same.
+\par \bigskip \smallskip
+\noindent The special acceleration $\bar{\mathbf{a}}$ of a particle (\hspace{+0.12em}massive or non-massive\hspace{+0.12em}) is always in the direction of the net force $\mathbf{F}$ acting on the particle (\hspace{+0.12em}as in Newton's second law\hspace{+0.12em})
+\par \bigskip \smallskip
+\noindent Finally,
+\par \bigskip \smallskip
+\noindent The intrinsic mass magnitude {\small $( \: m \: )$} is invariant under transformations between inertial and non-inertial reference frames.
+\par \bigskip \smallskip
+\noindent The relational magnitudes {\small $( \: \nu, t, \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$} are invariant under transformations between inertial and non-inertial reference frames (\hspace{+0.12em}since these relational magnitudes are the proper (\hspace{+0.06em}own\hspace{+0.06em}) ordinary magnitudes of the auxiliary reference frame\hspace{+0.12em})
+\par \bigskip \smallskip
+\noindent Therefore, the kinematic and dynamic magnitudes {\small $( \: f, \bar{\mathbf{r}}, \bar{\mathbf{v}}, \bar{\mathbf{a}}, \mathbf{P}, \mathbf{L}, \mathbf{F}, \mathrm{W}, \mathrm{K} \: )$} are also invariant under transformations between inertial and non-inertial reference frames.
+\par \bigskip \smallskip
+\noindent The special dynamics can be applied in any inertial or non-inertial reference frame (\hspace{+0.12em}and non-inertial observers must not introduce fictitious forces into $\mathbf{F}$\hspace{+0.12em})
+\par \bigskip \smallskip
+\noindent Therefore, the reformulation of special relativity presented in this paper is in accordance with the general principle of relativity.
+\par \bigskip \smallskip
+\noindent However,
+\par \bigskip \smallskip
+\noindent In this paper, starting from an auxiliary massive particle, we only obtained the form that the relational magnitudes {\small $( \: \nu, t, \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$} have in any inertial reference frame.
+\par \bigskip \smallskip
+\noindent Consequently,
+\par \bigskip \smallskip
+\noindent Starting from an auxiliary massive particle, we must obtain the form that the relational magnitudes {\small $( \: \nu, t, \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$} have in any non-rotating reference frame (\hspace{+0.12em}non-rotating reference frame relative to an inertial reference frame\hspace{+0.12em})
+\par \bigskip \smallskip
+\noindent Later, starting from an auxiliary system of massive particles, we must obtain the form that the relational magnitudes {\small $( \: \nu, t, \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$} have in any rotating reference frame (\hspace{+0.12em}rotating reference frame relative to an inertial reference frame\hspace{+0.12em})
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsection*{Bibliography}}\addcontentsline{toc}{subsection}{6. Bibliography}
+
+\bigskip \smallskip
+
+\par \noindent \textbf{W\hspace{-0.18em}. Pauli}, Theory of Relativity.
+\bigskip \smallskip
+\par \noindent \textbf{C. M{\o}ller}, The Theory of Relativity.
+\bigskip \smallskip
+\par \noindent \textbf{A. Blato}, Vector Lorentz Transformations.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Annex I}}\hypertarget{p1a1}{}
+
+\par \bigskip {\centering\subsection*{Vector Lorentz Transformations}}\addcontentsline{toc}{subsection}{Annex I : Vector Lorentz Transformations}
+
+\bigskip \smallskip
+
+\noindent If we consider two inertial reference frames ( S and S' ) whose origins coincide at time zero \hbox {( in both frames )} then the time $( \, \mathtt{t}\hspace{+0.03em}' \, )$, the position $( \, \vec{r}\hspace{+0.18em}' \, )$, the velocity $( \, \vec{v}\hspace{+0.18em}' \, )$ and the acceleration $( \, \vec{a}\hspace{+0.18em}' \, )$ of a particle ( massive or non-massive ) relative to the inertial reference frame S', are given by:
+\par \vspace{+0.21em}
+\begin{eqnarray}
+\mathtt{t}\hspace{+0.03em}' \hspace{-0.03em}~=~ \hspace{+0.09em} \gamma \left ( \mathtt{t} - \frac{\vec{r} \cdot \vec{u}}{c^2} \right )
+\end{eqnarray}
+\vspace{-0.45em}
+\begin{eqnarray}
+\vec{r}\hspace{+0.21em}' \hspace{-0.18em}~=~ \hspace{-0.12em} \left [ \; \vec{r} + \frac{\gamma^2}{\gamma + 1} \frac{( \vec{r} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} - \gamma \, \vec{u} \; \mathtt{t} \; \right ]
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\vec{v}\hspace{+0.21em}' \hspace{-0.21em}~=~ \hspace{-0.12em} \left [ \; \vec{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \vec{v} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} - \hspace{+0.114em} \gamma \, \vec{u} \hspace{+0.114em} \; \right ] \frac{1}{\gamma \, ( 1 - \frac{\vec{v} \cdot \vec{u}}{c^2} )}
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\vec{a}\hspace{+0.21em}' \hspace{-0.21em}~=~ \hspace{-0.12em} \left [ \; \vec{a} - \frac{\gamma}{\gamma + 1} \frac{( \vec{a} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} + \frac{( \vec{a} \times \vec{v} \hspace{+0.09em}) \times \vec{u}}{c^2} \; \right ] \frac{1}{\gamma^2 \, ( 1 - \frac{\vec{v} \cdot \vec{u}}{c^2} )^3}
+\end{eqnarray}
+\par \vspace{+1.20em}
+\noindent where $( \, \mathtt{t}, \, \vec{r}, \, \vec{v}, \, \vec{a} \, )$ are the time, the position, the velocity and the acceleration of the particle relative to the frame S, $( \, \vec{u} \, )$ is the velocity of the frame S' relative to the frame S, $( \, c \, )$ is the speed of light in vacuum, and {\small $\gamma \doteq (\hspace{+0.03em}{1 - \vec{u} \hspace{-0.114em}\cdot\hspace{-0.114em} \vec{u}/c^2}\hspace{+0.06em})^{-1/2}$} \hfill \hbox {{\small Note : $\gamma^2 / (\gamma + 1) \, c^2 = (\gamma - 1) /\hspace{+0.03em} \vec{u}^{\hspace{+0.09em}2}$ \,$\leftarrow$\, $\vec{u}\ne 0$}}
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsection*{Annex II}}\hypertarget{p1a2}{}
+
+\par \bigskip {\centering\subsection*{Transformation of Frequency}}\addcontentsline{toc}{subsection}{Annex II : Transformation of Frequency}
+
+\bigskip \smallskip
+
+\noindent On the other hand, the frequency $(\hspace{+0.24em}\mathtt{v}\hspace{+0.15em}'\hspace{+0.12em})$ of a non-massive particle relative to an inertial reference frame S', is given by:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+\mathtt{v}\hspace{+0.15em}' ~=~ \: \mathtt{v} \;\, \dfrac{\left ( 1 - \dfrac{\vec{c} \cdot \vec{u}}{c^2} \right )}{\sqrt{1 - \dfrac{\vec{u} \cdot \vec{u}}{c^2}}}
+\end{eqnarray}
+\par \vspace{+0.45em}
+\noindent where $( \: \mathtt{v} \: )$ is the frequency of the non-massive particle relative to another inertial reference frame S, $( \: \vec{c} \: )$ is the velocity of the non-massive particle relative to the frame S, $( \, \vec{u} \, )$ is the velocity of the frame S' relative to the frame S, and $( \, c \, )$ is the speed of light in vacuum.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Annex III}}
+
+\par \bigskip {\centering\subsection*{The Kinetic Forces}}\addcontentsline{toc}{subsection}{Annex III : The Kinetic Forces}
+
+\bigskip \smallskip
+
+\noindent The kinetic force \hbox {$\mathbf{K}^{a}_{\hspace{+0.012em}ij}$ exerted} on a particle $i$ with intrinsic mass $m_i$ by another particle $j$ with intrinsic mass $m_j$, \hbox {is given by}:
+\par \vspace{-0.54em}
+\begin{eqnarray}
+\mathbf{K}^{a}_{\hspace{+0.012em}ij} \,=\, - \; \Bigg [ \; \dfrac{m_i \, m_j}{\mathbb{M}} \, ( \, \bar{\mathbf{a}}_{\hspace{+0.045em}i} \hspace{+0.045em}-\, \bar{\mathbf{a}}_{j} \, ) \; \Bigg ]
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent where $\bar{\mathbf{a}}_{\hspace{+0.045em}i}$ is the special acceleration of particle $i$, $\bar{\mathbf{a}}_{j}$ is the special acceleration of particle $j$ and $\mathbb{M}$ {\small ( $ = \sum_z^{\scriptscriptstyle{\mathit{All}}} m_z$ )} is the sum of the intrinsic masses of all the particles of the Universe.
+\par \vspace{+0.60em}
+\noindent On the other hand, the kinetic force $\mathbf{K}^{u}_{\hspace{+0.030em}i}$ exerted on a particle $i$ with intrinsic mass $m_i$ by the Universe, is given by:
+\par \vspace{-0.45em}
+\begin{eqnarray}
+\mathbf{K}^{u}_{\hspace{+0.030em}i} \,=\, - \; m_i \; \dfrac{\sum_z^{\scriptscriptstyle{\mathit{All}}} m_z \, \bar{\mathbf{a}}_{\hspace{+0.045em}z}}{\sum_z^{\scriptscriptstyle{\mathit{All}}} m_z}
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent where $m_z$ and $\bar{\mathbf{a}}_{\hspace{+0.045em}z}$ are the intrinsic mass and the special acceleration of the \textit{z}-th particle of the Universe.
+\par \vspace{+0.60em}
+\noindent From the above equations it follows that the net kinetic force $\mathbf{K}_i$ {\small ( $ = \sum_j^{\scriptscriptstyle{\mathit{All}}} \, \mathbf{K}^{a}_{\hspace{+0.012em}ij}$} {\small $+ \; \mathbf{K}^{u}_{\hspace{+0.030em}i}$ )} acting on a particle $i$ with intrinsic mass $m_i$, is given by:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+\mathbf{K}_i \,=\, - \, m_i \, \bar{\mathbf{a}}_{\hspace{+0.045em}i}
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent where $\bar{\mathbf{a}}_{\hspace{+0.045em}i}$ is the special acceleration of particle $i$.
+\par \vspace{+0.60em}
+\noindent Now, from the special dynamics \hyperlink{p1e15}{(15)}, we have:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+\mathbf{F}_i \,=\, m_i \, \bar{\mathbf{a}}_{\hspace{+0.045em}i}
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent Since {\small (\hspace{+0.240em}$\mathbf{K}_i \,=\, - \, m_i \, \bar{\mathbf{a}}_{\hspace{+0.045em}i}$\hspace{+0.240em})} we obtain:
+\par \vspace{-0.81em}
+\begin{eqnarray}
+\mathbf{F}_i \,=\, - \, \mathbf{K}_i
+\end{eqnarray}
+\par \vspace{+0.30em}
+\noindent that is:
+\par \vspace{-0.81em}
+\begin{eqnarray}
+\mathbf{K}_i \, + \, \mathbf{F}_i \,=\, 0
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent If {\small (\hspace{+0.240em}$\mathbf{T}_i \,\doteq\, \mathbf{K}_i \, + \, \mathbf{F}_i$\hspace{+0.240em})} then:
+\par \vspace{-0.81em}
+\begin{eqnarray}
+\mathbf{T}_i \,=\, 0
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent Therefore, if the net kinetic force $\mathbf{K}_i$ is added in the special dynamics then the total \hbox {force $\mathbf{T}_i$} acting on a ( massive or non-massive ) particle $i$ is always zero.
+\par \vspace{+0.21em}
+\noindent Note : According to this paper, the kinetic forces ${\stackrel{\scriptstyle{au}}{\smash{\mathbf{K}}\rule{0pt}{+0.63em}}}$ are directly related to kinetic energy $\mathrm{K}$.
+
+\newpage
+
+\enlargethispage{+0.00em}
+
+\setlength{\unitlength}{1pt}
+
+\par \bigskip {\centering\subsection*{Annex IV}}
+
+\vspace{-0.03em}
+
+\par \bigskip {\centering\subsection*{Special Relativity}}\addcontentsline{toc}{subsection}{Annex IV : Special Relativity}
+
+\vspace{+1.50em}
+
+\newcommand{\cafa}{\textsf{A Reformulation with\vspace{+0.30em}\\Relational Magnitudes}}
+\newcommand{\cafb}{\textsf{A Reformulation with\vspace{+0.30em}\\Ordinary Magnitudes}}
+\newcommand{\cbfa}{\textsf{\vspace{-0.48em}\\$\mathit{\nu}$ , $\mathit{t}$ , $\mathbf{r}$ , $\mathbf{v}$ , $\mathbf{a}$\vspace{+0.27em}\\( invariant )}}
+\newcommand{\cbfb}{\textsf{$\mathtt{v}$ , $\mathtt{t}$ , \hspace{-0.06em}$\vec{\hspace{+0.06em}\mathit{r}}$ , \hspace{-0.06em}$\vec{\hspace{+0.06em}\mathit{v}}$ , \hspace{-0.06em}$\vec{\hspace{+0.06em}\mathit{a}}$\vspace{+0.27em}\\( not invariant )}}
+\newcommand{\ccfa}{\textsf{$\mathit{m_o}$ , $\mathit{m}$\vspace{+0.30em}\\( invariant )\vspace{+0.30em}\\$\mathit{f}$ , $\mathrm{m}$\vspace{+0.30em}\\( invariant )}}
+\newcommand{\ccfb}{\textsf{$\mathit{m_o}$ , $\mathit{m}$\vspace{+0.30em}\\( invariant )\vspace{+0.30em}\\$\mathrm{f}$ , $\mathtt{m}$\vspace{+0.30em}\\( not invariant )}}
+\newcommand{\cdfa}{\textsf{\vspace{-0.33em}\\$\bar{\mathbf{r}}$ , $\bar{\mathbf{v}}$ , $\bar{\mathbf{a}}$\vspace{+0.27em}\\( invariant )}}
+\newcommand{\cdfb}{\textsf{$\vec{\hspace{+0.09em}\bar{\hspace{-0.09em}{\mathit{r}}}}$ , $\vec{\hspace{+0.09em}\bar{\hspace{-0.09em}{\mathit{v}}}}$ , $\vec{\hspace{+0.09em}\bar{\hspace{-0.09em}{\mathit{a}}}}$\vspace{+0.27em}\\( not invariant )}}
+\newcommand{\cefa}{\textsf{\vspace{-0.24em}\\$\mathbf{P}$ , $\mathbf{L}$ , $\mathbf{F}$ , $\mathrm{W}$ , $\mathrm{K}$ , ($\mathbf{K}$)\vspace{+0.27em}\\( invariant )}}
+\newcommand{\cefb}{\textsf{\hspace{-0.21em}$\vec{\hspace{+0.21em}\mathrm{P}}$ , \hspace{-0.30em}$\vec{\hspace{+0.30em}\mathrm{L}}$ , \hspace{-0.15em}$\vec{\hspace{+0.15em}\mathrm{F}}$ , $\mathit{W}$ , $\mathit{K}$ , (\hspace{-0.15em}$\vec{\hspace{+0.15em}\mathrm{K}}$)\vspace{+0.27em}\\( not invariant )}}
+\newcommand{\cffa}{\textsf{The (\hspace{+0.12em}relational\hspace{+0.12em}) special dynamics can be applied in any inertial or non-inertial reference frame (\hspace{+0.12em}and non-inertial observers must {\footnotesize \textbf{NOT}} introduce fictitious forces \hbox {into $\mathbf{F}$\hspace{+0.12em})}}}
+\newcommand{\cffb}{\textsf{The (\hspace{+0.12em}ordinary\hspace{+0.12em}) special dynamics can be applied in any inertial or non-inertial reference frame (\hspace{+0.12em}and non-inertial observers must introduce fictitious forces \hbox {into \hspace{-0.15em}$\vec{\hspace{+0.15em}\mathrm{F}}$\hspace{+0.12em})}}}
+\newcommand{\cgfa}{\textsf{\textbf{invariant} = The magnitudes are invariant under transformations between inertial and non-inertial reference frames.}}
+\newcommand{\cgfb}{\textsf{\textbf{not invariant} = The magnitudes are not invariant under transformations between inertial reference frames.}}
+\newcommand{\czid}{\textsf{{\small $=$}\vspace{+1.80em}\\{\small $\ne$}}}
+
+\begin{center}
+\begin{tabular}{ccc}
+{\framebox(154,45){\parbox{154\unitlength}{\centering \cafa }}} &
+{\makebox(10,45){\textbf{{\small $\ne$}}}} &
+{\framebox(154,45){\parbox{154\unitlength}{\centering \cafb }}} \\
+{\makebox(154,15){$\downarrow$}} & & {\makebox(154,15){$\downarrow$}} \\
+{\framebox(154,36){\parbox{154\unitlength}{\centering \cbfa }}} &
+{\makebox(10,36){\textbf{{\small $\ne$}}}} &
+{\framebox(154,36){\parbox{154\unitlength}{\centering \cbfb }}} \\
+{\makebox(154,15){$\downarrow$}} & & {\makebox(154,15){$\downarrow$}} \\
+{\framebox(154,63){\parbox{154\unitlength}{\centering \ccfa }}} &
+{\makebox(10,63){\parbox{10\unitlength}{\centering \czid }}} &
+{\framebox(154,63){\parbox{154\unitlength}{\centering \ccfb }}} \\
+{\makebox(154,15){$\downarrow$}} & & {\makebox(154,15){$\downarrow$}} \\
+{\framebox(154,36){\parbox{154\unitlength}{\centering \cdfa }}} &
+{\makebox(10,36){\textbf{{\small $\ne$}}}} &
+{\framebox(154,36){\parbox{154\unitlength}{\centering \cdfb }}} \\
+{\makebox(154,15){$\downarrow$}} & & {\makebox(154,15){$\downarrow$}} \\
+{\framebox(154,42){\parbox{154\unitlength}{\centering \cefa }}} &
+{\makebox(10,42){\textbf{{\small $\ne$}}}} &
+{\framebox(154,42){\parbox{154\unitlength}{\centering \cefb }}} \\
+{\makebox(154,15){$\downarrow$}} & & {\makebox(154,15){$\downarrow$}} \\
+{\framebox(154,78){\parbox{144\unitlength}{\centering \cffa }}} &
+{\makebox(10,78){\textbf{{\small $\ne$}}}} &
+{\framebox(154,78){\parbox{144\unitlength}{\centering \cffb }}} \\
+{\makebox(154,15){$\downarrow$}} & & {\makebox(154,15){$\downarrow$}}
+\end{tabular}
+{\framebox(342,66){\parbox{306\unitlength}{ \cgfa \vspace{+0.45em} \\ \cgfb }}}
+\end{center}
+
+\end{document}
+

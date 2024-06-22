@@ -1,0 +1,406 @@
+
+\documentclass[10pt,fleqn]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={162.0mm,234.0mm}}
+\geometry{totalwidth=141.0mm,totalheight=198.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,bookmarksopen=true}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Una Reformulación de la Relatividad Especial}}
+\hypersetup{pdfauthor={Agustín A. Tobla}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\tauxi}{{\smash{t}\hspace{-0.39em}\rule[2.8pt]{3.6pt}{0.3pt}}}
+\newcommand{\sauxi}{{\smash{r}\hspace{-0.39em}\rule[5.7pt]{3.6pt}{0.3pt}}}
+
+\begin{document}
+
+\addcontentsline{toc}{section}{Una Reformulación de la Relatividad Especial}
+
+\begin{center}
+
+{\LARGE Una Reformulación de la Relatividad Especial}
+
+\bigskip \medskip
+
+{\large Agustín A. Tobla}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2024) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip \medskip
+
+\parbox{105.00mm}{Este trabajo presenta una reformulación de la relatividad especial, cuyas magnitudes cinemáticas y dinámicas son invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales, que puede ser aplicada en partículas masivas y no masivas y donde la relación entre fuerza neta y aceleración especial es como en la segunda ley de Newton. Adicionalmente, nuevas fuerzas universales de interacción son propuestas.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \bigskip {\centering\subsection*{Introducción}}\addcontentsline{toc}{subsection}{1. Introducción}
+
+\bigskip \smallskip
+
+\noindent La reformulación de la relatividad especial que este trabajo presenta se desarrolla a partir de una partícula masiva auxiliar ( denominada punto-auxiliar ) que es utilizada para obtener magnitudes cinemáticas ( tales como tiempo relacional, posición relacional, etc. ) que son invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales.
+\par \bigskip \smallskip
+\noindent El tiempo relacional $( t )$, la posición relacional $( \mathbf{r} )$, la velocidad relacional $( \mathbf{v} )$ y la aceleración relacional $( \mathbf{a} )$ de una partícula ( masiva o no masiva ) con respecto a un sistema de referencia inercial S, están dados por:
+\par \vspace{+0.21em}
+\begin{eqnarray}
+t \hspace{+0.12em}~\doteq~ \tauxi ~=~ \hspace{-0.03em} \gamma \left ( \mathtt{t} - \frac{\vec{r} \cdot \vec{u}}{c^2} \right )
+\end{eqnarray}
+\vspace{-0.45em}
+\begin{eqnarray}
+\mathbf{r} ~\doteq~ (\hspace{+0.090em}\sauxi\hspace{+0.090em}) ~=~ \hspace{-0.21em} \left [ \; \vec{r} + \frac{\gamma^2}{\gamma + 1} \frac{( \vec{r} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} - \gamma \, \vec{u} \; \mathtt{t} \; \right ]
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\mathbf{v} \hspace{-0.15em}~\doteq~ d\hspace{+0.090em}(\hspace{+0.090em}\sauxi\hspace{+0.090em})\hspace{+0.045em}/d\hspace{+0.03em}\tauxi ~=~ \hspace{-0.21em} \left [ \; \vec{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \vec{v} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} - \hspace{+0.114em} \gamma \, \vec{u} \hspace{+0.114em} \; \right ] \frac{1}{\gamma \, ( 1 - \frac{\vec{v} \cdot \vec{u}}{c^2} )}
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\mathbf{a} \hspace{-0.09em}~\doteq~ d^{\hspace{+0.060em}2}(\hspace{+0.090em}\sauxi\hspace{+0.090em})\hspace{+0.045em}/d\hspace{+0.03em}\tauxi^{\hspace{+0.090em}2} ~=~ \hspace{-0.21em} \left [ \; \vec{a} - \frac{\gamma}{\gamma + 1} \frac{( \vec{a} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} + \frac{( \vec{a} \times \vec{v} \hspace{+0.09em}) \times \vec{u}}{c^2} \; \right ] \frac{1}{\gamma^2 \, ( 1 - \frac{\vec{v} \cdot \vec{u}}{c^2} )^3}
+\end{eqnarray}
+\par \vspace{+1.20em}
+\noindent donde $( \, {\tauxi}\hspace{+0.060em}, \, \sauxi \, )$ son el tiempo y la posición de la partícula con respecto al sistema auxiliar, $( \, \mathtt{t}, \, \vec{r}, \, \vec{v}, \, \vec{a} \, )$ son el tiempo, la posición, la velocidad y la aceleración de la partícula con respecto al sistema S, $( \, \vec{u} \, )$ es la velocidad del punto-auxiliar con respecto al sistema S, $( \, c \, )$ es la velocidad de la luz en el vacío y {\small $\gamma \doteq (\hspace{+0.03em}{1 - \vec{u} \cdot \vec{u}/c^2}\hspace{+0.06em})^{-1/2}$} \hyperlink{t1a1}{(ver {\small A}nexo {\small I}\hspace{+0.120em})}
+\par \bigskip \smallskip
+\noindent El punto-auxiliar es una partícula masiva arbitraria libre de fuerzas externas ( o que la fuerza neta actuando sobre ésta es igual a cero ) El sistema auxiliar es un sistema de referencia inercial cuyo origen coincide siempre con el punto-auxiliar (\hspace{+0.180em}$\vec{u} = 0$ y $\gamma = 1$\hspace{+0.180em})
+
+\newpage
+
+\noindent Por otro lado, la frecuencia relacional $( \: \nu \: )$ de una partícula no masiva respecto a un sistema \hbox {de referencia inercial} S, está dada por:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+\nu ~\doteq~ \mathtt{v} \;\, \dfrac{\left ( 1 - \dfrac{\vec{c} \cdot \vec{u}}{c^2} \right )}{\sqrt{1 - \dfrac{\vec{u} \cdot \vec{u}}{c^2}}}
+\end{eqnarray}
+\par \vspace{+0.45em}
+\noindent donde $( \: \mathtt{v} \: )$ es la frecuencia ( ordinaria ) de la partícula no masiva respecto al sistema S, $( \, \vec{c} \, )$ es la velocidad de la partícula no masiva respecto al sistema S, $( \, \vec{u} \, )$ es la velocidad del punto-auxiliar respecto al sistema S y $( \, c \, )$ es la velocidad de la luz en el \hbox {vacío \hyperlink{t1a2}{(ver {\small A}nexo {\small II}\hspace{+0.120em})}}
+
+\vspace{+0.90em}
+
+\noindent Nota : En los sistemas de referencia inerciales no coincidentes ( $t_{\alpha} \ne \tau_{\alpha}$\hspace{+0.15em} {\small y/o} \hspace{+0.18em}$\mathbf{r}_{\alpha} \ne 0$ ) \hbox {( $\alpha$ = punto-auxiliar )} una constante debe ser sumada en la ecuación de tiempo relacional tal que el tiempo relacional y el tiempo propio del punto-auxiliar sean iguales \hbox {( $t_{\alpha} = \tau_{\alpha}$ )} y otra constante debe ser sumada en la ecuación de posición relacional tal que la posición relacional del punto-auxiliar sea cero \hbox {( $\mathbf{r}_{\alpha} = 0$ )}
+
+\vspace{-0.90em}
+
+\par \bigskip {\centering\subsection*{Masa Intrínseca \& Factor Relativista}}\addcontentsline{toc}{subsection}{2. Masa Intrínseca \& Factor Relativista}
+
+\bigskip \smallskip
+
+\noindent La masa intrínseca $(\hspace{+0.06em}{m}\hspace{+0.06em})$ y el factor relativista $(\hspace{+0.06em}{f}\hspace{+0.06em})$ de una partícula masiva, \hbox {están dados por}:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+m ~\doteq~ m_o
+\end{eqnarray}
+\vspace{-0.90em}
+\begin{eqnarray}
+f ~\doteq~ \Big ( 1 - \dfrac{\mathbf{v} \cdot \mathbf{v}}{c^2} \hspace{+0.15em} \Big )^{\hspace{-0.24em}-\hspace{+0.03em}1/2}
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent donde $( \, m_o \, )$ es la masa en reposo de la partícula masiva, $( \, \mathbf{v} \, )$ es la velocidad relacional de la partícula masiva y $( \, c \, )$ es la velocidad de la luz en el vacío.
+\par \vspace{+0.60em}
+\noindent La masa intrínseca $(\hspace{+0.06em}{m}\hspace{+0.06em})$ y el factor relativista $(\hspace{+0.06em}{f}\hspace{+0.06em})$ de una partícula no masiva, \hbox {están dados por}:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+m ~\doteq~ \dfrac{h \, \kappa}{c^2}
+\end{eqnarray}
+\vspace{-0.60em}
+\begin{eqnarray}
+f ~\doteq~ \dfrac{\nu}{\kappa}
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent donde $( \hspace{+0.33em} h \hspace{+0.33em} )$ es la constante de Planck, \hspace{+0.06em}$( \hspace{+0.30em} \nu \hspace{+0.30em} )$ es la frecuencia relacional de la partícula no masiva, $( \, \kappa \, )$ es una constante universal positiva con dimensión de frecuencia y $( \, c \, )$ es la velocidad de la luz en el vacío.
+\par \vspace{+0.60em}
+\noindent Según este trabajo, una partícula masiva es una partícula con masa en reposo no nula ( o una partícula cuya velocidad en el vacío es menor que $c$ ) y una partícula no masiva es una partícula con masa en reposo nula ( o una partícula cuya velocidad en el vacío es $c$ )
+\par \vspace{+0.60em}
+\noindent Nota : La masa en reposo $( \, m_o \, )$ y la masa intrínseca $( \, m \, )$ son en general no aditivas y la masa relativista $( \, {\mathrm{m}} \, )$ de una partícula ( masiva o no masiva ) está dada por : \hbox {\hspace{-0.09em}( ${\mathrm{m}} ~\doteq~ m \, f$ )}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Cinemática Especial}}\addcontentsline{toc}{subsection}{3. Cinemática Especial}
+
+\bigskip \smallskip
+
+\noindent La posición especial $( \, \bar{\mathbf{r}} \, )$, la velocidad especial $( \, \bar{\mathbf{v}} \, )$ y la aceleración especial $( \, \bar{\mathbf{a}} \, )$ de una partícula ( masiva o no masiva ) están dadas por:
+\par \vspace{-0.30em}
+\begin{eqnarray}
+\bar{\mathbf{r}} \hspace{+0.12em}~\doteq~ \int f \, \mathbf{v} \; d\hspace{+0.012em}t
+\end{eqnarray}
+\vspace{-0.45em}
+\begin{eqnarray}
+\bar{\mathbf{v}} \hspace{-0.03em}~\doteq~ \dfrac{d\hspace{+0.036em}\bar{\mathbf{r}}}{d\hspace{+0.012em}t} ~=~ f \, \mathbf{v}
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\bar{\mathbf{a}} \hspace{+0.03em}~\doteq~ \dfrac{d\hspace{+0.021em}\bar{\mathbf{v}}}{d\hspace{+0.012em}t} ~=~ f \, \dfrac{d\hspace{+0.021em}\mathbf{v}}{d\hspace{+0.012em}t} + \dfrac{d\hspace{-0.12em}f}{d\hspace{+0.012em}t} \, \mathbf{v}
+\end{eqnarray}
+\par \vspace{+1.20em}
+\noindent donde $( \, f \, )$ es el factor relativista de la partícula, $( \, \mathbf{v} \, )$ es la velocidad relacional de la partícula y $( \, t \, )$ es el tiempo relacional de la partícula.
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsection*{Dinámica Especial}}\addcontentsline{toc}{subsection}{4. Dinámica Especial}
+
+\bigskip \smallskip
+
+\noindent Sea una partícula ( masiva o no masiva ) con masa intrínseca $( \, m \, )$ entonces el \hbox {momento} lineal $( \, \mathbf{P} \, )$ de la partícula, el momento angular $( \, \mathbf{L} \, )$ de la partícula, \hbox {la fuerza} neta $( \, \mathbf{F} \, )$ que actúa sobre la partícula, el trabajo $( \, \mathrm{W} \, )$ realizado por la fuerza neta que actúa sobre la partícula y la energía cinética $( \, \mathrm{K} \, )$ de la partícula, están dados por:
+\par \vspace{-0.30em}
+\begin{eqnarray}
+\mathbf{P} \hspace{-0.06em}~\doteq~ m \, \bar{\mathbf{v}} ~=~ m \, f \, \mathbf{v}
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\mathbf{L} \hspace{+0.03em}~\doteq~ \mathbf{r} \times \mathbf{P} ~=~ m \; \mathbf{r} \times \bar{\mathbf{v}} ~=~ m \, f \: \mathbf{r} \times \mathbf{v}
+\end{eqnarray}
+\vspace{-0.30em}
+\hypertarget{t1e15}{}
+\begin{eqnarray}
+\mathbf{F} ~=~ \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} ~=~ m \, \bar{\mathbf{a}} ~=~ m \, \bigg [ \, f \, \dfrac{d\hspace{+0.021em}\mathbf{v}}{d\hspace{+0.012em}t} + \dfrac{d\hspace{-0.12em}f}{d\hspace{+0.012em}t} \, \mathbf{v} \, \bigg ]
+\end{eqnarray}
+\vspace{-0.15em}
+\begin{eqnarray}
+\mathrm{W} \hspace{-0.312em}~\doteq~ \hspace{-0.36em} \int_{\scriptscriptstyle 1}^{\hspace{+0.09em}{\scriptscriptstyle 2}} \mathbf{F} \cdot d\hspace{+0.036em}\mathbf{r} ~=~ \hspace{-0.36em} \int_{\scriptscriptstyle 1}^{\hspace{+0.09em}{\scriptscriptstyle 2}} \dfrac{d\hspace{+0.045em}\mathbf{P}}{d\hspace{+0.012em}t} \cdot d\hspace{+0.036em}\mathbf{r} ~=~ \Delta \, \mathrm{K}
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\mathrm{K} \hspace{-0.06em}~\doteq~ m \, f \, c^2
+\end{eqnarray}
+\par \vspace{+0.90em}
+\noindent donde $( \: f, \: \mathbf{r}, \: \mathbf{v}, \: t, \: \bar{\mathbf{v}}, \: \bar{\mathbf{a}} \: )$ son el factor relativista, la posición relacional, la velocidad relacional, el tiempo relacional, la velocidad especial y la aceleración especial de la partícula y $( \, c \, )$ es la velocidad de la luz en el vacío. La energía cinética $( \, \mathrm{K}_o \, )$ de una partícula masiva en reposo relacional es $( \, m_o \, c^2 \, )$ puesto que en este trabajo la energía total relativista $( \, \mathrm{E} \,\doteq\, \mathrm{T} + m_o \, c^2 \, )$ y la energía cinética $( \, \mathrm{K} \,\doteq\, m \, f \, c^2 \, )$ son lo mismo $( \, \mathrm{E} \,=\, \mathrm{K} \, )$
+\par \vspace{+0.60em}
+\noindent {\small Nota :} {\footnotesize $\mathrm{E}^2 - \mathbf{P}^2 c^2 = m^2 \, f^2 \, c^4 \, (\hspace{+0.12em} 1 - \mathbf{v}^2/c^2 \hspace{+0.15em})$} {\small [ en partícula masiva :} {\footnotesize $f^2 \, (\hspace{+0.12em} 1 - \mathbf{v}^2/c^2 \hspace{+0.15em}) = 1$ \hspace{+0.12em}$\rightarrow$\hspace{+0.12em} \hbox {{$\mathrm{E}^2 - \mathbf{P}^2 c^2 = {m_o}^2 c^4$}} \;y\; $m \ne 0$} {\small ]} \; {\footnotesize\&} \; {\small [ en partícula no masiva :} {\footnotesize $\mathbf{v}^2 = c^2$ \hspace{+0.36em}$\rightarrow$\hspace{+0.36em} $(\hspace{+0.12em} 1 - \mathbf{v}^2/c^2 \hspace{+0.15em}) = 0$ \hspace{+0.36em}$\rightarrow$\hspace{+0.36em} \hbox {{$\mathrm{E}^2 - \mathbf{P}^2 c^2 = 0$ \, y \, $m \ne 0$} {\small \:]}}}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Observaciones Generales}}\addcontentsline{toc}{subsection}{5. Observaciones Generales}
+
+\bigskip \smallskip
+
+\noindent Según este trabajo, en el sistema de referencia auxiliar las magnitudes relacionales y las magnitudes ordinarias son siempre las mismas.
+\par \bigskip \smallskip
+\noindent La fuerza neta $\mathbf{F}$ que actúa sobre una partícula \hbox {(\hspace{+0.12em}masiva o no masiva\hspace{+0.12em})} siempre tiene igual \hbox {dirección} y sentido que la aceleración especial $\bar{\mathbf{a}}$ de la partícula \hbox {(\hspace{+0.12em}como en la 2ª ley de Newton\hspace{+0.12em})}
+\par \bigskip \smallskip
+\noindent Finalmente,
+\par \bigskip \smallskip
+\noindent La magnitud masa intrínseca {\small $( \: m \: )$} es invariante bajo transformaciones entre \hbox {sistemas} de referencia inerciales y no inerciales.
+\par \bigskip \smallskip
+\noindent Las magnitudes relacionales {\small $( \: \nu, t, \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$} son invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales (\hspace{+0.12em}puesto que estas magnitudes relacionales son las magnitudes ordinarias propias del sistema de referencia auxiliar\hspace{+0.12em})
+\par \bigskip \smallskip
+\noindent Por lo tanto, las magnitudes cinemáticas y dinámicas {\small $( \: f, \bar{\mathbf{r}}, \bar{\mathbf{v}}, \bar{\mathbf{a}}, \mathbf{P}, \mathbf{L}, \mathbf{F}, \mathrm{W}, \mathrm{K} \: )$} son también invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales.
+\par \bigskip \smallskip
+\noindent La dinámica especial puede ser aplicada en cualquier sistema de referencia inercial o no inercial (\hspace{+0.12em}y los observadores no inerciales no deben introducir fuerzas ficticias en $\mathbf{F}$\hspace{+0.12em})
+\par \bigskip \smallskip
+\noindent Por lo tanto, la reformulación de la relatividad especial presentada en este trabajo está de acuerdo con el principio general de relatividad.
+\par \bigskip \smallskip
+\noindent Sin embargo,
+\par \bigskip \smallskip
+\noindent En este trabajo, a partir de una partícula masiva auxiliar, se obtuvo solamente la forma que tienen las magnitudes relacionales {\small $( \: \nu, t, \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$} en cualquier sistema de referencia inercial.
+\par \bigskip \smallskip
+\noindent Por consiguiente,
+\par \bigskip \smallskip
+\noindent A partir de una partícula masiva auxiliar, nosotros debemos obtener la forma que tienen las magnitudes relacionales {\small $( \: \nu, t, \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$} en cualquier sistema de referencia no rotante (\hspace{+0.12em}sistema de referencia no rotante respecto a un sistema de referencia inercial\hspace{+0.12em})
+\par \bigskip \smallskip
+\noindent Luego, a partir de un sistema auxiliar de partículas masivas, nosotros debemos obtener la forma que tienen las magnitudes relacionales {\small $( \: \nu, t, \mathbf{r}, \mathbf{v}, \mathbf{a} \: )$} en cualquier sistema de referencia rotante (\hspace{+0.12em}sistema de referencia rotante respecto a un sistema de referencia inercial\hspace{+0.12em})
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsection*{Bibliografía}}\addcontentsline{toc}{subsection}{6. Bibliografía}
+
+\bigskip \smallskip
+
+\par \noindent \textbf{W\hspace{-0.18em}. Pauli}, Teoría de Relatividad.
+\bigskip \smallskip
+\par \noindent \textbf{C. M{\o}ller}, La Teoría de Relatividad.
+\bigskip \smallskip
+\par \noindent \textbf{A. Blato}, Transformaciones Vectoriales de Lorentz.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexo I}}\hypertarget{t1a1}{}
+
+\par \bigskip {\centering\subsection*{Transformaciones Vectoriales de Lorentz}}\addcontentsline{toc}{subsection}{Anexo I : Transformaciones Vectoriales de Lorentz}
+
+\bigskip \smallskip
+
+\noindent Sean dos sistemas de referencia inerciales S y S' cuyos orígenes coinciden en el tiempo cero ( para ambos sistemas ) entonces el tiempo $( \, \mathtt{t}\hspace{+0.03em}' \, )$, la posición $( \, \vec{r}\hspace{+0.18em}' \, )$ la velocidad $( \, \vec{v}\hspace{+0.18em}' \, )$ y la aceleración $( \, \vec{a}\hspace{+0.18em}' \, )$ de una partícula ( masiva o no masiva ) respecto al sistema de referencia inercial S', están dados por:
+\par \vspace{+0.21em}
+\begin{eqnarray}
+\mathtt{t}\hspace{+0.03em}' \hspace{-0.03em}~=~ \hspace{+0.24em} \gamma \left ( \mathtt{t} - \frac{\vec{r} \cdot \vec{u}}{c^2} \right )
+\end{eqnarray}
+\vspace{-0.45em}
+\begin{eqnarray}
+\vec{r}\hspace{+0.21em}' \hspace{-0.18em}~=~ \hspace{-0.12em} \left [ \; \vec{r} + \frac{\gamma^2}{\gamma + 1} \frac{( \vec{r} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} - \gamma \, \vec{u} \; \mathtt{t} \; \right ]
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\vec{v}\hspace{+0.21em}' \hspace{-0.21em}~=~ \hspace{-0.12em} \left [ \; \vec{v} + \frac{\gamma^2}{\gamma + 1} \frac{( \vec{v} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} - \hspace{+0.114em} \gamma \, \vec{u} \hspace{+0.114em} \; \right ] \frac{1}{\gamma \, ( 1 - \frac{\vec{v} \cdot \vec{u}}{c^2} )}
+\end{eqnarray}
+\vspace{-0.30em}
+\begin{eqnarray}
+\vec{a}\hspace{+0.21em}' \hspace{-0.21em}~=~ \hspace{-0.12em} \left [ \; \vec{a} - \frac{\gamma}{\gamma + 1} \frac{( \vec{a} \cdot \vec{u} \hspace{+0.09em}) \, \vec{u}}{c^2} + \frac{( \vec{a} \times \vec{v} \hspace{+0.09em}) \times \vec{u}}{c^2} \; \right ] \frac{1}{\gamma^2 \, ( 1 - \frac{\vec{v} \cdot \vec{u}}{c^2} )^3}
+\end{eqnarray}
+\par \vspace{+1.20em}
+\noindent donde $( \, \mathtt{t}, \, \vec{r}, \, \vec{v}, \, \vec{a} \, )$ son el tiempo, la posición, la velocidad y la aceleración de la partícula respecto al sistema S, $( \, \vec{u} \, )$ es la velocidad del sistema S' respecto al sistema S, $( \, c \, )$ es la velocidad de la luz en el vacío y {\small $\gamma \doteq (\hspace{+0.03em}{1 - \vec{u} \hspace{-0.114em}\cdot\hspace{-0.114em} \vec{u}/c^2}\hspace{+0.06em})^{-1/2}$} \hfill \hbox {{\small Nota : $\gamma^2 / (\gamma + 1) \, c^2 = (\gamma - 1) /\hspace{+0.03em} \vec{u}^{\hspace{+0.09em}2}$ $\leftarrow$ $\vec{u}\ne 0$}}
+
+\vspace{+0.60em}
+
+\par \bigskip {\centering\subsection*{Anexo II}}\hypertarget{t1a2}{}
+
+\par \bigskip {\centering\subsection*{Transformación de Frecuencia}}\addcontentsline{toc}{subsection}{Anexo II : Transformación de Frecuencia}
+
+\bigskip \smallskip
+
+\noindent Por otro lado, la frecuencia $(\hspace{+0.24em}\mathtt{v}\hspace{+0.15em}'\hspace{+0.12em})$ de una partícula no masiva respecto a un sistema de referencia inercial S', está dada por:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+\mathtt{v}\hspace{+0.15em}' ~=~ \: \mathtt{v} \;\, \dfrac{\left ( 1 - \dfrac{\vec{c} \cdot \vec{u}}{c^2} \right )}{\sqrt{1 - \dfrac{\vec{u} \cdot \vec{u}}{c^2}}}
+\end{eqnarray}
+\par \vspace{+0.45em}
+\noindent donde $( \: \mathtt{v} \: )$ es la frecuencia de la partícula no masiva respecto a otro sistema de referencia inercial S, $( \, \vec{c} \, )$ es la velocidad de la partícula no masiva respecto al sistema S, $( \, \vec{u} \, )$ es la velocidad del sistema S' respecto al sistema S y $( \, c \, )$ es la velocidad de la luz en el vacío.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexo III}}
+
+\par \bigskip {\centering\subsection*{Fuerzas Cinéticas}}\addcontentsline{toc}{subsection}{Anexo III : Fuerzas Cinéticas}
+
+\bigskip \smallskip
+
+\noindent La fuerza cinética $\mathbf{K}^{a}_{\hspace{+0.012em}ij}$ ejercida sobre una partícula $i$ con masa intrínseca $m_i$ por otra partícula $j$ con masa intrínseca $m_j$, \hbox {está dada por}:
+\par \vspace{-0.54em}
+\begin{eqnarray}
+\mathbf{K}^{a}_{\hspace{+0.012em}ij} \,=\, - \; \Bigg [ \; \dfrac{m_i \, m_j}{\mathbb{M}} \, ( \, \bar{\mathbf{a}}_{\hspace{+0.045em}i} \hspace{+0.045em}-\, \bar{\mathbf{a}}_{j} \, ) \; \Bigg ]
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent donde $\bar{\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración especial de la partícula $i$, $\bar{\mathbf{a}}_{j}$ es la aceleración especial de la partícula $j$ y $\mathbb{M}$ {\small ( $ = \sum_z^{\scriptscriptstyle{\mathit{All}}} m_z$ )} es la suma de las masas intrínsecas de todas las partículas del Universo.
+\par \vspace{+0.60em}
+\noindent Por otro lado, la fuerza cinética $\mathbf{K}^{u}_{\hspace{+0.030em}i}$ ejercida sobre una partícula $i$ con masa intrínseca $m_i$ por el Universo, está dada por:
+\par \vspace{-0.45em}
+\begin{eqnarray}
+\mathbf{K}^{u}_{\hspace{+0.030em}i} \,=\, - \; m_i \; \dfrac{\sum_z^{\scriptscriptstyle{\mathit{All}}} m_z \, \bar{\mathbf{a}}_{\hspace{+0.045em}z}}{\sum_z^{\scriptscriptstyle{\mathit{All}}} m_z}
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent donde $m_z$ y $\bar{\mathbf{a}}_{\hspace{+0.045em}z}$ son la masa intrínseca y la aceleración especial de la \textit{z}-ésima partícula del Universo.
+\par \vspace{+0.60em}
+\noindent De las ecuaciones anteriores se deduce que la fuerza cinética neta $\mathbf{K}_i$ {\small ( $ = \sum_j^{\scriptscriptstyle{\mathit{All}}} \, \mathbf{K}^{a}_{\hspace{+0.012em}ij}$} {\small $+ \; \mathbf{K}^{u}_{\hspace{+0.030em}i}$ )} que actúa sobre una partícula $i$ con masa intrínseca $m_i$, está dada por:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+\mathbf{K}_i \,=\, - \, m_i \, \bar{\mathbf{a}}_{\hspace{+0.045em}i}
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent donde $\bar{\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración especial de la partícula $i$.
+\par \vspace{+0.60em}
+\noindent Ahora, desde la dinámica especial \hyperlink{t1e15}{(15)}, se tiene:
+\par \vspace{-0.60em}
+\begin{eqnarray}
+\mathbf{F}_i \,=\, m_i \, \bar{\mathbf{a}}_{\hspace{+0.045em}i}
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent Dado que {\small (\hspace{+0.240em}$\mathbf{K}_i \,=\, - \, m_i \, \bar{\mathbf{a}}_{\hspace{+0.045em}i}$\hspace{+0.240em})} se obtiene:
+\par \vspace{-0.81em}
+\begin{eqnarray}
+\mathbf{F}_i \,=\, - \, \mathbf{K}_i
+\end{eqnarray}
+\par \vspace{+0.30em}
+\noindent o sea:
+\par \vspace{-0.81em}
+\begin{eqnarray}
+\mathbf{K}_i \, + \, \mathbf{F}_i \,=\, 0
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent Si {\small (\hspace{+0.240em}$\mathbf{T}_i \,\doteq\, \mathbf{K}_i \, + \, \mathbf{F}_i$\hspace{+0.240em})} entonces:
+\par \vspace{-0.81em}
+\begin{eqnarray}
+\mathbf{T}_i \,=\, 0
+\end{eqnarray}
+\par \vspace{+0.60em}
+\noindent Por lo tanto, si la fuerza cinética neta $\mathbf{K}_i$ es incluida en la dinámica especial entonces la fuerza total $\mathbf{T}_i$ que actúa sobre una ( masiva o no masiva ) partícula $i$ es siempre cero.
+\par \vspace{+0.21em}
+\noindent Nota : Las fuerzas cinéticas ${\stackrel{\scriptstyle{au}}{\smash{\mathbf{K}}\rule{0pt}{+0.63em}}}$ están directamente relacionadas con la energía cinética $\mathrm{K}$.
+
+\newpage
+
+\enlargethispage{+0.00em}
+
+\setlength{\unitlength}{1pt}
+
+\par \bigskip {\centering\subsection*{Anexo IV}}
+
+\vspace{-0.33em}
+
+\par \bigskip {\centering\subsection*{Relatividad Especial}}\addcontentsline{toc}{subsection}{Anexo IV : Relatividad Especial}
+
+\vspace{+1.50em}
+
+\newcommand{\cafa}{\textsf{Una Reformulación con\vspace{+0.30em}\\Magnitudes Relacionales}}
+\newcommand{\cafb}{\textsf{Una Reformulación con\vspace{+0.30em}\\Magnitudes Ordinarias}}
+\newcommand{\cbfa}{\textsf{\vspace{-0.48em}\\$\mathit{\nu}$ , $\mathit{t}$ , $\mathbf{r}$ , $\mathbf{v}$ , $\mathbf{a}$\vspace{+0.27em}\\( invariantes )}}
+\newcommand{\cbfb}{\textsf{$\mathtt{v}$ , $\mathtt{t}$ , \hspace{-0.06em}$\vec{\hspace{+0.06em}\mathit{r}}$ , \hspace{-0.06em}$\vec{\hspace{+0.06em}\mathit{v}}$ , \hspace{-0.06em}$\vec{\hspace{+0.06em}\mathit{a}}$\vspace{+0.27em}\\( no invariantes )}}
+\newcommand{\ccfa}{\textsf{$\mathit{m_o}$ , $\mathit{m}$\vspace{+0.30em}\\( invariantes )\vspace{+0.30em}\\$\mathit{f}$ , $\mathrm{m}$\vspace{+0.30em}\\( invariantes )}}
+\newcommand{\ccfb}{\textsf{$\mathit{m_o}$ , $\mathit{m}$\vspace{+0.30em}\\( invariantes )\vspace{+0.30em}\\$\mathrm{f}$ , $\mathtt{m}$\vspace{+0.30em}\\( no invariantes )}}
+\newcommand{\cdfa}{\textsf{\vspace{-0.33em}\\$\bar{\mathbf{r}}$ , $\bar{\mathbf{v}}$ , $\bar{\mathbf{a}}$\vspace{+0.27em}\\( invariantes )}}
+\newcommand{\cdfb}{\textsf{$\vec{\hspace{+0.09em}\bar{\hspace{-0.09em}{\mathit{r}}}}$ , $\vec{\hspace{+0.09em}\bar{\hspace{-0.09em}{\mathit{v}}}}$ , $\vec{\hspace{+0.09em}\bar{\hspace{-0.09em}{\mathit{a}}}}$\vspace{+0.27em}\\( no invariantes )}}
+\newcommand{\cefa}{\textsf{\vspace{-0.24em}\\$\mathbf{P}$ , $\mathbf{L}$ , $\mathbf{F}$ , $\mathrm{W}$ , $\mathrm{K}$ , ($\mathbf{K}$)\vspace{+0.27em}\\( invariantes )}}
+\newcommand{\cefb}{\textsf{\hspace{-0.21em}$\vec{\hspace{+0.21em}\mathrm{P}}$ , \hspace{-0.30em}$\vec{\hspace{+0.30em}\mathrm{L}}$ , \hspace{-0.15em}$\vec{\hspace{+0.15em}\mathrm{F}}$ , $\mathit{W}$ , $\mathit{K}$ , (\hspace{-0.15em}$\vec{\hspace{+0.15em}\mathrm{K}}$)\vspace{+0.27em}\\( no invariantes )}}
+\newcommand{\cffa}{\textsf{La dinámica especial (\hspace{+0.12em}relacional\hspace{+0.12em}) puede ser aplicada en cualquier sistema de referencia inercial o no inercial (\hspace{+0.12em}y los observadores no inerciales {\footnotesize \textbf{NO}} deben introducir fuerzas ficticias \hbox {en $\mathbf{F}$\hspace{+0.12em})}}}
+\newcommand{\cffb}{\textsf{La dinámica especial (\hspace{+0.12em}ordinaria\hspace{+0.12em}) puede ser aplicada en cualquier sistema de referencia inercial o no inercial (\hspace{+0.12em}y los observadores no inerciales deben introducir fuerzas ficticias \hbox {en \hspace{-0.15em}$\vec{\hspace{+0.15em}\mathrm{F}}$\hspace{+0.12em})}}}
+\newcommand{\cgfa}{\textsf{\textbf{invariantes} = Las magnitudes son invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales.}}
+\newcommand{\cgfb}{\textsf{\textbf{no invariantes} = Las magnitudes no son invariantes bajo transformaciones entre sistemas de referencia inerciales.}}
+\newcommand{\czid}{\textsf{{\small $=$}\vspace{+1.80em}\\{\small $\ne$}}}
+
+\begin{center}
+\begin{tabular}{ccc}
+{\framebox(150,42){\parbox{150\unitlength}{\centering \cafa }}} &
+{\makebox(10,42){\textbf{{\small $\ne$}}}} &
+{\framebox(150,42){\parbox{150\unitlength}{\centering \cafb }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,36){\parbox{150\unitlength}{\centering \cbfa }}} &
+{\makebox(10,36){\textbf{{\small $\ne$}}}} &
+{\framebox(150,36){\parbox{150\unitlength}{\centering \cbfb }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,63){\parbox{150\unitlength}{\centering \ccfa }}} &
+{\makebox(10,63){\parbox{10\unitlength}{\centering \czid }}} &
+{\framebox(150,63){\parbox{150\unitlength}{\centering \ccfb }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,36){\parbox{150\unitlength}{\centering \cdfa }}} &
+{\makebox(10,36){\textbf{{\small $\ne$}}}} &
+{\framebox(150,36){\parbox{150\unitlength}{\centering \cdfb }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,42){\parbox{150\unitlength}{\centering \cefa }}} &
+{\makebox(10,42){\textbf{{\small $\ne$}}}} &
+{\framebox(150,42){\parbox{150\unitlength}{\centering \cefb }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,87){\parbox{140\unitlength}{\centering \cffa }}} &
+{\makebox(10,87){\textbf{{\small $\ne$}}}} &
+{\framebox(150,87){\parbox{140\unitlength}{\centering \cffb }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}}
+\end{tabular}
+{\framebox(334,63){\parbox{306\unitlength}{ \cgfa \vspace{+0.45em} \\ \cgfb }}}
+\end{center}
+
+\end{document}
+
