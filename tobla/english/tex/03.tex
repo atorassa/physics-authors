@@ -1,0 +1,1447 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={162.0mm,234.0mm}}
+\geometry{totalwidth=141.0mm,totalheight=198.0mm}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,bookmarksopen=true}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={A Reformulation of Classical Mechanics ( III \& IV )}}
+\hypersetup{pdfauthor={Agustín A. Tobla}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\spb}{\hspace{+0.015em}}
+\newcommand{\spc}{\hspace{+0.150em}}
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+\newcommand{\met}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+
+\begin{document}
+
+\enlargethispage{+0.00em}
+
+\addcontentsline{toc}{section}{Paper III}
+
+\begin{center}
+
+{\LARGE A Reformulation of Classical Mechanics}
+
+\bigskip \medskip
+
+{\large Agustín A. Tobla}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2024) Buenos Aires, Argentina
+
+\medskip
+
+{\sc ( Paper III )}
+
+\smallskip
+
+\bigskip
+
+\parbox{107.40mm}{In classical mechanics, a new reformulation is presented, which is invariant under transformations between inertial and non-inertial reference frames and which can be applied in any reference frame without introducing fictitious forces. Additionally, in this paper, we assume that all forces can obey or disobey Newton's third law.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.50em}
+
+\par \medskip {\centering\subsection*{Introduction}}\addcontentsline{toc}{subsection}{1. Introduction}
+
+\par \medskip \noindent The new reformulation in classical mechanics presented in this paper is obtained starting from an auxiliary system of particles ( called free-system ) that is used to obtain kinematic magnitudes ( for example,\, inertial position,\, inertial velocity,\, etc. \hspace{-0.129em}) that are invariant under transformations between inertial and non-inertial reference frames.
+
+\par \medskip \noindent The inertial position ${\mathbf{r}}_i$, the inertial velocity ${\mathbf{v}}_i$ and the inertial acceleration ${\mathbf{a}}_{\hspace{+0.045em}i}$ of a \hbox {particle $i$} relative to a reference frame S (\hspace{+0.120em}inertial or non-inertial\hspace{+0.120em}) are given by:
+
+\par \medskip\vspace{+0.06em} ${\mathbf{r}}_i \,\:\doteq\; (\hspace{+0.090em}{\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}\hspace{+0.090em}) \;=\; ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \medskip\vspace{+0.36em} ${\mathbf{v}}_i \;\doteq\; d\hspace{+0.090em}(\hspace{+0.090em}{\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}\hspace{+0.090em})\hspace{+0.045em}/dt \;=\; ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \medskip\vspace{+0.36em} ${\mathbf{a}}_{\hspace{+0.045em}i} \;\doteq\; d^2\hspace{+0.030em}(\hspace{+0.090em}{\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}\hspace{+0.090em})\hspace{+0.045em}/dt^2 \:=\; ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \medskip\vspace{+0.36em} \noindent where ${\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}$ is the position vector of particle $i$ relative to the auxiliary frame [\hspace{+0.120em}${\vec{\mathit{r}}}_i$ is the position vector of particle $i$, ${\vec{\mathit{R}}}$ is the position vector of the center of mass of the free-system, and ${\vec{\omega}}$ is the angular velocity vector of the free-system\hspace{+0.120em}] [\hspace{+0.120em}relative to the frame S\hspace{+0.120em}] \hyperlink{p3a1}{(\hspace{+0.120em}see {\small A}nnex {\small I}\hspace{+0.120em})}
+
+\par \medskip\vspace{+0.00em} \noindent The auxiliary frame is a reference frame fixed to the free-system (\hspace{+0.120em}${\vec{\omega}} = 0$\hspace{+0.120em}) whose origin always coincides with the center of mass of the free-system (\hspace{+0.033em}{\small ${\vec{\mathit{R}}} = {\vec{\mathit{V}}} = {\vec{\mathit{A}}} =$} $0$\hspace{+0.120em})
+
+\par \medskip \noindent Any reference frame S is an inertial frame when the angular velocity ${\vec{\omega}}$ of the free-system and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system are equal to zero \hbox {relative to S.}
+
+\par \medskip \noindent Note\hspace{+0.300em}:\hspace{+0.240em}\hbox{( $\forall \;\;\, {\mathbf{m}} \; \in$\hspace{+0.24em} Inertial Magnitudes \hspace{+0.45em}:\hspace{+0.45em} If \hspace{+0.42em}${\mathbf{m}} \,=\, {\vec{\mathit{n}}}$ \hspace{+0.63em}$\longrightarrow$\hspace{+0.63em} $d(\hspace{+0.090em}{\mathbf{m}}\hspace{+0.090em})/dt \,=\, d(\hspace{+0.090em}{\vec{\mathit{n}}}\hspace{+0.090em})/dt \,-\, {\vec{\omega}} \times {\vec{\mathit{n}}}$ )}
+
+\vspace{+0.90em}
+
+\par {\centering\subsection*{The New Dynamics}}\addcontentsline{toc}{subsection}{2. The New Dynamics}
+
+\par \medskip \noindent $[\,1\,]$ A force is always caused by the interaction between two or more particles.
+
+\par \medskip \noindent $[\,2\,]$ The net force ${\mathbf{F}}_i$ acting on a particle $i$ of mass $m_i$ produces an inertial acceleration ${\mathbf{a}}_{\hspace{+0.045em}i}$ according to the following equation: $[ \, {\mathbf{F}}_i \,=\, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i} \, ]$
+
+\par \medskip \noindent $[\,3\,]$ In this paper, we assume that all forces can obey or disobey Newton's third law in its weak form or in its strong form.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{The Equation of Motion}}\addcontentsline{toc}{subsection}{3. The Equation of Motion}
+
+\par \bigskip \noindent The net force ${\mathbf{F}}_i$ acting on a particle $i$ of mass $m_i$ produces an inertial acceleration ${\mathbf{a}}_{\hspace{+0.045em}i}$ according to the following equation:
+
+\par \bigskip\smallskip ${\mathbf{F}}_i \,=\, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip\smallskip \noindent From the above equation it follows that the (\hspace{+0.120em}ordinary\hspace{+0.120em}) acceleration ${\vec{\mathit{a}}}_{i}$ of particle $i$ relative to a reference frame S (\hspace{+0.120em}inertial or non-inertial\hspace{+0.120em}) is given by:
+
+\par \bigskip\smallskip ${\vec{\mathit{a}}}_{i} \;=\: {\mathbf{F}}_{\hspace{-0.09em}i}/m_i + {\vec{\mathit{A}}} \hspace{+0.15em} + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}})$
+
+\par \bigskip\smallskip \noindent where ${\vec{\mathit{r}}}_i$ is the position vector of particle $i$, ${\vec{\mathit{R}}}$ is the position vector of the center of mass of the free-system, and ${\vec{\omega}}$ is the angular velocity vector of the free-system \hyperlink{p3a1}{(\hspace{+0.120em}see {\small A}nnex {\small I}\hspace{+0.120em})}
+
+\par \bigskip \noindent From the above equation it follows that particle $i$ can have a non-zero acceleration even if there is no force acting on particle $i$, and also that particle $i$ can have zero acceleration \hbox {(\hspace{+0.120em}state of} rest or of uniform linear motion\hspace{+0.120em}) even if there is an unbalanced net force acting \hbox {on particle $i$.}
+
+\par \bigskip \noindent However, from the above equation it also follows that Newton's first and second laws are valid in any inertial reference frame, since the angular velocity ${\vec{\omega}}$ of the free-system and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system are equal to zero relative to any inertial reference frame.
+
+\par \bigskip \noindent In this paper, any reference frame S is an inertial frame when the angular velocity ${\vec{\omega}}$ of the free-system and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system are equal to zero relative to the frame S. Therefore, any reference frame S is a non-inertial frame when the angular velocity ${\vec{\omega}}$ of the free-system or the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system are not equal to zero relative to the frame S.
+
+\par \bigskip \noindent However, since in classical mechanics any reference frame is actually an ideal rigid body then any reference frame S is an inertial frame when the net force acting at each point of the frame S is equal to zero. Therefore, any reference frame S is a non-inertial frame when the net force acting at each point of the frame S is not equal to \hbox {zero \hyperlink{p3a4}{(\hspace{+0.120em}see {\small A}nnex {\small IV}\hspace{+0.120em})}}
+
+\par \bigskip \noindent On the other hand, the new reformulation of classical mechanics presented in this paper is observationally equivalent to Newtonian mechanics.
+
+\par \bigskip \noindent However, non-inertial observers can use Newtonian mechanics only if they introduce fictitious forces into ${\mathbf{F}}_{\hspace{-0.09em}i}$ (\hspace{+0.120em}such as the centrifugal force, the Coriolis force, etc.\hspace{+0.120em})
+
+\par \bigskip \noindent Additionally, the new reformulation of classical mechanics presented in this paper is also a relational reformulation of classical mechanics since it is obtained starting from relative magnitudes (\hspace{+0.120em}position, velocity and acceleration\hspace{+0.120em}) between particles.
+
+\par \bigskip \noindent However, as already stated above, the new reformulation of classical mechanics presented in this paper is observationally equivalent to Newtonian mechanics.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{The Definitions}}\addcontentsline{toc}{subsection}{4. The Definitions}
+
+\par \bigskip \noindent For a system of N particles, the following definitions are applicable:
+
+\par \bigskip\bigskip \hspace{-2.40em} \begin{tabular}{lll}
+Mass & \hspace{+0.00em} & ${\mathrm{M}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i$ \vspace{+0.99em} \\
+\\
+Position {\small CM} 1 & \hspace{+0.00em} & ${\vec{\mathit{R}}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{r}}_{i}}$ \vspace{+0.99em} \\
+Velocity {\small CM} 1 & \hspace{+0.00em} & ${\vec{\mathit{V}}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{v}}_{i}}$ \vspace{+0.99em} \\
+Acceleration {\small CM} 1 & \hspace{+0.00em} & ${\vec{\mathit{A}}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{a}}_{i}}$ \vspace{+0.99em} \\
+\\
+Position {\small CM} 2 & \hspace{+0.00em} & ${\mathbf{R}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\mathbf{r}}_{i}$ \vspace{+0.99em} \\
+Velocity {\small CM} 2 & \hspace{+0.00em} & ${\mathbf{V}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\mathbf{v}}_{i}$ \vspace{+0.99em} \\
+Acceleration {\small CM} 2 & \hspace{+0.00em} & ${\mathbf{A}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$ \vspace{+0.99em} \\
+\\
+Linear Momentum 1 & \hspace{+0.00em} & ${\mathbf{P}}_1 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\mathbf{v}}_{i}$ \vspace{+0.99em} \\
+Angular Momentum 1 & \hspace{+0.00em} & ${\mathbf{L}}_1 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, \big [ \, {\mathbf{r}}_{i} \times {\mathbf{v}}_{i} \, \big ]$ \vspace{+0.99em} \\
+Angular Momentum 2 & \hspace{+0.00em} & ${\mathbf{L}}_2 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, \big [ \, ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \times ({\mathbf{v}}_{i} - {\mathbf{V}}_{cm}) \, \big ]$ \vspace{+0.99em} \\
+\\
+Work 1 & \hspace{+0.00em} & ${\mathrm{W}}_1 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\mathbf{r}}_{i} \,=\, \Delta \, {\mathrm{K}}_1$ \vspace{+0.99em} \\
+Kinetic Energy 1 & \hspace{+0.00em} & $\Delta \, {\mathrm{K}}_1 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, ({\mathbf{v}}_{i})^2$ \vspace{+0.99em} \\
+Potential Energy 1 & \hspace{+0.00em} & $\Delta \, {\mathrm{U}}_1 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\mathbf{r}}_{i}$ \vspace{+0.99em} \\
+Mechanical Energy 1 & \hspace{+0.00em} & ${\mathrm{E}}_1 ~\doteq~ {\mathrm{K}}_1 + {\mathrm{U}}_1$ \vspace{+0.99em} \\
+Lagrangian 1 & \hspace{+0.00em} & ${\mathrm{L}}_1 ~\doteq~ {\mathrm{K}}_1 - {\mathrm{U}}_1$ \vspace{+0.99em} \\
+\\
+Work 2 & \hspace{+0.00em} & ${\mathrm{W}}_2 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \,=\, \Delta \, {\mathrm{K}}_2$ \vspace{+0.99em} \\
+Kinetic Energy 2 & \hspace{+0.00em} & $\Delta \, {\mathrm{K}}_2 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, ({\mathbf{v}}_{i} - {\mathbf{V}}_{cm})^2$ \vspace{+0.99em} \\
+Potential Energy 2 & \hspace{+0.00em} & $\Delta \, {\mathrm{U}}_2 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\mathbf{r}}_{i} - {\mathbf{R}}_{cm})$ \vspace{+0.99em} \\
+Mechanical Energy 2 & \hspace{+0.00em} & ${\mathrm{E}}_2 ~\doteq~ {\mathrm{K}}_2 + {\mathrm{U}}_2$ \vspace{+0.99em} \\
+Lagrangian 2 & \hspace{+0.00em} & ${\mathrm{L}}_2 ~\doteq~ {\mathrm{K}}_2 - {\mathrm{U}}_2$
+\end{tabular}
+
+\newpage
+
+\par \bigskip\bigskip \hspace{-2.40em} \begin{tabular}{lll}
+Work 3 & \hspace{+0.33em} & ${\mathrm{W}}_3 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot {\mathbf{r}}_{i} \,=\, \Delta \, {\mathrm{K}}_3$ \vspace{+0.99em} \\
+Kinetic Energy 3 & \hspace{+0.33em} & $\Delta \, {\mathrm{K}}_3 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \: {\mathbf{a}}_{\hspace{+0.045em}i} \cdot {\mathbf{r}}_{i}$ \vspace{+0.99em} \\
+Potential Energy 3 & \hspace{+0.33em} & $\Delta \, {\mathrm{U}}_3 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot {\mathbf{r}}_{i}$ \vspace{+0.99em} \\
+Mechanical Energy 3 & \hspace{+0.33em} & ${\mathrm{E}}_3 ~\doteq~ {\mathrm{K}}_3 + {\mathrm{U}}_3$ \vspace{+0.99em} \\
+\\
+Work 4 & \hspace{+0.33em} & ${\mathrm{W}}_4 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \,=\, \Delta \, {\mathrm{K}}_4$ \vspace{+0.99em} \\
+Kinetic Energy 4 & \hspace{+0.33em} & $\Delta \, {\mathrm{K}}_4 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, \big [ \, ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \, \big ]$ \vspace{+0.99em} \\
+Potential Energy 4 & \hspace{+0.33em} & $\Delta \, {\mathrm{U}}_4 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm})$ \vspace{+0.99em} \\
+Mechanical Energy 4 & \hspace{+0.33em} & ${\mathrm{E}}_4 ~\doteq~ {\mathrm{K}}_4 + {\mathrm{U}}_4$ \vspace{+0.99em} \\
+\\
+Work 5 & \hspace{+0.33em} & ${\mathrm{W}}_5 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, \big ] \,=\, \Delta \, {\mathrm{K}}_5$ \vspace{+0.99em} \\
+Kinetic Energy 5 & \hspace{+0.33em} & $\Delta \, {\mathrm{K}}_5 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, \big [ \, ({\vec{\mathit{v}}_{i}} - {\vec{\mathit{V}}})^2 + ({\vec{\mathit{a}}_{i}} - {\vec{\mathit{A}}}) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, \big ]$ \vspace{+0.99em} \\
+Potential Energy 5 & \hspace{+0.33em} & $\Delta \, {\mathrm{U}}_5 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, \big ]$ \vspace{+0.99em} \\
+Mechanical Energy 5 & \hspace{+0.33em} & ${\mathrm{E}}_5 ~\doteq~ {\mathrm{K}}_5 + {\mathrm{U}}_5$ \vspace{+0.99em} \\
+\\
+Work 6 & \hspace{+0.33em} & ${\mathrm{W}}_6 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=\, \Delta \, {\mathrm{K}}_6$ \vspace{+0.99em} \\
+Kinetic Energy 6 & \hspace{+0.33em} & $\Delta \, {\mathrm{K}}_6 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, \big [ \, ({\vec{\mathit{v}}_{i}} - {\vec{\mathit{V}}}_{cm})^2 + ({\vec{\mathit{a}}_{i}} - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) \, \big ]$ \vspace{+0.99em} \\
+Potential Energy 6 & \hspace{+0.33em} & $\Delta \, {\mathrm{U}}_6 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) \, \big ]$ \vspace{+0.99em} \\
+Mechanical Energy 6 & \hspace{+0.33em} & ${\mathrm{E}}_6 ~\doteq~ {\mathrm{K}}_6 + {\mathrm{U}}_6$
+\end{tabular}
+
+\vspace{+0.60em}
+
+\par {\centering\subsection*{The Relations}}\addcontentsline{toc}{subsection}{5. The Relations}
+
+\par \bigskip\smallskip \noindent From the above definitions, the following relations can be obtained \hyperlink{p3a2}{(\hspace{+0.120em}see {\small A}nnex {\small II}\hspace{+0.120em})}
+
+\vspace{+1.80em}
+
+\par \noindent ${\mathrm{K}}_1 ~=~ {\mathrm{K}}_2 + \med \; {\mathrm{M}} \: {\mathbf{V}}_{cm}^{\hspace{+0.045em}2}$
+\vspace{+0.99em}
+\par \noindent ${\mathrm{K}}_3 ~=~ {\mathrm{K}}_4 + \med \; {\mathrm{M}} \: {\mathbf{A}}_{cm} \cdot {\mathbf{R}}_{cm}$
+\vspace{+0.99em}
+\par \noindent ${\mathrm{K}}_5 ~=~ {\mathrm{K}}_6 + \med \; {\mathrm{M}} \: \big [ \, ({\vec{\mathit{V}}}_{cm} - \hspace{-0.120em}{\vec{\mathit{V}}})^2 + ({\vec{\mathit{A}}}_{cm} - {\vec{\mathit{A}}}) \cdot ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}}) \, \big ]$
+\vspace{+0.99em}
+\par \noindent ${\mathrm{K}}_5 ~=~ {\mathrm{K}}_1 + {\mathrm{K}}_3$ $\hspace{+0.540em} \& \hspace{+0.540em}$ ${\mathrm{U}}_5 ~=~ {\mathrm{U}}_1 \hspace{+0.027em}+\hspace{+0.027em} {\mathrm{U}}_3$ $\hspace{+0.630em} \& \hspace{+0.630em}$ ${\mathrm{E}}_5 ~=~ {\mathrm{E}}_1 + {\mathrm{E}}_3$
+\vspace{+0.99em}
+\par \noindent ${\mathrm{K}}_6 ~=~ {\mathrm{K}}_2 + {\mathrm{K}}_4$ $\hspace{+0.540em} \& \hspace{+0.540em}$ ${\mathrm{U}}_6 ~=~ {\mathrm{U}}_2 \hspace{+0.027em}+\hspace{+0.027em} {\mathrm{U}}_4$ $\hspace{+0.630em} \& \hspace{+0.630em}$ ${\mathrm{E}}_6 ~=~ {\mathrm{E}}_2 + {\mathrm{E}}_4$
+
+\newpage
+
+\par {\centering\subsection*{The Conservation Laws}}\addcontentsline{toc}{subsection}{6. The Conservation Laws}
+
+\par \bigskip\smallskip \noindent The linear momentum $[ \, {\mathbf{P}}_1 \, ]$ of an isolated system of N particles remains constant if the internal forces obey Newton's third law in its weak form.
+
+\par \bigskip\medskip ${\mathbf{P}}_1 ~=~ {\mathrm{constant}} \hspace{+2.88em} \big [ \; d({\mathbf{P}}_1)/dt ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i} ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, {\mathbf{F}}_i ~=~ 0 \; \big ]$
+
+\par \bigskip\medskip \noindent The angular momentum $[ \, {\mathbf{L}}_1 \, ]$ of an isolated system of N particles remains constant if the internal forces obey Newton's third law in its strong form.
+
+\par \bigskip\medskip ${\mathbf{L}}_1 ~=~ {\mathrm{constant}} \hspace{+2.97em} \big [ \; d({\mathbf{L}}_1)/dt ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, \big [ \, {\mathbf{r}}_i \times {\mathbf{a}}_{\hspace{+0.045em}i} \, \big ]~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, {\mathbf{r}}_i \times {\mathbf{F}}_i ~=~ 0 \; \big ]$
+
+\par \bigskip\medskip \noindent The angular momentum $[ \, {\mathbf{L}}_2 \, ]$ of an isolated system of N particles remains constant if the internal forces obey Newton's third law in its strong form.
+
+\par \bigskip\medskip ${\mathbf{L}}_2 ~=~ {\mathrm{constant}} \hspace{+2.97em} \big [ \; d({\mathbf{L}}_2)/dt ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, \big [ \, ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \times ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{A}}_{cm}) \, \big ] ~=~$
+
+\par \bigskip $\hspace{+10.44em} \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, \big [ \, ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \times {\mathbf{a}}_{\hspace{+0.045em}i} \, \big ] ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \times {\mathbf{F}}_i ~=~ 0 \; \big ]$
+
+\par \bigskip\medskip \noindent The mechanical energy $[ \, {\mathrm{E}}_1 \, ]$ and the mechanical energy $[ \, {\mathrm{E}}_2 \, ]$ of a system of N particles remain constant if the system is only subject to conservative forces.
+
+\par \bigskip\medskip ${\mathrm{E}}_1 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; \Delta \; {\mathrm{E}}_1 ~=~ \Delta \; {\mathrm{K}}_1 + \Delta \; {\mathrm{U}}_1 ~=~ 0 \; \big ]$
+
+\par \bigskip ${\mathrm{E}}_2 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; \Delta \; {\mathrm{E}}_2 ~=~ \Delta \; {\mathrm{K}}_2 + \Delta \; {\mathrm{U}}_2 ~=~ 0 \; \big ]$
+
+\par \bigskip\medskip \noindent The mechanical energy $[ \, {\mathrm{E}}_3 \, ]$ and the mechanical energy $[ \, {\mathrm{E}}_4 \, ]$ of a system of N particles \hbox {are always zero} (\hspace{+0.180em}and therefore they always remain constant\hspace{+0.180em})
+
+\par \bigskip\medskip ${\mathrm{E}}_3 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; {\mathrm{E}}_3 ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; \big [ \, m_i \: {\mathbf{a}}_{\hspace{+0.045em}i} \cdot {\mathbf{r}}_{i} - {\mathbf{F}}_i \cdot {\mathbf{r}}_{i} \, \big ] ~=~ 0 \; \big ]$
+
+\par \bigskip ${\mathrm{E}}_4 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; {\mathrm{E}}_4 ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; \big [ \, m_i \: {\mathbf{a}}_{\hspace{+0.045em}i} \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) - {\mathbf{F}}_i \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \, \big ] ~=~ 0 \; \big ]$
+
+\par \bigskip $\hspace{+10.44em} \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \, \big [ \, ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \, \big ] \,=\, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \: {\mathbf{a}}_{\hspace{+0.045em}i} \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm})$
+
+\par \bigskip\medskip \noindent The mechanical energy $[ \, {\mathrm{E}}_5 \, ]$ and the mechanical energy $[ \, {\mathrm{E}}_6 \, ]$ of a system of N particles remain constant if the system is only subject to conservative forces.
+
+\par \bigskip\medskip ${\mathrm{E}}_5 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; \Delta \; {\mathrm{E}}_5 ~=~ \Delta \; {\mathrm{K}}_5 + \Delta \; {\mathrm{U}}_5 ~=~ 0 \; \big ]$
+
+\par \bigskip ${\mathrm{E}}_6 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; \Delta \; {\mathrm{E}}_6 ~=~ \Delta \; {\mathrm{K}}_6 + \Delta \; {\mathrm{U}}_6 ~=~ 0 \; \big ]$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{General Observations}}\addcontentsline{toc}{subsection}{7. General Observations}
+
+\par \bigskip \noindent All the equations of this paper can be applied in any inertial reference frame and also in any non-inertial reference frame.
+
+\par \bigskip \noindent Therefore, the new reformulation of classical mechanics presented in this paper is totally in accordance with the general principle of relativity.
+
+\par \bigskip \noindent Additionally, inertial reference frames and non-inertial reference frames must not introduce fictitious forces into ${\mathbf{F}}_i$ ( such as the centrifugal force, the Coriolis force, etc. )
+
+\par \bigskip \noindent In this paper, the magnitudes $[ \, {\mathit{m}},\spc {\mathbf{r}},\spc {\mathbf{v}},\spc {\mathbf{a}},\spc {\mathrm{M}},\spc {\mathbf{R}},\spc {\mathbf{V}}\hspace{-0.120em},\spc {\mathbf{A}},\spc {\mathbf{F}},\spc {\mathbf{P}}_1,\spc {\mathbf{L}}_1,\spc {\mathbf{L}}_2,\spc {\mathrm{W}}_1,\spc {\mathrm{K}}_1,\spc {\mathrm{U}}_1,\spc {\mathrm{E}}_1,\spc {\mathrm{L}}_1$, ${\mathrm{W}}_2,\spc {\mathrm{K}}_2,\spc {\mathrm{U}}_2,\spc {\mathrm{E}}_2,\spc {\mathrm{L}}_2,\spc {\mathrm{W}}_3,\spc {\mathrm{K}}_3,\spc {\mathrm{U}}_3,\spc {\mathrm{E}}_3,\spc {\mathrm{W}}_4,\spc {\mathrm{K}}_4,\spc {\mathrm{U}}_4,\spc {\mathrm{E}}_4,\spc {\mathrm{W}}_5,\spc {\mathrm{K}}_5,\spc {\mathrm{U}}_5,\spc {\mathrm{E}}_5,\spc {\mathrm{W}}_6,\spc {\mathrm{K}}_6,\spc {\mathrm{U}}_6$ and ${\mathrm{E}}_6 \, ]$ are invariant under transformations between inertial and non-inertial reference frames.
+
+\par \bigskip \noindent The mechanical energy ${\mathrm{E}}_3$ of a system of particles is always zero $[ \, {\mathrm{E}}_3 = {\mathrm{K}}_3 + {\mathrm{U}}_3 = 0 \, ]$
+
+\par \bigskip \noindent Therefore, the mechanical energy ${\mathrm{E}}_5$ of a system of particles is always equal to the mechanical energy ${\mathrm{E}}_1$ of the system of particles $[ \, {\mathrm{E}}_5 = {\mathrm{E}}_1 \, ]$
+
+\par \bigskip \noindent The mechanical energy ${\mathrm{E}}_4$ of a system of particles is always zero $[ \, {\mathrm{E}}_4 = {\mathrm{K}}_4 + {\mathrm{U}}_4 = 0 \, ]$
+
+\par \bigskip \noindent Therefore, the mechanical energy ${\mathrm{E}}_6$ of a system of particles is always equal to the mechanical energy ${\mathrm{E}}_2$ of the system of particles $[ \, {\mathrm{E}}_6 = {\mathrm{E}}_2 \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_1$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} \hbox {then the} potential energy ${\mathrm{U}}_3$ and the potential energy ${\mathrm{U}}_5$ of the system of particles are \hbox {given by}: $[ \, {\mathrm{U}}_3 = (\frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_1 \, ]$ and $[ \, {\mathrm{U}}_5 = ({\scriptstyle 1 +} \frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_1 \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_2$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} \hbox {then the} potential energy ${\mathrm{U}}_4$ and the potential energy ${\mathrm{U}}_6$ of the system of particles are \hbox {given by}: $[ \, {\mathrm{U}}_4 = (\frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_2 \, ]$ and $[ \, {\mathrm{U}}_6 = ({\scriptstyle 1 +} \frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_2 \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_1$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} and if the kinetic energy ${\mathrm{K}}_5$ of the system of particles is equal to zero, then we obtain: $[ \, {\mathrm{K}}_1 = - \, {\mathrm{K}}_3 = {\mathrm{U}}_3 = (\frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_1 = (\frac{{\mathit{k}}}{2 + {\mathit{k}}}) \, {\mathrm{E}}_1 \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_2$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} and if the kinetic energy ${\mathrm{K}}_6$ of the system of particles is equal to zero, then we obtain: $[ \, {\mathrm{K}}_2 = - \, {\mathrm{K}}_4 = {\mathrm{U}}_4 = (\frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_2 = (\frac{{\mathit{k}}}{2 + {\mathit{k}}}) \, {\mathrm{E}}_2 \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_1$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} \hbox {and if} the average kinetic energy $\langle {\mathrm{K}}_5 \rangle$ of the system of particles is equal to zero, then we obtain: $[ \, \langle {\mathrm{K}}_1 \rangle = - \, \langle {\mathrm{K}}_3 \rangle = \langle {\mathrm{U}}_3 \rangle = (\frac{{\mathit{k}}}{2}) \, \langle {\mathrm{U}}_1 \rangle = (\frac{{\mathit{k}}}{2 + {\mathit{k}}}) \, \langle {\mathrm{E}}_1 \rangle \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_2$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} \hbox {and if} the average kinetic energy $\langle {\mathrm{K}}_6 \rangle$ of the system of particles is equal to zero, then we obtain: $[ \, \langle {\mathrm{K}}_2 \rangle = - \, \langle {\mathrm{K}}_4 \rangle = \langle {\mathrm{U}}_4 \rangle = (\frac{{\mathit{k}}}{2}) \, \langle {\mathrm{U}}_2 \rangle = (\frac{{\mathit{k}}}{2 + {\mathit{k}}}) \, \langle {\mathrm{E}}_2 \rangle \, ]$
+
+\par \bigskip \noindent The average kinetic energy $\langle {\mathrm{K}}_5 \rangle$ and the average kinetic energy $\langle {\mathrm{K}}_6 \rangle$ of a system of particles with bounded motion are related to the virial theorem.
+
+\newpage
+
+\par \bigskip \noindent The average kinetic energy $\langle {\mathrm{K}}_5 \rangle$ and the average kinetic energy $\langle {\mathrm{K}}_6 \rangle$ of a system of particles with bounded motion ( in $\langle {\mathrm{K}}_5 \rangle$ relative to ${\vec{\mathit{R}}}$ \hspace{+0.090em}and\hspace{+0.090em} in $\langle {\mathrm{K}}_6 \rangle$ relative to ${\vec{\mathit{R}}}_{cm}$ ) are always zero.
+
+\par \bigskip \noindent The kinetic energy ${\mathrm{K}}_5$ and the kinetic energy ${\mathrm{K}}_6$ of a system of N particles can also \hbox {be expressed} as follows : $[ \; {\mathrm{K}}_5 = \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \, ( \, {\dot{\mathit{r}}}_{i} \, {\dot{\mathit{r}}}_{i} + {\ddot{\mathit{r}}}_{i} \, {\mathit{r}}_{i} \, ) \; ]$ where ${\mathit{r}}_{i} \doteq | \, {\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}} \, |$ and \hbox {$[ \; {\mathrm{K}}_6 = \sum_{i{\scriptscriptstyle <}j}^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} ( \, {\dot{\mathit{r}}}_{\hspace{+0.060em}ij} \, {\dot{\mathit{r}}}_{\hspace{+0.060em}ij} + {\ddot{\mathit{r}}}_{\hspace{+0.060em}ij} \, {\mathit{r}}_{\hspace{+0.060em}ij} \, ) \; ]$} where ${\mathit{r}}_{\hspace{+0.060em}ij} \,\doteq\, | \: {\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j} \: |$ \hfill {\tiny Note \hspace{-0.075em}1\hspace{-0.15em}} $\scriptstyle \big ( \sum_{i{\scriptscriptstyle <}j}^{\scriptscriptstyle{\mathrm{N}}} \doteq \sum_{i=1}^{\scriptscriptstyle{\mathrm{N}}} \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \big )$
+
+\par \bigskip \noindent The kinetic energy ${\mathrm{K}}_5$ and the kinetic energy ${\mathrm{K}}_6$ of a system of N particles can also \hbox {be expressed} as follows : $[ \; {\mathrm{K}}_5 = \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \, ( \, {\ddot{\tau}}_{\hspace{+0.045em}i} \, ) \; ]$ where ${\tau}_{i} \doteq \med \; ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \cdot ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}})$ and \hbox {$[ \; {\mathrm{K}}_6 = \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} ( \, {\ddot{\tau}}_{\hspace{+0.060em}ij} \, ) \; ]$} where ${\tau}_{\hspace{+0.060em}ij} \doteq \med \; ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \cdot ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j})$ \hfill {\tiny Note 2\hspace{-0.18em}} $\scriptstyle \big ( \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \doteq \sum_{i=1}^{\scriptscriptstyle{\mathrm{N}}} \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \big )$
+
+\par \bigskip \noindent The kinetic energy ${\mathrm{K}}_6$ is the only kinetic energy that can be expressed without the necessity of introducing any magnitude that is related to the free-system $[ \, $such as: ${\mathbf{r}},\, {\mathbf{v}},\, {\mathbf{a}},\, {\vec{\omega}},\, {\vec{\mathit{R}}}$, etc.$ \, ]$
+
+\par \bigskip \noindent In an isolated system of particles, the potential energy ${\mathrm{U}}_2$ is equal to the potential energy ${\mathrm{U}}_1$ if the internal forces obey Newton's third law in its weak form $[ \, {\mathrm{U}}_2 = {\mathrm{U}}_1 \, ]$
+
+\par \bigskip \noindent In an isolated system of particles, the potential energy ${\mathrm{U}}_4$ is equal to the potential energy ${\mathrm{U}}_3$ if the internal forces obey Newton's third law in its weak form $[ \, {\mathrm{U}}_4 = {\mathrm{U}}_3 \, ]$
+
+\par \bigskip \noindent In an isolated system of particles, the potential energy ${\mathrm{U}}_6$ is equal to the potential energy ${\mathrm{U}}_5$ if the internal forces obey Newton's third law in its weak form $[ \, {\mathrm{U}}_6 = {\mathrm{U}}_5 \, ]$
+
+\par \bigskip \noindent A reference frame S is a special non-rotating frame when the angular velocity ${\vec{\omega}}$ of the \hbox {free-system} relative to S is equal to zero, and the reference frame S is also an inertial frame when the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system relative to S is equal to zero.
+
+\par \bigskip \noindent If the origin of a special non-rotating frame S $[ \, {\vec{\omega}} = 0 \, ]$ always coincides with the center of mass of the free-system $[ \, {\vec{\mathit{R}}} = {\vec{\mathit{V}}} = {\vec{\mathit{A}}} = 0 \, ]$ then relative to S: $[ \, {\mathbf{r}}_i = {\vec{\mathit{r}}}_i$, ${\mathbf{v}}_i = {\vec{\mathit{v}}}_i$ and ${\mathbf{a}}_{\hspace{+0.045em}i} = {\vec{\mathit{a}}}_i \, ]$ Therefore, it is easy to see that inertial magnitudes and ordinary magnitudes are always \hbox {the same} in the reference frame S.
+
+\par \bigskip \noindent This paper does not contradict Newton's first and second laws since these two laws are valid in all inertial reference frames. The equation $[ \: {\mathbf{F}}_i \,=\, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i} \: ]$ is a simple reformulation of Newton's second law.
+
+\par \bigskip \noindent Finally, in this paper, the equation $[ \: {\mathbf{F}}_i = m_i \, {\mathbf{a}}_{\hspace{+0.045em}i} \: ]$ is valid in all reference frames (\hspace{+0.180em}inertial \hbox {or non-inertial\hspace{+0.180em})} even if all forces always disobey Newton's third law in its strong form and in its weak form.
+
+\vspace{-1.50em}
+
+\par \bigskip {\centering\subsection*{Bibliography}}\addcontentsline{toc}{subsection}{A. Bibliography}
+
+\par \bigskip \noindent \textbf{A. Blato}, A Reformulation of Classical Mechanics.
+
+\par \bigskip \noindent \textbf{A. Blatter}, A Reformulation of Classical Mechanics.
+
+\par \bigskip \noindent \textbf{A. Torassa}, A Reformulation of Classical Mechanics.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Annex I}}
+
+\par \medskip {\centering\subsubsection*{The Free-System}}\addcontentsline{toc}{subsection}{Annex I : The Free-System}\hypertarget{p3a1}{}
+
+\par \bigskip \noindent The free-system is a system of N particles that must always be free of internal and external forces, that must be three-dimensional, and that the relative distances between the N particles must be constant.
+
+\par \bigskip \noindent The position ${\vec{\mathit{R}}}$, the velocity ${\vec{\mathit{V}}}$ and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system relative to a reference frame S (and the angular velocity ${\vec{\omega}}$ and the angular acceleration ${\vec{\alpha}}$ \hbox {of the free-system} relative to the reference frame S) are given by:
+
+\par \bigskip\smallskip \hspace{-2.40em} \begin{tabular}{l}
+${\mathrm{M}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i$ \vspace{+1.20em} \\
+${\vec{\mathit{R}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{r}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{V}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{v}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{A}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{a}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\omega}} ~\doteq~ {\mathit{I}}^{\scriptscriptstyle -1}{\vphantom{\sum_1^2}}^{\hspace{-1.500em}\leftrightarrow}\hspace{+0.600em} \cdot {\vec{\mathit{L}}}$ \vspace{+1.20em} \\
+${\vec{\alpha}} ~\doteq~ d({\vec{\omega}})/dt$ \vspace{+1.20em} \\
+${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.210em} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, [ \, |\hspace{+0.090em}{\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}\,|^2 \hspace{+0.309em} {\mathrm{1}}{\vphantom{\sum_1^2}}^{\hspace{-0.639em}\leftrightarrow}\hspace{-0.129em} - ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \otimes ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, ]$ \vspace{+1.20em} \\
+${\vec{\mathit{L}}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \times ({\vec{\mathit{v}}_{i}} - \hspace{-0.120em}{\vec{\mathit{V}}})$
+\end{tabular}
+
+\par \bigskip \noindent where ${\mathrm{M}}$ is the mass of the free-system, ${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.300em}$ is the inertia tensor of the free-system (relative \hbox {to ${\vec{\mathit{R}}}$)} and ${\vec{\mathit{L}}}$ is the angular momentum of the free-system relative to the reference frame S.
+
+\vspace{+1.50em}
+
+\par {\centering\subsubsection*{The Transformations}}\addcontentsline{toc}{subsection}{Annex I : The Transformations}
+
+\par \bigskip \noindent The transformations of position, velocity and acceleration of a particle $i$ between a reference frame S and another reference frame S', are given by:
+
+\par \bigskip\medskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~=~ {\mathbf{r}}_i ~=~ {\mathbf{r}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~=~ {\mathbf{r}}_i\hspace{-0.300em}' ~=~ {\mathbf{r}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~=~ {\mathbf{v}}_i ~=~ {\mathbf{v}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') - {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~=~ {\mathbf{v}}_i\hspace{-0.300em}' ~=~ {\mathbf{v}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~=~ {\mathbf{a}}_{\hspace{+0.045em}i} ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i\hspace{-0.150em}' - {\vec{\mathit{A}}}\hspace{-0.045em}') - 2 \; {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') + {\vec{\omega}}\hspace{+0.060em}' \times [ \, {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') \, ] - {\vec{\alpha}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}' ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Annex II}}
+
+\par \medskip {\centering\subsubsection*{The Relations}}\addcontentsline{toc}{subsection}{Annex II : The Relations}\hypertarget{p3a2}{}
+
+\par \bigskip \noindent In a system of particles, these relations can be obtained ( The magnitudes ${\mathbf{R}}_{cm}$, ${\mathbf{V}}_{cm}$, ${\mathbf{A}}_{cm}$, ${\vec{\mathit{R}}}_{cm}$, ${\vec{\mathit{V}}}_{cm}$ and ${\vec{\mathit{A}}}_{cm}$ can be replaced by the magnitudes ${\mathbf{R}}$, ${\mathbf{V}}$, ${\mathbf{A}}$, ${\vec{\mathit{R}}}$, ${\vec{\mathit{V}}}$ and ${\vec{\mathit{A}}}$, or by the magnitudes ${\mathbf{r}}_j$, ${\mathbf{v}}_j$, ${\mathbf{a}}_j$, ${\vec{\mathit{r}}}_j$, ${\vec{\mathit{v}}}_j$ and ${\vec{\mathit{a}}}_j$,{\vphantom{\LARGE t}} respectively. On the other hand, $\: {\mathbf{R}} \:=\: {\mathbf{V}} \:=\: {\mathbf{A}} \:=\: 0 \;$)
+
+\par \bigskip\medskip \noindent ${\mathbf{r}}_i \,=\, ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \bigskip\smallskip \noindent ${\mathbf{R}}_{cm} \,=\, ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}})$
+
+\par \bigskip\smallskip \noindent $\longrightarrow \hspace{+0.90em} ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \,=\, ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})$
+
+\par \bigskip\smallskip \noindent ${\mathbf{v}}_i \,=\, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \bigskip\smallskip \noindent ${\mathbf{V}}_{cm} \,=\, ({\vec{\mathit{V}}}_{cm} - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}})$
+
+\par \bigskip\smallskip \noindent $\longrightarrow \hspace{+0.90em} ({\mathbf{v}}_i - {\mathbf{V}}_{cm}) \,=\, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})$
+
+\par \bigskip\smallskip \noindent $({\mathbf{v}}_i - {\mathbf{V}}_{cm}) \cdot ({\mathbf{v}}_i - {\mathbf{V}}_{cm}) \,=\, \big [ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) - 2 \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) + 2 \, ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) + \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm})^2 + \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ]^2$
+
+\par \bigskip\smallskip \noindent $({\mathbf{a}}_{\hspace{+0.045em}i} \,-\, {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_i \,-\, {\mathbf{R}}_{cm}) \;=\; \big \{ \, ({\vec{\mathit{a}}}_i \,-\, {\vec{\mathit{A}}}_{cm}) \;-\; 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i \,-\, \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \;+\; {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i \,-\, {\vec{\mathit{R}}}_{cm}) \, ] ~\,-$
+
+\par \bigskip\smallskip \noindent ${\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big \} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \,=\, ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) - \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) ~\,+$
+
+\par \bigskip\smallskip \noindent $\big \{ \, {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, ] \, \big \} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) - \big [ \, {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \,=\, ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) ~\,-$
+
+\par \bigskip\smallskip \noindent $\big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big \{ \, \big [ \, {\vec{\omega}} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \: {\vec{\omega}} - ( \, {\vec{\omega}} \cdot {\vec{\omega}} \, ) \: ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big \} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) - \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, {\vec{\omega}} \hspace{+0.120em}\cdot\hspace{+0.090em} ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ]^2 -\, ( \, {\vec{\omega}} \, )^2 \: ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})^2$
+
+\par \bigskip\smallskip \noindent $\longrightarrow \hspace{+0.90em} ({\mathbf{v}}_i - {\mathbf{V}}_{cm})^2 + ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \,=\, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm})^2 + ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Annex III}}
+
+\par \medskip {\centering\subsubsection*{The Magnitudes}}\addcontentsline{toc}{subsection}{Annex III : The Magnitudes}
+
+\par \bigskip \noindent The magnitudes ${\mathbf{L}}_2$, ${\mathrm{W}}_2$, ${\mathrm{K}}_2$, ${\mathrm{U}}_2$, ${\mathrm{W}}_4$, ${\mathrm{K}}_4$, ${\mathrm{U}}_4$, ${\mathrm{W}}_6$, ${\mathrm{K}}_6$ and ${\mathrm{U}}_6$ of a system of N particles can also be expressed as follows:
+
+\par \bigskip\bigskip \noindent ${\mathbf{L}}_2 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \times ({\mathbf{v}}_{i} - {\mathbf{v}}_{j}) \, \big ]$
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_2 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot d({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \, \big ]$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{K}}_2 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \, ({\mathbf{v}}_{i} - {\mathbf{v}}_{j})^2 ~=~ {\mathrm{W}}_2$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_2 ~=~ - \, \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot d({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \, \big ]$
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_4 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot ({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \, \big ]$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{K}}_4 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_{j}) \cdot ({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \, \big ] ~=~ {\mathrm{W}}_4$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_4 ~=~ - \, \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot ({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \, \big ]$
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_6 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) + \Delta \, \med \; ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) \, \big ]$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{K}}_6 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\vec{\mathit{v}}_{i}} - {\vec{\mathit{v}}_{j}})^2 + ({\vec{\mathit{a}}_{i}} - {\vec{\mathit{a}}_{j}}) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) \, \big ] ~=~ {\mathrm{W}}_6$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_6 ~=~ - \, \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) + \Delta \, \med \; ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) \, \big ]$
+
+\par \bigskip\bigskip \noindent The magnitudes ${\mathrm{W}}_{(1\;{\mathrm{to}}\;6)}$ and ${\mathrm{U}}_{(1\;{\mathrm{to}}\;6)}$ of an isolated system of N particles, whose internal forces obey Newton's third law in its weak form, can be reduced to:
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_1 ~=~ {\mathrm{W}}_2 ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\vec{\mathit{r}}_{i}}$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_1 ~=~ \Delta \, {\mathrm{U}}_2 ~=~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\vec{\mathit{r}}_{i}}$
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_3 ~=~ {\mathrm{W}}_4 ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot {\vec{\mathit{r}}_{i}}$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_3 ~=~ \Delta \, {\mathrm{U}}_4 ~=~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot {\vec{\mathit{r}}_{i}}$
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_5 ~=~ {\mathrm{W}}_6 ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\vec{\mathit{r}}_{i}} + \Delta \, \med \; {\mathbf{F}}_i \cdot {\vec{\mathit{r}}_{i}} \, \big ]$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_5 ~=~ \Delta \, {\mathrm{U}}_6 ~=~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\vec{\mathit{r}}_{i}} + \Delta \, \med \; {\mathbf{F}}_i \cdot {\vec{\mathit{r}}_{i}} \, \big ]$
+
+\newpage
+
+\enlargethispage{+1.2em}
+
+\setlength{\unitlength}{0.51pt}
+
+\par \bigskip {\centering\subsection*{Annex IV}}
+
+\par \medskip {\centering\subsubsection*{Frames and Forces}}\addcontentsline{toc}{subsection}{Annex IV : Frames and Forces}\hypertarget{p3a4}{}
+
+\par \medskip \noindent Diagram of net forces acting on a reference frame S, when the reference frame S is a linearly non-accelerated and non-rotating frame relative to an inertial frame {\small (\hspace{+0.12em}9 points\hspace{+0.12em})}
+
+\vspace{+1.50em}
+
+\begin{center}
+
+\begin{picture}(240,240)
+\put(120,120){\vector(0,+1){120}}
+\put(120,120){\vector(+1,0){120}}
+\put(120,120){\vector(0,-1){120}}
+\put(120,120){\vector(-1,0){120}}
+\put(120,120){\circle*{6}}
+\put(150,150){\circle*{6}}
+\put(195,195){\circle*{6}}
+\put(45,195){\circle*{6}}
+\put(90,150){\circle*{6}}
+\put(150,90){\circle*{6}}
+\put(195,45){\circle*{6}}
+\put(45,45){\circle*{6}}
+\put(90,90){\circle*{6}}
+\put(125,231){{$y$}}
+\put(231,126){{$x$}}
+\end{picture}
+
+\end{center}
+
+\par \smallskip \noindent Diagram of net forces acting on a reference frame S, when the reference frame S is a linearly accelerated and non-rotating frame relative to an inertial frame {\small (\hspace{+0.12em}9 points\hspace{+0.12em})}
+
+\vspace{+0.60em}
+
+\begin{center}
+
+\begin{picture}(240,240)
+\put(120,120){\vector(0,+1){120}}
+\put(120,120){\vector(+1,0){120}}
+\put(120,120){\vector(0,-1){120}}
+\put(120,120){\vector(-1,0){120}}
+\put(120,120){\vector(1,1){21}}
+\put(150,150){\vector(1,1){21}}
+\put(195,195){\vector(1,1){21}}
+\put(45,195){\vector(1,1){21}}
+\put(90,150){\vector(1,1){21}}
+\put(150,90){\vector(1,1){21}}
+\put(195,45){\vector(1,1){21}}
+\put(45,45){\vector(1,1){21}}
+\put(90,90){\vector(1,1){21}}
+\put(120,120){\circle*{6}}
+\put(150,150){\circle*{6}}
+\put(195,195){\circle*{6}}
+\put(45,195){\circle*{6}}
+\put(90,150){\circle*{6}}
+\put(150,90){\circle*{6}}
+\put(195,45){\circle*{6}}
+\put(45,45){\circle*{6}}
+\put(90,90){\circle*{6}}
+\put(125,231){{$y$}}
+\put(231,126){{$x$}}
+\end{picture}
+
+\end{center}
+
+\par \smallskip \noindent Diagram of net forces acting on a reference frame S, when the reference frame S is a linearly non-accelerated and rotating frame relative to an inertial frame {\small (\hspace{+0.12em}9 points\hspace{+0.12em})}
+
+\vspace{+0.60em}
+
+\begin{center}
+
+\begin{picture}(240,240)
+\put(120,120){\vector(0,+1){120}}
+\put(120,120){\vector(+1,0){120}}
+\put(120,120){\vector(0,-1){120}}
+\put(120,120){\vector(-1,0){120}}
+\put(150,150){\vector(-1,-1){21}}
+\put(195,195){\vector(-1,-1){36}}
+\put(45,195){\vector(1,-1){36}}
+\put(90,150){\vector(1,-1){21}}
+\put(150,90){\vector(-1,1){21}}
+\put(195,45){\vector(-1,1){36}}
+\put(45,45){\vector(1,1){36}}
+\put(90,90){\vector(1,1){21}}
+\put(120,120){\circle*{6}}
+\put(150,150){\circle*{6}}
+\put(195,195){\circle*{6}}
+\put(45,195){\circle*{6}}
+\put(90,150){\circle*{6}}
+\put(150,90){\circle*{6}}
+\put(195,45){\circle*{6}}
+\put(45,45){\circle*{6}}
+\put(90,90){\circle*{6}}
+\put(125,231){{$y$}}
+\put(231,126){{$x$}}
+\end{picture}
+
+\end{center}
+
+\setlength{\unitlength}{1pt}
+
+\newpage
+
+\setcounter{page}{1}
+
+\enlargethispage{+0.00em}
+
+\par  
+
+\vspace{-5.22em}
+
+\section*{}\addcontentsline{toc}{section}{Paper IV}
+
+\begin{center}
+
+{\LARGE A Reformulation of Classical Mechanics}
+
+\bigskip \medskip
+
+{\large Agustín A. Tobla}
+
+\bigskip \medskip
+
+\small
+
+Creative Commons Attribution 3.0 License
+
+\smallskip
+
+(2024) Buenos Aires, Argentina
+
+\medskip
+
+{\sc ( Paper IV )}
+
+\smallskip
+
+\bigskip
+
+\parbox{107.40mm}{In classical mechanics, a new reformulation is presented, which is \hbox {invariant} under transformations between inertial and non-inertial reference frames, which can be applied in any reference frame without introducing \hbox {fictitious} forces and which establishes the existence of new universal forces of \hbox {interaction,} called kinetic forces.}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.50em}
+
+\par \medskip {\centering\subsection*{Introduction}}\addcontentsline{toc}{subsection}{1. Introduction}
+
+\par \medskip \noindent The new reformulation in classical mechanics presented in this paper is obtained starting from an auxiliary system of particles ( called free-system ) that is used to obtain kinematic magnitudes ( for example,\, inertial position,\, inertial velocity,\, etc. \hspace{-0.129em}) that are invariant under transformations between inertial and non-inertial reference frames.
+
+\par \medskip \noindent The inertial position ${\mathbf{r}}_i$, the inertial velocity ${\mathbf{v}}_i$ and the inertial acceleration ${\mathbf{a}}_{\hspace{+0.045em}i}$ of a \hbox {particle $i$} relative to a reference frame S (\hspace{+0.120em}inertial or non-inertial\hspace{+0.120em}) are given by:
+
+\par \medskip\vspace{+0.06em} ${\mathbf{r}}_i \,\:\doteq\; (\hspace{+0.090em}{\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}\hspace{+0.090em}) \;=\; ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \medskip\vspace{+0.36em} ${\mathbf{v}}_i \;\doteq\; d\hspace{+0.090em}(\hspace{+0.090em}{\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}\hspace{+0.090em})\hspace{+0.045em}/dt \;=\; ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \medskip\vspace{+0.36em} ${\mathbf{a}}_{\hspace{+0.045em}i} \;\doteq\; d^2\hspace{+0.030em}(\hspace{+0.090em}{\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}\hspace{+0.090em})\hspace{+0.045em}/dt^2 \:=\; ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \medskip\vspace{+0.36em} \noindent where ${\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}$ is the position vector of particle $i$ relative to the auxiliary frame [\hspace{+0.120em}${\vec{\mathit{r}}}_i$ is the position vector of particle $i$, ${\vec{\mathit{R}}}$ is the position vector of the center of mass of the free-system, and ${\vec{\omega}}$ is the angular velocity vector of the free-system\hspace{+0.120em}] [\hspace{+0.120em}relative to the frame S\hspace{+0.120em}] \hyperlink{p4a1}{(\hspace{+0.120em}see {\small A}nnex {\small I}\hspace{+0.120em})}
+
+\par \medskip\vspace{+0.00em} \noindent The auxiliary frame is a reference frame fixed to the free-system (\hspace{+0.120em}${\vec{\omega}} = 0$\hspace{+0.120em}) whose origin always coincides with the center of mass of the free-system (\hspace{+0.033em}{\small ${\vec{\mathit{R}}} = {\vec{\mathit{V}}} = {\vec{\mathit{A}}} =$} $0$\hspace{+0.120em})
+
+\par \medskip \noindent Any reference frame S is an inertial frame when the angular velocity ${\vec{\omega}}$ of the free-system and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system are equal to zero \hbox {relative to S.}
+
+\par \medskip \noindent Note\hspace{+0.300em}:\hspace{+0.240em}\hbox{( $\forall \;\;\, {\mathbf{m}} \; \in$\hspace{+0.24em} Inertial Magnitudes \hspace{+0.45em}:\hspace{+0.45em} If \hspace{+0.42em}${\mathbf{m}} \,=\, {\vec{\mathit{n}}}$ \hspace{+0.63em}$\longrightarrow$\hspace{+0.63em} $d(\hspace{+0.090em}{\mathbf{m}}\hspace{+0.090em})/dt \,=\, d(\hspace{+0.090em}{\vec{\mathit{n}}}\hspace{+0.090em})/dt \,-\, {\vec{\omega}} \times {\vec{\mathit{n}}}$ )}
+
+\vspace{+0.90em}
+
+\par {\centering\subsection*{The New Dynamics}}\addcontentsline{toc}{subsection}{2. The New Dynamics}
+
+\par \medskip \noindent $[\,1\,]$ A force is always caused by the interaction between two or more particles.
+
+\par \medskip \noindent $[\,2\,]$ The total force ${\mathbf{T}}_i$ acting on a particle $i$ is always zero $[ \, {\mathbf{T}}_i \,=\, 0 \, ]$
+
+\par \medskip \noindent $[\,3\,]$ In this paper, we assume that all dynamic forces ( all non-kinetic forces ) can obey or disobey Newton's third law in its weak form or in its strong form.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{The Kinetic Forces}}\addcontentsline{toc}{subsection}{3. The Kinetic Forces}
+
+\par \bigskip \noindent The kinetic force ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij}$ exerted on a particle $i$ of mass $m_i$ by another particle $j$ of mass $m_j$, caused by the interaction between particle $i$ and particle $j$, is given by:
+
+\par \bigskip ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij} ~=~ - \; \dfrac{m_i \, m_j}{\mathit{M}} \, (\hspace{+0.045em}{\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_{j})$
+
+\par \bigskip \noindent where ${\mathbf{a}}_{\hspace{+0.045em}i}$ is the inertial acceleration of particle $i$, ${\mathbf{a}}_{j}$ is the inertial acceleration of particle $j$, and ${\mathit{M}}$ {\small \hspace{-0.120em}(\hspace{+0.120em}$ = \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i$\hspace{+0.120em})} is the mass of the Universe.
+
+\par \bigskip \noindent The kinetic force ${\mathbf{K}}^{u}_{i}$ exerted on a particle $i$ of mass $m_i$ by the center of mass of the Universe, caused by the interaction between particle $i$ and the Universe, is given by:
+
+\par \bigskip ${\mathbf{K}}^{u}_{i} ~=~ - \; m_i \, {\mathbf{A}}_{cm}$
+
+\par \bigskip \noindent where ${\mathbf{A}}_{cm}$ {\small \hspace{-0.120em}(\hspace{+0.120em}$ = \hspace{-0.003em}{\mathit{M}}^{\scriptscriptstyle -1} \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$\hspace{+0.120em})} is the inertial acceleration of the center of mass of the \hbox {Universe.}
+
+\par \bigskip \noindent From the above equations it follows that the net kinetic force ${\mathbf{K}}_{i}$ {\small \hbox {(\hspace{+0.120em}$ = \sum_{j}^{\scriptscriptstyle{\mathit{All}}} \, {\mathbf{K}}^{a}_{\hspace{+0.060em}ij} + {\mathbf{K}}^{u}_{i}$\hspace{+0.120em})}} acting on a particle $i$ of mass $m_i$ is given by:
+
+\par \bigskip ${\mathbf{K}}_{i} ~=~ - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip \noindent where ${\mathbf{a}}_{\hspace{+0.045em}i}$ is the inertial acceleration of particle $i$.
+
+\par \bigskip \noindent If all dynamic forces always obey Newton's third law in its weak form then the inertial acceleration of the center of mass of the Universe ${\mathbf{A}}_{cm}$ is always zero.
+
+\par \bigskip \noindent On the other hand, the kinetic force ${\mathbf{K}}^{a}$ always obey Newton's third law in its weak form or in its strong form.
+
+\vspace{+0.66em}
+
+\par {\centering\subsection*{The [$\,$2$\,$] Principle}}\addcontentsline{toc}{subsection}{4. The Second Principle}
+
+\par \bigskip \noindent The second principle of the new dynamics establishes that the total force ${\mathbf{T}}_i$ acting on a \hbox {particle $i$} is always zero.
+
+\par \bigskip ${\mathbf{T}}_i ~=~ 0$
+
+\par \bigskip \noindent If the total force ${\mathbf{T}}_i$ is divided into the following two parts: the net kinetic force ${\mathbf{K}}_{i}$ and the net dynamic force ${\mathbf{F}}_{i}$ (\hspace{+0.180em}$\sum$ of gravitational forces, electrostatic forces, etc.\hspace{+0.180em}) then we \hbox{have\hspace{+0.060em}:}
+
+\par \bigskip ${\mathbf{K}}_{i} + {\mathbf{F}}_{i} ~=~ 0$
+
+\par \bigskip \noindent Now, substituting ${\mathbf{K}}_{i}$ {\normalsize \hspace{-0.120em}(\hspace{+0.120em}$ = - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$\hspace{+0.120em})} and rearranging, we finally obtain:
+
+\par \bigskip ${\mathbf{F}}_{i} ~=~ m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip \noindent This equation (\hspace{+0.180em}similar to Newton's second law\hspace{+0.180em}) will be used throughout this paper.
+
+\par \bigskip \noindent On the other hand, in this paper a system of particles is isolated when the system is free of external dynamic forces.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{The Equation of Motion}}\addcontentsline{toc}{subsection}{5. The Equation of Motion}
+
+\par \bigskip \noindent The net dynamic force ${\mathbf{F}}_i$ acting on a particle $i$ of mass $m_i$ is related to the inertial \hbox {acceleration} ${\mathbf{a}}_{\hspace{+0.045em}i}$ of particle $i$ according to the following equation:
+
+\par \bigskip\smallskip ${\mathbf{F}}_i \,=\, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip\smallskip \noindent From the above equation it follows that the (\hspace{+0.120em}ordinary\hspace{+0.120em}) acceleration ${\vec{\mathit{a}}}_{i}$ of particle $i$ relative to a reference frame S (\hspace{+0.120em}inertial or non-inertial\hspace{+0.120em}) is given by:
+
+\par \bigskip\smallskip ${\vec{\mathit{a}}}_{i} \;=\: {\mathbf{F}}_{\hspace{-0.09em}i}/m_i + {\vec{\mathit{A}}} \hspace{+0.15em} + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}})$
+
+\par \bigskip\smallskip \noindent where ${\vec{\mathit{r}}}_i$ is the position vector of particle $i$, ${\vec{\mathit{R}}}$ is the position vector of the center of mass of the free-system, and ${\vec{\omega}}$ is the angular velocity vector of the free-system \hyperlink{p4a1}{(\hspace{+0.120em}see {\small A}nnex {\small I}\hspace{+0.120em})}
+
+\par \bigskip \noindent From the above equation it follows that particle $i$ can have a non-zero acceleration even if there is no dynamic force acting on particle $i$, and also that particle $i$ can have zero acceleration \hbox {(\hspace{+0.120em}state of} rest or of uniform linear motion\hspace{+0.120em}) even if there is an unbalanced net dynamic force acting \hbox {on particle $i$.}
+
+\par \bigskip \noindent However, from the above equation it also follows that Newton's first and second laws are valid in any inertial reference frame, since the angular velocity ${\vec{\omega}}$ of the free-system and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system are equal to zero relative to any inertial reference frame.
+
+\par \bigskip \noindent In this paper, any reference frame S is an inertial frame when the angular velocity ${\vec{\omega}}$ of the free-system and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system are equal to zero relative to the frame S. Therefore, any reference frame S is a non-inertial frame when the angular velocity ${\vec{\omega}}$ of the free-system or the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system are not equal to zero relative to the frame S.
+
+\par \bigskip \noindent However, since in classical mechanics any reference frame is actually an ideal rigid body then any reference frame S is an inertial frame when the net dynamic force acting at each point of the frame S is equal to zero. Therefore, any reference frame S is a non-inertial frame when the net dynamic force acting at each point of the frame S is not equal to \hbox {zero \hyperlink{p4a4}{(\hspace{+0.120em}see {\small A}nnex {\small IV}\hspace{+0.120em})}}
+
+\par \bigskip \noindent On the other hand, the new reformulation of classical mechanics presented in this paper is observationally equivalent to Newtonian mechanics.
+
+\par \bigskip \noindent However, non-inertial observers can use Newtonian mechanics only if they introduce fictitious forces into ${\mathbf{F}}_{\hspace{-0.09em}i}$ (\hspace{+0.120em}such as the centrifugal force, the Coriolis force, etc.\hspace{+0.120em})
+
+\par \bigskip \noindent Additionally, the new reformulation of classical mechanics presented in this paper is also a relational reformulation of classical mechanics since it is obtained starting from relative magnitudes (\hspace{+0.120em}position, velocity and acceleration\hspace{+0.120em}) between particles.
+
+\par \bigskip \noindent However, as already stated above, the new reformulation of classical mechanics presented in this paper is observationally equivalent to Newtonian mechanics.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{The Definitions}}\addcontentsline{toc}{subsection}{6. The Definitions}
+
+\par \bigskip \noindent For a system of N particles, the following definitions are applicable:
+
+\par \bigskip\bigskip \hspace{-2.40em} \begin{tabular}{lll}
+Mass & \hspace{+0.00em} & ${\mathrm{M}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i$ \vspace{+0.99em} \\
+\\
+Position {\small CM} 1 & \hspace{+0.00em} & ${\vec{\mathit{R}}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{r}}_{i}}$ \vspace{+0.99em} \\
+Velocity {\small CM} 1 & \hspace{+0.00em} & ${\vec{\mathit{V}}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{v}}_{i}}$ \vspace{+0.99em} \\
+Acceleration {\small CM} 1 & \hspace{+0.00em} & ${\vec{\mathit{A}}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{a}}_{i}}$ \vspace{+0.99em} \\
+\\
+Position {\small CM} 2 & \hspace{+0.00em} & ${\mathbf{R}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\mathbf{r}}_{i}$ \vspace{+0.99em} \\
+Velocity {\small CM} 2 & \hspace{+0.00em} & ${\mathbf{V}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\mathbf{v}}_{i}$ \vspace{+0.99em} \\
+Acceleration {\small CM} 2 & \hspace{+0.00em} & ${\mathbf{A}}_{cm} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$ \vspace{+0.99em} \\
+\\
+Linear Momentum 1 & \hspace{+0.00em} & ${\mathbf{P}}_1 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\mathbf{v}}_{i}$ \vspace{+0.99em} \\
+Angular Momentum 1 & \hspace{+0.00em} & ${\mathbf{L}}_1 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, \big [ \, {\mathbf{r}}_{i} \times {\mathbf{v}}_{i} \, \big ]$ \vspace{+0.99em} \\
+Angular Momentum 2 & \hspace{+0.00em} & ${\mathbf{L}}_2 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, \big [ \, ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \times ({\mathbf{v}}_{i} - {\mathbf{V}}_{cm}) \, \big ]$ \vspace{+0.99em} \\
+\\
+Work 1 & \hspace{+0.00em} & ${\mathrm{W}}_1 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\mathbf{r}}_{i} \,=\, \Delta \, {\mathrm{K}}_1$ \vspace{+0.99em} \\
+Kinetic Energy 1 & \hspace{+0.00em} & $\Delta \, {\mathrm{K}}_1 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, ({\mathbf{v}}_{i})^2$ \vspace{+0.99em} \\
+Potential Energy 1 & \hspace{+0.00em} & $\Delta \, {\mathrm{U}}_1 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\mathbf{r}}_{i}$ \vspace{+0.99em} \\
+Mechanical Energy 1 & \hspace{+0.00em} & ${\mathrm{E}}_1 ~\doteq~ {\mathrm{K}}_1 + {\mathrm{U}}_1$ \vspace{+0.99em} \\
+Lagrangian 1 & \hspace{+0.00em} & ${\mathrm{L}}_1 ~\doteq~ {\mathrm{K}}_1 - {\mathrm{U}}_1$ \vspace{+0.99em} \\
+\\
+Work 2 & \hspace{+0.00em} & ${\mathrm{W}}_2 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \,=\, \Delta \, {\mathrm{K}}_2$ \vspace{+0.99em} \\
+Kinetic Energy 2 & \hspace{+0.00em} & $\Delta \, {\mathrm{K}}_2 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, ({\mathbf{v}}_{i} - {\mathbf{V}}_{cm})^2$ \vspace{+0.99em} \\
+Potential Energy 2 & \hspace{+0.00em} & $\Delta \, {\mathrm{U}}_2 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\mathbf{r}}_{i} - {\mathbf{R}}_{cm})$ \vspace{+0.99em} \\
+Mechanical Energy 2 & \hspace{+0.00em} & ${\mathrm{E}}_2 ~\doteq~ {\mathrm{K}}_2 + {\mathrm{U}}_2$ \vspace{+0.99em} \\
+Lagrangian 2 & \hspace{+0.00em} & ${\mathrm{L}}_2 ~\doteq~ {\mathrm{K}}_2 - {\mathrm{U}}_2$
+\end{tabular}
+
+\newpage
+
+\par \bigskip\bigskip \hspace{-2.40em} \begin{tabular}{lll}
+Work 3 & \hspace{+0.33em} & ${\mathrm{W}}_3 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot {\mathbf{r}}_{i} \,=\, \Delta \, {\mathrm{K}}_3$ \vspace{+0.99em} \\
+Kinetic Energy 3 & \hspace{+0.33em} & $\Delta \, {\mathrm{K}}_3 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \: {\mathbf{a}}_{\hspace{+0.045em}i} \cdot {\mathbf{r}}_{i}$ \vspace{+0.99em} \\
+Potential Energy 3 & \hspace{+0.33em} & $\Delta \, {\mathrm{U}}_3 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot {\mathbf{r}}_{i}$ \vspace{+0.99em} \\
+Mechanical Energy 3 & \hspace{+0.33em} & ${\mathrm{E}}_3 ~\doteq~ {\mathrm{K}}_3 + {\mathrm{U}}_3$ \vspace{+0.99em} \\
+\\
+Work 4 & \hspace{+0.33em} & ${\mathrm{W}}_4 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \,=\, \Delta \, {\mathrm{K}}_4$ \vspace{+0.99em} \\
+Kinetic Energy 4 & \hspace{+0.33em} & $\Delta \, {\mathrm{K}}_4 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, \big [ \, ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \, \big ]$ \vspace{+0.99em} \\
+Potential Energy 4 & \hspace{+0.33em} & $\Delta \, {\mathrm{U}}_4 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm})$ \vspace{+0.99em} \\
+Mechanical Energy 4 & \hspace{+0.33em} & ${\mathrm{E}}_4 ~\doteq~ {\mathrm{K}}_4 + {\mathrm{U}}_4$ \vspace{+0.99em} \\
+\\
+Work 5 & \hspace{+0.33em} & ${\mathrm{W}}_5 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, \big ] \,=\, \Delta \, {\mathrm{K}}_5$ \vspace{+0.99em} \\
+Kinetic Energy 5 & \hspace{+0.33em} & $\Delta \, {\mathrm{K}}_5 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, \big [ \, ({\vec{\mathit{v}}_{i}} - {\vec{\mathit{V}}})^2 + ({\vec{\mathit{a}}_{i}} - {\vec{\mathit{A}}}) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, \big ]$ \vspace{+0.99em} \\
+Potential Energy 5 & \hspace{+0.33em} & $\Delta \, {\mathrm{U}}_5 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, \big ]$ \vspace{+0.99em} \\
+Mechanical Energy 5 & \hspace{+0.33em} & ${\mathrm{E}}_5 ~\doteq~ {\mathrm{K}}_5 + {\mathrm{U}}_5$ \vspace{+0.99em} \\
+\\
+Work 6 & \hspace{+0.33em} & ${\mathrm{W}}_6 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=\, \Delta \, {\mathrm{K}}_6$ \vspace{+0.99em} \\
+Kinetic Energy 6 & \hspace{+0.33em} & $\Delta \, {\mathrm{K}}_6 ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; m_i \, \big [ \, ({\vec{\mathit{v}}_{i}} - {\vec{\mathit{V}}}_{cm})^2 + ({\vec{\mathit{a}}_{i}} - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) \, \big ]$ \vspace{+0.99em} \\
+Potential Energy 6 & \hspace{+0.33em} & $\Delta \, {\mathrm{U}}_6 ~\doteq~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) + \Delta \, \med \; {\mathbf{F}}_i \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}_{cm}) \, \big ]$ \vspace{+0.99em} \\
+Mechanical Energy 6 & \hspace{+0.33em} & ${\mathrm{E}}_6 ~\doteq~ {\mathrm{K}}_6 + {\mathrm{U}}_6$
+\end{tabular}
+
+\vspace{+0.60em}
+
+\par {\centering\subsection*{The Relations}}\addcontentsline{toc}{subsection}{7. The Relations}
+
+\par \bigskip\smallskip \noindent From the above definitions, the following relations can be obtained \hyperlink{p4a2}{(\hspace{+0.120em}see {\small A}nnex {\small II}\hspace{+0.120em})}
+
+\vspace{+1.80em}
+
+\par \noindent ${\mathrm{K}}_1 ~=~ {\mathrm{K}}_2 + \med \; {\mathrm{M}} \: {\mathbf{V}}_{cm}^{\hspace{+0.045em}2}$
+\vspace{+0.99em}
+\par \noindent ${\mathrm{K}}_3 ~=~ {\mathrm{K}}_4 + \med \; {\mathrm{M}} \: {\mathbf{A}}_{cm} \cdot {\mathbf{R}}_{cm}$
+\vspace{+0.99em}
+\par \noindent ${\mathrm{K}}_5 ~=~ {\mathrm{K}}_6 + \med \; {\mathrm{M}} \: \big [ \, ({\vec{\mathit{V}}}_{cm} - \hspace{-0.120em}{\vec{\mathit{V}}})^2 + ({\vec{\mathit{A}}}_{cm} - {\vec{\mathit{A}}}) \cdot ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}}) \, \big ]$
+\vspace{+0.99em}
+\par \noindent ${\mathrm{K}}_5 ~=~ {\mathrm{K}}_1 + {\mathrm{K}}_3$ $\hspace{+0.540em} \& \hspace{+0.540em}$ ${\mathrm{U}}_5 ~=~ {\mathrm{U}}_1 \hspace{+0.027em}+\hspace{+0.027em} {\mathrm{U}}_3$ $\hspace{+0.630em} \& \hspace{+0.630em}$ ${\mathrm{E}}_5 ~=~ {\mathrm{E}}_1 + {\mathrm{E}}_3$
+\vspace{+0.99em}
+\par \noindent ${\mathrm{K}}_6 ~=~ {\mathrm{K}}_2 + {\mathrm{K}}_4$ $\hspace{+0.540em} \& \hspace{+0.540em}$ ${\mathrm{U}}_6 ~=~ {\mathrm{U}}_2 \hspace{+0.027em}+\hspace{+0.027em} {\mathrm{U}}_4$ $\hspace{+0.630em} \& \hspace{+0.630em}$ ${\mathrm{E}}_6 ~=~ {\mathrm{E}}_2 + {\mathrm{E}}_4$
+
+\newpage
+
+\par {\centering\subsection*{The Conservation Laws}}\addcontentsline{toc}{subsection}{8. The Conservation Laws}
+
+\par \bigskip\smallskip \noindent The linear momentum $[ \, {\mathbf{P}}_1 \, ]$ of an isolated system of N particles remains constant if the internal dynamic forces obey Newton's third law in its weak form.
+
+\par \bigskip\medskip ${\mathbf{P}}_1 ~=~ {\mathrm{constant}} \hspace{+2.88em} \big [ \; d({\mathbf{P}}_1)/dt ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i} ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, {\mathbf{F}}_i ~=~ 0 \; \big ]$
+
+\par \bigskip\medskip \noindent The angular momentum $[ \, {\mathbf{L}}_1 \, ]$ of an isolated system of N particles remains constant if the internal dynamic forces obey Newton's third law in its strong form.
+
+\par \bigskip\medskip ${\mathbf{L}}_1 ~=~ {\mathrm{constant}} \hspace{+2.97em} \big [ \; d({\mathbf{L}}_1)/dt ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, \big [ \, {\mathbf{r}}_i \times {\mathbf{a}}_{\hspace{+0.045em}i} \, \big ]~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, {\mathbf{r}}_i \times {\mathbf{F}}_i ~=~ 0 \; \big ]$
+
+\par \bigskip\medskip \noindent The angular momentum $[ \, {\mathbf{L}}_2 \, ]$ of an isolated system of N particles remains constant if the internal dynamic forces obey Newton's third law in its strong form.
+
+\par \bigskip\medskip ${\mathbf{L}}_2 ~=~ {\mathrm{constant}} \hspace{+2.97em} \big [ \; d({\mathbf{L}}_2)/dt ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, \big [ \, ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \times ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{A}}_{cm}) \, \big ] ~=~$
+
+\par \bigskip $\hspace{+10.44em} \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, \big [ \, ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \times {\mathbf{a}}_{\hspace{+0.045em}i} \, \big ] ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \times {\mathbf{F}}_i ~=~ 0 \; \big ]$
+
+\par \bigskip\medskip \noindent The mechanical energy $[ \, {\mathrm{E}}_1 \, ]$ and the mechanical energy $[ \, {\mathrm{E}}_2 \, ]$ of a system of N particles remain constant if the system is only subject to kinetic forces and to conservative \hbox {dynamic forces.}
+
+\par \bigskip\medskip ${\mathrm{E}}_1 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; \Delta \; {\mathrm{E}}_1 ~=~ \Delta \; {\mathrm{K}}_1 + \Delta \; {\mathrm{U}}_1 ~=~ 0 \; \big ]$
+
+\par \bigskip ${\mathrm{E}}_2 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; \Delta \; {\mathrm{E}}_2 ~=~ \Delta \; {\mathrm{K}}_2 + \Delta \; {\mathrm{U}}_2 ~=~ 0 \; \big ]$
+
+\par \bigskip\medskip \noindent The mechanical energy $[ \, {\mathrm{E}}_3 \, ]$ and the mechanical energy $[ \, {\mathrm{E}}_4 \, ]$ of a system of N particles are always zero (\hspace{+0.180em}and therefore they always remain constant\hspace{+0.180em})
+
+\par \bigskip\medskip ${\mathrm{E}}_3 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; {\mathrm{E}}_3 ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; \big [ \, m_i \: {\mathbf{a}}_{\hspace{+0.045em}i} \cdot {\mathbf{r}}_{i} - {\mathbf{F}}_i \cdot {\mathbf{r}}_{i} \, \big ] ~=~ 0 \; \big ]$
+
+\par \bigskip ${\mathrm{E}}_4 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; {\mathrm{E}}_4 ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; \big [ \, m_i \: {\mathbf{a}}_{\hspace{+0.045em}i} \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) - {\mathbf{F}}_i \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \, \big ] ~=~ 0 \; \big ]$
+
+\par \bigskip $\hspace{+10.44em} \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \, \big [ \, ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm}) \, \big ] \,=\, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \: {\mathbf{a}}_{\hspace{+0.045em}i} \cdot ({\mathbf{r}}_{i} - {\mathbf{R}}_{cm})$
+
+\par \bigskip\medskip \noindent The mechanical energy $[ \, {\mathrm{E}}_5 \, ]$ and the mechanical energy $[ \, {\mathrm{E}}_6 \, ]$ of a system of N particles remain constant if the system is only subject to kinetic forces and to conservative \hbox {dynamic forces.}
+
+\par \bigskip\medskip ${\mathrm{E}}_5 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; \Delta \; {\mathrm{E}}_5 ~=~ \Delta \; {\mathrm{K}}_5 + \Delta \; {\mathrm{U}}_5 ~=~ 0 \; \big ]$
+
+\par \bigskip ${\mathrm{E}}_6 ~=~ {\mathrm{constant}} \hspace{+3.00em} \big [ \; \Delta \; {\mathrm{E}}_6 ~=~ \Delta \; {\mathrm{K}}_6 + \Delta \; {\mathrm{U}}_6 ~=~ 0 \; \big ]$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{General Observations}}\addcontentsline{toc}{subsection}{9. General Observations}
+
+\par \bigskip \noindent All the equations of this paper can be applied in any inertial reference frame and also in any non-inertial reference frame.
+
+\par \bigskip \noindent Therefore, the new reformulation of classical mechanics presented in this paper is totally in accordance with the general principle of relativity.
+
+\par \bigskip \noindent Additionally, inertial reference frames and non-inertial reference frames must not introduce fictitious forces into ${\mathbf{F}}_i$ ( such as the centrifugal force, the Coriolis force, etc. )
+
+\par \bigskip \noindent In this paper, the magnitudes $[ \, {\mathit{m}},\spb {\mathbf{r}},\spb {\mathbf{v}},\spb {\mathbf{a}},\spb {\mathrm{M}},\spb {\mathbf{R}},\spb {\mathbf{V}}\hspace{-0.120em},\spb {\mathbf{A}},\spb {\mathbf{T}},\spb {\mathbf{K}},\spb {\mathbf{F}},\spb {\mathbf{P}}_1,\spb {\mathbf{L}}_1,\spb {\mathbf{L}}_2,\spb {\mathrm{W}}_1,\spb {\mathrm{K}}_1,\spb {\mathrm{U}}_1,\spb {\mathrm{E}}_1,\spb {\mathrm{L}}_1$ ${\mathrm{W}}_2,\spc {\mathrm{K}}_2,\spc {\mathrm{U}}_2,\spc {\mathrm{E}}_2,\spc {\mathrm{L}}_2,\spc {\mathrm{W}}_3,\spc {\mathrm{K}}_3,\spc {\mathrm{U}}_3,\spc {\mathrm{E}}_3,\spc {\mathrm{W}}_4,\spc {\mathrm{K}}_4,\spc {\mathrm{U}}_4,\spc {\mathrm{E}}_4,\spc {\mathrm{W}}_5,\spc {\mathrm{K}}_5,\spc {\mathrm{U}}_5,\spc {\mathrm{E}}_5,\spc {\mathrm{W}}_6,\spc {\mathrm{K}}_6,\spc {\mathrm{U}}_6$ and ${\mathrm{E}}_6 \, ]$ are invariant under transformations between inertial and non-inertial reference frames.
+
+\par \bigskip \noindent The mechanical energy ${\mathrm{E}}_3$ of a system of particles is always zero $[ \, {\mathrm{E}}_3 = {\mathrm{K}}_3 + {\mathrm{U}}_3 = 0 \, ]$
+
+\par \bigskip \noindent Therefore, the mechanical energy ${\mathrm{E}}_5$ of a system of particles is always equal to the mechanical energy ${\mathrm{E}}_1$ of the system of particles $[ \, {\mathrm{E}}_5 = {\mathrm{E}}_1 \, ]$
+
+\par \bigskip \noindent The mechanical energy ${\mathrm{E}}_4$ of a system of particles is always zero $[ \, {\mathrm{E}}_4 = {\mathrm{K}}_4 + {\mathrm{U}}_4 = 0 \, ]$
+
+\par \bigskip \noindent Therefore, the mechanical energy ${\mathrm{E}}_6$ of a system of particles is always equal to the mechanical energy ${\mathrm{E}}_2$ of the system of particles $[ \, {\mathrm{E}}_6 = {\mathrm{E}}_2 \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_1$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} \hbox {then the} potential energy ${\mathrm{U}}_3$ and the potential energy ${\mathrm{U}}_5$ of the system of particles are \hbox {given by}: $[ \, {\mathrm{U}}_3 = (\frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_1 \, ]$ and $[ \, {\mathrm{U}}_5 = ({\scriptstyle 1 +} \frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_1 \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_2$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} \hbox {then the} potential energy ${\mathrm{U}}_4$ and the potential energy ${\mathrm{U}}_6$ of the system of particles are \hbox {given by}: $[ \, {\mathrm{U}}_4 = (\frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_2 \, ]$ and $[ \, {\mathrm{U}}_6 = ({\scriptstyle 1 +} \frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_2 \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_1$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} and if the kinetic energy ${\mathrm{K}}_5$ of the system of particles is equal to zero, then we obtain: $[ \, {\mathrm{K}}_1 = - \, {\mathrm{K}}_3 = {\mathrm{U}}_3 = (\frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_1 = (\frac{{\mathit{k}}}{2 + {\mathit{k}}}) \, {\mathrm{E}}_1 \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_2$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} and if the kinetic energy ${\mathrm{K}}_6$ of the system of particles is equal to zero, then we obtain: $[ \, {\mathrm{K}}_2 = - \, {\mathrm{K}}_4 = {\mathrm{U}}_4 = (\frac{{\mathit{k}}}{2}) \, {\mathrm{U}}_2 = (\frac{{\mathit{k}}}{2 + {\mathit{k}}}) \, {\mathrm{E}}_2 \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_1$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} \hbox {and if} the average kinetic energy $\langle {\mathrm{K}}_5 \rangle$ of the system of particles is equal to zero, then we obtain: $[ \, \langle {\mathrm{K}}_1 \rangle = - \, \langle {\mathrm{K}}_3 \rangle = \langle {\mathrm{U}}_3 \rangle = (\frac{{\mathit{k}}}{2}) \, \langle {\mathrm{U}}_1 \rangle = (\frac{{\mathit{k}}}{2 + {\mathit{k}}}) \, \langle {\mathrm{E}}_1 \rangle \, ]$
+
+\par \bigskip \noindent If the potential energy ${\mathrm{U}}_2$ of a system of particles is a homogeneous function of \hbox {degree ${\mathit{k}}$} \hbox {and if} the average kinetic energy $\langle {\mathrm{K}}_6 \rangle$ of the system of particles is equal to zero, then we obtain: $[ \, \langle {\mathrm{K}}_2 \rangle = - \, \langle {\mathrm{K}}_4 \rangle = \langle {\mathrm{U}}_4 \rangle = (\frac{{\mathit{k}}}{2}) \, \langle {\mathrm{U}}_2 \rangle = (\frac{{\mathit{k}}}{2 + {\mathit{k}}}) \, \langle {\mathrm{E}}_2 \rangle \, ]$
+
+\par \bigskip \noindent The average kinetic energy $\langle {\mathrm{K}}_5 \rangle$ and the average kinetic energy $\langle {\mathrm{K}}_6 \rangle$ of a system of particles with bounded motion are related to the virial theorem.
+
+\newpage
+
+\par \bigskip \noindent The average kinetic energy $\langle {\mathrm{K}}_5 \rangle$ and the average kinetic energy $\langle {\mathrm{K}}_6 \rangle$ of a system of particles with bounded motion ( in $\langle {\mathrm{K}}_5 \rangle$ relative to ${\vec{\mathit{R}}}$ \hspace{+0.090em}and\hspace{+0.090em} in $\langle {\mathrm{K}}_6 \rangle$ relative to ${\vec{\mathit{R}}}_{cm}$ ) are always zero.
+
+\par \bigskip \noindent The kinetic energy ${\mathrm{K}}_5$ and the kinetic energy ${\mathrm{K}}_6$ of a system of N particles can also \hbox {be expressed} as follows : $[ \; {\mathrm{K}}_5 = \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \, ( \, {\dot{\mathit{r}}}_{i} \, {\dot{\mathit{r}}}_{i} + {\ddot{\mathit{r}}}_{i} \, {\mathit{r}}_{i} \, ) \; ]$ where ${\mathit{r}}_{i} \doteq | \, {\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}} \, |$ and \hbox {$[ \; {\mathrm{K}}_6 = \sum_{i{\scriptscriptstyle <}j}^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} ( \, {\dot{\mathit{r}}}_{\hspace{+0.060em}ij} \, {\dot{\mathit{r}}}_{\hspace{+0.060em}ij} + {\ddot{\mathit{r}}}_{\hspace{+0.060em}ij} \, {\mathit{r}}_{\hspace{+0.060em}ij} \, ) \; ]$} where ${\mathit{r}}_{\hspace{+0.060em}ij} \,\doteq\, | \: {\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j} \: |$ \hfill {\tiny Note \hspace{-0.075em}1\hspace{-0.15em}} $\scriptstyle \big ( \sum_{i{\scriptscriptstyle <}j}^{\scriptscriptstyle{\mathrm{N}}} \doteq \sum_{i=1}^{\scriptscriptstyle{\mathrm{N}}} \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \big )$
+
+\par \bigskip \noindent The kinetic energy ${\mathrm{K}}_5$ and the kinetic energy ${\mathrm{K}}_6$ of a system of N particles can also \hbox {be expressed} as follows : $[ \; {\mathrm{K}}_5 = \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \, ( \, {\ddot{\tau}}_{\hspace{+0.045em}i} \, ) \; ]$ where ${\tau}_{i} \doteq \med \; ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \cdot ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}})$ and \hbox {$[ \; {\mathrm{K}}_6 = \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} ( \, {\ddot{\tau}}_{\hspace{+0.060em}ij} \, ) \; ]$} where ${\tau}_{\hspace{+0.060em}ij} \doteq \med \; ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \cdot ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j})$ \hfill {\tiny Note 2\hspace{-0.18em}} $\scriptstyle \big ( \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \doteq \sum_{i=1}^{\scriptscriptstyle{\mathrm{N}}} \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \big )$
+
+\par \bigskip \noindent The kinetic energy ${\mathrm{K}}_6$ is the only kinetic energy that can be expressed without the necessity of introducing any magnitude that is related to the free-system $[ \, $such as: ${\mathbf{r}},\, {\mathbf{v}},\, {\mathbf{a}},\, {\vec{\omega}},\, {\vec{\mathit{R}}}$, etc.$ \, ]$
+
+\par \bigskip \noindent In an isolated system of particles, the potential energy ${\mathrm{U}}_2$ is equal to the potential energy ${\mathrm{U}}_1$ if the internal dynamic forces obey Newton's third law in its weak form $[ \, {\mathrm{U}}_2 = {\mathrm{U}}_1 \, ]$
+
+\par \bigskip \noindent In an isolated system of particles, the potential energy ${\mathrm{U}}_4$ is equal to the potential energy ${\mathrm{U}}_3$ if the internal dynamic forces obey Newton's third law in its weak form $[ \, {\mathrm{U}}_4 = {\mathrm{U}}_3 \, ]$
+
+\par \bigskip \noindent In an isolated system of particles, the potential energy ${\mathrm{U}}_6$ is equal to the potential energy ${\mathrm{U}}_5$ if the internal dynamic forces obey Newton's third law in its weak form $[ \, {\mathrm{U}}_6 = {\mathrm{U}}_5 \, ]$
+
+\par \bigskip \noindent A reference frame S is a special non-rotating frame when the angular velocity ${\vec{\omega}}$ of the \hbox {free-system} relative to S is equal to zero, and the reference frame S is also an inertial frame when the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system relative to S is equal to zero.
+
+\par \bigskip \noindent If the origin of a special non-rotating frame S $[ \, {\vec{\omega}} = 0 \, ]$ always coincides with the center of mass of the free-system $[ \, {\vec{\mathit{R}}} = {\vec{\mathit{V}}} = {\vec{\mathit{A}}} = 0 \, ]$ then relative to S: $[ \, {\mathbf{r}}_i = {\vec{\mathit{r}}}_i$, ${\mathbf{v}}_i = {\vec{\mathit{v}}}_i$ and ${\mathbf{a}}_{\hspace{+0.045em}i} = {\vec{\mathit{a}}}_i \, ]$ Therefore, it is easy to see that inertial magnitudes and ordinary magnitudes are always \hbox {the same} in the reference frame S.
+
+\par \bigskip \noindent If kinetic forces are excluded, then this paper does not contradict Newton's first and second laws since they are valid in all inertial reference frames. The equation $[ \: {\mathbf{F}}_i \,=\, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i} \: ]$ is a simple reformulation of Newton's second law.
+
+\par \bigskip \noindent Finally, in this paper, the equation $[ \: {\mathbf{F}}_i = m_i \, {\mathbf{a}}_{\hspace{+0.045em}i} \: ]$ is valid in all reference frames (\hspace{+0.180em}inertial \hbox {or non-inertial\hspace{+0.180em})} even if all dynamic forces always disobey Newton's third law in its strong form and in its weak form.
+
+\vspace{-1.50em}
+
+\par \bigskip {\centering\subsection*{Bibliography}}\addcontentsline{toc}{subsection}{A. Bibliography}
+
+\par \bigskip \noindent \textbf{A. Blato}, A Reformulation of Classical Mechanics.
+
+\par \bigskip \noindent \textbf{A. Blatter}, A Reformulation of Classical Mechanics.
+
+\par \bigskip \noindent \textbf{A. Torassa}, A Reformulation of Classical Mechanics.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Annex I}}
+
+\par \medskip {\centering\subsubsection*{The Free-System}}\addcontentsline{toc}{subsection}{Annex I : The Free-System}\hypertarget{p4a1}{}
+
+\par \bigskip \noindent The free-system is a system of N particles that must always be free of internal and external dynamic forces, that must be three-dimensional, and that the relative distances between \hbox {the N particles} must be constant.
+
+\par \bigskip \noindent The position ${\vec{\mathit{R}}}$, the velocity ${\vec{\mathit{V}}}$ and the acceleration ${\vec{\mathit{A}}}$ of the center of mass of the free-system relative to a reference frame S (and the angular velocity ${\vec{\omega}}$ and the angular acceleration ${\vec{\alpha}}$ \hbox {of the free-system} relative to the reference frame S) are given by:
+
+\par \bigskip\smallskip \hspace{-2.40em} \begin{tabular}{l}
+${\mathrm{M}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i$ \vspace{+1.20em} \\
+${\vec{\mathit{R}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{r}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{V}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{v}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{A}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, {\vec{\mathit{a}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\omega}} ~\doteq~ {\mathit{I}}^{\scriptscriptstyle -1}{\vphantom{\sum_1^2}}^{\hspace{-1.500em}\leftrightarrow}\hspace{+0.600em} \cdot {\vec{\mathit{L}}}$ \vspace{+1.20em} \\
+${\vec{\alpha}} ~\doteq~ d({\vec{\omega}})/dt$ \vspace{+1.20em} \\
+${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.210em} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, [ \, |\hspace{+0.090em}{\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}\,|^2 \hspace{+0.309em} {\mathrm{1}}{\vphantom{\sum_1^2}}^{\hspace{-0.639em}\leftrightarrow}\hspace{-0.129em} - ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \otimes ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, ]$ \vspace{+1.20em} \\
+${\vec{\mathit{L}}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \times ({\vec{\mathit{v}}_{i}} - \hspace{-0.120em}{\vec{\mathit{V}}})$
+\end{tabular}
+
+\par \bigskip \noindent where ${\mathrm{M}}$ is the mass of the free-system, ${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.300em}$ is the inertia tensor of the free-system (relative \hbox {to ${\vec{\mathit{R}}}$)} and ${\vec{\mathit{L}}}$ is the angular momentum of the free-system relative to the reference frame S.
+
+\vspace{+1.50em}
+
+\par {\centering\subsubsection*{The Transformations}}\addcontentsline{toc}{subsection}{Annex I : The Transformations}
+
+\par \bigskip \noindent The transformations of position, velocity and acceleration of a particle $i$ between a reference frame S and another reference frame S', are given by:
+
+\par \bigskip\medskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~=~ {\mathbf{r}}_i ~=~ {\mathbf{r}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~=~ {\mathbf{r}}_i\hspace{-0.300em}' ~=~ {\mathbf{r}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~=~ {\mathbf{v}}_i ~=~ {\mathbf{v}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') - {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~=~ {\mathbf{v}}_i\hspace{-0.300em}' ~=~ {\mathbf{v}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~=~ {\mathbf{a}}_{\hspace{+0.045em}i} ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i\hspace{-0.150em}' - {\vec{\mathit{A}}}\hspace{-0.045em}') - 2 \; {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') + {\vec{\omega}}\hspace{+0.060em}' \times [ \, {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') \, ] - {\vec{\alpha}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}' ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Annex II}}
+
+\par \medskip {\centering\subsubsection*{The Relations}}\addcontentsline{toc}{subsection}{Annex II : The Relations}\hypertarget{p4a2}{}
+
+\par \bigskip \noindent In a system of particles, these relations can be obtained ( The magnitudes ${\mathbf{R}}_{cm}$, ${\mathbf{V}}_{cm}$, ${\mathbf{A}}_{cm}$, ${\vec{\mathit{R}}}_{cm}$, ${\vec{\mathit{V}}}_{cm}$ and ${\vec{\mathit{A}}}_{cm}$ can be replaced by the magnitudes ${\mathbf{R}}$, ${\mathbf{V}}$, ${\mathbf{A}}$, ${\vec{\mathit{R}}}$, ${\vec{\mathit{V}}}$ and ${\vec{\mathit{A}}}$, or by the magnitudes ${\mathbf{r}}_j$, ${\mathbf{v}}_j$, ${\mathbf{a}}_j$, ${\vec{\mathit{r}}}_j$, ${\vec{\mathit{v}}}_j$ and ${\vec{\mathit{a}}}_j$,{\vphantom{\LARGE t}} respectively. On the other hand, $\: {\mathbf{R}} \:=\: {\mathbf{V}} \:=\: {\mathbf{A}} \:=\: 0 \;$)
+
+\par \bigskip\medskip \noindent ${\mathbf{r}}_i \,=\, ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \bigskip\smallskip \noindent ${\mathbf{R}}_{cm} \,=\, ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}})$
+
+\par \bigskip\smallskip \noindent $\longrightarrow \hspace{+0.90em} ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \,=\, ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})$
+
+\par \bigskip\smallskip \noindent ${\mathbf{v}}_i \,=\, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \bigskip\smallskip \noindent ${\mathbf{V}}_{cm} \,=\, ({\vec{\mathit{V}}}_{cm} - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}})$
+
+\par \bigskip\smallskip \noindent $\longrightarrow \hspace{+0.90em} ({\mathbf{v}}_i - {\mathbf{V}}_{cm}) \,=\, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})$
+
+\par \bigskip\smallskip \noindent $({\mathbf{v}}_i - {\mathbf{V}}_{cm}) \cdot ({\mathbf{v}}_i - {\mathbf{V}}_{cm}) \,=\, \big [ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) - 2 \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) + 2 \, ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \cdot ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) + \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm})^2 + \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ]^2$
+
+\par \bigskip\smallskip \noindent $({\mathbf{a}}_{\hspace{+0.045em}i} \,-\, {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_i \,-\, {\mathbf{R}}_{cm}) \;=\; \big \{ \, ({\vec{\mathit{a}}}_i \,-\, {\vec{\mathit{A}}}_{cm}) \;-\; 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i \,-\, \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \;+\; {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i \,-\, {\vec{\mathit{R}}}_{cm}) \, ] ~\,-$
+
+\par \bigskip\smallskip \noindent ${\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big \} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \,=\, ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) - \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) ~\,+$
+
+\par \bigskip\smallskip \noindent $\big \{ \, {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, ] \, \big \} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) - \big [ \, {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \,=\, ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) ~\,-$
+
+\par \bigskip\smallskip \noindent $\big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big \{ \, \big [ \, {\vec{\omega}} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ] \: {\vec{\omega}} - ( \, {\vec{\omega}} \cdot {\vec{\omega}} \, ) \: ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big \} \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \,=$
+
+\par \bigskip\smallskip \noindent $({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) - \big [ \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm}) \, \big ] \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) + \big [ \, {\vec{\omega}} \hspace{+0.120em}\cdot\hspace{+0.090em} ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm}) \, \big ]^2 -\, ( \, {\vec{\omega}} \, )^2 \: ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})^2$
+
+\par \bigskip\smallskip \noindent $\longrightarrow \hspace{+0.90em} ({\mathbf{v}}_i - {\mathbf{V}}_{cm})^2 + ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{A}}_{cm}) \cdot ({\mathbf{r}}_i - {\mathbf{R}}_{cm}) \,=\, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}_{cm})^2 + ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}_{cm}) \cdot ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}_{cm})$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Annex III}}
+
+\par \medskip {\centering\subsubsection*{The Magnitudes}}\addcontentsline{toc}{subsection}{Annex III : The Magnitudes}
+
+\par \bigskip \noindent The magnitudes ${\mathbf{L}}_2$, ${\mathrm{W}}_2$, ${\mathrm{K}}_2$, ${\mathrm{U}}_2$, ${\mathrm{W}}_4$, ${\mathrm{K}}_4$, ${\mathrm{U}}_4$, ${\mathrm{W}}_6$, ${\mathrm{K}}_6$ and ${\mathrm{U}}_6$ of a system of N particles can also be expressed as follows:
+
+\par \bigskip\bigskip \noindent ${\mathbf{L}}_2 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \times ({\mathbf{v}}_{i} - {\mathbf{v}}_{j}) \, \big ]$
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_2 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot d({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \, \big ]$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{K}}_2 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \, ({\mathbf{v}}_{i} - {\mathbf{v}}_{j})^2 ~=~ {\mathrm{W}}_2$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_2 ~=~ - \, \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot d({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \, \big ]$
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_4 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot ({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \, \big ]$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{K}}_4 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_{j}) \cdot ({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \, \big ] ~=~ {\mathrm{W}}_4$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_4 ~=~ - \, \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot ({\mathbf{r}}_{i} - {\mathbf{r}}_{j}) \, \big ]$
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_6 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) + \Delta \, \med \; ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) \, \big ]$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{K}}_6 ~=~ \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, \Delta \, \med \; m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \, ({\vec{\mathit{v}}_{i}} - {\vec{\mathit{v}}_{j}})^2 + ({\vec{\mathit{a}}_{i}} - {\vec{\mathit{a}}_{j}}) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) \, \big ] ~=~ {\mathrm{W}}_6$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_6 ~=~ - \, \sum_{j{\scriptscriptstyle >}i}^{\scriptscriptstyle{\mathrm{N}}} \, m_i \, m_j \, {\mathrm{M}}^{\scriptscriptstyle -1} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot d({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) + \Delta \, \med \; ({\mathbf{F}}_i / m_i - {\mathbf{F}}_j / m_j) \cdot ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{r}}_{j}}) \, \big ]$
+
+\par \bigskip\bigskip \noindent The magnitudes ${\mathrm{W}}_{(1\;{\mathrm{to}}\;6)}$ and ${\mathrm{U}}_{(1\;{\mathrm{to}}\;6)}$ of an isolated system of N particles, whose internal dynamic forces obey Newton's third law in its weak form, can be reduced to:
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_1 ~=~ {\mathrm{W}}_2 ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\vec{\mathit{r}}_{i}}$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_1 ~=~ \Delta \, {\mathrm{U}}_2 ~=~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\vec{\mathit{r}}_{i}}$
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_3 ~=~ {\mathrm{W}}_4 ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot {\vec{\mathit{r}}_{i}}$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_3 ~=~ \Delta \, {\mathrm{U}}_4 ~=~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \Delta \, \med \; {\mathbf{F}}_i \cdot {\vec{\mathit{r}}_{i}}$
+
+\par \bigskip\bigskip \noindent ${\mathrm{W}}_5 ~=~ {\mathrm{W}}_6 ~=~ \sum_i^{\scriptscriptstyle{\mathrm{N}}} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\vec{\mathit{r}}_{i}} + \Delta \, \med \; {\mathbf{F}}_i \cdot {\vec{\mathit{r}}_{i}} \, \big ]$
+
+\par \bigskip\smallskip \noindent $\Delta \, {\mathrm{U}}_5 ~=~ \Delta \, {\mathrm{U}}_6 ~=~ - \, \sum_i^{\scriptscriptstyle{\mathrm{N}}} \big [ \int_{\scriptscriptstyle 1}^{\scriptscriptstyle 2} \, {\mathbf{F}}_i \cdot d{\vec{\mathit{r}}_{i}} + \Delta \, \med \; {\mathbf{F}}_i \cdot {\vec{\mathit{r}}_{i}} \, \big ]$
+
+\newpage
+
+\enlargethispage{+1.2em}
+
+\setlength{\unitlength}{0.51pt}
+
+\par \bigskip {\centering\subsection*{Annex IV}}
+
+\par \medskip {\centering\subsubsection*{Frames and Forces}}\addcontentsline{toc}{subsection}{Annex IV : Frames and Forces}\hypertarget{p4a4}{}
+
+\par \medskip \noindent Diagram of net dynamic forces acting on a reference frame S, when the reference frame S is a linearly non-accelerated and non-rotating frame relative to an inertial frame {\small (\hspace{+0.12em}9 points\hspace{+0.12em})}
+
+\vspace{+1.50em}
+
+\begin{center}
+
+\begin{picture}(240,240)
+\put(120,120){\vector(0,+1){120}}
+\put(120,120){\vector(+1,0){120}}
+\put(120,120){\vector(0,-1){120}}
+\put(120,120){\vector(-1,0){120}}
+\put(120,120){\circle*{6}}
+\put(150,150){\circle*{6}}
+\put(195,195){\circle*{6}}
+\put(45,195){\circle*{6}}
+\put(90,150){\circle*{6}}
+\put(150,90){\circle*{6}}
+\put(195,45){\circle*{6}}
+\put(45,45){\circle*{6}}
+\put(90,90){\circle*{6}}
+\put(125,231){{$y$}}
+\put(231,126){{$x$}}
+\end{picture}
+
+\end{center}
+
+\par \smallskip \noindent Diagram of net dynamic forces acting on a reference frame S, when the reference frame S is a linearly accelerated and non-rotating frame relative to an inertial frame {\small (\hspace{+0.12em}9 points\hspace{+0.12em})}
+
+\vspace{+0.60em}
+
+\begin{center}
+
+\begin{picture}(240,240)
+\put(120,120){\vector(0,+1){120}}
+\put(120,120){\vector(+1,0){120}}
+\put(120,120){\vector(0,-1){120}}
+\put(120,120){\vector(-1,0){120}}
+\put(120,120){\vector(1,1){21}}
+\put(150,150){\vector(1,1){21}}
+\put(195,195){\vector(1,1){21}}
+\put(45,195){\vector(1,1){21}}
+\put(90,150){\vector(1,1){21}}
+\put(150,90){\vector(1,1){21}}
+\put(195,45){\vector(1,1){21}}
+\put(45,45){\vector(1,1){21}}
+\put(90,90){\vector(1,1){21}}
+\put(120,120){\circle*{6}}
+\put(150,150){\circle*{6}}
+\put(195,195){\circle*{6}}
+\put(45,195){\circle*{6}}
+\put(90,150){\circle*{6}}
+\put(150,90){\circle*{6}}
+\put(195,45){\circle*{6}}
+\put(45,45){\circle*{6}}
+\put(90,90){\circle*{6}}
+\put(125,231){{$y$}}
+\put(231,126){{$x$}}
+\end{picture}
+
+\end{center}
+
+\par \smallskip \noindent Diagram of net dynamic forces acting on a reference frame S, when the reference frame S is a linearly non-accelerated and rotating frame relative to an inertial frame {\small (\hspace{+0.12em}9 points\hspace{+0.12em})}
+
+\vspace{+0.60em}
+
+\begin{center}
+
+\begin{picture}(240,240)
+\put(120,120){\vector(0,+1){120}}
+\put(120,120){\vector(+1,0){120}}
+\put(120,120){\vector(0,-1){120}}
+\put(120,120){\vector(-1,0){120}}
+\put(150,150){\vector(-1,-1){21}}
+\put(195,195){\vector(-1,-1){36}}
+\put(45,195){\vector(1,-1){36}}
+\put(90,150){\vector(1,-1){21}}
+\put(150,90){\vector(-1,1){21}}
+\put(195,45){\vector(-1,1){36}}
+\put(45,45){\vector(1,1){36}}
+\put(90,90){\vector(1,1){21}}
+\put(120,120){\circle*{6}}
+\put(150,150){\circle*{6}}
+\put(195,195){\circle*{6}}
+\put(45,195){\circle*{6}}
+\put(90,150){\circle*{6}}
+\put(150,90){\circle*{6}}
+\put(195,45){\circle*{6}}
+\put(45,45){\circle*{6}}
+\put(90,90){\circle*{6}}
+\put(125,231){{$y$}}
+\put(231,126){{$x$}}
+\end{picture}
+
+\end{center}
+
+\setlength{\unitlength}{1pt}
+
+\newpage
+
+\par {\centering\subsection*{Appendix A}}
+
+\par {\centering\subsection*{Fields and Potentials I}}\addcontentsline{toc}{subsection}{Appendix A : Fields and Potentials I}
+
+\par \smallskip \noindent The net kinetic force ${\mathbf{K}}_{\hspace{+0.009em}i}$ acting on a particle $i$ of mass $m_i$ can also be expressed as follows:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ \: {\mathbf{E}} \, + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{A}}}\hspace{+0.06em}) + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, \Big]$
+
+\par \bigskip \noindent where:
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ]^{\hspace{+0.006em}2} \, + \, \med \, ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}})^{\hspace{+0.03em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] \, + ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}})$
+
+\par \bigskip $\dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} \;=\: - \; {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) + ( {\vec{\mathit{a}}}_{i} - {\vec{\mathit{A}}}\hspace{+0.06em})$ *
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] \hspace{+0.06em}$
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$
+
+\par \bigskip \noindent The net kinetic force ${\mathbf{K}}_{\hspace{+0.009em}i}$ acting on a particle $i$ of mass $m_i$ can also be obtained starting from the following kinetic energy:
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: - \; m_i \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Since the kinetic energy ${\mathit{K}}_{\hspace{+0.009em}i}$ must be positive, then applying the following Euler-Lagrange equation, we obtain:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{v}}_i} \, \Bigg] + \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{r}}_i} \;=\: - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent where ${\mathbf{r}}_i, \hspace{+0.180em} {\mathbf{v}}_i$ and ${\mathbf{a}}_{\hspace{+0.045em}i}$ are the inertial position, the inertial velocity and the inertial \hbox {acceleration} of particle $i$.
+
+\par \medskip \noindent {\small * In the temporal partial derivative, the spatial coordinates must be treated as constants [ or replace this in the first equation:} ${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times {\mathbf{B}}}$ {\small , and this in the second equation:} ${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times (\nabla \times {\mathbf{A}})}$ ]
+
+\newpage
+
+\enlargethispage{+1.2em}
+
+\par {\centering\subsection*{Appendix B}}
+
+\par {\centering\subsection*{Fields and Potentials II}}\addcontentsline{toc}{subsection}{Appendix B : Fields and Potentials II}
+
+\par \smallskip \noindent The net kinetic force ${\mathbf{K}}_{\hspace{+0.009em}i}$ acting on a particle $i$ of mass $m_i$ ( relative to a reference frame S fixed to a particle $s$ ( ${\vec{\mathit{r}}}_{s} = {\vec{\mathit{v}}}_{s} = {\vec{\mathit{a}}}_{s} = 0$ ) of mass $m_s$, with inertial velocity ${\mathbf{v}}_s$ and inertial acceleration ${\mathbf{a}}_s$ ) can also be expressed as follows:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ \: {\mathbf{E}} \, + {\vec{\mathit{v}}}_{i} \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} + {\vec{\mathit{v}}}_{i} \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - ({\vec{\mathit{a}}}_{i} + {\mathbf{a}}_s) + 2 \; {\vec{\omega}} \times {\vec{\mathit{v}}}_{i} - {\vec{\omega}} \times ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, ) + {\vec{\alpha}} \times {\vec{\mathit{r}}}_{i} \; \Big]$
+
+\par \bigskip \noindent where:
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, )^{\hspace{+0.006em}2} \, + \, \med \: ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s)^{\hspace{+0.006em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, ) + ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s)$
+
+\par \bigskip $\dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} \;=\: - \; {\vec{\alpha}} \times {\vec{\mathit{r}}}_{i} \, + ({\vec{\mathit{a}}}_{i} + {\mathbf{a}}_s)$ *
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, )$
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$
+
+\par \bigskip \noindent The net kinetic force ${\mathbf{K}}_{\hspace{+0.009em}i}$ acting on a particle $i$ of mass $m_i$ can also be obtained starting from the following kinetic energy:
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: - \; m_i \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, ({\vec{\mathit{v}}}_{i} + {\mathbf{v}}_s) - ( \, {\vec{\omega}} \times {\vec{\mathit{r}}}_{i} \, ) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Since the kinetic energy ${\mathit{K}}_{\hspace{+0.009em}i}$ must be positive, then applying the following Euler-Lagrange equation, we obtain:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{v}}_i} \, \Bigg] + \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{r}}_i} \;=\: - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent where ${\mathbf{r}}_i, \hspace{+0.180em} {\mathbf{v}}_i$ and ${\mathbf{a}}_{\hspace{+0.045em}i}$ are the inertial position, the inertial velocity and the inertial \hbox {acceleration} of particle $i$.
+
+\par \medskip \noindent {\small * In the temporal partial derivative, the spatial coordinates must be treated as constants [ or replace this in the first equation:} ${\scriptstyle + \; {\small \met} \; {\vec{\mathit{v}}}_{i} \times {\mathbf{B}}}$ {\small , and this in the second equation:} ${\scriptstyle + \; {\small \met} \; {\vec{\mathit{v}}}_{i} \times (\nabla \times {\mathbf{A}})}$ ] (${\scriptstyle \partial{\hspace{+0.06em}{\mathbf{v}}_{\hspace{-0.12em}s}}/\partial{\hspace{+0.03em}t}\;\rightarrow\;{\mathbf{a}}_s}$) [ {\small or replace in the first equation:} ${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{v}}}_{i}\,+\,{\mathbf{v}}_s) \times {\mathbf{B}}}$ {\small , and in the second equation:} \hbox {${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{v}}}_{i}\,+\,{\mathbf{v}}_s) \times (\nabla \times {\mathbf{A}})}$ \hspace{-0.09em}]}
+
+\newpage
+
+\par {\centering\subsection*{Appendix C}}
+
+\par {\centering\subsection*{Fields and Potentials III}}\addcontentsline{toc}{subsection}{Appendix C : Fields and Potentials III}
+
+\par \smallskip \noindent The kinetic force ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij}$ exerted on a particle $i$ of mass $m_i$ by another particle $j$ of mass $m_j$ can also be expressed as follows:
+
+\par \bigskip ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ \: {\mathbf{E}} \, + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ - \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ - ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}\hspace{+0.06em}) + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, \Big]$
+
+\par \bigskip \noindent where:
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ]^{\hspace{+0.006em}2} \, + \, \med \, ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j})^{\hspace{+0.03em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] \, + ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j})$
+
+\par \bigskip $\dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} \;=\: - \; {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) + ( {\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}\hspace{+0.06em})$ *
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] \hspace{+0.06em}$
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$
+
+\par \bigskip \noindent The kinetic force ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij}$ exerted on a particle $i$ of mass $m_i$ by another particle $j$ of mass $m_j$ can also be obtained starting from the following kinetic energy:
+
+\par \bigskip ${\mathit{K}}^{a}_{\hspace{+0.060em}ij} \;=\: - \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}^{a}_{\hspace{+0.060em}ij} \;=\: \med \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{v}}}_{j}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_{j}) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}^{a}_{\hspace{+0.060em}ij} \;=\: \med \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Since the kinetic energy ${\mathit{K}}^{a}_{\hspace{+0.060em}ij}$ must be positive, then applying the following Euler-Lagrange equation, we obtain:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial \, \med \, \frac{m_i \, m_j}{\mathit{M}} \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2}{\partial \, [ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, ]} \, \Bigg] + \dfrac{\partial \, \med \, \frac{m_i \, m_j}{\mathit{M}} \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2}{\partial \, [ \, {\mathbf{r}}_i - {\mathbf{r}}_{\hspace{-0.015em}j} \, ]} \;=\: - \; \dfrac{m_i \, m_j}{\mathit{M}} \, \big[ \, {\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_{\hspace{-0.015em}j} \, \big]$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent where ${\mathbf{r}}_i, {\mathbf{v}}_i, {\mathbf{a}}_{\hspace{+0.045em}i}, {\mathbf{r}}_{\hspace{-0.015em}j}, {\mathbf{v}}_{\hspace{-0.06em}j}$ and ${\mathbf{a}}_{\hspace{-0.015em}j}$ are the inertial positions, the inertial velocities and the inertial accelerations of particles $i$ and $j$.
+
+\par \medskip \noindent {\small * In the temporal partial derivative, the spatial coordinates must be treated as constants [ or replace this in the first equation:} ${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times {\mathbf{B}}}$ {\small , and this in the second equation:} ${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times (\nabla \times {\mathbf{A}})}$ ]
+
+\newpage
+
+\par {\centering\subsection*{Appendix D}}
+
+\par {\centering\subsection*{Fields and Potentials IV}}\addcontentsline{toc}{subsection}{Appendix D : Fields and Potentials IV}
+
+\par \smallskip \noindent The kinetic force ${\mathbf{K}}^{u}_{i}$ exerted on a particle $i$ of mass $m_i$ by the center of mass of the Universe can also be expressed as follows:
+
+\par \bigskip ${\mathbf{K}}^{u}_{i} \;=\: + \; m_i \, \Big[ \: {\mathbf{E}} \, + ({\vec{\mathit{V}}}_{cm} - {\vec{\mathit{V}}}) \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}^{u}_{i} \;=\: + \; m_i \, \Big[ - \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} + ({\vec{\mathit{V}}}_{cm} - {\vec{\mathit{V}}}) \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}^{u}_{i} \;=\: + \; m_i \, \Big[ - ({\vec{\mathit{A}}}_{cm} - {\vec{\mathit{A}}}\hspace{+0.06em}) + 2 \; {\vec{\omega}} \times ({\vec{\mathit{V}}}_{cm} - {\vec{\mathit{V}}}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}}) \, \Big]$
+
+\par \bigskip \noindent where:
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: [ \, {\vec{\omega}} \times ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}}) \, ]^{\hspace{+0.006em}2} \, + \, \med \, ( {\vec{\mathit{V}}}_{cm} - {\vec{\mathit{V}}})^{\hspace{+0.03em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; [ \, {\vec{\omega}} \times ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}}) \, ] \, + ( {\vec{\mathit{V}}}_{cm} - {\vec{\mathit{V}}})$
+
+\par \bigskip $\dfrac{\partial{\mathbf{A}}}{\partial{\hspace{+0.03em}t}} \;=\: - \; {\vec{\alpha}} \times ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}}) + ( {\vec{\mathit{A}}}_{cm} - {\vec{\mathit{A}}}\hspace{+0.06em})$ *
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}}) \, ] \hspace{+0.06em}$
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$
+
+\par \bigskip \noindent The kinetic force ${\mathbf{K}}^{u}_{i}$ exerted on a particle $i$ of mass $m_i$ by the center of mass of the Universe can also be obtained starting from the following kinetic energy:
+
+\par \bigskip ${\mathit{K}}^u_{\hspace{+0.06em}i} \;=\: - \; m_i \, \big[ \, \phi \, - ({\vec{\mathit{V}}}_{cm} - {\vec{\mathit{V}}}) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}^u_{\hspace{+0.06em}i} \;=\: \med \; m_i \, \big[ \, ({\vec{\mathit{V}}}_{cm} - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{R}}}_{cm} - {\vec{\mathit{R}}}) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}^u_{\hspace{+0.06em}i} \;=\: \med \; m_i \, \big[ \, {\mathbf{V}}_{cm} \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Since the kinetic energy ${\mathit{K}}^u_{\hspace{+0.06em}i}$ must be positive, then applying the following Euler-Lagrange equation, we obtain:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}^{u}_{i} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{V}}_{cm} \, \big]^2}}{\partial{\,\mathbf{V}}_{cm}} \, \Bigg] + \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{V}}_{cm} \, \big]^2}}{\partial{\,\mathbf{R}}_{cm}} \;=\: - \; m_i \, {\mathbf{A}}_{cm}$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent where ${\mathbf{R}}_{cm}, \hspace{+0.180em} {\mathbf{V}}_{cm}$ and ${\mathbf{A}}_{cm}$ are the inertial position, the inertial velocity and the inertial \hbox {acceleration} of the center of mass of the Universe.
+
+\par \medskip \noindent {\small * In the temporal partial derivative, the spatial coordinates must be treated as constants [ or replace this in the first equation:} ${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{V}}}_{cm} - {\vec{\mathit{V}}}) \times {\mathbf{B}}}$ {\small , and this in the second equation:} \hbox {${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{V}}}_{cm} - {\vec{\mathit{V}}}) \times (\nabla \times {\mathbf{A}})}$ ]}
+
+\newpage
+
+\setcounter{page}{1}
+
+\thispagestyle{empty}
+
+\enlargethispage{+4.5em}
+
+\setlength{\unitlength}{1pt}
+
+\section*{}\addcontentsline{toc}{section}{Diagrams}
+
+\par {\small  }
+
+\vspace{-6.3em}
+
+\par {\centering\subsection*{\textsf{Diagram I}}}\addcontentsline{toc}{subsection}{§. Papers III \& IV (A)}
+
+\vspace{+1.8em}
+
+\newcommand{\cafa}{\textsf{Paper III}}
+\newcommand{\cafb}{\textsf{Paper IV}}
+\newcommand{\cbfu}{\textsf{Newton's Law III \vspace{0.6em} \\ ( False )}}
+\newcommand{\ccfu}{\textsf{Auxiliary system of particles \vspace{0.6em} \\ Free-System}}
+\newcommand{\cdfu}{\textsf{Invariant Magnitudes} \vspace{0.6em} \\ \textsf{Inertial position} : ${\mathbf{r}}_i$ \vspace{0.15em} \\ \textsf{Inertial velocity} : ${\mathbf{v}}_i$ \vspace{0.15em} \\ \textsf{Inertial acceleration} : ${\mathbf{a}}_{\hspace{+0.045em}i}$}
+\newcommand{\cefb}{\textsf{Kinetic force} ${\mathbf{K}}^{a}$ \vspace{0.9em} \\ ${\mathbf{K}}^{a}_{\hspace{+0.060em}ij} = - \; \dfrac{m_i \, m_j}{\mathit{M}} \, (\hspace{+0.045em}{\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_{j})$ \vspace{+0.9em} \\ \textsf{Kinetic force} ${\mathbf{K}}^{u}$ \vspace{+0.9em} \\ ${\mathbf{K}}^{u}_{i} = - \; m_i \, {\mathbf{A}}_{cm}$ \vspace{+0.9em} \\ \textsf{Net kinetic force} \vspace{0.6em} \\ ${\mathbf{K}}_{i} = - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$}
+\newcommand{\cffa}{\textsf{Second Principle} \vspace{0.6em} \\ ${\mathbf{F}}_{i} = m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$}
+\newcommand{\cffb}{\textsf{Second Principle} \vspace{0.6em} \\ ${\mathbf{T}}_{i} = {\mathbf{K}}_{i} + {\mathbf{F}}_{i} = 0$}
+\newcommand{\cgfu}{\textsf{Base Equation} \vspace{0.6em} \\ ${\mathbf{F}}_{i} = m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$}
+
+\begin{center}
+\begin{tabular}{ccc}
+{\framebox(150,30){\parbox{150\unitlength}{\centering \cafa }}} & &
+{\framebox(150,30){\parbox{150\unitlength}{\centering \cafb }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \cbfu }}} &
+{\makebox(10,45){\textbf{=}}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \cbfu }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \ccfu }}} &
+{\makebox(10,45){\textbf{=}}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \ccfu }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,81){\parbox{150\unitlength}{\centering \cdfu }}} &
+{\makebox(10,81){\textbf{=}}} &
+{\framebox(150,81){\parbox{150\unitlength}{\centering \cdfu }}} \\
+& & {\makebox(150,15){$\downarrow$}} \\
+{\makebox(150,140){$\downarrow$}} & &
+{\framebox(150,140){\parbox{120\unitlength}{ \cefb }}} \\
+& & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \cffa }}} & &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \cffb }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \cgfu }}} &
+{\makebox(10,45){\textbf{=}}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \cgfu }}}
+\end{tabular}
+\end{center}
+
+\newpage
+
+\setcounter{page}{1}
+
+\thispagestyle{empty}
+
+\enlargethispage{+4.5em}
+
+\setlength{\unitlength}{1pt}
+
+\par {\small  }
+
+\vspace{-4.2em}
+
+\par {\centering\subsection*{\textsf{Diagram II}}}\addcontentsline{toc}{subsection}{§. Papers III \& IV (B)}
+
+\vspace{+1.8em}
+
+\newcommand{\vaha}{\textsf{Paper III}}
+\newcommand{\vahb}{\textsf{Paper IV}}
+\newcommand{\vbhu}{\textsf{Base Equation}}
+\newcommand{\vchu}{\textsf{Equation of Motion}}
+\newcommand{\vdhu}{\textsf{Definitions}}
+\newcommand{\vehu}{\textsf{Relations}}
+\newcommand{\vfhu}{\textsf{Conservation Laws}}
+\newcommand{\vghu}{\textsf{General Observations}}
+\newcommand{\vhhu}{\textsf{Annexes}}
+\newcommand{\vihb}{\textsf{Appendices}}
+\newcommand{\viha}{\hspace{+0.08em}$\nabla \cdot {\mathbf{E}} = 2 \: {\vec{\omega}}^{\hspace{+0.15em}2}$ \hspace{+1.8em},\hspace{+0.15em} $\nabla \cdot {\mathbf{B}} = 0$ \vspace{+0.60em} \\ \hspace{-0.25em}$\nabla \hspace{-0.24em}\times\hspace{-0.24em} {\mathbf{E}} = - \partial{\mathbf{B}}/\partial{\hspace{+0.03em}t}$ \hspace{+0.09em},\hspace{+0.15em} $\nabla \hspace{-0.24em}\times\hspace{-0.24em} {\mathbf{B}} = 0$}
+
+\begin{center}
+\begin{tabular}{ccc}
+{\framebox(150,30){\parbox{150\unitlength}{\centering \vaha }}} & &
+{\framebox(150,30){\parbox{150\unitlength}{\centering \vahb }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vbhu }}} &
+{\makebox(10,45){\textbf{=}}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vbhu }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vchu }}} &
+{\makebox(10,45){\textbf{=}}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vchu }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vdhu }}} &
+{\makebox(10,45){\textbf{=}}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vdhu }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vehu }}} &
+{\makebox(10,45){\textbf{=}}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vehu }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vfhu }}} &
+{\makebox(10,45){\textbf{=}}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vfhu }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vghu }}} &
+{\makebox(10,45){\textbf{=}}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vghu }}} \\
+{\makebox(150,15){$\downarrow$}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vhhu }}} &
+{\makebox(10,45){\textbf{=}}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vhhu }}} \\
+{\makebox(150,15){}} & & {\makebox(150,15){$\downarrow$}} \\
+{\framebox(150,45){\parbox{150\unitlength}{\centering \viha }}} &
+{\makebox(10,45){$\leftarrow$}} &
+{\framebox(150,45){\parbox{150\unitlength}{\centering \vihb }}}
+\end{tabular}
+\end{center}
+
+\end{document}
+
