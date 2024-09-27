@@ -1,0 +1,349 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={162.0mm,234.9mm}}
+\geometry{totalwidth=141.0mm,totalheight=198.9mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue,bookmarksopen=true}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Sobre La Mecánica Relacional}}
+\hypersetup{pdfauthor={Agustín A. Tobla}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\newcommand{\med}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+\newcommand{\met}{\raise.5ex\hbox{$\scriptstyle 1$}\kern-.15em/\kern-.09em\lower.25ex\hbox{$\scriptstyle 2$}}
+\newcommand{\dix}{\rule[1mm]{2.4mm}{0.12mm} Ecuaciones Diferenciales \rule[1mm]{2.4mm}{0.12mm}}
+\newcommand{\diy}{$\nabla \cdot {\mathbf{E}} = 2 \: {\vec{\omega}}^{\hspace{+0.15em}2}$ \hspace{+1.78em},\hspace{+0.17em} $\nabla \cdot {\mathbf{B}} = 0$}
+\newcommand{\diz}{$\nabla \hspace{-0.24em}\times\hspace{-0.24em} {\mathbf{E}} = - \partial{\mathbf{B}}/\partial{\hspace{+0.03em}t}$ \hspace{+0.09em},\hspace{+0.15em} $\nabla \hspace{-0.24em}\times\hspace{-0.24em} {\mathbf{B}} = 0$}
+
+\begin{document}
+
+\enlargethispage{+0.00em}
+
+\begin{center}
+
+{\Large SOBRE LA MECÁNICA RELACIONAL}
+
+\bigskip \medskip
+
+{\large Agustín A. Tobla}
+
+\bigskip \medskip
+
+\small
+
+Licencia Creative Commons Atribución 3.0
+
+\smallskip
+
+(2024) Buenos Aires
+
+\medskip
+
+Argentina
+
+\smallskip
+
+\bigskip
+
+\parbox{114.90mm}{En mecánica clásica, una nueva reformulación es presentada, que está de acuerdo con el principio general de relatividad, que es invariante bajo transformaciones entre sistemas de referencia inerciales y no inerciales, que puede ser aplicada en cualquier sistema de referencia sin necesidad de introducir las fuerzas ficticias, que es observacionalmente equivalente a la mecánica newtoniana y que establece la existencia de una nueva fuerza universal de interacción, denominada fuerza cinética ( relacionada con la fuerza de inercia $-m{\mathbf{a}}$ , y con el principio de Mach )\vspace{+0.60em}\\{\footnotesize Keywords : Mecánica Relacional · Principio de Mach · Mecánica Clásica · Fuerza Cinética}}
+
+\end{center}
+
+\normalsize
+
+\vspace{-1.20em}
+
+\par \medskip {\centering\subsection*{Introducción}}\addcontentsline{toc}{subsection}{1. Introducción}
+
+\par \medskip \noindent La nueva reformulación, que este trabajo presenta en mecánica clásica, se desarrolla a partir de un sistema auxiliar de partículas (denominado Universo) que es utilizado para obtener magnitudes cinemáticas (denominadas universales) que son invariantes bajo transformaciones entre sistemas de referencia inerciales y no inerciales.
+
+\par \medskip \noindent La posición universal ${\mathbf{r}}_i$, velocidad universal ${\mathbf{v}}_i$ y aceleración universal ${\mathbf{a}}_{\hspace{+0.045em}i}$ de una partícula $i$ con respecto a un sistema de referencia S (\hspace{+0.120em}inercial o no inercial\hspace{+0.120em}) están dadas por:
+
+\par \medskip\vspace{+0.06em} ${\mathbf{r}}_i \,\:\doteq\; (\hspace{+0.090em}{\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}\hspace{+0.090em}) \;=\; ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \medskip\vspace{+0.36em} ${\mathbf{v}}_i \;\doteq\; d\hspace{+0.090em}(\hspace{+0.090em}{\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}\hspace{+0.090em})\hspace{+0.045em}/dt \;=\; ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \medskip\vspace{+0.36em} ${\mathbf{a}}_{\hspace{+0.045em}i} \;\doteq\; d^2\hspace{+0.030em}(\hspace{+0.090em}{\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}\hspace{+0.090em})\hspace{+0.045em}/dt^2 \:=\; ({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}})$
+
+\par \medskip\vspace{+0.36em} \noindent donde ${\stackrel{\scriptscriptstyle\sim}{\smash{r}\rule{0pt}{+0.30em}}}_{\hspace{-0.12em}i}$ es el vector de posición de la partícula $i$ con respecto al sistema universal [\hspace{+0.120em}${\vec{\mathit{r}}}_i$ es el vector de posición de la partícula $i$, ${\vec{\mathit{R}}}$ es el vector de posición del centro de masa del Universo y ${\vec{\omega}}$ es el vector de velocidad angular del Universo\hspace{+0.120em}] [\hspace{+0.120em}con respecto al sistema S\hspace{+0.120em}] \hyperlink{t5a1}{\hbox {(ver {\small A}nexo {\small I}\hspace{+0.120em})}}
+
+\par \medskip\vspace{+0.00em} \noindent El sistema universal es un sistema de referencia fijo al Universo (\hspace{+0.120em}${\vec{\omega}} = 0$\hspace{+0.120em}) cuyo origen coincide siempre con el centro de masa del Universo (\hspace{+0.033em}{\small ${\vec{\mathit{R}}} = {\vec{\mathit{V}}} = {\vec{\mathit{A}}} =$} $0$\hspace{+0.120em})
+
+\par \medskip \noindent Cualquier sistema de referencia S es inercial cuando la velocidad angular ${\vec{\omega}}$ del Universo y la aceleración ${\vec{\mathit{A}}}$ del centro de masa del Universo son iguales a cero \hbox {con respecto a S.}
+
+\par \medskip \noindent Nota\hspace{+0.300em}:\hspace{+0.240em}\hbox{( $\forall \;\; {\mathbf{m}} \, \in$\hspace{+0.12em} Magnitudes Universales \hspace{+0.18em}:\hspace{+0.18em} Si \hspace{+0.24em}${\mathbf{m}} \,=\, {\vec{\mathit{n}}}$ \hspace{+0.27em}$\longrightarrow$\hspace{+0.27em} $d(\hspace{+0.090em}{\mathbf{m}}\hspace{+0.090em})/dt \,=\, d(\hspace{+0.090em}{\vec{\mathit{n}}}\hspace{+0.090em})/dt \,-\, {\vec{\omega}} \times {\vec{\mathit{n}}}$ )}
+
+\vspace{+0.90em}
+
+\par {\centering\subsection*{Nueva Dinámica}}\addcontentsline{toc}{subsection}{2. Nueva Dinámica}
+
+\par \medskip \noindent $[\,1\,]$ Toda fuerza siempre es causada por la interacción entre dos o más partículas.
+
+\par \medskip \noindent $[\,2\,]$ La fuerza total ${\mathbf{T}}_i$ que actúa sobre una partícula $i$ es siempre igual a cero : $[ \; {\mathbf{T}}_i \,=\, 0 \; ]$
+
+\par \medskip \noindent $[\,3\,]$ En este trabajo, todas las fuerzas dinámicas ( es decir, todas las fuerzas no cinéticas ) deben obedecer siempre la tercera ley \hbox {de Newton} en su forma débil y en su forma fuerte.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Fuerza Cinética}}\addcontentsline{toc}{subsection}{3. Fuerza Cinética}
+
+\par \bigskip \noindent La fuerza cinética ${\mathbf{K}}_{\hspace{+0.060em}ij}$ ejercida sobre una partícula $i$ de masa $m_i$ por otra partícula $j$ de masa $m_j$, causada por la interacción entre la partícula $i$ y la partícula $j$, está dada por:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.060em}ij} ~=~ - \; \dfrac{m_i \, m_j}{\mathit{M}} \, (\hspace{+0.045em}{\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_{j})$
+
+\par \bigskip \noindent donde ${\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración universal de la partícula $i$, ${\mathbf{a}}_{j}$ es la aceleración universal de la \hbox {partícula $j$} y ${\mathit{M}}$ {\small \hspace{-0.120em}(\hspace{+0.120em}$ = \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i$\hspace{+0.120em})} es la masa del Universo.
+
+\par \bigskip \noindent De la ecuación anterior se deduce que la fuerza cinética neta ${\mathbf{K}}_{i}$ {\small \hbox {(\hspace{+0.120em}$ = \sum_{j}^{\scriptscriptstyle{\mathit{All}}} \, {\mathbf{K}}_{\hspace{+0.060em}ij}$\hspace{+0.120em})}} que actúa sobre una partícula $i$ de masa $m_i$, está dada por:
+
+\par \bigskip ${\mathbf{K}}_{i} ~=~ - \; m_i \, (\hspace{+0.045em}{\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{A}})$
+
+\par \bigskip \noindent donde ${\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración universal de la partícula $i$ y ${\mathbf{A}}$ {\small \hspace{-0.120em}(\hspace{+0.120em}$ = {\mathit{M}}^{\scriptscriptstyle -1} \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$\hspace{+0.120em})} es la aceleración universal del centro de masa del Universo.
+
+\par \bigskip \noindent Puesto que la aceleración universal del centro de masa del Universo ${\mathbf{A}}$ es siempre igual a cero entonces la fuerza cinética \hbox {neta ${\mathbf{K}}_{i}$} que actúa sobre una partícula $i$ de masa $m_i$ \hspace{+0.030em}queda\hspace{+0.090em}:
+
+\par \bigskip ${\mathbf{K}}_{i} ~=~ - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip \noindent donde ${\mathbf{a}}_{\hspace{+0.045em}i}$ es la aceleración universal de la partícula $i$.
+
+\par \bigskip \noindent La fuerza cinética neta ${\mathbf{K}}_{i}$ está relacionada con la fuerza de inercia $-m{\mathbf{a}}$ ( vis insita ) y la fuerza cinética ${\mathbf{K}}_{\hspace{+0.060em}ij}$ ( como el origen de $-m{\mathbf{a}}$ ) está relacionada con el principio de Mach.
+
+\par \bigskip \noindent La fuerza ${\mathbf{K}}_{i}$ es la fuerza que equilibra la fuerza dinámica neta en cada partícula del Universo y la fuerza ${\mathbf{K}}_{\hspace{+0.060em}ij}$ obedece siempre la 3ª ley de Newton en su forma fuerte o en su forma débil.
+
+\par \bigskip \noindent Sobre campos y potenciales de las fuerzas ${\mathbf{K}}_{i}$ y ${\mathbf{K}}_{\hspace{+0.060em}ij}$ ver : \hyperlink{t5aA}{{\small A}nexo {\small A}} y \hyperlink{t5aB}{{\small A}nexo {\small B}}. La fuerza ${\mathbf{K}}_{\hspace{+0.060em}ij}$ es obtenida a partir de la mecánica newtoniana en : {\small \url{https://n2t.net/ark:/13960/t85j04j78}}
+
+\vspace{+1.20em}
+
+\par {\centering\subsection*{[$\,$2$\,$] Principio}}\addcontentsline{toc}{subsection}{4. Segundo Principio}
+
+\par \bigskip \noindent El $[\,2\,]$ principio de la nueva dinámica establece que la fuerza total ${\mathbf{T}}_i$ que actúa sobre una partícula $i$ es siempre igual a cero.
+
+\par \bigskip ${\mathbf{T}}_i ~=~ 0$
+
+\par \bigskip \noindent Si la fuerza total ${\mathbf{T}}_i$ es dividida en las siguientes dos partes: la fuerza cinética neta ${\mathbf{K}}_{i}$ y la fuerza dinámica neta ${\mathbf{F}}_{i}$ (\hspace{+0.060em}$\sum$ de fuerzas gravitatorias, fuerzas electrostáticas, etc.\hspace{+0.060em}) entonces:
+
+\par \bigskip ${\mathbf{K}}_{i} + {\mathbf{F}}_{i} ~=~ 0$
+
+\par \bigskip \noindent Ahora, sustituyendo ${\mathbf{K}}_{i}$ {\normalsize \hspace{-0.120em}(\hspace{+0.120em}$ = - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$\hspace{+0.120em})} y reordenando, finalmente se obtiene:
+
+\par \bigskip ${\mathbf{F}}_{i} ~=~ m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip \noindent Esta ecuación (\hspace{+0.060em}similar a la segunda ley de Newton\hspace{+0.060em}) será usada a lo largo de este trabajo.
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Ecuación de Movimiento}}\addcontentsline{toc}{subsection}{5. Ecuación de Movimiento}
+
+\par \bigskip \noindent La fuerza dinámica neta ${\mathbf{F}}_i$ que actúa sobre una partícula $i$ de masa $m_i$ está relacionada con la aceleración universal ${\mathbf{a}}_{\hspace{+0.045em}i}$ de la partícula $i$ según la siguiente ecuación:
+
+\par \bigskip ${\mathbf{F}}_i \,=\, m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\par \bigskip \noindent A partir de la ecuación anterior se deduce que la aceleración (\hspace{+0.120em}ordinaria\hspace{+0.120em}) ${\vec{\mathit{a}}}_{i}$ de la partícula $i$ con respecto a un sistema de referencia S (\hspace{+0.120em}inercial o no inercial\hspace{+0.120em}) está dada por:
+
+\par \bigskip ${\vec{\mathit{a}}}_{i} \;=\: {\mathbf{F}}_{\hspace{-0.09em}i}/m_i + {\vec{\mathit{A}}} \hspace{+0.15em} + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}})$
+
+\par \bigskip \noindent donde ${\vec{\mathit{r}}}_i$ es el vector de posición de la partícula $i$, ${\vec{\mathit{R}}}$ es el vector de posición del centro de masa del Universo y ${\vec{\omega}}$ es el vector de velocidad angular del Universo respecto a S \hbox {\hyperlink{t5a1}{(ver {\small A}nexo {\small I}\hspace{+0.120em})}}
+
+\par \bigskip \noindent Desde la ecuación anterior se deduce que la partícula $i$ puede estar acelerada (\hspace{+0.120em}${\vec{\mathit{a}}}_{i} \ne 0$\hspace{+0.120em}) incluso si sobre la partícula $i$ no actúa fuerza dinámica alguna y también que la partícula $i$ puede no estar acelerada (\hspace{+0.120em}${\vec{\mathit{a}}}_{i} = 0$\hspace{+0.120em}) (\hspace{+0.120em}estado de reposo o de movimiento rectilíneo uniforme\hspace{+0.120em}) incluso si sobre la \hbox {partícula $i$} actúa una fuerza dinámica neta no equilibrada.
+
+\par \bigskip \noindent Sin embargo, desde la ecuación anterior también se deduce que la primera y segunda ley de Newton son válidas en cualquier sistema de referencia inercial, puesto que la velocidad angular ${\vec{\omega}}$ del Universo y la aceleración ${\vec{\mathit{A}}}$ del centro de masa del Universo son iguales a cero con respecto a cualquier sistema de referencia inercial.
+
+\par \bigskip \noindent En este trabajo, cualquier sistema de referencia S es un sistema de referencia inercial cuando la velocidad angular ${\vec{\omega}}$ del Universo y la aceleración ${\vec{\mathit{A}}}$ del centro de masa del Universo son iguales a cero con respecto a S (\hspace{+0.120em}una definición machiana de sistema inercial\hspace{+0.120em})
+
+\par \bigskip \noindent Por otro lado, la nueva reformulación de la mecánica clásica presentada en este trabajo y la mecánica newtoniana son observacionalmente equivalentes.
+
+\par \bigskip \noindent Sin embargo, los observadores no inerciales pueden utilizar la mecánica newtoniana sólo si introducen fuerzas ficticias en ${\mathbf{F}}_{\hspace{-0.09em}i}$ (\hspace{+0.120em}tales como la fuerza centrífuga, la fuerza de \hbox {Coriolis, etc.\hspace{+0.120em})} Según ecuación anterior : {\small ${\mathbf{F}}_{ficticias} \,=\, m_i \; \{ \; + \hspace{+0.180em} {\vec{\mathit{A}}} \, + \, 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \, - \, {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] \, + \, {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \; \}$}
+
+\par \bigskip \noindent Adicionalmente, la nueva reformulación de la mecánica clásica presentada en este trabajo es también una reformulación relacional de la mecánica clásica puesto que está desarrollada a partir de magnitudes relativas (\hspace{+0.120em}posición, velocidad y aceleración\hspace{+0.120em}) entre partículas.
+
+\par \bigskip \noindent Sin embargo, como se ha dicho más arriba, la nueva reformulación de la mecánica clásica presentada en este trabajo y la mecánica newtoniana son observacionalmente equivalentes.
+
+\par \bigskip \noindent Finalmente, la ecuación $[ \; {\mathbf{F}}_i = m_i \, {\mathbf{a}}_{\hspace{+0.045em}i} \; ]$ es válida en cualquier sistema de referencia inercial o no inercial solamente si todas las fuerzas dinámicas obedecen siempre la tercera ley de Newton en su forma débil y en su forma fuerte ( es decir, ... solamente si la ecuación $[ \; {\mathbf{F}}_i = m_i \, {\vec{\mathit{a}}}_i \; ]$ es siempre válida en el sistema de referencia universal )
+
+\vspace{+0.09em}
+
+\noindent \rule[0mm]{141mm}{0.15mm}
+
+\par \medskip \noindent {\footnotesize \textbf{A. Tobla}, Una Reformulación de la Mecánica Clásica ( I \& II )\hspace{+1.12em} : \url{https://n2t.net/ark:/13960/s2gw1c02xdw}}
+
+\par \medskip \noindent {\footnotesize \textbf{A. Tobla}, Una Reformulación de la Mecánica Clásica ( III \& IV ) : \url{https://n2t.net/ark:/13960/s29z04fq64g}}
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexo I}}
+
+\par \medskip {\centering\subsubsection*{El Universo}}\addcontentsline{toc}{subsection}{Anexo I : El Universo}\hypertarget{t5a1}{}
+
+\par \medskip \noindent El Universo es un sistema que contiene a todas las partículas, que está siempre libre de fuerzas externas y que todas las fuerzas dinámicas internas obedecen siempre la tercera ley de Newton en su forma débil y en su forma fuerte.
+
+\par \bigskip \noindent La posición ${\vec{\mathit{R}}}$, la velocidad ${\vec{\mathit{V}}}$ y la aceleración ${\vec{\mathit{A}}}$ del centro de masa del Universo respecto a un sistema de referencia S, la velocidad angular ${\vec{\omega}}$ y la aceleración angular ${\vec{\alpha}}$ del Universo respecto al sistema de referencia S, están dadas por:
+
+\par \bigskip\smallskip \hspace{-2.40em} \begin{tabular}{l}
+${\mathrm{M}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i$ \vspace{+1.20em} \\
+${\vec{\mathit{R}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, {\vec{\mathit{r}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{V}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, {\vec{\mathit{v}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\mathit{A}}} ~\doteq~ {\mathrm{M}}^{\scriptscriptstyle -1} \, \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, {\vec{\mathit{a}}_{i}}$ \vspace{+1.20em} \\
+${\vec{\omega}} ~\doteq~ {\mathit{I}}^{\scriptscriptstyle -1}{\vphantom{\sum_1^2}}^{\hspace{-1.500em}\leftrightarrow}\hspace{+0.600em} \cdot {\vec{\mathit{L}}}$ \vspace{+1.20em} \\
+${\vec{\alpha}} ~\doteq~ d({\vec{\omega}})/dt$ \vspace{+1.20em} \\
+${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.210em} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, [ \, |\hspace{+0.090em}{\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}\,|^2 \hspace{+0.309em} {\mathrm{1}}{\vphantom{\sum_1^2}}^{\hspace{-0.639em}\leftrightarrow}\hspace{-0.129em} - ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \otimes ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \, ]$ \vspace{+1.20em} \\
+${\vec{\mathit{L}}} ~\doteq~ \sum_i^{\scriptscriptstyle{\mathit{All}}} \, m_i \, ({\vec{\mathit{r}}_{i}} - {\vec{\mathit{R}}}) \times ({\vec{\mathit{v}}_{i}} - \hspace{-0.120em}{\vec{\mathit{V}}})$
+\end{tabular}
+
+\par \bigskip \noindent donde ${\mathrm{M}}$ es la masa del Universo, ${\mathit{I}}{\vphantom{\sum_1^2}}^{\hspace{-0.555em}\leftrightarrow}\hspace{-0.300em}$ es el tensor de inercia del Universo (respecto a ${\vec{\mathit{R}}}$) y ${\vec{\mathit{L}}}$ es el momento angular del Universo respecto al sistema de referencia S.
+
+\vspace{+1.50em}
+
+\par {\centering\subsubsection*{Transformaciones}}\addcontentsline{toc}{subsection}{Anexo I : Transformaciones}
+
+\par \bigskip \noindent Las transformaciones de posición, velocidad y aceleración de una partícula $i$ entre un sistema de referencia S y otro sistema de referencia S', están dadas por:
+
+\par \bigskip\medskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~=~ {\mathbf{r}}_i ~=~ {\mathbf{r}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~=~ {\mathbf{r}}_i\hspace{-0.300em}' ~=~ {\mathbf{r}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~=~ {\mathbf{v}}_i ~=~ {\mathbf{v}}_i\hspace{-0.300em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') - {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~=~ {\mathbf{v}}_i\hspace{-0.300em}' ~=~ {\mathbf{v}}_i$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i - {\vec{\mathit{A}}}) - 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) + {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, ] - {\vec{\alpha}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) ~=~ {\mathbf{a}}_{\hspace{+0.045em}i} ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}'$
+
+\par \bigskip \hspace{-1.80em} $({\vec{\mathit{a}}}_i\hspace{-0.150em}' - {\vec{\mathit{A}}}\hspace{-0.045em}') - 2 \; {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{v}}}_i\hspace{-0.150em}' - \hspace{-0.120em}{\vec{\mathit{V}}}\hspace{-0.045em}') + {\vec{\omega}}\hspace{+0.060em}' \times [ \, {\vec{\omega}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') \, ] - {\vec{\alpha}}\hspace{+0.060em}' \times ({\vec{\mathit{r}}}_i\hspace{-0.150em}' - {\vec{\mathit{R}}}\hspace{+0.015em}') ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}\hspace{-0.360em}' ~=~ {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexo A}}
+
+\par \medskip {\centering\subsection*{Campos y Potenciales I}}\addcontentsline{toc}{subsection}{Anexo A : Campos y Potenciales I}\hypertarget{t5aA}{}
+
+\par \medskip \noindent La fuerza cinética neta ${\mathbf{K}}_{\hspace{+0.009em}i}$ que actúa sobre una partícula $i$ de masa $m_i$ puede ser también expresada como sigue:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ \: {\mathbf{E}} \, + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - \nabla \phi \, - \partial{\mathbf{A}}/\partial{\hspace{+0.03em}t}\, + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: + \; m_i \, \Big[ - ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{A}}}\hspace{+0.06em}) + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, \Big]$
+
+\par \bigskip \noindent donde:
+
+\vspace{+0.42em}
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \partial{\mathbf{A}}/\partial{\hspace{+0.03em}t}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ]^{\hspace{+0.006em}2} \, + \, \med \, ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}})^{\hspace{+0.03em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] \, + ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}})$
+
+\par \bigskip $\partial{\mathbf{A}}/\partial{\hspace{+0.03em}t} \;=\: - \; {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) + ( {\vec{\mathit{a}}}_{i} - {\vec{\mathit{A}}}\hspace{+0.06em})$ * \hfill {\dix}
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{R}}}) \, ] \hspace{+0.06em}$ \hfill {\diy}
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$ \hfill {\diz}
+
+\vspace{+0.60em}
+
+\par \bigskip \noindent La fuerza cinética neta ${\mathbf{K}}_{\hspace{+0.009em}i}$ que actúa sobre una partícula $i$ de masa $m_i$ puede ser también obtenida a partir de la siguiente energía cinética:
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: - \; m_i \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{V}}}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{R}}}) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.009em}i} \;=\: \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Dado que la energía cinética ${\mathit{K}}_{\hspace{+0.009em}i}$ debe ser positiva, entonces aplicando la siguiente ecuación Euler-Lagrange, se obtiene:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}i} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{v}}_i} \, \Bigg] + \dfrac{\partial{\, \med \; m_i \, \big[ \, {\mathbf{v}}_i \, \big]^2}}{\partial{\,\mathbf{r}}_i} \;=\: - \; m_i \, {\mathbf{a}}_{\hspace{+0.045em}i}$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent donde ${\mathbf{r}}_i, {\mathbf{v}}_i$ y ${\mathbf{a}}_{\hspace{+0.045em}i}$ son la posición universal, la velocidad universal y la aceleración universal de la partícula $i$.
+
+\vspace{+0.09em}
+
+\noindent \rule[0mm]{21em}{0.15mm}
+
+\vspace{-0.30em}
+
+\par \medskip \noindent {\small * En la derivada parcial temporal considerar las coordenadas espaciales como constantes [ o modificar esto en la primera ecuación:} ${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times {\mathbf{B}}}$ {\small , y esto en la segunda ecuación:} ${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{V}}}) \times (\nabla \times {\mathbf{A}})}$ ]
+
+\newpage
+
+\par \bigskip {\centering\subsection*{Anexo B}}
+
+\par \medskip {\centering\subsection*{Campos y Potenciales II}}\addcontentsline{toc}{subsection}{Anexo B : Campos y Potenciales II}\hypertarget{t5aB}{}
+
+\par \medskip \noindent La fuerza cinética ${\mathbf{K}}_{\hspace{+0.009em}ij}$ ejercida sobre una partícula $i$ de masa $m_i$ por otra partícula $j$ de masa $m_j$ puede ser también expresada como sigue:
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ \: {\mathbf{E}} \, + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times {\mathbf{B}} \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ - \nabla \phi \, - \partial{\mathbf{A}}/\partial{\hspace{+0.03em}t}\, + ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times (\nabla \times {\mathbf{A}}) \, \Big]$
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: + \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \Big[ - ({\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}\hspace{+0.06em}) + 2 \; {\vec{\omega}} \times ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) - {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] + {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, \Big]$
+
+\par \bigskip \noindent donde:
+
+\vspace{+0.42em}
+
+\par \bigskip ${\mathbf{E}} \;=\: - \; \nabla \phi \, - \partial{\mathbf{A}}/\partial{\hspace{+0.03em}t}$
+
+\par \bigskip ${\mathbf{B}} \;=\: \nabla \times {\mathbf{A}}$
+
+\par \bigskip $\phi \;=\: - \; \med \: [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ]^{\hspace{+0.006em}2} \, + \, \med \, ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j})^{\hspace{+0.03em}2}$
+
+\par \bigskip ${\mathbf{A}} \;=\: - \; [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] \, + ( {\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j})$
+
+\par \bigskip $\partial{\mathbf{A}}/\partial{\hspace{+0.03em}t} \;=\: - \; {\vec{\alpha}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) + ( {\vec{\mathit{a}}}_{i} - {\vec{\mathit{a}}}_{j}\hspace{+0.06em})$ * \hfill {\dix}
+
+\par \bigskip $\nabla \phi \;=\: {\vec{\omega}} \times [ \, {\vec{\omega}} \times ({\vec{\mathit{r}}}_{i} - {\vec{\mathit{r}}}_{j}) \, ] \hspace{+0.06em}$ \hfill {\diy}
+
+\par \bigskip $\nabla \times {\mathbf{A}} \;=\: - \; 2 \; {\vec{\omega}}$ \hfill {\diz}
+
+\vspace{+0.60em}
+
+\par \bigskip \noindent La fuerza cinética ${\mathbf{K}}_{\hspace{+0.009em}ij}$ ejercida sobre una partícula $i$ de masa $m_i$ por otra partícula $j$ de masa $m_j$ puede ser también obtenida a partir de la siguiente energía cinética:
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.03em}ij} \;=\: - \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, \phi \, - ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \cdot {\mathbf{A}} \, \big]$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.03em}ij} \;=\: \med \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, ({\vec{\mathit{v}}}_i - \hspace{-0.120em}{\vec{\mathit{v}}}_{j}) - {\vec{\omega}} \times ({\vec{\mathit{r}}}_i - {\vec{\mathit{r}}}_{j}) \, \big]^2$
+
+\par \bigskip ${\mathit{K}}_{\hspace{+0.03em}ij} \;=\: \med \; m_i \: m_j \, {\mathit{M}}^{\scriptscriptstyle -1} \, \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2$
+
+\vspace{+0.03em}
+
+\par \bigskip \noindent Dado que la energía cinética ${\mathit{K}}_{\hspace{+0.03em}ij}$ debe ser positiva, entonces aplicando la siguiente ecuación Euler-Lagrange, se obtiene:
+
+\vspace{+0.06em}
+
+\par \bigskip ${\mathbf{K}}_{\hspace{+0.009em}ij} \;=\: - \; \dfrac{d}{dt} \, \Bigg[ \, \dfrac{\partial \, \med \, \frac{m_i \, m_j}{\mathit{M}} \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2}{\partial \, [ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, ]} \, \Bigg] + \dfrac{\partial \, \med \, \frac{m_i \, m_j}{\mathit{M}} \big[ \, {\mathbf{v}}_i - {\mathbf{v}}_{\hspace{-0.06em}j} \, \big]^2}{\partial \, [ \, {\mathbf{r}}_i - {\mathbf{r}}_{\hspace{-0.015em}j} \, ]} \;=\: - \; \dfrac{m_i \, m_j}{\mathit{M}} \, \big[ \, {\mathbf{a}}_{\hspace{+0.045em}i} - {\mathbf{a}}_{\hspace{-0.015em}j} \, \big]$
+
+\vspace{+0.09em}
+
+\par \bigskip \noindent donde ${\mathbf{r}}_i, {\mathbf{v}}_i, {\mathbf{a}}_{\hspace{+0.045em}i}, {\mathbf{r}}_{\hspace{-0.015em}j}, {\mathbf{v}}_{\hspace{-0.06em}j}$ y ${\mathbf{a}}_{\hspace{-0.015em}j}$ son las posiciones universales, las velocidades universales y las aceleraciones universales de la partícula $i$ y de la partícula $j$.
+
+\vspace{+0.09em}
+
+\noindent \rule[0mm]{21em}{0.15mm}
+
+\vspace{-0.30em}
+
+\par \medskip \noindent {\small * En la derivada parcial temporal considerar las coordenadas espaciales como constantes [ o modificar esto en la primera ecuación:} ${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times {\mathbf{B}}}$ {\small , y esto en la segunda ecuación:} ${\scriptstyle + \; {\small \met} \; ({\vec{\mathit{v}}}_{i} - {\vec{\mathit{v}}}_{j}) \times (\nabla \times {\mathbf{A}})}$ ]
+
+\end{document}
+
